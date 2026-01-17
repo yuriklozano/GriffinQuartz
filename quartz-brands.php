@@ -1106,6 +1106,27 @@
             font-size: 1.25rem;
         }
 
+        /* Showroom CTA Button Contrast Fix */
+        .showroom-cta-buttons .btn-secondary {
+            background: transparent !important;
+            border: 2px solid var(--color-primary) !important;
+            color: var(--color-primary) !important;
+            padding: 0.875rem 1.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .showroom-cta-buttons .btn-secondary:hover,
+        .showroom-cta-buttons .btn-secondary:focus {
+            background: var(--color-primary) !important;
+            color: #fff !important;
+        }
+
         @media (max-width: 768px) {
             .showroom-cta-box {
                 padding: 2.5rem 1.5rem;
