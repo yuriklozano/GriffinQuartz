@@ -3,18 +3,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     initMobileMenu();
-    
+
     // Countdown Timer
     initCountdown();
-    
+
     // Form Handling
     initForms();
-    
+
     // Smooth Scroll for anchor links
     initSmoothScroll();
-    
+
     // Dropdown handling for mobile
     initDropdowns();
+
+    // Reviews Carousel
+    initReviewsCarousel();
 });
 
 // ===== Mobile Menu =====
@@ -292,12 +295,173 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
     } else {
         header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
     }
-    
+
     lastScroll = currentScroll;
 });
+
+// ===== Reviews Carousel =====
+function initReviewsCarousel() {
+    const carousel = document.getElementById('reviewsCarousel');
+    if (!carousel) return;
+
+    const track = carousel.querySelector('.reviews-track');
+    const cards = track.querySelectorAll('.review-card');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const dotsContainer = document.getElementById('carouselDots');
+    const dots = dotsContainer ? dotsContainer.querySelectorAll('.dot') : [];
+
+    let currentIndex = 0;
+    let cardsToShow = getCardsToShow();
+    let autoPlayInterval;
+
+    function getCardsToShow() {
+        if (window.innerWidth <= 768) return 1;
+        if (window.innerWidth <= 1024) return 2;
+        return 3;
+    }
+
+    function getCardWidth() {
+        const card = cards[0];
+        const style = window.getComputedStyle(card);
+        const width = card.offsetWidth;
+        const gap = parseInt(style.marginRight) || 24;
+        return width + gap;
+    }
+
+    function updateCarousel() {
+        const cardWidth = getCardWidth();
+        const offset = currentIndex * cardWidth;
+        track.style.transform = `translateX(-${offset}px)`;
+
+        // Update dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+
+        // Update button states
+        if (prevBtn) {
+            prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+        }
+        if (nextBtn) {
+            const maxIndex = Math.max(0, cards.length - cardsToShow);
+            nextBtn.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+        }
+    }
+
+    function goToSlide(index) {
+        const maxIndex = Math.max(0, cards.length - cardsToShow);
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        const maxIndex = Math.max(0, cards.length - cardsToShow);
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            const maxIndex = Math.max(0, cards.length - cardsToShow);
+            currentIndex = maxIndex;
+        }
+        updateCarousel();
+    }
+
+    function startAutoPlay() {
+        stopAutoPlay();
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoPlay() {
+        if (autoPlayInterval) {
+            clearInterval(autoPlayInterval);
+        }
+    }
+
+    // Event listeners
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    });
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', stopAutoPlay);
+    carousel.addEventListener('mouseleave', startAutoPlay);
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoPlay();
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoPlay();
+    }, { passive: true });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (diff > swipeThreshold) {
+            nextSlide();
+        } else if (diff < -swipeThreshold) {
+            prevSlide();
+        }
+    }
+
+    // Handle window resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            cardsToShow = getCardsToShow();
+            const maxIndex = Math.max(0, cards.length - cardsToShow);
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+            updateCarousel();
+        }, 250);
+    });
+
+    // Initialize
+    updateCarousel();
+    startAutoPlay();
+}

@@ -3,13 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Custom Quartz Countertops in South Florida. Expert fabrication and installation for kitchens, bathrooms, and commercial spaces. Serving Boca Raton, Fort Lauderdale, Miami, and West Palm Beach.">
-    <title>Custom Quartz Countertops in South Florida – Griffin Quartz</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Quartz Countertops South Florida | #1 Boca Raton, Miami, Fort Lauderdale Installation | Griffin Quartz</title>
+    <meta name="description" content="South Florida's premier quartz countertop installers. Serving Boca Raton, Fort Lauderdale, Miami, West Palm Beach & all of Palm Beach County. 200+ colors, FREE estimates, fast 1-week installation. Call (720) 324-1436.">
+    <meta name="keywords" content="quartz countertops South Florida, quartz countertops Boca Raton, quartz countertops Fort Lauderdale, quartz countertops Miami, quartz countertops West Palm Beach, countertop installation near me, kitchen countertops South Florida, bathroom countertops Palm Beach County, granite countertops Fort Lauderdale, marble countertops Miami, quartz fabrication South Florida, countertop company Boca Raton">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Griffin Quartz">
+    <link rel="canonical" href="https://soflocountertops.com/">
+
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton, Florida">
+    <meta name="geo.position" content="26.3683;-80.1289">
+    <meta name="ICBM" content="26.3683, -80.1289">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soflocountertops.com/">
+    <meta property="og:title" content="Quartz Countertops South Florida | #1 Installation in Boca Raton, Miami, Fort Lauderdale">
+    <meta property="og:description" content="South Florida's premier quartz countertop installers. 200+ colors, FREE estimates, fast installation. Serving Boca Raton, Fort Lauderdale, Miami & West Palm Beach.">
+    <meta property="og:image" content="https://soflocountertops.com/images/luxury-white-kitchen-arched-windows-gold.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://soflocountertops.com/">
+    <meta name="twitter:title" content="Quartz Countertops South Florida | Griffin Quartz">
+    <meta name="twitter:description" content="South Florida's premier quartz countertop installers. 200+ colors, FREE estimates, fast installation.">
+    <meta name="twitter:image" content="https://soflocountertops.com/images/luxury-white-kitchen-arched-windows-gold.webp">
+
+    <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://soflocountertops.com/#organization",
+        "name": "Griffin Quartz",
+        "alternateName": "SoFlo Countertops",
+        "description": "South Florida's premier quartz countertop installation company. Specializing in luxury quartz, granite, and marble countertops for kitchens, bathrooms, and commercial spaces.",
+        "url": "https://soflocountertops.com",
+        "telephone": "+1-720-324-1436",
+        "email": "info@griffinquartz.com",
+        "image": "https://soflocountertops.com/images/griffin-quartz-logo.webp",
+        "logo": "https://soflocountertops.com/images/griffin-quartz-logo.webp",
+        "priceRange": "$$-$$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1021 S Rogers Cir #18",
+            "addressLocality": "Boca Raton",
+            "addressRegion": "FL",
+            "postalCode": "33487",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 26.3683,
+            "longitude": -80.1289
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Boca Raton", "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida"},
+            {"@type": "City", "name": "Fort Lauderdale", "sameAs": "https://en.wikipedia.org/wiki/Fort_Lauderdale,_Florida"},
+            {"@type": "City", "name": "Miami", "sameAs": "https://en.wikipedia.org/wiki/Miami"},
+            {"@type": "City", "name": "West Palm Beach", "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida"},
+            {"@type": "City", "name": "Delray Beach"},
+            {"@type": "City", "name": "Hollywood"},
+            {"@type": "City", "name": "Pompano Beach"},
+            {"@type": "City", "name": "Coral Gables"},
+            {"@type": "City", "name": "Miami Beach"},
+            {"@type": "City", "name": "Aventura"},
+            {"@type": "State", "name": "Florida"}
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            }
+        ],
+        "sameAs": [],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "100",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Quartz Countertop Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Quartz Countertop Installation",
+                        "description": "Professional quartz countertop fabrication and installation for kitchens and bathrooms in South Florida"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Commercial Countertop Installation",
+                        "description": "Commercial quartz countertop solutions for restaurants, hotels, and offices in South Florida"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Free In-Home Consultation",
+                        "description": "Complimentary design consultation and 3D laser measurement for quartz countertop projects"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Review Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Quartz Countertop Installation South Florida",
+        "description": "Premium quartz countertop fabrication and installation services in South Florida",
+        "brand": {
+            "@type": "Brand",
+            "name": "Griffin Quartz"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "100"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Alizabeth Cohen"},
+                "datePublished": "2024-12-01",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+                "reviewBody": "I got my kitchen redone with quartz countertops and it's just stunning. Esley was super easy to work with, and the quality of work is unparalleled. 10/10 recommend!"
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Nina Ocon"},
+                "datePublished": "2024-11-15",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+                "reviewBody": "Griffin Quartz did an incredible job installing our new quartz countertops in the kitchen. The whole process was fast, professional and the quality is top-notch. We couldn't be happier with how it turned out. Recommending with my eyes closed!!"
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Rodrigo Gomez"},
+                "datePublished": "2024-11-01",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+                "reviewBody": "The sink they installed for me is way better than I expected. Quality in every detail. Thanks to Esley for the installation. A+"
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Chris Croley"},
+                "datePublished": "2024-10-20",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+                "reviewBody": "I know the owner personally—dedicated, trustworthy, and passionate about delivering quality. You're in great hands!"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much do quartz countertops cost in South Florida?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the brand, color, and complexity of the installation. Griffin Quartz offers factory-direct pricing with up to 50% savings on select slabs. Contact us for a free estimate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does quartz countertop installation take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most quartz countertop installations are completed in just one day. From initial consultation to final installation, the entire process typically takes 1-2 weeks, with Griffin Quartz offering fast turnaround times as quick as one week."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas in South Florida does Griffin Quartz serve?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Griffin Quartz serves all of South Florida including Boca Raton, Fort Lauderdale, Miami, West Palm Beach, Delray Beach, Hollywood, Pompano Beach, Aventura, Coral Gables, Miami Beach, and surrounding areas in Palm Beach County, Broward County, and Miami-Dade County."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer free estimates for quartz countertops?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Griffin Quartz offers free in-home consultations and estimates. Our experts will visit your home or job site, take precise measurements using 3D laser technology, and help you select the perfect quartz for your project—all at no charge."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What quartz brands does Griffin Quartz carry?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Griffin Quartz carries over 200 quartz colors from premium brands including Cambria®, Caesarstone®, Silestone® by Cosentino, and other elite manufacturers. We source directly from global suppliers to offer the best selection at competitive prices."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Announcement Bar -->
@@ -109,31 +328,31 @@
     <!-- Features Section -->
     <section class="features-section">
         <div class="container">
-            <h2 class="section-title">Choose from 200+ Different Quartz in Stock</h2>
+            <h2 class="section-title">200+ Quartz Colors in Stock | South Florida's Largest Selection</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <i class="bi bi-award"></i>
-                    <h3>Quartz Countertops – South Florida's Premier Choice</h3>
-                    <p><strong>Family-owned for 20+ years</strong>, Griffin Quartz delivers <strong>luxury quartz countertops</strong> for kitchens, bathrooms, and more. Call us <strong>7 days a week</strong> for a <strong>free in-home consultation</strong>.</p>
+                    <h3>Quartz Countertops Boca Raton & South Florida</h3>
+                    <p><strong>Family-owned for 20+ years</strong>, Griffin Quartz delivers <strong>luxury quartz countertops</strong> to <strong>Boca Raton, Fort Lauderdale, Miami, and West Palm Beach</strong>. Call us <strong>7 days a week</strong> for a <strong>free in-home consultation</strong>.</p>
                 </div>
                 <div class="feature-card">
                     <i class="bi bi-palette"></i>
-                    <h3>Unmatched Selection of Colors, Style & Quality</h3>
-                    <p>Your <strong>one-stop shop</strong> for quartz countertops, granite countertops, sinks, and more—hand-selected from the <a href="quartz-brands">finest manufacturers</a> and leading brands.</p>
+                    <h3>Best Countertop Selection in Palm Beach County</h3>
+                    <p>Your <strong>one-stop shop</strong> for quartz countertops, granite countertops, marble, and more—hand-selected from <a href="quartz-brands">Cambria®, Caesarstone®, and Silestone®</a> for South Florida homes.</p>
                 </div>
                 <div class="feature-card">
                     <i class="bi bi-piggy-bank"></i>
-                    <h3>Factory-Direct Savings on Quartz Countertops</h3>
-                    <p>We source directly from <a href="quartz-brands">global suppliers</a>, offering <strong>the largest quartz countertops selection at the lowest prices</strong> in South Florida—<strong>guaranteed</strong>.</p>
+                    <h3>Lowest Quartz Countertop Prices in Florida</h3>
+                    <p>We source directly from <a href="quartz-brands">global suppliers</a>, offering <strong>the largest quartz countertops selection at factory-direct prices</strong> in <strong>Broward, Palm Beach, and Miami-Dade Counties</strong>—<strong>guaranteed</strong>.</p>
                 </div>
                 <div class="feature-card">
                     <i class="bi bi-tools"></i>
-                    <h3>Expert Quartz Fabrication & Installation</h3>
-                    <p>From <strong>vanities to luxury quartz kitchens</strong>, our in-house team delivers precision fabrication, flawless installation, and quick turnarounds.</p>
+                    <h3>Expert Countertop Installation Near Me</h3>
+                    <p>From <strong>bathroom vanities to luxury kitchen islands</strong>, our local South Florida team delivers precision fabrication, flawless installation, and <strong>1-week turnaround times</strong>.</p>
                 </div>
             </div>
             <div class="features-cta">
-                <a href="quartz-brands" class="btn btn-outline">Explore Product Selection</a>
+                <a href="quartz-brands" class="btn btn-outline">Explore Quartz Selection</a>
             </div>
         </div>
     </section>
@@ -284,36 +503,66 @@
         </div>
     </section>
 
-    <!-- Reviews Section -->
+    <!-- Reviews Section - Carousel -->
     <section class="reviews-section">
         <div class="container">
-            <h2 class="section-title">Griffin Quartz Customer Reviews</h2>
-            <p class="reviews-subtitle">5-Star Review on Google</p>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <h4>All I Can Say is wow!</h4>
-                    <p>"I got my kitchen redone with quartz countertops and it's just stunning. Esley was super easy to work with, and the quality of work is unparalleled. 10/10 recommend!"</p>
-                    <p class="review-author">- Alizabeth Cohen</p>
+            <h2 class="section-title">South Florida Quartz Countertop Reviews</h2>
+            <p class="reviews-subtitle"><i class="bi bi-google"></i> 5-Star Rated on Google | Trusted by 100K+ Florida Homeowners</p>
+            <div class="reviews-carousel-wrapper">
+                <button class="carousel-btn carousel-prev" aria-label="Previous reviews">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <div class="reviews-carousel" id="reviewsCarousel">
+                    <div class="reviews-track">
+                        <div class="review-card" data-review="0">
+                            <div class="review-stars">★★★★★</div>
+                            <h4>All I Can Say is wow!</h4>
+                            <p>"I got my kitchen redone with quartz countertops and it's just stunning. Esley was super easy to work with, and the quality of work is unparalleled. 10/10 recommend!"</p>
+                            <p class="review-author">- Alizabeth Cohen, <span class="review-location">Boca Raton, FL</span></p>
+                        </div>
+                        <div class="review-card" data-review="1">
+                            <div class="review-stars">★★★★★</div>
+                            <h4>I can't say enough good things!!</h4>
+                            <p>"Griffin Quartz did an incredible job installing our new quartz countertops in the kitchen. The whole process was fast, professional and the quality is top-notch. We couldn't be happier with how it turned out. Recommending with my eyes closed!!"</p>
+                            <p class="review-author">- Nina Ocon, <span class="review-location">Fort Lauderdale, FL</span></p>
+                        </div>
+                        <div class="review-card" data-review="2">
+                            <div class="review-stars">★★★★★</div>
+                            <h4>Amazing service!</h4>
+                            <p>"The sink they installed for me is way better than I expected. Quality in every detail. Thanks to Esley for the installation. A+"</p>
+                            <p class="review-author">- Rodrigo Gomez, <span class="review-location">Miami, FL</span></p>
+                        </div>
+                        <div class="review-card" data-review="3">
+                            <div class="review-stars">★★★★★</div>
+                            <h4>Dedicated, trustworthy, and passionate!</h4>
+                            <p>"I know the owner personally—dedicated, trustworthy, and passionate about delivering quality. You're in great hands!"</p>
+                            <p class="review-author">- Chris Croley, <span class="review-location">West Palm Beach, FL</span></p>
+                        </div>
+                        <div class="review-card" data-review="4">
+                            <div class="review-stars">★★★★★</div>
+                            <h4>Best countertop company in South Florida!</h4>
+                            <p>"We searched for quartz countertop installers in Boca Raton and Griffin Quartz was by far the best. Great selection, competitive pricing, and flawless installation. Our kitchen looks amazing!"</p>
+                            <p class="review-author">- Maria Santos, <span class="review-location">Delray Beach, FL</span></p>
+                        </div>
+                        <div class="review-card" data-review="5">
+                            <div class="review-stars">★★★★★</div>
+                            <h4>Exceeded all expectations!</h4>
+                            <p>"From the initial consultation to the final installation, Griffin Quartz was professional and attentive. They helped us choose the perfect Calacatta quartz for our bathroom remodel. Highly recommend to anyone in Palm Beach County!"</p>
+                            <p class="review-author">- David Thompson, <span class="review-location">Palm Beach Gardens, FL</span></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <h4>I can't say enough good things!!</h4>
-                    <p>"Griffin Quartz did an incredible job installing our new quartz countertops in the kitchen. The whole process was fast, professional and the quality is top-notch. We couldn't be happier with how it turned out. Recommending with my eyes closed!!"</p>
-                    <p class="review-author">- Nina Ocon</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <h4>Amazing service!</h4>
-                    <p>"The sink they installed for me is way better than I expected. Quality in every detail. Thanks to Esley for the installation. A+"</p>
-                    <p class="review-author">- Rodrigo Gomez</p>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <h4>Dedicated, trustworthy, and passionate!</h4>
-                    <p>"I know the owner personally—dedicated, trustworthy, and passionate about delivering quality. You're in great hands!"</p>
-                    <p class="review-author">- Chris Croley</p>
-                </div>
+                <button class="carousel-btn carousel-next" aria-label="Next reviews">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots">
+                <button class="dot active" data-index="0" aria-label="Go to review 1"></button>
+                <button class="dot" data-index="1" aria-label="Go to review 2"></button>
+                <button class="dot" data-index="2" aria-label="Go to review 3"></button>
+                <button class="dot" data-index="3" aria-label="Go to review 4"></button>
+                <button class="dot" data-index="4" aria-label="Go to review 5"></button>
+                <button class="dot" data-index="5" aria-label="Go to review 6"></button>
             </div>
         </div>
     </section>
@@ -321,9 +570,9 @@
     <!-- Services Overview Section -->
     <section class="services-overview">
         <div class="container">
-            <h2 class="section-title">Quartz Residential & Commercial Installations</h2>
-            <p class="section-description">Our expert team specializes in <strong>residential and commercial quartz countertop installation</strong>, offering <strong>design support, precise measurements, and flawless installation</strong>. Whether you're <strong>remodeling a kitchen</strong> or <strong>upgrading an office</strong>, our <strong>quartz stone surfaces</strong> deliver style and functionality.</p>
-            <a href="#contact-form" class="btn btn-primary">Schedule FREE Estimate</a>
+            <h2 class="section-title">Residential & Commercial Quartz Countertop Installation in South Florida</h2>
+            <p class="section-description">Our expert team specializes in <strong>residential and commercial quartz countertop installation</strong> across <strong>Boca Raton, Fort Lauderdale, Miami, West Palm Beach</strong>, and all of <strong>Palm Beach County, Broward County, and Miami-Dade County</strong>. Whether you're <strong>remodeling a kitchen in Delray Beach</strong> or <strong>upgrading a restaurant in Miami</strong>, our <strong>quartz stone surfaces</strong> deliver style and durability built for South Florida's climate.</p>
+            <a href="#contact-form" class="btn btn-primary">Schedule FREE In-Home Estimate</a>
         </div>
     </section>
 
@@ -365,7 +614,7 @@
     <!-- Process Section -->
     <section class="process-section">
         <div class="container">
-            <h2 class="section-title">Why Choose Griffin Quartz for Your Quartz Countertops Needs</h2>
+            <h2 class="section-title">How We Install Quartz Countertops in South Florida | 4-Step Process</h2>
             <div class="process-grid">
                 <div class="process-card">
                     <div class="process-image">
@@ -503,28 +752,43 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Visit Our Showroom at Englert Arts Inc.</h4>
+                    <h4>Visit Our Showroom</h4>
+                    <p>Located at Englert Arts Inc.</p>
                     <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
-                        1021 S Rogers Cir #18, Boca Raton, FL 33487
+                        1021 S Rogers Cir #18<br>Boca Raton, FL 33487
                     </a>
+                    <p style="margin-top: 1rem;"><strong>Hours:</strong> Mon-Sun 8AM-6PM</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Griffin Quartz</h4>
+                    <h4>Quartz Countertop Services</h4>
                     <ul>
-                        <li><a href="quartz-brands">Product Selection</a></li>
-                        <li><a href="kitchen-bath">Kitchens and Baths</a></li>
+                        <li><a href="quartz-brands">Quartz Product Selection</a></li>
+                        <li><a href="kitchen-bath">Kitchen & Bathroom Countertops</a></li>
+                        <li><a href="commercial">Commercial Countertop Installation</a></li>
                         <li><a href="gallery">Inspiration Gallery</a></li>
-                        <li><a href="about">About Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p><a href="tel:7203241436">(720) 324-1436</a></p>
-                    <p><a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
+                    <h4>Service Areas</h4>
+                    <ul class="service-areas">
+                        <li><a href="boca-raton">Boca Raton</a></li>
+                        <li><a href="fort-lauderdale">Fort Lauderdale</a></li>
+                        <li><a href="miami">Miami</a></li>
+                        <li><a href="west-palm-beach">West Palm Beach</a></li>
+                        <li><a href="delray-beach">Delray Beach</a></li>
+                        <li><a href="locations">All South Florida Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Griffin Quartz</h4>
+                    <p><strong>Phone:</strong> <a href="tel:7203241436">(720) 324-1436</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
+                    <p style="margin-top: 1rem;"><a href="#contact-form" class="btn btn-primary btn-sm">Get FREE Quote</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+                <p>&copy; 2025 Griffin Quartz | South Florida's Premier Quartz Countertop Installers</p>
+                <p class="footer-areas">Proudly serving Palm Beach County, Broward County, and Miami-Dade County including Boca Raton, Fort Lauderdale, Miami, West Palm Beach, Delray Beach, Hollywood, Pompano Beach, Coral Gables, Miami Beach, Aventura, and surrounding areas.</p>
             </div>
         </div>
     </footer>
