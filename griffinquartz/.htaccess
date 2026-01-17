@@ -15,6 +15,16 @@ RewriteBase /
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# 301 Redirect .html URLs to clean URLs (SEO-friendly)
+# Example: /quartz-brands.html redirects to /quartz-brands
+RewriteCond %{REQUEST_URI} \.html$
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# 301 Redirect .php URLs to clean URLs (SEO-friendly)
+# Example: /quartz-brands.php redirects to /quartz-brands
+RewriteCond %{THE_REQUEST} \.php
+RewriteRule ^(.*)\.php$ /$1 [R=301,L]
+
 # Remove .php extension from URLs
 # Example: /contact.php becomes /contact
 RewriteCond %{REQUEST_FILENAME} !-d
