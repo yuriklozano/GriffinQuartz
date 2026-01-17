@@ -88,7 +88,7 @@
                 <div class="visualizer-preview">
                     <div class="kitchen-container">
                         <!-- Base kitchen image -->
-                        <img src="images/visualizer-kitchen-base.webp" alt="Kitchen preview" class="kitchen-base" id="kitchenBase">
+                        <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Kitchen preview" class="kitchen-base" id="kitchenBase">
                         <!-- Countertop overlay that changes color -->
                         <div class="countertop-overlay" id="countertopOverlay"></div>
                         <!-- Selected color name -->
