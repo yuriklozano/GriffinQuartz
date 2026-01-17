@@ -103,9 +103,9 @@
                         </div>
                     </div>
 
-                    <!-- Room Photo Below -->
-                    <div class="inspiration-photo">
-                        <img src="images/gempages_466492372277003100-73cc11db-222d-4622-9742-4cf0833ba929_800x800.webp" alt="Inspiration photo" id="inspirationImg">
+                    <!-- Room Photo -->
+                    <div class="room-preview">
+                        <img src="images/swatch-calacatta-luxe.webp" alt="Room preview with selected quartz" class="room-image" id="roomImage">
                     </div>
                 </div>
 
@@ -121,37 +121,37 @@
                         <button class="cat-btn" data-cat="warm">Warm</button>
                     </div>
 
-                    <div class="swatch-grid" id="swatchGrid">
-                        <!-- White Collection -->
-                        <div class="color-chip active" data-cat="white" data-name="Arctic White" data-collection="White Collection" data-color="#F8F8F8" data-img="images/gempages_466492372277003100-f7734e52-3538-4cee-919f-3c3c7592a09b_800x800.webp">
-                            <div class="chip-color" style="background: #F8F8F8;"></div>
-                            <span class="chip-name">Arctic White</span>
+                    <div class="color-swatches-v2" id="colorSwatches">
+                        <!-- White & Light -->
+                        <div class="swatch-v2" data-image="images/swatch-arctic-white.webp" data-name="Arctic White" data-category="white" data-code="White Collection" data-color="#f5f5f5">
+                            <div class="swatch-preview" style="background: url('images/swatch-arctic-white.webp') center/cover;"></div>
+                            <span>Arctic White</span>
                         </div>
-                        <div class="color-chip" data-cat="white" data-name="Pure Snow" data-collection="White Collection" data-color="#FAFAFA" data-img="images/gempages_466492372277003100-a19a946a-f9c0-4bb4-bd50-a343b51d5495_800x800.webp">
-                            <div class="chip-color" style="background: #FAFAFA;"></div>
-                            <span class="chip-name">Pure Snow</span>
+                        <div class="swatch-v2" data-image="images/swatch-cotton-white.webp" data-name="Cotton White" data-category="white" data-code="White Collection" data-color="#faf8f5">
+                            <div class="swatch-preview" style="background: url('images/swatch-cotton-white.webp') center/cover;"></div>
+                            <span>Cotton White</span>
                         </div>
-                        <div class="color-chip" data-cat="white" data-name="Frost" data-collection="White Collection" data-color="#F0EDE8" data-img="images/gempages_466492372277003100-04837a1f-7071-4be7-9bcc-f97c6af486d9_800x800.webp">
-                            <div class="chip-color" style="background: #F0EDE8;"></div>
-                            <span class="chip-name">Frost</span>
+                        <div class="swatch-v2" data-image="images/swatch-frost.webp" data-name="Frost" data-category="white" data-code="White Collection" data-color="#e8e4df">
+                            <div class="swatch-preview" style="background: url('images/swatch-frost.webp') center/cover;"></div>
+                            <span>Frost</span>
                         </div>
 
-                        <!-- Marble Collection -->
-                        <div class="color-chip" data-cat="marble" data-name="Calacatta Luxe" data-collection="Marble Collection" data-color="linear-gradient(135deg, #F5F3F0 0%, #E8E4DF 50%, #D5CFC7 100%)" data-img="images/gempages_466492372277003100-73cc11db-222d-4622-9742-4cf0833ba929_800x800.webp">
-                            <div class="chip-color" style="background: linear-gradient(135deg, #F5F3F0 0%, #E8E4DF 50%, #D5CFC7 100%);"></div>
-                            <span class="chip-name">Calacatta Luxe</span>
+                        <!-- Marble Look -->
+                        <div class="swatch-v2 active" data-image="images/swatch-calacatta-luxe.webp" data-name="Calacatta Luxe" data-category="marble" data-code="Marble Collection" data-color="#f8f6f3">
+                            <div class="swatch-preview" style="background: url('images/swatch-calacatta-luxe.webp') center/cover;"></div>
+                            <span>Calacatta Luxe</span>
                         </div>
-                        <div class="color-chip" data-cat="marble" data-name="Carrara Mist" data-collection="Marble Collection" data-color="linear-gradient(120deg, #F0EEEB 0%, #E0DCD6 50%, #D0CBC4 100%)" data-img="images/gempages_466492372277003100-da5ef41c-edec-4b46-b96f-d1f2def43638_800x800.webp">
-                            <div class="chip-color" style="background: linear-gradient(120deg, #F0EEEB 0%, #E0DCD6 50%, #D0CBC4 100%);"></div>
-                            <span class="chip-name">Carrara Mist</span>
+                        <div class="swatch-v2" data-image="images/swatch-carrara-mist.webp" data-name="Carrara Mist" data-category="marble" data-code="Marble Collection" data-color="#f0eeeb">
+                            <div class="swatch-preview" style="background: url('images/swatch-carrara-mist.webp') center/cover;"></div>
+                            <span>Carrara Mist</span>
                         </div>
-                        <div class="color-chip" data-cat="marble" data-name="Statuario" data-collection="Marble Collection" data-color="linear-gradient(145deg, #EAE7E3 0%, #D8D3CC 50%, #C5BFB5 100%)" data-img="images/gempages_466492372277003100-dd7ee3f1-483c-4c32-88b2-c06a57c0fe46_800x800.webp">
-                            <div class="chip-color" style="background: linear-gradient(145deg, #EAE7E3 0%, #D8D3CC 50%, #C5BFB5 100%);"></div>
-                            <span class="chip-name">Statuario</span>
+                        <div class="swatch-v2" data-image="images/swatch-statuario.webp" data-name="Statuario" data-category="marble" data-code="Marble Collection" data-color="#e5e2de">
+                            <div class="swatch-preview" style="background: url('images/swatch-statuario.webp') center/cover;"></div>
+                            <span>Statuario</span>
                         </div>
-                        <div class="color-chip" data-cat="marble" data-name="Calacatta Gold" data-collection="Marble Collection" data-color="linear-gradient(130deg, #F5F0E8 0%, #E8DFD0 50%, #D4C5A8 100%)" data-img="images/gempages_466492372277003100-2cc4ec19-ffd3-44b0-8f1e-94d1f9fd9b49_800x800.webp">
-                            <div class="chip-color" style="background: linear-gradient(130deg, #F5F0E8 0%, #E8DFD0 50%, #D4C5A8 100%);"></div>
-                            <span class="chip-name">Calacatta Gold</span>
+                        <div class="swatch-v2" data-image="images/swatch-calacatta-gold.webp" data-name="Calacatta Gold" data-category="marble" data-code="Marble Collection" data-color="#f2ede6">
+                            <div class="swatch-preview" style="background: url('images/swatch-calacatta-gold.webp') center/cover;"></div>
+                            <span>Calacatta Gold</span>
                         </div>
 
                         <!-- Dark Collection -->
@@ -159,23 +159,23 @@
                             <div class="chip-color" style="background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%);"></div>
                             <span class="chip-name">Midnight Black</span>
                         </div>
-                        <div class="color-chip" data-cat="dark" data-name="Charcoal" data-collection="Dark Collection" data-color="#3D3D3D" data-img="images/gempages_466492372277003100-0629076f-1975-44f8-806d-04f0d832f788_800x800.webp">
-                            <div class="chip-color" style="background: #3D3D3D;"></div>
-                            <span class="chip-name">Charcoal</span>
+                        <div class="swatch-v2" data-image="images/swatch-charcoal.webp" data-name="Charcoal" data-category="dark" data-code="Dark Collection" data-color="#2d2d2d">
+                            <div class="swatch-preview" style="background: url('images/swatch-charcoal.webp') center/cover;"></div>
+                            <span>Charcoal</span>
                         </div>
                         <div class="color-chip" data-cat="dark" data-name="Storm Gray" data-collection="Dark Collection" data-color="linear-gradient(135deg, #6B6B6B 0%, #4A4A4A 50%, #5A5A5A 100%)" data-img="images/modern-kitchen-gray-quartz-wood-slats.webp">
                             <div class="chip-color" style="background: linear-gradient(135deg, #6B6B6B 0%, #4A4A4A 50%, #5A5A5A 100%);"></div>
                             <span class="chip-name">Storm Gray</span>
                         </div>
 
-                        <!-- Warm Collection -->
-                        <div class="color-chip" data-cat="warm" data-name="Sahara Beige" data-collection="Warm Collection" data-color="#D4C4B0" data-img="images/gempages_466492372277003100-e54b6997-68a0-4862-b82a-791ba38f6535_800x800.webp">
-                            <div class="chip-color" style="background: #D4C4B0;"></div>
-                            <span class="chip-name">Sahara Beige</span>
+                        <!-- Warm Tones -->
+                        <div class="swatch-v2" data-image="images/swatch-sahara-beige.webp" data-name="Sahara Beige" data-category="warm" data-code="Warm Collection" data-color="#d4c4b0">
+                            <div class="swatch-preview" style="background: url('images/swatch-sahara-beige.webp') center/cover;"></div>
+                            <span>Sahara Beige</span>
                         </div>
-                        <div class="color-chip" data-cat="warm" data-name="Café Brown" data-collection="Warm Collection" data-color="#A08060" data-img="images/gempages_466492372277003100-16c97aa4-831d-47c0-a836-f0cca3c63325_800x800.webp">
-                            <div class="chip-color" style="background: #A08060;"></div>
-                            <span class="chip-name">Café Brown</span>
+                        <div class="swatch-v2" data-image="images/swatch-cafe-brown.webp" data-name="Café Brown" data-category="warm" data-code="Warm Collection" data-color="#a08060">
+                            <div class="swatch-preview" style="background: url('images/swatch-cafe-brown.webp') center/cover;"></div>
+                            <span>Café Brown</span>
                         </div>
                         <div class="color-chip" data-cat="warm" data-name="Ivory Coast" data-collection="Warm Collection" data-color="#EAE0D0" data-img="images/quartz-samples-gold-hardware-luxury.webp">
                             <div class="chip-color" style="background: #EAE0D0;"></div>

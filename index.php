@@ -745,53 +745,53 @@
             <div class="marquee-track">
                 <!-- First set of logos -->
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-2517d847-2fd5-4fc6-8a46-63dbe3dad237_800x800.webp" alt="Silestone® by Cosentino Logo">
+                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone® by Cosentino Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/3_800x800.webp" alt="Cambria® Quartz Logo">
+                    <img src="images/logo-cambria.webp" alt="Cambria® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/5_800x800.webp" alt="Caesarstone® Quartz Logo">
+                    <img src="images/logo-caesarstone.webp" alt="Caesarstone® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-a464f710-cdb5-4ae4-ac41-9e19ddbae446_800x800.webp" alt="Compac® Quartz Logo">
+                    <img src="images/logo-compac-quartz.webp" alt="Compac® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-45b87b85-c694-42f7-9498-e33f8406de4a_800x800.webp" alt="Viatera® by LX Hausys Logo">
+                    <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera® by LX Hausys Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/1_800x800.webp" alt="Corian® Design Logo">
+                    <img src="images/logo-corian-design.webp" alt="Corian® Design Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-045fa29f-6b93-4780-b957-8edd58d494ce_800x800.webp" alt="HanStone® Quartz Logo">
+                    <img src="images/logo-hanstone-quartz.webp" alt="HanStone® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-ddbf34ff-f246-403a-a23f-3a1624851823_800x800.webp" alt="Wilsonart® Engineered Surfaces Logo">
+                    <img src="images/logo-wilsonart.webp" alt="Wilsonart® Engineered Surfaces Logo">
                 </div>
                 <!-- Duplicate set for seamless loop -->
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-2517d847-2fd5-4fc6-8a46-63dbe3dad237_800x800.webp" alt="Silestone® by Cosentino Logo">
+                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone® by Cosentino Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/3_800x800.webp" alt="Cambria® Quartz Logo">
+                    <img src="images/logo-cambria.webp" alt="Cambria® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/5_800x800.webp" alt="Caesarstone® Quartz Logo">
+                    <img src="images/logo-caesarstone.webp" alt="Caesarstone® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-a464f710-cdb5-4ae4-ac41-9e19ddbae446_800x800.webp" alt="Compac® Quartz Logo">
+                    <img src="images/logo-compac-quartz.webp" alt="Compac® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-45b87b85-c694-42f7-9498-e33f8406de4a_800x800.webp" alt="Viatera® by LX Hausys Logo">
+                    <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera® by LX Hausys Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/1_800x800.webp" alt="Corian® Design Logo">
+                    <img src="images/logo-corian-design.webp" alt="Corian® Design Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-045fa29f-6b93-4780-b957-8edd58d494ce_800x800.webp" alt="HanStone® Quartz Logo">
+                    <img src="images/logo-hanstone-quartz.webp" alt="HanStone® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/gempages_466492372277003100-ddbf34ff-f246-403a-a23f-3a1624851823_800x800.webp" alt="Wilsonart® Engineered Surfaces Logo">
+                    <img src="images/logo-wilsonart.webp" alt="Wilsonart® Engineered Surfaces Logo">
                 </div>
             </div>
         </div>
