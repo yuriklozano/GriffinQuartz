@@ -92,8 +92,9 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>Cambria</h3>
+                    <h3><a href="cambria" style="color: inherit; text-decoration: none;">Cambria</a></h3>
                     <p>American-made quartz surfaces with unique designs and industry-leading durability. Cambria offers stunning marble-look patterns and bold contemporary styles.</p>
+                    <a href="cambria" class="btn btn-outline" style="margin-top: 1rem;">Explore Cambria</a>
                 </div>
                 <div class="feature-card">
                     <h3>Silestone by Cosentino</h3>
@@ -106,6 +107,61 @@
                 <div class="feature-card">
                     <h3>And More Premium Brands</h3>
                     <p>We also carry Viatera, Compac, Corian Quartz, and other premium brands. Visit our showroom to explore the full selection.</p>
+                </div>
+            </div>
+
+            <!-- Featured Cambria Designs Section -->
+            <div style="margin-top: 60px; padding: 3rem; background: var(--color-light); border-radius: 16px;">
+                <h2 class="section-title" style="margin-bottom: 0.5rem;">Featured: Cambria Quartz</h2>
+                <p class="section-description">America's only family-owned quartz manufacturer. Explore our most popular Cambria designs.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <a href="cambria/brittanicca" style="text-decoration: none; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%); display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.875rem;">Brittanicca</div>
+                        <div style="padding: 1rem; text-align: center;">
+                            <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #000; margin: 0 0 0.25rem;">Brittanicca</h4>
+                            <p style="font-size: 0.75rem; color: #666; margin: 0;">Best Seller</p>
+                        </div>
+                    </a>
+                    <a href="cambria/inverness-frost" style="text-decoration: none; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%); display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.875rem;">Inverness Frost</div>
+                        <div style="padding: 1rem; text-align: center;">
+                            <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #000; margin: 0 0 0.25rem;">Inverness Frost</h4>
+                            <p style="font-size: 0.75rem; color: #666; margin: 0;">#1 Best Seller</p>
+                        </div>
+                    </a>
+                    <a href="cambria/ironsbridge" style="text-decoration: none; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f5f0eb 0%, #e8e0d8 100%); display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.875rem;">Ironsbridge</div>
+                        <div style="padding: 1rem; text-align: center;">
+                            <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #000; margin: 0 0 0.25rem;">Ironsbridge</h4>
+                            <p style="font-size: 0.75rem; color: #666; margin: 0;">Warm Neutral</p>
+                        </div>
+                    </a>
+                    <a href="cambria/ella" style="text-decoration: none; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%); display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.875rem;">Ella</div>
+                        <div style="padding: 1rem; text-align: center;">
+                            <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #000; margin: 0 0 0.25rem;">Ella</h4>
+                            <p style="font-size: 0.75rem; color: #666; margin: 0;">Classic White</p>
+                        </div>
+                    </a>
+                    <a href="cambria/portrush" style="text-decoration: none; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f0f0f5 0%, #e0e0e8 100%); display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.875rem;">Portrush</div>
+                        <div style="padding: 1rem; text-align: center;">
+                            <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #000; margin: 0 0 0.25rem;">Portrush</h4>
+                            <p style="font-size: 0.75rem; color: #666; margin: 0;">Bold Veining</p>
+                        </div>
+                    </a>
+                    <a href="cambria/blackpool" style="text-decoration: none; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%); display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.875rem;">Blackpool</div>
+                        <div style="padding: 1rem; text-align: center;">
+                            <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: #000; margin: 0 0 0.25rem;">Blackpool</h4>
+                            <p style="font-size: 0.75rem; color: #666; margin: 0;">Deep Ebony</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="cambria" class="btn btn-primary">View All Cambria Designs</a>
                 </div>
             </div>
 
