@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO Meta Tags -->
-    <title>Premium Quartz Countertop Brands | Cambria, Silestone, Caesarstone & More | Griffin Quartz</title>
-    <meta name="description" content="Explore 8 premium quartz countertop brands at Griffin Quartz - South Florida's largest selection. Cambria, Silestone, Caesarstone, Viatera, HanStone, Compac, Corian & Wilsonart. 200+ colors in stock. FREE estimates.">
-    <meta name="keywords" content="quartz countertop brands, Cambria quartz, Silestone countertops, Caesarstone quartz, Viatera quartz, HanStone quartz, Compac quartz, Corian quartz, Wilsonart quartz, South Florida quartz countertops">
+    <title>Premium Quartz Countertop Brands in South Florida | Cambria, Silestone, Caesarstone | Boca Raton</title>
+    <meta name="description" content="Shop 8 premium quartz countertop brands at Griffin Quartz in Boca Raton, FL. Authorized dealer for Cambria, Silestone, Caesarstone, Viatera, HanStone & more. 200+ colors in stock. FREE estimates for Palm Beach, Broward & Miami-Dade.">
+    <meta name="keywords" content="quartz countertops Boca Raton, quartz countertops South Florida, Cambria dealer Florida, Silestone countertops Fort Lauderdale, Caesarstone Miami, quartz kitchen countertops Palm Beach, HanStone quartz Broward County, quartz bathroom vanity tops, engineered quartz surfaces Florida">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="Griffin Quartz">
     <link rel="canonical" href="https://soflocountertops.com/quartz-brands">
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+    <meta name="geo.position" content="26.3683;-80.1289">
+    <meta name="ICBM" content="26.3683, -80.1289">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://soflocountertops.com/quartz-brands">
     <meta property="og:title" content="Premium Quartz Countertop Brands | Griffin Quartz South Florida">
-    <meta property="og:description" content="South Florida's largest selection of premium quartz countertops. 8 world-class brands, 200+ colors in stock. Cambria, Silestone, Caesarstone & more.">
+    <meta property="og:description" content="South Florida's largest selection of premium quartz countertops. 8 world-class brands, 200+ colors in stock. Cambria, Silestone, Caesarstone & more. Visit our Boca Raton showroom.">
     <meta property="og:image" content="https://soflocountertops.com/images/quartz-brands-hero.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Premium quartz countertop brands at Griffin Quartz showroom in Boca Raton, Florida">
     <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Premium Quartz Countertop Brands | Griffin Quartz">
-    <meta name="twitter:description" content="8 world-class quartz brands, 200+ colors in stock. South Florida's premier quartz countertop destination.">
+    <meta name="twitter:description" content="8 world-class quartz brands, 200+ colors in stock. South Florida's premier quartz countertop destination. Visit our Boca Raton showroom.">
     <meta name="twitter:image" content="https://soflocountertops.com/images/quartz-brands-hero.webp">
+    <meta name="twitter:image:alt" content="Premium quartz countertop brands at Griffin Quartz">
 
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,20 +47,20 @@
     {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Premium Quartz Countertop Brands",
-        "description": "South Florida's largest selection of premium quartz countertop brands including Cambria, Silestone, Caesarstone, and more.",
+        "name": "Premium Quartz Countertop Brands in South Florida",
+        "description": "South Florida's largest selection of premium quartz countertop brands including Cambria, Silestone, Caesarstone, and more. Visit our Boca Raton showroom.",
         "url": "https://soflocountertops.com/quartz-brands",
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "Cambria Quartz", "url": "https://soflocountertops.com/cambria"},
-                {"@type": "ListItem", "position": 2, "name": "Silestone by Cosentino"},
-                {"@type": "ListItem", "position": 3, "name": "Caesarstone"},
-                {"@type": "ListItem", "position": 4, "name": "Viatera by LX Hausys"},
-                {"@type": "ListItem", "position": 5, "name": "HanStone Quartz"},
-                {"@type": "ListItem", "position": 6, "name": "Compac Quartz"},
-                {"@type": "ListItem", "position": 7, "name": "Corian Quartz"},
-                {"@type": "ListItem", "position": 8, "name": "Wilsonart Quartz"}
+                {"@type": "ListItem", "position": 1, "name": "Cambria Quartz Countertops", "url": "https://soflocountertops.com/cambria"},
+                {"@type": "ListItem", "position": 2, "name": "Silestone by Cosentino Countertops", "url": "https://soflocountertops.com/quartz-brands#silestone"},
+                {"@type": "ListItem", "position": 3, "name": "Caesarstone Quartz Countertops", "url": "https://soflocountertops.com/quartz-brands#caesarstone"},
+                {"@type": "ListItem", "position": 4, "name": "Viatera by LX Hausys Countertops", "url": "https://soflocountertops.com/quartz-brands#viatera"},
+                {"@type": "ListItem", "position": 5, "name": "HanStone Quartz Countertops", "url": "https://soflocountertops.com/quartz-brands#hanstone"},
+                {"@type": "ListItem", "position": 6, "name": "Compac Quartz Countertops", "url": "https://soflocountertops.com/quartz-brands#compac"},
+                {"@type": "ListItem", "position": 7, "name": "Corian Quartz Countertops", "url": "https://soflocountertops.com/quartz-brands#corian"},
+                {"@type": "ListItem", "position": 8, "name": "Wilsonart Quartz Countertops", "url": "https://soflocountertops.com/quartz-brands#wilsonart"}
             ]
         },
         "provider": {
@@ -65,7 +74,84 @@
                 "addressRegion": "FL",
                 "postalCode": "33487",
                 "addressCountry": "US"
-            }
+            },
+            "areaServed": [
+                {"@type": "City", "name": "Boca Raton"},
+                {"@type": "City", "name": "Fort Lauderdale"},
+                {"@type": "City", "name": "Miami"},
+                {"@type": "City", "name": "West Palm Beach"},
+                {"@type": "City", "name": "Delray Beach"},
+                {"@type": "City", "name": "Coral Springs"},
+                {"@type": "AdministrativeArea", "name": "Palm Beach County"},
+                {"@type": "AdministrativeArea", "name": "Broward County"},
+                {"@type": "AdministrativeArea", "name": "Miami-Dade County"}
+            ]
+        }
+    }
+    </script>
+
+    <!-- Product Schema for Featured Brands -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Cambria Quartz Countertops",
+        "description": "American-made premium quartz countertops with lifetime warranty. 200+ designs available including Brittanicca, Inverness Frost, and Ella.",
+        "brand": {"@type": "Brand", "name": "Cambria"},
+        "category": "Quartz Countertops",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "75",
+            "highPrice": "150",
+            "offerCount": "200",
+            "availability": "https://schema.org/InStock",
+            "areaServed": {"@type": "State", "name": "Florida"}
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "87"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Silestone Quartz Countertops",
+        "description": "World's leading quartz brand by Cosentino with exclusive N-Boost technology for superior stain resistance. HybriQ+ sustainable surfaces available.",
+        "brand": {"@type": "Brand", "name": "Silestone by Cosentino"},
+        "category": "Quartz Countertops",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "55",
+            "highPrice": "125",
+            "offerCount": "150",
+            "availability": "https://schema.org/InStock",
+            "areaServed": {"@type": "State", "name": "Florida"}
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Caesarstone Quartz Countertops",
+        "description": "The original engineered quartz surface since 1987. Award-winning designs in the Metropolitan and Supernatural collections with lifetime warranty.",
+        "brand": {"@type": "Brand", "name": "Caesarstone"},
+        "category": "Quartz Countertops",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "50",
+            "highPrice": "120",
+            "offerCount": "100",
+            "availability": "https://schema.org/InStock",
+            "areaServed": {"@type": "State", "name": "Florida"}
         }
     }
     </script>
@@ -88,34 +174,66 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What quartz countertop brands do you carry?",
+                "name": "What quartz countertop brands do you carry in South Florida?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Griffin Quartz carries 8 premium quartz brands: Cambria (American-made), Silestone by Cosentino, Caesarstone, Viatera by LX Hausys, HanStone Quartz, Compac, Corian Quartz, and Wilsonart. We have over 200 colors and patterns in stock."
+                    "text": "Griffin Quartz in Boca Raton carries 8 premium quartz brands: Cambria (American-made), Silestone by Cosentino, Caesarstone, Viatera by LX Hausys, HanStone Quartz, Compac, Corian Quartz, and Wilsonart. We have over 200 colors and patterns in stock, serving Palm Beach, Broward, and Miami-Dade counties."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Which quartz brand is best for kitchens?",
+                "name": "Which quartz brand is best for kitchen countertops?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "All our quartz brands are excellent for kitchens. Cambria is known for unique American-made designs and lifetime warranty. Silestone features N-Boost technology for superior stain resistance. Caesarstone pioneered engineered quartz. The best choice depends on your style preferences, budget, and specific needs."
+                    "text": "All our quartz brands are excellent for kitchens. Cambria is known for unique American-made designs and lifetime warranty. Silestone features N-Boost technology for superior stain resistance. Caesarstone pioneered engineered quartz. The best choice depends on your style preferences, budget, and specific needs—visit our Boca Raton showroom and we'll help you decide."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is quartz more expensive than granite?",
+                "name": "How much do quartz countertops cost in Florida?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Quartz and granite are comparably priced, typically ranging from $50-$150 per square foot installed. Quartz offers advantages including no sealing required, consistent patterns, and superior stain resistance. Premium brands like Cambria may cost more but offer lifetime warranties."
+                    "text": "Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the brand and complexity of installation. Entry-level brands like Wilsonart start around $50/sq ft, while premium Cambria designs can reach $150/sq ft. We offer free estimates for all projects in Palm Beach, Broward, and Miami-Dade counties."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Do you offer samples of quartz countertops?",
+                "name": "Do you offer free quartz countertop samples?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! Visit our Boca Raton showroom to see full slabs and take home samples from any of our 8 quartz brands. We have over 200 colors and patterns to choose from. Call (720) 324-1436 to schedule a visit."
+                    "text": "Yes! Visit our Boca Raton showroom at 1021 S Rogers Cir #18 to see full slabs and take home free samples from any of our 8 quartz brands. We have over 200 colors and patterns to choose from. Call (720) 324-1436 to schedule a visit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas do you serve for quartz countertop installation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Griffin Quartz provides professional quartz countertop installation throughout South Florida, including Boca Raton, Delray Beach, Boynton Beach, West Palm Beach, Fort Lauderdale, Coral Springs, Parkland, Pompano Beach, Hollywood, and Miami. We serve all of Palm Beach County, Broward County, and Miami-Dade County."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does quartz countertop installation take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most quartz countertop installations in South Florida are completed in 1-2 days. The total timeline from template to installation is typically 1-2 weeks, depending on slab availability and project complexity. We offer fast-track installation in as little as 1 week for in-stock materials."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Cambria quartz worth the extra cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cambria is a premium American-made quartz brand known for unique designs, 93% pure natural quartz content, and the industry's only transferable lifetime warranty. While it costs more than entry-level brands ($75-$150/sq ft), the quality, durability, and warranty protection make it an excellent long-term investment for homeowners in South Florida."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between Silestone and Caesarstone?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Silestone (by Cosentino) features exclusive N-Boost technology for enhanced stain resistance and HybriQ+ sustainable manufacturing. Caesarstone is the original engineered quartz brand (since 1987) known for trendsetting designs and consistent quality. Both offer excellent durability and come with strong warranties. Visit our Boca Raton showroom to compare them side-by-side."
                 }
             }
         ]
@@ -123,6 +241,69 @@
     </script>
 
     <style>
+        /* Skip Navigation Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 10000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Visually Hidden for Screen Readers */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus Visible Styles for Accessibility */
+        *:focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        /* High Contrast Button Styles for Hero */
+        .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.15) !important;
+            border: 2px solid #fff !important;
+            color: #fff !important;
+            padding: 0.875rem 1.75rem;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-hero-secondary:hover,
+        .btn-hero-secondary:focus {
+            background: rgba(255, 255, 255, 0.25) !important;
+            transform: translateY(-2px);
+        }
+
         /* Quartz Brands Page Specific Styles */
         .brands-hero {
             position: relative;
@@ -772,8 +953,11 @@
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Announcement Bar -->
-    <div class="announcement-bar">
+    <div class="announcement-bar" role="banner">
         <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
     </div>
 
@@ -843,361 +1027,391 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="brands-hero">
-        <div class="hero-background">
-            <img src="images/hotel-lobby-white-marble-planters-tropical.webp" alt="Premium quartz countertop selection" loading="eager">
+    <section class="brands-hero" id="main-content" role="region" aria-label="Premium Quartz Brands Hero">
+        <div class="hero-background" aria-hidden="true">
+            <img src="images/hotel-lobby-white-marble-planters-tropical.webp" alt="" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-container">
             <div class="hero-badge">
-                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem" aria-hidden="true"></i>
                 South Florida's Premier Quartz Destination
             </div>
             <h1>Premium <span>Quartz Brands</span> for Every Style</h1>
-            <p class="hero-subtitle">Discover South Florida's largest selection of world-class quartz countertops. From American-made Cambria to globally renowned Silestone and Caesarstone, we carry only the finest brands.</p>
+            <p class="hero-subtitle">Discover South Florida's largest selection of world-class quartz countertops. From American-made Cambria to globally renowned Silestone and Caesarstone, we carry only the finest brands for kitchens and bathrooms in Boca Raton, Fort Lauderdale, and Miami.</p>
 
-            <div class="hero-stats-row">
-                <div class="hero-stat-item">
-                    <div class="stat-number">8</div>
-                    <div class="stat-label">Premium Brands</div>
+            <div class="hero-stats-row" role="list" aria-label="Key statistics">
+                <div class="hero-stat-item" role="listitem">
+                    <div class="stat-number" aria-hidden="true">8</div>
+                    <div class="stat-label"><span class="visually-hidden">8</span> Premium Brands</div>
                 </div>
-                <div class="hero-stat-item">
-                    <div class="stat-number">200+</div>
-                    <div class="stat-label">Colors In Stock</div>
+                <div class="hero-stat-item" role="listitem">
+                    <div class="stat-number" aria-hidden="true">200+</div>
+                    <div class="stat-label"><span class="visually-hidden">Over 200</span> Colors In Stock</div>
                 </div>
-                <div class="hero-stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Satisfaction Guaranteed</div>
+                <div class="hero-stat-item" role="listitem">
+                    <div class="stat-number" aria-hidden="true">100%</div>
+                    <div class="stat-label"><span class="visually-hidden">100%</span> Satisfaction Guaranteed</div>
                 </div>
             </div>
 
             <div class="hero-cta-buttons">
-                <a href="/#contact-form" class="btn btn-primary">Get Free Estimate</a>
-                <a href="tel:17203241436" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); color: #fff;">Call (720) 324-1436</a>
+                <a href="/#contact-form" class="btn btn-primary" aria-label="Get a free quartz countertop estimate">Get Free Estimate</a>
+                <a href="tel:17203241436" class="btn-hero-secondary" aria-label="Call Griffin Quartz at 720-324-1436">
+                    <i class="bi bi-telephone-fill" aria-hidden="true"></i> Call (720) 324-1436
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Brand Logos Strip -->
-    <section class="brand-logos-strip">
+    <section class="brand-logos-strip" role="region" aria-labelledby="brands-heading">
         <div class="container">
-            <h2>Authorized Dealer for World-Class Quartz Brands</h2>
-            <div class="brand-logos-grid">
-                <a href="cambria/" class="brand-logo-item" title="Cambria Quartz">
-                    <img src="images/logo-cambria.webp" alt="Cambria Logo" loading="lazy">
+            <h2 id="brands-heading">Authorized Dealer for World-Class Quartz Brands</h2>
+            <nav class="brand-logos-grid" aria-label="Quartz brand navigation">
+                <a href="cambria/" class="brand-logo-item" aria-label="View Cambria quartz countertops">
+                    <img src="images/logo-cambria.webp" alt="Cambria - American-made premium quartz" loading="lazy">
                 </a>
-                <a href="#silestone" class="brand-logo-item" title="Silestone by Cosentino">
-                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone Cosentino Logo" loading="lazy">
+                <a href="#silestone" class="brand-logo-item" aria-label="View Silestone quartz countertops">
+                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone by Cosentino - World's leading quartz brand" loading="lazy">
                 </a>
-                <a href="#caesarstone" class="brand-logo-item" title="Caesarstone">
-                    <img src="images/logo-caesarstone.webp" alt="Caesarstone Logo" loading="lazy">
+                <a href="#caesarstone" class="brand-logo-item" aria-label="View Caesarstone quartz countertops">
+                    <img src="images/logo-caesarstone.webp" alt="Caesarstone - The original engineered quartz since 1987" loading="lazy">
                 </a>
-                <a href="#viatera" class="brand-logo-item" title="Viatera by LX Hausys">
-                    <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera LX Hausys Logo" loading="lazy">
+                <a href="#viatera" class="brand-logo-item" aria-label="View Viatera quartz countertops">
+                    <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera by LX Hausys - Premium Korean quartz surfaces" loading="lazy">
                 </a>
-                <a href="#hanstone" class="brand-logo-item" title="HanStone Quartz">
-                    <img src="images/logo-hanstone-quartz.webp" alt="HanStone Quartz Logo" loading="lazy">
+                <a href="#hanstone" class="brand-logo-item" aria-label="View HanStone quartz countertops">
+                    <img src="images/logo-hanstone-quartz.webp" alt="HanStone Quartz by Hyundai L&C" loading="lazy">
                 </a>
-                <a href="#compac" class="brand-logo-item" title="Compac Quartz">
-                    <img src="images/logo-compac-quartz.webp" alt="Compac Quartz Logo" loading="lazy">
+                <a href="#compac" class="brand-logo-item" aria-label="View Compac quartz countertops">
+                    <img src="images/logo-compac-quartz.webp" alt="Compac - Spanish-made sustainable quartz" loading="lazy">
                 </a>
-                <a href="#corian" class="brand-logo-item" title="Corian Quartz">
-                    <img src="images/logo-corian-design.webp" alt="Corian Design Logo" loading="lazy">
+                <a href="#corian" class="brand-logo-item" aria-label="View Corian quartz countertops">
+                    <img src="images/logo-corian-design.webp" alt="Corian Quartz - DuPont legacy brand" loading="lazy">
                 </a>
-                <a href="#wilsonart" class="brand-logo-item" title="Wilsonart Quartz">
-                    <img src="images/logo-wilsonart.webp" alt="Wilsonart Logo" loading="lazy">
+                <a href="#wilsonart" class="brand-logo-item" aria-label="View Wilsonart quartz countertops">
+                    <img src="images/logo-wilsonart.webp" alt="Wilsonart - American surfaces since 1956" loading="lazy">
                 </a>
-            </div>
+            </nav>
         </div>
     </section>
 
     <!-- Why Quartz Section -->
-    <section class="why-quartz-section">
+    <section class="why-quartz-section" role="region" aria-labelledby="why-quartz-heading">
         <div class="container">
-            <h2 class="section-title">Why Choose Quartz Countertops?</h2>
-            <p class="section-description">Engineered quartz combines natural beauty with superior performance, making it the preferred choice for modern kitchens and bathrooms.</p>
+            <h2 class="section-title" id="why-quartz-heading">Why Choose Quartz Countertops?</h2>
+            <p class="section-description">Engineered quartz combines natural beauty with superior performance, making it the preferred choice for modern kitchens and bathrooms in South Florida homes.</p>
 
-            <div class="why-quartz-grid">
-                <div class="why-quartz-card">
-                    <div class="why-quartz-icon">
+            <div class="why-quartz-grid" role="list">
+                <article class="why-quartz-card" role="listitem">
+                    <div class="why-quartz-icon" aria-hidden="true">
                         <i class="bi bi-shield-check"></i>
                     </div>
                     <h3>Superior Durability</h3>
-                    <p>93% natural quartz makes these surfaces incredibly hard, scratch-resistant, and built to last a lifetime.</p>
-                </div>
-                <div class="why-quartz-card">
-                    <div class="why-quartz-icon">
+                    <p>93% natural quartz makes these surfaces incredibly hard, scratch-resistant, and built to last a lifetime in Florida's climate.</p>
+                </article>
+                <article class="why-quartz-card" role="listitem">
+                    <div class="why-quartz-icon" aria-hidden="true">
                         <i class="bi bi-droplet-half"></i>
                     </div>
                     <h3>Stain Resistant</h3>
-                    <p>Non-porous surface resists stains from wine, coffee, oils, and everyday spills without sealing.</p>
-                </div>
-                <div class="why-quartz-card">
-                    <div class="why-quartz-icon">
+                    <p>Non-porous surface resists stains from wine, coffee, oils, and everyday spills without sealing—perfect for busy kitchens.</p>
+                </article>
+                <article class="why-quartz-card" role="listitem">
+                    <div class="why-quartz-icon" aria-hidden="true">
                         <i class="bi bi-brush"></i>
                     </div>
                     <h3>Low Maintenance</h3>
-                    <p>Simply wipe clean with soap and water. No sealing, polishing, or special care required.</p>
-                </div>
-                <div class="why-quartz-card">
-                    <div class="why-quartz-icon">
+                    <p>Simply wipe clean with soap and water. No sealing, polishing, or special care required—ideal for South Florida's humidity.</p>
+                </article>
+                <article class="why-quartz-card" role="listitem">
+                    <div class="why-quartz-icon" aria-hidden="true">
                         <i class="bi bi-palette"></i>
                     </div>
                     <h3>Endless Designs</h3>
-                    <p>From marble-look veining to solid colors and natural stone patterns—find your perfect match.</p>
-                </div>
+                    <p>From marble-look veining to solid colors and natural stone patterns—200+ options at our Boca Raton showroom.</p>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Featured Brands Section -->
-    <section class="featured-brands-section" id="all-brands">
+    <section class="featured-brands-section" id="all-brands" role="region" aria-labelledby="featured-brands-heading">
         <div class="container">
-            <h2 class="section-title">Our Premium Quartz Brands</h2>
-            <p class="section-description">We've partnered with the world's leading quartz manufacturers to bring you an unmatched selection of quality, style, and innovation.</p>
+            <h2 class="section-title" id="featured-brands-heading">Our Premium Quartz Brands</h2>
+            <p class="section-description">We've partnered with the world's leading quartz manufacturers to bring South Florida an unmatched selection of quality, style, and innovation.</p>
 
             <!-- Cambria - Featured Brand -->
-            <a href="cambria/" class="brand-card" id="cambria">
+            <a href="cambria/" class="brand-card" id="cambria" aria-label="Explore Cambria quartz countertops - American made with lifetime warranty">
                 <div class="brand-card-logo">
-                    <img src="images/logo-cambria-gold.webp" alt="Cambria Logo">
+                    <img src="images/logo-cambria-gold.webp" alt="Cambria - America's only family-owned quartz manufacturer">
                 </div>
                 <div class="brand-card-content">
                     <div class="brand-tagline">American Made | Family Owned</div>
-                    <h3>Cambria</h3>
-                    <p>America's only family-owned quartz manufacturer, Cambria creates stunning surfaces with 93% pure natural quartz. Known for innovative designs like Brittanicca and Inverness Frost, Cambria offers the industry's only transferable lifetime warranty.</p>
-                    <div class="brand-features">
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> Lifetime Warranty</span>
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> Made in USA</span>
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> 200+ Designs</span>
+                    <h3>Cambria Quartz Countertops</h3>
+                    <p>America's only family-owned quartz manufacturer, Cambria creates stunning surfaces with 93% pure natural quartz. Known for innovative designs like Brittanicca and Inverness Frost, Cambria offers the industry's only transferable lifetime warranty. Popular choice for South Florida kitchens.</p>
+                    <div class="brand-features" role="list" aria-label="Cambria features">
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Lifetime Warranty</span>
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Made in USA</span>
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> 200+ Designs</span>
                     </div>
-                    <span class="brand-card-link">Explore Cambria Collection <i class="bi bi-arrow-right"></i></span>
+                    <span class="brand-card-link">Explore Cambria Collection <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
                 </div>
             </a>
 
             <!-- Silestone -->
-            <div class="brand-card" id="silestone">
+            <article class="brand-card" id="silestone" aria-labelledby="silestone-heading">
                 <div class="brand-card-logo">
-                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone by Cosentino Logo">
+                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone by Cosentino - World's leading quartz brand">
                 </div>
                 <div class="brand-card-content">
                     <div class="brand-tagline">N-Boost Technology | Global Leader</div>
-                    <h3>Silestone by Cosentino</h3>
-                    <p>The world's leading quartz brand, Silestone pioneered the engineered stone category. Their exclusive N-Boost technology provides enhanced stain resistance and deeper color intensity. From classic Calacatta looks to bold contemporary designs.</p>
-                    <div class="brand-features">
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> N-Boost Technology</span>
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> 25-Year Warranty</span>
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> HybriQ+ Technology</span>
+                    <h3 id="silestone-heading">Silestone by Cosentino Countertops</h3>
+                    <p>The world's leading quartz brand, Silestone pioneered the engineered stone category. Their exclusive N-Boost technology provides enhanced stain resistance and deeper color intensity. From classic Calacatta looks to bold contemporary designs—available at our Boca Raton showroom.</p>
+                    <div class="brand-features" role="list" aria-label="Silestone features">
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> N-Boost Technology</span>
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> 25-Year Warranty</span>
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> HybriQ+ Technology</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Caesarstone -->
-            <div class="brand-card" id="caesarstone">
+            <article class="brand-card" id="caesarstone" aria-labelledby="caesarstone-heading">
                 <div class="brand-card-logo">
-                    <img src="images/logo-caesarstone.webp" alt="Caesarstone Logo">
+                    <img src="images/logo-caesarstone.webp" alt="Caesarstone - The original engineered quartz since 1987">
                 </div>
                 <div class="brand-card-content">
                     <div class="brand-tagline">The Original | Since 1987</div>
-                    <h3>Caesarstone</h3>
-                    <p>The pioneer of engineered quartz surfaces with over 35 years of innovation. Caesarstone is known for trendsetting designs, exceptional quality control, and surfaces that inspire modern interiors worldwide. Their Metropolitan and Supernatural collections set industry standards.</p>
-                    <div class="brand-features">
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> Industry Pioneer</span>
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> Lifetime Warranty</span>
-                        <span class="brand-feature"><i class="bi bi-check-circle-fill"></i> Award-Winning Designs</span>
+                    <h3 id="caesarstone-heading">Caesarstone Quartz Countertops</h3>
+                    <p>The pioneer of engineered quartz surfaces with over 35 years of innovation. Caesarstone is known for trendsetting designs, exceptional quality control, and surfaces that inspire modern interiors worldwide. Their Metropolitan and Supernatural collections set industry standards. In stock at our South Florida showroom.</p>
+                    <div class="brand-features" role="list" aria-label="Caesarstone features">
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Industry Pioneer</span>
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Lifetime Warranty</span>
+                        <span class="brand-feature" role="listitem"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Award-Winning Designs</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Additional Brands Grid -->
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-top: 3rem; margin-bottom: 0.5rem;">More Premium Brands We Carry</h3>
-            <p style="color: var(--color-gray); margin-bottom: 2rem;">Complete your vision with these exceptional quartz options.</p>
+            <h3 id="more-brands-heading" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-top: 3rem; margin-bottom: 0.5rem;">More Premium Brands We Carry</h3>
+            <p style="color: var(--color-gray); margin-bottom: 2rem;">Complete your vision with these exceptional quartz options—all available at our South Florida showroom.</p>
 
-            <div class="brands-grid">
+            <div class="brands-grid" role="list" aria-labelledby="more-brands-heading">
                 <!-- Viatera -->
-                <div class="brand-card-compact" id="viatera">
+                <article class="brand-card-compact" id="viatera" role="listitem" aria-labelledby="viatera-heading">
                     <div class="brand-card-compact-header">
                         <div class="brand-card-compact-logo">
-                            <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera Logo">
+                            <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera by LX Hausys - Premium Korean quartz">
                         </div>
                         <div>
-                            <h3>Viatera by LX Hausys</h3>
+                            <h4 id="viatera-heading">Viatera by LX Hausys</h4>
                             <div class="brand-origin">Korean Excellence</div>
                         </div>
                     </div>
-                    <p>Premium quartz surfaces from LX Hausys, a global materials leader. Viatera combines cutting-edge technology with elegant designs, offering exceptional value without compromising quality. Known for consistent patterns and rich colors.</p>
-                </div>
+                    <p>Premium quartz surfaces from LX Hausys, a global materials leader. Viatera combines cutting-edge technology with elegant designs, offering exceptional value without compromising quality. Known for consistent patterns and rich colors—great option for South Florida homeowners.</p>
+                </article>
 
                 <!-- HanStone -->
-                <div class="brand-card-compact" id="hanstone">
+                <article class="brand-card-compact" id="hanstone" role="listitem" aria-labelledby="hanstone-heading">
                     <div class="brand-card-compact-header">
                         <div class="brand-card-compact-logo">
-                            <img src="images/logo-hanstone-quartz.webp" alt="HanStone Logo">
+                            <img src="images/logo-hanstone-quartz.webp" alt="HanStone Quartz by Hyundai L&C">
                         </div>
                         <div>
-                            <h3>HanStone Quartz</h3>
+                            <h4 id="hanstone-heading">HanStone Quartz</h4>
                             <div class="brand-origin">Hyundai L&C</div>
                         </div>
                     </div>
-                    <p>Backed by the engineering excellence of Hyundai, HanStone delivers quartz surfaces with exceptional durability and stunning aesthetics. Their "Radianz" line features advanced technology for superior performance.</p>
-                </div>
+                    <p>Backed by the engineering excellence of Hyundai, HanStone delivers quartz surfaces with exceptional durability and stunning aesthetics. Their "Radianz" line features advanced technology for superior performance in kitchens and bathrooms.</p>
+                </article>
 
                 <!-- Compac -->
-                <div class="brand-card-compact" id="compac">
+                <article class="brand-card-compact" id="compac" role="listitem" aria-labelledby="compac-heading">
                     <div class="brand-card-compact-header">
                         <div class="brand-card-compact-logo">
-                            <img src="images/logo-compac-quartz.webp" alt="Compac Logo">
+                            <img src="images/logo-compac-quartz.webp" alt="Compac - Spanish sustainable quartz">
                         </div>
                         <div>
-                            <h3>Compac Quartz</h3>
+                            <h4 id="compac-heading">Compac Quartz</h4>
                             <div class="brand-origin">Spanish Craftsmanship</div>
                         </div>
                     </div>
                     <p>Spanish-made quartz surfaces known for sustainability and innovative design. Compac's unique "Ice of Genesis" and "Unique" collections offer extraordinary patterns that push the boundaries of engineered stone.</p>
-                </div>
+                </article>
 
                 <!-- Corian -->
-                <div class="brand-card-compact" id="corian">
+                <article class="brand-card-compact" id="corian" role="listitem" aria-labelledby="corian-heading">
                     <div class="brand-card-compact-header">
                         <div class="brand-card-compact-logo">
-                            <img src="images/logo-corian-design.webp" alt="Corian Design Logo">
+                            <img src="images/logo-corian-design.webp" alt="Corian Quartz - DuPont legacy brand">
                         </div>
                         <div>
-                            <h3>Corian Quartz</h3>
+                            <h4 id="corian-heading">Corian Quartz</h4>
                             <div class="brand-origin">DuPont Legacy</div>
                         </div>
                     </div>
                     <p>Backed by decades of DuPont innovation, Corian Quartz combines trusted quality with contemporary aesthetics. Their surfaces offer the natural beauty of quartz with the reliability of a proven industry leader.</p>
-                </div>
+                </article>
 
                 <!-- Wilsonart -->
-                <div class="brand-card-compact" id="wilsonart">
+                <article class="brand-card-compact" id="wilsonart" role="listitem" aria-labelledby="wilsonart-heading">
                     <div class="brand-card-compact-header">
                         <div class="brand-card-compact-logo">
-                            <img src="images/logo-wilsonart.webp" alt="Wilsonart Logo">
+                            <img src="images/logo-wilsonart.webp" alt="Wilsonart - American surfaces since 1956">
                         </div>
                         <div>
-                            <h3>Wilsonart Quartz</h3>
+                            <h4 id="wilsonart-heading">Wilsonart Quartz</h4>
                             <div class="brand-origin">American Heritage</div>
                         </div>
                     </div>
-                    <p>A trusted American surfaces company since 1956, Wilsonart brings their expertise to premium quartz. Known for realistic natural stone looks and exceptional value, perfect for both residential and commercial projects.</p>
-                </div>
+                    <p>A trusted American surfaces company since 1956, Wilsonart brings their expertise to premium quartz. Known for realistic natural stone looks and exceptional value, perfect for residential and commercial projects in South Florida.</p>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Style Categories Section -->
-    <section class="style-categories-section">
+    <section class="style-categories-section" role="region" aria-labelledby="style-heading">
         <div class="container">
-            <h2 class="section-title">Explore by Style</h2>
-            <p class="section-description">Find your perfect aesthetic across all our premium brands.</p>
+            <h2 class="section-title" id="style-heading">Explore Quartz by Style</h2>
+            <p class="section-description">Find your perfect aesthetic across all our premium brands—popular styles for South Florida homes.</p>
 
-            <div class="style-categories-grid">
-                <div class="style-category-card">
-                    <div class="card-bg" style="background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);"></div>
-                    <div class="card-overlay"></div>
+            <div class="style-categories-grid" role="list" aria-label="Quartz countertop style categories">
+                <article class="style-category-card" role="listitem">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);" aria-hidden="true"></div>
+                    <div class="card-overlay" aria-hidden="true"></div>
                     <div class="card-content">
-                        <h3>Marble Look</h3>
-                        <p>Calacatta, Carrara & Statuario</p>
+                        <h3>Marble Look Quartz</h3>
+                        <p>Calacatta, Carrara & Statuario designs</p>
                     </div>
-                </div>
-                <div class="style-category-card">
-                    <div class="card-bg" style="background: linear-gradient(135deg, #f5f0eb 0%, #e8ddd0 100%);"></div>
-                    <div class="card-overlay"></div>
+                </article>
+                <article class="style-category-card" role="listitem">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #f5f0eb 0%, #e8ddd0 100%);" aria-hidden="true"></div>
+                    <div class="card-overlay" aria-hidden="true"></div>
                     <div class="card-content">
-                        <h3>Warm Neutrals</h3>
+                        <h3>Warm Neutral Quartz</h3>
                         <p>Creams, Taupes & Warm Whites</p>
                     </div>
-                </div>
-                <div class="style-category-card">
-                    <div class="card-bg" style="background: linear-gradient(135deg, #2a2a2e 0%, #1a1a1e 100%);"></div>
-                    <div class="card-overlay"></div>
+                </article>
+                <article class="style-category-card" role="listitem">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #2a2a2e 0%, #1a1a1e 100%);" aria-hidden="true"></div>
+                    <div class="card-overlay" aria-hidden="true"></div>
                     <div class="card-content">
-                        <h3>Bold & Dark</h3>
+                        <h3>Bold & Dark Quartz</h3>
                         <p>Black, Charcoal & Deep Tones</p>
                     </div>
-                </div>
-                <div class="style-category-card">
-                    <div class="card-bg" style="background: linear-gradient(135deg, #c9c5c0 0%, #a8a49e 100%);"></div>
-                    <div class="card-overlay"></div>
+                </article>
+                <article class="style-category-card" role="listitem">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #c9c5c0 0%, #a8a49e 100%);" aria-hidden="true"></div>
+                    <div class="card-overlay" aria-hidden="true"></div>
                     <div class="card-content">
-                        <h3>Concrete & Modern</h3>
-                        <p>Industrial & Contemporary</p>
+                        <h3>Concrete & Modern Quartz</h3>
+                        <p>Industrial & Contemporary styles</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Showroom CTA Section -->
-    <section class="showroom-cta-section">
+    <section class="showroom-cta-section" role="region" aria-labelledby="showroom-heading">
         <div class="container">
             <div class="showroom-cta-box">
-                <h2>Visit Our Boca Raton Showroom</h2>
-                <p>See and touch our full quartz collection in person. Our design experts will help you compare brands, select the perfect color, and plan your project from start to finish.</p>
+                <h2 id="showroom-heading">Visit Our Boca Raton Showroom</h2>
+                <p>See and touch our full quartz collection in person at 1021 S Rogers Cir #18, Boca Raton. Our design experts will help you compare brands, select the perfect color, and plan your project—serving Palm Beach, Broward, and Miami-Dade counties.</p>
                 <div class="showroom-cta-buttons">
-                    <a href="/#contact-form" class="btn btn-primary">Schedule Showroom Visit</a>
-                    <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                    <a href="/#contact-form" class="btn btn-primary" aria-label="Schedule a visit to our Boca Raton quartz showroom">Schedule Showroom Visit</a>
+                    <a href="tel:17203241436" class="btn btn-secondary" aria-label="Call Griffin Quartz at 720-324-1436">Call (720) 324-1436</a>
                 </div>
-                <div class="showroom-features">
-                    <span class="showroom-feature"><i class="bi bi-geo-alt-fill"></i> Full Slab Display</span>
-                    <span class="showroom-feature"><i class="bi bi-person-fill"></i> Expert Consultations</span>
-                    <span class="showroom-feature"><i class="bi bi-box-seam-fill"></i> Take-Home Samples</span>
+                <div class="showroom-features" role="list" aria-label="Showroom features">
+                    <span class="showroom-feature" role="listitem"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Full Slab Display</span>
+                    <span class="showroom-feature" role="listitem"><i class="bi bi-person-fill" aria-hidden="true"></i> Expert Consultations</span>
+                    <span class="showroom-feature" role="listitem"><i class="bi bi-box-seam-fill" aria-hidden="true"></i> Take-Home Samples</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section" role="region" aria-labelledby="faq-heading">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-description">Everything you need to know about our quartz brands.</p>
+            <h2 class="section-title" id="faq-heading">Frequently Asked Questions About Quartz Countertops</h2>
+            <p class="section-description">Everything you need to know about our quartz brands and installation in South Florida.</p>
 
-            <div class="faq-list">
+            <dl class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="bi bi-question-circle-fill"></i>
-                        What quartz countertop brands do you carry?
-                    </div>
-                    <p class="faq-answer">Griffin Quartz carries 8 premium quartz brands: Cambria (American-made), Silestone by Cosentino, Caesarstone, Viatera by LX Hausys, HanStone Quartz, Compac, Corian Quartz, and Wilsonart. We have over 200 colors and patterns in stock at our Boca Raton showroom.</p>
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        What quartz countertop brands do you carry in South Florida?
+                    </dt>
+                    <dd class="faq-answer">Griffin Quartz in Boca Raton carries 8 premium quartz brands: Cambria (American-made), Silestone by Cosentino, Caesarstone, Viatera by LX Hausys, HanStone Quartz, Compac, Corian Quartz, and Wilsonart. We have over 200 colors and patterns in stock, serving Palm Beach, Broward, and Miami-Dade counties.</dd>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="bi bi-question-circle-fill"></i>
-                        Which quartz brand is best for kitchens?
-                    </div>
-                    <p class="faq-answer">All our quartz brands are excellent for kitchens. Cambria is known for unique American-made designs and lifetime warranty. Silestone features N-Boost technology for superior stain resistance. Caesarstone pioneered engineered quartz. The best choice depends on your style preferences, budget, and specific needs—visit our showroom and we'll help you decide.</p>
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        Which quartz brand is best for kitchen countertops?
+                    </dt>
+                    <dd class="faq-answer">All our quartz brands are excellent for kitchens. Cambria is known for unique American-made designs and lifetime warranty. Silestone features N-Boost technology for superior stain resistance. Caesarstone pioneered engineered quartz. The best choice depends on your style preferences, budget, and specific needs—visit our Boca Raton showroom and we'll help you decide.</dd>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="bi bi-question-circle-fill"></i>
-                        Is quartz more expensive than granite?
-                    </div>
-                    <p class="faq-answer">Quartz and granite are comparably priced, typically ranging from $50-$150 per square foot installed. Quartz offers advantages including no sealing required, consistent patterns, and superior stain resistance. Premium brands like Cambria may cost more but offer lifetime warranties and unique designs.</p>
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        How much do quartz countertops cost in Florida?
+                    </dt>
+                    <dd class="faq-answer">Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the brand and complexity of installation. Entry-level brands like Wilsonart start around $50/sq ft, while premium Cambria designs can reach $150/sq ft. We offer free estimates for all projects in Palm Beach, Broward, and Miami-Dade counties.</dd>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="bi bi-question-circle-fill"></i>
-                        Do you offer samples of quartz countertops?
-                    </div>
-                    <p class="faq-answer">Yes! Visit our Boca Raton showroom to see full slabs and take home samples from any of our 8 quartz brands. We have over 200 colors and patterns to choose from. Call (720) 324-1436 to schedule a visit.</p>
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        Do you offer free quartz countertop samples?
+                    </dt>
+                    <dd class="faq-answer">Yes! Visit our Boca Raton showroom at 1021 S Rogers Cir #18 to see full slabs and take home free samples from any of our 8 quartz brands. We have over 200 colors and patterns to choose from. Call <a href="tel:7203241436">(720) 324-1436</a> to schedule a visit.</dd>
                 </div>
-            </div>
+                <div class="faq-item">
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        What areas do you serve for quartz countertop installation?
+                    </dt>
+                    <dd class="faq-answer">Griffin Quartz provides professional quartz countertop installation throughout South Florida, including Boca Raton, Delray Beach, Boynton Beach, West Palm Beach, Fort Lauderdale, Coral Springs, Parkland, Pompano Beach, Hollywood, and Miami. We serve all of Palm Beach County, Broward County, and Miami-Dade County.</dd>
+                </div>
+                <div class="faq-item">
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        How long does quartz countertop installation take?
+                    </dt>
+                    <dd class="faq-answer">Most quartz countertop installations in South Florida are completed in 1-2 days. The total timeline from template to installation is typically 1-2 weeks, depending on slab availability and project complexity. We offer fast-track installation in as little as 1 week for in-stock materials.</dd>
+                </div>
+                <div class="faq-item">
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        Is Cambria quartz worth the extra cost?
+                    </dt>
+                    <dd class="faq-answer">Cambria is a premium American-made quartz brand known for unique designs, 93% pure natural quartz content, and the industry's only transferable lifetime warranty. While it costs more than entry-level brands ($75-$150/sq ft), the quality, durability, and warranty protection make it an excellent long-term investment for homeowners in South Florida.</dd>
+                </div>
+                <div class="faq-item">
+                    <dt class="faq-question">
+                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                        What is the difference between Silestone and Caesarstone?
+                    </dt>
+                    <dd class="faq-answer">Silestone (by Cosentino) features exclusive N-Boost technology for enhanced stain resistance and HybriQ+ sustainable manufacturing. Caesarstone is the original engineered quartz brand (since 1987) known for trendsetting designs and consistent quality. Both offer excellent durability and come with strong warranties. Visit our Boca Raton showroom to compare them side-by-side.</dd>
+                </div>
+            </dl>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Visit Our Showroom at Englert Arts Inc.</h4>
-                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
+                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener noreferrer" aria-label="Get directions to Griffin Quartz showroom in Boca Raton (opens in new tab)">
                         1021 S Rogers Cir #18, Boca Raton, FL 33487
                     </a>
                 </div>
-                <div class="footer-col">
+                <nav class="footer-col" aria-label="Quartz brands">
                     <h4>Quartz Brands</h4>
                     <ul>
                         <li><a href="cambria/">Cambria</a></li>
@@ -1205,8 +1419,8 @@
                         <li><a href="#caesarstone">Caesarstone</a></li>
                         <li><a href="#all-brands">All Brands</a></li>
                     </ul>
-                </div>
-                <div class="footer-col">
+                </nav>
+                <nav class="footer-col" aria-label="Company links">
                     <h4>Griffin Quartz</h4>
                     <ul>
                         <li><a href="quartz-brands">Product Selection</a></li>
@@ -1214,11 +1428,11 @@
                         <li><a href="gallery">Inspiration Gallery</a></li>
                         <li><a href="about">About Us</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-col">
                     <h4>Contact Us</h4>
-                    <p><a href="tel:7203241436">(720) 324-1436</a></p>
-                    <p><a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
+                    <p><a href="tel:7203241436" aria-label="Call Griffin Quartz">(720) 324-1436</a></p>
+                    <p><a href="mailto:info@griffinquartz.com" aria-label="Email Griffin Quartz">info@griffinquartz.com</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
