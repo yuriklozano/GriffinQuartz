@@ -462,33 +462,95 @@
         </div>
     </section>
 
-    <!-- Explore Cards Section -->
-    <section class="explore-section">
-        <div class="container">
-            <h2 class="section-title">Discover Luxury Quartz Collections</h2>
-            <div class="explore-grid">
-                <a href="kitchen-bath" class="explore-card">
-                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white kitchen with marble countertops and gold accents" loading="lazy">
-                    <div class="explore-card-content">
-                        <h3>Kitchens & Baths</h3>
-                        <span class="explore-link">Explore Collection</span>
+    <!-- Luxury Service Showcase Section -->
+    <section class="luxury-showcase-section">
+        <div class="luxury-showcase-header">
+            <span class="luxury-badge">Bespoke Quartz Solutions</span>
+            <h2>Curated Collections for Discerning Clients</h2>
+            <p>From intimate bathroom retreats to expansive commercial spaces, our master craftsmen deliver precision-engineered quartz surfaces tailored to your vision.</p>
+        </div>
+
+        <div class="luxury-showcase-grid">
+            <!-- Kitchen Countertops -->
+            <a href="kitchen-countertops" class="luxury-showcase-card">
+                <div class="luxury-showcase-image">
+                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white kitchen with quartz countertops, arched windows and gold fixtures" loading="lazy">
+                    <div class="luxury-showcase-overlay"></div>
+                </div>
+                <div class="luxury-showcase-content">
+                    <span class="luxury-showcase-label">Residential</span>
+                    <h3>Kitchen Countertops</h3>
+                    <p>Transform your culinary space with stunning quartz islands, waterfall edges, and seamless perimeter countertops. Precision-crafted for South Florida's most discerning homeowners.</p>
+                    <div class="luxury-showcase-features">
+                        <span><i class="bi bi-check2"></i> Waterfall Edges</span>
+                        <span><i class="bi bi-check2"></i> Custom Islands</span>
+                        <span><i class="bi bi-check2"></i> Backsplashes</span>
                     </div>
-                </a>
-                <a href="locations" class="explore-card">
+                    <span class="luxury-showcase-link">Design Your Kitchen <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Bathroom Vanity Countertops -->
+            <a href="bathroom-vanity-countertops" class="luxury-showcase-card">
+                <div class="luxury-showcase-image">
+                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Luxury bathroom with black marble vanity and gold fixtures" loading="lazy">
+                    <div class="luxury-showcase-overlay"></div>
+                </div>
+                <div class="luxury-showcase-content">
+                    <span class="luxury-showcase-label">Residential</span>
+                    <h3>Bathroom Vanity Countertops</h3>
+                    <p>Elevate your private sanctuary with spa-inspired quartz vanities, floating shelves, and elegant shower surrounds. Non-porous surfaces perfect for South Florida's humidity.</p>
+                    <div class="luxury-showcase-features">
+                        <span><i class="bi bi-check2"></i> Single & Double Vanities</span>
+                        <span><i class="bi bi-check2"></i> Shower Surrounds</span>
+                        <span><i class="bi bi-check2"></i> Tub Decks</span>
+                    </div>
+                    <span class="luxury-showcase-link">Design Your Bathroom <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Outdoor Countertops -->
+            <a href="outdoor-countertops" class="luxury-showcase-card">
+                <div class="luxury-showcase-image">
                     <img src="images/rooftop-outdoor-kitchen-ocean-sunset.webp" alt="Rooftop outdoor kitchen with quartz countertops and ocean sunset view" loading="lazy">
-                    <div class="explore-card-content">
-                        <h3>Outdoor Living</h3>
-                        <span class="explore-link">Explore Collection</span>
+                    <div class="luxury-showcase-overlay"></div>
+                </div>
+                <div class="luxury-showcase-content">
+                    <span class="luxury-showcase-label">Outdoor Living</span>
+                    <h3>Outdoor Kitchen Countertops</h3>
+                    <p>Create the ultimate alfresco entertaining experience with UV-resistant quartz surfaces engineered for Florida's sun, salt air, and coastal lifestyle.</p>
+                    <div class="luxury-showcase-features">
+                        <span><i class="bi bi-check2"></i> Pool Bars</span>
+                        <span><i class="bi bi-check2"></i> BBQ Stations</span>
+                        <span><i class="bi bi-check2"></i> Outdoor Kitchens</span>
                     </div>
-                </a>
-                <a href="gallery" class="explore-card">
-                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Luxury bathroom with black marble and gold fixtures" loading="lazy">
-                    <div class="explore-card-content">
-                        <h3>Inspiration Gallery</h3>
-                        <span class="explore-link">Explore Collection</span>
+                    <span class="luxury-showcase-link">Design Your Outdoor Space <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Commercial Countertops -->
+            <a href="commercial-countertops" class="luxury-showcase-card">
+                <div class="luxury-showcase-image">
+                    <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial bar with black and gold quartz countertops in upscale restaurant" loading="lazy">
+                    <div class="luxury-showcase-overlay"></div>
+                </div>
+                <div class="luxury-showcase-content">
+                    <span class="luxury-showcase-label">Commercial</span>
+                    <h3>Commercial Countertops</h3>
+                    <p>Premium quartz solutions for restaurants, hotels, offices, and retail spaces. Volume pricing, expedited timelines, and commercial-grade durability for high-traffic environments.</p>
+                    <div class="luxury-showcase-features">
+                        <span><i class="bi bi-check2"></i> Restaurant & Bar</span>
+                        <span><i class="bi bi-check2"></i> Hotel & Hospitality</span>
+                        <span><i class="bi bi-check2"></i> Office & Retail</span>
                     </div>
-                </a>
-            </div>
+                    <span class="luxury-showcase-link">Explore Commercial Solutions <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+
+        <div class="luxury-showcase-cta">
+            <p>Not sure which solution fits your project?</p>
+            <a href="#contact-form" class="btn btn-primary">Schedule a Free Consultation</a>
         </div>
     </section>
 
