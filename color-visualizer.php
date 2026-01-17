@@ -375,6 +375,10 @@
                                 <label for="sampleEmail">Email *</label>
                                 <input type="email" id="sampleEmail" required>
                             </div>
+                            <div class="form-group">
+                                <label for="sampleAddress">Home Address (Optional)</label>
+                                <input type="text" id="sampleAddress" placeholder="Street address for consultation visit">
+                            </div>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="sampleCity">City *</label>
