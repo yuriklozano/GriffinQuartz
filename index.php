@@ -727,31 +727,39 @@
         </div>
     </section>
 
-    <!-- Partners Section -->
+    <!-- Partners Section - Marquee -->
     <section class="partners-section">
         <div class="container">
-            <h2 class="section-title">Our Product Partners</h2>
-            <div class="partners-grid">
+            <h2 class="section-title">Trusted by South Florida's Leading Brands</h2>
+        </div>
+        <div class="partners-marquee">
+            <div class="marquee-track">
+                <!-- First set of logos -->
                 <div class="partner-logo">
-                    <img src="images/partners/cambria.png" alt="Cambria® Quartz Logo" loading="lazy">
+                    <img src="images/partners/cambria.png" alt="Cambria® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/partners/caesarstone.png" alt="Caesarstone® Quartz Logo" loading="lazy">
-                </div>
-                <!-- TODO: Add these partner logos when available
-                <div class="partner-logo">
-                    <img src="images/partners/compac.png" alt="Compac Quartz Logo" loading="lazy">
+                    <img src="images/partners/caesarstone.png" alt="Caesarstone® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/partners/viatera.png" alt="Viatera® Quartz Surfaces Logo" loading="lazy">
+                    <img src="images/partners/cambria.png" alt="Cambria® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/partners/corian.png" alt="Corian® Design Logo" loading="lazy">
+                    <img src="images/partners/caesarstone.png" alt="Caesarstone® Quartz Logo">
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="partner-logo">
+                    <img src="images/partners/cambria.png" alt="Cambria® Quartz Logo">
                 </div>
                 <div class="partner-logo">
-                    <img src="images/partners/silestone.png" alt="Silestone® by Cosentino Logo" loading="lazy">
+                    <img src="images/partners/caesarstone.png" alt="Caesarstone® Quartz Logo">
                 </div>
-                -->
+                <div class="partner-logo">
+                    <img src="images/partners/cambria.png" alt="Cambria® Quartz Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/caesarstone.png" alt="Caesarstone® Quartz Logo">
+                </div>
             </div>
         </div>
     </section>
