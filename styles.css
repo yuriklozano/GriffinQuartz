@@ -1562,6 +1562,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: var(--spacing-sm);
+    color: var(--color-white) !important;
 }
 
 .page-hero p {
@@ -1602,6 +1603,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
 .countertop-overlay {
@@ -2647,12 +2649,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Services Detail Grid - More Breathing Room */
 .services-detail-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 400px;
     gap: var(--spacing-xl);
     margin-top: var(--spacing-3xl);
 }
 
-.service-detail-card {
+/* Pantone Card */
+.pantone-card {
     background: var(--color-white);
     border-radius: 16px;
     overflow: hidden;
@@ -2671,7 +2674,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-.service-detail-card h3 {
+.pantone-name {
     font-family: var(--font-heading);
     font-size: 1.35rem;
     padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-sm);
@@ -2696,7 +2699,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: var(--spacing-3xl);
 }
 
-.neighborhood-item {
+/* Visualizer Controls V2 */
+.visualizer-controls-v2 {
     background: var(--color-white);
     padding: var(--spacing-lg);
     border-radius: 12px;
@@ -2720,6 +2724,7 @@ h1, h2, h3, h4, h5, h6 {
 .neighborhood-item p {
     font-size: 0.9rem;
     color: var(--color-gray);
+    line-height: 1.2;
 }
 
 /* Process Grid with Numbers - Luxurious Spacing */
@@ -2738,8 +2743,23 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
 }
 
-.process-number {
-    display: inline-flex;
+.room-image-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.room-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
@@ -2773,7 +2793,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-white);
 }
 
-.cta-section-full h2 {
+.room-info h4 {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: var(--spacing-md);
@@ -2817,8 +2837,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: var(--spacing-3xl);
 }
 
-.nearby-locations-grid.locations-full {
-    grid-template-columns: repeat(4, 1fr);
+.palette-colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: var(--spacing-md);
 }
 
 .nearby-location-card {
@@ -2831,8 +2853,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid transparent;
 }
 
-.nearby-location-card:hover {
-    background: var(--color-white);
+.palette-color:hover {
+    transform: scale(1.15);
+    z-index: 1;
     border-color: var(--color-accent);
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -2848,6 +2871,9 @@ h1, h2, h3, h4, h5, h6 {
 .nearby-location-card p {
     font-size: 0.9rem;
     color: var(--color-gray);
+    background: var(--color-light);
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 /* County Grid for South Florida page - Generous Padding */
@@ -2858,28 +2884,30 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: var(--spacing-3xl);
 }
 
-.county-card {
+/* Color Picker Tool */
+.color-picker-tool {
     background: var(--color-white);
     padding: var(--spacing-2xl);
     border-radius: 16px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
 }
 
-.county-card h3 {
+.color-picker-tool h3 {
     font-family: var(--font-heading);
     font-size: 1.4rem;
     margin-bottom: var(--spacing-md);
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    justify-content: center;
+    gap: 10px;
 }
 
-.county-card h3 i {
+.color-picker-tool h3 i {
     color: var(--color-accent);
     font-size: 1.5rem;
 }
 
-.county-description {
+.color-picker-tool > p {
     color: var(--color-gray);
     font-size: 1rem;
     margin-bottom: var(--spacing-lg);
@@ -2897,13 +2925,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--spacing-xs) 0;
 }
 
-.county-cities li a {
-    color: var(--color-accent);
-    font-weight: 500;
+.selected-color-slot {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    position: relative;
+    transition: all var(--transition-fast);
 }
 
-.county-cities li a:hover {
-    text-decoration: underline;
+.selected-color-slot:hover {
+    transform: scale(1.05);
 }
 
 /* FAQ Accordion - More Spacing */
@@ -2945,58 +2982,60 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .nearby-locations-grid.locations-full {
-        grid-template-columns: repeat(3, 1fr);
+.slot-hex {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.picker-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+/* Responsive Design Studio */
+@media (max-width: 1024px) {
+    .visualizer-wrapper-v2 {
+        grid-template-columns: 1fr;
     }
 
-    .county-grid {
-        grid-template-columns: 1fr;
+    .visualizer-controls-v2 {
+        position: static;
+    }
+
+    .pantone-card {
+        max-width: 100%;
+    }
+
+    .palette-gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .services-detail-grid {
+    .palette-gallery {
         grid-template-columns: 1fr;
     }
 
-    .neighborhoods-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .color-swatches-v2 {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .process-grid {
-        grid-template-columns: 1fr;
+    .selected-colors {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .nearby-locations-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .selected-color-slot {
+        width: 100px;
+        height: 100px;
     }
 
-    .nearby-locations-grid.locations-full {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cta-section-full .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-section-full .btn-lg {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .neighborhoods-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .nearby-locations-grid,
-    .nearby-locations-grid.locations-full {
-        grid-template-columns: 1fr;
-    }
-
-    .county-cities {
-        grid-template-columns: 1fr;
+    .palette-colors {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
