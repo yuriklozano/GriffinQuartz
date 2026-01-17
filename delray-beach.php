@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/project-3.webp" alt="Quartz countertops in Delray Beach Florida" loading="eager">
+            <img src="images/outdoor-kitchen-white-marble-waterfall-modern.webp" alt="Quartz countertops in Delray Beach Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

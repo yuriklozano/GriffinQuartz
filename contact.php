@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/cta-kitchen.webp" alt="Contact Griffin Quartz" loading="eager">
+            <img src="images/backyard-outdoor-kitchen-firepit-evening.webp" alt="Contact Griffin Quartz" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

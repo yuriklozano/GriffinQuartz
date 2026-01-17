@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/explore-kitchen.webp" alt="Luxury kitchen with quartz countertops" loading="eager">
+            <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Luxury kitchen with quartz countertops" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

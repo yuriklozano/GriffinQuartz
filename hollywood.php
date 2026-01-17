@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/project-1.webp" alt="Quartz countertops in Hollywood Florida" loading="eager">
+            <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Quartz countertops in Hollywood Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

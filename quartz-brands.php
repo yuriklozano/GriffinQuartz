@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/process-2.webp" alt="Premium quartz slab selection" loading="eager">
+            <img src="images/hotel-lobby-white-marble-planters-tropical.webp" alt="Premium quartz slab selection" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

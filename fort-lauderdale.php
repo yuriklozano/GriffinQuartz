@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/waterfall-kitchen.webp" alt="Quartz countertops in Fort Lauderdale Florida" loading="eager">
+            <img src="images/poolside-white-marble-island-palms-dusk.webp" alt="Quartz countertops in Fort Lauderdale Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

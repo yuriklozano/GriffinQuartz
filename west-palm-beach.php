@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/project-5.webp" alt="Quartz countertops in West Palm Beach Florida" loading="eager">
+            <img src="images/rooftop-bar-blue-marble-quartz-cityview.webp" alt="Quartz countertops in West Palm Beach Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

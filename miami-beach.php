@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/pink-kitchen.webp" alt="Quartz countertops in Miami Beach Florida" loading="eager">
+            <img src="images/coastal-kitchen-marble-island-coffered-ceiling.webp" alt="Quartz countertops in Miami Beach Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

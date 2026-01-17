@@ -63,7 +63,7 @@
                 <h1>Top 10 Best Countertop Installation Near Fort Lauderdale 2025</h1>
             </div>
 
-            <img src="../images/blog-1.webp" alt="Modern luxury kitchen with marble countertops" class="blog-featured-image" loading="eager">
+            <img src="../images/resort-poolside-outdoor-kitchen-blue-tile.webp" alt="Modern luxury kitchen with marble countertops" class="blog-featured-image" loading="eager">
 
             <div class="blog-content">
                 <p>Looking for the best countertop installation services in Fort Lauderdale? Whether you're renovating your kitchen or updating a bathroom vanity, choosing the right installer is crucial for a successful project. Here's our comprehensive guide to the top countertop installation companies serving Fort Lauderdale in 2025.</p>
