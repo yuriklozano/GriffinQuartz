@@ -222,14 +222,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="hero-location">
         <div class="hero-background">
             <img src="images/modern-kitchen-marble-island-glass-pendants.webp" alt="Luxury quartz countertops installation in Boynton Beach Florida kitchen" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz Countertops in Boynton Beach, FL</h1>
-            <p class="hero-description">Premium Quartz Installation for Kitchens, Bathrooms & Commercial Spaces</p>
+            <span class="hero-badge">Boynton Beach's #1 Quartz Installer</span>
+            <h1>Transform Your Boynton Beach Home with Stunning Quartz</h1>
+            <p class="hero-headline">Where Luxury Meets Affordability</p>
+            <p class="hero-description">Discover why Boynton Beach homeowners trust Griffin Quartz for their kitchen and bathroom transformations. Factory-direct pricing, 200+ premium colors, and installation in as little as one week.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Quote</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | 100+ Happy Boynton Beach Customers</p>
         </div>
     </section>
 
