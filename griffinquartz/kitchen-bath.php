@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your kitchen and bathroom with premium quartz countertops. Griffin Quartz offers expert installation for kitchen islands, vanities, backsplashes, and more in South Florida.">
+    <title>Quartz Countertops for Kitchens & Bathrooms | Griffin Quartz South Florida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Griffin Quartz</a>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Our Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="our-services">Countertop Services</a></li>
+                            <li><a href="quartz-brands">Quartz Product Selection</a></li>
+                            <li><a href="kitchen-bath">Countertops for Kitchens & Baths</a></li>
+                            <li><a href="commercial">Commercial Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Installation Locations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="locations">Explore All Locations</a></li>
+                            <li><a href="boca-raton">Boca Raton, FL</a></li>
+                            <li><a href="fort-lauderdale">Fort Lauderdale, FL</a></li>
+                            <li><a href="miami">Miami, FL</a></li>
+                            <li><a href="miami-beach">Miami Beach, FL</a></li>
+                            <li><a href="west-palm-beach">West Palm Beach, FL</a></li>
+                            <li><a href="delray-beach">Delray Beach, FL</a></li>
+                            <li><a href="hollywood">Hollywood, FL</a></li>
+                            <li><a href="pompano-beach">Pompano Beach, FL</a></li>
+                            <li><a href="aventura">Aventura, FL</a></li>
+                            <li><a href="coral-gables">Coral Gables, FL</a></li>
+                            <li><a href="hialeah">Hialeah, FL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="gallery" class="nav-link">Inspiration Gallery</a></li>
+                    <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="hero-background">
+            <img src="images/explore-kitchen.webp" alt="Luxury kitchen with quartz countertops" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Quartz for Kitchens & Bathrooms</h1>
+            <p class="hero-description">Create your dream space with stunning quartz surfaces</p>
+        </div>
+    </section>
+
+    <!-- Kitchen Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Kitchen Quartz Countertops</h2>
+            <p class="section-description">Your kitchen is the heart of your home. Elevate it with beautiful, durable quartz countertops that stand up to daily use while maintaining their stunning appearance.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Kitchen Islands</h3>
+                    <p>Make a statement with a stunning quartz island. We specialize in waterfall edges, extended overhangs for seating, and seamless large-format installations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Perimeter Countertops</h3>
+                    <p>Durable work surfaces that resist stains, scratches, and heat. Perfect for busy kitchens where cooking and entertaining happen daily.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Backsplashes</h3>
+                    <p>Create a cohesive look with matching quartz backsplashes. Easy to clean and maintain, with no grout lines to worry about.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Undermount Sink Cutouts</h3>
+                    <p>Expert precision cutting for undermount sinks with polished edges. We ensure perfect integration with your chosen sink style.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px;">Bathroom Quartz Countertops</h2>
+            <p class="section-description">Transform your bathroom into a spa-like retreat with elegant quartz vanity tops that resist moisture, stains, and daily wear.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Vanity Tops</h3>
+                    <p>Single or double sink vanities in any size. Quartz is ideal for bathrooms—non-porous surfaces resist water damage and mold growth.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Shower Surrounds</h3>
+                    <p>Luxurious quartz shower walls and benches that create a seamless, easy-to-clean environment for your daily routine.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tub Surrounds</h3>
+                    <p>Elegant quartz surfaces around your bathtub create a cohesive, spa-like atmosphere in your master bathroom.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom Features</h3>
+                    <p>Floating shelves, window sills, and decorative accents in matching quartz complete your bathroom's designer look.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Start Your Kitchen or Bathroom Project</h3>
+                <p>Get a free in-home consultation and estimate for your next renovation project.</p>
+                <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Visit Our Showroom at Englert Arts Inc.</h4>
+                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
+                        1021 S Rogers Cir #18, Boca Raton, FL 33487
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <h4>Griffin Quartz</h4>
+                    <ul>
+                        <li><a href="quartz-brands">Product Selection</a></li>
+                        <li><a href="kitchen-bath">Kitchens and Baths</a></li>
+                        <li><a href="gallery">Inspiration Gallery</a></li>
+                        <li><a href="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><a href="tel:7203241436">(720) 324-1436</a></p>
+                    <p><a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
