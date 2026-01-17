@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container">
             <a href="/" class="logo">Griffin Quartz</a>
-            
+
             <nav class="nav" id="mainNav">
                 <ul class="nav-list">
                     <li class="nav-item dropdown">
@@ -145,7 +145,7 @@
             <h2>New Year, New Quartz</h2>
             <p class="sale-subtitle">Select Quartz and Granite Slabs Up to 50% OFF</p>
             <a href="#contact-form" class="btn btn-primary">Lock In the Lowest Price Here</a>
-            
+
             <div class="countdown" id="countdown">
                 <div class="countdown-item">
                     <span class="countdown-number" id="days">00</span>
@@ -336,22 +336,22 @@
                 <div class="difference-text">
                     <h2>The Griffin Quartz Difference</h2>
                     <p class="difference-subtitle">Why Homeowners and Businesses Across South Florida Choose Griffin Quartz</p>
-                    
+
                     <div class="difference-item">
                         <h4>Timeless Elegance with Endless Options</h4>
                         <p>Our quartz countertops are stain-resistant, scratch-resistant, and non-porous, making them the ideal choice for busy kitchens and high-traffic commercial areas. Unlike natural stone, quartz requires minimal upkeep, allowing you to enjoy lasting beauty without the hassle of sealing or heavy maintenance.</p>
                     </div>
-                    
+
                     <div class="difference-item">
                         <h4>Built for Durability and Low Maintenance</h4>
                         <p>Our quartz countertops are stain-resistant, scratch-resistant, and non-porous, making them the ideal choice for busy kitchens and high-traffic commercial areas. Unlike natural stone, quartz requires minimal upkeep, allowing you to enjoy lasting beauty without the hassle of sealing or heavy maintenance.</p>
                     </div>
-                    
+
                     <div class="difference-item">
                         <h4>Local Expertise, Trusted by 100K Florida Property Owners</h4>
                         <p>As a South Florida-based company, Griffin Quartz understands the unique needs of South Florida homeowners and commercial clients. With decades of combined experience, our team delivers precision installation and personalized service trusted by over 100K Florida homeowners and businesses.</p>
                     </div>
-                    
+
                     <div class="difference-item">
                         <h4>Professional Installation from Start to Finish</h4>
                         <p>We provide full-service quartz solutions, handling everything from design consultation and measurement to delivery and flawless installation. Our local experts ensure a stress-free process, so you can enjoy your new quartz countertops quickly and confidently, knowing they were installed with care and expertise.</p>
