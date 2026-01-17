@@ -190,7 +190,6 @@
                             <li><a href="boca-raton">Boca Raton, FL</a></li>
                             <li><a href="boynton-beach">Boynton Beach, FL</a></li>
                             <li><a href="coconut-creek">Coconut Creek, FL</a></li>
-                            <li><a href="coral-gables">Coral Gables, FL</a></li>
                             <li><a href="coral-springs">Coral Springs, FL</a></li>
                             <li><a href="deerfield-beach">Deerfield Beach, FL</a></li>
                             <li><a href="delray-beach">Delray Beach, FL</a></li>
