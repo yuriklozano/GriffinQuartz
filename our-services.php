@@ -196,14 +196,116 @@
     </script>
 
     <style>
-        /* Services Page Styles */
+        /* ============================================== */
+        /* SERVICES PAGE SPECIFIC STYLES */
+        /* ============================================== */
+
+        /* Hero Section */
+        .services-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .services-hero .hero-background {
+            position: absolute;
+            inset: 0;
+        }
+
+        .services-hero .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .services-hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+
+        .services-hero .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+            text-align: center;
+        }
+
+        .services-hero .hero-badge {
+            display: inline-block;
+            background: rgba(253, 185, 19, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(253, 185, 19, 0.3);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 1.25rem;
+            line-height: 1.1;
+        }
+
+        .services-hero .hero-description {
+            font-size: 1.1875rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .services-hero .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .services-hero .hero-trust {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .services-hero .hero-trust i {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 768px) {
+            .services-hero {
+                min-height: 60vh;
+            }
+
+            .services-hero .hero-content {
+                padding: 4rem 1rem;
+            }
+
+            .services-hero .hero-cta .btn {
+                width: 100%;
+            }
+        }
+
+        /* Services Navigation */
         .services-nav {
             position: sticky;
             top: 60px;
             z-index: 100;
             background: var(--color-white);
             border-bottom: 1px solid #e0e0e0;
-            padding: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .services-nav-container {
@@ -250,72 +352,86 @@
             font-size: 1.125rem;
         }
 
-        /* Service Category Section */
-        .service-category {
-            padding: var(--spacing-3xl) 0;
+        @media (max-width: 768px) {
+            .services-nav-item a {
+                padding: 0.875rem 1rem;
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Content Sections */
+        .services-section {
+            padding: 5rem 0;
             scroll-margin-top: 140px;
         }
 
-        .service-category:nth-child(even) {
+        .services-section:nth-child(even) {
             background: var(--color-light);
         }
 
-        .service-category-header {
-            text-align: center;
-            margin-bottom: var(--spacing-xl);
+        .services-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
         }
 
-        .service-category-header h2 {
-            font-family: var(--font-heading);
+        .services-section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .services-section-header h2 {
+            font-family: 'Playfair Display', serif;
             font-size: clamp(1.75rem, 3vw, 2.5rem);
             font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: 1rem;
         }
 
-        .service-category-header .category-description {
+        .services-section-header .section-description {
             font-size: 1.125rem;
             color: var(--color-gray);
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
             line-height: 1.7;
         }
 
-        /* Service Detail Card */
-        .service-detail-grid {
+        /* Service Cards Grid */
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: var(--spacing-lg);
+            gap: 2rem;
         }
 
         @media (max-width: 968px) {
-            .service-detail-grid {
+            .services-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 640px) {
-            .service-detail-grid {
+            .services-grid {
                 grid-template-columns: 1fr;
             }
         }
 
-        .service-item {
+        /* Service Card */
+        .service-card {
             background: #fff;
             border-radius: 12px;
-            padding: var(--spacing-lg);
+            padding: 2rem;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
             transition: all 0.4s ease;
             border: 1px solid #eee;
         }
 
-        .service-item:hover {
+        .service-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
             border-color: var(--color-accent);
         }
 
-        .service-item-icon {
+        .service-card-icon {
             width: 56px;
             height: 56px;
             background: linear-gradient(135deg, var(--color-accent) 0%, #e0a510 100%);
@@ -323,36 +439,36 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: var(--spacing-md);
+            margin-bottom: 1.5rem;
         }
 
-        .service-item-icon i {
+        .service-card-icon i {
             font-size: 1.5rem;
             color: var(--color-primary);
         }
 
-        .service-item h3 {
-            font-family: var(--font-heading);
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.25rem;
             font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: 0.875rem;
         }
 
-        .service-item p {
+        .service-card > p {
             font-size: 0.9375rem;
             color: var(--color-gray);
             line-height: 1.7;
-            margin-bottom: var(--spacing-md);
+            margin-bottom: 1.25rem;
         }
 
-        .service-item ul {
+        .service-card ul {
             list-style: none;
             padding: 0;
-            margin: 0 0 var(--spacing-md) 0;
+            margin: 0 0 1.5rem 0;
         }
 
-        .service-item ul li {
+        .service-card ul li {
             font-size: 0.875rem;
             color: var(--color-secondary);
             padding: 0.375rem 0;
@@ -360,7 +476,7 @@
             position: relative;
         }
 
-        .service-item ul li::before {
+        .service-card ul li::before {
             content: "\f26a";
             font-family: "bootstrap-icons";
             position: absolute;
@@ -369,7 +485,7 @@
             font-size: 0.75rem;
         }
 
-        .service-item .service-cta {
+        .service-card .service-link {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
@@ -380,42 +496,233 @@
             transition: gap 0.3s ease;
         }
 
-        .service-item .service-cta:hover {
+        .service-card .service-link:hover {
             gap: 0.75rem;
         }
 
-        /* Category CTA */
-        .category-cta {
+        /* Section CTA */
+        .section-cta {
             text-align: center;
-            margin-top: var(--spacing-xl);
-            padding-top: var(--spacing-xl);
+            margin-top: 3.5rem;
+            padding-top: 3rem;
             border-top: 1px solid #e0e0e0;
         }
 
-        .category-cta h3 {
-            font-family: var(--font-heading);
+        .section-cta h3 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: 0.75rem;
         }
 
-        .category-cta p {
+        .section-cta p {
             color: var(--color-gray);
-            margin-bottom: var(--spacing-md);
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .category-cta .btn {
+        .section-cta .btn {
             margin: 0 0.5rem;
         }
 
         @media (max-width: 768px) {
-            .services-nav-item a {
-                padding: 0.875rem 1rem;
-                font-size: 0.875rem;
+            .section-cta .btn {
+                display: block;
+                width: 100%;
+                margin: 0.5rem 0;
             }
+        }
 
-            .category-cta .btn {
+        /* Service Areas Section */
+        .service-areas-section {
+            padding: 4rem 0;
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .service-areas-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .service-areas-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            color: var(--color-white);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-areas-section .section-subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2.5rem;
+        }
+
+        .service-areas-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-area-county {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-area-county h3 {
+            color: var(--color-accent);
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-area-county h3 i {
+            font-size: 1rem;
+        }
+
+        .city-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .city-links a {
+            display: inline-block;
+            padding: 0.375rem 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.8125rem;
+            color: rgba(255, 255, 255, 0.9);
+            transition: all 0.2s ease;
+        }
+
+        .city-links a:hover {
+            background: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .service-areas-cta {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-areas-cta p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .service-areas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 5rem 0;
+            background: var(--color-white);
+        }
+
+        .faq-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .faq-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 500;
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .faq-section .section-description {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.0625rem;
+            color: var(--color-gray);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .faq-card {
+            padding: 2rem;
+            background: var(--color-light);
+            border-radius: 12px;
+        }
+
+        .faq-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-card p {
+            font-size: 0.9375rem;
+            color: var(--color-gray);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Final CTA Section */
+        .final-cta-section {
+            padding: 5rem 0;
+            background: var(--color-primary);
+            text-align: center;
+        }
+
+        .final-cta-section .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .final-cta-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            font-weight: 500;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+
+        .final-cta-section p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.0625rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .final-cta-section .btn {
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .final-cta-section .btn {
                 display: block;
                 width: 100%;
                 margin: 0.5rem 0;
@@ -486,14 +793,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="services-hero">
         <div class="hero-background">
             <img src="images/rooftop-outdoor-kitchen-sunset-skyline.webp" alt="Expert quartz countertop services in South Florida - residential and commercial installation" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
+            <span class="hero-badge">Full-Service Quartz Experts</span>
             <h1>Quartz Countertop Services</h1>
             <p class="hero-description">Expert fabrication, installation, and consultation for South Florida homes and businesses. From kitchen remodels to commercial projects, we deliver precision craftsmanship and exceptional service.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
+                <a href="tel:17203241436" class="btn btn-secondary"><i class="bi bi-telephone"></i> (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated &nbsp;|&nbsp; Serving All of South Florida</p>
         </div>
     </section>
 
@@ -512,17 +825,17 @@
     <!-- ============================================== -->
     <!-- RESIDENTIAL QUARTZ SERVICES SECTION -->
     <!-- ============================================== -->
-    <section id="residential" class="service-category">
+    <section id="residential" class="services-section">
         <div class="container">
-            <div class="service-category-header">
+            <div class="services-section-header">
                 <h2>Residential Quartz Services</h2>
-                <p class="category-description">Elevate your home with premium quartz surfaces that blend beauty and performance. Our residential countertop services transform kitchens, bathrooms, and living spaces throughout South Florida with stunning, durable quartz installations.</p>
+                <p class="section-description">Elevate your home with premium quartz surfaces that blend beauty and performance. Our residential countertop services transform kitchens, bathrooms, and living spaces throughout South Florida with stunning, durable quartz installations.</p>
             </div>
 
-            <div class="service-detail-grid">
+            <div class="services-grid">
                 <!-- Kitchen Countertop Design & Installation -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-grid-3x3"></i>
                     </div>
                     <h3>Kitchen Countertop Design & Installation</h3>
@@ -534,12 +847,12 @@
                         <li>200+ colors from Cambria, Caesarstone, and Silestone</li>
                         <li>Precise 3D laser templating for perfect fit</li>
                     </ul>
-                    <a href="kitchen-countertops" class="service-cta">Explore Kitchen Countertops <i class="bi bi-arrow-right"></i></a>
+                    <a href="kitchen-countertops" class="service-link">Explore Kitchen Countertops <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Bathroom Vanity Fabrication -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-droplet-half"></i>
                     </div>
                     <h3>Bathroom Vanity Fabrication</h3>
@@ -551,12 +864,12 @@
                         <li>Moisture-resistant and easy-to-clean surfaces</li>
                         <li>Custom sizes for any bathroom layout</li>
                     </ul>
-                    <a href="bathroom-countertops" class="service-cta">Explore Bathroom Vanities <i class="bi bi-arrow-right"></i></a>
+                    <a href="bathroom-countertops" class="service-link">Explore Bathroom Vanities <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Shower Surrounds & Tub Decks -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-water"></i>
                     </div>
                     <h3>Shower Surrounds & Tub Decks</h3>
@@ -568,12 +881,12 @@
                         <li>Seamless installation for easy cleaning</li>
                         <li>Corner shelves and built-in niches</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Laundry Room Counters -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-basket3"></i>
                     </div>
                     <h3>Laundry Room Counters</h3>
@@ -585,12 +898,12 @@
                         <li>Built-in utility sink cutouts</li>
                         <li>Custom configurations for any laundry layout</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Fireplace Surrounds -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-fire"></i>
                     </div>
                     <h3>Fireplace Surrounds</h3>
@@ -602,12 +915,12 @@
                         <li>Heat-resistant quartz selections</li>
                         <li>Custom designs for electric and gas fireplaces</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Quartz Backsplashes -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-bounding-box"></i>
                     </div>
                     <h3>Quartz Backsplashes</h3>
@@ -619,12 +932,12 @@
                         <li>Behind-stove splash protection</li>
                         <li>Seamless, grout-free installation</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Outdoor Kitchen Surfaces -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-sun"></i>
                     </div>
                     <h3>Outdoor Kitchen Surfaces</h3>
@@ -636,12 +949,12 @@
                         <li>Weather-resistant outdoor surfaces</li>
                         <li>Pool deck and patio kitchen installation</li>
                     </ul>
-                    <a href="outdoor-countertops" class="service-cta">Explore Outdoor Countertops <i class="bi bi-arrow-right"></i></a>
+                    <a href="outdoor-countertops" class="service-link">Explore Outdoor Countertops <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Waterfall Islands -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-layers"></i>
                     </div>
                     <h3>Waterfall Islands</h3>
@@ -653,12 +966,12 @@
                         <li>Bookmatched veining for continuity</li>
                         <li>Custom island dimensions and configurations</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Window Sills & Ledges -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-window"></i>
                     </div>
                     <h3>Window Sills & Ledges</h3>
@@ -670,15 +983,15 @@
                         <li>Moisture-resistant window surfaces</li>
                         <li>Custom sizing for any window opening</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
-            <div class="category-cta">
+            <div class="section-cta">
                 <h3>Ready to Transform Your Home?</h3>
                 <p>Schedule a free in-home consultation with our residential quartz experts and discover the perfect surfaces for your South Florida home.</p>
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
-                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                <a href="tel:17203241436" class="btn btn-outline">Call (720) 324-1436</a>
             </div>
         </div>
     </section>
@@ -686,36 +999,35 @@
     <!-- ============================================== -->
     <!-- COMMERCIAL QUARTZ SERVICES SECTION -->
     <!-- ============================================== -->
-    <section id="commercial" class="service-category">
+    <section id="commercial" class="services-section">
         <div class="container">
-            <div class="service-category-header">
+            <div class="services-section-header">
                 <h2>Commercial Quartz Services</h2>
-                <p class="category-description">We help businesses create modern, professional spaces with durable quartz designs. From restaurants and hotels to medical offices and retail spaces, Griffin Quartz delivers commercial-grade installations that withstand heavy use while maintaining stunning aesthetics.</p>
+                <p class="section-description">We help businesses create modern, professional spaces with durable quartz designs. From restaurants and hotels to medical offices and retail spaces, Griffin Quartz delivers commercial-grade installations that withstand heavy use while maintaining stunning aesthetics.</p>
             </div>
 
-            <div class="service-detail-grid">
-                <!-- Restaurant & Café Counters -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+            <div class="services-grid">
+                <!-- Restaurant & Cafe Counters -->
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-cup-hot"></i>
                     </div>
-                    <h3>Restaurant & Café Counters</h3>
-                    <p>Outfit your restaurant, café, or food service business with food-safe quartz countertops built for commercial kitchen demands. Our restaurant counter installation delivers surfaces that resist stains, heat, and constant use while meeting health code requirements.</p>
+                    <h3>Restaurant & Cafe Counters</h3>
+                    <p>Outfit your restaurant, cafe, or food service business with food-safe quartz countertops built for commercial kitchen demands. Our restaurant counter installation delivers surfaces that resist stains, heat, and constant use while meeting health code requirements.</p>
                     <ul>
                         <li>Commercial kitchen prep surfaces and stations</li>
                         <li>Food-safe, NSF-certified quartz options</li>
                         <li>Service counter and checkout area installation</li>
                         <li>Coffee bar and beverage station counters</li>
-                        <li>Dining area tabletops and surfaces</li>
                         <li>Easy-to-sanitize and maintain surfaces</li>
                         <li>Heavy-duty, high-traffic durability</li>
                     </ul>
-                    <a href="commercial" class="service-cta">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
+                    <a href="commercial" class="service-link">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Retail Display Surfaces -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-shop"></i>
                     </div>
                     <h3>Retail Display Surfaces</h3>
@@ -725,16 +1037,15 @@
                         <li>Product display cases and showcases</li>
                         <li>Customer service desk surfaces</li>
                         <li>Jewelry and merchandise display counters</li>
-                        <li>Boutique and showroom installations</li>
                         <li>Scratch-resistant display surfaces</li>
                         <li>Custom branding and design options</li>
                     </ul>
-                    <a href="commercial" class="service-cta">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
+                    <a href="commercial" class="service-link">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Reception Desks -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-person-workspace"></i>
                     </div>
                     <h3>Reception Desks</h3>
@@ -747,12 +1058,12 @@
                         <li>Integrated cable management solutions</li>
                         <li>Custom shapes and dimensions</li>
                     </ul>
-                    <a href="commercial" class="service-cta">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
+                    <a href="commercial" class="service-link">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Bar Tops & Lounge Areas -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-cup-straw"></i>
                     </div>
                     <h3>Bar Tops & Lounge Areas</h3>
@@ -765,12 +1076,12 @@
                         <li>Drink rail and bar ledge fabrication</li>
                         <li>Spill-resistant and stain-proof surfaces</li>
                     </ul>
-                    <a href="commercial" class="service-cta">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
+                    <a href="commercial" class="service-link">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Hotel & Hospitality Installations -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-building"></i>
                     </div>
                     <h3>Hotel & Hospitality Installations</h3>
@@ -783,12 +1094,12 @@
                         <li>Multi-unit project coordination</li>
                         <li>Volume pricing for large projects</li>
                     </ul>
-                    <a href="commercial" class="service-cta">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
+                    <a href="commercial" class="service-link">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Medical Office & Clinic Countertops -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-heart-pulse"></i>
                     </div>
                     <h3>Medical Office & Clinic Countertops</h3>
@@ -801,12 +1112,12 @@
                         <li>Non-porous, bacteria-resistant materials</li>
                         <li>Easy-to-disinfect healthcare surfaces</li>
                     </ul>
-                    <a href="commercial" class="service-cta">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
+                    <a href="commercial" class="service-link">Learn About Commercial Services <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Yacht Countertops -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-tsunami"></i>
                     </div>
                     <h3>Yacht Countertops</h3>
@@ -818,15 +1129,15 @@
                         <li>Wet bar and entertainment area surfaces</li>
                         <li>Precision templating for marine spaces</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
-            <div class="category-cta">
+            <div class="section-cta">
                 <h3>Discuss Your Commercial Project</h3>
                 <p>Contact our commercial team for volume pricing, project management, and flexible scheduling that works around your business hours.</p>
                 <a href="/#contact-form" class="btn btn-primary">Request Commercial Quote</a>
-                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                <a href="tel:17203241436" class="btn btn-outline">Call (720) 324-1436</a>
             </div>
         </div>
     </section>
@@ -834,17 +1145,17 @@
     <!-- ============================================== -->
     <!-- FABRICATION & CUSTOM WORK SECTION -->
     <!-- ============================================== -->
-    <section id="fabrication" class="service-category">
+    <section id="fabrication" class="services-section">
         <div class="container">
-            <div class="service-category-header">
+            <div class="services-section-header">
                 <h2>Quartz Fabrication & Custom Work</h2>
-                <p class="category-description">Our in-house fabrication shop ensures every project is cut, polished, and installed to perfection. With state-of-the-art CNC machinery and skilled craftsmen, we deliver custom quartz work that meets your exact specifications.</p>
+                <p class="section-description">Our in-house fabrication shop ensures every project is cut, polished, and installed to perfection. With state-of-the-art CNC machinery and skilled craftsmen, we deliver custom quartz work that meets your exact specifications.</p>
             </div>
 
-            <div class="service-detail-grid">
+            <div class="services-grid">
                 <!-- Custom Quartz Fabrication -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-gear"></i>
                     </div>
                     <h3>Custom Quartz Fabrication</h3>
@@ -857,12 +1168,12 @@
                         <li>In-house quality control</li>
                         <li>Fast turnaround times available</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Edge Profile Customization -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-pentagon"></i>
                     </div>
                     <h3>Edge Profile Customization</h3>
@@ -875,12 +1186,12 @@
                         <li>Custom edge designs available</li>
                         <li>Hand-polished finishing</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">View Edge Profiles <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">View Edge Profiles <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Seamless Joint Installation -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-link-45deg"></i>
                     </div>
                     <h3>Seamless Joint Installation</h3>
@@ -892,14 +1203,13 @@
                         <li>Minimal, nearly invisible joints</li>
                         <li>Waterproof seam construction</li>
                         <li>Bookmatching for continuous patterns</li>
-                        <li>Quality inspection and finishing</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Undermount Sink Cutouts -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-inbox"></i>
                     </div>
                     <h3>Undermount Sink Cutouts</h3>
@@ -912,12 +1222,12 @@
                         <li>Double bowl sink configurations</li>
                         <li>Faucet and soap dispenser holes</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Tabletop & Furniture Fabrication -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-table"></i>
                     </div>
                     <h3>Tabletop & Furniture Fabrication</h3>
@@ -930,12 +1240,12 @@
                         <li>Custom furniture applications</li>
                         <li>Coordinating with furniture bases</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Countertop Repair & Refinishing -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-tools"></i>
                     </div>
                     <h3>Countertop Repair & Refinishing</h3>
@@ -948,12 +1258,12 @@
                         <li>Surface refinishing and restoration</li>
                         <li>Protective sealing application</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Request Repair Service <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Request Repair Service <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Old Countertop Removal & Disposal -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-trash3"></i>
                     </div>
                     <h3>Old Countertop Removal & Disposal</h3>
@@ -965,17 +1275,16 @@
                         <li>Proper disposal and haul-away</li>
                         <li>Site preparation for new installation</li>
                         <li>Plumbing disconnect coordination</li>
-                        <li>Minimal disruption to your home</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
-            <div class="category-cta">
+            <div class="section-cta">
                 <h3>Custom Fabrication Expertise</h3>
                 <p>From intricate edge profiles to complex installations, our fabrication team brings your vision to life with precision and craftsmanship.</p>
                 <a href="/#contact-form" class="btn btn-primary">Discuss Your Project</a>
-                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                <a href="tel:17203241436" class="btn btn-outline">Call (720) 324-1436</a>
             </div>
         </div>
     </section>
@@ -983,17 +1292,17 @@
     <!-- ============================================== -->
     <!-- CONSULTATION & SUPPORT SECTION -->
     <!-- ============================================== -->
-    <section id="consultation" class="service-category">
+    <section id="consultation" class="services-section">
         <div class="container">
-            <div class="service-category-header">
+            <div class="services-section-header">
                 <h2>Quartz Consultation & Support</h2>
-                <p class="category-description">From concept to completion, we're with you every step of the way. Our consultation and support services ensure your quartz countertop project runs smoothly, stays on budget, and exceeds your expectations.</p>
+                <p class="section-description">From concept to completion, we're with you every step of the way. Our consultation and support services ensure your quartz countertop project runs smoothly, stays on budget, and exceeds your expectations.</p>
             </div>
 
-            <div class="service-detail-grid">
+            <div class="services-grid">
                 <!-- Free In-Home Consultations -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-house-check"></i>
                     </div>
                     <h3>Free In-Home Consultations</h3>
@@ -1005,14 +1314,13 @@
                         <li>Professional design recommendations</li>
                         <li>On-site layout and planning assistance</li>
                         <li>Detailed written quote before you commit</li>
-                        <li>No obligation, no pressure environment</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Schedule Free Consultation <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Schedule Free Consultation <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Material Selection Assistance -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-palette"></i>
                     </div>
                     <h3>Material Selection Assistance</h3>
@@ -1024,14 +1332,13 @@
                         <li>Color coordination with cabinets and flooring</li>
                         <li>Veining and pattern selection guidance</li>
                         <li>Finish options from polished to matte</li>
-                        <li>Durability and maintenance comparisons</li>
                     </ul>
-                    <a href="quartz-brands" class="service-cta">Explore Quartz Brands <i class="bi bi-arrow-right"></i></a>
+                    <a href="quartz-brands" class="service-link">Explore Quartz Brands <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Budget-Friendly Solutions -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-piggy-bank"></i>
                     </div>
                     <h3>Budget-Friendly Solutions</h3>
@@ -1044,12 +1351,12 @@
                         <li>Price-matching on identical materials</li>
                         <li>Volume discounts for large projects</li>
                     </ul>
-                    <a href="quote-calculator" class="service-cta">Try Our Quote Calculator <i class="bi bi-arrow-right"></i></a>
+                    <a href="quote-calculator" class="service-link">Try Our Quote Calculator <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Project Management with Contractors -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-clipboard-check"></i>
                     </div>
                     <h3>Project Management with Contractors</h3>
@@ -1061,14 +1368,13 @@
                         <li>Cabinet and plumbing coordination</li>
                         <li>Multi-trade project management</li>
                         <li>Progress updates and milestone tracking</li>
-                        <li>Punch list completion and final walkthrough</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Get a Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <!-- Warranty-Backed Service & Maintenance -->
-                <div class="service-item">
-                    <div class="service-item-icon">
+                <div class="service-card">
+                    <div class="service-card-icon">
                         <i class="bi bi-shield-check"></i>
                     </div>
                     <h3>Warranty-Backed Service & Maintenance</h3>
@@ -1081,15 +1387,15 @@
                         <li>Post-installation support</li>
                         <li>Long-term customer relationship</li>
                     </ul>
-                    <a href="/#contact-form" class="service-cta">Learn More <i class="bi bi-arrow-right"></i></a>
+                    <a href="/#contact-form" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
-            <div class="category-cta">
+            <div class="section-cta">
                 <h3>Start Your Project Today</h3>
                 <p>Ready to explore quartz countertops for your home or business? Schedule a free consultation and let our experts guide you through the process.</p>
                 <a href="/#contact-form" class="btn btn-primary">Schedule FREE Consultation</a>
-                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                <a href="tel:17203241436" class="btn btn-outline">Call (720) 324-1436</a>
             </div>
         </div>
     </section>
@@ -1097,12 +1403,12 @@
     <!-- ============================================== -->
     <!-- SERVICE AREAS SECTION -->
     <!-- ============================================== -->
-    <section class="service-area-section">
+    <section class="service-areas-section">
         <div class="container">
             <h2>Quartz Countertop Services Throughout South Florida</h2>
             <p class="section-subtitle">Expert installation and fabrication for Palm Beach, Broward, and Miami-Dade counties</p>
 
-            <div class="service-area-grid">
+            <div class="service-areas-grid">
                 <div class="service-area-county">
                     <h3><i class="bi bi-geo-alt-fill"></i> Palm Beach County</h3>
                     <div class="city-links">
@@ -1144,7 +1450,7 @@
                 </div>
             </div>
 
-            <div class="service-area-cta">
+            <div class="service-areas-cta">
                 <p>Don't see your city? We serve all of South Florida. Contact us to confirm service in your area.</p>
                 <a href="locations" class="btn btn-primary">View All Service Areas</a>
             </div>
@@ -1154,25 +1460,25 @@
     <!-- ============================================== -->
     <!-- FAQ SECTION -->
     <!-- ============================================== -->
-    <section class="content-section">
+    <section class="faq-section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions</h2>
             <p class="section-description">Get answers to common questions about our quartz countertop services</p>
 
-            <div class="features-grid" style="grid-template-columns: repeat(2, 1fr);">
-                <div class="feature-card">
+            <div class="faq-grid">
+                <div class="faq-card">
                     <h3>What services do you offer?</h3>
                     <p>Griffin Quartz provides complete quartz countertop services including residential installation (kitchens, bathrooms, laundry rooms), commercial fabrication (restaurants, offices, hotels), custom work (waterfall edges, unique shapes), and full consultation and support from design through installation.</p>
                 </div>
-                <div class="feature-card">
+                <div class="faq-card">
                     <h3>How long does installation take?</h3>
                     <p>Most residential installations are completed in a single day, typically 2-4 hours depending on complexity. From initial measurement to final installation, the entire process usually takes 5-10 business days for standard projects.</p>
                 </div>
-                <div class="feature-card">
+                <div class="faq-card">
                     <h3>Do you offer free estimates?</h3>
                     <p>Yes! We offer free in-home consultations throughout South Florida. Our design experts will visit your home, take precise 3D laser measurements, show you samples, and provide a detailed written quote with no obligation.</p>
                 </div>
-                <div class="feature-card">
+                <div class="faq-card">
                     <h3>What warranty do you provide?</h3>
                     <p>All our installations include a workmanship guarantee plus manufacturer warranties ranging from 10-25 years depending on the quartz brand. We stand behind our work and provide responsive warranty service.</p>
                 </div>
@@ -1181,14 +1487,14 @@
     </section>
 
     <!-- Final CTA Section -->
-    <div class="cta-section" style="background: var(--color-primary); color: var(--color-white); padding: 4rem 0;">
-        <div class="container" style="text-align: center;">
-            <h3 style="color: var(--color-white); font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">Ready to Transform Your Space with Quartz?</h3>
-            <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 1.5rem;">Contact Griffin Quartz today for a free consultation and discover why South Florida homeowners and businesses trust us for their quartz countertop projects.</p>
-            <a href="/#contact-form" class="btn btn-primary" style="margin: 0 0.5rem;">Get FREE Estimate</a>
-            <a href="tel:17203241436" class="btn btn-secondary" style="margin: 0 0.5rem;">Call (720) 324-1436</a>
+    <section class="final-cta-section">
+        <div class="container">
+            <h3>Ready to Transform Your Space with Quartz?</h3>
+            <p>Contact Griffin Quartz today for a free consultation and discover why South Florida homeowners and businesses trust us for their quartz countertop projects.</p>
+            <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
+            <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1226,7 +1532,7 @@
         // Services navigation active state
         document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.services-nav-item a');
-            const sections = document.querySelectorAll('.service-category');
+            const sections = document.querySelectorAll('.services-section');
 
             // Smooth scroll for nav links
             navLinks.forEach(link => {
