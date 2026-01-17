@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -116,18 +117,22 @@
             <h2 class="section-title">Choose from 200+ Different Quartz in Stock</h2>
             <div class="features-grid">
                 <div class="feature-card">
+                    <i class="bi bi-award"></i>
                     <h3>Quartz Countertops – South Florida's Premier Choice</h3>
                     <p><strong>Family-owned for 20+ years</strong>, Griffin Quartz delivers <strong>luxury quartz countertops</strong> for kitchens, bathrooms, and more. Call us <strong>7 days a week</strong> for a <strong>free in-home consultation</strong>.</p>
                 </div>
                 <div class="feature-card">
+                    <i class="bi bi-palette"></i>
                     <h3>Unmatched Selection of Colors, Style & Quality</h3>
                     <p>Your <strong>one-stop shop</strong> for quartz countertops, granite countertops, sinks, and more—hand-selected from the <a href="quartz-brands">finest manufacturers</a> and leading brands.</p>
                 </div>
                 <div class="feature-card">
+                    <i class="bi bi-piggy-bank"></i>
                     <h3>Factory-Direct Savings on Quartz Countertops</h3>
                     <p>We source directly from <a href="quartz-brands">global suppliers</a>, offering <strong>the largest quartz countertops selection at the lowest prices</strong> in South Florida—<strong>guaranteed</strong>.</p>
                 </div>
                 <div class="feature-card">
+                    <i class="bi bi-tools"></i>
                     <h3>Expert Quartz Fabrication & Installation</h3>
                     <p>From <strong>vanities to luxury quartz kitchens</strong>, our in-house team delivers precision fabrication, flawless installation, and quick turnarounds.</p>
                 </div>
