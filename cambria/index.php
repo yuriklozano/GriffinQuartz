@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -741,49 +741,49 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="/" class="logo"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
+            <a href="/" class="logo"><img src="../images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
 
             <nav class="nav" id="mainNav">
                 <ul class="nav-list">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Our Services</a>
                         <ul class="dropdown-menu">
-                            <li><a href="our-services">Countertop Services</a></li>
-                            <li><a href="quartz-brands">Quartz Product Selection</a></li>
-                            <li><a href="kitchen-bath">Countertops for Kitchens & Baths</a></li>
-                            <li><a href="commercial">Commercial Services</a></li>
+                            <li><a href="../our-services">Countertop Services</a></li>
+                            <li><a href="../quartz-brands">Quartz Product Selection</a></li>
+                            <li><a href="../kitchen-bath">Countertops for Kitchens & Baths</a></li>
+                            <li><a href="../commercial">Commercial Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Cambria Designs</a>
                         <ul class="dropdown-menu">
-                            <li><a href="cambria">All Cambria Designs</a></li>
-                            <li><a href="cambria/brittanicca">Brittanicca</a></li>
-                            <li><a href="cambria/ironsbridge">Ironsbridge</a></li>
-                            <li><a href="cambria/ella">Ella</a></li>
-                            <li><a href="cambria/swanbridge">Swanbridge</a></li>
-                            <li><a href="cambria/portrush">Portrush</a></li>
+                            <li><a href="./">All Cambria Designs</a></li>
+                            <li><a href="brittanicca">Brittanicca</a></li>
+                            <li><a href="ironsbridge">Ironsbridge</a></li>
+                            <li><a href="ella">Ella</a></li>
+                            <li><a href="swanbridge">Swanbridge</a></li>
+                            <li><a href="portrush">Portrush</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Installation Locations</a>
                         <ul class="dropdown-menu">
-                            <li><a href="locations">All Service Areas</a></li>
-                            <li><a href="boca-raton">Boca Raton, FL</a></li>
-                            <li><a href="fort-lauderdale">Fort Lauderdale, FL</a></li>
-                            <li><a href="miami">Miami, FL</a></li>
-                            <li><a href="west-palm-beach">West Palm Beach, FL</a></li>
+                            <li><a href="../locations">All Service Areas</a></li>
+                            <li><a href="../boca-raton">Boca Raton, FL</a></li>
+                            <li><a href="../fort-lauderdale">Fort Lauderdale, FL</a></li>
+                            <li><a href="../miami">Miami, FL</a></li>
+                            <li><a href="../west-palm-beach">West Palm Beach, FL</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Resources</a>
                         <ul class="dropdown-menu">
-                            <li><a href="color-visualizer">Color Visualizer</a></li>
-                            <li><a href="quote-calculator">Instant Quote Calculator</a></li>
+                            <li><a href="../color-visualizer">Color Visualizer</a></li>
+                            <li><a href="../quote-calculator">Instant Quote Calculator</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="gallery" class="nav-link">Inspiration Gallery</a></li>
-                    <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="../gallery" class="nav-link">Inspiration Gallery</a></li>
+                    <li class="nav-item"><a href="../contact" class="nav-link">Contact Us</a></li>
                     <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
                 </ul>
             </nav>
@@ -799,13 +799,13 @@
     <!-- Hero Section -->
     <section class="brand-hero" id="top">
         <div class="hero-background">
-            <img src="images/kitchen-luxury-white-island-waterfall.webp" alt="Cambria quartz countertops in a luxury kitchen" loading="eager">
+            <img src="../images/kitchen-luxury-white-island-waterfall.webp" alt="Cambria quartz countertops in a luxury kitchen" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-container">
             <div class="hero-content">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="/">Home</a> <span>/</span> <a href="quartz-brands">Quartz Brands</a> <span>/</span> <span class="current">Cambria</span>
+                    <a href="/">Home</a> <span>/</span> <a href="../quartz-brands">Quartz Brands</a> <span>/</span> <span class="current">Cambria</span>
                 </nav>
                 <div class="brand-badge">
                     <i class="bi bi-award-fill"></i>
@@ -912,93 +912,93 @@
             <div class="designs-grid">
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-brittanicca.webp" alt="Cambria Brittanicca quartz countertop" loading="lazy">
+                        <img src="../images/cambria-brittanicca.webp" alt="Cambria Brittanicca quartz countertop" loading="lazy">
                         <span class="design-card-badge">Best Seller</span>
                     </div>
                     <div class="design-card-content">
                         <h3>Brittanicca</h3>
                         <p>Dramatic gray veining flowing across a bright white background. The ultimate marble alternative.</p>
-                        <a href="cambria/brittanicca" class="btn btn-outline">View Brittanicca</a>
+                        <a href="brittanicca" class="btn btn-outline">View Brittanicca</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-ironsbridge.webp" alt="Cambria Ironsbridge quartz countertop" loading="lazy">
+                        <img src="../images/cambria-ironsbridge.webp" alt="Cambria Ironsbridge quartz countertop" loading="lazy">
                         <span class="design-card-badge">Popular</span>
                     </div>
                     <div class="design-card-content">
                         <h3>Ironsbridge</h3>
                         <p>Warm honey tones blend with cool grays for a versatile neutral that works with any decor.</p>
-                        <a href="cambria/ironsbridge" class="btn btn-outline">View Ironsbridge</a>
+                        <a href="ironsbridge" class="btn btn-outline">View Ironsbridge</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-ella.webp" alt="Cambria Ella quartz countertop" loading="lazy">
+                        <img src="../images/cambria-ella.webp" alt="Cambria Ella quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Ella</h3>
                         <p>Soft white base with delicate gray veining. Timeless elegance for classic kitchen designs.</p>
-                        <a href="cambria/ella" class="btn btn-outline">View Ella</a>
+                        <a href="ella" class="btn btn-outline">View Ella</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-portrush.webp" alt="Cambria Portrush quartz countertop" loading="lazy">
+                        <img src="../images/cambria-portrush.webp" alt="Cambria Portrush quartz countertop" loading="lazy">
                         <span class="design-card-badge">New</span>
                     </div>
                     <div class="design-card-content">
                         <h3>Portrush</h3>
                         <p>Bold navy, gray and black veins with gold flakes on a creamy white base. Truly stunning.</p>
-                        <a href="cambria/portrush" class="btn btn-outline">View Portrush</a>
+                        <a href="portrush" class="btn btn-outline">View Portrush</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-swanbridge.webp" alt="Cambria Swanbridge quartz countertop" loading="lazy">
+                        <img src="../images/cambria-swanbridge.webp" alt="Cambria Swanbridge quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Swanbridge</h3>
                         <p>Soft, gentle movement makes this design perfect for any room. A perennial favorite.</p>
-                        <a href="cambria/swanbridge" class="btn btn-outline">View Swanbridge</a>
+                        <a href="swanbridge" class="btn btn-outline">View Swanbridge</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-brittanicca-gold.webp" alt="Cambria Brittanicca Gold quartz countertop" loading="lazy">
+                        <img src="../images/cambria-brittanicca-gold.webp" alt="Cambria Brittanicca Gold quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Brittanicca Gold</h3>
                         <p>Warm copper-gold and greige veins on a creamy white backdrop. Luxurious warmth.</p>
-                        <a href="cambria/brittanicca-gold" class="btn btn-outline">View Brittanicca Gold</a>
+                        <a href="brittanicca-gold" class="btn btn-outline">View Brittanicca Gold</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-inverness-frost.webp" alt="Cambria Inverness Frost quartz countertop" loading="lazy">
+                        <img src="../images/cambria-inverness-frost.webp" alt="Cambria Inverness Frost quartz countertop" loading="lazy">
                         <span class="design-card-badge">#1 Seller</span>
                     </div>
                     <div class="design-card-content">
                         <h3>Inverness Frost</h3>
                         <p>Intricate off-white veining across a cool white backdrop. Currently Cambria's best seller.</p>
-                        <a href="cambria/inverness-frost" class="btn btn-outline">View Inverness Frost</a>
+                        <a href="inverness-frost" class="btn btn-outline">View Inverness Frost</a>
                     </div>
                 </div>
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="images/cambria-blackpool.webp" alt="Cambria Blackpool quartz countertop" loading="lazy">
+                        <img src="../images/cambria-blackpool.webp" alt="Cambria Blackpool quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Blackpool</h3>
                         <p>Deep ebony with a silken matte finish. Powerful and commanding presence.</p>
-                        <a href="cambria/blackpool" class="btn btn-outline">View Blackpool</a>
+                        <a href="blackpool" class="btn btn-outline">View Blackpool</a>
                     </div>
                 </div>
             </div>
@@ -1015,7 +1015,7 @@
 
             <div class="categories-grid">
                 <div class="category-card">
-                    <img src="images/category-marble-look.webp" alt="Marble look quartz countertops" loading="lazy">
+                    <img src="../images/category-marble-look.webp" alt="Marble look quartz countertops" loading="lazy">
                     <div class="category-overlay">
                         <h3>Marble Look</h3>
                         <p>Elegant veining patterns that capture the beauty of natural marble</p>
@@ -1023,7 +1023,7 @@
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="images/category-warm-neutrals.webp" alt="Warm neutral quartz countertops" loading="lazy">
+                    <img src="../images/category-warm-neutrals.webp" alt="Warm neutral quartz countertops" loading="lazy">
                     <div class="category-overlay">
                         <h3>Warm Neutrals</h3>
                         <p>Beige, taupe and cream tones for inviting, cozy spaces</p>
@@ -1031,7 +1031,7 @@
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="images/category-bold-dark.webp" alt="Dark quartz countertops" loading="lazy">
+                    <img src="../images/category-bold-dark.webp" alt="Dark quartz countertops" loading="lazy">
                     <div class="category-overlay">
                         <h3>Bold & Dark</h3>
                         <p>Dramatic blacks and deep tones for striking statements</p>
@@ -1051,145 +1051,145 @@
             </div>
 
             <div class="all-designs-grid">
-                <a href="cambria/brittanicca" class="mini-design-card">
+                <a href="brittanicca" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-brittanicca.webp" alt="Brittanicca" loading="lazy">
+                        <img src="../images/swatch-brittanicca.webp" alt="Brittanicca" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Brittanicca</h4>
                     </div>
                 </a>
-                <a href="cambria/brittanicca-gold" class="mini-design-card">
+                <a href="brittanicca-gold" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-brittanicca-gold.webp" alt="Brittanicca Gold" loading="lazy">
+                        <img src="../images/swatch-brittanicca-gold.webp" alt="Brittanicca Gold" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Brittanicca Gold</h4>
                     </div>
                 </a>
-                <a href="cambria/brittanicca-warm" class="mini-design-card">
+                <a href="brittanicca-warm" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-brittanicca-warm.webp" alt="Brittanicca Warm" loading="lazy">
+                        <img src="../images/swatch-brittanicca-warm.webp" alt="Brittanicca Warm" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Brittanicca Warm</h4>
                     </div>
                 </a>
-                <a href="cambria/ironsbridge" class="mini-design-card">
+                <a href="ironsbridge" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-ironsbridge.webp" alt="Ironsbridge" loading="lazy">
+                        <img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ironsbridge</h4>
                     </div>
                 </a>
-                <a href="cambria/ella" class="mini-design-card">
+                <a href="ella" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-ella.webp" alt="Ella" loading="lazy">
+                        <img src="../images/swatch-ella.webp" alt="Ella" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ella</h4>
                     </div>
                 </a>
-                <a href="cambria/swanbridge" class="mini-design-card">
+                <a href="swanbridge" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-swanbridge.webp" alt="Swanbridge" loading="lazy">
+                        <img src="../images/swatch-swanbridge.webp" alt="Swanbridge" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Swanbridge</h4>
                     </div>
                 </a>
-                <a href="cambria/portrush" class="mini-design-card">
+                <a href="portrush" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-portrush.webp" alt="Portrush" loading="lazy">
+                        <img src="../images/swatch-portrush.webp" alt="Portrush" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Portrush</h4>
                     </div>
                 </a>
-                <a href="cambria/inverness-frost" class="mini-design-card">
+                <a href="inverness-frost" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-inverness-frost.webp" alt="Inverness Frost" loading="lazy">
+                        <img src="../images/swatch-inverness-frost.webp" alt="Inverness Frost" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Inverness Frost</h4>
                     </div>
                 </a>
-                <a href="cambria/montgomery" class="mini-design-card">
+                <a href="montgomery" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-montgomery.webp" alt="Montgomery" loading="lazy">
+                        <img src="../images/swatch-montgomery.webp" alt="Montgomery" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Montgomery</h4>
                     </div>
                 </a>
-                <a href="cambria/summerhill" class="mini-design-card">
+                <a href="summerhill" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-summerhill.webp" alt="Summerhill" loading="lazy">
+                        <img src="../images/swatch-summerhill.webp" alt="Summerhill" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Summerhill</h4>
                     </div>
                 </a>
-                <a href="cambria/delgatie" class="mini-design-card">
+                <a href="delgatie" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-delgatie.webp" alt="Delgatie" loading="lazy">
+                        <img src="../images/swatch-delgatie.webp" alt="Delgatie" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Delgatie</h4>
                     </div>
                 </a>
-                <a href="cambria/weybourne" class="mini-design-card">
+                <a href="weybourne" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-weybourne.webp" alt="Weybourne" loading="lazy">
+                        <img src="../images/swatch-weybourne.webp" alt="Weybourne" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Weybourne</h4>
                     </div>
                 </a>
-                <a href="cambria/blackpool" class="mini-design-card">
+                <a href="blackpool" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-blackpool.webp" alt="Blackpool" loading="lazy">
+                        <img src="../images/swatch-blackpool.webp" alt="Blackpool" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Blackpool</h4>
                     </div>
                 </a>
-                <a href="cambria/torquay" class="mini-design-card">
+                <a href="torquay" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-torquay.webp" alt="Torquay" loading="lazy">
+                        <img src="../images/swatch-torquay.webp" alt="Torquay" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Torquay</h4>
                     </div>
                 </a>
-                <a href="cambria/berwyn" class="mini-design-card">
+                <a href="berwyn" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-berwyn.webp" alt="Berwyn" loading="lazy">
+                        <img src="../images/swatch-berwyn.webp" alt="Berwyn" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Berwyn</h4>
                     </div>
                 </a>
-                <a href="cambria/skara-brae" class="mini-design-card">
+                <a href="skara-brae" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-skara-brae.webp" alt="Skara Brae" loading="lazy">
+                        <img src="../images/swatch-skara-brae.webp" alt="Skara Brae" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Skara Brae</h4>
                     </div>
                 </a>
-                <a href="cambria/carrick" class="mini-design-card">
+                <a href="carrick" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-carrick.webp" alt="Carrick" loading="lazy">
+                        <img src="../images/swatch-carrick.webp" alt="Carrick" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Carrick</h4>
                     </div>
                 </a>
-                <a href="cambria/fairbourne" class="mini-design-card">
+                <a href="fairbourne" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="images/swatch-fairbourne.webp" alt="Fairbourne" loading="lazy">
+                        <img src="../images/swatch-fairbourne.webp" alt="Fairbourne" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Fairbourne</h4>
@@ -1286,18 +1286,18 @@
                 <div class="footer-col">
                     <h4>Cambria Designs</h4>
                     <ul>
-                        <li><a href="cambria/brittanicca">Brittanicca</a></li>
-                        <li><a href="cambria/ironsbridge">Ironsbridge</a></li>
-                        <li><a href="cambria/ella">Ella</a></li>
-                        <li><a href="cambria/swanbridge">Swanbridge</a></li>
+                        <li><a href="brittanicca">Brittanicca</a></li>
+                        <li><a href="ironsbridge">Ironsbridge</a></li>
+                        <li><a href="ella">Ella</a></li>
+                        <li><a href="swanbridge">Swanbridge</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="kitchen-countertops">Kitchen Countertops</a></li>
-                        <li><a href="bathroom-vanity-countertops">Bathroom Vanities</a></li>
-                        <li><a href="commercial-countertops">Commercial Projects</a></li>
+                        <li><a href="../kitchen-countertops">Kitchen Countertops</a></li>
+                        <li><a href="../bathroom-vanity-countertops">Bathroom Vanities</a></li>
+                        <li><a href="../commercial-countertops">Commercial Projects</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1312,6 +1312,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

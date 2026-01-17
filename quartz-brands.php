@@ -92,9 +92,9 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><a href="cambria" style="color: inherit; text-decoration: none;">Cambria</a></h3>
+                    <h3><a href="cambria/" style="color: inherit; text-decoration: none;">Cambria</a></h3>
                     <p>American-made quartz surfaces with unique designs and industry-leading durability. Cambria offers stunning marble-look patterns and bold contemporary styles.</p>
-                    <a href="cambria" class="btn btn-outline" style="margin-top: 1rem;">Explore Cambria</a>
+                    <a href="cambria/" class="btn btn-outline" style="margin-top: 1rem;">Explore Cambria</a>
                 </div>
                 <div class="feature-card">
                     <h3>Silestone by Cosentino</h3>
@@ -161,7 +161,7 @@
                 </div>
 
                 <div style="text-align: center; margin-top: 2rem;">
-                    <a href="cambria" class="btn btn-primary">View All Cambria Designs</a>
+                    <a href="cambria/" class="btn btn-primary">View All Cambria Designs</a>
                 </div>
             </div>
 
