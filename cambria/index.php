@@ -1179,6 +1179,14 @@
                         <h4>Skara Brae</h4>
                     </div>
                 </a>
+                <a href="lakedale" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-lakedale.webp" alt="Lakedale" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Lakedale</h4>
+                    </div>
+                </a>
                 <a href="carrick" class="mini-design-card">
                     <div class="mini-design-card-image">
                         <img src="../images/swatch-carrick.webp" alt="Carrick" loading="lazy">
