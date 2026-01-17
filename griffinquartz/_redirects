@@ -1,0 +1,24 @@
+# Redirect .html to clean URLs
+/our-services.html /our-services 301
+/quartz-brands.html /quartz-brands 301
+/kitchen-bath.html /kitchen-bath 301
+/commercial.html /commercial 301
+/locations.html /locations 301
+/boca-raton.html /boca-raton 301
+/fort-lauderdale.html /fort-lauderdale 301
+/miami.html /miami 301
+/miami-beach.html /miami-beach 301
+/west-palm-beach.html /west-palm-beach 301
+/delray-beach.html /delray-beach 301
+/hollywood.html /hollywood 301
+/pompano-beach.html /pompano-beach 301
+/aventura.html /aventura 301
+/coral-gables.html /coral-gables 301
+/hialeah.html /hialeah 301
+/gallery.html /gallery 301
+/contact.html /contact 301
+/about.html /about 301
+/blog/top-10-countertop-installation.html /blog/top-10-countertop-installation 301
+/blog/quartz-countertops-cost.html /blog/quartz-countertops-cost 301
+/blog/quartz-pricing-guide.html /blog/quartz-pricing-guide 301
+/blog/white-quartz-countertops.html /blog/white-quartz-countertops 301
