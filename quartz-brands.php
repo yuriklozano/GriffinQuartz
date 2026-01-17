@@ -307,11 +307,11 @@
         /* Quartz Brands Page Specific Styles */
         .brands-hero {
             position: relative;
-            min-height: 75vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
             overflow: hidden;
-            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            background: #1a1a2e;
         }
 
         .brands-hero .hero-background {
@@ -323,13 +323,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.35;
+            opacity: 0.5;
         }
 
         .brands-hero .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(10, 10, 15, 0.9) 0%, rgba(26, 26, 46, 0.7) 50%, rgba(10, 10, 15, 0.85) 100%);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.3) 100%);
         }
 
         .brands-hero .hero-container {
@@ -337,75 +337,249 @@
             z-index: 1;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 4rem 1.5rem;
-            text-align: center;
+            padding: 5rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .brands-hero .hero-content {
+            text-align: left;
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(253, 185, 19, 0.15);
-            border: 1px solid rgba(253, 185, 19, 0.3);
-            padding: 0.5rem 1.25rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.625rem 1.25rem;
             border-radius: 50px;
             font-size: 0.875rem;
-            color: var(--color-accent);
+            color: #fff;
             margin-bottom: 1.5rem;
         }
 
         .brands-hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 600;
+            font-size: clamp(2.5rem, 5vw, 3.75rem);
+            font-weight: 500;
+            font-style: italic;
             color: #fff;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+        }
+
+        .brands-hero .hero-tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.375rem;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 1.25rem;
-            line-height: 1.1;
         }
 
-        .brands-hero h1 span {
-            color: var(--color-accent);
-        }
-
-        .brands-hero .hero-subtitle {
-            font-size: 1.25rem;
+        .brands-hero .hero-description {
+            font-size: 1.0625rem;
             color: rgba(255, 255, 255, 0.85);
             line-height: 1.7;
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
+            margin-bottom: 2rem;
+            max-width: 540px;
         }
 
+        .brands-hero .hero-description strong {
+            color: #fff;
+        }
+
+        .brands-hero .hero-description a {
+            color: var(--color-accent);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .brands-hero .hero-description a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-hero-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-hero-primary:hover,
+        .btn-hero-primary:focus {
+            background: #fff;
+            color: var(--color-primary);
+        }
+
+        /* Hero Stats Row */
         .hero-stats-row {
             display: flex;
-            justify-content: center;
-            gap: 3rem;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
             flex-wrap: wrap;
-            margin-bottom: 2.5rem;
         }
 
         .hero-stat-item {
-            text-align: center;
+            text-align: left;
         }
 
         .hero-stat-item .stat-number {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
             color: var(--color-accent);
             line-height: 1;
         }
 
         .hero-stat-item .stat-label {
-            font-size: 0.9375rem;
+            font-size: 0.875rem;
             color: rgba(255, 255, 255, 0.7);
-            margin-top: 0.375rem;
+            margin-top: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .hero-cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
+        @media (max-width: 1024px) {
+            .hero-stats-row {
+                justify-content: center;
+            }
+
+            .hero-stat-item {
+                text-align: center;
+            }
+        }
+
+        /* Hero Form */
+        .hero-form-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-form-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.625rem;
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-form-card .form-phone {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.9375rem;
+            color: var(--color-gray);
+        }
+
+        .hero-form-card .form-phone a {
+            color: var(--color-accent);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .hero-form-card .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-form-card label {
+            display: block;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-form-card input,
+        .hero-form-card textarea,
+        .hero-form-card select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: #fff;
+            color: var(--color-primary);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .hero-form-card input:focus,
+        .hero-form-card textarea:focus,
+        .hero-form-card select:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(253, 185, 19, 0.15);
+        }
+
+        .hero-form-card textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .hero-form-card .btn-submit {
+            width: 100%;
+            background: var(--color-accent);
+            color: var(--color-primary);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero-form-card .btn-submit:hover,
+        .hero-form-card .btn-submit:focus {
+            background: #e5a617;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 1024px) {
+            .brands-hero .hero-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 4rem 1.5rem;
+            }
+
+            .brands-hero .hero-content {
+                text-align: center;
+            }
+
+            .brands-hero .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-form-card {
+                max-width: 480px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .brands-hero {
+                min-height: auto;
+            }
+
+            .brands-hero .hero-container {
+                padding: 3rem 1rem;
+            }
+
+            .hero-form-card {
+                padding: 1.75rem;
+            }
         }
 
         /* Brand Logos Strip */
@@ -1113,33 +1287,62 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-container">
-            <div class="hero-badge">
-                <i class="bi bi-gem" aria-hidden="true"></i>
-                South Florida's Premier Quartz Destination
-            </div>
-            <h1>Premium <span>Quartz Brands</span> for Every Style</h1>
-            <p class="hero-subtitle">Discover South Florida's largest selection of world-class quartz countertops. From American-made Cambria to globally renowned Silestone and Caesarstone, we carry only the finest brands for kitchens and bathrooms in Boca Raton, Fort Lauderdale, and Miami.</p>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="bi bi-gem" aria-hidden="true"></i>
+                    South Florida's Largest Quartz Selection
+                </div>
+                <h1>Premium Quartz Countertop Brands</h1>
+                <p class="hero-tagline">Where Elegance Meets Expert Craftsmanship</p>
+                <p class="hero-description">
+                    Discover <strong>8 world-class quartz brands</strong> at Griffin Quartz. Serving
+                    <a href="boca-raton">Boca Raton</a>, <a href="fort-lauderdale">Fort Lauderdale</a>,
+                    <a href="west-palm-beach">West Palm Beach</a>, and all of <strong>South Florida</strong>,
+                    we deliver <strong>premium countertop installations</strong> that define luxury living.
+                </p>
 
-            <div class="hero-stats-row" role="list" aria-label="Key statistics">
-                <div class="hero-stat-item" role="listitem">
-                    <div class="stat-number" aria-hidden="true">8</div>
-                    <div class="stat-label"><span class="visually-hidden">8</span> Premium Brands</div>
+                <div class="hero-stats-row" role="list" aria-label="Key benefits">
+                    <div class="hero-stat-item" role="listitem">
+                        <div class="stat-number" aria-hidden="true">8</div>
+                        <div class="stat-label">Premium Brands</div>
+                    </div>
+                    <div class="hero-stat-item" role="listitem">
+                        <div class="stat-number" aria-hidden="true">200+</div>
+                        <div class="stat-label">Colors In Stock</div>
+                    </div>
+                    <div class="hero-stat-item" role="listitem">
+                        <div class="stat-number" aria-hidden="true">100%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
                 </div>
-                <div class="hero-stat-item" role="listitem">
-                    <div class="stat-number" aria-hidden="true">200+</div>
-                    <div class="stat-label"><span class="visually-hidden">Over 200</span> Colors In Stock</div>
-                </div>
-                <div class="hero-stat-item" role="listitem">
-                    <div class="stat-number" aria-hidden="true">100%</div>
-                    <div class="stat-label"><span class="visually-hidden">100%</span> Satisfaction Guaranteed</div>
-                </div>
-            </div>
 
-            <div class="hero-cta-buttons">
-                <a href="/#contact-form" class="btn btn-primary" aria-label="Get a free quartz countertop estimate">Get Free Estimate</a>
-                <a href="tel:17203241436" class="btn-hero-secondary" aria-label="Call Griffin Quartz at 720-324-1436">
-                    <i class="bi bi-telephone-fill" aria-hidden="true"></i> Call (720) 324-1436
+                <a href="tel:17203241436" class="btn-hero-primary" aria-label="Call Griffin Quartz at 720-324-1436">
+                    Call (720) 324-1436
                 </a>
+            </div>
+
+            <div class="hero-form-card">
+                <h2>Get Your FREE Quote Today!</h2>
+                <p class="form-phone">Call <a href="tel:7203241436">(720) 324-1436</a></p>
+                <form action="/#contact-form" method="get" aria-label="Request a free quote">
+                    <div class="form-group">
+                        <label for="hero-name">Name</label>
+                        <input type="text" id="hero-name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-email">Email</label>
+                        <input type="email" id="hero-email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-phone">Phone</label>
+                        <input type="tel" id="hero-phone" name="phone" required autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-message">Message (Optional)</label>
+                        <textarea id="hero-message" name="message" rows="3" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Get FREE Estimate</button>
+                </form>
             </div>
         </div>
     </section>
