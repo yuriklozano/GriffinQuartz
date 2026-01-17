@@ -7,8 +7,8 @@ RewriteEngine On
 # Set the base directory
 RewriteBase /
 
-# Handle root URL - serve index.php
-RewriteRule ^/?$ index.php [L]
+# Handle root URL - redirect to index
+RewriteRule ^/?$ /index [R=301,L]
 
 # Redirect www to non-www (optional - uncomment if needed)
 # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
