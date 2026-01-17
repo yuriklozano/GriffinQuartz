@@ -19,8 +19,9 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./              # Root of your repo
-          server-dir: /public_html/soflocountertops.com/
+          local-dir: ./
+          server-dir: soflocountertops.com/
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/.git*/**
