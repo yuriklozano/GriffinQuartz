@@ -583,17 +583,12 @@
             }
         }
 
-        /* Brand Logos Strip */
+        /* Brand Logos Strip - Marquee */
         .brand-logos-strip {
             background: #fff;
             padding: 3rem 0;
             border-bottom: 1px solid #eee;
-        }
-
-        .brand-logos-strip .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
+            overflow: hidden;
         }
 
         .brand-logos-strip h2 {
@@ -605,32 +600,72 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 2rem;
+            padding: 0 1.5rem;
         }
 
-        .brand-logos-grid {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            gap: 2rem;
-            align-items: center;
+        .marquee-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-wrapper::before,
+        .marquee-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .marquee-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, #fff 0%, transparent 100%);
+        }
+
+        .marquee-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, #fff 0%, transparent 100%);
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: marquee 30s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         .brand-logo-item {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            opacity: 0.7;
+            padding: 1rem 2.5rem;
+            flex-shrink: 0;
+            transition: opacity 0.3s ease;
+            opacity: 0.6;
         }
 
         .brand-logo-item:hover {
-            transform: scale(1.1);
             opacity: 1;
         }
 
         .brand-logo-item img {
-            max-width: 100%;
-            max-height: 50px;
+            max-width: 120px;
+            max-height: 45px;
             width: auto;
             height: auto;
             object-fit: contain;
@@ -642,16 +677,19 @@
             filter: grayscale(0%);
         }
 
-        @media (max-width: 1024px) {
-            .brand-logos-grid {
-                grid-template-columns: repeat(4, 1fr);
+        @media (max-width: 768px) {
+            .brand-logo-item {
+                padding: 1rem 2rem;
             }
-        }
 
-        @media (max-width: 600px) {
-            .brand-logos-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
+            .brand-logo-item img {
+                max-width: 100px;
+                max-height: 40px;
+            }
+
+            .marquee-wrapper::before,
+            .marquee-wrapper::after {
+                width: 50px;
             }
         }
 
@@ -1348,36 +1386,62 @@
         </div>
     </section>
 
-    <!-- Brand Logos Strip -->
+    <!-- Brand Logos Strip - Marquee -->
     <section class="brand-logos-strip" role="region" aria-labelledby="brands-heading">
-        <div class="container">
-            <h2 id="brands-heading">Authorized Dealer for World-Class Quartz Brands</h2>
-            <nav class="brand-logos-grid" aria-label="Quartz brand navigation">
+        <h2 id="brands-heading">Authorized Dealer for World-Class Quartz Brands</h2>
+        <div class="marquee-wrapper" aria-label="Quartz brand logos">
+            <div class="marquee-track">
+                <!-- First set of logos -->
                 <a href="cambria/" class="brand-logo-item" aria-label="View Cambria quartz countertops">
-                    <img src="images/logo-cambria.webp" alt="Cambria - American-made premium quartz" loading="lazy">
+                    <img src="images/logo-cambria.webp" alt="Cambria" loading="lazy">
                 </a>
                 <a href="#silestone" class="brand-logo-item" aria-label="View Silestone quartz countertops">
-                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone by Cosentino - World's leading quartz brand" loading="lazy">
+                    <img src="images/logo-silestone-cosentino.webp" alt="Silestone by Cosentino" loading="lazy">
                 </a>
                 <a href="#caesarstone" class="brand-logo-item" aria-label="View Caesarstone quartz countertops">
-                    <img src="images/logo-caesarstone.webp" alt="Caesarstone - The original engineered quartz since 1987" loading="lazy">
+                    <img src="images/logo-caesarstone.webp" alt="Caesarstone" loading="lazy">
                 </a>
                 <a href="#viatera" class="brand-logo-item" aria-label="View Viatera quartz countertops">
-                    <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera by LX Hausys - Premium Korean quartz surfaces" loading="lazy">
+                    <img src="images/logo-viatera-lx-hausys.webp" alt="Viatera by LX Hausys" loading="lazy">
                 </a>
                 <a href="#hanstone" class="brand-logo-item" aria-label="View HanStone quartz countertops">
-                    <img src="images/logo-hanstone-quartz.webp" alt="HanStone Quartz by Hyundai L&C" loading="lazy">
+                    <img src="images/logo-hanstone-quartz.webp" alt="HanStone Quartz" loading="lazy">
                 </a>
                 <a href="#compac" class="brand-logo-item" aria-label="View Compac quartz countertops">
-                    <img src="images/logo-compac-quartz.webp" alt="Compac - Spanish-made sustainable quartz" loading="lazy">
+                    <img src="images/logo-compac-quartz.webp" alt="Compac Quartz" loading="lazy">
                 </a>
                 <a href="#corian" class="brand-logo-item" aria-label="View Corian quartz countertops">
-                    <img src="images/logo-corian-design.webp" alt="Corian Quartz - DuPont legacy brand" loading="lazy">
+                    <img src="images/logo-corian-design.webp" alt="Corian Quartz" loading="lazy">
                 </a>
                 <a href="#wilsonart" class="brand-logo-item" aria-label="View Wilsonart quartz countertops">
-                    <img src="images/logo-wilsonart.webp" alt="Wilsonart - American surfaces since 1956" loading="lazy">
+                    <img src="images/logo-wilsonart.webp" alt="Wilsonart Quartz" loading="lazy">
                 </a>
-            </nav>
+                <!-- Duplicate set for seamless loop -->
+                <a href="cambria/" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-cambria.webp" alt="" loading="lazy">
+                </a>
+                <a href="#silestone" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-silestone-cosentino.webp" alt="" loading="lazy">
+                </a>
+                <a href="#caesarstone" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-caesarstone.webp" alt="" loading="lazy">
+                </a>
+                <a href="#viatera" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-viatera-lx-hausys.webp" alt="" loading="lazy">
+                </a>
+                <a href="#hanstone" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-hanstone-quartz.webp" alt="" loading="lazy">
+                </a>
+                <a href="#compac" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-compac-quartz.webp" alt="" loading="lazy">
+                </a>
+                <a href="#corian" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-corian-design.webp" alt="" loading="lazy">
+                </a>
+                <a href="#wilsonart" class="brand-logo-item" aria-hidden="true" tabindex="-1">
+                    <img src="images/logo-wilsonart.webp" alt="" loading="lazy">
+                </a>
+            </div>
         </div>
     </section>
 
