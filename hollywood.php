@@ -19,7 +19,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="/" class="logo">Griffin Quartz</a>
+            <a href="/" class="logo"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
 
             <nav class="nav" id="mainNav">
                 <ul class="nav-list">
