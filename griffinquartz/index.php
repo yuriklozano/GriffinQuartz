@@ -26,31 +26,31 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Our Services</a>
                         <ul class="dropdown-menu">
-                            <li><a href="our-services.html">Countertop Services</a></li>
-                            <li><a href="quartz-brands.html">Quartz Product Selection</a></li>
-                            <li><a href="kitchen-bath.html">Countertops for Kitchens & Baths</a></li>
-                            <li><a href="commercial.html">Commercial Services</a></li>
+                            <li><a href="our-services">Countertop Services</a></li>
+                            <li><a href="quartz-brands">Quartz Product Selection</a></li>
+                            <li><a href="kitchen-bath">Countertops for Kitchens & Baths</a></li>
+                            <li><a href="commercial">Commercial Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Installation Locations</a>
                         <ul class="dropdown-menu">
-                            <li><a href="locations.html">Explore All Locations</a></li>
-                            <li><a href="boca-raton.html">Boca Raton, FL</a></li>
-                            <li><a href="fort-lauderdale.html">Fort Lauderdale, FL</a></li>
-                            <li><a href="miami.html">Miami, FL</a></li>
-                            <li><a href="miami-beach.html">Miami Beach, FL</a></li>
-                            <li><a href="west-palm-beach.html">West Palm Beach, FL</a></li>
-                            <li><a href="delray-beach.html">Delray Beach, FL</a></li>
-                            <li><a href="hollywood.html">Hollywood, FL</a></li>
-                            <li><a href="pompano-beach.html">Pompano Beach, FL</a></li>
-                            <li><a href="aventura.html">Aventura, FL</a></li>
-                            <li><a href="coral-gables.html">Coral Gables, FL</a></li>
-                            <li><a href="hialeah.html">Hialeah, FL</a></li>
+                            <li><a href="locations">Explore All Locations</a></li>
+                            <li><a href="boca-raton">Boca Raton, FL</a></li>
+                            <li><a href="fort-lauderdale">Fort Lauderdale, FL</a></li>
+                            <li><a href="miami">Miami, FL</a></li>
+                            <li><a href="miami-beach">Miami Beach, FL</a></li>
+                            <li><a href="west-palm-beach">West Palm Beach, FL</a></li>
+                            <li><a href="delray-beach">Delray Beach, FL</a></li>
+                            <li><a href="hollywood">Hollywood, FL</a></li>
+                            <li><a href="pompano-beach">Pompano Beach, FL</a></li>
+                            <li><a href="aventura">Aventura, FL</a></li>
+                            <li><a href="coral-gables">Coral Gables, FL</a></li>
+                            <li><a href="hialeah">Hialeah, FL</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="gallery.html" class="nav-link">Inspiration Gallery</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="gallery" class="nav-link">Inspiration Gallery</a></li>
+                    <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
                     <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
                 </ul>
             </nav>
@@ -73,7 +73,7 @@
             <p class="hero-badge">Trusted by 100K+ Satisfied Customers</p>
             <h1>Quartz Countertops in South Florida</h1>
             <h2>Widest Selection of Quartz Countertops, Expert Fabrication, and Fast Installation</h2>
-            <p class="hero-description">Transform your kitchen, bathroom, or commercial property with <strong>luxurious and durable quartz countertops</strong> from Griffin Quartz. Serving <a href="boca-raton.html">Boca Raton</a>, <a href="fort-lauderdale.html">Fort Lauderdale</a>, <a href="west-palm-beach.html">West Palm Beach</a>, and all of <strong>South Florida</strong>, we provide <strong>custom quartz and granite surfaces</strong> that combine beauty, strength, and low maintenance.</p>
+            <p class="hero-description">Transform your kitchen, bathroom, or commercial property with <strong>luxurious and durable quartz countertops</strong> from Griffin Quartz. Serving <a href="boca-raton">Boca Raton</a>, <a href="fort-lauderdale">Fort Lauderdale</a>, <a href="west-palm-beach">West Palm Beach</a>, and all of <strong>South Florida</strong>, we provide <strong>custom quartz and granite surfaces</strong> that combine beauty, strength, and low maintenance.</p>
             <div class="hero-cta">
                 <a href="#contact-form" class="btn btn-primary">Get FREE Estimate</a>
                 <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
@@ -121,11 +121,11 @@
                 </div>
                 <div class="feature-card">
                     <h3>Unmatched Selection of Colors, Style & Quality</h3>
-                    <p>Your <strong>one-stop shop</strong> for quartz countertops, granite countertops, sinks, and more—hand-selected from the <a href="quartz-brands.html">finest manufacturers</a> and leading brands.</p>
+                    <p>Your <strong>one-stop shop</strong> for quartz countertops, granite countertops, sinks, and more—hand-selected from the <a href="quartz-brands">finest manufacturers</a> and leading brands.</p>
                 </div>
                 <div class="feature-card">
                     <h3>Factory-Direct Savings on Quartz Countertops</h3>
-                    <p>We source directly from <a href="quartz-brands.html">global suppliers</a>, offering <strong>the largest quartz countertops selection at the lowest prices</strong> in South Florida—<strong>guaranteed</strong>.</p>
+                    <p>We source directly from <a href="quartz-brands">global suppliers</a>, offering <strong>the largest quartz countertops selection at the lowest prices</strong> in South Florida—<strong>guaranteed</strong>.</p>
                 </div>
                 <div class="feature-card">
                     <h3>Expert Quartz Fabrication & Installation</h3>
@@ -133,7 +133,7 @@
                 </div>
             </div>
             <div class="features-cta">
-                <a href="quartz-brands.html" class="btn btn-outline">Explore Product Selection</a>
+                <a href="quartz-brands" class="btn btn-outline">Explore Product Selection</a>
             </div>
         </div>
     </section>
@@ -238,21 +238,21 @@
         <div class="container">
             <h2 class="section-title">Elevate Your South Florida Homes with Quartz Countertops</h2>
             <div class="explore-grid">
-                <a href="kitchen-bath.html" class="explore-card">
+                <a href="kitchen-bath" class="explore-card">
                     <img src="images/explore-kitchen.webp" alt="Modern white kitchen with marble waterfall island and rattan bar stools" loading="lazy">
                     <div class="explore-card-content">
                         <h3>Discover Quartz for Kitchen and Bath</h3>
                         <span class="explore-link">Explore</span>
                     </div>
                 </a>
-                <a href="locations.html" class="explore-card">
+                <a href="locations" class="explore-card">
                     <img src="images/explore-outdoor.webp" alt="Outdoor kitchen with quartz countertops and teal cabinets" loading="lazy">
                     <div class="explore-card-content">
                         <h3>Find a Quartz Installation Service Area Near You</h3>
                         <span class="explore-link">Explore</span>
                     </div>
                 </a>
-                <a href="gallery.html" class="explore-card">
+                <a href="gallery" class="explore-card">
                     <img src="images/explore-gallery.webp" alt="Elegant white kitchen with quartz island and gold fixtures" loading="lazy">
                     <div class="explore-card-content">
                         <h3>Get Inspired by Our Quartz Inspiration Photo Gallery</h3>
@@ -402,15 +402,15 @@
     <section class="explore-cta-section">
         <div class="container">
             <div class="explore-cta-grid">
-                <a href="kitchen-bath.html" class="explore-cta-card">
+                <a href="kitchen-bath" class="explore-cta-card">
                     <img src="images/cta-kitchen.webp" alt="Elegant kitchen with golden cabinets and quartz countertops" loading="lazy">
                     <h3>Explore Quartz for Kitchen & Bath</h3>
                 </a>
-                <a href="locations.html" class="explore-cta-card">
+                <a href="locations" class="explore-cta-card">
                     <img src="images/cta-bathroom.webp" alt="Stylish bathroom with freestanding tub and marble countertop" loading="lazy">
                     <h3>Explore Quartz Installation Locations</h3>
                 </a>
-                <a href="quartz-brands.html" class="explore-cta-card">
+                <a href="quartz-brands" class="explore-cta-card">
                     <img src="images/cta-brands.webp" alt="Stylish interior with marble backsplash and quartz countertop" loading="lazy">
                     <h3>Explore Quartz Product Selection</h3>
                 </a>
@@ -423,28 +423,28 @@
         <div class="container">
             <h2 class="section-title">Featured Articles</h2>
             <div class="blog-grid">
-                <a href="blog/top-10-countertop-installation.html" class="blog-card">
+                <a href="blog/top-10-countertop-installation" class="blog-card">
                     <img src="images/blog-1.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Aug 09, 2025</span>
                         <h3>Top 10 Best Countertop Installation Near Fort Lauderdale 2025</h3>
                     </div>
                 </a>
-                <a href="blog/quartz-countertops-cost.html" class="blog-card">
+                <a href="blog/quartz-countertops-cost" class="blog-card">
                     <img src="images/blog-2.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Sep 01, 2025</span>
                         <h3>How Much Are Quartz Countertops in South Florida</h3>
                     </div>
                 </a>
-                <a href="blog/quartz-pricing-guide.html" class="blog-card">
+                <a href="blog/quartz-pricing-guide" class="blog-card">
                     <img src="images/blog-3.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Aug 22, 2025</span>
                         <h3>How Much Is Quartz Countertops? 2025 Pricing Guide</h3>
                     </div>
                 </a>
-                <a href="blog/white-quartz-countertops.html" class="blog-card">
+                <a href="blog/white-quartz-countertops" class="blog-card">
                     <img src="images/blog-4.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Aug 20, 2025</span>
@@ -510,10 +510,10 @@
                 <div class="footer-col">
                     <h4>Griffin Quartz</h4>
                     <ul>
-                        <li><a href="quartz-brands.html">Product Selection</a></li>
-                        <li><a href="kitchen-bath.html">Kitchens and Baths</a></li>
-                        <li><a href="gallery.html">Inspiration Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="quartz-brands">Product Selection</a></li>
+                        <li><a href="kitchen-bath">Kitchens and Baths</a></li>
+                        <li><a href="gallery">Inspiration Gallery</a></li>
+                        <li><a href="about">About Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
