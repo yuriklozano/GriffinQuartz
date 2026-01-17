@@ -3253,7 +3253,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 400px;
     gap: var(--spacing-xl);
-    align-items: start;
+    align-items: stretch;
 }
 
 /* Left Preview Stack */
@@ -3304,11 +3304,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+    flex: 1;
+    min-height: 400px;
 }
 
 .inspiration-photo img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
     transition: opacity 0.3s ease;
 }
