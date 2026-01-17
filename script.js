@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Reviews Carousel
     initReviewsCarousel();
+
+    // Accordion
+    initAccordion();
 });
 
 // ===== Mobile Menu =====
@@ -464,4 +467,33 @@ function initReviewsCarousel() {
     // Initialize
     updateCarousel();
     startAutoPlay();
+}
+
+// ===== Accordion =====
+function initAccordion() {
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+        const items = accordion.querySelectorAll('.accordion-item');
+
+        items.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+
+            header.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all items in this accordion
+                items.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+                });
+
+                // If the clicked item wasn't active, open it
+                if (!isActive) {
+                    item.classList.add('active');
+                    header.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    });
 }

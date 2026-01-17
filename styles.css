@@ -1000,24 +1000,79 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-xl);
 }
 
-.difference-item {
-    margin-bottom: var(--spacing-lg);
-    padding-bottom: var(--spacing-lg);
-    border-bottom: 1px solid var(--color-light-gray);
+/* ===== Accordion Styles ===== */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.difference-item:last-child {
-    border-bottom: none;
+.accordion-item {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
 }
 
-.difference-item h4 {
+.accordion-item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-heading);
     font-size: 1.125rem;
-    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: background-color 0.3s ease;
 }
 
-.difference-item p {
+.accordion-header:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.accordion-header span {
+    flex: 1;
+    padding-right: var(--spacing-md);
+}
+
+.accordion-icon {
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 300px;
+}
+
+.accordion-content p {
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
     color: var(--color-gray);
-    font-size: 0.9375rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
 }
 
 /* ===== Process Section ===== */
