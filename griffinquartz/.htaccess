@@ -17,24 +17,20 @@ RewriteBase /
 
 # 301 Redirect .html URLs to clean URLs (SEO-friendly)
 # Example: /quartz-brands.html redirects to /quartz-brands
-RewriteCond %{REQUEST_URI} \.html$
-RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+RewriteCond %{THE_REQUEST} \s/(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
 
 # 301 Redirect .php URLs to clean URLs (SEO-friendly)
 # Example: /quartz-brands.php redirects to /quartz-brands
-RewriteCond %{THE_REQUEST} \.php
-RewriteRule ^(.*)\.php$ /$1 [R=301,L]
+RewriteCond %{THE_REQUEST} \s/(.+)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
 
-# Remove .php extension from URLs
-# Example: /contact.php becomes /contact
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^/]+)/?$ $1.php [L]
-
-# Handle requests without extension (serve .php file)
+# Serve .php file for extensionless URLs
+# Skip if it's a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
+# Check if .php version exists and serve it
+RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L]
 
 # Prevent directory listing
