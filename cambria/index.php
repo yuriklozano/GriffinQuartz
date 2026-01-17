@@ -1267,6 +1267,62 @@
                         <h4>Sandgate</h4>
                     </div>
                 </a>
+                <a href="inverness-gold" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-inverness-gold.webp" alt="Inverness Gold" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Inverness Gold</h4>
+                    </div>
+                </a>
+                <a href="oakleigh" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-oakleigh.webp" alt="Oakleigh" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Oakleigh</h4>
+                    </div>
+                </a>
+                <a href="winterbourne" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-winterbourne.webp" alt="Winterbourne" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Winterbourne</h4>
+                    </div>
+                </a>
+                <a href="ainsley" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-ainsley.webp" alt="Ainsley" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Ainsley</h4>
+                    </div>
+                </a>
+                <a href="hadley" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-hadley.webp" alt="Hadley" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Hadley</h4>
+                    </div>
+                </a>
+                <a href="colton" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-colton.webp" alt="Colton" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Colton</h4>
+                    </div>
+                </a>
+                <a href="rose-bay" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-rose-bay.webp" alt="Rose Bay" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Rose Bay</h4>
+                    </div>
+                </a>
             </div>
 
             <div style="text-align: center; margin-top: 2rem;">
