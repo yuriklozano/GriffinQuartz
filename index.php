@@ -369,30 +369,37 @@
     <!-- Sale Countdown Section -->
     <section class="sale-section">
         <div class="container">
-            <p class="sale-label">Secure Lowest Prices on Countertops</p>
-            <h2>New Year, New Quartz</h2>
-            <p class="sale-subtitle">Select Quartz and Granite Slabs Up to 50% OFF</p>
-            <a href="#contact-form" class="btn btn-primary">Lock In the Lowest Price Here</a>
+            <div class="sale-content">
+                <div class="sale-text">
+                    <p class="sale-label">Secure Lowest Prices on Countertops</p>
+                    <h2>New Year, New Quartz</h2>
+                    <p class="sale-subtitle">Select Quartz and Granite Slabs Up to 50% OFF</p>
+                    <a href="#contact-form" class="btn btn-primary">Lock In the Lowest Price Here</a>
 
-            <div class="countdown" id="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-number" id="days">00</span>
-                    <span class="countdown-label">Day</span>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Day</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Hour</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minute</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Second</span>
+                        </div>
+                    </div>
+                    <p class="sale-note"><strong>Secure Your Savings</strong> by Requesting a Free Estimate!</p>
                 </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="hours">00</span>
-                    <span class="countdown-label">Hour</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="minutes">00</span>
-                    <span class="countdown-label">Minute</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number" id="seconds">00</span>
-                    <span class="countdown-label">Second</span>
+                <div class="sale-image">
+                    <img src="images/quartz-samples-gold-hardware-luxury.webp" alt="Premium quartz countertop samples with gold hardware" loading="lazy">
                 </div>
             </div>
-            <p class="sale-note"><strong>Secure Your Savings</strong> by Requesting a Free Estimate!</p>
         </div>
     </section>
 
@@ -462,95 +469,95 @@
         </div>
     </section>
 
-    <!-- Luxury Service Showcase Section -->
+    <!-- Service Showcase Section -->
     <section class="luxury-showcase-section">
         <div class="luxury-showcase-header">
-            <span class="luxury-badge">Bespoke Quartz Solutions</span>
-            <h2>Curated Collections for Discerning Clients</h2>
-            <p>From intimate bathroom retreats to expansive commercial spaces, our master craftsmen deliver precision-engineered quartz surfaces tailored to your vision.</p>
+            <span class="luxury-badge">Our Services</span>
+            <h2>Quartz Countertops for Every Space</h2>
+            <p>From kitchen remodels to commercial projects, we deliver quality quartz surfaces at competitive prices with expert installation.</p>
         </div>
 
         <div class="luxury-showcase-grid">
             <!-- Kitchen Countertops -->
             <a href="kitchen-countertops" class="luxury-showcase-card">
                 <div class="luxury-showcase-image">
-                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white kitchen with quartz countertops, arched windows and gold fixtures" loading="lazy">
+                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Modern kitchen with quartz countertops and gold fixtures" loading="lazy">
                     <div class="luxury-showcase-overlay"></div>
                 </div>
                 <div class="luxury-showcase-content">
                     <span class="luxury-showcase-label">Residential</span>
                     <h3>Kitchen Countertops</h3>
-                    <p>Transform your culinary space with stunning quartz islands, waterfall edges, and seamless perimeter countertops. Precision-crafted for South Florida's most discerning homeowners.</p>
+                    <p>Beautiful quartz islands, waterfall edges, and perimeter countertops. Built to last with options for every budget.</p>
                     <div class="luxury-showcase-features">
                         <span><i class="bi bi-check2"></i> Waterfall Edges</span>
                         <span><i class="bi bi-check2"></i> Custom Islands</span>
                         <span><i class="bi bi-check2"></i> Backsplashes</span>
                     </div>
-                    <span class="luxury-showcase-link">Design Your Kitchen <i class="bi bi-arrow-right"></i></span>
+                    <span class="luxury-showcase-link">Get Kitchen Quote <i class="bi bi-arrow-right"></i></span>
                 </div>
             </a>
 
             <!-- Bathroom Vanity Countertops -->
             <a href="bathroom-vanity-countertops" class="luxury-showcase-card">
                 <div class="luxury-showcase-image">
-                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Luxury bathroom with black marble vanity and gold fixtures" loading="lazy">
+                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Bathroom with marble vanity countertop" loading="lazy">
                     <div class="luxury-showcase-overlay"></div>
                 </div>
                 <div class="luxury-showcase-content">
                     <span class="luxury-showcase-label">Residential</span>
                     <h3>Bathroom Vanity Countertops</h3>
-                    <p>Elevate your private sanctuary with spa-inspired quartz vanities, floating shelves, and elegant shower surrounds. Non-porous surfaces perfect for South Florida's humidity.</p>
+                    <p>Upgrade your bathroom with durable quartz vanities and surrounds. Non-porous surfaces that handle South Florida's humidity.</p>
                     <div class="luxury-showcase-features">
                         <span><i class="bi bi-check2"></i> Single & Double Vanities</span>
                         <span><i class="bi bi-check2"></i> Shower Surrounds</span>
                         <span><i class="bi bi-check2"></i> Tub Decks</span>
                     </div>
-                    <span class="luxury-showcase-link">Design Your Bathroom <i class="bi bi-arrow-right"></i></span>
+                    <span class="luxury-showcase-link">Get Bathroom Quote <i class="bi bi-arrow-right"></i></span>
                 </div>
             </a>
 
             <!-- Outdoor Countertops -->
             <a href="outdoor-countertops" class="luxury-showcase-card">
                 <div class="luxury-showcase-image">
-                    <img src="images/rooftop-outdoor-kitchen-ocean-sunset.webp" alt="Rooftop outdoor kitchen with quartz countertops and ocean sunset view" loading="lazy">
+                    <img src="images/rooftop-outdoor-kitchen-ocean-sunset.webp" alt="Outdoor kitchen with quartz countertops" loading="lazy">
                     <div class="luxury-showcase-overlay"></div>
                 </div>
                 <div class="luxury-showcase-content">
                     <span class="luxury-showcase-label">Outdoor Living</span>
                     <h3>Outdoor Kitchen Countertops</h3>
-                    <p>Create the ultimate alfresco entertaining experience with UV-resistant quartz surfaces engineered for Florida's sun, salt air, and coastal lifestyle.</p>
+                    <p>Weather-resistant quartz for your outdoor space. Built to handle Florida's sun, salt air, and coastal climate.</p>
                     <div class="luxury-showcase-features">
                         <span><i class="bi bi-check2"></i> Pool Bars</span>
                         <span><i class="bi bi-check2"></i> BBQ Stations</span>
                         <span><i class="bi bi-check2"></i> Outdoor Kitchens</span>
                     </div>
-                    <span class="luxury-showcase-link">Design Your Outdoor Space <i class="bi bi-arrow-right"></i></span>
+                    <span class="luxury-showcase-link">Get Outdoor Quote <i class="bi bi-arrow-right"></i></span>
                 </div>
             </a>
 
             <!-- Commercial Countertops -->
             <a href="commercial-countertops" class="luxury-showcase-card">
                 <div class="luxury-showcase-image">
-                    <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial bar with black and gold quartz countertops in upscale restaurant" loading="lazy">
+                    <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial bar with quartz countertops" loading="lazy">
                     <div class="luxury-showcase-overlay"></div>
                 </div>
                 <div class="luxury-showcase-content">
                     <span class="luxury-showcase-label">Commercial</span>
                     <h3>Commercial Countertops</h3>
-                    <p>Premium quartz solutions for restaurants, hotels, offices, and retail spaces. Volume pricing, expedited timelines, and commercial-grade durability for high-traffic environments.</p>
+                    <p>Quartz solutions for restaurants, hotels, offices, and retail. Volume pricing and fast turnaround for business projects.</p>
                     <div class="luxury-showcase-features">
                         <span><i class="bi bi-check2"></i> Restaurant & Bar</span>
                         <span><i class="bi bi-check2"></i> Hotel & Hospitality</span>
                         <span><i class="bi bi-check2"></i> Office & Retail</span>
                     </div>
-                    <span class="luxury-showcase-link">Explore Commercial Solutions <i class="bi bi-arrow-right"></i></span>
+                    <span class="luxury-showcase-link">Get Commercial Quote <i class="bi bi-arrow-right"></i></span>
                 </div>
             </a>
         </div>
 
         <div class="luxury-showcase-cta">
-            <p>Not sure which solution fits your project?</p>
-            <a href="#contact-form" class="btn btn-primary">Schedule a Free Consultation</a>
+            <p>Not sure which option fits your project?</p>
+            <a href="#contact-form" class="btn btn-primary">Get a Free Quote</a>
         </div>
     </section>
 
