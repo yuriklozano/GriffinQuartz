@@ -2860,7 +2860,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-.slot-label {
+.selected-color-slot .slot-label {
     position: absolute;
     top: 10px;
     left: 50%;
@@ -2874,7 +2874,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.slot-hex {
+.selected-color-slot .slot-hex {
     background: rgba(255, 255, 255, 0.9);
     padding: 6px 12px;
     border-radius: 6px;
@@ -3431,7 +3431,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-.slot-label {
+.palette-slot .slot-label {
     background: rgba(0, 0, 0, 0.6);
     color: var(--color-white);
     padding: 4px 14px;
@@ -3442,7 +3442,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5px;
 }
 
-.slot-hex {
+.palette-slot .slot-hex {
     background: rgba(255, 255, 255, 0.95);
     padding: 6px 12px;
     border-radius: 6px;
