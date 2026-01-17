@@ -113,69 +113,69 @@
 
                     <div class="color-swatches" id="colorSwatches">
                         <!-- White & Light -->
-                        <div class="swatch active" data-color="#f5f5f5" data-pattern="solid" data-name="Arctic White" data-category="white" title="Arctic White">
+                        <div class="swatch active" data-image="images/gempages_466492372277003100-f7734e52-3538-4cee-919f-3c3c7592a09b_800x800.webp" data-name="Arctic White" data-category="white" title="Arctic White">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-f7734e52-3538-4cee-919f-3c3c7592a09b_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Arctic White</span>
                         </div>
-                        <div class="swatch" data-color="#faf8f5" data-pattern="solid" data-name="Cotton White" data-category="white" title="Cotton White">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-a19a946a-f9c0-4bb4-bd50-a343b51d5495_800x800.webp" data-name="Cotton White" data-category="white" title="Cotton White">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-a19a946a-f9c0-4bb4-bd50-a343b51d5495_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Cotton White</span>
                         </div>
-                        <div class="swatch" data-color="#e8e4df" data-pattern="solid" data-name="Frost" data-category="white" title="Frost">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-04837a1f-7071-4be7-9bcc-f97c6af486d9_800x800.webp" data-name="Frost" data-category="white" title="Frost">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-04837a1f-7071-4be7-9bcc-f97c6af486d9_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Frost</span>
                         </div>
 
                         <!-- Marble Look -->
-                        <div class="swatch" data-color="#f8f6f3" data-pattern="calacatta" data-name="Calacatta Luxe" data-category="marble" title="Calacatta Luxe">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-73cc11db-222d-4622-9742-4cf0833ba929_800x800.webp" data-name="Calacatta Luxe" data-category="marble" title="Calacatta Luxe">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-73cc11db-222d-4622-9742-4cf0833ba929_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Calacatta Luxe</span>
                         </div>
-                        <div class="swatch" data-color="#f0eeeb" data-pattern="carrara" data-name="Carrara Mist" data-category="marble" title="Carrara Mist">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-da5ef41c-edec-4b46-b96f-d1f2def43638_800x800.webp" data-name="Carrara Mist" data-category="marble" title="Carrara Mist">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-da5ef41c-edec-4b46-b96f-d1f2def43638_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Carrara Mist</span>
                         </div>
-                        <div class="swatch" data-color="#e5e2de" data-pattern="statuario" data-name="Statuario" data-category="marble" title="Statuario">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-dd7ee3f1-483c-4c32-88b2-c06a57c0fe46_800x800.webp" data-name="Statuario" data-category="marble" title="Statuario">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-dd7ee3f1-483c-4c32-88b2-c06a57c0fe46_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Statuario</span>
                         </div>
-                        <div class="swatch" data-color="#f2ede6" data-pattern="veined" data-name="Calacatta Gold" data-category="marble" title="Calacatta Gold">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-2cc4ec19-ffd3-44b0-8f1e-94d1f9fd9b49_800x800.webp" data-name="Calacatta Gold" data-category="marble" title="Calacatta Gold">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-2cc4ec19-ffd3-44b0-8f1e-94d1f9fd9b49_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Calacatta Gold</span>
                         </div>
 
                         <!-- Dark & Bold -->
-                        <div class="swatch" data-color="#1a1a1a" data-pattern="solid" data-name="Midnight Black" data-category="dark" title="Midnight Black">
+                        <div class="swatch" data-image="images/commercial-bar-black-gold-quartz-restaurant.webp" data-name="Midnight Black" data-category="dark" title="Midnight Black">
                             <div class="swatch-color" style="background: url('images/commercial-bar-black-gold-quartz-restaurant.webp') center/cover;"></div>
                             <span class="swatch-name">Midnight Black</span>
                         </div>
-                        <div class="swatch" data-color="#2d2d2d" data-pattern="solid" data-name="Charcoal" data-category="dark" title="Charcoal">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-0629076f-1975-44f8-806d-04f0d832f788_800x800.webp" data-name="Charcoal" data-category="dark" title="Charcoal">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-0629076f-1975-44f8-806d-04f0d832f788_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Charcoal</span>
                         </div>
-                        <div class="swatch" data-color="#3d3d3d" data-pattern="sparkle" data-name="Black Galaxy" data-category="dark" title="Black Galaxy">
+                        <div class="swatch" data-image="images/quartz-samples-gold-hardware-luxury.webp" data-name="Black Galaxy" data-category="dark" title="Black Galaxy">
                             <div class="swatch-color" style="background: url('images/quartz-samples-gold-hardware-luxury.webp') 33% center/cover;"></div>
                             <span class="swatch-name">Black Galaxy</span>
                         </div>
-                        <div class="swatch" data-color="#4a4a4a" data-pattern="solid" data-name="Storm Gray" data-category="dark" title="Storm Gray">
+                        <div class="swatch" data-image="images/modern-kitchen-gray-quartz-wood-slats.webp" data-name="Storm Gray" data-category="dark" title="Storm Gray">
                             <div class="swatch-color" style="background: url('images/modern-kitchen-gray-quartz-wood-slats.webp') center/cover;"></div>
                             <span class="swatch-name">Storm Gray</span>
                         </div>
 
                         <!-- Warm Tones -->
-                        <div class="swatch" data-color="#d4c4b0" data-pattern="solid" data-name="Sahara Beige" data-category="warm" title="Sahara Beige">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-e54b6997-68a0-4862-b82a-791ba38f6535_800x800.webp" data-name="Sahara Beige" data-category="warm" title="Sahara Beige">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-e54b6997-68a0-4862-b82a-791ba38f6535_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Sahara Beige</span>
                         </div>
-                        <div class="swatch" data-color="#c9b99a" data-pattern="solid" data-name="Tuscan Sand" data-category="warm" title="Tuscan Sand">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-ce3ebffe-b91f-48c1-bba1-e7dde1047dd4_800x800.webp" data-name="Tuscan Sand" data-category="warm" title="Tuscan Sand">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-ce3ebffe-b91f-48c1-bba1-e7dde1047dd4_800x800.webp') center/cover;"></div>
                             <span class="swatch-name">Tuscan Sand</span>
                         </div>
-                        <div class="swatch" data-color="#a08060" data-pattern="solid" data-name="Café Brown" data-category="warm" title="Café Brown">
+                        <div class="swatch" data-image="images/gempages_466492372277003100-16c97aa4-831d-47c0-a836-f0cca3c63325_800x800.webp" data-name="Café Brown" data-category="warm" title="Café Brown">
                             <div class="swatch-color" style="background: url('images/gempages_466492372277003100-16c97aa4-831d-47c0-a836-f0cca3c63325_800x800.webp') 0% center/cover;"></div>
                             <span class="swatch-name">Café Brown</span>
                         </div>
-                        <div class="swatch" data-color="#e8ddd0" data-pattern="solid" data-name="Ivory Coast" data-category="warm" title="Ivory Coast">
+                        <div class="swatch" data-image="images/quartz-samples-gold-hardware-luxury.webp" data-name="Ivory Coast" data-category="warm" title="Ivory Coast">
                             <div class="swatch-color" style="background: url('images/quartz-samples-gold-hardware-luxury.webp') 100% center/cover;"></div>
                             <span class="swatch-name">Ivory Coast</span>
                         </div>
@@ -271,12 +271,20 @@
     // Color Visualizer functionality
     document.addEventListener('DOMContentLoaded', function() {
         const swatches = document.querySelectorAll('.swatch');
-        const overlay = document.getElementById('countertopOverlay');
+        const previewImage = document.getElementById('kitchenBase');
         const colorName = document.getElementById('selectedColorName');
         const categoryBtns = document.querySelectorAll('.category-btn');
+        const overlay = document.getElementById('countertopOverlay');
 
-        // Set initial state
-        updateOverlay('#f8f6f3', 'calacatta', 'Calacatta Luxe');
+        // Hide the overlay since we're showing full images now
+        if (overlay) overlay.style.display = 'none';
+
+        // Set initial image from first active swatch
+        const activeSwatch = document.querySelector('.swatch.active');
+        if (activeSwatch) {
+            previewImage.src = activeSwatch.dataset.image;
+            colorName.textContent = activeSwatch.dataset.name;
+        }
 
         swatches.forEach(swatch => {
             swatch.addEventListener('click', function() {
@@ -285,47 +293,20 @@
                 // Add active to clicked swatch
                 this.classList.add('active');
 
-                const color = this.dataset.color;
-                const pattern = this.dataset.pattern;
+                const imageSrc = this.dataset.image;
                 const name = this.dataset.name;
 
-                updateOverlay(color, pattern, name);
+                // Fade transition
+                previewImage.style.opacity = '0';
+                setTimeout(() => {
+                    previewImage.src = imageSrc;
+                    previewImage.style.opacity = '1';
+                }, 200);
+
+                // Update name
+                colorName.textContent = name;
             });
         });
-
-        function updateOverlay(color, pattern, name) {
-            // Remove all pattern classes
-            overlay.className = 'countertop-overlay';
-
-            // Apply color/pattern
-            if (pattern === 'solid') {
-                overlay.style.background = color;
-            } else if (pattern === 'calacatta') {
-                overlay.classList.add('pattern-calacatta');
-                overlay.style.background = '';
-            } else if (pattern === 'carrara') {
-                overlay.classList.add('pattern-carrara');
-                overlay.style.background = '';
-            } else if (pattern === 'statuario') {
-                overlay.classList.add('pattern-statuario');
-                overlay.style.background = '';
-            } else if (pattern === 'veined') {
-                overlay.classList.add('pattern-calacatta-gold');
-                overlay.style.background = '';
-            } else if (pattern === 'sparkle') {
-                overlay.classList.add('pattern-galaxy');
-                overlay.style.background = '';
-            }
-
-            // Update name
-            colorName.textContent = name;
-
-            // Add animation
-            overlay.style.opacity = '0';
-            setTimeout(() => {
-                overlay.style.opacity = '0.85';
-            }, 50);
-        }
 
         // Category filtering
         categoryBtns.forEach(btn => {
