@@ -204,14 +204,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="hero-location">
         <div class="hero-background">
             <img src="images/waterfront-marble-bar-illuminated-sunset.webp" alt="Luxury quartz countertops in South Florida waterfront home" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz Countertops in South Florida</h1>
-            <p class="hero-description">Palm Beach | Broward | Miami-Dade Counties</p>
+            <span class="hero-badge">South Florida's #1 Quartz Installer</span>
+            <h1>Premium Quartz Countertops Across South Florida</h1>
+            <p class="hero-headline">Palm Beach | Broward | Miami-Dade Counties</p>
+            <p class="hero-description">From Boca Raton to Miami, Griffin Quartz has transformed thousands of kitchens and bathrooms with stunning quartz surfaces. 200+ colors, factory-direct pricing, and the region's fastest installation times.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Quote</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | 100K+ Satisfied Customers</p>
         </div>
     </section>
 

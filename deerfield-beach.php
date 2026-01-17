@@ -178,14 +178,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="hero-location">
         <div class="hero-background">
             <img src="images/rooftop-outdoor-kitchen-ocean-sunset.webp" alt="Oceanfront quartz countertops in Deerfield Beach Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz Countertops in Deerfield Beach, FL</h1>
-            <p class="hero-description">Coastal Living Deserves Premium Surfaces</p>
+            <span class="hero-badge">Deerfield Beach Condo Specialists</span>
+            <h1>Beautiful Quartz Countertops for Deerfield Beach Living</h1>
+            <p class="hero-headline">Coastal-Ready Surfaces Built for Paradise</p>
+            <p class="hero-description">From oceanfront high-rises to Century Village, we specialize in Deerfield Beach installations. Humidity-resistant quartz, condo building expertise, and just 10 minutes from our showroom.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Quote</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | Condo Installation Experts</p>
         </div>
     </section>
 

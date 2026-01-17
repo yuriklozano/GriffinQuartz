@@ -178,14 +178,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="hero-location">
         <div class="hero-background">
             <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury quartz countertops in Parkland Florida estate home" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Luxury Quartz Countertops in Parkland, FL</h1>
-            <p class="hero-description">Premium Surfaces for South Florida's Most Distinguished Homes</p>
+            <span class="hero-badge">Parkland's Luxury Countertop Specialists</span>
+            <h1>Exquisite Quartz for Parkland's Finest Homes</h1>
+            <p class="hero-headline">White-Glove Service for Discerning Homeowners</p>
+            <p class="hero-description">Your Parkland estate deserves nothing less than perfection. Experience rare Calacatta patterns, exclusive designer selections, and master craftsmanship trusted by Heron Bay's most prestigious residences.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Request Private Consultation</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | Trusted by Parkland's Elite</p>
         </div>
     </section>
 
