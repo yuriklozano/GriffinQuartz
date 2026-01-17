@@ -756,6 +756,9 @@
                 <div class="partner-logo">
                     <img src="images/gempages_466492372277003100-045fa29f-6b93-4780-b957-8edd58d494ce_800x800.webp" alt="HanStone® Quartz Logo">
                 </div>
+                <div class="partner-logo">
+                    <img src="images/gempages_466492372277003100-ddbf34ff-f246-403a-a23f-3a1624851823_800x800.webp" alt="Wilsonart® Engineered Surfaces Logo">
+                </div>
                 <!-- Duplicate set for seamless loop -->
                 <div class="partner-logo">
                     <img src="images/gempages_466492372277003100-2517d847-2fd5-4fc6-8a46-63dbe3dad237_800x800.webp" alt="Silestone® by Cosentino Logo">
@@ -777,6 +780,9 @@
                 </div>
                 <div class="partner-logo">
                     <img src="images/gempages_466492372277003100-045fa29f-6b93-4780-b957-8edd58d494ce_800x800.webp" alt="HanStone® Quartz Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/gempages_466492372277003100-ddbf34ff-f246-403a-a23f-3a1624851823_800x800.webp" alt="Wilsonart® Engineered Surfaces Logo">
                 </div>
             </div>
         </div>
