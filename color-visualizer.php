@@ -79,101 +79,64 @@
     <section class="page-hero visualizer-hero">
         <div class="container">
             <h1>Design Studio</h1>
-            <p>Explore quartz colors and discover the perfect palette for your dream space</p>
+            <p>Your complete toolkit for designing the perfect countertop space</p>
         </div>
     </section>
 
-    <!-- Quartz Color Visualizer -->
-    <section class="visualizer-section">
+    <!-- SECTION 1: Quartz Color Explorer -->
+    <section class="studio-section" id="colorExplorer">
         <div class="container">
-            <div class="section-intro">
-                <h2>Quartz Color Explorer</h2>
-                <p>Select a color to see the slab and matching inspiration</p>
-            </div>
-
-            <!-- Tool Actions Bar -->
-            <div class="tool-actions-bar">
-                <button class="tool-btn" id="compareModeBtn">
-                    <i class="bi bi-columns-gap"></i>
-                    <span>Compare Colors</span>
-                </button>
-                <button class="tool-btn" id="requestSampleBtn">
-                    <i class="bi bi-box-seam"></i>
-                    <span>Request Samples</span>
-                </button>
-                <button class="tool-btn" id="downloadPaletteBtn">
-                    <i class="bi bi-download"></i>
-                    <span>Download Palette</span>
-                </button>
-            </div>
-
-            <!-- Compare Mode Panel (Hidden by default) -->
-            <div class="compare-panel" id="comparePanel" style="display: none;">
-                <div class="compare-header">
-                    <h3><i class="bi bi-columns-gap"></i> Compare Mode</h3>
-                    <p>Click up to 3 colors to compare side-by-side</p>
-                    <button class="close-compare" id="closeCompare"><i class="bi bi-x-lg"></i></button>
+            <div class="section-header-fancy">
+                <span class="section-number">01</span>
+                <div class="section-header-content">
+                    <h2>Quartz Color Explorer</h2>
+                    <p>Select a color to visualize how it looks in real spaces. Filter by room type or category to find your perfect match.</p>
                 </div>
-                <div class="compare-slots">
-                    <div class="compare-slot empty" id="compareSlot1">
-                        <div class="compare-color"></div>
-                        <span class="compare-name">Select Color 1</span>
-                        <button class="remove-compare"><i class="bi bi-x"></i></button>
-                    </div>
-                    <div class="compare-slot empty" id="compareSlot2">
-                        <div class="compare-color"></div>
-                        <span class="compare-name">Select Color 2</span>
-                        <button class="remove-compare"><i class="bi bi-x"></i></button>
-                    </div>
-                    <div class="compare-slot empty" id="compareSlot3">
-                        <div class="compare-color"></div>
-                        <span class="compare-name">Select Color 3</span>
-                        <button class="remove-compare"><i class="bi bi-x"></i></button>
-                    </div>
-                </div>
-                <button class="btn btn-outline btn-sm" id="clearCompare">Clear All</button>
             </div>
 
-            <div class="studio-layout">
-                <!-- Left: Pantone Card + Photo Stack -->
-                <div class="preview-stack">
-                    <!-- Pantone Style Card -->
-                    <div class="pantone-card-lg" id="pantoneCard">
-                        <div class="pantone-swatch" id="pantoneSwatch" style="background: #F8F8F8;"></div>
-                        <div class="pantone-label">
-                            <span class="pantone-name" id="pantoneName">Arctic White</span>
-                            <span class="pantone-collection" id="pantoneCollection">White Collection</span>
+            <div class="explorer-layout">
+                <!-- Left: Preview Area -->
+                <div class="explorer-preview">
+                    <!-- Pantone Style Card Overlaid -->
+                    <div class="preview-container">
+                        <div class="inspiration-photo-large">
+                            <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Inspiration photo" id="inspirationImg">
+                        </div>
+                        <div class="pantone-card-overlay" id="pantoneCard">
+                            <div class="pantone-swatch" id="pantoneSwatch" style="background: #F8F8F8;"></div>
+                            <div class="pantone-label">
+                                <span class="pantone-name" id="pantoneName">Arctic White</span>
+                                <span class="pantone-collection" id="pantoneCollection">White Collection</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Room Photo Below -->
-                    <div class="inspiration-photo">
-                        <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Inspiration photo" id="inspirationImg">
-                    </div>
-
                     <!-- Room Type Filter -->
-                    <div class="room-type-filter">
+                    <div class="room-filter-bar">
                         <span class="filter-label">View in:</span>
-                        <button class="room-btn active" data-room="all"><i class="bi bi-grid-3x3-gap"></i> All</button>
-                        <button class="room-btn" data-room="kitchen"><i class="bi bi-cup-hot"></i> Kitchen</button>
-                        <button class="room-btn" data-room="bathroom"><i class="bi bi-droplet"></i> Bath</button>
-                        <button class="room-btn" data-room="outdoor"><i class="bi bi-sun"></i> Outdoor</button>
+                        <div class="room-filter-btns">
+                            <button class="room-btn active" data-room="all"><i class="bi bi-grid-3x3-gap"></i> All Rooms</button>
+                            <button class="room-btn" data-room="kitchen"><i class="bi bi-cup-hot"></i> Kitchen</button>
+                            <button class="room-btn" data-room="bathroom"><i class="bi bi-droplet"></i> Bathroom</button>
+                            <button class="room-btn" data-room="outdoor"><i class="bi bi-sun"></i> Outdoor</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right: Color Swatches Grid -->
-                <div class="swatch-panel">
-                    <h3>Select a Quartz Color</h3>
-
-                    <div class="swatch-categories">
-                        <button class="cat-btn active" data-cat="all">All</button>
-                        <button class="cat-btn" data-cat="white">Whites</button>
-                        <button class="cat-btn" data-cat="marble">Marbles</button>
-                        <button class="cat-btn" data-cat="dark">Darks</button>
-                        <button class="cat-btn" data-cat="warm">Warm</button>
+                <!-- Right: Color Selection -->
+                <div class="color-selector-panel">
+                    <div class="selector-header">
+                        <h3>Choose Your Quartz Color</h3>
+                        <div class="category-filter">
+                            <button class="cat-btn active" data-cat="all">All</button>
+                            <button class="cat-btn" data-cat="white">Whites</button>
+                            <button class="cat-btn" data-cat="marble">Marbles</button>
+                            <button class="cat-btn" data-cat="dark">Darks</button>
+                            <button class="cat-btn" data-cat="warm">Warm</button>
+                        </div>
                     </div>
 
-                    <div class="swatch-grid" id="swatchGrid">
+                    <div class="color-grid" id="swatchGrid">
                         <!-- White Collection -->
                         <div class="color-chip active" data-cat="white" data-name="Arctic White" data-collection="White Collection" data-color="#F8F8F8" data-img="images/luxury-white-kitchen-arched-windows-gold.webp" data-room="kitchen" data-imgs='{"kitchen":"images/luxury-white-kitchen-arched-windows-gold.webp","bathroom":"images/luxury-bathroom-black-marble-gold-fixtures.webp","outdoor":"images/outdoor-kitchen-white-marble-waterfall-modern.webp"}'>
                             <div class="chip-color" style="background: #F8F8F8;"></div>
@@ -225,155 +188,219 @@
                             <div class="chip-color" style="background: #D4C4B0;"></div>
                             <span class="chip-name">Sahara Beige</span>
                         </div>
-                        <div class="color-chip" data-cat="warm" data-name="Café Brown" data-collection="Warm Collection" data-color="#A08060" data-img="images/backyard-outdoor-kitchen-firepit-evening.webp" data-room="outdoor" data-imgs='{"kitchen":"images/industrial-loft-kitchen-brick-quartz-island.webp","bathroom":"images/luxury-bathroom-black-marble-gold-fixtures.webp","outdoor":"images/backyard-outdoor-kitchen-firepit-evening.webp"}'>
+                        <div class="color-chip" data-cat="warm" data-name="Cafe Brown" data-collection="Warm Collection" data-color="#A08060" data-img="images/backyard-outdoor-kitchen-firepit-evening.webp" data-room="outdoor" data-imgs='{"kitchen":"images/industrial-loft-kitchen-brick-quartz-island.webp","bathroom":"images/luxury-bathroom-black-marble-gold-fixtures.webp","outdoor":"images/backyard-outdoor-kitchen-firepit-evening.webp"}'>
                             <div class="chip-color" style="background: #A08060;"></div>
-                            <span class="chip-name">Café Brown</span>
+                            <span class="chip-name">Cafe Brown</span>
                         </div>
                         <div class="color-chip" data-cat="warm" data-name="Ivory Coast" data-collection="Warm Collection" data-color="#EAE0D0" data-img="images/rooftop-outdoor-kitchen-sunset-skyline.webp" data-room="outdoor" data-imgs='{"kitchen":"images/coastal-kitchen-marble-island-coffered-ceiling.webp","bathroom":"images/luxury-bathroom-black-marble-gold-fixtures.webp","outdoor":"images/rooftop-outdoor-kitchen-sunset-skyline.webp"}'>
                             <div class="chip-color" style="background: #EAE0D0;"></div>
                             <span class="chip-name">Ivory Coast</span>
                         </div>
                     </div>
-
-                    <!-- Quick Calculator Widget -->
-                    <div class="quick-calc-widget">
-                        <h4><i class="bi bi-calculator"></i> Quick Estimate</h4>
-                        <div class="quick-calc-inputs">
-                            <div class="calc-input-group">
-                                <input type="number" id="quickLength" placeholder="Length" min="1">
-                                <span>ft</span>
-                            </div>
-                            <span class="calc-x">×</span>
-                            <div class="calc-input-group">
-                                <input type="number" id="quickWidth" placeholder="Width" min="1">
-                                <span>ft</span>
-                            </div>
-                        </div>
-                        <div class="quick-calc-result" id="quickCalcResult">
-                            <span class="result-label">Estimated Range:</span>
-                            <span class="result-value">Enter dimensions</span>
-                        </div>
-                        <a href="quote-calculator" class="btn btn-outline btn-sm">Detailed Quote <i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <a href="quote-calculator" class="btn btn-primary btn-full">Get Instant Quote</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Request Sample Modal -->
-    <div class="modal-overlay" id="sampleModal" style="display: none;">
-        <div class="modal-content">
-            <button class="modal-close" id="closeSampleModal"><i class="bi bi-x-lg"></i></button>
-            <div class="modal-header">
-                <i class="bi bi-box-seam"></i>
-                <h3>Request Free Samples</h3>
-                <p>Get up to 3 free quartz samples delivered to your door</p>
-            </div>
-            <div class="selected-samples" id="selectedSamples">
-                <p class="samples-hint">Selected colors will appear here</p>
-            </div>
-            <form class="sample-form" id="sampleForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="sampleName">Full Name *</label>
-                        <input type="text" id="sampleName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="samplePhone">Phone *</label>
-                        <input type="tel" id="samplePhone" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="sampleEmail">Email *</label>
-                    <input type="email" id="sampleEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="sampleAddress">Shipping Address *</label>
-                    <input type="text" id="sampleAddress" placeholder="Street Address" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" id="sampleCity" placeholder="City" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="sampleState" placeholder="State" value="FL" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="sampleZip" placeholder="ZIP" required>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">
-                    <i class="bi bi-send"></i> Request Samples
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Download Palette Modal -->
-    <div class="modal-overlay" id="downloadModal" style="display: none;">
-        <div class="modal-content modal-sm">
-            <button class="modal-close" id="closeDownloadModal"><i class="bi bi-x-lg"></i></button>
-            <div class="modal-header">
-                <i class="bi bi-palette"></i>
-                <h3>Your Color Selection</h3>
-            </div>
-            <div class="download-preview" id="downloadPreview">
-                <!-- Will be populated by JS -->
-            </div>
-            <div class="download-actions">
-                <button class="btn btn-outline" id="copyPaletteLink">
-                    <i class="bi bi-link-45deg"></i> Copy Link
-                </button>
-                <button class="btn btn-outline" id="emailPalette">
-                    <i class="bi bi-envelope"></i> Email
-                </button>
-                <button class="btn btn-primary" id="downloadPDF">
-                    <i class="bi bi-file-pdf"></i> Download PDF
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Wall Color Palette Studio -->
-    <section class="palette-studio-section">
+    <!-- SECTION 2: Compare Colors -->
+    <section class="studio-section studio-section-alt" id="compareSection">
         <div class="container">
-            <!-- Luxurious Intro Card -->
-            <div class="palette-intro-card">
-                <div class="intro-visual">
-                    <div class="color-drip drip-1"></div>
-                    <div class="color-drip drip-2"></div>
-                    <div class="color-drip drip-3"></div>
-                    <div class="color-drip drip-4"></div>
-                    <div class="color-drip drip-5"></div>
-                    <div class="brush-icon">
-                        <i class="bi bi-brush"></i>
-                    </div>
-                </div>
-                <div class="intro-content">
-                    <span class="intro-tag">Wall Color Palette Studio</span>
-                    <h2>Complete Your Vision</h2>
-                    <p>Your new quartz countertops deserve the perfect backdrop. Explore curated wall color palettes designed by interior experts to complement your stone and elevate your space to new heights of luxury.</p>
-                    <div class="intro-features">
-                        <div class="intro-feature">
-                            <i class="bi bi-palette2"></i>
-                            <span>Designer Palettes</span>
-                        </div>
-                        <div class="intro-feature">
-                            <i class="bi bi-house-heart"></i>
-                            <span>Room Inspiration</span>
-                        </div>
-                        <div class="intro-feature">
-                            <i class="bi bi-download"></i>
-                            <span>Save Your Colors</span>
-                        </div>
-                    </div>
+            <div class="section-header-fancy">
+                <span class="section-number">02</span>
+                <div class="section-header-content">
+                    <h2>Compare Colors Side-by-Side</h2>
+                    <p>Can't decide between a few favorites? Select up to 3 colors to compare them side by side and find your perfect match.</p>
                 </div>
             </div>
 
-            <!-- Room Palettes -->
-            <div class="palette-rooms">
+            <div class="compare-tool">
+                <div class="compare-instruction">
+                    <i class="bi bi-hand-index"></i>
+                    <span>Click on colors below to add them to comparison</span>
+                </div>
+
+                <div class="compare-display">
+                    <div class="compare-card" id="compareCard1">
+                        <div class="compare-swatch empty">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <span class="compare-label">Color 1</span>
+                        <button class="remove-btn" style="display: none;"><i class="bi bi-x"></i></button>
+                    </div>
+                    <div class="compare-card" id="compareCard2">
+                        <div class="compare-swatch empty">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <span class="compare-label">Color 2</span>
+                        <button class="remove-btn" style="display: none;"><i class="bi bi-x"></i></button>
+                    </div>
+                    <div class="compare-card" id="compareCard3">
+                        <div class="compare-swatch empty">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <span class="compare-label">Color 3</span>
+                        <button class="remove-btn" style="display: none;"><i class="bi bi-x"></i></button>
+                    </div>
+                </div>
+
+                <div class="compare-color-picker">
+                    <div class="picker-grid" id="comparePickerGrid">
+                        <!-- Colors will be dynamically populated from the main grid -->
+                    </div>
+                </div>
+
+                <div class="compare-actions">
+                    <button class="btn btn-outline" id="clearCompareBtn"><i class="bi bi-arrow-counterclockwise"></i> Clear All</button>
+                    <button class="btn btn-primary" id="shareCompareBtn"><i class="bi bi-share"></i> Share Selection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Quick Price Estimator -->
+    <section class="studio-section" id="estimatorSection">
+        <div class="container">
+            <div class="section-header-fancy">
+                <span class="section-number">03</span>
+                <div class="section-header-content">
+                    <h2>Quick Price Estimator</h2>
+                    <p>Get an instant ballpark estimate for your countertop project. Enter your dimensions and see estimated pricing.</p>
+                </div>
+            </div>
+
+            <div class="estimator-tool">
+                <div class="estimator-card">
+                    <div class="estimator-icon">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+                    <h3>Enter Your Countertop Dimensions</h3>
+
+                    <div class="estimator-inputs">
+                        <div class="dimension-group">
+                            <label for="estLength">Length</label>
+                            <div class="input-with-unit">
+                                <input type="number" id="estLength" placeholder="10" min="1" max="100">
+                                <span class="unit">ft</span>
+                            </div>
+                        </div>
+                        <div class="dimension-multiply">
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                        <div class="dimension-group">
+                            <label for="estWidth">Width (Depth)</label>
+                            <div class="input-with-unit">
+                                <input type="number" id="estWidth" placeholder="2" min="1" max="10">
+                                <span class="unit">ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="estimator-result" id="estimatorResult">
+                        <div class="result-placeholder">
+                            <i class="bi bi-arrow-up-circle"></i>
+                            <span>Enter dimensions above to see estimate</span>
+                        </div>
+                    </div>
+
+                    <div class="estimator-note">
+                        <i class="bi bi-info-circle"></i>
+                        <p>Estimates based on typical quartz pricing ($55-$95/sq ft). Final pricing depends on edge profile, cutouts, and quartz selection.</p>
+                    </div>
+
+                    <a href="quote-calculator" class="btn btn-primary btn-full">
+                        <i class="bi bi-calculator"></i> Get Detailed Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Request Free Samples -->
+    <section class="studio-section studio-section-alt" id="samplesSection">
+        <div class="container">
+            <div class="section-header-fancy">
+                <span class="section-number">04</span>
+                <div class="section-header-content">
+                    <h2>Request Free Samples</h2>
+                    <p>See and feel the quartz in person. Request up to 3 free samples delivered right to your door.</p>
+                </div>
+            </div>
+
+            <div class="samples-tool">
+                <div class="samples-layout">
+                    <!-- Selected Samples Display -->
+                    <div class="samples-selection">
+                        <h3><i class="bi bi-box-seam"></i> Your Selected Samples</h3>
+                        <div class="samples-chips" id="sampleChipsDisplay">
+                            <p class="no-samples">Click colors above to select samples (up to 3)</p>
+                        </div>
+                        <div class="samples-picker">
+                            <h4>Quick Add:</h4>
+                            <div class="picker-mini-grid" id="samplePickerGrid">
+                                <!-- Mini color picker -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Request Form -->
+                    <div class="samples-form-card">
+                        <h3><i class="bi bi-truck"></i> Shipping Information</h3>
+                        <form class="samples-request-form" id="samplesForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="sampleName">Full Name *</label>
+                                    <input type="text" id="sampleName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="samplePhone">Phone *</label>
+                                    <input type="tel" id="samplePhone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sampleEmail">Email *</label>
+                                <input type="email" id="sampleEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sampleAddress">Street Address *</label>
+                                <input type="text" id="sampleAddress" required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <div class="form-group">
+                                    <label for="sampleCity">City *</label>
+                                    <input type="text" id="sampleCity" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sampleState">State *</label>
+                                    <input type="text" id="sampleState" value="FL" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sampleZip">ZIP *</label>
+                                    <input type="text" id="sampleZip" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submitSamplesBtn">
+                                <i class="bi bi-send"></i> Request Free Samples
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Wall Color Palette Studio -->
+    <section class="studio-section" id="paletteSection">
+        <div class="container">
+            <div class="section-header-fancy">
+                <span class="section-number">05</span>
+                <div class="section-header-content">
+                    <h2>Wall Color Palette Studio</h2>
+                    <p>Your new quartz countertops deserve the perfect backdrop. Explore curated wall color palettes designed to complement your stone.</p>
+                </div>
+            </div>
+
+            <!-- Room Palettes Grid -->
+            <div class="palette-rooms-grid">
                 <!-- Room 1 -->
                 <div class="palette-room-card">
                     <div class="room-image-wrap">
@@ -474,8 +501,8 @@
                     </div>
                 </div>
                 <div class="palette-actions">
-                    <button class="btn btn-outline" id="resetBtn"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
-                    <button class="btn btn-primary" id="saveBtn"><i class="bi bi-clipboard"></i> Copy Palette</button>
+                    <button class="btn btn-outline" id="resetPaletteBtn"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
+                    <button class="btn btn-primary" id="copyPaletteBtn"><i class="bi bi-clipboard"></i> Copy Palette</button>
                 </div>
             </div>
         </div>
@@ -537,10 +564,10 @@
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         // ===== State Management =====
-        let compareMode = false;
-        let compareColors = [];
         let selectedColor = null;
         let currentRoomFilter = 'all';
+        let compareColors = [];
+        let sampleColors = [];
 
         // ===== DOM Elements =====
         const chips = document.querySelectorAll('.color-chip');
@@ -551,7 +578,9 @@
         const catBtns = document.querySelectorAll('.cat-btn');
         const roomBtns = document.querySelectorAll('.room-btn');
 
-        // ===== Quartz Color Visualizer =====
+        // ===== SECTION 1: Color Explorer =====
+
+        // Initialize with first active chip
         const firstChip = document.querySelector('.color-chip.active');
         if (firstChip) {
             updatePreview(firstChip);
@@ -562,20 +591,17 @@
             };
         }
 
+        // Color chip click handler
         chips.forEach(chip => {
             chip.addEventListener('click', function() {
-                if (compareMode) {
-                    addToCompare(this);
-                } else {
-                    chips.forEach(c => c.classList.remove('active'));
-                    this.classList.add('active');
-                    updatePreview(this);
-                    selectedColor = {
-                        name: this.dataset.name,
-                        color: this.dataset.color,
-                        collection: this.dataset.collection
-                    };
-                }
+                chips.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                updatePreview(this);
+                selectedColor = {
+                    name: this.dataset.name,
+                    color: this.dataset.color,
+                    collection: this.dataset.collection
+                };
             });
         });
 
@@ -592,13 +618,17 @@
                     if (imgs[currentRoomFilter]) {
                         img = imgs[currentRoomFilter];
                     }
-                } catch(e) {}
+                } catch(e) {
+                    console.log('Error parsing imgs data');
+                }
             }
 
+            // Update Pantone card
             pantoneSwatch.style.background = color;
             pantoneName.textContent = name;
             pantoneCollection.textContent = collection;
 
+            // Fade transition for image
             inspirationImg.style.opacity = '0';
             setTimeout(() => {
                 inspirationImg.src = img;
@@ -623,14 +653,14 @@
             });
         });
 
-        // ===== Room Type Filter =====
+        // Room type filtering
         roomBtns.forEach(btn => {
             btn.addEventListener('click', function() {
                 roomBtns.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
                 currentRoomFilter = this.dataset.room;
 
-                // Update current preview
+                // Update current preview with new room type
                 const activeChip = document.querySelector('.color-chip.active');
                 if (activeChip) {
                     updatePreview(activeChip);
@@ -638,34 +668,23 @@
             });
         });
 
-        // ===== Compare Mode =====
-        const compareModeBtn = document.getElementById('compareModeBtn');
-        const comparePanel = document.getElementById('comparePanel');
-        const closeCompare = document.getElementById('closeCompare');
-        const clearCompare = document.getElementById('clearCompare');
+        // ===== SECTION 2: Compare Colors =====
 
-        compareModeBtn.addEventListener('click', function() {
-            compareMode = !compareMode;
-            this.classList.toggle('active', compareMode);
-            comparePanel.style.display = compareMode ? 'block' : 'none';
-
-            if (compareMode) {
-                document.body.classList.add('compare-active');
-            } else {
-                document.body.classList.remove('compare-active');
-                clearAllCompare();
-            }
+        // Populate compare picker grid
+        const comparePickerGrid = document.getElementById('comparePickerGrid');
+        chips.forEach(chip => {
+            const miniChip = document.createElement('div');
+            miniChip.className = 'picker-chip';
+            miniChip.dataset.name = chip.dataset.name;
+            miniChip.dataset.color = chip.dataset.color;
+            miniChip.dataset.collection = chip.dataset.collection;
+            miniChip.innerHTML = `
+                <div class="picker-color" style="background: ${chip.dataset.color};"></div>
+                <span>${chip.dataset.name}</span>
+            `;
+            miniChip.addEventListener('click', () => addToCompare(miniChip));
+            comparePickerGrid.appendChild(miniChip);
         });
-
-        closeCompare.addEventListener('click', function() {
-            compareMode = false;
-            compareModeBtn.classList.remove('active');
-            comparePanel.style.display = 'none';
-            document.body.classList.remove('compare-active');
-            clearAllCompare();
-        });
-
-        clearCompare.addEventListener('click', clearAllCompare);
 
         function addToCompare(chip) {
             if (compareColors.length >= 3) return;
@@ -673,239 +692,241 @@
             const colorData = {
                 name: chip.dataset.name,
                 color: chip.dataset.color,
-                collection: chip.dataset.collection,
-                element: chip
+                collection: chip.dataset.collection
             };
 
             // Check if already added
             if (compareColors.find(c => c.name === colorData.name)) return;
 
             compareColors.push(colorData);
-            chip.classList.add('in-compare');
-            updateCompareSlots();
+            chip.classList.add('selected');
+            updateCompareDisplay();
         }
 
-        function updateCompareSlots() {
+        function updateCompareDisplay() {
             for (let i = 0; i < 3; i++) {
-                const slot = document.getElementById(`compareSlot${i + 1}`);
-                const colorDiv = slot.querySelector('.compare-color');
-                const nameSpan = slot.querySelector('.compare-name');
+                const card = document.getElementById(`compareCard${i + 1}`);
+                const swatch = card.querySelector('.compare-swatch');
+                const label = card.querySelector('.compare-label');
+                const removeBtn = card.querySelector('.remove-btn');
 
                 if (compareColors[i]) {
-                    slot.classList.remove('empty');
-                    colorDiv.style.background = compareColors[i].color;
-                    nameSpan.textContent = compareColors[i].name;
+                    swatch.classList.remove('empty');
+                    swatch.innerHTML = '';
+                    swatch.style.background = compareColors[i].color;
+                    label.textContent = compareColors[i].name;
+                    removeBtn.style.display = 'flex';
                 } else {
-                    slot.classList.add('empty');
-                    colorDiv.style.background = '';
-                    nameSpan.textContent = `Select Color ${i + 1}`;
+                    swatch.classList.add('empty');
+                    swatch.innerHTML = '<i class="bi bi-plus-lg"></i>';
+                    swatch.style.background = '';
+                    label.textContent = `Color ${i + 1}`;
+                    removeBtn.style.display = 'none';
                 }
             }
         }
 
-        // Remove from compare
-        document.querySelectorAll('.remove-compare').forEach((btn, index) => {
-            btn.addEventListener('click', function(e) {
-                e.stopPropagation();
+        // Remove buttons for compare
+        document.querySelectorAll('.compare-card .remove-btn').forEach((btn, index) => {
+            btn.addEventListener('click', function() {
                 if (compareColors[index]) {
-                    compareColors[index].element.classList.remove('in-compare');
+                    // Find and deselect the picker chip
+                    const name = compareColors[index].name;
+                    const pickerChip = document.querySelector(`.picker-chip[data-name="${name}"]`);
+                    if (pickerChip) pickerChip.classList.remove('selected');
+
                     compareColors.splice(index, 1);
-                    updateCompareSlots();
+                    updateCompareDisplay();
                 }
             });
         });
 
-        function clearAllCompare() {
-            compareColors.forEach(c => c.element.classList.remove('in-compare'));
+        // Clear all compare
+        document.getElementById('clearCompareBtn').addEventListener('click', function() {
             compareColors = [];
-            updateCompareSlots();
-        }
+            document.querySelectorAll('.picker-chip').forEach(c => c.classList.remove('selected'));
+            updateCompareDisplay();
+        });
 
-        // ===== Request Sample Modal =====
-        const sampleModal = document.getElementById('sampleModal');
-        const requestSampleBtn = document.getElementById('requestSampleBtn');
-        const closeSampleModal = document.getElementById('closeSampleModal');
-        const selectedSamplesDiv = document.getElementById('selectedSamples');
-        const sampleForm = document.getElementById('sampleForm');
-
-        requestSampleBtn.addEventListener('click', function() {
-            // Populate with selected/compare colors
-            let samplesToShow = compareColors.length > 0 ? compareColors : (selectedColor ? [selectedColor] : []);
-
-            if (samplesToShow.length === 0) {
-                selectedSamplesDiv.innerHTML = '<p class="samples-hint">Please select colors first, then request samples</p>';
-            } else {
-                selectedSamplesDiv.innerHTML = samplesToShow.map(c => `
-                    <div class="sample-chip">
-                        <div class="sample-color" style="background: ${c.color}"></div>
-                        <span>${c.name}</span>
-                    </div>
-                `).join('');
+        // Share compare selection
+        document.getElementById('shareCompareBtn').addEventListener('click', function() {
+            if (compareColors.length === 0) {
+                alert('Please select colors to compare first.');
+                return;
             }
-
-            sampleModal.style.display = 'flex';
-        });
-
-        closeSampleModal.addEventListener('click', () => sampleModal.style.display = 'none');
-        sampleModal.addEventListener('click', (e) => {
-            if (e.target === sampleModal) sampleModal.style.display = 'none';
-        });
-
-        sampleForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Simulate form submission
-            const btn = this.querySelector('button[type="submit"]');
-            btn.innerHTML = '<i class="bi bi-check-circle"></i> Request Sent!';
-            btn.disabled = true;
-            setTimeout(() => {
-                sampleModal.style.display = 'none';
-                btn.innerHTML = '<i class="bi bi-send"></i> Request Samples';
-                btn.disabled = false;
-                this.reset();
-            }, 2000);
-        });
-
-        // ===== Download Palette Modal =====
-        const downloadModal = document.getElementById('downloadModal');
-        const downloadPaletteBtn = document.getElementById('downloadPaletteBtn');
-        const closeDownloadModal = document.getElementById('closeDownloadModal');
-        const downloadPreview = document.getElementById('downloadPreview');
-
-        downloadPaletteBtn.addEventListener('click', function() {
-            let colorsToShow = compareColors.length > 0 ? compareColors : (selectedColor ? [selectedColor] : []);
-
-            downloadPreview.innerHTML = colorsToShow.map(c => `
-                <div class="preview-color">
-                    <div class="preview-swatch" style="background: ${c.color}"></div>
-                    <div class="preview-info">
-                        <strong>${c.name}</strong>
-                        <span>${c.collection}</span>
-                    </div>
-                </div>
-            `).join('') || '<p>No colors selected</p>';
-
-            downloadModal.style.display = 'flex';
-        });
-
-        closeDownloadModal.addEventListener('click', () => downloadModal.style.display = 'none');
-        downloadModal.addEventListener('click', (e) => {
-            if (e.target === downloadModal) downloadModal.style.display = 'none';
-        });
-
-        // Copy palette link
-        document.getElementById('copyPaletteLink').addEventListener('click', function() {
-            const colors = compareColors.length > 0 ? compareColors : (selectedColor ? [selectedColor] : []);
-            const colorNames = colors.map(c => c.name).join(',');
-            const url = `${window.location.origin}${window.location.pathname}?colors=${encodeURIComponent(colorNames)}`;
+            const colorNames = compareColors.map(c => c.name).join(', ');
+            const url = `${window.location.origin}${window.location.pathname}?compare=${encodeURIComponent(colorNames)}`;
 
             navigator.clipboard.writeText(url).then(() => {
-                this.innerHTML = '<i class="bi bi-check"></i> Copied!';
+                this.innerHTML = '<i class="bi bi-check"></i> Link Copied!';
                 setTimeout(() => {
-                    this.innerHTML = '<i class="bi bi-link-45deg"></i> Copy Link';
+                    this.innerHTML = '<i class="bi bi-share"></i> Share Selection';
                 }, 2000);
             });
         });
 
-        // Email palette
-        document.getElementById('emailPalette').addEventListener('click', function() {
-            const colors = compareColors.length > 0 ? compareColors : (selectedColor ? [selectedColor] : []);
-            const colorList = colors.map(c => `${c.name} (${c.collection})`).join('\n');
-            const subject = 'My Griffin Quartz Color Selection';
-            const body = `Here are my selected quartz colors:\n\n${colorList}\n\nView on website: ${window.location.href}`;
+        // ===== SECTION 3: Quick Estimator =====
 
-            window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        });
+        const estLength = document.getElementById('estLength');
+        const estWidth = document.getElementById('estWidth');
+        const estimatorResult = document.getElementById('estimatorResult');
 
-        // Download PDF (creates a printable view)
-        document.getElementById('downloadPDF').addEventListener('click', function() {
-            const colors = compareColors.length > 0 ? compareColors : (selectedColor ? [selectedColor] : []);
-
-            const printWindow = window.open('', '_blank');
-            printWindow.document.write(`
-                <html>
-                <head>
-                    <title>Griffin Quartz - Color Selection</title>
-                    <style>
-                        body { font-family: Arial, sans-serif; padding: 40px; }
-                        h1 { color: #1a1a1a; border-bottom: 2px solid #FDB913; padding-bottom: 10px; }
-                        .color-card { display: inline-block; margin: 20px; text-align: center; }
-                        .swatch { width: 150px; height: 150px; border-radius: 10px; margin-bottom: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
-                        .name { font-weight: bold; font-size: 16px; }
-                        .collection { color: #666; font-size: 14px; }
-                        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; }
-                    </style>
-                </head>
-                <body>
-                    <h1>Griffin Quartz Color Selection</h1>
-                    <p>Thank you for exploring our quartz colors!</p>
-                    ${colors.map(c => `
-                        <div class="color-card">
-                            <div class="swatch" style="background: ${c.color}"></div>
-                            <div class="name">${c.name}</div>
-                            <div class="collection">${c.collection}</div>
-                        </div>
-                    `).join('')}
-                    <div class="footer">
-                        <p><strong>Griffin Quartz</strong> | South Florida's Premier Quartz Countertop Installers</p>
-                        <p>Call: (720) 324-1436 | Visit: soflocountertops.com</p>
-                    </div>
-                </body>
-                </html>
-            `);
-            printWindow.document.close();
-            printWindow.print();
-        });
-
-        // ===== Quick Calculator =====
-        const quickLength = document.getElementById('quickLength');
-        const quickWidth = document.getElementById('quickWidth');
-        const quickCalcResult = document.getElementById('quickCalcResult');
-
-        function calculateQuickEstimate() {
-            const length = parseFloat(quickLength.value) || 0;
-            const width = parseFloat(quickWidth.value) || 0;
+        function calculateEstimate() {
+            const length = parseFloat(estLength.value) || 0;
+            const width = parseFloat(estWidth.value) || 0;
 
             if (length > 0 && width > 0) {
                 const sqft = length * width;
                 const lowPrice = Math.round(sqft * 55);
                 const highPrice = Math.round(sqft * 95);
 
-                quickCalcResult.innerHTML = `
-                    <span class="result-label">${sqft} sq ft estimate:</span>
-                    <span class="result-value">$${lowPrice.toLocaleString()} - $${highPrice.toLocaleString()}</span>
+                estimatorResult.innerHTML = `
+                    <div class="result-calculated">
+                        <div class="result-sqft">
+                            <span class="sqft-number">${sqft}</span>
+                            <span class="sqft-label">sq ft</span>
+                        </div>
+                        <div class="result-divider"></div>
+                        <div class="result-price">
+                            <span class="price-range">$${lowPrice.toLocaleString()} - $${highPrice.toLocaleString()}</span>
+                            <span class="price-label">Estimated Range</span>
+                        </div>
+                    </div>
                 `;
             } else {
-                quickCalcResult.innerHTML = `
-                    <span class="result-label">Estimated Range:</span>
-                    <span class="result-value">Enter dimensions</span>
+                estimatorResult.innerHTML = `
+                    <div class="result-placeholder">
+                        <i class="bi bi-arrow-up-circle"></i>
+                        <span>Enter dimensions above to see estimate</span>
+                    </div>
                 `;
             }
         }
 
-        quickLength.addEventListener('input', calculateQuickEstimate);
-        quickWidth.addEventListener('input', calculateQuickEstimate);
+        estLength.addEventListener('input', calculateEstimate);
+        estWidth.addEventListener('input', calculateEstimate);
 
-        // ===== Wall Palette Builder =====
+        // ===== SECTION 4: Request Samples =====
+
+        // Populate sample picker grid
+        const samplePickerGrid = document.getElementById('samplePickerGrid');
+        chips.forEach(chip => {
+            const miniChip = document.createElement('div');
+            miniChip.className = 'sample-picker-chip';
+            miniChip.dataset.name = chip.dataset.name;
+            miniChip.dataset.color = chip.dataset.color;
+            miniChip.dataset.collection = chip.dataset.collection;
+            miniChip.innerHTML = `<div class="mini-swatch" style="background: ${chip.dataset.color};"></div>`;
+            miniChip.title = chip.dataset.name;
+            miniChip.addEventListener('click', () => toggleSampleSelection(miniChip));
+            samplePickerGrid.appendChild(miniChip);
+        });
+
+        function toggleSampleSelection(chip) {
+            const name = chip.dataset.name;
+            const existingIndex = sampleColors.findIndex(c => c.name === name);
+
+            if (existingIndex > -1) {
+                // Remove
+                sampleColors.splice(existingIndex, 1);
+                chip.classList.remove('selected');
+            } else {
+                // Add (max 3)
+                if (sampleColors.length >= 3) {
+                    alert('You can select up to 3 samples.');
+                    return;
+                }
+                sampleColors.push({
+                    name: chip.dataset.name,
+                    color: chip.dataset.color,
+                    collection: chip.dataset.collection
+                });
+                chip.classList.add('selected');
+            }
+            updateSampleDisplay();
+        }
+
+        function updateSampleDisplay() {
+            const display = document.getElementById('sampleChipsDisplay');
+
+            if (sampleColors.length === 0) {
+                display.innerHTML = '<p class="no-samples">Click colors above to select samples (up to 3)</p>';
+            } else {
+                display.innerHTML = sampleColors.map(c => `
+                    <div class="sample-chip-display">
+                        <div class="chip-swatch" style="background: ${c.color};"></div>
+                        <span>${c.name}</span>
+                        <button class="chip-remove" data-name="${c.name}"><i class="bi bi-x"></i></button>
+                    </div>
+                `).join('');
+
+                // Add remove handlers
+                display.querySelectorAll('.chip-remove').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const name = this.dataset.name;
+                        sampleColors = sampleColors.filter(c => c.name !== name);
+                        const pickerChip = document.querySelector(`.sample-picker-chip[data-name="${name}"]`);
+                        if (pickerChip) pickerChip.classList.remove('selected');
+                        updateSampleDisplay();
+                    });
+                });
+            }
+        }
+
+        // Sample form submission
+        document.getElementById('samplesForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            if (sampleColors.length === 0) {
+                alert('Please select at least one color sample.');
+                return;
+            }
+
+            const btn = document.getElementById('submitSamplesBtn');
+            btn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending...';
+            btn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                btn.innerHTML = '<i class="bi bi-check-circle"></i> Request Sent!';
+                btn.classList.add('btn-success');
+
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="bi bi-send"></i> Request Free Samples';
+                    btn.disabled = false;
+                    btn.classList.remove('btn-success');
+                    this.reset();
+                    sampleColors = [];
+                    document.querySelectorAll('.sample-picker-chip').forEach(c => c.classList.remove('selected'));
+                    updateSampleDisplay();
+                }, 3000);
+            }, 1500);
+        });
+
+        // ===== SECTION 5: Wall Palette Builder =====
+
         const paletteDots = document.querySelectorAll('.palette-dot');
-        const slots = document.querySelectorAll('.palette-slot');
+        const paletteSlots = document.querySelectorAll('.palette-slot');
         let currentSlot = 0;
 
-        slots[0].style.background = '#F5F3EF';
-        slots[1].style.background = '#FFFFFF';
-        slots[2].style.background = '#D4C9B9';
+        // Initialize slots
+        paletteSlots[0].style.background = '#F5F3EF';
+        paletteSlots[1].style.background = '#FFFFFF';
+        paletteSlots[2].style.background = '#D4C9B9';
 
         paletteDots.forEach(dot => {
             dot.addEventListener('mouseenter', function() {
-                this.setAttribute('title', this.dataset.name);
+                this.title = this.dataset.name;
             });
 
             dot.addEventListener('click', function() {
                 const color = this.style.background;
                 const hex = rgbToHex(getComputedStyle(this).backgroundColor);
 
-                slots[currentSlot].style.background = color;
-                slots[currentSlot].querySelector('.slot-hex').textContent = hex;
+                paletteSlots[currentSlot].style.background = color;
+                paletteSlots[currentSlot].querySelector('.slot-hex').textContent = hex;
 
+                // Visual feedback
                 this.style.transform = 'scale(1.3)';
                 setTimeout(() => this.style.transform = 'scale(1)', 200);
 
@@ -913,22 +934,22 @@
             });
         });
 
-        document.getElementById('resetBtn').addEventListener('click', function() {
+        document.getElementById('resetPaletteBtn').addEventListener('click', function() {
             const defaults = [
                 { bg: '#F5F3EF', hex: '#F5F3EF' },
                 { bg: '#FFFFFF', hex: '#FFFFFF' },
                 { bg: '#D4C9B9', hex: '#D4C9B9' }
             ];
-            slots.forEach((slot, i) => {
+            paletteSlots.forEach((slot, i) => {
                 slot.style.background = defaults[i].bg;
                 slot.querySelector('.slot-hex').textContent = defaults[i].hex;
             });
             currentSlot = 0;
         });
 
-        document.getElementById('saveBtn').addEventListener('click', function() {
+        document.getElementById('copyPaletteBtn').addEventListener('click', function() {
             const colors = [];
-            slots.forEach(slot => colors.push(slot.querySelector('.slot-hex').textContent));
+            paletteSlots.forEach(slot => colors.push(slot.querySelector('.slot-hex').textContent));
 
             const text = `Griffin Quartz Color Palette\nWall: ${colors[0]}\nTrim: ${colors[1]}\nAccent: ${colors[2]}`;
 
