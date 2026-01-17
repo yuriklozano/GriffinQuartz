@@ -301,7 +301,7 @@
         /* Services Navigation */
         .services-nav {
             position: sticky;
-            top: 60px;
+            top: 77px; /* Height of sticky header (logo 45px + padding 32px) */
             z-index: 100;
             background: var(--color-white);
             border-bottom: 1px solid #e0e0e0;
@@ -316,6 +316,7 @@
 
         .services-nav-list {
             display: flex;
+            justify-content: center; /* Center the nav items */
             gap: 0;
             list-style: none;
             margin: 0;
@@ -362,7 +363,7 @@
         /* Content Sections */
         .services-section {
             padding: 5rem 0;
-            scroll-margin-top: 140px;
+            scroll-margin-top: 140px; /* Header (77px) + services nav (~60px) + buffer */
         }
 
         .services-section:nth-child(even) {
