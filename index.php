@@ -397,7 +397,7 @@
                     <p class="sale-note"><strong>Secure Your Savings</strong> by Requesting a Free Estimate!</p>
                 </div>
                 <div class="sale-image">
-                    <img src="images/quartz-samples-gold-hardware-luxury.webp" alt="Premium quartz countertop samples with gold hardware" loading="lazy">
+                    <img src="images/kitchen-penthouse-crystal-chandelier.webp" alt="Luxury penthouse kitchen with marble waterfall island and ocean view" loading="lazy">
                 </div>
             </div>
         </div>
