@@ -65,28 +65,23 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="contact-form">
         <div class="hero-background">
             <img src="images/waterfront-marble-bar-illuminated-sunset.webp" alt="Luxury waterfront marble bar with illuminated countertops at sunset in South Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
-        <div class="hero-content">
-            <p class="hero-badge">Trusted by 100K+ Satisfied Customers</p>
-            <h1>Luxury Quartz Countertops in South Florida</h1>
-            <h2>Where Elegance Meets Expert Craftsmanship</h2>
-            <p class="hero-description">Transform your space with <strong>premium quartz surfaces</strong> from Griffin Quartz. Serving <a href="boca-raton">Boca Raton</a>, <a href="fort-lauderdale">Fort Lauderdale</a>, <a href="west-palm-beach">West Palm Beach</a>, and all of <strong>South Florida</strong>, we deliver <strong>bespoke quartz installations</strong> that define luxury living.</p>
-            <div class="hero-cta">
-                <a href="#contact-form" class="btn btn-primary">Get FREE Estimate</a>
-                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-badge">Trusted by 100K+ Satisfied Customers</p>
+                <h1>Luxury Quartz Countertops in South Florida</h1>
+                <h2>Where Elegance Meets Expert Craftsmanship</h2>
+                <p class="hero-description">Transform your space with <strong>premium quartz surfaces</strong> from Griffin Quartz. Serving <a href="boca-raton">Boca Raton</a>, <a href="fort-lauderdale">Fort Lauderdale</a>, <a href="west-palm-beach">West Palm Beach</a>, and all of <strong>South Florida</strong>, we deliver <strong>bespoke quartz installations</strong> that define luxury living.</p>
+                <div class="hero-cta">
+                    <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section" id="contact-form">
-        <div class="container">
-            <div class="contact-form-wrapper">
-                <h2>Get Your FREE Quote Today!</h2>
+            <div class="hero-form-wrapper">
+                <h3>Get Your FREE Quote Today!</h3>
                 <p class="form-subtitle">Call <a href="tel:7203241436">(720) 324-1436</a></p>
                 <form class="contact-form" id="quoteForm">
                     <div class="form-group">
@@ -103,9 +98,9 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message (Optional)</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
+                        <textarea id="message" name="message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-full">Get FREE Estimate</button>
                 </form>
             </div>
         </div>
