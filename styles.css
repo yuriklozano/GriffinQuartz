@@ -6,15 +6,15 @@
 }
 
 :root {
-    /* Colors */
-    --color-primary: #1a1a1a;
+    /* Colors - Modern & Sleek with Orchid Gold Accent */
+    --color-primary: #000000;
     --color-secondary: #333333;
-    --color-accent: #c9a962;
-    --color-accent-dark: #b8954d;
+    --color-accent: #FDB913;
+    --color-accent-dark: #E0A510;
     --color-white: #ffffff;
     --color-light: #f5f5f5;
     --color-gray: #666666;
-    --color-light-gray: #e5e5e5;
+    --color-light-gray: #e0e0e0;
     
     /* Typography */
     --font-heading: 'Playfair Display', Georgia, serif;
