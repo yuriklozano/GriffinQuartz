@@ -320,37 +320,30 @@
         }
 
         /* Breadcrumb Navigation */
-        .breadcrumb-nav {
-            background: var(--color-light);
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .breadcrumb-list {
+        .breadcrumb {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--color-gray);
+            font-size: 0.8125rem;
+            margin-bottom: 1rem;
             flex-wrap: wrap;
         }
 
-        .breadcrumb-list a {
-            color: var(--color-gray);
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
             transition: color 0.2s ease;
         }
 
-        .breadcrumb-list a:hover {
+        .breadcrumb a:hover {
             color: var(--color-accent);
         }
 
-        .breadcrumb-list .separator {
-            color: #ccc;
+        .breadcrumb span {
+            color: rgba(255, 255, 255, 0.5);
         }
 
-        .breadcrumb-list .current {
-            color: var(--color-primary);
-            font-weight: 500;
+        .breadcrumb .current {
+            color: rgba(255, 255, 255, 0.9);
         }
 
         /* Trust Badges Section */
@@ -1168,19 +1161,6 @@
         </div>
     </header>
 
-    <!-- Breadcrumb Navigation -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-        <div class="container">
-            <ol class="breadcrumb-list">
-                <li><a href="/">Home</a></li>
-                <li class="separator">/</li>
-                <li><a href="our-services">Services</a></li>
-                <li class="separator">/</li>
-                <li class="current">Bathroom Vanity Countertops</li>
-            </ol>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
     <section class="service-hero" id="quote-form">
         <div class="hero-background">
@@ -1189,6 +1169,9 @@
         </div>
         <div class="hero-container">
             <div class="hero-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Home</a> <span>/</span> <a href="our-services">Services</a> <span>/</span> <span class="current">Bathroom Vanity</span>
+                </nav>
                 <h1>Luxury <span>Bathroom Vanity</span> Countertops</h1>
                 <p class="hero-subtitle">Transform your bathroom into a spa-like retreat with premium quartz vanity tops. Custom fabrication, expert installation, and 200+ stunning colors to choose from.</p>
                 <a href="#calculator" class="btn btn-primary">Use Our Calculator</a>
