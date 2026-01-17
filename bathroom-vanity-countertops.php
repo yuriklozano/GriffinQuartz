@@ -126,19 +126,28 @@
             background: linear-gradient(135deg, rgba(22, 23, 35, 0.9) 0%, rgba(22, 23, 35, 0.5) 100%);
         }
 
-        .service-hero .hero-content {
+        .service-hero .hero-container {
             position: relative;
             z-index: 1;
-            max-width: 700px;
-            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .service-hero .hero-content {
+            max-width: 650px;
         }
 
         .service-hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.25rem, 4vw, 3.5rem);
             font-weight: 600;
             color: #fff;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
             line-height: 1.1;
         }
 
@@ -147,30 +156,106 @@
         }
 
         .service-hero .hero-subtitle {
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.7;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .hero-features {
             display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
             flex-wrap: wrap;
         }
 
         .hero-feature {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
             color: rgba(255, 255, 255, 0.9);
-            font-size: 0.9375rem;
+            font-size: 0.875rem;
         }
 
         .hero-feature i {
             color: var(--color-accent);
-            font-size: 1.25rem;
+            font-size: 1.125rem;
+        }
+
+        .service-hero .hero-form-wrapper {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-hero .hero-form-wrapper h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .service-hero .form-subtitle {
+            text-align: center;
+            color: var(--color-gray);
+            font-size: 0.9375rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-hero .form-subtitle a {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        .service-hero .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .service-hero .contact-form label {
+            display: block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            margin-bottom: 0.375rem;
+        }
+
+        .service-hero .contact-form input,
+        .service-hero .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 0.9375rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: #fff;
+            transition: border-color 0.2s ease;
+        }
+
+        .service-hero .contact-form input:focus,
+        .service-hero .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        @media (max-width: 968px) {
+            .service-hero .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .service-hero .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-features {
+                justify-content: center;
+            }
+
+            .service-hero .hero-form-wrapper {
+                max-width: 450px;
+                margin: 0 auto;
+            }
         }
 
         /* Calculator Section */
@@ -861,17 +946,16 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="service-hero">
+    <section class="service-hero" id="quote-form">
         <div class="hero-background">
             <img src="images/bathroom-spa-calacatta-walnut-tub.webp" alt="Luxury bathroom with quartz vanity countertop" loading="eager">
             <div class="hero-overlay"></div>
         </div>
-        <div class="container">
+        <div class="hero-container">
             <div class="hero-content">
                 <h1>Luxury <span>Bathroom Vanity</span> Countertops</h1>
                 <p class="hero-subtitle">Transform your bathroom into a spa-like retreat with premium quartz vanity tops. Custom fabrication, expert installation, and 200+ stunning colors to choose from.</p>
-                <a href="#calculator" class="btn btn-primary">Design Your Vanity</a>
-                <a href="tel:17203241436" class="btn btn-secondary" style="margin-left: 1rem;">Call for Free Estimate</a>
+                <a href="#calculator" class="btn btn-primary">Use Our Calculator</a>
 
                 <div class="hero-features">
                     <div class="hero-feature">
@@ -887,6 +971,29 @@
                         <span>1-Week Installation</span>
                     </div>
                 </div>
+            </div>
+            <div class="hero-form-wrapper">
+                <h3>Get Your FREE Quote</h3>
+                <p class="form-subtitle">Or call <a href="tel:7203241436">(720) 324-1436</a></p>
+                <form class="contact-form" id="heroQuoteForm">
+                    <div class="form-group">
+                        <label for="hero-name">Name</label>
+                        <input type="text" id="hero-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-email">Email</label>
+                        <input type="email" id="hero-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-phone">Phone</label>
+                        <input type="tel" id="hero-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hero-message">Project Details (Optional)</label>
+                        <textarea id="hero-message" name="message" rows="3" placeholder="Tell us about your bathroom project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Get FREE Estimate</button>
+                </form>
             </div>
         </div>
     </section>
