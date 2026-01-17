@@ -159,7 +159,7 @@
     }
     </script>
 </head>
-<body>
+<body class="location-page">
     <!-- Announcement Bar -->
     <div class="announcement-bar">
         <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
@@ -224,19 +224,19 @@
     <!-- Hero Section -->
     <section class="hero-location">
         <div class="hero-background">
-            <img src="images/modern-kitchen-marble-island-glass-pendants.webp" alt="Luxury quartz countertops installation in Boynton Beach Florida kitchen" loading="eager">
+            <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white quartz kitchen countertops with gold fixtures in Boynton Beach Florida home" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <span class="hero-badge">Boynton Beach's #1 Quartz Installer</span>
-            <h1>Transform Your Boynton Beach Home with Stunning Quartz</h1>
-            <p class="hero-headline">Where Luxury Meets Affordability</p>
-            <p class="hero-description">Discover why Boynton Beach homeowners trust Griffin Quartz for their kitchen and bathroom transformations. Factory-direct pricing, 200+ premium colors, and installation in as little as one week.</p>
+            <span class="hero-badge">Premier Quartz Installers</span>
+            <h1>Luxury Quartz Countertops in Boynton Beach</h1>
+            <p class="hero-headline">Crafted for Discerning Homeowners</p>
+            <p class="hero-description">Experience the Griffin Quartz difference. Factory-direct pricing on 200+ premium quartz colors with expert installation in as little as one week. Serving Boynton Beach and Palm Beach County.</p>
             <div class="hero-cta">
-                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Quote</a>
-                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+                <a href="/#contact-form" class="btn btn-primary">Schedule Free Consultation</a>
+                <a href="tel:17203241436" class="btn btn-secondary"><i class="bi bi-telephone"></i> (720) 324-1436</a>
             </div>
-            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | 100+ Happy Boynton Beach Customers</p>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated &nbsp;|&nbsp; 100+ Boynton Beach Projects Completed</p>
         </div>
     </section>
 

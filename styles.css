@@ -2488,11 +2488,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Location Landing Page Styles ===== */
+/* Premium, luxurious aesthetic with WCAG-compliant contrast */
 
-/* Location Page Hero - Luxurious with CTA */
+/* Scope: Add .location-page class to body on location pages */
+
+/* ===== Location Page Icons - 1px Stroke Style ===== */
+.location-page .bi {
+    font-weight: 100;
+    -webkit-text-stroke: 1px currentColor;
+    stroke-width: 1px;
+}
+
+/* Ensure star icons remain filled for ratings */
+.location-page .bi-star-fill {
+    -webkit-text-stroke: 0;
+}
+
+/* ===== Hero Section - Luxurious & Impactful ===== */
 .hero-location {
     position: relative;
-    min-height: 70vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2512,78 +2527,128 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.95);
 }
 
+/* Sophisticated multi-layer overlay for depth */
 .hero-location .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+    background:
+        linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 100%),
+        linear-gradient(135deg, rgba(0,0,0,0.5) 0%, transparent 50%);
 }
 
 .hero-location .hero-content {
     position: relative;
     z-index: 2;
     text-align: center;
-    max-width: 900px;
-    padding: var(--spacing-3xl) var(--spacing-lg);
+    max-width: 1000px;
+    padding: 8rem var(--spacing-xl) 6rem;
 }
 
+/* Elegant badge with refined styling */
 .hero-location .hero-badge {
     display: inline-block;
-    background: var(--color-accent);
-    color: var(--color-primary);
-    padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    font-size: 0.875rem;
+    background: rgba(253, 185, 19, 0.95);
+    color: #000;
+    padding: 0.625rem 2rem;
+    border-radius: 2px;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: var(--spacing-lg);
+    letter-spacing: 2.5px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(253, 185, 19, 0.3);
 }
 
+/* Main headline - bold and impactful */
 .hero-location h1 {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    color: var(--color-white);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.1;
+    font-size: clamp(2.75rem, 7vw, 4.5rem);
+    color: #fff;
+    margin-bottom: 1.25rem;
+    line-height: 1.05;
+    font-weight: 600;
+    text-shadow: 0 2px 40px rgba(0,0,0,0.3);
 }
 
+/* Subheadline in gold accent */
 .hero-location .hero-headline {
     font-family: var(--font-heading);
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1.375rem, 3.5vw, 2rem);
     color: var(--color-accent);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 1.75rem;
     font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
+/* Description with excellent readability */
 .hero-location .hero-description {
-    font-size: 1.125rem;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 700px;
-    margin: 0 auto var(--spacing-xl);
-    line-height: 1.7;
+    font-size: 1.1875rem;
+    color: #fff;
+    max-width: 680px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.75;
+    font-weight: 400;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
+/* CTA Button Group */
 .hero-location .hero-cta {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-md);
+    gap: 1.25rem;
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
-.hero-location .btn {
-    padding: 1rem 2.5rem;
+/* Primary CTA - Bold and prominent */
+.hero-location .btn-primary {
+    padding: 1.125rem 3rem;
     font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: var(--color-accent);
+    color: #000;
+    border: none;
+    box-shadow: 0 4px 25px rgba(253, 185, 19, 0.4);
+    transition: all 0.3s ease;
 }
 
+.hero-location .btn-primary:hover {
+    background: #ffe066;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 35px rgba(253, 185, 19, 0.5);
+}
+
+/* Secondary CTA - Elegant outline */
+.hero-location .btn-secondary {
+    padding: 1.125rem 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+}
+
+.hero-location .btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+}
+
+/* Trust indicator */
 .hero-location .hero-trust {
-    margin-top: var(--spacing-xl);
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
+    margin-top: 3rem;
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .hero-location .hero-trust i {
@@ -2591,325 +2656,479 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0.5rem;
 }
 
-/* Location Page Content Sections */
-.content-section {
-    padding: var(--spacing-3xl) 0;
+/* ===== Content Sections - Luxurious Spacing ===== */
+.location-page .content-section {
+    padding: 7rem 0;
 }
 
-.content-section.bg-light {
-    background-color: var(--color-light);
+.location-page .content-section.bg-light {
+    background: linear-gradient(180deg, #FAFAFA 0%, #F5F5F5 100%);
 }
 
-/* Services Detail Grid - More Breathing Room */
+/* Section Typography - Elegant hierarchy */
+.location-page .section-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.location-page .section-description {
+    font-size: 1.125rem;
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto 3.5rem;
+    line-height: 1.85;
+    font-weight: 400;
+}
+
+/* ===== Feature Cards - Refined Luxury ===== */
+.location-page .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.location-page .feature-card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.4s ease;
+}
+
+.location-page .feature-card:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+}
+
+/* Icon styling - elegant and refined */
+.location-page .feature-card > i {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: block;
+    opacity: 0.9;
+}
+
+.location-page .feature-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.location-page .feature-card p {
+    font-size: 0.9375rem;
+    color: #666;
+    line-height: 1.75;
+}
+
+/* ===== Services Grid - Premium Cards ===== */
 .services-detail-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
+    gap: 2.5rem;
+    margin-top: 3rem;
 }
 
-/* Service Detail Card */
 .service-detail-card {
-    background: var(--color-white);
-    border-radius: 16px;
+    background: #fff;
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .service-detail-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
 .service-detail-card img {
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-detail-card:hover img {
+    transform: scale(1.03);
 }
 
 .service-detail-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.35rem;
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-sm);
-}
-
-.pantone-name {
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-sm);
+    font-size: 1.375rem;
+    color: var(--color-primary);
+    padding: 1.75rem 1.75rem 0.75rem;
+    font-weight: 500;
 }
 
 .service-detail-card p {
-    padding: 0 var(--spacing-lg) var(--spacing-sm);
-    color: var(--color-gray);
-    font-size: 1rem;
-    line-height: 1.7;
+    padding: 0 1.75rem 0.5rem;
+    color: #666;
+    font-size: 0.9375rem;
+    line-height: 1.75;
 }
 
 .service-detail-card .btn {
-    margin: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+    margin: 1rem 1.75rem 1.75rem;
 }
 
-/* Neighborhoods Grid - More Padding */
+/* Outline button refinement */
+.location-page .btn-outline {
+    border: 1.5px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.location-page .btn-outline:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+/* ===== Neighborhoods Grid - Elegant Cards ===== */
 .neighborhoods-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-xl);
+    gap: 1.25rem;
+    margin-top: 3rem;
 }
 
 .neighborhood-item {
-    background: var(--color-white);
-    padding: var(--spacing-lg);
-    border-radius: 12px;
+    background: #fff;
+    padding: 1.5rem 1.25rem;
+    border-radius: 4px;
     text-align: center;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
 }
 
 .neighborhood-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--color-accent);
 }
 
 .neighborhood-item h4 {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
-    margin-bottom: var(--spacing-xs);
+    font-size: 1.0625rem;
     color: var(--color-primary);
+    margin-bottom: 0.375rem;
+    font-weight: 500;
 }
 
 .neighborhood-item p {
-    font-size: 0.9rem;
-    color: var(--color-gray);
-    line-height: 1.2;
+    font-size: 0.8125rem;
+    color: #888;
+    line-height: 1.4;
 }
 
-/* Process Grid with Numbers - Location Pages Only */
-.content-section .process-grid {
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
+/* ===== Process Grid - Refined Steps ===== */
+.location-page .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.content-section .process-card {
+.location-page .process-card {
     text-align: center;
-    padding: var(--spacing-xl);
-    background: var(--color-white);
-    border-radius: 16px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem 1.75rem;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    position: relative;
 }
 
-.content-section .process-number {
+/* Elegant number badge */
+.location-page .process-number {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: var(--color-accent);
-    color: var(--color-primary);
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--color-accent) 0%, #f5a623 100%);
+    color: #000;
     border-radius: 50%;
     font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.75rem;
-    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(253, 185, 19, 0.3);
 }
 
-.content-section .process-card h3 {
+.location-page .process-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.2rem;
-    margin-bottom: var(--spacing-md);
+    font-size: 1.1875rem;
+    color: var(--color-primary);
+    margin-bottom: 0.875rem;
+    font-weight: 500;
 }
 
-.content-section .process-card p {
-    color: var(--color-gray);
-    font-size: 0.95rem;
+.location-page .process-card p {
+    color: #666;
+    font-size: 0.9375rem;
     line-height: 1.7;
 }
 
-/* Room Preview Cards for Design Studio */
-.room-image-wrapper img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.room-card:hover .room-image-wrapper img {
-    transform: scale(1.05);
-}
-
-.room-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Full-Width CTA Section - More Impact */
+/* ===== Full-Width CTA Section - Premium Impact ===== */
 .cta-section-full {
-    padding: 7rem 0;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #1a1a1a 100%);
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #0D0D0D 0%, #1a1a1a 50%, #252525 100%);
     text-align: center;
-    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
 }
 
-.room-info h4 {
+/* Subtle gold accent line */
+.cta-section-full::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.cta-section-full h2 {
     font-family: var(--font-heading);
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: var(--spacing-md);
-    color: var(--color-white);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    color: #fff;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
 }
 
 .cta-section-full > .container > p {
-    font-size: 1.2rem;
-    margin-bottom: var(--spacing-xl);
-    opacity: 0.9;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.7;
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.75;
 }
 
 .cta-section-full .cta-buttons {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-md);
+    gap: 1.25rem;
     flex-wrap: wrap;
-    margin-bottom: var(--spacing-lg);
 }
 
 .cta-section-full .btn-lg {
     padding: 1.125rem 3rem;
-    font-size: 1.05rem;
+    font-size: 1rem;
+}
+
+.cta-section-full .btn-primary {
+    background: var(--color-accent);
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 4px 25px rgba(253, 185, 19, 0.35);
+}
+
+.cta-section-full .btn-primary:hover {
+    background: #ffe066;
+    transform: translateY(-2px);
+}
+
+.cta-section-full .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.6);
+}
+
+.cta-section-full .btn-secondary:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.05);
 }
 
 .cta-note {
-    font-size: 0.95rem;
-    opacity: 0.7;
-    margin-top: var(--spacing-lg);
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
 }
 
-/* Nearby Locations Grid - Better Spacing */
+/* ===== Nearby Locations Grid - Clean & Elegant ===== */
 .nearby-locations-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-xl);
-}
-
-.palette-colors {
-    display: flex;
-    gap: 10px;
-    margin-bottom: var(--spacing-md);
+    gap: 1.25rem;
+    margin-top: 3rem;
 }
 
 .nearby-location-card {
     display: block;
-    background: var(--color-light);
-    padding: var(--spacing-lg);
-    border-radius: 12px;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 4px;
     text-align: center;
-    transition: all var(--transition-fast);
-    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
-.palette-color:hover {
-    transform: scale(1.15);
-    z-index: 1;
+.nearby-location-card:hover {
     border-color: var(--color-accent);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .nearby-location-card h4 {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
-    margin-bottom: var(--spacing-xs);
+    font-size: 1.0625rem;
     color: var(--color-primary);
+    margin-bottom: 0.25rem;
+    font-weight: 500;
 }
 
 .nearby-location-card p {
-    font-size: 0.9rem;
-    color: var(--color-gray);
-    background: var(--color-light);
-    padding: 10px 15px;
-    border-radius: 8px;
+    font-size: 0.8125rem;
+    color: #888;
 }
 
-/* County Grid for South Florida page - Generous Padding */
+/* ===== FAQ Accordion - Refined ===== */
+.location-page .accordion {
+    max-width: 900px;
+    margin: 3rem auto 0;
+}
+
+.location-page .accordion-item {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.location-page .accordion-header {
+    padding: 1.375rem 1.75rem;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    background: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.location-page .accordion-header:hover {
+    background: #FAFAFA;
+}
+
+.location-page .accordion-header span {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.location-page .accordion-icon {
+    color: var(--color-accent);
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.location-page .accordion-header[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.location-page .accordion-content {
+    padding: 0 1.75rem 1.5rem;
+}
+
+.location-page .accordion-content p {
+    color: #555;
+    font-size: 0.9375rem;
+    line-height: 1.8;
+}
+
+/* ===== County Grid for South Florida ===== */
 .county-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-/* Color Picker Tool */
-.color-picker-tool {
-    background: var(--color-white);
-    padding: var(--spacing-2xl);
-    border-radius: 16px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+.county-card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.color-picker-tool h3 {
+.county-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
-    margin-bottom: var(--spacing-md);
+    font-size: 1.375rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 0.75rem;
+    font-weight: 500;
 }
 
-.color-picker-tool h3 i {
+.county-card h3 i {
     color: var(--color-accent);
-    font-size: 1.5rem;
+    font-size: 1.375rem;
 }
 
-.color-picker-tool > p {
-    color: var(--color-gray);
-    font-size: 1rem;
-    margin-bottom: var(--spacing-lg);
+.county-description {
+    color: #666;
+    font-size: 0.9375rem;
+    margin-bottom: 1.5rem;
     line-height: 1.7;
 }
 
 .county-cities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .county-cities li {
-    font-size: 0.95rem;
-    padding: var(--spacing-xs) 0;
+    font-size: 0.9375rem;
+    padding: 0.375rem 0;
+    color: #555;
 }
 
-.selected-color-slot {
-    width: 120px;
-    height: 120px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 15px;
-    position: relative;
-    transition: all var(--transition-fast);
+.county-cities li a {
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-.selected-color-slot:hover {
-    transform: scale(1.05);
+.county-cities li a:hover {
+    color: var(--color-accent);
 }
 
-/* Location Page FAQ - Use global accordion styles */
+/* ===== Responsive - Location Pages ===== */
+@media (max-width: 1200px) {
+    .location-page .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-/* Responsive for Location Pages */
 @media (max-width: 1024px) {
     .services-detail-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -2919,7 +3138,7 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .process-grid {
+    .location-page .process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -2927,61 +3146,92 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-.slot-hex {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-family: monospace;
-    font-weight: 600;
-}
-
-.picker-actions {
-    display: flex;
-    gap: var(--spacing-sm);
-}
-
-/* Responsive Design Studio */
-@media (max-width: 1024px) {
-    .visualizer-wrapper-v2 {
+    .county-grid {
         grid-template-columns: 1fr;
     }
 
-    .visualizer-controls-v2 {
-        position: static;
-    }
-
-    .pantone-card {
-        max-width: 100%;
-    }
-
-    .palette-gallery {
-        grid-template-columns: repeat(2, 1fr);
+    .hero-location .hero-content {
+        padding: 6rem var(--spacing-lg) 4rem;
     }
 }
 
 @media (max-width: 768px) {
-    .palette-gallery {
+    .hero-location {
+        min-height: 90vh;
+    }
+
+    .hero-location .hero-content {
+        padding: 5rem var(--spacing-md) 3rem;
+    }
+
+    .hero-location .hero-badge {
+        font-size: 0.6875rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .hero-location .hero-description {
+        font-size: 1.0625rem;
+    }
+
+    .hero-location .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-location .btn-primary,
+    .hero-location .btn-secondary {
+        width: 100%;
+        max-width: 320px;
+        padding: 1rem 2rem;
+    }
+
+    .location-page .content-section {
+        padding: 5rem 0;
+    }
+
+    .location-page .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .services-detail-grid {
         grid-template-columns: 1fr;
     }
 
-    .color-swatches-v2 {
-        grid-template-columns: repeat(3, 1fr);
+    .neighborhoods-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .selected-colors {
-        flex-wrap: wrap;
-        justify-content: center;
+    .location-page .process-grid {
+        grid-template-columns: 1fr;
     }
 
-    .selected-color-slot {
-        width: 100px;
-        height: 100px;
+    .nearby-locations-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .palette-colors {
-        flex-wrap: wrap;
-        justify-content: center;
+    .cta-section-full .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-section-full .btn-lg {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .neighborhoods-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nearby-locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .county-cities {
+        grid-template-columns: 1fr;
     }
 }
 
