@@ -40,24 +40,70 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://soflocountertops.com/#organization",
+        "name": "Griffin Quartz",
+        "alternateName": "SoFlo Countertops",
+        "description": "South Florida's premier quartz kitchen countertop installation company specializing in luxury kitchen islands, waterfall edges, and custom countertops.",
+        "url": "https://soflocountertops.com/kitchen-countertops",
+        "telephone": "+1-720-324-1436",
+        "email": "info@griffinquartz.com",
+        "image": "https://soflocountertops.com/images/griffin-quartz-logo.webp",
+        "logo": "https://soflocountertops.com/images/griffin-quartz-logo.webp",
+        "priceRange": "$$-$$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1021 S Rogers Cir #18",
+            "addressLocality": "Boca Raton",
+            "addressRegion": "FL",
+            "postalCode": "33487",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 26.3683,
+            "longitude": -80.1289
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Boca Raton", "sameAs": "https://en.wikipedia.org/wiki/Boca_Raton,_Florida"},
+            {"@type": "City", "name": "Fort Lauderdale", "sameAs": "https://en.wikipedia.org/wiki/Fort_Lauderdale,_Florida"},
+            {"@type": "City", "name": "Miami", "sameAs": "https://en.wikipedia.org/wiki/Miami"},
+            {"@type": "City", "name": "West Palm Beach", "sameAs": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida"},
+            {"@type": "City", "name": "Delray Beach"},
+            {"@type": "City", "name": "Hollywood"},
+            {"@type": "City", "name": "Pompano Beach"},
+            {"@type": "City", "name": "Coral Gables"},
+            {"@type": "City", "name": "Miami Beach"},
+            {"@type": "City", "name": "Aventura"},
+            {"@type": "City", "name": "Parkland"},
+            {"@type": "City", "name": "Coral Springs"},
+            {"@type": "AdministrativeArea", "name": "Palm Beach County"},
+            {"@type": "AdministrativeArea", "name": "Broward County"},
+            {"@type": "AdministrativeArea", "name": "Miami-Dade County"}
+        ],
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "100",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Kitchen Countertop Installation",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Griffin Quartz",
-            "telephone": "+1-720-324-1436",
-            "email": "info@griffinquartz.com",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "1021 S Rogers Cir #18",
-                "addressLocality": "Boca Raton",
-                "addressRegion": "FL",
-                "postalCode": "33487",
-                "addressCountry": "US"
-            },
-            "areaServed": ["Miami-Dade County", "Broward County", "Palm Beach County"]
-        },
-        "description": "Premium quartz kitchen countertop installation including kitchen islands, perimeter counters, waterfall edges, backsplashes, and breakfast bars.",
+        "provider": {"@id": "https://soflocountertops.com/#organization"},
+        "areaServed": ["Miami-Dade County", "Broward County", "Palm Beach County"],
+        "description": "Premium quartz kitchen countertop installation including kitchen islands, perimeter counters, waterfall edges, backsplashes, and breakfast bars for South Florida homes.",
         "offers": {
             "@type": "Offer",
             "priceRange": "$$-$$$",
@@ -69,14 +115,42 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://soflocountertops.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://soflocountertops.com/our-services"},
+            {"@type": "ListItem", "position": 3, "name": "Kitchen Countertops", "item": "https://soflocountertops.com/kitchen-countertops"}
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "How much do quartz kitchen countertops cost?",
+                "name": "How much do quartz kitchen countertops cost in South Florida?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Quartz kitchen countertops typically range from $50-$150 per square foot installed, depending on the quartz brand, edge profile, and complexity. An average kitchen with 40 square feet of countertop usually costs $2,500-$6,000 installed, including fabrication and installation."
+                    "text": "Quartz kitchen countertops in South Florida typically range from $50-$150 per square foot installed, depending on the quartz brand, edge profile, and complexity. An average kitchen with 40 square feet of countertop usually costs $2,500-$6,000 installed, including fabrication and installation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you install kitchen countertops in Boca Raton?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Griffin Quartz is headquartered in Boca Raton and we provide kitchen countertop installation throughout Boca Raton and all of Palm Beach County. Our showroom is located at 1021 S Rogers Cir #18, Boca Raton, FL 33487."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas do you serve for kitchen countertop installation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We serve all of South Florida including Boca Raton, Fort Lauderdale, Miami, West Palm Beach, Delray Beach, Hollywood, Pompano Beach, Coral Gables, Miami Beach, Aventura, Parkland, Coral Springs, and surrounding areas in Palm Beach County, Broward County, and Miami-Dade County."
                 }
             },
             {
@@ -89,10 +163,18 @@
             },
             {
                 "@type": "Question",
-                "name": "How long does kitchen countertop installation take?",
+                "name": "How long does kitchen countertop installation take in Fort Lauderdale?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kitchen countertop installation typically takes 2-4 hours depending on the size and complexity. From template to installation, the entire process usually takes 5-10 business days for standard kitchens."
+                    "text": "Kitchen countertop installation in Fort Lauderdale and throughout South Florida typically takes 2-4 hours depending on the size and complexity. From template to installation, the entire process usually takes 5-10 business days for standard kitchens."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer free estimates for kitchen countertops in Miami?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We offer free in-home estimates for kitchen countertops throughout Miami and all of Miami-Dade County. Our design consultants will visit your home, take precise measurements, and help you select the perfect quartz for your kitchen project."
                 }
             }
         ]
@@ -255,6 +337,172 @@
             .service-hero .hero-form-wrapper {
                 max-width: 450px;
                 margin: 0 auto;
+            }
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb-nav {
+            background: var(--color-light);
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--color-gray);
+            flex-wrap: wrap;
+        }
+
+        .breadcrumb-list a {
+            color: var(--color-gray);
+            transition: color 0.2s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: var(--color-accent);
+        }
+
+        .breadcrumb-list .separator {
+            color: #ccc;
+        }
+
+        .breadcrumb-list .current {
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+
+        /* Trust Badges Section */
+        .trust-badges-section {
+            padding: 3rem 0;
+            background: var(--color-light);
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .trust-badges-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .trust-badge i {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+        }
+
+        .trust-badge h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin: 0;
+        }
+
+        .trust-badge p {
+            font-size: 0.8125rem;
+            color: var(--color-gray);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .trust-badges-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Service Area Section */
+        .service-area-section {
+            padding: 4rem 0;
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .service-area-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            color: var(--color-white);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-area-section .section-subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2.5rem;
+        }
+
+        .service-area-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-area-county {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-area-county h3 {
+            color: var(--color-accent);
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-area-county h3 i {
+            font-size: 1rem;
+        }
+
+        .city-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .city-links a {
+            display: inline-block;
+            padding: 0.375rem 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.8125rem;
+            color: rgba(255, 255, 255, 0.9);
+            transition: all 0.2s ease;
+        }
+
+        .city-links a:hover {
+            background: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .service-area-cta {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .service-area-cta p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .service-area-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1033,6 +1281,19 @@
         </div>
     </header>
 
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="/">Home</a></li>
+                <li class="separator">/</li>
+                <li><a href="our-services">Services</a></li>
+                <li class="separator">/</li>
+                <li class="current">Kitchen Countertops</li>
+            </ol>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="service-hero" id="quote-form">
         <div class="hero-background">
@@ -1567,6 +1828,88 @@
             </div>
         </div>
     </div>
+
+    <!-- Service Area Section -->
+    <section class="service-area-section">
+        <div class="container">
+            <h2>Kitchen Countertop Installation Throughout South Florida</h2>
+            <p class="section-subtitle">Professional quartz kitchen countertop services in Palm Beach, Broward, and Miami-Dade Counties</p>
+
+            <div class="service-area-grid">
+                <div class="service-area-county">
+                    <h3><i class="bi bi-geo-alt-fill"></i> Palm Beach County</h3>
+                    <div class="city-links">
+                        <a href="boca-raton">Boca Raton</a>
+                        <a href="west-palm-beach">West Palm Beach</a>
+                        <a href="delray-beach">Delray Beach</a>
+                        <a href="boynton-beach">Boynton Beach</a>
+                        <a href="palm-beach-gardens">Palm Beach Gardens</a>
+                        <a href="wellington">Wellington</a>
+                        <a href="jupiter">Jupiter</a>
+                    </div>
+                </div>
+
+                <div class="service-area-county">
+                    <h3><i class="bi bi-geo-alt-fill"></i> Broward County</h3>
+                    <div class="city-links">
+                        <a href="fort-lauderdale">Fort Lauderdale</a>
+                        <a href="hollywood">Hollywood</a>
+                        <a href="pompano-beach">Pompano Beach</a>
+                        <a href="coral-springs">Coral Springs</a>
+                        <a href="parkland">Parkland</a>
+                        <a href="weston">Weston</a>
+                        <a href="davie">Davie</a>
+                    </div>
+                </div>
+
+                <div class="service-area-county">
+                    <h3><i class="bi bi-geo-alt-fill"></i> Miami-Dade County</h3>
+                    <div class="city-links">
+                        <a href="miami">Miami</a>
+                        <a href="miami-beach">Miami Beach</a>
+                        <a href="coral-gables">Coral Gables</a>
+                        <a href="aventura">Aventura</a>
+                        <a href="sunny-isles">Sunny Isles Beach</a>
+                        <a href="key-biscayne">Key Biscayne</a>
+                        <a href="doral">Doral</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-area-cta">
+                <p>Don't see your city? We likely serve your area too!</p>
+                <a href="#quote-form" class="btn btn-primary">Get a Free Quote for Your Kitchen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="trust-badges-section">
+        <div class="container">
+            <div class="trust-badges-grid">
+                <div class="trust-badge">
+                    <i class="bi bi-shield-check"></i>
+                    <h4>Licensed & Insured</h4>
+                    <p>Fully licensed Florida contractor with comprehensive liability coverage</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="bi bi-award"></i>
+                    <h4>10+ Years Experience</h4>
+                    <p>Trusted by thousands of South Florida homeowners since 2014</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="bi bi-star-fill"></i>
+                    <h4>5-Star Rated</h4>
+                    <p>Consistently rated 5 stars on Google, Yelp, and HomeAdvisor</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="bi bi-patch-check"></i>
+                    <h4>Lifetime Warranty</h4>
+                    <p>All installations backed by our lifetime craftsmanship warranty</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
