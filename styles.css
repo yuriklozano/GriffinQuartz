@@ -4464,6 +4464,59 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-sm);
 }
 
+/* Consultation Benefits */
+.consult-benefits {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-light-gray);
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+}
+
+.benefit-item i {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+}
+
+.form-subtitle {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+}
+
+.service-area-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: linear-gradient(135deg, rgba(253, 185, 19, 0.1) 0%, rgba(253, 185, 19, 0.05) 100%);
+    border-radius: 10px;
+    margin-bottom: var(--spacing-md);
+    border-left: 3px solid var(--color-accent);
+}
+
+.service-area-note i {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    margin-top: 2px;
+}
+
+.service-area-note span {
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+    line-height: 1.5;
+}
+
 .picker-mini-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));

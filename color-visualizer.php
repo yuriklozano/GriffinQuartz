@@ -321,8 +321,8 @@
             <div class="section-header-fancy">
                 <span class="section-number">04</span>
                 <div class="section-header-content">
-                    <h2>Request Free Samples</h2>
-                    <p>See and feel the quartz in person. Request up to 3 free samples delivered right to your door.</p>
+                    <h2>Free At-Home Consultation</h2>
+                    <p>See and feel the quartz in person. Select up to 3 samples and one of our stone experts will bring them directly to your home for a free consultation.</p>
                 </div>
             </div>
 
@@ -330,21 +330,36 @@
                 <div class="samples-layout">
                     <!-- Selected Samples Display -->
                     <div class="samples-selection">
-                        <h3><i class="bi bi-box-seam"></i> Your Selected Samples</h3>
+                        <h3><i class="bi bi-gem"></i> Your Selected Samples</h3>
                         <div class="samples-chips" id="sampleChipsDisplay">
-                            <p class="no-samples">Click colors above to select samples (up to 3)</p>
+                            <p class="no-samples">Click colors below to select samples (up to 3)</p>
                         </div>
                         <div class="samples-picker">
-                            <h4>Quick Add:</h4>
+                            <h4>Choose Your Samples:</h4>
                             <div class="picker-mini-grid" id="samplePickerGrid">
                                 <!-- Mini color picker -->
+                            </div>
+                        </div>
+                        <div class="consult-benefits">
+                            <div class="benefit-item">
+                                <i class="bi bi-house-door"></i>
+                                <span>In-home viewing</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="bi bi-person-badge"></i>
+                                <span>Expert guidance</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="bi bi-cash-stack"></i>
+                                <span>Free estimate</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Request Form -->
                     <div class="samples-form-card">
-                        <h3><i class="bi bi-truck"></i> Shipping Information</h3>
+                        <h3><i class="bi bi-calendar-check"></i> Schedule Your Free Consultation</h3>
+                        <p class="form-subtitle">A stone expert will contact you to schedule a convenient time to visit your home with your selected samples.</p>
                         <form class="samples-request-form" id="samplesForm">
                             <div class="form-row">
                                 <div class="form-group">
@@ -360,26 +375,26 @@
                                 <label for="sampleEmail">Email *</label>
                                 <input type="email" id="sampleEmail" required>
                             </div>
-                            <div class="form-group">
-                                <label for="sampleAddress">Street Address *</label>
-                                <input type="text" id="sampleAddress" required>
-                            </div>
-                            <div class="form-row form-row-3">
+                            <div class="form-row">
                                 <div class="form-group">
                                     <label for="sampleCity">City *</label>
-                                    <input type="text" id="sampleCity" required>
+                                    <input type="text" id="sampleCity" placeholder="e.g., Boca Raton" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sampleState">State *</label>
-                                    <input type="text" id="sampleState" value="FL" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="sampleZip">ZIP *</label>
-                                    <input type="text" id="sampleZip" required>
+                                    <label for="sampleZip">ZIP Code *</label>
+                                    <input type="text" id="sampleZip" placeholder="e.g., 33487" required>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="sampleNotes">Project Details (Optional)</label>
+                                <input type="text" id="sampleNotes" placeholder="e.g., Kitchen remodel, ~30 sq ft">
+                            </div>
+                            <div class="service-area-note">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Free consultations available throughout <strong>South Florida</strong> including Boca Raton, Fort Lauderdale, Miami, West Palm Beach, and surrounding areas.</span>
+                            </div>
                             <button type="submit" class="btn btn-primary btn-full" id="submitSamplesBtn">
-                                <i class="bi bi-send"></i> Request Free Samples
+                                <i class="bi bi-calendar-plus"></i> Request Free Consultation
                             </button>
                         </form>
                     </div>
