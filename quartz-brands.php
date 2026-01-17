@@ -352,7 +352,9 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 0.625rem 1.25rem;
             border-radius: 50px;
@@ -365,7 +367,6 @@
             font-family: 'Playfair Display', serif;
             font-size: clamp(2.5rem, 5vw, 3.75rem);
             font-weight: 500;
-            font-style: italic;
             color: #fff;
             margin-bottom: 1.5rem;
             line-height: 1.15;
