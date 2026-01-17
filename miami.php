@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/project-4.webp" alt="Quartz countertops in Miami Florida" loading="eager">
+            <img src="images/tropical-outdoor-kitchen-teal-cabinets-rattan.webp" alt="Quartz countertops in Miami Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

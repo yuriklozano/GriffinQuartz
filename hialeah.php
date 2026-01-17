@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/project-6.webp" alt="Quartz countertops in Hialeah Florida" loading="eager">
+            <img src="images/mediterranean-outdoor-kitchen-stone-arches.webp" alt="Quartz countertops in Hialeah Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

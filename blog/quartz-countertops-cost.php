@@ -63,7 +63,7 @@
                 <h1>How Much Are Quartz Countertops in South Florida</h1>
             </div>
 
-            <img src="../images/blog-2.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-featured-image" loading="eager">
+            <img src="../images/hotel-buffet-white-marble-counter-flowers.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-featured-image" loading="eager">
 
             <div class="blog-content">
                 <p>Planning a kitchen or bathroom renovation in South Florida? One of the most common questions we hear is "How much do quartz countertops cost?" The answer depends on several factors, but we're here to give you a clear picture of what to expect.</p>

@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/bathroom-ocean.webp" alt="Quartz countertops in Aventura Florida" loading="eager">
+            <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Quartz countertops in Aventura Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

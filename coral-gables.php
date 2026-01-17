@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/savings-kitchen.webp" alt="Quartz countertops in Coral Gables Florida" loading="eager">
+            <img src="images/mediterranean-kitchen-quartz-arched-window.webp" alt="Quartz countertops in Coral Gables Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

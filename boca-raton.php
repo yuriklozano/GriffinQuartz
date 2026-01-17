@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/hero-kitchen.webp" alt="Quartz countertops in Boca Raton Florida" loading="eager">
+            <img src="images/rooftop-outdoor-kitchen-sunset-skyline.webp" alt="Quartz countertops in Boca Raton Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

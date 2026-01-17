@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
-            <img src="images/hero-kitchen.webp" alt="South Florida home with white quartz countertops overlooking pool" loading="eager">
+            <img src="images/rooftop-outdoor-kitchen-sunset-skyline.webp" alt="South Florida home with white quartz countertops overlooking pool" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -173,7 +173,7 @@
         <div class="container">
             <div class="team-content">
                 <div class="team-image">
-                    <img src="images/pink-kitchen.webp" alt="Beautiful pink kitchen with white quartz countertops overlooking the South Florida ocean" loading="lazy">
+                    <img src="images/coastal-kitchen-marble-island-coffered-ceiling.webp" alt="Beautiful pink kitchen with white quartz countertops overlooking the South Florida ocean" loading="lazy">
                 </div>
                 <div class="team-text">
                     <h2>Our Team is Comprised of Expert Quartz & Granite Installers with 10+ Years of Experience</h2>
@@ -192,25 +192,25 @@
             <h2 class="section-title">Recent South Florida Quartz Countertop Projects</h2>
             <div class="projects-grid">
                 <div class="project-item">
-                    <img src="images/project-1.webp" alt="Elegant kitchen with light gray quartz countertops, wood cabinetry, and undercabinet LED lighting" loading="lazy">
+                    <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Elegant kitchen with light gray quartz countertops, wood cabinetry, and undercabinet LED lighting" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/project-2.webp" alt="Stylish bar area with quartz backsplash, integrated wine refrigerator, and wood cabinetry" loading="lazy">
+                    <img src="images/waterfront-bar-black-gold-quartz-palms.webp" alt="Stylish bar area with quartz backsplash, integrated wine refrigerator, and wood cabinetry" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/project-3.webp" alt="Luxury kitchen with white quartz countertop island, navy cabinetry, and white shaker cabinets" loading="lazy">
+                    <img src="images/outdoor-kitchen-white-marble-waterfall-modern.webp" alt="Luxury kitchen with white quartz countertop island, navy cabinetry, and white shaker cabinets" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/project-4.webp" alt="Contemporary kitchen with white quartz waterfall island and sculptural LED chandelier" loading="lazy">
+                    <img src="images/tropical-outdoor-kitchen-teal-cabinets-rattan.webp" alt="Contemporary kitchen with white quartz waterfall island and sculptural LED chandelier" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/project-5.webp" alt="Spacious kitchen with white quartz island featuring golden veining and natural wood cabinetry" loading="lazy">
+                    <img src="images/rooftop-bar-blue-marble-quartz-cityview.webp" alt="Spacious kitchen with white quartz island featuring golden veining and natural wood cabinetry" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/project-6.webp" alt="Modern wall cabinetry with glossy beige floating cabinets and quartz backsplash" loading="lazy">
+                    <img src="images/mediterranean-outdoor-kitchen-stone-arches.webp" alt="Modern wall cabinetry with glossy beige floating cabinets and quartz backsplash" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/project-7.webp" alt="Contemporary kitchen with large white quartz waterfall island and sleek white cabinetry" loading="lazy">
+                    <img src="images/covered-patio-white-marble-island-pool.webp" alt="Contemporary kitchen with large white quartz waterfall island and sleek white cabinetry" loading="lazy">
                 </div>
             </div>
         </div>
@@ -227,7 +227,7 @@
                     <a href="#contact-form" class="btn btn-primary">Get FREE Estimate</a>
                 </div>
                 <div class="savings-image">
-                    <img src="images/savings-kitchen.webp" alt="Beautiful kitchen with quartz countertops" loading="lazy">
+                    <img src="images/mediterranean-kitchen-quartz-arched-window.webp" alt="Beautiful kitchen with quartz countertops" loading="lazy">
                 </div>
             </div>
         </div>
@@ -239,21 +239,21 @@
             <h2 class="section-title">Elevate Your South Florida Homes with Quartz Countertops</h2>
             <div class="explore-grid">
                 <a href="kitchen-bath" class="explore-card">
-                    <img src="images/explore-kitchen.webp" alt="Modern white kitchen with marble waterfall island and rattan bar stools" loading="lazy">
+                    <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern white kitchen with marble waterfall island and rattan bar stools" loading="lazy">
                     <div class="explore-card-content">
                         <h3>Discover Quartz for Kitchen and Bath</h3>
                         <span class="explore-link">Explore</span>
                     </div>
                 </a>
                 <a href="locations" class="explore-card">
-                    <img src="images/explore-outdoor.webp" alt="Outdoor kitchen with quartz countertops and teal cabinets" loading="lazy">
+                    <img src="images/modern-outdoor-kitchen-quartz-firepit.webp" alt="Outdoor kitchen with quartz countertops and teal cabinets" loading="lazy">
                     <div class="explore-card-content">
                         <h3>Find a Quartz Installation Service Area Near You</h3>
                         <span class="explore-link">Explore</span>
                     </div>
                 </a>
                 <a href="gallery" class="explore-card">
-                    <img src="images/explore-gallery.webp" alt="Elegant white kitchen with quartz island and gold fixtures" loading="lazy">
+                    <img src="images/hotel-lobby-white-marble-reception-palms.webp" alt="Elegant white kitchen with quartz island and gold fixtures" loading="lazy">
                     <div class="explore-card-content">
                         <h3>Get Inspired by Our Quartz Inspiration Photo Gallery</h3>
                         <span class="explore-link">Explore</span>
@@ -268,7 +268,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/waterfall-kitchen.webp" alt="Luxurious modern kitchen with floor-to-ceiling windows overlooking the ocean" loading="lazy">
+                    <img src="images/poolside-white-marble-island-palms-dusk.webp" alt="Luxurious modern kitchen with floor-to-ceiling windows overlooking the ocean" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h2>Who We Are</h2>
@@ -331,7 +331,7 @@
         <div class="container">
             <div class="difference-content">
                 <div class="difference-image">
-                    <img src="images/bathroom-ocean.webp" alt="Modern bathroom with floating wooden vanity and ocean view" loading="lazy">
+                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Modern bathroom with floating wooden vanity and ocean view" loading="lazy">
                 </div>
                 <div class="difference-text">
                     <h2>The Griffin Quartz Difference</h2>
@@ -368,28 +368,28 @@
             <div class="process-grid">
                 <div class="process-card">
                     <div class="process-image">
-                        <img src="images/process-1.webp" alt="Hands measuring a quartz slab with tape measure" loading="lazy">
+                        <img src="images/jewelry-store-white-marble-display-counter.webp" alt="Hands measuring a quartz slab with tape measure" loading="lazy">
                     </div>
                     <h3>Schedule Your Free Estimate</h3>
                     <p>We'll meet you at your home or job site to measure your space using 3D laser technology and help you explore our quartz offerings—no charge.</p>
                 </div>
                 <div class="process-card">
                     <div class="process-image">
-                        <img src="images/process-2.webp" alt="Polished white quartz slab with dark veining" loading="lazy">
+                        <img src="images/hotel-lobby-white-marble-planters-tropical.webp" alt="Polished white quartz slab with dark veining" loading="lazy">
                     </div>
                     <h3>Choose Your Quartz Slab</h3>
                     <p>We carry a wide variety of designer quartz materials. You'll get expert guidance based on your style, budget, and how you use the space.</p>
                 </div>
                 <div class="process-card">
                     <div class="process-image">
-                        <img src="images/process-3.webp" alt="Stylish interior with marble backsplash and quartz countertop" loading="lazy">
+                        <img src="images/tropical-restaurant-bar-black-quartz-beams.webp" alt="Stylish interior with marble backsplash and quartz countertop" loading="lazy">
                     </div>
                     <h3>Precision Fabrication</h3>
                     <p>We fabricate your selected slab <strong>in-house</strong>, using CNC machinery and hand-polishing for a flawless, long-lasting result.</p>
                 </div>
                 <div class="process-card">
                     <div class="process-image">
-                        <img src="images/process-4.webp" alt="Contemporary kitchen with large white quartz island" loading="lazy">
+                        <img src="images/outdoor-kitchen-marble-island-firepit-twilight.webp" alt="Contemporary kitchen with large white quartz island" loading="lazy">
                     </div>
                     <h3>Professional Installation</h3>
                     <p>Installations are completed <strong>in one day</strong> in most cases, with minimal mess, tight seams, and finishing details that exceed expectations.</p>
@@ -403,15 +403,15 @@
         <div class="container">
             <div class="explore-cta-grid">
                 <a href="kitchen-bath" class="explore-cta-card">
-                    <img src="images/cta-kitchen.webp" alt="Elegant kitchen with golden cabinets and quartz countertops" loading="lazy">
+                    <img src="images/backyard-outdoor-kitchen-firepit-evening.webp" alt="Elegant kitchen with golden cabinets and quartz countertops" loading="lazy">
                     <h3>Explore Quartz for Kitchen & Bath</h3>
                 </a>
                 <a href="locations" class="explore-cta-card">
-                    <img src="images/cta-bathroom.webp" alt="Stylish bathroom with freestanding tub and marble countertop" loading="lazy">
+                    <img src="images/commercial-lobby-white-marble-reception.webp" alt="Stylish bathroom with freestanding tub and marble countertop" loading="lazy">
                     <h3>Explore Quartz Installation Locations</h3>
                 </a>
                 <a href="quartz-brands" class="explore-cta-card">
-                    <img src="images/cta-brands.webp" alt="Stylish interior with marble backsplash and quartz countertop" loading="lazy">
+                    <img src="images/industrial-rooftop-bar-concrete-cityview.webp" alt="Stylish interior with marble backsplash and quartz countertop" loading="lazy">
                     <h3>Explore Quartz Product Selection</h3>
                 </a>
             </div>
@@ -424,28 +424,28 @@
             <h2 class="section-title">Featured Articles</h2>
             <div class="blog-grid">
                 <a href="blog/top-10-countertop-installation" class="blog-card">
-                    <img src="images/blog-1.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                    <img src="images/resort-poolside-outdoor-kitchen-blue-tile.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Aug 09, 2025</span>
                         <h3>Top 10 Best Countertop Installation Near Fort Lauderdale 2025</h3>
                     </div>
                 </a>
                 <a href="blog/quartz-countertops-cost" class="blog-card">
-                    <img src="images/blog-2.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                    <img src="images/hotel-buffet-white-marble-counter-flowers.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Sep 01, 2025</span>
                         <h3>How Much Are Quartz Countertops in South Florida</h3>
                     </div>
                 </a>
                 <a href="blog/quartz-pricing-guide" class="blog-card">
-                    <img src="images/blog-3.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                    <img src="images/industrial-loft-kitchen-brick-quartz-island.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Aug 22, 2025</span>
                         <h3>How Much Is Quartz Countertops? 2025 Pricing Guide</h3>
                     </div>
                 </a>
                 <a href="blog/white-quartz-countertops" class="blog-card">
-                    <img src="images/blog-4.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                    <img src="images/waterfront-patio-quartz-table-marina-sunset.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
                     <div class="blog-card-content">
                         <span class="blog-meta">By Yurik Lozano • Aug 20, 2025</span>
                         <h3>White Quartz Countertops in South Florida</h3>

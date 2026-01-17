@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/explore-outdoor.webp" alt="Quartz countertop installation across South Florida" loading="eager">
+            <img src="images/modern-outdoor-kitchen-quartz-firepit.webp" alt="Quartz countertop installation across South Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

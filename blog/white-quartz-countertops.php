@@ -63,7 +63,7 @@
                 <h1>White Quartz Countertops in South Florida</h1>
             </div>
 
-            <img src="../images/blog-4.webp" alt="Modern kitchen with white quartz countertops" class="blog-featured-image" loading="eager">
+            <img src="../images/waterfront-patio-quartz-table-marina-sunset.webp" alt="Modern kitchen with white quartz countertops" class="blog-featured-image" loading="eager">
 
             <div class="blog-content">
                 <p>White quartz countertops remain the most popular choice among South Florida homeowners, and for good reason. They brighten spaces, complement virtually any design style, and perfectly capture the light, airy aesthetic that defines coastal living.</p>

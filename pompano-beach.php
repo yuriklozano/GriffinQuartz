@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/project-7.webp" alt="Quartz countertops in Pompano Beach Florida" loading="eager">
+            <img src="images/covered-patio-white-marble-island-pool.webp" alt="Quartz countertops in Pompano Beach Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
