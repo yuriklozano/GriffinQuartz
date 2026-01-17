@@ -67,14 +67,14 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
-            <img src="images/rooftop-outdoor-kitchen-sunset-skyline.webp" alt="South Florida home with white quartz countertops overlooking pool" loading="eager">
+            <img src="images/waterfront-marble-bar-illuminated-sunset.webp" alt="Luxury waterfront marble bar with illuminated countertops at sunset in South Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
             <p class="hero-badge">Trusted by 100K+ Satisfied Customers</p>
-            <h1>Quartz Countertops in South Florida</h1>
-            <h2>Widest Selection of Quartz Countertops, Expert Fabrication, and Fast Installation</h2>
-            <p class="hero-description">Transform your kitchen, bathroom, or commercial property with <strong>luxurious and durable quartz countertops</strong> from Griffin Quartz. Serving <a href="boca-raton">Boca Raton</a>, <a href="fort-lauderdale">Fort Lauderdale</a>, <a href="west-palm-beach">West Palm Beach</a>, and all of <strong>South Florida</strong>, we provide <strong>custom quartz and granite surfaces</strong> that combine beauty, strength, and low maintenance.</p>
+            <h1>Luxury Quartz Countertops in South Florida</h1>
+            <h2>Where Elegance Meets Expert Craftsmanship</h2>
+            <p class="hero-description">Transform your space with <strong>premium quartz surfaces</strong> from Griffin Quartz. Serving <a href="boca-raton">Boca Raton</a>, <a href="fort-lauderdale">Fort Lauderdale</a>, <a href="west-palm-beach">West Palm Beach</a>, and all of <strong>South Florida</strong>, we deliver <strong>bespoke quartz installations</strong> that define luxury living.</p>
             <div class="hero-cta">
                 <a href="#contact-form" class="btn btn-primary">Get FREE Estimate</a>
                 <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
@@ -178,14 +178,14 @@
         <div class="container">
             <div class="team-content">
                 <div class="team-image">
-                    <img src="images/coastal-kitchen-marble-island-coffered-ceiling.webp" alt="Beautiful pink kitchen with white quartz countertops overlooking the South Florida ocean" loading="lazy">
+                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white kitchen with marble countertops, gold fixtures, and arched windows in South Florida" loading="lazy">
                 </div>
                 <div class="team-text">
-                    <h2>Our Team is Comprised of Expert Quartz & Granite Installers with 10+ Years of Experience</h2>
-                    <h3>Our Experts Deliver Unmatched Quality and Attention to Detail Every Single Time</h3>
-                    <p>At Griffin Quartz, we have a refined eye for craftsmanship. With <strong>the most experienced stone fabricators</strong> in South Florida—each with <strong>over 10 years of hands-on expertise</strong>—we deliver flawless results through <strong>strict quality control protocols</strong>. No shortcuts. No horror stories. Just pure perfection.</p>
-                    <p>Family-owned and proudly rooted in South Florida, we blend global craftsmanship with local passion to bring your dream kitchen or bathroom to life.</p>
-                    <a href="#contact-form" class="btn btn-primary">Get FREE Estimate</a>
+                    <h2>Master Craftsmen Dedicated to Perfection</h2>
+                    <h3>10+ Years of Excellence in Every Installation</h3>
+                    <p>At Griffin Quartz, luxury isn't just a word—it's our standard. With <strong>South Florida's most experienced stone fabricators</strong>, each bringing <strong>over a decade of hands-on expertise</strong>, we deliver results that exceed expectations through <strong>meticulous attention to detail</strong>.</p>
+                    <p>Family-owned and deeply rooted in South Florida's luxury market, we blend world-class craftsmanship with personalized service to transform your vision into reality.</p>
+                    <a href="#contact-form" class="btn btn-primary">Schedule Consultation</a>
                 </div>
             </div>
         </div>
@@ -194,28 +194,29 @@
     <!-- Recent Projects Gallery -->
     <section class="projects-section">
         <div class="container">
-            <h2 class="section-title">Recent South Florida Quartz Countertop Projects</h2>
+            <h2 class="section-title">Our Signature Installations</h2>
+            <p class="section-subtitle">Showcasing South Florida's Finest Quartz Projects</p>
             <div class="projects-grid">
                 <div class="project-item">
-                    <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Elegant kitchen with light gray quartz countertops, wood cabinetry, and undercabinet LED lighting" loading="lazy">
+                    <img src="images/waterfront-marble-bar-illuminated-sunset.webp" alt="Waterfront marble bar with illuminated countertops at sunset" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/waterfront-bar-black-gold-quartz-palms.webp" alt="Stylish bar area with quartz backsplash, integrated wine refrigerator, and wood cabinetry" loading="lazy">
+                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white kitchen with arched windows and gold fixtures" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/outdoor-kitchen-white-marble-waterfall-modern.webp" alt="Luxury kitchen with white quartz countertop island, navy cabinetry, and white shaker cabinets" loading="lazy">
+                    <img src="images/outdoor-kitchen-marble-fireplace-pool.webp" alt="Outdoor kitchen with marble countertops and pool" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/tropical-outdoor-kitchen-teal-cabinets-rattan.webp" alt="Contemporary kitchen with white quartz waterfall island and sculptural LED chandelier" loading="lazy">
+                    <img src="images/modern-kitchen-marble-island-glass-pendants.webp" alt="Modern kitchen with marble island and glass pendants" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/rooftop-bar-blue-marble-quartz-cityview.webp" alt="Spacious kitchen with white quartz island featuring golden veining and natural wood cabinetry" loading="lazy">
+                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Luxury bathroom with black marble and gold fixtures" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/mediterranean-outdoor-kitchen-stone-arches.webp" alt="Modern wall cabinetry with glossy beige floating cabinets and quartz backsplash" loading="lazy">
+                    <img src="images/rooftop-outdoor-kitchen-ocean-sunset.webp" alt="Rooftop outdoor kitchen with ocean sunset view" loading="lazy">
                 </div>
                 <div class="project-item">
-                    <img src="images/covered-patio-white-marble-island-pool.webp" alt="Contemporary kitchen with large white quartz waterfall island and sleek white cabinetry" loading="lazy">
+                    <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial bar with black and gold quartz" loading="lazy">
                 </div>
             </div>
         </div>
@@ -226,13 +227,13 @@
         <div class="container">
             <div class="savings-content">
                 <div class="savings-text">
-                    <h2>Save on Quartz Countertops in South Florida</h2>
-                    <p><strong>Get premium quartz surfaces at the right price—without sacrificing quality, durability, or style.</strong> Dreaming of a luxury kitchen or bathroom without the luxury price tag? As <strong>South Florida's largest quartz installation company</strong>, we work directly with the <strong>largest network of manufacturers</strong>—cutting out the middleman so you get <strong>premium quartz at unbeatable prices</strong>.</p>
-                    <p>Our design advisors are here to guide you through your options, answer questions, and help bring your vision to life. There's <strong>no pressure, no obligation</strong>—just expert advice and honest pricing you can trust. We don't haggle, we just deliver.</p>
-                    <a href="#contact-form" class="btn btn-primary">Get FREE Estimate</a>
+                    <h2>Luxury Without Compromise</h2>
+                    <p><strong>Premium quartz surfaces at exceptional value.</strong> As <strong>South Florida's premier quartz installation company</strong>, we source directly from <strong>elite manufacturers worldwide</strong>—delivering showroom-quality surfaces at factory-direct pricing.</p>
+                    <p>Our design consultants provide <strong>white-glove service</strong> from selection to installation. No pressure, no obligation—just expert guidance and transparent pricing from a team that understands luxury.</p>
+                    <a href="#contact-form" class="btn btn-primary">Request Private Consultation</a>
                 </div>
                 <div class="savings-image">
-                    <img src="images/mediterranean-kitchen-quartz-arched-window.webp" alt="Beautiful kitchen with quartz countertops" loading="lazy">
+                    <img src="images/modern-kitchen-marble-island-glass-pendants.webp" alt="Modern luxury kitchen with marble island and glass pendant lights" loading="lazy">
                 </div>
             </div>
         </div>
@@ -241,27 +242,27 @@
     <!-- Explore Cards Section -->
     <section class="explore-section">
         <div class="container">
-            <h2 class="section-title">Elevate Your South Florida Homes with Quartz Countertops</h2>
+            <h2 class="section-title">Discover Luxury Quartz Collections</h2>
             <div class="explore-grid">
                 <a href="kitchen-bath" class="explore-card">
-                    <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern white kitchen with marble waterfall island and rattan bar stools" loading="lazy">
+                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury white kitchen with marble countertops and gold accents" loading="lazy">
                     <div class="explore-card-content">
-                        <h3>Discover Quartz for Kitchen and Bath</h3>
-                        <span class="explore-link">Explore</span>
+                        <h3>Kitchens & Baths</h3>
+                        <span class="explore-link">Explore Collection</span>
                     </div>
                 </a>
                 <a href="locations" class="explore-card">
-                    <img src="images/modern-outdoor-kitchen-quartz-firepit.webp" alt="Outdoor kitchen with quartz countertops and teal cabinets" loading="lazy">
+                    <img src="images/rooftop-outdoor-kitchen-ocean-sunset.webp" alt="Rooftop outdoor kitchen with quartz countertops and ocean sunset view" loading="lazy">
                     <div class="explore-card-content">
-                        <h3>Find a Quartz Installation Service Area Near You</h3>
-                        <span class="explore-link">Explore</span>
+                        <h3>Outdoor Living</h3>
+                        <span class="explore-link">Explore Collection</span>
                     </div>
                 </a>
                 <a href="gallery" class="explore-card">
-                    <img src="images/hotel-lobby-white-marble-reception-palms.webp" alt="Elegant white kitchen with quartz island and gold fixtures" loading="lazy">
+                    <img src="images/luxury-bathroom-black-marble-gold-fixtures.webp" alt="Luxury bathroom with black marble and gold fixtures" loading="lazy">
                     <div class="explore-card-content">
-                        <h3>Get Inspired by Our Quartz Inspiration Photo Gallery</h3>
-                        <span class="explore-link">Explore</span>
+                        <h3>Inspiration Gallery</h3>
+                        <span class="explore-link">Explore Collection</span>
                     </div>
                 </a>
             </div>
@@ -273,16 +274,16 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/poolside-white-marble-island-palms-dusk.webp" alt="Luxurious modern kitchen with floor-to-ceiling windows overlooking the ocean" loading="lazy">
+                    <img src="images/outdoor-kitchen-marble-fireplace-pool.webp" alt="Luxury outdoor kitchen with marble countertops, fireplace and pool view" loading="lazy">
                 </div>
                 <div class="about-text">
-                    <h2>Who We Are</h2>
-                    <h3>South Florida's Quartz Countertop Experts</h3>
-                    <p><strong>Luxury quartz, installed to perfection.</strong> At Griffin Quartz, we specialize in custom fabrication and installation for kitchens, bathrooms, outdoor spaces, and commercial projects across South Florida. With the <strong>largest network of expert installers</strong>, each with <strong>10+ years of hands-on experience</strong>, we deliver flawless craftsmanship backed by strict quality control — no shortcuts, no compromises.</p>
-                    <p>With over 20 years of local expertise, we've built our reputation on <strong>showroom-quality quartz at direct-from-fabricator pricing</strong>. Choose from South Florida's <strong>widest selection of premium quartz colors and styles</strong>, including Calacatta designs and trusted brands like <strong>Cambria®, Silestone®, and Caesarstone®</strong>.</p>
-                    <p>Every project is completed with <strong>laser-precise templating, meticulous installation, and a warranty-backed finish</strong> designed to last in South Florida's unique climate.</p>
-                    <p>As a <strong>family-owned company</strong> rooted in Fort Lauderdale, Miami, Boca Raton, and West Palm Beach, Griffin Quartz is the name homeowners, contractors, and designers trust for quartz countertops that are beautiful, durable, and installed to perfection.</p>
-                    <a href="#contact-form" class="btn btn-primary">Schedule FREE Estimate</a>
+                    <h2>The Griffin Quartz Story</h2>
+                    <h3>South Florida's Premier Quartz Artisans</h3>
+                    <p><strong>Where luxury meets craftsmanship.</strong> Griffin Quartz specializes in bespoke quartz installations for discerning homeowners, architects, and designers across South Florida. Our <strong>master craftsmen</strong> bring <strong>decades of combined expertise</strong> to every project.</p>
+                    <p>We've built our legacy on <strong>uncompromising quality and personalized service</strong>. From rare Calacatta patterns to exclusive designs from <strong>Cambria®, Silestone®, and Caesarstone®</strong>—we curate only the finest materials.</p>
+                    <p>Every installation features <strong>laser-precise templating, hand-finished edges, and warranty-backed craftsmanship</strong> engineered for South Florida's unique climate.</p>
+                    <p>As a <strong>family-owned atelier</strong> serving Boca Raton, Fort Lauderdale, Miami, and Palm Beach, we're the trusted partner for those who demand excellence.</p>
+                    <a href="#contact-form" class="btn btn-primary">Begin Your Project</a>
                 </div>
             </div>
         </div>
@@ -408,15 +409,15 @@
         <div class="container">
             <div class="explore-cta-grid">
                 <a href="kitchen-bath" class="explore-cta-card">
-                    <img src="images/backyard-outdoor-kitchen-firepit-evening.webp" alt="Elegant kitchen with golden cabinets and quartz countertops" loading="lazy">
+                    <img src="images/modern-kitchen-marble-island-glass-pendants.webp" alt="Modern luxury kitchen with marble island" loading="lazy">
                     <h3>Explore Quartz for Kitchen & Bath</h3>
                 </a>
                 <a href="locations" class="explore-cta-card">
-                    <img src="images/commercial-lobby-white-marble-reception.webp" alt="Stylish bathroom with freestanding tub and marble countertop" loading="lazy">
+                    <img src="images/outdoor-kitchen-marble-fireplace-pool.webp" alt="Luxury outdoor kitchen with pool view" loading="lazy">
                     <h3>Explore Quartz Installation Locations</h3>
                 </a>
                 <a href="quartz-brands" class="explore-cta-card">
-                    <img src="images/industrial-rooftop-bar-concrete-cityview.webp" alt="Stylish interior with marble backsplash and quartz countertop" loading="lazy">
+                    <img src="images/quartz-samples-gold-hardware-luxury.webp" alt="Premium quartz samples with gold hardware" loading="lazy">
                     <h3>Explore Quartz Product Selection</h3>
                 </a>
             </div>
