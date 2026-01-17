@@ -3029,11 +3029,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.2s ease;
-}
-
-.location-page .accordion-header:hover {
-    background: #FAFAFA;
 }
 
 .location-page .accordion-header span {
