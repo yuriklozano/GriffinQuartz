@@ -151,7 +151,7 @@
     }
     </script>
 </head>
-<body>
+<body class="location-page">
     <!-- Announcement Bar -->
     <div class="announcement-bar">
         <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
@@ -214,14 +214,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="hero-location">
         <div class="hero-background">
             <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Premium quartz countertops installation in Coral Springs Florida home" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz Countertops in Coral Springs, FL</h1>
-            <p class="hero-description">Broward County's Premier Quartz Fabrication & Installation Experts</p>
+            <span class="hero-badge">Coral Springs' Trusted Quartz Experts</span>
+            <h1>Elevate Your Coral Springs Kitchen with Premium Quartz</h1>
+            <p class="hero-headline">Broward County's Finest Selection & Craftsmanship</p>
+            <p class="hero-description">From Eagle Trace to Heron Bay, Coral Springs families choose Griffin Quartz for exceptional quality and unbeatable value. 200+ designer colors, expert installation, and factory-direct savings.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Quote</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | Serving Coral Springs for 20+ Years</p>
         </div>
     </section>
 

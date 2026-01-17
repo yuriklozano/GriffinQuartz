@@ -115,7 +115,7 @@
     }
     </script>
 </head>
-<body>
+<body class="location-page">
     <!-- Announcement Bar -->
     <div class="announcement-bar">
         <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
@@ -178,14 +178,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-small">
+    <section class="hero-location">
         <div class="hero-background">
             <img src="images/modern-kitchen-marble-island-glass-pendants.webp" alt="Modern kitchen with quartz countertops in Coconut Creek Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz Countertops in Coconut Creek, FL</h1>
-            <p class="hero-description">Premium Countertop Installation for Florida's Butterfly Capital</p>
+            <span class="hero-badge">Coconut Creek's Quartz Experts</span>
+            <h1>Stunning Quartz Countertops for Coconut Creek Homes</h1>
+            <p class="hero-headline">55+ Community Specialists | Factory-Direct Pricing</p>
+            <p class="hero-description">From Wynmoor Village to family neighborhoods throughout Coconut Creek, we deliver beautiful quartz surfaces at unbeatable prices. Free in-home consultations and installation in as little as one week.</p>
+            <div class="hero-cta">
+                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Quote</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
+            </div>
+            <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated | 55+ Community Specialists</p>
         </div>
     </section>
 
