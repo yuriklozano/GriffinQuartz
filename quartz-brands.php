@@ -907,7 +907,7 @@
             }
         }
 
-        /* FAQ Section */
+        /* FAQ Section - Accordion */
         .faq-section {
             padding: 5rem 0;
             background: #fff;
@@ -919,36 +919,116 @@
             padding: 0 1.5rem;
         }
 
-        .faq-list {
+        .faq-accordion {
             margin-top: 3rem;
         }
 
         .faq-item {
-            border-bottom: 1px solid #eee;
-            padding: 1.5rem 0;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .faq-item.active {
+            border-color: var(--color-accent);
+            box-shadow: 0 4px 20px rgba(253, 185, 19, 0.15);
         }
 
         .faq-question {
             font-family: 'Playfair Display', serif;
             font-size: 1.125rem;
             color: var(--color-primary);
-            margin-bottom: 0.75rem;
+            background: #fff;
+            border: none;
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--color-light);
+        }
+
+        .faq-question:focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: -3px;
+        }
+
+        .faq-question-text {
             display: flex;
             align-items: flex-start;
             gap: 0.75rem;
+            flex: 1;
         }
 
-        .faq-question i {
+        .faq-question-text i {
             color: var(--color-accent);
             flex-shrink: 0;
-            margin-top: 0.25rem;
+            margin-top: 0.125rem;
+        }
+
+        .faq-toggle-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer-wrapper {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-item.active .faq-answer-wrapper {
+            max-height: 500px;
         }
 
         .faq-answer {
             font-size: 1rem;
             color: var(--color-gray);
             line-height: 1.7;
-            padding-left: 2rem;
+            padding: 0 1.5rem 1.5rem 3.5rem;
+        }
+
+        .faq-answer a {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .faq-question {
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+            }
+
+            .faq-answer {
+                padding: 0 1.25rem 1.25rem 1.25rem;
+            }
         }
     </style>
 </head>
@@ -1340,64 +1420,127 @@
             <h2 class="section-title" id="faq-heading">Frequently Asked Questions About Quartz Countertops</h2>
             <p class="section-description">Everything you need to know about our quartz brands and installation in South Florida.</p>
 
-            <dl class="faq-list">
-                <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        What quartz countertop brands do you carry in South Florida?
-                    </dt>
-                    <dd class="faq-answer">Griffin Quartz in Boca Raton carries 8 premium quartz brands: Cambria (American-made), Silestone by Cosentino, Caesarstone, Viatera by LX Hausys, HanStone Quartz, Compac, Corian Quartz, and Wilsonart. We have over 200 colors and patterns in stock, serving Palm Beach, Broward, and Miami-Dade counties.</dd>
+            <div class="faq-accordion">
+                <div class="faq-item active">
+                    <button class="faq-question" aria-expanded="true" aria-controls="faq-answer-1" id="faq-question-1">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            What quartz countertop brands do you carry in South Florida?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+                        <p class="faq-answer">Griffin Quartz in Boca Raton carries 8 premium quartz brands: Cambria (American-made), Silestone by Cosentino, Caesarstone, Viatera by LX Hausys, HanStone Quartz, Compac, Corian Quartz, and Wilsonart. We have over 200 colors and patterns in stock, serving Palm Beach, Broward, and Miami-Dade counties.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        Which quartz brand is best for kitchen countertops?
-                    </dt>
-                    <dd class="faq-answer">All our quartz brands are excellent for kitchens. Cambria is known for unique American-made designs and lifetime warranty. Silestone features N-Boost technology for superior stain resistance. Caesarstone pioneered engineered quartz. The best choice depends on your style preferences, budget, and specific needs—visit our Boca Raton showroom and we'll help you decide.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            Which quartz brand is best for kitchen countertops?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+                        <p class="faq-answer">All our quartz brands are excellent for kitchens. Cambria is known for unique American-made designs and lifetime warranty. Silestone features N-Boost technology for superior stain resistance. Caesarstone pioneered engineered quartz. The best choice depends on your style preferences, budget, and specific needs—visit our Boca Raton showroom and we'll help you decide.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        How much do quartz countertops cost in Florida?
-                    </dt>
-                    <dd class="faq-answer">Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the brand and complexity of installation. Entry-level brands like Wilsonart start around $50/sq ft, while premium Cambria designs can reach $150/sq ft. We offer free estimates for all projects in Palm Beach, Broward, and Miami-Dade counties.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            How much do quartz countertops cost in Florida?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+                        <p class="faq-answer">Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the brand and complexity of installation. Entry-level brands like Wilsonart start around $50/sq ft, while premium Cambria designs can reach $150/sq ft. We offer free estimates for all projects in Palm Beach, Broward, and Miami-Dade counties.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        Do you offer free quartz countertop samples?
-                    </dt>
-                    <dd class="faq-answer">Yes! Visit our Boca Raton showroom at 1021 S Rogers Cir #18 to see full slabs and take home free samples from any of our 8 quartz brands. We have over 200 colors and patterns to choose from. Call <a href="tel:7203241436">(720) 324-1436</a> to schedule a visit.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            Do you offer free quartz countertop samples?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+                        <p class="faq-answer">Yes! Visit our Boca Raton showroom at 1021 S Rogers Cir #18 to see full slabs and take home free samples from any of our 8 quartz brands. We have over 200 colors and patterns to choose from. Call <a href="tel:7203241436">(720) 324-1436</a> to schedule a visit.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        What areas do you serve for quartz countertop installation?
-                    </dt>
-                    <dd class="faq-answer">Griffin Quartz provides professional quartz countertop installation throughout South Florida, including Boca Raton, Delray Beach, Boynton Beach, West Palm Beach, Fort Lauderdale, Coral Springs, Parkland, Pompano Beach, Hollywood, and Miami. We serve all of Palm Beach County, Broward County, and Miami-Dade County.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            What areas do you serve for quartz countertop installation?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+                        <p class="faq-answer">Griffin Quartz provides professional quartz countertop installation throughout South Florida, including Boca Raton, Delray Beach, Boynton Beach, West Palm Beach, Fort Lauderdale, Coral Springs, Parkland, Pompano Beach, Hollywood, and Miami. We serve all of Palm Beach County, Broward County, and Miami-Dade County.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        How long does quartz countertop installation take?
-                    </dt>
-                    <dd class="faq-answer">Most quartz countertop installations in South Florida are completed in 1-2 days. The total timeline from template to installation is typically 1-2 weeks, depending on slab availability and project complexity. We offer fast-track installation in as little as 1 week for in-stock materials.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            How long does quartz countertop installation take?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+                        <p class="faq-answer">Most quartz countertop installations in South Florida are completed in 1-2 days. The total timeline from template to installation is typically 1-2 weeks, depending on slab availability and project complexity. We offer fast-track installation in as little as 1 week for in-stock materials.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        Is Cambria quartz worth the extra cost?
-                    </dt>
-                    <dd class="faq-answer">Cambria is a premium American-made quartz brand known for unique designs, 93% pure natural quartz content, and the industry's only transferable lifetime warranty. While it costs more than entry-level brands ($75-$150/sq ft), the quality, durability, and warranty protection make it an excellent long-term investment for homeowners in South Florida.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            Is Cambria quartz worth the extra cost?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+                        <p class="faq-answer">Cambria is a premium American-made quartz brand known for unique designs, 93% pure natural quartz content, and the industry's only transferable lifetime warranty. While it costs more than entry-level brands ($75-$150/sq ft), the quality, durability, and warranty protection make it an excellent long-term investment for homeowners in South Florida.</p>
+                    </div>
                 </div>
+
                 <div class="faq-item">
-                    <dt class="faq-question">
-                        <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
-                        What is the difference between Silestone and Caesarstone?
-                    </dt>
-                    <dd class="faq-answer">Silestone (by Cosentino) features exclusive N-Boost technology for enhanced stain resistance and HybriQ+ sustainable manufacturing. Caesarstone is the original engineered quartz brand (since 1987) known for trendsetting designs and consistent quality. Both offer excellent durability and come with strong warranties. Visit our Boca Raton showroom to compare them side-by-side.</dd>
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
+                        <span class="faq-question-text">
+                            <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+                            What is the difference between Silestone and Caesarstone?
+                        </span>
+                        <span class="faq-toggle-icon" aria-hidden="true">
+                            <i class="bi bi-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
+                        <p class="faq-answer">Silestone (by Cosentino) features exclusive N-Boost technology for enhanced stain resistance and HybriQ+ sustainable manufacturing. Caesarstone is the original engineered quartz brand (since 1987) known for trendsetting designs and consistent quality. Both offer excellent durability and come with strong warranties. Visit our Boca Raton showroom to compare them side-by-side.</p>
+                    </div>
                 </div>
-            </dl>
+            </div>
         </div>
     </section>
 
@@ -1442,5 +1585,47 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(function(item) {
+                const button = item.querySelector('.faq-question');
+
+                button.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    const expanded = button.getAttribute('aria-expanded') === 'true';
+
+                    // Close all other items (accordion behavior)
+                    faqItems.forEach(function(otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherButton = otherItem.querySelector('.faq-question');
+                            otherButton.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    // Toggle current item
+                    if (isActive) {
+                        item.classList.remove('active');
+                        button.setAttribute('aria-expanded', 'false');
+                    } else {
+                        item.classList.add('active');
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                // Keyboard accessibility - Enter and Space
+                button.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        button.click();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
