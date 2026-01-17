@@ -1562,6 +1562,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: var(--spacing-sm);
+    color: var(--color-white) !important;
 }
 
 .page-hero p {
