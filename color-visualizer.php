@@ -96,16 +96,16 @@
                 <div class="preview-stack">
                     <!-- Pantone Style Card -->
                     <div class="pantone-card-lg" id="pantoneCard">
-                        <div class="pantone-swatch" id="pantoneSwatch"></div>
+                        <div class="pantone-swatch" id="pantoneSwatch" style="background: #F8F8F8;"></div>
                         <div class="pantone-label">
-                            <span class="pantone-name" id="pantoneName">Calacatta Luxe</span>
-                            <span class="pantone-collection" id="pantoneCollection">Marble Collection</span>
+                            <span class="pantone-name" id="pantoneName">Arctic White</span>
+                            <span class="pantone-collection" id="pantoneCollection">White Collection</span>
                         </div>
                     </div>
 
                     <!-- Room Photo Below -->
                     <div class="inspiration-photo">
-                        <img src="images/gempages_466492372277003100-73cc11db-222d-4622-9742-4cf0833ba929_800x800.webp" alt="Inspiration photo" id="inspirationImg">
+                        <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Inspiration photo" id="inspirationImg">
                     </div>
                 </div>
 
@@ -123,43 +123,43 @@
 
                     <div class="swatch-grid" id="swatchGrid">
                         <!-- White Collection -->
-                        <div class="color-chip active" data-cat="white" data-name="Arctic White" data-collection="White Collection" data-color="#F8F8F8" data-img="images/gempages_466492372277003100-f7734e52-3538-4cee-919f-3c3c7592a09b_800x800.webp">
+                        <div class="color-chip active" data-cat="white" data-name="Arctic White" data-collection="White Collection" data-color="#F8F8F8" data-img="images/luxury-white-kitchen-arched-windows-gold.webp">
                             <div class="chip-color" style="background: #F8F8F8;"></div>
                             <span class="chip-name">Arctic White</span>
                         </div>
-                        <div class="color-chip" data-cat="white" data-name="Pure Snow" data-collection="White Collection" data-color="#FAFAFA" data-img="images/gempages_466492372277003100-a19a946a-f9c0-4bb4-bd50-a343b51d5495_800x800.webp">
+                        <div class="color-chip" data-cat="white" data-name="Pure Snow" data-collection="White Collection" data-color="#FAFAFA" data-img="images/outdoor-kitchen-white-marble-waterfall-modern.webp">
                             <div class="chip-color" style="background: #FAFAFA;"></div>
                             <span class="chip-name">Pure Snow</span>
                         </div>
-                        <div class="color-chip" data-cat="white" data-name="Frost" data-collection="White Collection" data-color="#F0EDE8" data-img="images/gempages_466492372277003100-04837a1f-7071-4be7-9bcc-f97c6af486d9_800x800.webp">
+                        <div class="color-chip" data-cat="white" data-name="Frost" data-collection="White Collection" data-color="#F0EDE8" data-img="images/coastal-kitchen-marble-island-coffered-ceiling.webp">
                             <div class="chip-color" style="background: #F0EDE8;"></div>
                             <span class="chip-name">Frost</span>
                         </div>
 
                         <!-- Marble Collection -->
-                        <div class="color-chip" data-cat="marble" data-name="Calacatta Luxe" data-collection="Marble Collection" data-color="linear-gradient(135deg, #F5F3F0 0%, #E8E4DF 50%, #D5CFC7 100%)" data-img="images/gempages_466492372277003100-73cc11db-222d-4622-9742-4cf0833ba929_800x800.webp">
+                        <div class="color-chip" data-cat="marble" data-name="Calacatta Luxe" data-collection="Marble Collection" data-color="linear-gradient(135deg, #F5F3F0 0%, #E8E4DF 50%, #D5CFC7 100%)" data-img="images/modern-kitchen-marble-island-glass-pendants.webp">
                             <div class="chip-color" style="background: linear-gradient(135deg, #F5F3F0 0%, #E8E4DF 50%, #D5CFC7 100%);"></div>
                             <span class="chip-name">Calacatta Luxe</span>
                         </div>
-                        <div class="color-chip" data-cat="marble" data-name="Carrara Mist" data-collection="Marble Collection" data-color="linear-gradient(120deg, #F0EEEB 0%, #E0DCD6 50%, #D0CBC4 100%)" data-img="images/gempages_466492372277003100-da5ef41c-edec-4b46-b96f-d1f2def43638_800x800.webp">
+                        <div class="color-chip" data-cat="marble" data-name="Carrara Mist" data-collection="Marble Collection" data-color="linear-gradient(120deg, #F0EEEB 0%, #E0DCD6 50%, #D0CBC4 100%)" data-img="images/covered-patio-white-marble-island-pool.webp">
                             <div class="chip-color" style="background: linear-gradient(120deg, #F0EEEB 0%, #E0DCD6 50%, #D0CBC4 100%);"></div>
                             <span class="chip-name">Carrara Mist</span>
                         </div>
-                        <div class="color-chip" data-cat="marble" data-name="Statuario" data-collection="Marble Collection" data-color="linear-gradient(145deg, #EAE7E3 0%, #D8D3CC 50%, #C5BFB5 100%)" data-img="images/gempages_466492372277003100-dd7ee3f1-483c-4c32-88b2-c06a57c0fe46_800x800.webp">
+                        <div class="color-chip" data-cat="marble" data-name="Statuario" data-collection="Marble Collection" data-color="linear-gradient(145deg, #EAE7E3 0%, #D8D3CC 50%, #C5BFB5 100%)" data-img="images/outdoor-kitchen-marble-fireplace-pool.webp">
                             <div class="chip-color" style="background: linear-gradient(145deg, #EAE7E3 0%, #D8D3CC 50%, #C5BFB5 100%);"></div>
                             <span class="chip-name">Statuario</span>
                         </div>
-                        <div class="color-chip" data-cat="marble" data-name="Calacatta Gold" data-collection="Marble Collection" data-color="linear-gradient(130deg, #F5F0E8 0%, #E8DFD0 50%, #D4C5A8 100%)" data-img="images/gempages_466492372277003100-2cc4ec19-ffd3-44b0-8f1e-94d1f9fd9b49_800x800.webp">
+                        <div class="color-chip" data-cat="marble" data-name="Calacatta Gold" data-collection="Marble Collection" data-color="linear-gradient(130deg, #F5F0E8 0%, #E8DFD0 50%, #D4C5A8 100%)" data-img="images/mediterranean-kitchen-quartz-arched-window.webp">
                             <div class="chip-color" style="background: linear-gradient(130deg, #F5F0E8 0%, #E8DFD0 50%, #D4C5A8 100%);"></div>
                             <span class="chip-name">Calacatta Gold</span>
                         </div>
 
                         <!-- Dark Collection -->
-                        <div class="color-chip" data-cat="dark" data-name="Midnight Black" data-collection="Dark Collection" data-color="linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%)" data-img="images/commercial-bar-black-gold-quartz-restaurant.webp">
+                        <div class="color-chip" data-cat="dark" data-name="Midnight Black" data-collection="Dark Collection" data-color="linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%)" data-img="images/luxury-bathroom-black-marble-gold-fixtures.webp">
                             <div class="chip-color" style="background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%);"></div>
                             <span class="chip-name">Midnight Black</span>
                         </div>
-                        <div class="color-chip" data-cat="dark" data-name="Charcoal" data-collection="Dark Collection" data-color="#3D3D3D" data-img="images/gempages_466492372277003100-0629076f-1975-44f8-806d-04f0d832f788_800x800.webp">
+                        <div class="color-chip" data-cat="dark" data-name="Charcoal" data-collection="Dark Collection" data-color="#3D3D3D" data-img="images/industrial-loft-kitchen-brick-quartz-island.webp">
                             <div class="chip-color" style="background: #3D3D3D;"></div>
                             <span class="chip-name">Charcoal</span>
                         </div>
@@ -169,15 +169,15 @@
                         </div>
 
                         <!-- Warm Collection -->
-                        <div class="color-chip" data-cat="warm" data-name="Sahara Beige" data-collection="Warm Collection" data-color="#D4C4B0" data-img="images/gempages_466492372277003100-e54b6997-68a0-4862-b82a-791ba38f6535_800x800.webp">
+                        <div class="color-chip" data-cat="warm" data-name="Sahara Beige" data-collection="Warm Collection" data-color="#D4C4B0" data-img="images/mediterranean-outdoor-kitchen-stone-arches.webp">
                             <div class="chip-color" style="background: #D4C4B0;"></div>
                             <span class="chip-name">Sahara Beige</span>
                         </div>
-                        <div class="color-chip" data-cat="warm" data-name="Café Brown" data-collection="Warm Collection" data-color="#A08060" data-img="images/gempages_466492372277003100-16c97aa4-831d-47c0-a836-f0cca3c63325_800x800.webp">
+                        <div class="color-chip" data-cat="warm" data-name="Café Brown" data-collection="Warm Collection" data-color="#A08060" data-img="images/backyard-outdoor-kitchen-firepit-evening.webp">
                             <div class="chip-color" style="background: #A08060;"></div>
                             <span class="chip-name">Café Brown</span>
                         </div>
-                        <div class="color-chip" data-cat="warm" data-name="Ivory Coast" data-collection="Warm Collection" data-color="#EAE0D0" data-img="images/quartz-samples-gold-hardware-luxury.webp">
+                        <div class="color-chip" data-cat="warm" data-name="Ivory Coast" data-collection="Warm Collection" data-color="#EAE0D0" data-img="images/rooftop-outdoor-kitchen-sunset-skyline.webp">
                             <div class="chip-color" style="background: #EAE0D0;"></div>
                             <span class="chip-name">Ivory Coast</span>
                         </div>
