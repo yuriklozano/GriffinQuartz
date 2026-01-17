@@ -1203,6 +1203,70 @@
                         <h4>Fairbourne</h4>
                     </div>
                 </a>
+                <a href="everleigh" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-everleigh.webp" alt="Everleigh" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Everleigh</h4>
+                    </div>
+                </a>
+                <a href="blackbrook" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-blackbrook.webp" alt="Blackbrook" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Blackbrook</h4>
+                    </div>
+                </a>
+                <a href="ivybridge" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-ivybridge.webp" alt="Ivybridge" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Ivybridge</h4>
+                    </div>
+                </a>
+                <a href="sutherland" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-sutherland.webp" alt="Sutherland" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Sutherland</h4>
+                    </div>
+                </a>
+                <a href="clareanne" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-clareanne.webp" alt="Clareanne" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Clareanne</h4>
+                    </div>
+                </a>
+                <a href="warwick" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-warwick.webp" alt="Warwick" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Warwick</h4>
+                    </div>
+                </a>
+                <a href="ridgegate" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-ridgegate.webp" alt="Ridgegate" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Ridgegate</h4>
+                    </div>
+                </a>
+                <a href="sandgate" class="mini-design-card">
+                    <div class="mini-design-card-image">
+                        <img src="../images/swatch-sandgate.webp" alt="Sandgate" loading="lazy">
+                    </div>
+                    <div class="mini-design-card-content">
+                        <h4>Sandgate</h4>
+                    </div>
+                </a>
             </div>
 
             <div style="text-align: center; margin-top: 2rem;">
