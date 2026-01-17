@@ -3101,16 +3101,27 @@ h1, h2, h3, h4, h5, h6 {
     gap: 0.5rem;
 }
 
-.county-cities li {
-    font-size: 0.9375rem;
-    padding: 0.375rem 0;
-    color: #555;
+.selected-color-slot .slot-label {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.county-cities li a {
-    color: var(--color-primary);
-    font-weight: 500;
-    transition: color 0.2s ease;
+.selected-color-slot .slot-hex {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: monospace;
+    font-weight: 600;
 }
 
 .county-cities li a:hover {
@@ -3227,5 +3238,581 @@ h1, h2, h3, h4, h5, h6 {
 
     .county-cities {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Design Studio V3 - New Layout ===== */
+
+/* Main Studio Layout */
+.studio-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+/* Left Preview Stack */
+.preview-stack {
+    position: relative;
+}
+
+/* Large Pantone Card - Overlaid on photo */
+.pantone-card-lg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    background: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 200px;
+}
+
+.pantone-swatch {
+    height: 140px;
+    background: linear-gradient(135deg, #F5F3F0 0%, #E8E4DF 50%, #D5CFC7 100%);
+    transition: background 0.3s ease;
+}
+
+.pantone-label {
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pantone-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.pantone-collection {
+    font-size: 0.75rem;
+    color: var(--color-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Inspiration Photo */
+.inspiration-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.inspiration-photo img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+/* Right Swatch Panel */
+.swatch-panel {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 100px;
+}
+
+.swatch-panel h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+/* Category Buttons */
+.swatch-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: var(--spacing-md);
+}
+
+.cat-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--color-light-gray);
+    background: var(--color-white);
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: var(--font-body);
+}
+
+.cat-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.cat-btn.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+/* Swatch Grid */
+.swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: var(--spacing-lg);
+    max-height: 420px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* Scrollbar styling */
+.swatch-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.swatch-grid::-webkit-scrollbar-track {
+    background: var(--color-light);
+    border-radius: 3px;
+}
+
+.swatch-grid::-webkit-scrollbar-thumb {
+    background: var(--color-light-gray);
+    border-radius: 3px;
+}
+
+.swatch-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray);
+}
+
+/* Color Chip (Solid Color Card) */
+.color-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: var(--color-light);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.color-chip:hover {
+    border-color: var(--color-light-gray);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.color-chip.active {
+    border-color: var(--color-accent);
+    background: rgba(253, 185, 19, 0.1);
+}
+
+.chip-color {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.chip-name {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--color-gray);
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+/* ===== Wall Color Palette Studio Section ===== */
+.palette-studio-section {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(180deg, var(--color-white) 0%, var(--color-light) 100%);
+}
+
+/* Luxurious Intro Card */
+.palette-intro-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-xl);
+    background: var(--color-white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.intro-visual {
+    position: relative;
+    background: linear-gradient(135deg, #2C3E50 0%, #1a1a1a 100%);
+    min-height: 320px;
+    overflow: hidden;
+}
+
+/* Animated Color Drips */
+.color-drip {
+    position: absolute;
+    width: 30px;
+    border-radius: 0 0 15px 15px;
+    animation: drip 3s ease-in-out infinite;
+}
+
+.drip-1 {
+    left: 15%;
+    top: -10px;
+    height: 80px;
+    background: linear-gradient(180deg, #E0EBE8 0%, rgba(224, 235, 232, 0.3) 100%);
+    animation-delay: 0s;
+}
+
+.drip-2 {
+    left: 35%;
+    top: -10px;
+    height: 120px;
+    background: linear-gradient(180deg, #F5E6D3 0%, rgba(245, 230, 211, 0.3) 100%);
+    animation-delay: 0.5s;
+}
+
+.drip-3 {
+    left: 50%;
+    top: -10px;
+    height: 100px;
+    background: linear-gradient(180deg, #D4C9B9 0%, rgba(212, 201, 185, 0.3) 100%);
+    animation-delay: 1s;
+}
+
+.drip-4 {
+    left: 65%;
+    top: -10px;
+    height: 140px;
+    background: linear-gradient(180deg, #B8D4E3 0%, rgba(184, 212, 227, 0.3) 100%);
+    animation-delay: 1.5s;
+}
+
+.drip-5 {
+    left: 80%;
+    top: -10px;
+    height: 90px;
+    background: linear-gradient(180deg, #D4AF37 0%, rgba(212, 175, 55, 0.3) 100%);
+    animation-delay: 2s;
+}
+
+@keyframes drip {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+
+.brush-icon {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(253, 185, 19, 0.4);
+}
+
+.brush-icon i {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.intro-content {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-tag {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin-bottom: var(--spacing-md);
+}
+
+.intro-content h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.intro-content p {
+    color: var(--color-gray);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+}
+
+.intro-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.intro-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.intro-feature i {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+}
+
+/* Room Palette Cards Grid */
+.palette-rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.palette-room-card {
+    background: var(--color-white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.palette-room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.room-image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.room-image-wrap img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.palette-room-card:hover .room-image-wrap img {
+    transform: scale(1.05);
+}
+
+.room-style-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+/* Palette Bar */
+.room-palette-bar {
+    display: flex;
+    gap: 6px;
+    padding: var(--spacing-md);
+    justify-content: center;
+}
+
+.palette-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.palette-dot:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    border-color: var(--color-accent);
+}
+
+.palette-dot::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
+    z-index: 10;
+}
+
+.palette-dot:hover::after {
+    opacity: 1;
+}
+
+.palette-tip-text {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-gray);
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    font-style: italic;
+}
+
+/* My Palette Builder */
+.my-palette-builder {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: var(--spacing-xl);
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 2px solid var(--color-light);
+}
+
+.my-palette-builder h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-primary);
+}
+
+.my-palette-builder > p {
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.95rem;
+}
+
+.palette-slots {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.palette-slot {
+    width: 120px;
+    height: 140px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transition: transform var(--transition-fast);
+    background: #F5F3EF;
+}
+
+.palette-slot:hover {
+    transform: scale(1.05);
+}
+
+.palette-slot .slot-label {
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-white);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.palette-slot .slot-hex {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: monospace;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.palette-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+/* Responsive for Design Studio V3 */
+@media (max-width: 1024px) {
+    .studio-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .swatch-panel {
+        position: static;
+    }
+
+    .pantone-card-lg {
+        max-width: 100%;
+    }
+
+    .palette-intro-card {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-visual {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swatch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .palette-slots {
+        flex-wrap: wrap;
+    }
+
+    .palette-slot {
+        width: 100px;
+        height: 120px;
+    }
+
+    .palette-rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .palette-dot {
+        width: 35px;
+        height: 35px;
     }
 }
