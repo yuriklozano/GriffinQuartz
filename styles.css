@@ -1,4 +1,5 @@
 /* ===== CSS Reset & Base Styles ===== */
+/* v2.2 - Fresh deployment */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -6,15 +7,15 @@
 }
 
 :root {
-    /* Colors */
-    --color-primary: #1a1a1a;
+    /* Colors - Modern & Sleek with Orchid Gold Accent */
+    --color-primary: #000000;
     --color-secondary: #333333;
-    --color-accent: #c9a962;
-    --color-accent-dark: #b8954d;
+    --color-accent: #FDB913;
+    --color-accent-dark: #E0A510;
     --color-white: #ffffff;
     --color-light: #f5f5f5;
     --color-gray: #666666;
-    --color-light-gray: #e5e5e5;
+    --color-light-gray: #e0e0e0;
     
     /* Typography */
     --font-heading: 'Playfair Display', Georgia, serif;
@@ -152,9 +153,9 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     position: sticky;
     top: 0;
-    background-color: var(--color-white);
+    background-color: var(--color-primary);
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .header .container {
@@ -166,10 +167,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
 }
 
 .nav-list {
@@ -181,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
     font-size: 0.9375rem;
     font-weight: 500;
-    color: var(--color-secondary);
+    color: var(--color-white);
     padding: 0.5rem 0;
 }
 
@@ -248,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 24px;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     transition: all var(--transition-fast);
 }
 

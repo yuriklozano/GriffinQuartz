@@ -19,7 +19,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="/" class="logo">Griffin Quartz</a>
+            <a href="/" class="logo"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
 
             <nav class="nav" id="mainNav">
                 <ul class="nav-list">
@@ -66,7 +66,7 @@
     <!-- Hero Section -->
     <section class="hero hero-small">
         <div class="hero-background">
-            <img src="images/explore-outdoor.webp" alt="Quartz countertop installation across South Florida" loading="eager">
+            <img src="images/modern-outdoor-kitchen-quartz-firepit.webp" alt="Quartz countertop installation across South Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">

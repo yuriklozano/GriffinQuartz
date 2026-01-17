@@ -19,7 +19,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="/" class="logo">Griffin Quartz</a>
+            <a href="/" class="logo"><img src="../images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
 
             <nav class="nav" id="mainNav">
                 <ul class="nav-list">
@@ -63,7 +63,7 @@
                 <h1>How Much Is Quartz Countertops? 2025 Pricing Guide</h1>
             </div>
 
-            <img src="../images/blog-3.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-featured-image" loading="eager">
+            <img src="../images/industrial-loft-kitchen-brick-quartz-island.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-featured-image" loading="eager">
 
             <div class="blog-content">
                 <p>If you're considering quartz countertops for your home, understanding the pricing landscape is essential for planning your budget. This comprehensive 2025 pricing guide will help you understand what factors into the cost and how to get the best value for your investment.</p>
