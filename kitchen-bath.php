@@ -756,13 +756,13 @@
 
     <!-- Kitchen Split Section -->
     <section class="split-section">
-        <div class="split-content dark">
-            <h2>The Perfect Kitchen Countertop</h2>
-            <p>Quartz is the ideal material for kitchen countertops. It's non-porous, meaning spills from wine, coffee, and cooking oils won't stain. It's incredibly durable—resisting scratches from knives and heat from hot pans.</p>
-            <p>Unlike natural stone, quartz requires zero sealing and minimal maintenance. Simply wipe clean with soap and water for a surface that looks brand new for years.</p>
-            <a href="quote-calculator" class="btn btn-primary">Get Instant Quote</a>
-        </div>
         <div class="split-image" style="background-image: url('images/luxury-white-kitchen-arched-windows-gold.webp');"></div>
+        <div class="split-content">
+            <h2>The Heart of Your Home</h2>
+            <p>Your kitchen deserves a countertop that can keep up with daily life. Quartz is non-porous, meaning spills from wine, coffee, and cooking oils won't stain—even if left overnight.</p>
+            <p>From morning coffee to holiday feasts, quartz delivers the beauty of natural stone with unmatched durability. Resistant to scratches, heat, and everyday wear, it's the perfect surface for South Florida's busiest room.</p>
+            <a href="quote-calculator" class="btn btn-outline">Get Instant Quote</a>
+        </div>
     </section>
 
     <!-- Bathroom Section Intro -->
