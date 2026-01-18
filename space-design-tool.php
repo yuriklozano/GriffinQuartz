@@ -423,6 +423,108 @@
             color: #000;
         }
 
+        /* Quick Estimate Box */
+        .quick-estimate-box {
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 16px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .quick-estimate-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .quick-estimate-row:first-child {
+            padding-top: 0;
+        }
+
+        .quick-estimate-row:last-child,
+        .quick-estimate-row.total {
+            border-bottom: none;
+        }
+
+        .quick-estimate-row.total {
+            padding-top: 12px;
+        }
+
+        .quick-estimate-label {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .quick-estimate-label .label-main {
+            font-size: 13px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .quick-estimate-label .label-sub {
+            font-size: 11px;
+            color: #888;
+        }
+
+        .quick-estimate-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            text-align: right;
+        }
+
+        .quick-estimate-value.range {
+            color: #666;
+            font-weight: 600;
+        }
+
+        .quick-estimate-row.total .label-main {
+            font-size: 14px;
+        }
+
+        .quick-estimate-row.total .quick-estimate-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: #000;
+        }
+
+        .quick-estimate-row.total .quick-estimate-value.range {
+            color: #000;
+        }
+
+        .quick-estimate-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #FDB913, #000);
+            margin: 4px 0 0 0;
+        }
+
+        .quick-estimate-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-top: 12px;
+            padding: 10px;
+            background: #fff8e6;
+            border-radius: 6px;
+            border: 1px solid #FDB913;
+        }
+
+        .quick-estimate-note i {
+            color: #FDB913;
+            font-size: 14px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .quick-estimate-note {
+            font-size: 11px;
+            color: #666;
+            line-height: 1.4;
+        }
+
         /* Cost Estimate */
         .cost-estimate-box {
             background: #000;
@@ -1910,6 +2012,63 @@
                                 <span class="measurement-label">Number of Cutouts</span>
                                 <span class="measurement-value" id="totalCutouts">0</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Cost Estimate -->
+                    <div class="tool-section">
+                        <div class="tool-section-title">
+                            <i class="bi bi-calculator"></i>
+                            Quick Cost Estimate
+                        </div>
+                        <div class="quick-estimate-box">
+                            <div class="quick-estimate-row">
+                                <div class="quick-estimate-label">
+                                    <span class="label-main">Material Costs</span>
+                                    <span class="label-sub">Varies by color & brand</span>
+                                </div>
+                                <div class="quick-estimate-value range" id="quickMaterialRange">$0 – $0</div>
+                            </div>
+                            <div class="quick-estimate-row">
+                                <div class="quick-estimate-label">
+                                    <span class="label-main">Fabrication</span>
+                                    <span class="label-sub">Template, cut, polish</span>
+                                </div>
+                                <div class="quick-estimate-value" id="quickFabCost">$0</div>
+                            </div>
+                            <div class="quick-estimate-row">
+                                <div class="quick-estimate-label">
+                                    <span class="label-main">Installation</span>
+                                    <span class="label-sub">Delivery & setup</span>
+                                </div>
+                                <div class="quick-estimate-value" id="quickInstallCost">$0</div>
+                            </div>
+                            <div class="quick-estimate-row" id="quickEdgeRow" style="display:none;">
+                                <div class="quick-estimate-label">
+                                    <span class="label-main">Edge Upgrade</span>
+                                    <span class="label-sub" id="quickEdgeName">Ogee</span>
+                                </div>
+                                <div class="quick-estimate-value" id="quickEdgeCost">+$0</div>
+                            </div>
+                            <div class="quick-estimate-row" id="quickCutoutsRow" style="display:none;">
+                                <div class="quick-estimate-label">
+                                    <span class="label-main">Cutouts</span>
+                                    <span class="label-sub" id="quickCutoutsDetail">Sink & cooktop</span>
+                                </div>
+                                <div class="quick-estimate-value" id="quickCutoutsCost">$0</div>
+                            </div>
+                            <div class="quick-estimate-divider"></div>
+                            <div class="quick-estimate-row total">
+                                <div class="quick-estimate-label">
+                                    <span class="label-main">Estimated Total</span>
+                                    <span class="label-sub">Boca Raton rates</span>
+                                </div>
+                                <div class="quick-estimate-value range total" id="quickTotalRange">$0 – $0</div>
+                            </div>
+                        </div>
+                        <div class="quick-estimate-note">
+                            <i class="bi bi-info-circle"></i>
+                            Material costs range from $40/sf (entry) to $150/sf (designer). See Estimate tab for detailed tier breakdown.
                         </div>
                     </div>
                 </div>
