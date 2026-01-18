@@ -17,6 +17,181 @@
     <meta property="og:url" content="https://soflocountertops.com/kitchen-bath">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quartz Countertops for Kitchens & Bathrooms | Griffin Quartz">
+    <meta name="twitter:description" content="Transform your kitchen and bathroom with premium quartz countertops. Expert installation in South Florida.">
+    <meta name="twitter:image" content="https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp">
+
+    <!-- Geo Meta Tags for Local SEO -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+    <meta name="geo.position" content="26.3683;-80.1289">
+    <meta name="ICBM" content="26.3683, -80.1289">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://soflocountertops.com/#business",
+        "name": "Griffin Quartz",
+        "image": "https://soflocountertops.com/images/griffin-quartz-logo.webp",
+        "url": "https://soflocountertops.com",
+        "telephone": "+1-720-324-1436",
+        "email": "info@griffinquartz.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1021 S Rogers Cir #18",
+            "addressLocality": "Boca Raton",
+            "addressRegion": "FL",
+            "postalCode": "33487",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 26.3683,
+            "longitude": -80.1289
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Boca Raton"},
+            {"@type": "City", "name": "Fort Lauderdale"},
+            {"@type": "City", "name": "Miami"},
+            {"@type": "City", "name": "West Palm Beach"},
+            {"@type": "City", "name": "Delray Beach"},
+            {"@type": "City", "name": "Coral Springs"},
+            {"@type": "City", "name": "Pompano Beach"}
+        ],
+        "priceRange": "$$"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Quartz Countertop Installation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Griffin Quartz"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Florida"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Quartz Countertop Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kitchen Quartz Countertops",
+                        "description": "Premium quartz countertop installation for kitchen islands, perimeters, and backsplashes"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bathroom Quartz Countertops",
+                        "description": "Quartz vanity tops, shower surrounds, and tub surrounds for bathrooms"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kitchen & Bath Countertops",
+                "item": "https://soflocountertops.com/kitchen-bath"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much do kitchen quartz countertops cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kitchen quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the color, brand, and complexity of your project. Entry-level solid colors start around $50/sf, while premium Calacatta and exotic patterns can reach $150/sf."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is quartz better than granite for kitchens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Quartz offers several advantages over granite for kitchen use: it's non-porous (won't harbor bacteria), requires no sealing, is more consistent in appearance, and is highly resistant to stains. Granite is a beautiful natural stone but requires annual sealing and is more prone to chipping."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can quartz be used in bathrooms with high humidity?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! Quartz is ideal for South Florida bathrooms. Its non-porous surface is completely resistant to moisture, mold, and mildew—unlike natural stone which can absorb water. Quartz won't warp, stain, or deteriorate in humid conditions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does countertop installation take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most residential projects are completed within 1 week from template to installation. The actual installation day typically takes 2-4 hours for a standard kitchen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you remove and dispose of old countertops?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer old countertop removal and disposal as an add-on service for $250. This includes careful removal to protect your cabinets, hauling away the old material, and proper disposal."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What edge profiles do you offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer a full range of edge profiles including Eased (standard, included), Beveled, Half Bullnose, Full Bullnose, Ogee, and Waterfall edges. Premium edge profiles add $12-$40 per linear foot depending on complexity."
+                }
+            }
+        ]
+    }
+    </script>
 
     <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
