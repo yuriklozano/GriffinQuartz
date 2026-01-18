@@ -223,6 +223,12 @@
             color: #ccc;
         }
 
+        .split-content .btn {
+            display: inline-block;
+            width: auto;
+            max-width: fit-content;
+        }
+
         .split-image {
             background-size: cover;
             background-position: center;
@@ -365,6 +371,7 @@
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 10px;
+            color: #fff;
         }
 
         .process-step p {
@@ -425,6 +432,103 @@
 
         .faq-item.active .faq-answer {
             display: block;
+        }
+
+        /* Photo Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+        }
+
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-tab {
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid #000;
+            background: transparent;
+            color: #000;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-tab:hover {
+            background: #f0f0f0;
+        }
+
+        .gallery-tab.active {
+            background: #000;
+            color: #fff;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item-overlay h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .gallery-item-overlay span {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        .gallery-item[data-category="kitchen"] { display: block; }
+        .gallery-item[data-category="bathroom"] { display: block; }
+
+        .gallery-grid[data-filter="kitchen"] .gallery-item[data-category="bathroom"] {
+            display: none;
+        }
+
+        .gallery-grid[data-filter="bathroom"] .gallery-item[data-category="kitchen"] {
+            display: none;
         }
 
         /* CTA Section */
@@ -728,7 +832,7 @@
 
     <!-- Bathroom Split Section -->
     <section class="split-section">
-        <div class="split-image" style="background-image: url('images/modern-bathroom-white-quartz-vanity.webp');"></div>
+        <div class="split-image" style="background-image: url('images/bathroom-spa-white-quartz-wood.webp');"></div>
         <div class="split-content">
             <h2>Spa-Like Luxury at Home</h2>
             <p>South Florida's humidity can be tough on bathroom surfaces. Quartz is naturally resistant to moisture, mold, and mildew—making it the perfect choice for our tropical climate.</p>
@@ -774,6 +878,114 @@
                     <h3>Consistent Patterns</h3>
                     <p>Unlike natural stone, quartz delivers predictable veining and patterns across multiple slabs.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Kitchen & Bathroom Inspiration</h2>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our completed projects throughout South Florida. Filter by room type to find inspiration for your space.</p>
+
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-filter="all">All Projects</button>
+                <button class="gallery-tab" data-filter="kitchen">Kitchens</button>
+                <button class="gallery-tab" data-filter="bathroom">Bathrooms</button>
+            </div>
+
+            <div class="gallery-grid" data-filter="all">
+                <!-- Kitchen Images -->
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Kitchen with Calacatta Gold quartz" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Calacatta Gold Kitchen</h4>
+                        <span>Boca Raton</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/kitchen-black-marble-gold-herringbone.webp" alt="Black marble kitchen with gold accents" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Black & Gold Kitchen</h4>
+                        <span>Fort Lauderdale</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/kitchen-coastal-wicker-stools-skylight.webp" alt="Coastal kitchen with skylight" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Coastal Kitchen</h4>
+                        <span>Delray Beach</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/kitchen-beachfront-ocean-view-globes.webp" alt="Beachfront kitchen with ocean view" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Oceanfront Kitchen</h4>
+                        <span>Miami Beach</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/kitchen-calacatta-walnut-leather-stools.webp" alt="Kitchen with walnut and leather stools" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Modern Transitional</h4>
+                        <span>Parkland</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/kitchen-green-cabinets-cream-quartz.webp" alt="Kitchen with green cabinets" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Designer Kitchen</h4>
+                        <span>West Palm Beach</span>
+                    </div>
+                </div>
+
+                <!-- Bathroom Images -->
+                <div class="gallery-item" data-category="bathroom">
+                    <img src="images/bathroom-spa-calacatta-vessel-tub.webp" alt="Spa bathroom with vessel tub" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Spa Master Bath</h4>
+                        <span>Boca Raton</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <img src="images/bathroom-double-vanity-calacatta-gold.webp" alt="Double vanity bathroom" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Double Vanity Suite</h4>
+                        <span>Coral Springs</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <img src="images/bathroom-penthouse-gray-quartz-ocean.webp" alt="Penthouse bathroom with ocean view" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Penthouse Bath</h4>
+                        <span>Fort Lauderdale</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <img src="images/bathroom-floating-vanity-ocean-view.webp" alt="Floating vanity with ocean view" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Floating Vanity</h4>
+                        <span>Hollywood</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <img src="images/bathroom-spa-white-quartz-wood.webp" alt="Spa bathroom with white quartz" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Zen Spa Bath</h4>
+                        <span>Delray Beach</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bathroom">
+                    <img src="images/bathroom-white-quartz-orchids-coastal.webp" alt="Coastal bathroom with orchids" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h4>Coastal Master</h4>
+                        <span>Palm Beach</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="gallery" class="btn btn-outline">View Full Gallery</a>
             </div>
         </div>
     </section>
@@ -1008,6 +1220,28 @@
                 if (!isActive) {
                     item.classList.add('active');
                 }
+            });
+        });
+
+        // Gallery Tab Filtering
+        document.querySelectorAll('.gallery-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active tab
+                document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const filter = tab.dataset.filter;
+                const grid = document.querySelector('.gallery-grid');
+                grid.dataset.filter = filter;
+
+                // Show/hide items based on filter
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
             });
         });
     </script>
