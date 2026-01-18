@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Quartz Countertops for Kitchens & Bathrooms | South Florida Installation | Griffin Quartz</title>
     <meta name="description" content="Transform your kitchen and bathroom with premium quartz countertops. Expert installation for islands, vanities, backsplashes & more. Serving Boca Raton, Fort Lauderdale, Miami. Free estimates!">
-    <meta name="keywords" content="kitchen quartz countertops, bathroom quartz countertops, quartz vanity tops, kitchen island countertops, quartz backsplash, undermount sink cutout, South Florida countertops, Boca Raton kitchen remodel">
+    <meta name="keywords" content="quartz countertops near me, quartz countertop installation, kitchen quartz countertops, bathroom quartz countertops, quartz countertops Boca Raton, quartz countertops Fort Lauderdale, quartz countertops Miami, quartz vanity tops, kitchen island countertops, Calacatta quartz, white quartz countertops, marble-look quartz, quartz vs granite, quartz countertop cost, Cambria quartz, Silestone countertops, Caesarstone, MSI quartz, waterfall edge countertops, quartz backsplash, undermount sink cutout, South Florida countertops, Palm Beach County countertops, Broward County countertops">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/kitchen-bath">
 
@@ -17,6 +17,181 @@
     <meta property="og:url" content="https://soflocountertops.com/kitchen-bath">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quartz Countertops for Kitchens & Bathrooms | Griffin Quartz">
+    <meta name="twitter:description" content="Transform your kitchen and bathroom with premium quartz countertops. Expert installation in South Florida.">
+    <meta name="twitter:image" content="https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp">
+
+    <!-- Geo Meta Tags for Local SEO -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+    <meta name="geo.position" content="26.3683;-80.1289">
+    <meta name="ICBM" content="26.3683, -80.1289">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://soflocountertops.com/#business",
+        "name": "Griffin Quartz",
+        "image": "https://soflocountertops.com/images/griffin-quartz-logo.webp",
+        "url": "https://soflocountertops.com",
+        "telephone": "+1-720-324-1436",
+        "email": "info@griffinquartz.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1021 S Rogers Cir #18",
+            "addressLocality": "Boca Raton",
+            "addressRegion": "FL",
+            "postalCode": "33487",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 26.3683,
+            "longitude": -80.1289
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Boca Raton"},
+            {"@type": "City", "name": "Fort Lauderdale"},
+            {"@type": "City", "name": "Miami"},
+            {"@type": "City", "name": "West Palm Beach"},
+            {"@type": "City", "name": "Delray Beach"},
+            {"@type": "City", "name": "Coral Springs"},
+            {"@type": "City", "name": "Pompano Beach"}
+        ],
+        "priceRange": "$$"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Quartz Countertop Installation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Griffin Quartz"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Florida"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Quartz Countertop Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kitchen Quartz Countertops",
+                        "description": "Premium quartz countertop installation for kitchen islands, perimeters, and backsplashes"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bathroom Quartz Countertops",
+                        "description": "Quartz vanity tops, shower surrounds, and tub surrounds for bathrooms"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kitchen & Bath Countertops",
+                "item": "https://soflocountertops.com/kitchen-bath"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much do kitchen quartz countertops cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kitchen quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on the color, brand, and complexity of your project. Entry-level solid colors start around $50/sf, while premium Calacatta and exotic patterns can reach $150/sf."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is quartz better than granite for kitchens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Quartz offers several advantages over granite for kitchen use: it's non-porous (won't harbor bacteria), requires no sealing, is more consistent in appearance, and is highly resistant to stains. Granite is a beautiful natural stone but requires annual sealing and is more prone to chipping."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can quartz be used in bathrooms with high humidity?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! Quartz is ideal for South Florida bathrooms. Its non-porous surface is completely resistant to moisture, mold, and mildew—unlike natural stone which can absorb water. Quartz won't warp, stain, or deteriorate in humid conditions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does countertop installation take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most residential projects are completed within 1 week from template to installation. The actual installation day typically takes 2-4 hours for a standard kitchen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you remove and dispose of old countertops?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer old countertop removal and disposal as an add-on service for $250. This includes careful removal to protect your cabinets, hauling away the old material, and proper disposal."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What edge profiles do you offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer a full range of edge profiles including Eased (standard, included), Beveled, Half Bullnose, Full Bullnose, Ogee, and Waterfall edges. Premium edge profiles add $12-$40 per linear foot depending on complexity."
+                }
+            }
+        ]
+    }
+    </script>
 
     <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -668,12 +843,12 @@
     <!-- Hero Section -->
     <section class="page-hero">
         <div class="hero-background">
-            <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern kitchen with premium quartz countertops" loading="eager">
+            <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Quartz countertops installation South Florida - kitchen and bathroom countertop experts serving Boca Raton, Fort Lauderdale, Miami" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz for Kitchens & Bathrooms</h1>
-            <p class="hero-description">Transform your most important spaces with stunning, durable quartz surfaces crafted for South Florida living.</p>
+            <h1>Quartz Countertops for Kitchens & Bathrooms</h1>
+            <p class="hero-description">Transform your most important spaces with stunning, durable quartz surfaces crafted for South Florida living. Expert installation from Boca Raton to Miami.</p>
         </div>
     </section>
 
@@ -913,42 +1088,42 @@
             <div class="gallery-grid" data-filter="all">
                 <!-- Kitchen Images -->
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Kitchen with Calacatta Gold quartz" loading="lazy">
+                    <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Calacatta Gold quartz kitchen countertops installation in Boca Raton FL" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Calacatta Gold Kitchen</h4>
                         <span>Boca Raton</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-black-marble-gold-herringbone.webp" alt="Black marble kitchen with gold accents" loading="lazy">
+                    <img src="images/kitchen-black-marble-gold-herringbone.webp" alt="Black marble-look quartz countertops with waterfall edge Fort Lauderdale" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Black & Gold Kitchen</h4>
                         <span>Fort Lauderdale</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-coastal-wicker-stools-skylight.webp" alt="Coastal kitchen with skylight" loading="lazy">
+                    <img src="images/kitchen-coastal-wicker-stools-skylight.webp" alt="White quartz kitchen island countertop installation Delray Beach FL" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Coastal Kitchen</h4>
                         <span>Delray Beach</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-beachfront-ocean-view-globes.webp" alt="Beachfront kitchen with ocean view" loading="lazy">
+                    <img src="images/kitchen-beachfront-ocean-view-globes.webp" alt="Luxury quartz countertops in oceanfront Miami Beach kitchen remodel" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Oceanfront Kitchen</h4>
                         <span>Miami Beach</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-calacatta-walnut-leather-stools.webp" alt="Kitchen with walnut and leather stools" loading="lazy">
+                    <img src="images/kitchen-calacatta-walnut-leather-stools.webp" alt="Cambria quartz countertop installation Parkland FL kitchen" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Modern Transitional</h4>
                         <span>Parkland</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-green-cabinets-cream-quartz.webp" alt="Kitchen with green cabinets" loading="lazy">
+                    <img src="images/kitchen-green-cabinets-cream-quartz.webp" alt="Custom quartz kitchen countertops West Palm Beach installation" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Designer Kitchen</h4>
                         <span>West Palm Beach</span>
@@ -957,42 +1132,42 @@
 
                 <!-- Bathroom Images -->
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-spa-calacatta-vessel-tub.webp" alt="Spa bathroom with vessel tub" loading="lazy">
+                    <img src="images/bathroom-spa-calacatta-vessel-tub.webp" alt="Calacatta quartz vanity top and tub surround installation Boca Raton" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Spa Master Bath</h4>
                         <span>Boca Raton</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-double-vanity-calacatta-gold.webp" alt="Double vanity bathroom" loading="lazy">
+                    <img src="images/bathroom-double-vanity-calacatta-gold.webp" alt="Double sink quartz vanity countertop Coral Springs FL bathroom remodel" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Double Vanity Suite</h4>
                         <span>Coral Springs</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-penthouse-gray-quartz-ocean.webp" alt="Penthouse bathroom with ocean view" loading="lazy">
+                    <img src="images/bathroom-penthouse-gray-quartz-ocean.webp" alt="Gray quartz bathroom countertops Fort Lauderdale penthouse installation" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Penthouse Bath</h4>
                         <span>Fort Lauderdale</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-floating-vanity-ocean-view.webp" alt="Floating vanity with ocean view" loading="lazy">
+                    <img src="images/bathroom-floating-vanity-ocean-view.webp" alt="Floating quartz vanity top installation Hollywood FL bathroom" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Floating Vanity</h4>
                         <span>Hollywood</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-spa-white-quartz-wood.webp" alt="Spa bathroom with white quartz" loading="lazy">
+                    <img src="images/bathroom-spa-white-quartz-wood.webp" alt="White quartz bathroom vanity and shower surround Delray Beach" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Zen Spa Bath</h4>
                         <span>Delray Beach</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-white-quartz-orchids-coastal.webp" alt="Coastal bathroom with orchids" loading="lazy">
+                    <img src="images/bathroom-white-quartz-orchids-coastal.webp" alt="Luxury quartz bathroom countertops Palm Beach FL coastal home" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Coastal Master</h4>
                         <span>Palm Beach</span>
@@ -1010,7 +1185,7 @@
     <section class="colors-section">
         <div class="container">
             <h2 class="section-title" style="text-align: center;">Popular Quartz Colors for Kitchens & Baths</h2>
-            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our most requested colors. Visit our Boca Raton showroom to see the full collection.</p>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our most requested colors from top brands including Cambria, Silestone, Caesarstone, and MSI Quartz. Visit our Boca Raton showroom to see the full collection.</p>
 
             <div class="colors-grid">
                 <div class="color-card">
