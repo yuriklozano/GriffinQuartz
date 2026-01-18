@@ -71,7 +71,6 @@
         /* Main Design Tool Layout */
         .design-tool-wrapper {
             background: #f5f5f5;
-            min-height: 100vh;
         }
 
         .design-tool-container {
@@ -818,6 +817,204 @@
             color: #000;
         }
 
+        /* Estimate Sections */
+        .estimate-section {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .estimate-section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #FDB913;
+        }
+
+        .estimate-section-header i {
+            color: #FDB913;
+            font-size: 18px;
+        }
+
+        .material-notice {
+            display: flex;
+            gap: 12px;
+            padding: 14px;
+            background: #fff8e6;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #FDB913;
+        }
+
+        .material-notice i {
+            color: #FDB913;
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .material-notice p {
+            font-size: 12px;
+            color: #666;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .cost-range-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #e8e8e8;
+            margin-bottom: 16px;
+        }
+
+        .cost-range-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .cost-range-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #000;
+            margin-bottom: 6px;
+        }
+
+        .cost-range-detail {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .material-breakdown {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .material-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .material-item:last-child {
+            border-bottom: none;
+        }
+
+        .material-item span:first-child {
+            color: #666;
+        }
+
+        .material-item span:last-child {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .fab-install-box {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid #e8e8e8;
+        }
+
+        .fab-install-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            background: #000;
+            color: #fff;
+        }
+
+        .fab-install-total span:first-child {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .fab-install-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #FDB913;
+        }
+
+        .fab-install-breakdown {
+            padding: 16px 20px;
+        }
+
+        .fab-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .fab-item:last-child {
+            border-bottom: none;
+        }
+
+        .fab-item span:first-child {
+            color: #666;
+        }
+
+        .fab-item span:last-child {
+            color: #000;
+            font-weight: 500;
+        }
+
+        .total-estimate-grid {
+            margin-top: 16px;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+            font-size: 14px;
+        }
+
+        .total-row span:first-child {
+            color: #888;
+        }
+
+        .total-row span:last-child {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .total-row.total-final {
+            border-bottom: none;
+            padding-top: 16px;
+            margin-top: 8px;
+            border-top: 2px solid #FDB913;
+        }
+
+        .total-row.total-final span:first-child {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .total-row.total-final span:last-child {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #FDB913;
+        }
+
         /* Responsive */
         @media (max-width: 1400px) {
             .design-tool-container {
@@ -1363,37 +1560,93 @@
 
                 <!-- Estimate Tab -->
                 <div class="tab-content" id="estimateTab">
-                    <div class="cost-estimate-box">
-                        <div class="cost-estimate-header">Estimated Project Cost</div>
-                        <div class="cost-estimate-value" id="totalEstimate">$0</div>
-                        <div class="cost-estimate-note">*Rough estimate. Final price may vary.</div>
-
-                        <div class="cost-breakdown">
-                            <div class="cost-item">
-                                <span>Material (<span id="selectedColorName">Arctic White</span>)</span>
-                                <span id="materialCost">$0</span>
-                            </div>
-                            <div class="cost-item">
-                                <span>Edge Profile (<span id="selectedEdgeName">Eased</span>)</span>
-                                <span id="edgeCost">$0</span>
-                            </div>
-                            <div class="cost-item">
-                                <span>Sink Cutouts</span>
-                                <span id="sinkCost">$0</span>
-                            </div>
-                            <div class="cost-item">
-                                <span>Cooktop Cutouts</span>
-                                <span id="cooktopCost">$0</span>
-                            </div>
-                            <div class="cost-item">
-                                <span>Backsplash</span>
-                                <span id="backsplashCost">$0</span>
-                            </div>
-                            <div class="cost-item">
-                                <span>Fabrication & Install</span>
-                                <span id="installCost">$0</span>
+                    <!-- Material Cost Section -->
+                    <div class="estimate-section">
+                        <div class="estimate-section-header">
+                            <i class="bi bi-gem"></i>
+                            <span>Material Estimate</span>
+                        </div>
+                        <div class="material-notice">
+                            <i class="bi bi-info-circle"></i>
+                            <p>Material costs vary significantly based on color, pattern, and brand. Below is an estimated range based on South Florida market pricing.</p>
+                        </div>
+                        <div class="cost-range-box">
+                            <div class="cost-range-label">Estimated Material Cost</div>
+                            <div class="cost-range-value" id="materialCostRange">$0 – $0</div>
+                            <div class="cost-range-detail">
+                                <span id="totalSqFtEst">0 sq ft</span> × $40–$100/sq ft
                             </div>
                         </div>
+                        <div class="material-breakdown">
+                            <div class="material-item">
+                                <span>Countertop Material</span>
+                                <span id="counterMaterialRange">$0 – $0</span>
+                            </div>
+                            <div class="material-item" id="backsplashMaterialRow" style="display:none;">
+                                <span>Backsplash Material</span>
+                                <span id="backsplashMaterialRange">$0 – $0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fabrication & Installation Section -->
+                    <div class="estimate-section">
+                        <div class="estimate-section-header">
+                            <i class="bi bi-tools"></i>
+                            <span>Fabrication & Installation</span>
+                        </div>
+                        <div class="fab-install-box">
+                            <div class="fab-install-total">
+                                <span>Fab & Install Total</span>
+                                <span class="fab-install-value" id="fabInstallTotal">$0</span>
+                            </div>
+                            <div class="fab-install-breakdown">
+                                <div class="fab-item">
+                                    <span>Fabrication (<span id="fabSqFt">0</span> sq ft × $20/sq ft)</span>
+                                    <span id="fabCost">$0</span>
+                                </div>
+                                <div class="fab-item">
+                                    <span>Installation (<span id="installSqFt">0</span> sq ft × $18/sq ft)</span>
+                                    <span id="installCost">$0</span>
+                                </div>
+                                <div class="fab-item">
+                                    <span>Edge Profile (<span id="selectedEdgeName">Eased</span>)</span>
+                                    <span id="edgeCost">Included</span>
+                                </div>
+                                <div class="fab-item">
+                                    <span>Sink Cutouts (<span id="sinkCount">0</span>)</span>
+                                    <span id="sinkCost">$0</span>
+                                </div>
+                                <div class="fab-item">
+                                    <span>Cooktop Cutouts (<span id="cooktopCount">0</span>)</span>
+                                    <span id="cooktopCost">$0</span>
+                                </div>
+                                <div class="fab-item" id="backsplashFabRow" style="display:none;">
+                                    <span>Backsplash Fabrication</span>
+                                    <span id="backsplashFabCost">$0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Estimate -->
+                    <div class="cost-estimate-box">
+                        <div class="cost-estimate-header">Total Project Estimate</div>
+                        <div class="total-estimate-grid">
+                            <div class="total-row">
+                                <span>Materials (estimated range)</span>
+                                <span id="totalMaterialRange">$0 – $0</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Fabrication & Installation</span>
+                                <span id="totalFabInstall">$0</span>
+                            </div>
+                            <div class="total-row total-final">
+                                <span>Estimated Total</span>
+                                <span id="totalEstimate">$0 – $0</span>
+                            </div>
+                        </div>
+                        <div class="cost-estimate-note">*Based on Boca Raton, FL market rates. Final pricing requires on-site measurement.</div>
                     </div>
 
                     <div class="action-buttons">
@@ -1412,7 +1665,7 @@
                     </div>
 
                     <div class="info-box">
-                        <p><strong>Note:</strong> This estimate is for planning purposes only. Actual costs depend on site conditions, material availability, and project complexity. Contact us for a precise quote.</p>
+                        <p><strong>Important:</strong> Material costs vary greatly depending on color, pattern complexity, and brand (Cambria, Silestone, Caesarstone, etc.). Entry-level colors start around $40/sq ft while premium veined patterns can reach $100+/sq ft. Contact us for exact pricing on your selected material.</p>
                     </div>
                 </div>
             </aside>
@@ -1423,36 +1676,44 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <a href="/" class="footer-logo"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" style="height: 40px;"></a>
-                    <p>Premium quartz countertops for kitchens, bathrooms, and commercial spaces throughout South Florida.</p>
+                <div class="footer-col">
+                    <h4>Visit Our Showroom</h4>
+                    <p>Located at Englert Arts Inc.</p>
+                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
+                        1021 S Rogers Cir #18<br>Boca Raton, FL 33487
+                    </a>
+                    <p style="margin-top: 1rem;"><strong>Hours:</strong> Mon-Sun 8AM-6PM</p>
                 </div>
-                <div class="footer-section">
-                    <h5>Quick Links</h5>
+                <div class="footer-col">
+                    <h4>Quartz Countertop Services</h4>
                     <ul>
-                        <li><a href="our-services">Our Services</a></li>
-                        <li><a href="quartz-brands">Quartz Brands</a></li>
-                        <li><a href="gallery">Gallery</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a href="quartz-brands">Quartz Product Selection</a></li>
+                        <li><a href="kitchen-bath">Kitchen & Bathroom Countertops</a></li>
+                        <li><a href="commercial">Commercial Countertop Installation</a></li>
+                        <li><a href="gallery">Inspiration Gallery</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h5>Resources</h5>
-                    <ul>
-                        <li><a href="color-visualizer">Color Visualizer</a></li>
-                        <li><a href="space-design-tool">Space Design Tool</a></li>
-                        <li><a href="quote-calculator">Quote Calculator</a></li>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul class="service-areas">
+                        <li><a href="boca-raton">Boca Raton</a></li>
+                        <li><a href="fort-lauderdale">Fort Lauderdale</a></li>
+                        <li><a href="miami">Miami</a></li>
+                        <li><a href="west-palm-beach">West Palm Beach</a></li>
+                        <li><a href="delray-beach">Delray Beach</a></li>
+                        <li><a href="locations">All South Florida Locations</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h5>Contact Us</h5>
-                    <p><i class="bi bi-telephone"></i> <a href="tel:7203241436">(720) 324-1436</a></p>
-                    <p><i class="bi bi-envelope"></i> info@griffinquartz.com</p>
-                    <p><i class="bi bi-geo-alt"></i> South Florida</p>
+                <div class="footer-col">
+                    <h4>Contact Griffin Quartz</h4>
+                    <p><strong>Phone:</strong> <a href="tel:7203241436">(720) 324-1436</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
+                    <p style="margin-top: 1rem;"><a href="contact" class="btn btn-primary btn-sm">Get FREE Quote</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+                <p>&copy; 2025 Griffin Quartz | South Florida's Premier Quartz Countertop Installers</p>
+                <p class="footer-areas">Proudly serving Palm Beach County, Broward County, and Miami-Dade County including Boca Raton, Fort Lauderdale, Miami, West Palm Beach, Delray Beach, Hollywood, Pompano Beach, Coral Gables, Miami Beach, Aventura, and surrounding areas.</p>
             </div>
         </div>
     </footer>
@@ -2018,7 +2279,13 @@
     function deleteShapeById(id) { state.shapes = state.shapes.filter(s => s.id !== id); if (state.selectedShape?.id === id) state.selectedShape = null; saveToHistory(); updateShapesList(); updateEstimate(); drawCanvas(); }
     function switchTab(tab) { document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active')); document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active')); event.target.classList.add('active'); document.getElementById(tab + 'Tab').classList.add('active'); }
 
-    // Cost Estimation
+    // Cost Estimation - Boca Raton, FL Market Rates (2025)
+    // Material: $40-$100/sq ft (varies by color/brand)
+    // Fabrication: $20/sq ft
+    // Installation: $18/sq ft
+    // Edge upgrades: $12-$25/linear ft (above standard eased)
+    // Sink cutouts: $175-$275
+    // Cooktop cutouts: $200-$275
     function updateEstimate() {
         let totalSqInches = 0, totalEdgeInches = 0;
         let sinkCount = { single: 0, double: 0, farmhouse: 0 };
@@ -2057,27 +2324,97 @@
             });
         }
 
+        // Update dimensions display
         document.getElementById('totalSqFt').textContent = totalSqFt.toFixed(1) + ' sq ft';
         document.getElementById('totalEdge').textContent = totalEdgeFt.toFixed(1) + ' linear ft';
         document.getElementById('backsplashArea').textContent = backsplashSqFt.toFixed(1) + ' sq ft';
-        document.getElementById('totalCutouts').textContent = Object.values(sinkCount).reduce((a, b) => a + b, 0) + Object.values(cooktopCount).reduce((a, b) => a + b, 0);
 
-        const thickMult = state.selectedThickness === 3 ? 1.3 : 1;
-        const matCost = totalSqFt * state.selectedColor.price * thickMult;
-        const edgeCost = totalEdgeFt * state.selectedEdge.price;
-        const sinkCost = sinkCount.single * 150 + sinkCount.double * 200 + sinkCount.farmhouse * 250;
-        const cooktopCostVal = cooktopCount['30'] * 175 + cooktopCount['36'] * 200;
-        const bsCost = backsplashSqFt * (state.selectedColor.price * 0.8);
-        const installCost = totalSqFt * 35;
-        const total = matCost + edgeCost + sinkCost + cooktopCostVal + bsCost + installCost;
+        const totalCutoutsNum = Object.values(sinkCount).reduce((a, b) => a + b, 0) + Object.values(cooktopCount).reduce((a, b) => a + b, 0);
+        document.getElementById('totalCutouts').textContent = totalCutoutsNum;
 
-        document.getElementById('materialCost').textContent = '$' + Math.round(matCost).toLocaleString();
-        document.getElementById('edgeCost').textContent = '$' + Math.round(edgeCost).toLocaleString();
-        document.getElementById('sinkCost').textContent = '$' + Math.round(sinkCost).toLocaleString();
-        document.getElementById('cooktopCost').textContent = '$' + Math.round(cooktopCostVal).toLocaleString();
-        document.getElementById('backsplashCost').textContent = '$' + Math.round(bsCost).toLocaleString();
-        document.getElementById('installCost').textContent = '$' + Math.round(installCost).toLocaleString();
-        document.getElementById('totalEstimate').textContent = '$' + Math.round(total).toLocaleString();
+        // === MATERIAL COSTS (Range) ===
+        // Material prices vary: $40/sq ft (entry) to $100/sq ft (premium)
+        const matLowPerSqFt = 40;
+        const matHighPerSqFt = 100;
+        const thickMult = state.selectedThickness === 3 ? 1.2 : 1;
+
+        const counterMatLow = Math.round(totalSqFt * matLowPerSqFt * thickMult);
+        const counterMatHigh = Math.round(totalSqFt * matHighPerSqFt * thickMult);
+
+        let bsMatLow = 0, bsMatHigh = 0;
+        if (state.backsplash.enabled && backsplashSqFt > 0) {
+            bsMatLow = Math.round(backsplashSqFt * matLowPerSqFt * thickMult);
+            bsMatHigh = Math.round(backsplashSqFt * matHighPerSqFt * thickMult);
+        }
+
+        const totalMatLow = counterMatLow + bsMatLow;
+        const totalMatHigh = counterMatHigh + bsMatHigh;
+
+        // === FABRICATION & INSTALLATION COSTS ===
+        const fabPerSqFt = 20;  // Fabrication cost per sq ft
+        const installPerSqFt = 18;  // Installation cost per sq ft
+
+        const fabCost = Math.round(totalSqFt * fabPerSqFt);
+        const installCostVal = Math.round(totalSqFt * installPerSqFt);
+
+        // Edge profile costs (above standard eased which is included)
+        const edgeCost = Math.round(totalEdgeFt * state.selectedEdge.price);
+
+        // Cutout costs - Boca Raton rates
+        const sinkCostVal = sinkCount.single * 175 + sinkCount.double * 225 + sinkCount.farmhouse * 275;
+        const cooktopCostVal = cooktopCount['30'] * 200 + cooktopCount['36'] * 250;
+
+        // Backsplash fabrication (if enabled)
+        let bsFabCost = 0;
+        if (state.backsplash.enabled && backsplashSqFt > 0) {
+            bsFabCost = Math.round(backsplashSqFt * 25); // $25/sq ft for backsplash fab
+        }
+
+        const totalFabInstall = fabCost + installCostVal + edgeCost + sinkCostVal + cooktopCostVal + bsFabCost;
+
+        // === UPDATE UI ===
+        // Material section
+        document.getElementById('totalSqFtEst').textContent = totalSqFt.toFixed(1) + ' sq ft';
+        document.getElementById('materialCostRange').textContent = '$' + totalMatLow.toLocaleString() + ' – $' + totalMatHigh.toLocaleString();
+        document.getElementById('counterMaterialRange').textContent = '$' + counterMatLow.toLocaleString() + ' – $' + counterMatHigh.toLocaleString();
+
+        // Backsplash material row
+        const bsMatRow = document.getElementById('backsplashMaterialRow');
+        if (state.backsplash.enabled && backsplashSqFt > 0) {
+            bsMatRow.style.display = 'flex';
+            document.getElementById('backsplashMaterialRange').textContent = '$' + bsMatLow.toLocaleString() + ' – $' + bsMatHigh.toLocaleString();
+        } else {
+            bsMatRow.style.display = 'none';
+        }
+
+        // Fabrication & Installation section
+        document.getElementById('fabInstallTotal').textContent = '$' + totalFabInstall.toLocaleString();
+        document.getElementById('fabSqFt').textContent = totalSqFt.toFixed(1);
+        document.getElementById('fabCost').textContent = '$' + fabCost.toLocaleString();
+        document.getElementById('installSqFt').textContent = totalSqFt.toFixed(1);
+        document.getElementById('installCost').textContent = '$' + installCostVal.toLocaleString();
+        document.getElementById('edgeCost').textContent = edgeCost > 0 ? '+$' + edgeCost.toLocaleString() : 'Included';
+        document.getElementById('sinkCount').textContent = Object.values(sinkCount).reduce((a, b) => a + b, 0);
+        document.getElementById('sinkCost').textContent = sinkCostVal > 0 ? '$' + sinkCostVal.toLocaleString() : '$0';
+        document.getElementById('cooktopCount').textContent = Object.values(cooktopCount).reduce((a, b) => a + b, 0);
+        document.getElementById('cooktopCost').textContent = cooktopCostVal > 0 ? '$' + cooktopCostVal.toLocaleString() : '$0';
+
+        // Backsplash fab row
+        const bsFabRow = document.getElementById('backsplashFabRow');
+        if (state.backsplash.enabled && backsplashSqFt > 0) {
+            bsFabRow.style.display = 'flex';
+            document.getElementById('backsplashFabCost').textContent = '$' + bsFabCost.toLocaleString();
+        } else {
+            bsFabRow.style.display = 'none';
+        }
+
+        // Totals section
+        document.getElementById('totalMaterialRange').textContent = '$' + totalMatLow.toLocaleString() + ' – $' + totalMatHigh.toLocaleString();
+        document.getElementById('totalFabInstall').textContent = '$' + totalFabInstall.toLocaleString();
+
+        const grandTotalLow = totalMatLow + totalFabInstall;
+        const grandTotalHigh = totalMatHigh + totalFabInstall;
+        document.getElementById('totalEstimate').textContent = '$' + grandTotalLow.toLocaleString() + ' – $' + grandTotalHigh.toLocaleString();
     }
 
     // Export
