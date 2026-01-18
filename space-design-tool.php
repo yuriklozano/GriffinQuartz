@@ -1796,11 +1796,14 @@
         drawBackground();
         if (state.gridEnabled) drawGrid();
         state.shapes.forEach(shape => drawShape(shape, shape === state.selectedShape));
-        if (state.isDrawing && state.currentShape) drawShape(state.currentShape, false, true);
+        if (state.isDrawing && state.currentShape) {
+            drawShape(state.currentShape, false, true);
+            drawDimensions(state.currentShape, true); // Show dimensions while drawing
+        }
         state.shapes.forEach(shape => drawDimensions(shape));
 
         const instructions = document.getElementById('canvasInstructions');
-        if (instructions) instructions.style.display = state.shapes.length === 0 ? 'block' : 'none';
+        if (instructions) instructions.style.display = state.shapes.length === 0 && !state.isDrawing ? 'block' : 'none';
     }
 
     function drawBackground() {
@@ -1965,44 +1968,97 @@
         ctx.setLineDash([]);
     }
 
-    function drawDimensions(shape) {
-        ctx.fillStyle = '#000';
-        ctx.font = '10px Inter';
+    function drawDimensions(shape, isDrawing = false) {
         const widthInches = Math.round(shape.width / state.pixelsPerInch);
         const heightInches = Math.round(shape.height / state.pixelsPerInch);
-        const widthText = widthInches + '"';
-        ctx.fillText(widthText, shape.x + shape.width/2 - ctx.measureText(widthText).width/2, shape.y - 6);
 
-        ctx.strokeStyle = '#000';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(shape.x, shape.y - 3);
-        ctx.lineTo(shape.x + shape.width, shape.y - 3);
-        ctx.stroke();
+        if (isDrawing) {
+            // Large, prominent labels while drawing
+            ctx.font = 'bold 14px Inter';
+            const widthText = widthInches + '"';
+            const heightText = heightInches + '"';
+            const sqFt = ((widthInches * heightInches) / 144).toFixed(1);
 
-        ctx.beginPath();
-        ctx.moveTo(shape.x, shape.y);
-        ctx.lineTo(shape.x, shape.y - 6);
-        ctx.moveTo(shape.x + shape.width, shape.y);
-        ctx.lineTo(shape.x + shape.width, shape.y - 6);
-        ctx.stroke();
+            // Width label with background (top center)
+            const widthLabelX = shape.x + shape.width/2;
+            const widthLabelY = shape.y - 15;
+            const widthMetrics = ctx.measureText(widthText);
+            ctx.fillStyle = '#FDB913';
+            ctx.fillRect(widthLabelX - widthMetrics.width/2 - 6, widthLabelY - 12, widthMetrics.width + 12, 18);
+            ctx.fillStyle = '#000';
+            ctx.fillText(widthText, widthLabelX - widthMetrics.width/2, widthLabelY);
 
-        ctx.save();
-        ctx.translate(shape.x + shape.width + 12, shape.y + shape.height/2);
-        ctx.rotate(-Math.PI/2);
-        ctx.fillText(heightInches + '"', -ctx.measureText(heightInches + '"').width/2, 4);
-        ctx.restore();
+            // Height label with background (right center)
+            const heightLabelX = shape.x + shape.width + 20;
+            const heightLabelY = shape.y + shape.height/2;
+            const heightMetrics = ctx.measureText(heightText);
+            ctx.fillStyle = '#FDB913';
+            ctx.fillRect(heightLabelX - 4, heightLabelY - 10, heightMetrics.width + 8, 18);
+            ctx.fillStyle = '#000';
+            ctx.fillText(heightText, heightLabelX, heightLabelY + 4);
 
-        ctx.beginPath();
-        ctx.moveTo(shape.x + shape.width + 3, shape.y);
-        ctx.lineTo(shape.x + shape.width + 3, shape.y + shape.height);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(shape.x + shape.width, shape.y);
-        ctx.lineTo(shape.x + shape.width + 6, shape.y);
-        ctx.moveTo(shape.x + shape.width, shape.y + shape.height);
-        ctx.lineTo(shape.x + shape.width + 6, shape.y + shape.height);
-        ctx.stroke();
+            // Square footage label (center of shape)
+            ctx.font = 'bold 16px Inter';
+            const sqFtText = sqFt + ' sq ft';
+            const sqFtMetrics = ctx.measureText(sqFtText);
+            const centerX = shape.x + shape.width/2;
+            const centerY = shape.y + shape.height/2;
+            ctx.fillStyle = 'rgba(0,0,0,0.8)';
+            ctx.fillRect(centerX - sqFtMetrics.width/2 - 10, centerY - 12, sqFtMetrics.width + 20, 24);
+            ctx.fillStyle = '#FDB913';
+            ctx.fillText(sqFtText, centerX - sqFtMetrics.width/2, centerY + 5);
+
+            // Dimension lines
+            ctx.strokeStyle = '#FDB913';
+            ctx.lineWidth = 2;
+            // Top line
+            ctx.beginPath();
+            ctx.moveTo(shape.x, shape.y - 5);
+            ctx.lineTo(shape.x + shape.width, shape.y - 5);
+            ctx.stroke();
+            // Right line
+            ctx.beginPath();
+            ctx.moveTo(shape.x + shape.width + 5, shape.y);
+            ctx.lineTo(shape.x + shape.width + 5, shape.y + shape.height);
+            ctx.stroke();
+        } else {
+            // Standard dimension display for placed shapes
+            ctx.fillStyle = '#000';
+            ctx.font = '10px Inter';
+            const widthText = widthInches + '"';
+            ctx.fillText(widthText, shape.x + shape.width/2 - ctx.measureText(widthText).width/2, shape.y - 6);
+
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(shape.x, shape.y - 3);
+            ctx.lineTo(shape.x + shape.width, shape.y - 3);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(shape.x, shape.y);
+            ctx.lineTo(shape.x, shape.y - 6);
+            ctx.moveTo(shape.x + shape.width, shape.y);
+            ctx.lineTo(shape.x + shape.width, shape.y - 6);
+            ctx.stroke();
+
+            ctx.save();
+            ctx.translate(shape.x + shape.width + 12, shape.y + shape.height/2);
+            ctx.rotate(-Math.PI/2);
+            ctx.fillText(heightInches + '"', -ctx.measureText(heightInches + '"').width/2, 4);
+            ctx.restore();
+
+            ctx.beginPath();
+            ctx.moveTo(shape.x + shape.width + 3, shape.y);
+            ctx.lineTo(shape.x + shape.width + 3, shape.y + shape.height);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(shape.x + shape.width, shape.y);
+            ctx.lineTo(shape.x + shape.width + 6, shape.y);
+            ctx.moveTo(shape.x + shape.width, shape.y + shape.height);
+            ctx.lineTo(shape.x + shape.width + 6, shape.y + shape.height);
+            ctx.stroke();
+        }
     }
 
     function drawSelectionHandles(shape) {
