@@ -23,6 +23,167 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Quote Calculator Enhanced Breakdown Styles */
+        .estimate-breakdown {
+            margin-top: 20px;
+            padding: 16px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .estimate-breakdown.total-section {
+            background: #000;
+            border: none;
+            margin-top: 16px;
+        }
+
+        .estimate-breakdown.total-section .breakdown-row {
+            border: none;
+            padding: 0;
+        }
+
+        .estimate-breakdown.total-section .label-main {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .estimate-breakdown.total-section .label-detail {
+            color: #888;
+        }
+
+        .estimate-breakdown.total-section #totalCost {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #FDB913;
+            font-weight: 700;
+        }
+
+        .breakdown-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .breakdown-section-header h4 {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .breakdown-section-header h4 i {
+            color: #FDB913;
+        }
+
+        .section-badge {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .section-badge.variable {
+            background: #fff8e6;
+            color: #b8860b;
+            border: 1px solid #FDB913;
+        }
+
+        .section-badge.fixed {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .breakdown-note {
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 12px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .breakdown-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .breakdown-row:last-child {
+            border-bottom: none;
+        }
+
+        .breakdown-row.subtotal {
+            margin-top: 8px;
+            padding-top: 12px;
+            border-top: 2px solid #FDB913;
+            border-bottom: none;
+            font-weight: 700;
+        }
+
+        .breakdown-label {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .breakdown-label .label-main {
+            font-size: 13px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .breakdown-label .label-detail {
+            font-size: 11px;
+            color: #888;
+        }
+
+        .breakdown-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+            text-align: right;
+        }
+
+        .breakdown-value.range {
+            color: #666;
+        }
+
+        .estimate-note {
+            margin-top: 16px;
+            display: flex;
+            gap: 10px;
+            padding: 14px;
+            background: #fff8e6;
+            border-radius: 8px;
+            border: 1px solid #FDB913;
+        }
+
+        .estimate-note i {
+            color: #FDB913;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .estimate-note p {
+            font-size: 12px;
+            color: #666;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .estimate-note strong {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -172,26 +333,27 @@
 
                         <!-- Step 3: Material Grade -->
                         <div class="calc-step" data-step="3">
-                            <h3><span class="step-number">3</span> Select your quartz grade</h3>
+                            <h3><span class="step-number">3</span> Select your material grade</h3>
+                            <p class="step-hint">Material costs vary by color, pattern, and brand. Select a tier to see your estimate range.</p>
                             <div class="grade-options">
                                 <label class="grade-option">
                                     <input type="radio" name="grade" value="standard" checked>
                                     <div class="grade-content">
                                         <div class="grade-header">
-                                            <span class="grade-name">Standard</span>
-                                            <span class="grade-price">$45-65/sq ft</span>
+                                            <span class="grade-name">Entry Level</span>
+                                            <span class="grade-price">$40-55/sq ft</span>
                                         </div>
-                                        <p>Solid colors and simple patterns. Great value for budget-conscious projects.</p>
+                                        <p>Solid colors and basic patterns. Budget-friendly options perfect for rentals or utility spaces.</p>
                                     </div>
                                 </label>
                                 <label class="grade-option">
                                     <input type="radio" name="grade" value="premium">
                                     <div class="grade-content">
                                         <div class="grade-header">
-                                            <span class="grade-name">Premium</span>
-                                            <span class="grade-price">$65-95/sq ft</span>
+                                            <span class="grade-name">Standard-Premium</span>
+                                            <span class="grade-price">$55-85/sq ft</span>
                                         </div>
-                                        <p>Popular marble-look patterns including Carrara and soft veining. Most popular choice.</p>
+                                        <p>Popular marble-look patterns, Carrara styles, and soft veining. Most popular for kitchens & baths.</p>
                                         <span class="popular-badge">Most Popular</span>
                                     </div>
                                 </label>
@@ -199,10 +361,10 @@
                                     <input type="radio" name="grade" value="luxury">
                                     <div class="grade-content">
                                         <div class="grade-header">
-                                            <span class="grade-name">Luxury</span>
-                                            <span class="grade-price">$95-150/sq ft</span>
+                                            <span class="grade-name">Designer</span>
+                                            <span class="grade-price">$85-150/sq ft</span>
                                         </div>
-                                        <p>Calacatta, Statuario, and exotic patterns. Premium brands like Cambria and Silestone.</p>
+                                        <p>Calacatta, Statuario, and exotic patterns. Premium brands like Cambria, Silestone, and Caesarstone.</p>
                                     </div>
                                 </label>
                             </div>
@@ -225,7 +387,7 @@
                                     <div class="edge-content">
                                         <div class="edge-visual edge-beveled"></div>
                                         <span>Beveled</span>
-                                        <span class="edge-price">+$8/ft</span>
+                                        <span class="edge-price">+$12/ft</span>
                                     </div>
                                 </label>
                                 <label class="edge-option">
@@ -233,7 +395,7 @@
                                     <div class="edge-content">
                                         <div class="edge-visual edge-bullnose"></div>
                                         <span>Bullnose</span>
-                                        <span class="edge-price">+$12/ft</span>
+                                        <span class="edge-price">+$18/ft</span>
                                     </div>
                                 </label>
                                 <label class="edge-option">
@@ -241,7 +403,7 @@
                                     <div class="edge-content">
                                         <div class="edge-visual edge-ogee"></div>
                                         <span>Ogee</span>
-                                        <span class="edge-price">+$18/ft</span>
+                                        <span class="edge-price">+$25/ft</span>
                                     </div>
                                 </label>
                                 <label class="edge-option">
@@ -249,7 +411,7 @@
                                     <div class="edge-content">
                                         <div class="edge-visual edge-waterfall"></div>
                                         <span>Waterfall</span>
-                                        <span class="edge-price">+$25/ft</span>
+                                        <span class="edge-price">+$40/ft</span>
                                     </div>
                                 </label>
                             </div>
@@ -265,7 +427,7 @@
                                         <i class="bi bi-droplet-half"></i>
                                         <div class="addon-details">
                                             <span class="addon-name">Undermount Sink Cutout</span>
-                                            <span class="addon-price">+$150</span>
+                                            <span class="addon-price">+$195</span>
                                         </div>
                                     </div>
                                 </label>
@@ -275,7 +437,7 @@
                                         <i class="bi bi-fire"></i>
                                         <div class="addon-details">
                                             <span class="addon-name">Cooktop Cutout</span>
-                                            <span class="addon-price">+$200</span>
+                                            <span class="addon-price">+$225</span>
                                         </div>
                                     </div>
                                 </label>
@@ -284,7 +446,7 @@
                                     <div class="addon-content">
                                         <i class="bi bi-bricks"></i>
                                         <div class="addon-details">
-                                            <span class="addon-name">4" Backsplash</span>
+                                            <span class="addon-name">4" Backsplash Fabrication</span>
                                             <span class="addon-price">+$25/linear ft</span>
                                         </div>
                                     </div>
@@ -295,7 +457,7 @@
                                         <i class="bi bi-trash3"></i>
                                         <div class="addon-details">
                                             <span class="addon-name">Old Countertop Removal</span>
-                                            <span class="addon-price">+$200</span>
+                                            <span class="addon-price">+$250</span>
                                         </div>
                                     </div>
                                 </label>
@@ -314,35 +476,87 @@
                                 <span class="estimate-label">Estimated Total</span>
                                 <div class="estimate-values">
                                     <span class="estimate-low" id="estimateLow">$750</span>
-                                    <span class="estimate-separator">-</span>
+                                    <span class="estimate-separator">–</span>
                                     <span class="estimate-high" id="estimateHigh">$1,085</span>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Material Costs Section -->
                         <div class="estimate-breakdown">
-                            <h4>Price Breakdown</h4>
+                            <div class="breakdown-section-header">
+                                <h4><i class="bi bi-gem"></i> Material Costs</h4>
+                                <span class="section-badge variable">Variable</span>
+                            </div>
+                            <p class="breakdown-note">Material pricing varies by color, pattern, and brand selection.</p>
                             <div class="breakdown-row">
-                                <span>Material (<span id="sqftDisplay">16.7</span> sq ft)</span>
-                                <span id="materialCost">$750 - $1,085</span>
+                                <div class="breakdown-label">
+                                    <span class="label-main">Quartz Material</span>
+                                    <span class="label-detail"><span id="sqftDisplay">16.7</span> sq ft × $<span id="matPriceRange">40-150</span>/sf</span>
+                                </div>
+                                <span class="breakdown-value range" id="materialCost">$668 – $2,505</span>
+                            </div>
+                            <div class="breakdown-row subtotal">
+                                <span>Material Subtotal</span>
+                                <span class="breakdown-value range" id="materialSubtotal">$668 – $2,505</span>
+                            </div>
+                        </div>
+
+                        <!-- Fabrication & Installation Section -->
+                        <div class="estimate-breakdown">
+                            <div class="breakdown-section-header">
+                                <h4><i class="bi bi-tools"></i> Fabrication & Installation</h4>
+                                <span class="section-badge fixed">Fixed Rates</span>
+                            </div>
+                            <p class="breakdown-note">Based on Boca Raton, FL market rates (2025-2026).</p>
+                            <div class="breakdown-row">
+                                <div class="breakdown-label">
+                                    <span class="label-main">Fabrication</span>
+                                    <span class="label-detail"><span id="fabSqftDisplay">16.7</span> sq ft × $22/sf</span>
+                                </div>
+                                <span class="breakdown-value" id="fabCost">$367</span>
                             </div>
                             <div class="breakdown-row">
-                                <span>Edge Profile (<span id="edgeFtDisplay">8</span> linear ft)</span>
-                                <span id="edgeCost">Included</span>
+                                <div class="breakdown-label">
+                                    <span class="label-main">Installation</span>
+                                    <span class="label-detail"><span id="installSqftDisplay">16.7</span> sq ft × $20/sf</span>
+                                </div>
+                                <span class="breakdown-value" id="installCost">$334</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <div class="breakdown-label">
+                                    <span class="label-main">Edge Profile</span>
+                                    <span class="label-detail" id="edgeDetail">Eased (Standard)</span>
+                                </div>
+                                <span class="breakdown-value" id="edgeCost">Included</span>
                             </div>
                             <div class="breakdown-row" id="addonRow" style="display: none;">
-                                <span>Add-ons</span>
-                                <span id="addonCost">$0</span>
+                                <div class="breakdown-label">
+                                    <span class="label-main">Add-ons</span>
+                                    <span class="label-detail" id="addonDetail">Cutouts, backsplash, etc.</span>
+                                </div>
+                                <span class="breakdown-value" id="addonCost">$0</span>
                             </div>
+                            <div class="breakdown-row subtotal">
+                                <span>Fab & Install Subtotal</span>
+                                <span class="breakdown-value" id="fabInstallSubtotal">$701</span>
+                            </div>
+                        </div>
+
+                        <!-- Grand Total -->
+                        <div class="estimate-breakdown total-section">
                             <div class="breakdown-row breakdown-total">
-                                <span>Estimated Total</span>
-                                <span id="totalCost">$750 - $1,085</span>
+                                <div class="breakdown-label">
+                                    <span class="label-main">Estimated Project Total</span>
+                                    <span class="label-detail">Materials + Fab & Installation</span>
+                                </div>
+                                <span id="totalCost">$1,369 – $3,206</span>
                             </div>
                         </div>
 
                         <div class="estimate-note">
                             <i class="bi bi-info-circle"></i>
-                            <p>This is an estimate only. Final pricing depends on slab selection, site conditions, and exact measurements. <strong>Includes fabrication and professional installation.</strong></p>
+                            <p><strong>About this estimate:</strong> Material costs vary significantly ($40-$150/sf) based on your color and brand choice. Entry-level solid colors are ~$40/sf while premium Calacatta patterns reach $150/sf. Fabrication & installation rates are fixed based on Boca Raton market pricing.</p>
                         </div>
 
                         <div class="result-actions">
@@ -451,25 +665,35 @@
         const form = document.getElementById('quoteCalculator');
         let sectionCount = 1;
 
-        // Pricing data
+        // =========================================================
+        // Pricing Data - Boca Raton, FL Market Rates (2025-2026)
+        // =========================================================
+        // Material costs vary by grade/brand - shown as range
+        // Fabrication & Installation are fixed rates
         const pricing = {
+            // Material grades (per sq ft) - VARIABLE
             grades: {
-                standard: { low: 45, high: 65 },
-                premium: { low: 65, high: 95 },
-                luxury: { low: 95, high: 150 }
+                standard: { low: 40, high: 55, label: 'Entry Level' },    // Solid colors, basic patterns
+                premium: { low: 55, high: 85, label: 'Standard-Premium' }, // Popular colors, subtle veining
+                luxury: { low: 85, high: 150, label: 'Designer' }          // Calacatta, exotic patterns
             },
+            // Fabrication & Installation (per sq ft) - FIXED
+            fabrication: 22,    // Template, CNC cutting, edge work, polish
+            installation: 20,   // Delivery, setup, seaming, caulk
+            // Edge profiles (per linear ft) - FIXED
             edges: {
-                eased: 0,
-                beveled: 8,
-                bullnose: 12,
-                ogee: 18,
-                waterfall: 25
+                eased: { price: 0, label: 'Eased (Standard)' },
+                beveled: { price: 12, label: 'Beveled (+$12/lf)' },
+                bullnose: { price: 18, label: 'Bullnose (+$18/lf)' },
+                ogee: { price: 25, label: 'Ogee (+$25/lf)' },
+                waterfall: { price: 40, label: 'Waterfall (+$40/lf)' }
             },
+            // Add-ons - FIXED
             addons: {
-                sink: 150,
-                cooktop: 200,
-                backsplash: 25, // per linear ft
-                removal: 200
+                sink: 195,        // Undermount sink cutout
+                cooktop: 225,     // Cooktop cutout
+                backsplash: 25,   // Per linear ft (fab cost)
+                removal: 250      // Old countertop removal
             }
         };
 
@@ -484,7 +708,7 @@
                 const depth = parseFloat(row.querySelector('.depth-input').value) || 0;
                 const sqft = (length * depth) / 144;
                 totalSqft += sqft;
-                totalLinearFt += length / 12; // Convert to feet for edge
+                totalLinearFt += length / 12;
             });
 
             // Get selected grade
@@ -493,51 +717,84 @@
 
             // Get selected edge
             const edge = document.querySelector('input[name="edge"]:checked').value;
-            const edgePrice = pricing.edges[edge];
+            const edgeData = pricing.edges[edge];
 
             // Get addons
             let addonTotal = 0;
+            let addonDetails = [];
             document.querySelectorAll('input[name="addon"]:checked').forEach(addon => {
                 if (addon.value === 'backsplash') {
-                    addonTotal += pricing.addons[addon.value] * totalLinearFt;
+                    const bsCost = Math.round(pricing.addons[addon.value] * totalLinearFt);
+                    addonTotal += bsCost;
+                    addonDetails.push('Backsplash');
                 } else {
                     addonTotal += pricing.addons[addon.value];
+                    if (addon.value === 'sink') addonDetails.push('Sink cutout');
+                    if (addon.value === 'cooktop') addonDetails.push('Cooktop cutout');
+                    if (addon.value === 'removal') addonDetails.push('Removal');
                 }
             });
 
-            // Calculate totals
+            // === MATERIAL COSTS (Variable Range) ===
             const materialLow = Math.round(totalSqft * gradePrice.low);
             const materialHigh = Math.round(totalSqft * gradePrice.high);
-            const edgeCost = Math.round(totalLinearFt * edgePrice);
 
-            const totalLow = materialLow + edgeCost + addonTotal;
-            const totalHigh = materialHigh + edgeCost + addonTotal;
+            // === FABRICATION & INSTALLATION (Fixed) ===
+            const fabCost = Math.round(totalSqft * pricing.fabrication);
+            const installCost = Math.round(totalSqft * pricing.installation);
+            const edgeCost = Math.round(totalLinearFt * edgeData.price);
+            const fabInstallSubtotal = fabCost + installCost + edgeCost + addonTotal;
 
-            // Update display
+            // === GRAND TOTALS ===
+            const totalLow = materialLow + fabInstallSubtotal;
+            const totalHigh = materialHigh + fabInstallSubtotal;
+
+            // === UPDATE DISPLAY ===
+
+            // Square footage displays
             document.getElementById('totalSqft').textContent = totalSqft.toFixed(1);
             document.getElementById('sqftDisplay').textContent = totalSqft.toFixed(1);
-            document.getElementById('edgeFtDisplay').textContent = totalLinearFt.toFixed(0);
+            document.getElementById('fabSqftDisplay').textContent = totalSqft.toFixed(1);
+            document.getElementById('installSqftDisplay').textContent = totalSqft.toFixed(1);
 
+            // Material price range indicator
+            document.getElementById('matPriceRange').textContent = gradePrice.low + '-' + gradePrice.high;
+
+            // Main estimate display
             document.getElementById('estimateLow').textContent = '$' + totalLow.toLocaleString();
             document.getElementById('estimateHigh').textContent = '$' + totalHigh.toLocaleString();
 
-            document.getElementById('materialCost').textContent = '$' + materialLow.toLocaleString() + ' - $' + materialHigh.toLocaleString();
+            // Material costs
+            document.getElementById('materialCost').textContent = '$' + materialLow.toLocaleString() + ' – $' + materialHigh.toLocaleString();
+            document.getElementById('materialSubtotal').textContent = '$' + materialLow.toLocaleString() + ' – $' + materialHigh.toLocaleString();
 
+            // Fab & Install costs
+            document.getElementById('fabCost').textContent = '$' + fabCost.toLocaleString();
+            document.getElementById('installCost').textContent = '$' + installCost.toLocaleString();
+
+            // Edge profile
+            document.getElementById('edgeDetail').textContent = edgeData.label;
             if (edgeCost > 0) {
                 document.getElementById('edgeCost').textContent = '+$' + edgeCost.toLocaleString();
             } else {
                 document.getElementById('edgeCost').textContent = 'Included';
             }
 
+            // Add-ons
             const addonRow = document.getElementById('addonRow');
             if (addonTotal > 0) {
                 addonRow.style.display = 'flex';
+                document.getElementById('addonDetail').textContent = addonDetails.join(', ');
                 document.getElementById('addonCost').textContent = '+$' + addonTotal.toLocaleString();
             } else {
                 addonRow.style.display = 'none';
             }
 
-            document.getElementById('totalCost').textContent = '$' + totalLow.toLocaleString() + ' - $' + totalHigh.toLocaleString();
+            // Fab & Install subtotal
+            document.getElementById('fabInstallSubtotal').textContent = '$' + fabInstallSubtotal.toLocaleString();
+
+            // Grand total
+            document.getElementById('totalCost').textContent = '$' + totalLow.toLocaleString() + ' – $' + totalHigh.toLocaleString();
         }
 
         // Add section button
