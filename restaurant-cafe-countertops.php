@@ -78,14 +78,30 @@
         .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
         .btn-primary { background: #FDB913; color: #000; }
         .btn-primary:hover { background: #e5a811; }
-        .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; overflow: hidden; }
+        /* Hero */
+        .hero { position: relative; min-height: 600px; display: flex; align-items: center; overflow: hidden; padding: 60px 0; }
         .hero-bg { position: absolute; inset: 0; }
         .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
-        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%); }
-        .hero-content { position: relative; z-index: 2; color: #fff; max-width: 700px; }
-        .hero-badge { display: inline-block; background: #FDB913; color: #000; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
-        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%); }
+        .hero-container { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 400px; gap: 50px; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
+        .hero-content { color: #fff; text-align: left; }
+        .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #fff; padding: 10px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.25); }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.75rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; line-height: 1.7; }
+        .hero-form { background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .hero-form h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #000; margin-bottom: 5px; text-align: center; }
+        .hero-form .form-subtitle { text-align: center; color: #666; margin-bottom: 20px; font-size: 0.95rem; }
+        .hero-form .form-subtitle a { color: #FDB913; font-weight: 600; text-decoration: none; }
+        .hero-form .form-group { margin-bottom: 15px; }
+        .hero-form label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 5px; color: #333; }
+        .hero-form input, .hero-form textarea, .hero-form select { width: 100%; padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 1rem; transition: border-color 0.3s; }
+        .hero-form input:focus, .hero-form textarea:focus, .hero-form select:focus { outline: none; border-color: #FDB913; }
+        .hero-form .btn-full { width: 100%; padding: 14px; font-size: 1rem; }
+        @media (max-width: 900px) {
+            .hero-container { grid-template-columns: 1fr; }
+            .hero-form { order: -1; max-width: 450px; margin: 0 auto; }
+            .hero-content { text-align: center; }
+        }
         .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 1rem; }
         .section-description { color: #666; font-size: 1.1rem; margin-bottom: 2rem; }
         .applications-section { padding: 80px 0; background: #f8f8f8; }
@@ -155,12 +171,35 @@
         <div class="hero-bg">
             <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Restaurant bar quartz countertops South Florida">
         </div>
-        <div class="container">
+        <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">Food Service Specialists</div>
                 <h1>Restaurant & Café Quartz Countertops in South Florida</h1>
                 <p>From stunning bar tops to durable kitchen prep surfaces, our NSF certified quartz countertops meet the demanding requirements of food service environments while elevating your restaurant's aesthetic.</p>
-                <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                <a href="tel:7203241436" class="btn btn-primary">Call (720) 324-1436</a>
+            </div>
+            <div class="hero-form">
+                <h3>Get Your FREE Quote</h3>
+                <p class="form-subtitle">Or call <a href="tel:7203241436">(720) 324-1436</a></p>
+                <form action="/#contact-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Get FREE Estimate</button>
+                </form>
             </div>
         </div>
     </section>
