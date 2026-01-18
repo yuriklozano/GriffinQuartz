@@ -670,14 +670,58 @@
             background: #FDB913;
         }
 
-        .backsplash-height {
-            margin-top: 14px;
-            padding-top: 14px;
-            border-top: 1px solid #e8e8e8;
+        .backsplash-options.hidden {
+            display: none;
         }
 
-        .backsplash-height.hidden {
+        .backsplash-sides {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .side-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            background: #f0f0f0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .side-checkbox:hover {
+            background: #e8e8e8;
+        }
+
+        .side-checkbox input {
             display: none;
+        }
+
+        .side-checkbox input:checked + .side-label {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .side-checkbox:has(input:checked) {
+            background: #fff;
+            border-color: #FDB913;
+        }
+
+        .side-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .side-label i {
+            font-size: 14px;
+            color: #FDB913;
         }
 
         /* Shapes List */
@@ -1285,9 +1329,30 @@
                             <span class="toggle-label">Add Backsplash</span>
                             <div class="toggle-switch" id="backsplashToggle" onclick="toggleBacksplash()"></div>
                         </div>
-                        <div class="backsplash-height hidden" id="backsplashHeight">
-                            <label class="input-label">Height (inches)</label>
-                            <input type="number" class="input-field" value="4" min="2" max="24" id="backsplashHeightInput" onchange="updateBacksplashHeight()">
+                        <div class="backsplash-options hidden" id="backsplashOptions">
+                            <label class="input-label" style="margin-top: 14px;">Position (select sides)</label>
+                            <div class="backsplash-sides">
+                                <label class="side-checkbox">
+                                    <input type="checkbox" id="bsTop" checked onchange="updateBacksplashSides()">
+                                    <span class="side-label"><i class="bi bi-arrow-up"></i> Top</span>
+                                </label>
+                                <label class="side-checkbox">
+                                    <input type="checkbox" id="bsRight" onchange="updateBacksplashSides()">
+                                    <span class="side-label"><i class="bi bi-arrow-right"></i> Right</span>
+                                </label>
+                                <label class="side-checkbox">
+                                    <input type="checkbox" id="bsBottom" onchange="updateBacksplashSides()">
+                                    <span class="side-label"><i class="bi bi-arrow-down"></i> Bottom</span>
+                                </label>
+                                <label class="side-checkbox">
+                                    <input type="checkbox" id="bsLeft" onchange="updateBacksplashSides()">
+                                    <span class="side-label"><i class="bi bi-arrow-left"></i> Left</span>
+                                </label>
+                            </div>
+                            <div class="backsplash-height" style="margin-top: 14px;">
+                                <label class="input-label">Height (inches)</label>
+                                <input type="number" class="input-field" value="4" min="2" max="24" id="backsplashHeightInput" onchange="updateBacksplashHeight()">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1732,7 +1797,7 @@
         selectedColor: { name: 'Arctic White', price: 45 },
         selectedEdge: { name: 'Eased', price: 0 },
         selectedThickness: 2,
-        backsplash: { enabled: false, height: 4 },
+        backsplash: { enabled: false, height: 4, sides: { top: true, right: false, bottom: false, left: false } },
         zoom: 1,
         gridEnabled: true,
         snapEnabled: true,
@@ -1957,14 +2022,48 @@
     function drawBacksplash(shape) {
         if (shape.type === 'sink' || shape.type === 'cooktop') return;
         const bsHeight = state.backsplash.height * state.pixelsPerInch;
+        const gap = 4; // Gap between shape and backsplash
+
         ctx.fillStyle = 'rgba(253, 185, 19, 0.2)';
         ctx.strokeStyle = '#FDB913';
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 4]);
-        ctx.beginPath();
-        ctx.rect(shape.x, shape.y - bsHeight - 4, shape.width, bsHeight);
-        ctx.fill();
-        ctx.stroke();
+
+        // Draw backsplash on each selected side
+        const sides = state.backsplash.sides;
+
+        // Top side (above the shape)
+        if (sides.top) {
+            ctx.beginPath();
+            ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        // Bottom side (below the shape)
+        if (sides.bottom) {
+            ctx.beginPath();
+            ctx.rect(shape.x, shape.y + shape.height + gap, shape.width, bsHeight);
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        // Left side (left of the shape)
+        if (sides.left) {
+            ctx.beginPath();
+            ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        // Right side (right of the shape)
+        if (sides.right) {
+            ctx.beginPath();
+            ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
+            ctx.fill();
+            ctx.stroke();
+        }
+
         ctx.setLineDash([]);
     }
 
@@ -2242,16 +2341,27 @@
 
     function toggleBacksplash() {
         const toggle = document.getElementById('backsplashToggle');
-        const height = document.getElementById('backsplashHeight');
+        const options = document.getElementById('backsplashOptions');
         state.backsplash.enabled = !state.backsplash.enabled;
         toggle.classList.toggle('active', state.backsplash.enabled);
-        height.classList.toggle('hidden', !state.backsplash.enabled);
+        options.classList.toggle('hidden', !state.backsplash.enabled);
         drawCanvas();
         updateEstimate();
     }
 
     function updateBacksplashHeight() {
         state.backsplash.height = parseInt(document.getElementById('backsplashHeightInput').value) || 4;
+        drawCanvas();
+        updateEstimate();
+    }
+
+    function updateBacksplashSides() {
+        state.backsplash.sides = {
+            top: document.getElementById('bsTop').checked,
+            right: document.getElementById('bsRight').checked,
+            bottom: document.getElementById('bsBottom').checked,
+            left: document.getElementById('bsLeft').checked
+        };
         drawCanvas();
         updateEstimate();
     }
@@ -2373,9 +2483,18 @@
         const totalEdgeFt = totalEdgeInches / 12;
         let backsplashSqFt = 0;
         if (state.backsplash.enabled) {
+            const sides = state.backsplash.sides;
             state.shapes.forEach(s => {
                 if (s.backsplash && s.type !== 'sink' && s.type !== 'cooktop') {
-                    backsplashSqFt += ((s.width / state.pixelsPerInch) * state.backsplash.height) / 144;
+                    const shapeWidthIn = s.width / state.pixelsPerInch;
+                    const shapeHeightIn = s.height / state.pixelsPerInch;
+                    const bsHeight = state.backsplash.height;
+                    // Top and bottom backsplashes use shape width
+                    if (sides.top) backsplashSqFt += (shapeWidthIn * bsHeight) / 144;
+                    if (sides.bottom) backsplashSqFt += (shapeWidthIn * bsHeight) / 144;
+                    // Left and right backsplashes use shape height
+                    if (sides.left) backsplashSqFt += (shapeHeightIn * bsHeight) / 144;
+                    if (sides.right) backsplashSqFt += (shapeHeightIn * bsHeight) / 144;
                 }
             });
         }
