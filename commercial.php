@@ -1041,24 +1041,55 @@
         }
 
         .form-group input,
-        .form-group textarea {
+        .form-group textarea,
+        .form-group select {
             width: 100%;
             padding: 14px 16px;
             border: 2px solid #f0f0f0;
             border-radius: 8px;
             font-size: 1rem;
             transition: border-color 0.3s ease;
+            background: #fff;
         }
 
         .form-group input:focus,
-        .form-group textarea:focus {
+        .form-group textarea:focus,
+        .form-group select:focus {
             outline: none;
             border-color: #FDB913;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
         }
 
         .form-group textarea {
             min-height: 100px;
             resize: vertical;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
         }
 
         .contact-form .btn {
@@ -1621,21 +1652,123 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Request Your Free Consultation</h3>
+                    <h3>Request Your Free Commercial Quote</h3>
                     <form action="/#contact-form" method="post">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Name" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact_name">Contact Name *</label>
+                                <input type="text" id="contact_name" name="contact_name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company_name">Company Name *</label>
+                                <input type="text" id="company_name" name="company_name" placeholder="Your business name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="industry">Industry / Business Type *</label>
+                                <select id="industry" name="industry" required>
+                                    <option value="">Select your industry</option>
+                                    <option value="restaurant">Restaurant / Food Service</option>
+                                    <option value="hotel">Hotel / Hospitality</option>
+                                    <option value="medical">Medical / Healthcare</option>
+                                    <option value="dental">Dental Office</option>
+                                    <option value="office">Office / Corporate</option>
+                                    <option value="retail">Retail Store</option>
+                                    <option value="salon">Salon / Spa</option>
+                                    <option value="fitness">Fitness Center / Gym</option>
+                                    <option value="education">School / Education</option>
+                                    <option value="multifamily">Multi-Family / Apartments</option>
+                                    <option value="property_mgmt">Property Management</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="project_type">Project Type *</label>
+                                <select id="project_type" name="project_type" required>
+                                    <option value="">Select project type</option>
+                                    <option value="new_construction">New Construction</option>
+                                    <option value="renovation">Renovation / Remodel</option>
+                                    <option value="tenant_improvement">Tenant Improvement</option>
+                                    <option value="replacement">Countertop Replacement</option>
+                                    <option value="expansion">Business Expansion</option>
+                                    <option value="multi_location">Multi-Location Rollout</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sqft">Estimated Square Footage</label>
+                                <select id="sqft" name="sqft">
+                                    <option value="">Select estimated sq ft</option>
+                                    <option value="under_50">Under 50 sq ft</option>
+                                    <option value="50_100">50 - 100 sq ft</option>
+                                    <option value="100_250">100 - 250 sq ft</option>
+                                    <option value="250_500">250 - 500 sq ft</option>
+                                    <option value="500_1000">500 - 1,000 sq ft</option>
+                                    <option value="over_1000">1,000+ sq ft</option>
+                                    <option value="not_sure">Not sure yet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="deadline">Project Deadline *</label>
+                                <select id="deadline" name="deadline" required>
+                                    <option value="">When do you need this done?</option>
+                                    <option value="asap">ASAP / Urgent</option>
+                                    <option value="2_weeks">Within 2 weeks</option>
+                                    <option value="1_month">Within 1 month</option>
+                                    <option value="2_3_months">2-3 months</option>
+                                    <option value="3_6_months">3-6 months</option>
+                                    <option value="planning">Just planning / No rush</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range (optional)</option>
+                                    <option value="under_5k">Under $5,000</option>
+                                    <option value="5k_10k">$5,000 - $10,000</option>
+                                    <option value="10k_25k">$10,000 - $25,000</option>
+                                    <option value="25k_50k">$25,000 - $50,000</option>
+                                    <option value="50k_100k">$50,000 - $100,000</option>
+                                    <option value="over_100k">$100,000+</option>
+                                    <option value="not_sure">Not sure yet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="referral">How did you hear about us?</label>
+                                <select id="referral" name="referral">
+                                    <option value="">Select one (optional)</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="referral">Referral / Word of Mouth</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="contractor">Contractor / GC Referral</option>
+                                    <option value="repeat">Repeat Customer</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <label for="project_address">Project Address</label>
+                            <input type="text" id="project_address" name="project_address" placeholder="Street address, City, FL ZIP">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project: number of countertops, surface types needed (reception desk, break room, bathroom vanities, etc.), any special requirements or deadlines..."></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell us about your commercial project (optional)"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Get Your FREE Estimate Now</button>
+                        <button type="submit" class="btn btn-primary">Get Your FREE Commercial Quote</button>
                     </form>
                 </div>
             </div>
