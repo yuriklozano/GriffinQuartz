@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Retail Store Quartz Countertops South Florida | Checkout, Display, POS | Griffin Quartz</title>
+    <meta name="description" content="Premium quartz countertops for retail stores in South Florida. Checkout counters, display cases, POS stations, and customer service desks. Durable surfaces for high-traffic retail environments. Free estimates!">
+    <meta name="keywords" content="retail countertops, store countertops, checkout counter quartz, display case countertops, POS countertops, retail quartz countertops, cash wrap counters, customer service counter, retail countertops South Florida, commercial retail surfaces">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soflocountertops.com/retail-store-countertops">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Retail Store Quartz Countertops | Retail Specialists | Griffin Quartz">
+    <meta property="og:description" content="Premium quartz surfaces for retail stores throughout South Florida. Checkout counters, displays, and customer service areas.">
+    <meta property="og:url" content="https://soflocountertops.com/retail-store-countertops">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://soflocountertops.com/images/commercial-retail-marble-counter.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Retail Store Quartz Countertop Installation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Griffin Quartz",
+            "telephone": "+1-720-324-1436",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1021 S Rogers Cir #18",
+                "addressLocality": "Boca Raton",
+                "addressRegion": "FL",
+                "postalCode": "33487"
+            }
+        },
+        "areaServed": {"@type": "State", "name": "Florida"},
+        "description": "Premium quartz countertop installation for retail stores including checkout counters, display cases, and customer service areas."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://soflocountertops.com"},
+            {"@type": "ListItem", "position": 2, "name": "Commercial", "item": "https://soflocountertops.com/commercial"},
+            {"@type": "ListItem", "position": 3, "name": "Retail Stores", "item": "https://soflocountertops.com/retail-store-countertops"}
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #000; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { height: 50px; }
+        .nav { display: flex; gap: 30px; align-items: center; }
+        .nav a { color: #fff; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .nav a:hover { color: #FDB913; }
+        .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
+        .btn-primary { background: #FDB913; color: #000; }
+        .btn-primary:hover { background: #e5a811; }
+        .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; }
+        .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%); }
+        .hero-content { position: relative; z-index: 2; color: #fff; max-width: 700px; }
+        .hero-badge { display: inline-block; background: #FDB913; color: #000; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 1rem; }
+        .section-description { color: #666; font-size: 1.1rem; margin-bottom: 2rem; }
+        .applications-section { padding: 80px 0; background: #f8f8f8; }
+        .applications-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 40px; }
+        .application-card { background: #fff; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+        .application-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .application-card i { font-size: 2.5rem; color: #FDB913; margin-bottom: 15px; }
+        .application-card h4 { font-size: 1.1rem; color: #000; margin-bottom: 10px; }
+        .application-card p { font-size: 0.9rem; color: #666; }
+        .benefits-section { padding: 80px 0; background: #fff; }
+        .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+        .benefits-content h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #000; margin-bottom: 1rem; }
+        .benefits-content p { color: #666; margin-bottom: 1.5rem; }
+        .benefits-list { list-style: none; }
+        .benefits-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; color: #333; }
+        .benefits-list li i { color: #FDB913; font-size: 1.2rem; margin-top: 2px; }
+        .benefits-image img { width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .why-section { padding: 80px 0; background: #000; color: #fff; }
+        .why-section .section-title { color: #fff; }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .why-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .why-card i { font-size: 2rem; color: #FDB913; margin-bottom: 15px; }
+        .why-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .why-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .cta-section { padding: 80px 0; background: linear-gradient(135deg, #FDB913 0%, #e5a811 100%); text-align: center; }
+        .cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 15px; }
+        .cta-section p { color: #000; font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-section .btn { background: #000; color: #fff; }
+        .cta-section .btn:hover { background: #333; }
+        .footer { background: #000; color: #fff; padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer h4 { font-size: 1.1rem; margin-bottom: 20px; color: #FDB913; }
+        .footer p, .footer a { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .footer a { text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; }
+        .footer a:hover { color: #FDB913; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center; color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+        @media (max-width: 900px) {
+            .applications-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .applications-grid { grid-template-columns: 1fr; }
+            .nav { display: none; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" class="logo"></a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="commercial">Commercial</a>
+                <a href="kitchen-bath">Kitchen & Bath</a>
+                <a href="gallery">Gallery</a>
+                <a href="contact">Contact</a>
+                <a href="quote-calculator" class="btn btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/commercial-retail-marble-counter.webp" alt="Retail store quartz countertops South Florida">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Retail Specialists</div>
+                <h1>Retail Store Quartz Countertops in South Florida</h1>
+                <p>Create stunning retail environments with premium quartz surfaces. From eye-catching checkout counters to elegant display cases, we deliver durable surfaces that enhance your brand and withstand constant customer traffic.</p>
+                <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Retail Quartz Applications</h2>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto;">Premium surfaces for every customer touchpoint in your retail space.</p>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <i class="bi bi-cash-register"></i>
+                    <h4>Checkout Counters</h4>
+                    <p>Durable cash wrap counters that handle constant customer interaction and transactions.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-gem"></i>
+                    <h4>Display Cases</h4>
+                    <p>Elegant surfaces for jewelry displays, cosmetics counters, and product showcases.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-headset"></i>
+                    <h4>Customer Service</h4>
+                    <p>Professional service desks for returns, exchanges, and customer assistance.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-phone"></i>
+                    <h4>Tech & Electronics</h4>
+                    <p>Demo counters for electronics stores and phone retailers.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-shop-window"></i>
+                    <h4>Boutique Displays</h4>
+                    <p>Custom surfaces for high-end boutiques and specialty retailers.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-cup-hot"></i>
+                    <h4>In-Store Cafés</h4>
+                    <p>Coffee bars and refreshment areas within retail environments.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-scissors"></i>
+                    <h4>Salon & Spa Retail</h4>
+                    <p>Reception and product display areas for beauty retailers.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-droplet"></i>
+                    <h4>Restrooms</h4>
+                    <p>Customer restroom vanities that maintain your brand standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <h3>Why Quartz for Retail?</h3>
+                    <p>Retail environments need surfaces that look premium while handling the demands of constant customer traffic. Quartz delivers the perfect balance of beauty and durability.</p>
+                    <ul class="benefits-list">
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Scratch Resistant:</strong> Keys, jewelry, and merchandise won't damage the surface.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Easy Maintenance:</strong> Quick cleanup keeps counters ready for customers all day.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Brand Alignment:</strong> Wide color selection to match your brand identity and store design.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Consistent Quality:</strong> Uniform appearance across all locations for chain stores.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Long Lasting:</strong> Maintains appearance for years despite heavy daily use.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Hygienic:</strong> Non-porous surface important in post-COVID retail environments.</span></li>
+                    </ul>
+                </div>
+                <div class="benefits-image">
+                    <img src="images/commercial-condo-lobby-palms.webp" alt="Retail display quartz countertops">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Why Retailers Choose Griffin Quartz</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="bi bi-moon-stars"></i>
+                    <h3>After-Hours Installation</h3>
+                    <p>We work nights and early mornings to avoid disrupting store hours and customer traffic.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-lightning-charge"></i>
+                    <h3>Quick Turnaround</h3>
+                    <p>Meet your grand opening or remodel deadline with our fast fabrication and installation.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-buildings"></i>
+                    <h3>Multi-Store Programs</h3>
+                    <p>Consistent pricing and quality for retail chains with multiple South Florida locations.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-rulers"></i>
+                    <h3>Custom Fabrication</h3>
+                    <p>Unique shapes, edge profiles, and features to match your store's design vision.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Fully Insured</h3>
+                    <p>Complete liability coverage for work in your retail space.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Local Support</h3>
+                    <p>Fast response for any service needs from our Boca Raton headquarters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Elevate Your Retail Space?</h2>
+            <p>Contact us today for a free consultation. We'll work with your timeline to deliver surfaces that enhance your brand and customer experience.</p>
+            <a href="contact" class="btn">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" style="height: 50px; margin-bottom: 20px;">
+                    <p>South Florida's trusted commercial quartz countertop specialists. Serving retail stores, boutiques, and shopping centers throughout Palm Beach, Broward, and Miami-Dade counties.</p>
+                </div>
+                <div>
+                    <h4>Commercial Services</h4>
+                    <a href="commercial">All Commercial</a>
+                    <a href="office-building-countertops">Office Buildings</a>
+                    <a href="hotel-resort-countertops">Hotels & Resorts</a>
+                    <a href="restaurant-cafe-countertops">Restaurants</a>
+                    <a href="retail-store-countertops">Retail Stores</a>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="about">About Us</a>
+                    <a href="gallery">Gallery</a>
+                    <a href="contact">Contact</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p><i class="bi bi-telephone"></i> (720) 324-1436</p>
+                    <p><i class="bi bi-envelope"></i> info@griffinquartz.com</p>
+                    <p><i class="bi bi-geo-alt"></i> 1021 S Rogers Cir #18<br>Boca Raton, FL 33487</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

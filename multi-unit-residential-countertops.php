@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Multi-Unit Residential Quartz Countertops South Florida | Apartments, Condos | Griffin Quartz</title>
+    <meta name="description" content="Volume quartz countertops for apartments and condos in South Florida. New construction, renovations, and unit turns. Consistent quality across all units. Volume pricing available. Free estimates!">
+    <meta name="keywords" content="apartment countertops, condo countertops, multi-unit countertops, multifamily countertops, apartment renovation countertops, condo quartz countertops, property management countertops, multi-unit residential South Florida, apartment quartz installation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soflocountertops.com/multi-unit-residential-countertops">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Multi-Unit Residential Quartz Countertops | Apartment & Condo Specialists | Griffin Quartz">
+    <meta property="og:description" content="Volume quartz countertops for apartments and condos throughout South Florida.">
+    <meta property="og:url" content="https://soflocountertops.com/multi-unit-residential-countertops">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Multi-Unit Residential Quartz Countertop Installation",
+        "provider": {"@type": "LocalBusiness", "name": "Griffin Quartz", "telephone": "+1-720-324-1436"},
+        "areaServed": {"@type": "State", "name": "Florida"}
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #000; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { height: 50px; }
+        .nav { display: flex; gap: 30px; align-items: center; }
+        .nav a { color: #fff; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .nav a:hover { color: #FDB913; }
+        .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
+        .btn-primary { background: #FDB913; color: #000; }
+        .btn-primary:hover { background: #e5a811; }
+        .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; }
+        .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%); }
+        .hero-content { position: relative; z-index: 2; color: #fff; max-width: 700px; }
+        .hero-badge { display: inline-block; background: #FDB913; color: #000; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 1rem; }
+        .applications-section { padding: 80px 0; background: #f8f8f8; }
+        .applications-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 40px; }
+        .application-card { background: #fff; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .application-card:hover { transform: translateY(-5px); }
+        .application-card i { font-size: 2.5rem; color: #FDB913; margin-bottom: 15px; }
+        .application-card h4 { font-size: 1.1rem; color: #000; margin-bottom: 10px; }
+        .application-card p { font-size: 0.9rem; color: #666; }
+        .benefits-section { padding: 80px 0; background: #fff; }
+        .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+        .benefits-content h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #000; margin-bottom: 1rem; }
+        .benefits-content p { color: #666; margin-bottom: 1.5rem; }
+        .benefits-list { list-style: none; }
+        .benefits-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; color: #333; }
+        .benefits-list li i { color: #FDB913; font-size: 1.2rem; margin-top: 2px; }
+        .benefits-image img { width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .why-section { padding: 80px 0; background: #000; color: #fff; }
+        .why-section .section-title { color: #fff; }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .why-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .why-card i { font-size: 2rem; color: #FDB913; margin-bottom: 15px; }
+        .why-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .why-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .cta-section { padding: 80px 0; background: linear-gradient(135deg, #FDB913 0%, #e5a811 100%); text-align: center; }
+        .cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 15px; }
+        .cta-section p { color: #000; font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-section .btn { background: #000; color: #fff; }
+        .footer { background: #000; color: #fff; padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer h4 { font-size: 1.1rem; margin-bottom: 20px; color: #FDB913; }
+        .footer p, .footer a { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .footer a { text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; }
+        .footer a:hover { color: #FDB913; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center; color: rgba(255,255,255,0.5); }
+        @media (max-width: 900px) { .applications-grid, .why-grid { grid-template-columns: repeat(2, 1fr); } .benefits-grid, .footer-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 600px) { .hero h1 { font-size: 2rem; } .applications-grid, .why-grid { grid-template-columns: 1fr; } .nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" class="logo"></a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="commercial">Commercial</a>
+                <a href="kitchen-bath">Kitchen & Bath</a>
+                <a href="gallery">Gallery</a>
+                <a href="contact">Contact</a>
+                <a href="quote-calculator" class="btn btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/commercial-condo-lobby-palms.webp" alt="Multi-unit residential quartz countertops South Florida">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Multi-Family Specialists</div>
+                <h1>Apartment & Condo Quartz Countertops in South Florida</h1>
+                <p>Volume pricing and consistent quality for multi-unit residential projects. From new construction to renovation programs, we deliver premium quartz countertops that attract tenants and increase property value.</p>
+                <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Multi-Unit Residential Applications</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Premium surfaces for every unit and common area in your property.</p>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <i class="bi bi-egg-fried"></i>
+                    <h4>Unit Kitchens</h4>
+                    <p>Durable kitchen countertops that withstand tenant turnover and daily use.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-droplet"></i>
+                    <h4>Unit Bathrooms</h4>
+                    <p>Vanity tops that maintain their beauty through multiple tenancies.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-door-open"></i>
+                    <h4>Lobby Reception</h4>
+                    <p>Impressive front desk surfaces that welcome residents and guests.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-building"></i>
+                    <h4>Leasing Offices</h4>
+                    <p>Professional surfaces that help close leases and impress prospects.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-cup-hot"></i>
+                    <h4>Clubhouses</h4>
+                    <p>Common area kitchens and bars for resident amenity spaces.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-bicycle"></i>
+                    <h4>Fitness Centers</h4>
+                    <p>Smoothie bars and check-in counters for gym facilities.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-mailbox"></i>
+                    <h4>Mail & Package</h4>
+                    <p>Package room counters and mail sorting surfaces.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-water"></i>
+                    <h4>Pool Areas</h4>
+                    <p>Outdoor-rated quartz for pool bars and cabana kitchens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <h3>Why Quartz for Multi-Family?</h3>
+                    <p>Property managers and developers choose quartz because it delivers the best combination of durability, aesthetics, and long-term value for multi-unit properties.</p>
+                    <ul class="benefits-list">
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Tenant Appeal:</strong> Premium appearance that attracts quality tenants and justifies higher rents.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Turn-Ready:</strong> Surfaces clean easily between tenants with no refinishing needed.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Damage Resistant:</strong> Withstands tenant abuse better than laminate or solid surface.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Consistent Quality:</strong> Same color and pattern available across all units.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Low Maintenance:</strong> No sealing or special care—reduces maintenance costs.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Increased Value:</strong> Quartz upgrades increase property value and rental rates.</span></li>
+                    </ul>
+                </div>
+                <div class="benefits-image">
+                    <img src="images/commercial-office-breakroom-cafe.webp" alt="Apartment kitchen quartz countertops">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Why Property Managers Choose Griffin Quartz</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="bi bi-tags"></i>
+                    <h3>Volume Pricing</h3>
+                    <p>Significant discounts for 10+ unit projects with additional savings at higher volumes.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-calendar-check"></i>
+                    <h3>Phased Scheduling</h3>
+                    <p>Coordinate installations around leases and occupancy to minimize vacancy.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-layers"></i>
+                    <h3>Inventory Programs</h3>
+                    <p>We stock your selected colors for quick replacement and unit turn installations.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-lightning-charge"></i>
+                    <h3>Fast Unit Turns</h3>
+                    <p>Template to install in days, not weeks—get units back on market quickly.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-clipboard-check"></i>
+                    <h3>Project Management</h3>
+                    <p>Dedicated coordinator for large projects to ensure smooth execution.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Portfolio Support</h3>
+                    <p>Serve multiple properties across South Florida with consistent quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Upgrade Your Property?</h2>
+            <p>Contact us today for volume pricing on your multi-unit project. We work with property managers, developers, and general contractors throughout South Florida.</p>
+            <a href="contact" class="btn">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" style="height: 50px; margin-bottom: 20px;">
+                    <p>South Florida's trusted commercial quartz countertop specialists serving apartments, condos, and multi-family properties throughout Palm Beach, Broward, and Miami-Dade counties.</p>
+                </div>
+                <div>
+                    <h4>Commercial Services</h4>
+                    <a href="commercial">All Commercial</a>
+                    <a href="hotel-resort-countertops">Hotels & Resorts</a>
+                    <a href="multi-unit-residential-countertops">Multi-Family</a>
+                    <a href="office-building-countertops">Office Buildings</a>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="about">About Us</a>
+                    <a href="gallery">Gallery</a>
+                    <a href="contact">Contact</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p><i class="bi bi-telephone"></i> (720) 324-1436</p>
+                    <p><i class="bi bi-envelope"></i> info@griffinquartz.com</p>
+                    <p><i class="bi bi-geo-alt"></i> Boca Raton, FL 33487</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
