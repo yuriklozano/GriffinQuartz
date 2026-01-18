@@ -333,11 +333,13 @@
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 4px;
+            color: #fff;
         }
 
         .color-card span {
             font-size: 0.85rem;
             opacity: 0.8;
+            color: #fff;
         }
 
         /* Process Section */
@@ -561,7 +563,7 @@
 
         .cta-section-full p {
             font-size: 1.25rem;
-            color: #000;
+            color: #000 !important;
             max-width: 600px;
             margin: 0 auto 2rem;
         }
