@@ -71,7 +71,19 @@
             {"@type": "City", "name": "West Palm Beach"},
             {"@type": "City", "name": "Delray Beach"},
             {"@type": "City", "name": "Coral Springs"},
-            {"@type": "City", "name": "Pompano Beach"}
+            {"@type": "City", "name": "Pompano Beach"},
+            {"@type": "City", "name": "Hollywood"},
+            {"@type": "City", "name": "Miami Beach"},
+            {"@type": "City", "name": "Coral Gables"},
+            {"@type": "City", "name": "Deerfield Beach"},
+            {"@type": "City", "name": "Boynton Beach"},
+            {"@type": "City", "name": "Palm Beach Gardens"},
+            {"@type": "City", "name": "Jupiter"},
+            {"@type": "City", "name": "Aventura"},
+            {"@type": "City", "name": "Weston"},
+            {"@type": "City", "name": "Plantation"},
+            {"@type": "City", "name": "Sunrise"},
+            {"@type": "City", "name": "Parkland"}
         ],
         "priceRange": "$$",
         "aggregateRating": {
@@ -1097,6 +1109,86 @@
             padding: 16px;
             font-size: 1.1rem;
         }
+
+        /* Service Areas Section */
+        .service-areas-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .service-areas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .service-areas-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        .service-areas-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .service-areas-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .areas-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 20px;
+        }
+
+        .areas-list .area-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        .areas-list .area-item i {
+            color: #FDB913;
+            font-size: 0.75rem;
+        }
+
+        .county-label {
+            font-weight: 700;
+            color: #000;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .county-label:first-child {
+            margin-top: 0;
+        }
+
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -1598,6 +1690,67 @@
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="gallery" class="btn btn-outline">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas-section" id="service-areas">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Commercial Countertop Installation Throughout South Florida</h2>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">From Palm Beach County to Miami-Dade, we provide expert commercial quartz countertop services to businesses across the tri-county area.</p>
+
+            <div class="service-areas-grid">
+                <div class="service-areas-content">
+                    <h3>Proudly Serving South Florida Businesses</h3>
+                    <p>Griffin Quartz is headquartered in Boca Raton with commercial installation services spanning Palm Beach, Broward, and Miami-Dade counties. Our team travels to your job site for templating and installation, ensuring seamless project execution wherever your business is located.</p>
+
+                    <div class="county-label">Palm Beach County</div>
+                    <div class="areas-list">
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Boca Raton</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Delray Beach</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Boynton Beach</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> West Palm Beach</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Palm Beach Gardens</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Jupiter</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Wellington</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Lake Worth</div>
+                    </div>
+
+                    <div class="county-label">Broward County</div>
+                    <div class="areas-list">
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Fort Lauderdale</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Hollywood</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Pompano Beach</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Deerfield Beach</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Coral Springs</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Plantation</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Weston</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Sunrise</div>
+                    </div>
+
+                    <div class="county-label">Miami-Dade County</div>
+                    <div class="areas-list">
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Miami</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Miami Beach</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Coral Gables</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Aventura</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Doral</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Brickell</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Downtown Miami</div>
+                        <div class="area-item"><i class="bi bi-geo-alt-fill"></i> Coconut Grove</div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458063.4376128191!2d-80.52961814667969!3d26.189096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d9d3f4c3d3d3%3A0x7c8e7e7e7e7e7e7e!2sGriffin%20Quartz!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus&q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Griffin Quartz Location - Commercial Quartz Countertops South Florida">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
