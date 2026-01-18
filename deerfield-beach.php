@@ -160,6 +160,7 @@
                         <a href="#" class="nav-link">Resources</a>
                         <ul class="dropdown-menu">
                             <li><a href="color-visualizer">Color Visualizer</a></li>
+                            <li><a href="space-design-tool">Space Design Tool</a></li>
                             <li><a href="quote-calculator">Instant Quote Calculator</a></li>
                         </ul>
                     </li>
