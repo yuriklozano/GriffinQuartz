@@ -111,9 +111,21 @@
 
         .applications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             margin-top: 40px;
+        }
+
+        @media (max-width: 1200px) {
+            .applications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .applications-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .application-card {
@@ -513,11 +525,13 @@
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 4px;
+            color: #fff;
         }
 
         .gallery-item-overlay span {
             font-size: 0.85rem;
             opacity: 0.8;
+            color: #fff;
         }
 
         .gallery-item[data-category="kitchen"] { display: block; }
@@ -547,7 +561,7 @@
 
         .cta-section-full p {
             font-size: 1.25rem;
-            color: #333;
+            color: #000;
             max-width: 600px;
             margin: 0 auto 2rem;
         }
