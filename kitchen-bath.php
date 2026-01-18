@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Quartz Countertops for Kitchens & Bathrooms | South Florida Installation | Griffin Quartz</title>
     <meta name="description" content="Transform your kitchen and bathroom with premium quartz countertops. Expert installation for islands, vanities, backsplashes & more. Serving Boca Raton, Fort Lauderdale, Miami. Free estimates!">
-    <meta name="keywords" content="kitchen quartz countertops, bathroom quartz countertops, quartz vanity tops, kitchen island countertops, quartz backsplash, undermount sink cutout, South Florida countertops, Boca Raton kitchen remodel">
+    <meta name="keywords" content="quartz countertops near me, quartz countertop installation, kitchen quartz countertops, bathroom quartz countertops, quartz countertops Boca Raton, quartz countertops Fort Lauderdale, quartz countertops Miami, quartz vanity tops, kitchen island countertops, Calacatta quartz, white quartz countertops, marble-look quartz, quartz vs granite, quartz countertop cost, Cambria quartz, Silestone countertops, Caesarstone, MSI quartz, waterfall edge countertops, quartz backsplash, undermount sink cutout, South Florida countertops, Palm Beach County countertops, Broward County countertops">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/kitchen-bath">
 
@@ -843,12 +843,12 @@
     <!-- Hero Section -->
     <section class="page-hero">
         <div class="hero-background">
-            <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern kitchen with premium quartz countertops" loading="eager">
+            <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Quartz countertops installation South Florida - kitchen and bathroom countertop experts serving Boca Raton, Fort Lauderdale, Miami" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Quartz for Kitchens & Bathrooms</h1>
-            <p class="hero-description">Transform your most important spaces with stunning, durable quartz surfaces crafted for South Florida living.</p>
+            <h1>Quartz Countertops for Kitchens & Bathrooms</h1>
+            <p class="hero-description">Transform your most important spaces with stunning, durable quartz surfaces crafted for South Florida living. Expert installation from Boca Raton to Miami.</p>
         </div>
     </section>
 
@@ -1088,42 +1088,42 @@
             <div class="gallery-grid" data-filter="all">
                 <!-- Kitchen Images -->
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Kitchen with Calacatta Gold quartz" loading="lazy">
+                    <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Calacatta Gold quartz kitchen countertops installation in Boca Raton FL" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Calacatta Gold Kitchen</h4>
                         <span>Boca Raton</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-black-marble-gold-herringbone.webp" alt="Black marble kitchen with gold accents" loading="lazy">
+                    <img src="images/kitchen-black-marble-gold-herringbone.webp" alt="Black marble-look quartz countertops with waterfall edge Fort Lauderdale" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Black & Gold Kitchen</h4>
                         <span>Fort Lauderdale</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-coastal-wicker-stools-skylight.webp" alt="Coastal kitchen with skylight" loading="lazy">
+                    <img src="images/kitchen-coastal-wicker-stools-skylight.webp" alt="White quartz kitchen island countertop installation Delray Beach FL" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Coastal Kitchen</h4>
                         <span>Delray Beach</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-beachfront-ocean-view-globes.webp" alt="Beachfront kitchen with ocean view" loading="lazy">
+                    <img src="images/kitchen-beachfront-ocean-view-globes.webp" alt="Luxury quartz countertops in oceanfront Miami Beach kitchen remodel" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Oceanfront Kitchen</h4>
                         <span>Miami Beach</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-calacatta-walnut-leather-stools.webp" alt="Kitchen with walnut and leather stools" loading="lazy">
+                    <img src="images/kitchen-calacatta-walnut-leather-stools.webp" alt="Cambria quartz countertop installation Parkland FL kitchen" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Modern Transitional</h4>
                         <span>Parkland</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="kitchen">
-                    <img src="images/kitchen-green-cabinets-cream-quartz.webp" alt="Kitchen with green cabinets" loading="lazy">
+                    <img src="images/kitchen-green-cabinets-cream-quartz.webp" alt="Custom quartz kitchen countertops West Palm Beach installation" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Designer Kitchen</h4>
                         <span>West Palm Beach</span>
@@ -1132,42 +1132,42 @@
 
                 <!-- Bathroom Images -->
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-spa-calacatta-vessel-tub.webp" alt="Spa bathroom with vessel tub" loading="lazy">
+                    <img src="images/bathroom-spa-calacatta-vessel-tub.webp" alt="Calacatta quartz vanity top and tub surround installation Boca Raton" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Spa Master Bath</h4>
                         <span>Boca Raton</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-double-vanity-calacatta-gold.webp" alt="Double vanity bathroom" loading="lazy">
+                    <img src="images/bathroom-double-vanity-calacatta-gold.webp" alt="Double sink quartz vanity countertop Coral Springs FL bathroom remodel" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Double Vanity Suite</h4>
                         <span>Coral Springs</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-penthouse-gray-quartz-ocean.webp" alt="Penthouse bathroom with ocean view" loading="lazy">
+                    <img src="images/bathroom-penthouse-gray-quartz-ocean.webp" alt="Gray quartz bathroom countertops Fort Lauderdale penthouse installation" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Penthouse Bath</h4>
                         <span>Fort Lauderdale</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-floating-vanity-ocean-view.webp" alt="Floating vanity with ocean view" loading="lazy">
+                    <img src="images/bathroom-floating-vanity-ocean-view.webp" alt="Floating quartz vanity top installation Hollywood FL bathroom" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Floating Vanity</h4>
                         <span>Hollywood</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-spa-white-quartz-wood.webp" alt="Spa bathroom with white quartz" loading="lazy">
+                    <img src="images/bathroom-spa-white-quartz-wood.webp" alt="White quartz bathroom vanity and shower surround Delray Beach" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Zen Spa Bath</h4>
                         <span>Delray Beach</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="bathroom">
-                    <img src="images/bathroom-white-quartz-orchids-coastal.webp" alt="Coastal bathroom with orchids" loading="lazy">
+                    <img src="images/bathroom-white-quartz-orchids-coastal.webp" alt="Luxury quartz bathroom countertops Palm Beach FL coastal home" loading="lazy">
                     <div class="gallery-item-overlay">
                         <h4>Coastal Master</h4>
                         <span>Palm Beach</span>
@@ -1185,7 +1185,7 @@
     <section class="colors-section">
         <div class="container">
             <h2 class="section-title" style="text-align: center;">Popular Quartz Colors for Kitchens & Baths</h2>
-            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our most requested colors. Visit our Boca Raton showroom to see the full collection.</p>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our most requested colors from top brands including Cambria, Silestone, Caesarstone, and MSI Quartz. Visit our Boca Raton showroom to see the full collection.</p>
 
             <div class="colors-grid">
                 <div class="color-card">
