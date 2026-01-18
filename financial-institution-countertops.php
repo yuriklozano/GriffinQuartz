@@ -71,6 +71,14 @@
         .hero-form input, .hero-form textarea, .hero-form select { width: 100%; padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 1rem; transition: border-color 0.3s; }
         .hero-form input:focus, .hero-form textarea:focus, .hero-form select:focus { outline: none; border-color: #FDB913; }
         .hero-form .btn-full { width: 100%; padding: 14px; font-size: 1rem; }
+        /* Breadcrumb */
+        .breadcrumb { background: #f8f8f8; padding: 12px 0; border-bottom: 1px solid #eee; }
+        .breadcrumb-list { list-style: none; display: flex; align-items: center; gap: 8px; max-width: 1200px; margin: 0 auto; padding: 0 20px; font-size: 0.9rem; }
+        .breadcrumb-list li { display: flex; align-items: center; gap: 8px; }
+        .breadcrumb-list a { color: #666; text-decoration: none; transition: color 0.3s; }
+        .breadcrumb-list a:hover { color: #FDB913; }
+        .breadcrumb-list .separator { color: #ccc; }
+        .breadcrumb-list .current { color: #000; font-weight: 500; }
         @media (max-width: 900px) {
             .hero-container { grid-template-columns: 1fr; }
             .hero-form { order: -1; max-width: 450px; margin: 0 auto; }
@@ -129,6 +137,17 @@
             </nav>
         </div>
     </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+            <li><a href="/">Home</a></li>
+            <li><span class="separator">/</span></li>
+            <li><a href="commercial">Commercial</a></li>
+            <li><span class="separator">/</span></li>
+            <li><span class="current">Financial Institutions</span></li>
+        </ol>
+    </nav>
 
     <section class="hero">
         <div class="hero-bg"></div>
