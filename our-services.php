@@ -301,31 +301,35 @@
         /* Services Navigation */
         .services-nav {
             position: sticky;
-            top: 60px;
-            z-index: 100;
+            top: 77px; /* Matches header height: logo 45px + padding 32px */
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 99;
             background: var(--color-white);
             border-bottom: 1px solid #e0e0e0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
-        .services-nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
         .services-nav-list {
             display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 0;
             list-style: none;
             margin: 0;
             padding: 0;
             overflow-x: auto;
             scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
         }
 
         .services-nav-list::-webkit-scrollbar {
             display: none;
+        }
+
+        .services-nav-item {
+            flex-shrink: 0;
         }
 
         .services-nav-item a {
@@ -353,6 +357,15 @@
         }
 
         @media (max-width: 768px) {
+            .services-nav {
+                top: 69px; /* Smaller header on mobile */
+            }
+
+            .services-nav-list {
+                justify-content: flex-start;
+                padding: 0 1rem;
+            }
+
             .services-nav-item a {
                 padding: 0.875rem 1rem;
                 font-size: 0.875rem;
@@ -362,7 +375,7 @@
         /* Content Sections */
         .services-section {
             padding: 5rem 0;
-            scroll-margin-top: 140px;
+            scroll-margin-top: 140px; /* Header (77px) + services nav (~60px) + buffer */
         }
 
         .services-section:nth-child(even) {
@@ -812,14 +825,12 @@
 
     <!-- Services Navigation -->
     <nav class="services-nav">
-        <div class="services-nav-container">
-            <ul class="services-nav-list">
-                <li class="services-nav-item"><a href="#residential" class="active"><i class="bi bi-house-heart"></i> Residential</a></li>
-                <li class="services-nav-item"><a href="#commercial"><i class="bi bi-building"></i> Commercial</a></li>
-                <li class="services-nav-item"><a href="#fabrication"><i class="bi bi-tools"></i> Fabrication & Custom</a></li>
-                <li class="services-nav-item"><a href="#consultation"><i class="bi bi-chat-square-text"></i> Consultation & Support</a></li>
-            </ul>
-        </div>
+        <ul class="services-nav-list">
+            <li class="services-nav-item"><a href="#residential" class="active"><i class="bi bi-house-heart"></i> Residential</a></li>
+            <li class="services-nav-item"><a href="#commercial"><i class="bi bi-building"></i> Commercial</a></li>
+            <li class="services-nav-item"><a href="#fabrication"><i class="bi bi-tools"></i> Fabrication & Custom</a></li>
+            <li class="services-nav-item"><a href="#consultation"><i class="bi bi-chat-square-text"></i> Consultation & Support</a></li>
+        </ul>
     </nav>
 
     <!-- ============================================== -->
