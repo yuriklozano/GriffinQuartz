@@ -397,7 +397,7 @@
                     <p class="sale-note"><strong>Secure Your Savings</strong> by Requesting a Free Estimate!</p>
                 </div>
                 <div class="sale-image">
-                    <img src="images/kitchen-penthouse-crystal-chandelier.webp" alt="Luxury penthouse kitchen with marble waterfall island and ocean view" loading="lazy">
+                    <img src="images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern kitchen with gray quartz countertops and wood slat accents" loading="lazy">
                 </div>
             </div>
         </div>
