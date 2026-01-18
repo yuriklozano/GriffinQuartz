@@ -39,17 +39,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .header { background: #000; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
-        .header-container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { height: 50px; }
-        .nav { display: flex; gap: 30px; align-items: center; }
-        .nav a { color: #fff; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
-        .nav a:hover { color: #FDB913; }
         .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
         .btn-primary { background: #FDB913; color: #000; }
         .btn-primary:hover { background: #e5a811; }
@@ -125,16 +120,64 @@
     </style>
 </head>
 <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
+    </div>
+
+    <!-- Header -->
     <header class="header">
         <div class="container header-container">
-            <a href="/"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" class="logo"></a>
-            <nav class="nav">
-                <a href="/">Home</a>
-                <a href="commercial">Commercial</a>
-                <a href="kitchen-bath">Kitchen & Bath</a>
-                <a href="gallery">Gallery</a>
-                <a href="contact">Contact</a>
-                <a href="quote-calculator" class="btn btn-primary">Get Quote</a>
+            <a href="/" class="logo">
+                <img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz Logo">
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Our Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="our-services">Countertop Services</a></li>
+                            <li><a href="quartz-brands">Quartz Product Selection</a></li>
+                            <li><a href="kitchen-bath">Countertops for Kitchens & Baths</a></li>
+                            <li><a href="commercial">Commercial Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Installation Locations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="locations">All Service Areas</a></li>
+                            <li><a href="south-florida">South Florida</a></li>
+                            <li><a href="boca-raton">Boca Raton, FL</a></li>
+                            <li><a href="boynton-beach">Boynton Beach, FL</a></li>
+                            <li><a href="coconut-creek">Coconut Creek, FL</a></li>
+                            <li><a href="coral-springs">Coral Springs, FL</a></li>
+                            <li><a href="deerfield-beach">Deerfield Beach, FL</a></li>
+                            <li><a href="delray-beach">Delray Beach, FL</a></li>
+                            <li><a href="fort-lauderdale">Fort Lauderdale, FL</a></li>
+                            <li><a href="hollywood">Hollywood, FL</a></li>
+                            <li><a href="miami">Miami, FL</a></li>
+                            <li><a href="parkland">Parkland, FL</a></li>
+                            <li><a href="pompano-beach">Pompano Beach, FL</a></li>
+                            <li><a href="west-palm-beach">West Palm Beach, FL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="color-visualizer">Color Visualizer</a></li>
+                            <li><a href="space-design-tool">Space Design Tool</a></li>
+                            <li><a href="quote-calculator">Instant Quote Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="gallery" class="nav-link">Inspiration Gallery</a></li>
+                    <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
+                </ul>
             </nav>
         </div>
     </header>
