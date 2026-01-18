@@ -851,7 +851,7 @@
             <h2>Spa-Like Luxury at Home</h2>
             <p>South Florida's humidity can be tough on bathroom surfaces. Quartz is naturally resistant to moisture, mold, and mildew—making it the perfect choice for our tropical climate.</p>
             <p>From sleek modern vanities to elegant master bath suites, quartz delivers the look of natural stone with superior durability. Choose from marble-look Calacatta patterns or contemporary solid colors to match your style.</p>
-            <a href="gallery" class="btn btn-outline">View Bathroom Gallery</a>
+            <a href="quote-calculator" class="btn btn-outline">Get Instant Quote</a>
         </div>
     </section>
 
