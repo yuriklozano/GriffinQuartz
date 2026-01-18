@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Hotel & Resort Quartz Countertops South Florida | Lobbies, Guest Rooms, Spas | Griffin Quartz</title>
+    <meta name="description" content="Luxury quartz countertops for hotels and resorts in South Florida. Lobby reception, guest room vanities, spa facilities, and pool bars. Volume pricing for multi-room projects. Free estimates!">
+    <meta name="keywords" content="hotel countertops, resort countertops, hotel quartz countertops, hospitality countertops, guest room vanities, hotel lobby countertops, spa countertops, pool bar countertops, hotel bathroom countertops, resort quartz installation South Florida">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soflocountertops.com/hotel-resort-countertops">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hotel & Resort Quartz Countertops | Hospitality Specialists | Griffin Quartz">
+    <meta property="og:description" content="Luxury quartz surfaces for hotels and resorts throughout South Florida. Guest rooms, lobbies, spas, and restaurants.">
+    <meta property="og:url" content="https://soflocountertops.com/hotel-resort-countertops">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://soflocountertops.com/images/hotel-lobby-white-marble-reception-palms.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Hotel & Resort Quartz Countertop Installation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Griffin Quartz",
+            "telephone": "+1-720-324-1436",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1021 S Rogers Cir #18",
+                "addressLocality": "Boca Raton",
+                "addressRegion": "FL",
+                "postalCode": "33487"
+            }
+        },
+        "areaServed": {"@type": "State", "name": "Florida"},
+        "description": "Luxury quartz countertop installation for hotels and resorts including lobbies, guest rooms, spas, and pool areas."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://soflocountertops.com"},
+            {"@type": "ListItem", "position": 2, "name": "Commercial", "item": "https://soflocountertops.com/commercial"},
+            {"@type": "ListItem", "position": 3, "name": "Hotels & Resorts", "item": "https://soflocountertops.com/hotel-resort-countertops"}
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #000; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { height: 50px; }
+        .nav { display: flex; gap: 30px; align-items: center; }
+        .nav a { color: #fff; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .nav a:hover { color: #FDB913; }
+        .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
+        .btn-primary { background: #FDB913; color: #000; }
+        .btn-primary:hover { background: #e5a811; }
+        .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; }
+        .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%); }
+        .hero-content { position: relative; z-index: 2; color: #fff; max-width: 700px; }
+        .hero-badge { display: inline-block; background: #FDB913; color: #000; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 1rem; }
+        .section-description { color: #666; font-size: 1.1rem; margin-bottom: 2rem; }
+        .applications-section { padding: 80px 0; background: #f8f8f8; }
+        .applications-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 40px; }
+        .application-card { background: #fff; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+        .application-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .application-card i { font-size: 2.5rem; color: #FDB913; margin-bottom: 15px; }
+        .application-card h4 { font-size: 1.1rem; color: #000; margin-bottom: 10px; }
+        .application-card p { font-size: 0.9rem; color: #666; }
+        .benefits-section { padding: 80px 0; background: #fff; }
+        .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+        .benefits-content h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #000; margin-bottom: 1rem; }
+        .benefits-content p { color: #666; margin-bottom: 1.5rem; }
+        .benefits-list { list-style: none; }
+        .benefits-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; color: #333; }
+        .benefits-list li i { color: #FDB913; font-size: 1.2rem; margin-top: 2px; }
+        .benefits-image img { width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .why-section { padding: 80px 0; background: #000; color: #fff; }
+        .why-section .section-title { color: #fff; }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .why-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .why-card i { font-size: 2rem; color: #FDB913; margin-bottom: 15px; }
+        .why-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .why-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .cta-section { padding: 80px 0; background: linear-gradient(135deg, #FDB913 0%, #e5a811 100%); text-align: center; }
+        .cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 15px; }
+        .cta-section p { color: #000; font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-section .btn { background: #000; color: #fff; }
+        .cta-section .btn:hover { background: #333; }
+        .footer { background: #000; color: #fff; padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer h4 { font-size: 1.1rem; margin-bottom: 20px; color: #FDB913; }
+        .footer p, .footer a { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .footer a { text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; }
+        .footer a:hover { color: #FDB913; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center; color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+        @media (max-width: 900px) {
+            .applications-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .applications-grid { grid-template-columns: 1fr; }
+            .nav { display: none; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" class="logo"></a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="commercial">Commercial</a>
+                <a href="kitchen-bath">Kitchen & Bath</a>
+                <a href="gallery">Gallery</a>
+                <a href="contact">Contact</a>
+                <a href="quote-calculator" class="btn btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/hotel-lobby-white-marble-reception-palms.webp" alt="Hotel lobby quartz countertops reception desk South Florida">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Hospitality Specialists</div>
+                <h1>Hotel & Resort Quartz Countertops in South Florida</h1>
+                <p>Create unforgettable guest experiences with luxury quartz surfaces. From grand lobby reception desks to elegant guest room vanities, we deliver the quality and consistency your hospitality brand demands.</p>
+                <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Hotel & Resort Quartz Applications</h2>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto;">Elevate every touchpoint of your guest experience with premium quartz surfaces throughout your property.</p>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <i class="bi bi-door-open"></i>
+                    <h4>Lobby Reception</h4>
+                    <p>Grand reception desks and concierge counters that make a stunning first impression.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-house-door"></i>
+                    <h4>Guest Room Vanities</h4>
+                    <p>Consistent quality across all rooms with durable, easy-to-clean bathroom vanities.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-water"></i>
+                    <h4>Spa & Wellness</h4>
+                    <p>Luxurious spa reception areas, treatment rooms, and relaxation lounges.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-cup-straw"></i>
+                    <h4>Pool Bars</h4>
+                    <p>UV-resistant quartz surfaces for outdoor pool bars and cabana service areas.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-egg-fried"></i>
+                    <h4>Breakfast Buffets</h4>
+                    <p>Heat-resistant serving stations for breakfast areas and buffet displays.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-building"></i>
+                    <h4>Common Areas</h4>
+                    <p>Fitness center counters, business centers, and guest laundry facilities.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-cup-hot"></i>
+                    <h4>In-Room Kitchenettes</h4>
+                    <p>Suite kitchenettes and wet bars for extended-stay and luxury accommodations.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-shop"></i>
+                    <h4>Retail & Gift Shops</h4>
+                    <p>Display counters and checkout areas for on-site retail spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <h3>Why Quartz for Hospitality?</h3>
+                    <p>Hotels and resorts require surfaces that maintain their beauty despite constant use. Quartz delivers the durability, hygiene, and aesthetic consistency that hospitality properties demand.</p>
+                    <ul class="benefits-list">
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Brand Consistency:</strong> Identical colors and patterns across all rooms and properties for brand standards.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Housekeeping Friendly:</strong> Non-porous surface cleans easily, reducing room turnover time.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Guest-Proof Durability:</strong> Resists damage from luggage, toiletries, and everyday guest use.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Stain Resistant:</strong> Coffee, makeup, and hair products won't leave permanent marks.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Luxury Aesthetics:</strong> Marble and natural stone looks without the maintenance concerns.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Volume Availability:</strong> Large quantities available for multi-room renovations and new builds.</span></li>
+                    </ul>
+                </div>
+                <div class="benefits-image">
+                    <img src="images/hotel-buffet-white-marble-counter-flowers.webp" alt="Hotel buffet quartz countertops">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Why Hotels Choose Griffin Quartz</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="bi bi-moon-stars"></i>
+                    <h3>After-Hours Installation</h3>
+                    <p>We work nights and weekends to avoid disrupting guest stays and hotel operations.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-layers"></i>
+                    <h3>Phased Rollouts</h3>
+                    <p>Floor-by-floor installation coordination to keep most rooms in service during renovations.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-tags"></i>
+                    <h3>Volume Pricing</h3>
+                    <p>Competitive rates for 50+ room projects with additional discounts for multi-property deals.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-clipboard-check"></i>
+                    <h3>Project Management</h3>
+                    <p>Dedicated project manager coordinates with your construction team and property management.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <h3>Warranty Support</h3>
+                    <p>Quick response for any warranty issues with replacement inventory kept on hand.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Local Expertise</h3>
+                    <p>Based in Boca Raton, we serve hotels from Palm Beach to Miami with fast response times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Elevate Your Property?</h2>
+            <p>Contact us today for a free consultation and volume pricing quote. We'll work with your timeline and budget to deliver exceptional results.</p>
+            <a href="contact" class="btn">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" style="height: 50px; margin-bottom: 20px;">
+                    <p>South Florida's trusted commercial quartz countertop specialists. Serving hotels, resorts, and hospitality properties throughout Palm Beach, Broward, and Miami-Dade counties.</p>
+                </div>
+                <div>
+                    <h4>Commercial Services</h4>
+                    <a href="commercial">All Commercial</a>
+                    <a href="office-building-countertops">Office Buildings</a>
+                    <a href="hotel-resort-countertops">Hotels & Resorts</a>
+                    <a href="restaurant-cafe-countertops">Restaurants</a>
+                    <a href="medical-clinic-countertops">Medical Clinics</a>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="about">About Us</a>
+                    <a href="gallery">Gallery</a>
+                    <a href="contact">Contact</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p><i class="bi bi-telephone"></i> (720) 324-1436</p>
+                    <p><i class="bi bi-envelope"></i> info@griffinquartz.com</p>
+                    <p><i class="bi bi-geo-alt"></i> 1021 S Rogers Cir #18<br>Boca Raton, FL 33487</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

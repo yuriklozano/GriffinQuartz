@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Office Building Quartz Countertops South Florida | Reception Desks, Break Rooms, Conference Rooms | Griffin Quartz</title>
+    <meta name="description" content="Premium quartz countertops for office buildings in South Florida. Reception desks, break rooms, conference rooms, and executive suites. Professional installation with minimal business disruption. Free estimates!">
+    <meta name="keywords" content="office building countertops, reception desk countertops, office quartz countertops, corporate countertops, break room countertops, conference room countertops, executive office countertops, commercial office countertops South Florida, office building quartz installation, corporate quartz surfaces">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soflocountertops.com/office-building-countertops">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Office Building Quartz Countertops | Professional Installation | Griffin Quartz">
+    <meta property="og:description" content="Premium quartz surfaces for corporate offices throughout South Florida. Reception desks, break rooms, and executive suites.">
+    <meta property="og:url" content="https://soflocountertops.com/office-building-countertops">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://soflocountertops.com/images/commercial-office-lobby-modern.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Boca Raton">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Office Building Quartz Countertop Installation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Griffin Quartz",
+            "telephone": "+1-720-324-1436",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1021 S Rogers Cir #18",
+                "addressLocality": "Boca Raton",
+                "addressRegion": "FL",
+                "postalCode": "33487"
+            }
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Florida"
+        },
+        "description": "Professional quartz countertop installation for office buildings including reception desks, break rooms, conference rooms, and executive suites."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://soflocountertops.com"},
+            {"@type": "ListItem", "position": 2, "name": "Commercial", "item": "https://soflocountertops.com/commercial"},
+            {"@type": "ListItem", "position": 3, "name": "Office Buildings", "item": "https://soflocountertops.com/office-building-countertops"}
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        .header { background: #000; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { height: 50px; }
+        .nav { display: flex; gap: 30px; align-items: center; }
+        .nav a { color: #fff; text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .nav a:hover { color: #FDB913; }
+        .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
+        .btn-primary { background: #FDB913; color: #000; }
+        .btn-primary:hover { background: #e5a811; }
+        .btn-outline { border: 2px solid #FDB913; color: #FDB913; background: transparent; }
+        .btn-outline:hover { background: #FDB913; color: #000; }
+
+        /* Hero */
+        .hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; }
+        .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%); }
+        .hero-content { position: relative; z-index: 2; color: #fff; max-width: 700px; }
+        .hero-badge { display: inline-block; background: #FDB913; color: #000; padding: 8px 16px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+
+        /* Section Styles */
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 1rem; }
+        .section-description { color: #666; font-size: 1.1rem; margin-bottom: 2rem; }
+
+        /* Applications Section */
+        .applications-section { padding: 80px 0; background: #f8f8f8; }
+        .applications-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 40px; }
+        .application-card { background: #fff; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; }
+        .application-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .application-card i { font-size: 2.5rem; color: #FDB913; margin-bottom: 15px; }
+        .application-card h4 { font-size: 1.1rem; color: #000; margin-bottom: 10px; }
+        .application-card p { font-size: 0.9rem; color: #666; }
+
+        /* Benefits Section */
+        .benefits-section { padding: 80px 0; background: #fff; }
+        .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+        .benefits-content h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #000; margin-bottom: 1rem; }
+        .benefits-content p { color: #666; margin-bottom: 1.5rem; }
+        .benefits-list { list-style: none; }
+        .benefits-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; color: #333; }
+        .benefits-list li i { color: #FDB913; font-size: 1.2rem; margin-top: 2px; }
+        .benefits-image img { width: 100%; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+
+        /* Why Choose Section */
+        .why-section { padding: 80px 0; background: #000; color: #fff; }
+        .why-section .section-title { color: #fff; }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+        .why-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .why-card i { font-size: 2rem; color: #FDB913; margin-bottom: 15px; }
+        .why-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .why-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+
+        /* CTA Section */
+        .cta-section { padding: 80px 0; background: linear-gradient(135deg, #FDB913 0%, #e5a811 100%); text-align: center; }
+        .cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000; margin-bottom: 15px; }
+        .cta-section p { color: #000; font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-section .btn { background: #000; color: #fff; }
+        .cta-section .btn:hover { background: #333; }
+
+        /* Footer */
+        .footer { background: #000; color: #fff; padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer h4 { font-size: 1.1rem; margin-bottom: 20px; color: #FDB913; }
+        .footer p, .footer a { color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+        .footer a { text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; }
+        .footer a:hover { color: #FDB913; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center; color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .applications-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .applications-grid { grid-template-columns: 1fr; }
+            .nav { display: none; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="/"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" class="logo"></a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="commercial">Commercial</a>
+                <a href="kitchen-bath">Kitchen & Bath</a>
+                <a href="gallery">Gallery</a>
+                <a href="contact">Contact</a>
+                <a href="quote-calculator" class="btn btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/commercial-office-lobby-modern.webp" alt="Office building quartz countertops reception desk South Florida">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Corporate & Office Specialists</div>
+                <h1>Office Building Quartz Countertops in South Florida</h1>
+                <p>Elevate your corporate environment with premium quartz surfaces. From impressive reception desks to functional break rooms, we deliver professional results with minimal disruption to your business operations.</p>
+                <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Office Quartz Applications</h2>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto;">From the lobby to the executive suite, quartz delivers durability and sophistication throughout your office building.</p>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <i class="bi bi-door-open"></i>
+                    <h4>Reception Desks</h4>
+                    <p>Make a lasting first impression with stunning quartz reception counters that reflect your brand's professionalism.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-cup-hot"></i>
+                    <h4>Break Rooms & Kitchens</h4>
+                    <p>Durable, stain-resistant surfaces perfect for high-traffic employee break areas and office kitchens.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-people"></i>
+                    <h4>Conference Rooms</h4>
+                    <p>Sophisticated credenzas and built-in surfaces that enhance meeting spaces and impress clients.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-briefcase"></i>
+                    <h4>Executive Suites</h4>
+                    <p>Premium quartz surfaces for private offices, wet bars, and executive amenities.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-droplet"></i>
+                    <h4>Restroom Vanities</h4>
+                    <p>Hygienic, easy-to-clean quartz vanity tops for employee and public restrooms.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-cup-straw"></i>
+                    <h4>Coffee Bars</h4>
+                    <p>Stylish coffee station counters that stand up to daily use and spills.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-mailbox"></i>
+                    <h4>Mail Rooms</h4>
+                    <p>Functional work surfaces for sorting areas and package handling stations.</p>
+                </div>
+                <div class="application-card">
+                    <i class="bi bi-building"></i>
+                    <h4>Lobby Features</h4>
+                    <p>Custom quartz installations for lobby benches, planters, and architectural features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <h3>Why Quartz for Your Office Building?</h3>
+                    <p>Modern office environments demand surfaces that balance aesthetics with functionality. Quartz countertops deliver both, making them the preferred choice for corporate facilities across South Florida.</p>
+                    <ul class="benefits-list">
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Professional Appearance:</strong> Consistent patterns and colors that complement any office design scheme.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Extremely Durable:</strong> Resists scratches, chips, and daily wear from high-traffic office use.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Low Maintenance:</strong> No sealing required; simple cleaning keeps surfaces looking new.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Stain Resistant:</strong> Coffee, ink, and food spills wipe away easily without staining.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Hygienic:</strong> Non-porous surface prevents bacteria growth in break rooms and restrooms.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Long-Term Value:</strong> Outlasts laminate and solid surface alternatives with minimal upkeep costs.</span></li>
+                    </ul>
+                </div>
+                <div class="benefits-image">
+                    <img src="images/commercial-office-breakroom-cafe.webp" alt="Office break room quartz countertops">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Why Choose Griffin Quartz for Your Office Project?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="bi bi-clock-history"></i>
+                    <h3>Minimal Disruption</h3>
+                    <p>We work around your business hours, including nights and weekends, to minimize impact on your operations and employees.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-lightning-charge"></i>
+                    <h3>Fast Turnaround</h3>
+                    <p>Our in-house fabrication facility enables quick project completion. Most office installations complete in 1-2 weeks.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Fully Insured</h3>
+                    <p>Complete liability coverage and workers' compensation for your peace of mind during installation.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-palette"></i>
+                    <h3>Brand Matching</h3>
+                    <p>We help you select colors and patterns that align with your corporate branding and interior design.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-graph-up"></i>
+                    <h3>Volume Pricing</h3>
+                    <p>Competitive rates for multi-floor installations, tenant improvements, and building-wide projects.</p>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-tools"></i>
+                    <h3>Expert Installation</h3>
+                    <p>Experienced commercial installers who understand the unique requirements of office environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Upgrade Your Office?</h2>
+            <p>Contact us today for a free consultation and estimate. We'll visit your office to discuss your project requirements and provide competitive pricing.</p>
+            <a href="contact" class="btn">Request Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" style="height: 50px; margin-bottom: 20px;">
+                    <p>South Florida's trusted commercial quartz countertop specialists. Serving office buildings, hotels, restaurants, and more throughout Palm Beach, Broward, and Miami-Dade counties.</p>
+                </div>
+                <div>
+                    <h4>Commercial Services</h4>
+                    <a href="commercial">All Commercial</a>
+                    <a href="office-building-countertops">Office Buildings</a>
+                    <a href="hotel-resort-countertops">Hotels & Resorts</a>
+                    <a href="restaurant-cafe-countertops">Restaurants</a>
+                    <a href="medical-clinic-countertops">Medical Clinics</a>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="about">About Us</a>
+                    <a href="gallery">Gallery</a>
+                    <a href="contact">Contact</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p><i class="bi bi-telephone"></i> (720) 324-1436</p>
+                    <p><i class="bi bi-envelope"></i> info@griffinquartz.com</p>
+                    <p><i class="bi bi-geo-alt"></i> 1021 S Rogers Cir #18<br>Boca Raton, FL 33487</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

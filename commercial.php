@@ -592,11 +592,15 @@
             border: 2px solid #f0f0f0;
             border-radius: 12px;
             transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            background: #fff;
         }
 
         .industry-card:hover {
             border-color: #FDB913;
             transform: translateY(-5px);
+            background: #fffdf5;
         }
 
         .industry-card i {
@@ -1431,46 +1435,46 @@
             <p class="section-description" style="text-align: center; max-width: 800px; margin: 0 auto; color: #666;">We match and exceed versatility, ensuring every environment gets the right quartz solution.</p>
 
             <div class="industries-grid">
-                <div class="industry-card">
+                <a href="office-building-countertops" class="industry-card">
                     <i class="bi bi-building"></i>
                     <h4>Office Buildings</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="hotel-resort-countertops" class="industry-card">
                     <i class="bi bi-door-open"></i>
                     <h4>Hotels & Resorts</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="restaurant-cafe-countertops" class="industry-card">
                     <i class="bi bi-cup-hot"></i>
                     <h4>Restaurants & Cafés</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="medical-clinic-countertops" class="industry-card">
                     <i class="bi bi-hospital"></i>
                     <h4>Medical Clinics</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="retail-store-countertops" class="industry-card">
                     <i class="bi bi-shop"></i>
                     <h4>Retail Stores</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="educational-facility-countertops" class="industry-card">
                     <i class="bi bi-mortarboard"></i>
                     <h4>Educational Facilities</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="financial-institution-countertops" class="industry-card">
                     <i class="bi bi-bank"></i>
                     <h4>Financial Institutions</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="multi-unit-residential-countertops" class="industry-card">
                     <i class="bi bi-houses"></i>
                     <h4>Multi-Unit Residential</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="conference-center-countertops" class="industry-card">
                     <i class="bi bi-people"></i>
                     <h4>Conference Centers</h4>
-                </div>
-                <div class="industry-card">
+                </a>
+                <a href="specialty-installation-countertops" class="industry-card">
                     <i class="bi bi-gem"></i>
                     <h4>Specialty Installations</h4>
-                </div>
+                </a>
             </div>
         </div>
     </section>
