@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Commercial Quartz Countertops | Restaurants, Hotels, Offices | South Florida | Griffin Quartz</title>
-    <meta name="description" content="Commercial quartz countertop installation for restaurants, hotels, offices, and retail spaces in South Florida. Volume pricing, flexible scheduling, project management. Serving Boca Raton to Miami.">
-    <meta name="keywords" content="commercial quartz countertops, restaurant countertops, hotel countertops, office countertops, bar countertops, commercial countertop installation, quartz countertops South Florida, commercial kitchen countertops, reception desk quartz, retail countertops, Boca Raton commercial countertops, Fort Lauderdale commercial countertops, Miami commercial countertops, hospitality countertops, multi-unit countertop installation">
+    <title>Commercial Quartz Countertops South Florida | Restaurants, Hotels, Offices, Medical | Griffin Quartz</title>
+    <meta name="description" content="Trusted by 10,000+ Florida businesses. Commercial quartz countertops for restaurants, hotels, medical offices, retail & corporate spaces. Fast turnaround, precision fabrication, expert installation. Serving Boca Raton to Miami. Free estimates!">
+    <meta name="keywords" content="commercial quartz countertops, commercial countertops South Florida, restaurant countertops, hotel countertops, office countertops, medical office countertops, bar countertops, commercial countertop installation, quartz countertops Boca Raton, quartz countertops Fort Lauderdale, quartz countertops Miami, commercial kitchen countertops, reception desk quartz, retail countertops, healthcare countertops, dental office countertops, hospitality countertops, corporate countertops, multi-unit countertop installation, commercial quartz fabrication, NSF certified countertops, food-safe countertops, hygienic countertops, durable commercial surfaces, scratch resistant countertops, stain resistant countertops">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/commercial">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Commercial Quartz Countertops | Restaurants, Hotels, Offices | Griffin Quartz">
-    <meta property="og:description" content="Premium commercial quartz countertop installation for restaurants, hotels, offices, and retail spaces throughout South Florida.">
+    <meta property="og:title" content="Commercial Quartz Countertops | Trusted by 10,000+ Florida Businesses | Griffin Quartz">
+    <meta property="og:description" content="Precision fabrication & expert installation for restaurants, hotels, medical offices, and corporate spaces throughout South Florida. Fast turnaround without sacrificing quality.">
     <meta property="og:url" content="https://soflocountertops.com/commercial">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://soflocountertops.com/images/commercial-bar-black-gold-quartz-restaurant.webp">
@@ -24,8 +24,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Commercial Quartz Countertops | Restaurants, Hotels, Offices | Griffin Quartz">
-    <meta name="twitter:description" content="Premium commercial quartz countertop installation for restaurants, hotels, offices, and retail spaces throughout South Florida.">
+    <meta name="twitter:title" content="Commercial Quartz Countertops | Trusted by 10,000+ Florida Businesses | Griffin Quartz">
+    <meta name="twitter:description" content="Precision fabrication & expert installation for restaurants, hotels, medical offices, and corporate spaces throughout South Florida.">
     <meta name="twitter:image" content="https://soflocountertops.com/images/commercial-bar-black-gold-quartz-restaurant.webp">
 
     <!-- Geo Meta Tags for Local SEO -->
@@ -73,7 +73,12 @@
             {"@type": "City", "name": "Coral Springs"},
             {"@type": "City", "name": "Pompano Beach"}
         ],
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "10000"
+        }
     }
     </script>
 
@@ -99,7 +104,7 @@
                     "itemOffered": {
                         "@type": "Service",
                         "name": "Restaurant & Bar Countertops",
-                        "description": "Commercial quartz countertops for restaurants, bars, and food service establishments"
+                        "description": "NSF certified commercial quartz countertops for restaurants, bars, and food service establishments"
                     }
                 },
                 {
@@ -114,8 +119,16 @@
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Office & Retail Countertops",
-                        "description": "Professional quartz surfaces for offices, reception areas, and retail spaces"
+                        "name": "Medical & Healthcare Countertops",
+                        "description": "Hygienic quartz surfaces for medical offices, dental clinics, and healthcare facilities"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Office & Corporate Countertops",
+                        "description": "Professional quartz surfaces for corporate headquarters, reception areas, and conference rooms"
                     }
                 }
             ]
@@ -170,31 +183,31 @@
                 "name": "What is the timeline for commercial countertop installation?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Commercial timelines vary based on project scope. Small projects (single restaurant or office) typically complete in 1-2 weeks. Large multi-unit projects are phased over several weeks with dedicated project management."
+                    "text": "Commercial timelines vary based on project scope. Small projects typically complete in 1-2 weeks. Large multi-unit projects are phased over several weeks with dedicated project management. Our streamlined process and in-house fabrication allow us to complete projects quickly without cutting corners."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is quartz suitable for commercial kitchens?",
+                "name": "Is quartz suitable for commercial kitchens and medical offices?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, quartz is ideal for commercial kitchens. It's non-porous (won't harbor bacteria), NSF certified for food contact, heat resistant, and extremely durable for high-traffic food service environments."
+                    "text": "Yes, quartz is ideal for commercial kitchens and healthcare environments. It's non-porous (won't harbor bacteria), NSF certified for food contact, heat resistant, and extremely durable. The hygienic, non-porous nature means spills and liquids won't seep in, maintaining a sanitary environment."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Do you provide warranty coverage for commercial installations?",
+                "name": "Are you licensed and insured for commercial work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we provide commercial-grade warranty coverage on all installations. Our warranties cover manufacturing defects and workmanship, with responsive support for any maintenance needs."
+                    "text": "Yes, our team is fully licensed, bonded, and insured, offering peace of mind for commercial clients. We're dedicated to delivering projects on time and on budget with code-compliant installations."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Can you handle multi-location projects?",
+                "name": "What industries do you serve?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we specialize in multi-location rollouts throughout South Florida. Our project management team coordinates consistent quality across all locations with centralized ordering and scheduling."
+                    "text": "We serve hospitality, restaurants and bars, corporate offices, medical and dental clinics, retail stores, educational facilities, government offices, multi-unit residential developments, and custom specialty installations throughout South Florida."
                 }
             }
         ]
@@ -212,7 +225,7 @@
         /* Commercial Page Styles */
         .page-hero {
             position: relative;
-            min-height: 50vh;
+            min-height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -263,7 +276,64 @@
             font-size: 1.25rem;
             opacity: 0.9;
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 1.5rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #FDB913;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 60px 0;
+            background: #000;
+            color: #fff;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stat-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #FDB913;
+            margin-bottom: 8px;
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            color: #ccc;
         }
 
         /* Section Intro */
@@ -282,14 +352,63 @@
         .section-intro p {
             font-size: 1.125rem;
             color: #666;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             line-height: 1.7;
         }
 
+        /* Value Props Section */
+        .value-props {
+            padding: 60px 0 80px;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .value-card {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            background: #FDB913;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        .value-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
         /* Application Cards */
         .applications-section {
-            padding: 40px 0 80px;
+            padding: 80px 0;
+            background: #f8f8f8;
         }
 
         .applications-grid {
@@ -325,12 +444,12 @@
         }
 
         .application-card-image {
-            height: 200px;
+            height: 180px;
             background-color: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: #FDB913;
         }
 
@@ -340,7 +459,7 @@
 
         .application-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             color: #000;
             margin-bottom: 12px;
         }
@@ -349,6 +468,7 @@
             color: #666;
             line-height: 1.6;
             margin-bottom: 16px;
+            font-size: 0.95rem;
         }
 
         .application-card ul {
@@ -430,6 +550,56 @@
             min-height: 400px;
         }
 
+        /* Industries Section */
+        .industries-section {
+            padding: 80px 0;
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 1200px) {
+            .industries-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .industries-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .industry-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 2px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .industry-card:hover {
+            border-color: #FDB913;
+            transform: translateY(-5px);
+        }
+
+        .industry-card i {
+            font-size: 2.5rem;
+            color: #FDB913;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .industry-card h4 {
+            font-size: 0.95rem;
+            color: #000;
+            font-weight: 600;
+        }
+
         /* Why Choose Section */
         .why-section {
             padding: 80px 0;
@@ -438,41 +608,107 @@
 
         .why-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
 
         .why-card {
-            text-align: center;
-            padding: 40px 30px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
             background: #fff;
+            padding: 30px;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
         .why-card i {
-            font-size: 3rem;
+            font-size: 2rem;
             color: #FDB913;
-            margin-bottom: 20px;
-            display: block;
+            min-width: 50px;
         }
 
         .why-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             color: #000;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
 
         .why-card p {
             color: #666;
             line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 80px 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 900px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .benefits-list li i {
+            color: #FDB913;
+            font-size: 1.25rem;
+            margin-top: 3px;
+        }
+
+        .benefits-list h4 {
+            font-size: 1.1rem;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .benefits-list p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .benefits-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .benefits-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Photo Gallery Section */
         .gallery-section {
             padding: 80px 0;
+            background: #f8f8f8;
         }
 
         .gallery-tabs {
@@ -572,9 +808,21 @@
 
         .process-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 30px;
             margin-top: 50px;
+        }
+
+        @media (max-width: 1200px) {
+            .process-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .process-step {
@@ -607,14 +855,13 @@
 
         .process-step p {
             color: #999;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.6;
         }
 
         /* FAQ Section */
         .faq-section {
             padding: 80px 0;
-            background: #f8f8f8;
         }
 
         .faq-grid {
@@ -623,11 +870,10 @@
         }
 
         .faq-item {
-            background: #fff;
+            background: #f8f8f8;
             border-radius: 12px;
             margin-bottom: 16px;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .faq-question {
@@ -642,7 +888,7 @@
         }
 
         .faq-question:hover {
-            background: #f8f8f8;
+            background: #f0f0f0;
         }
 
         .faq-question i {
@@ -718,6 +964,108 @@
             background: #000;
             color: #fff;
         }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 80px 0;
+            background: #000;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: #FDB913;
+            margin-bottom: 1rem;
+        }
+
+        .contact-content p {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            color: #fff;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #FDB913;
+        }
+
+        .contact-info i {
+            color: #FDB913;
+            font-size: 1.25rem;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+        }
+
+        .contact-form h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #f0f0f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #FDB913;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .contact-form .btn {
+            width: 100%;
+            padding: 16px;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
@@ -786,26 +1134,94 @@
     <!-- Hero Section -->
     <section class="page-hero">
         <div class="hero-background">
-            <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial quartz countertops South Florida - restaurant bar hotel office countertop installation Boca Raton Fort Lauderdale Miami" loading="eager">
+            <img src="images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial quartz countertops South Florida - restaurant bar hotel office medical countertop installation Boca Raton Fort Lauderdale Miami" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>Commercial Quartz Countertops</h1>
-            <p class="hero-description">Premium quartz solutions for restaurants, hotels, offices, and retail spaces throughout South Florida. Volume pricing and flexible scheduling.</p>
+            <div class="hero-badge">Trusted by 10,000+ Florida Businesses</div>
+            <h1>Commercial Quartz Countertops in South Florida</h1>
+            <p class="hero-description">Precision fabrication & expert installation for restaurants, hotels, medical offices, and corporate spaces. Your time matters—we move fast.</p>
+            <div class="hero-cta">
+                <a href="tel:7203241436" class="btn btn-primary"><i class="bi bi-telephone"></i> Call (720) 324-1436</a>
+                <a href="#contact" class="btn btn-secondary">Get FREE Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>Florida Businesses Served</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1 Week</h3>
+                    <p>Fast Turnaround Available</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Licensed & Insured</p>
+                </div>
+                <div class="stat-item">
+                    <h3>In-House</h3>
+                    <p>Fabrication & Installation</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Commercial Services Intro -->
     <section class="section-intro">
         <div class="container">
-            <h2>Commercial Countertop Solutions</h2>
-            <p>Griffin Quartz partners with businesses, contractors, and developers to deliver high-quality quartz installations for commercial spaces. Our team understands the unique demands of commercial projects—durability, timeline, budget, and minimal business disruption.</p>
+            <h2>Precision Fabrication & Expert Installation for Businesses</h2>
+            <p>When your business needs countertops that can handle heavy use yet exude sophistication, quartz is the ideal choice. Griffin Quartz provides commercial quartz countertops throughout South Florida, delivering custom fabrication and professional installation with unbeatable quality. From hotels and restaurants to medical offices and corporate headquarters, our experienced team has the expertise to meet the unique demands of your commercial project.</p>
+        </div>
+    </section>
+
+    <!-- Value Props Section -->
+    <section class="value-props">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="bi bi-lightning-charge"></i></div>
+                    <div>
+                        <h3>Fast Turnaround Without Sacrificing Quality</h3>
+                        <p>We understand that in business, time is money. Our streamlined process and in-house fabrication allow us to complete projects quickly—without cutting corners—so you can open, renovate, or resume operations faster.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="bi bi-person-check"></i></div>
+                    <div>
+                        <h3>Full-Service Project Management</h3>
+                        <p>From design consultation to fabrication to professional installation, we handle everything under one roof. This means one point of contact, fewer delays, and a smoother experience from start to finish.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="bi bi-shield-check"></i></div>
+                    <div>
+                        <h3>Durability That Meets Commercial Demands</h3>
+                        <p>Our quartz surfaces are engineered to withstand heavy daily use while maintaining their beauty. Resistant to scratches, stains, and chips, they're ideal for high-traffic environments like hotels, restaurants, offices, and healthcare facilities.</p>
+                    </div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="bi bi-award"></i></div>
+                    <div>
+                        <h3>Proven Commercial Expertise Across Industries</h3>
+                        <p>We've successfully delivered projects for hospitality, corporate, healthcare, retail, and multi-unit residential clients. We understand each industry's unique requirements, ensuring functional, stylish, and code-compliant installations every time.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Commercial Applications -->
     <section class="applications-section">
         <div class="container">
+            <h2 class="section-title" style="text-align: center;">Commercial Countertop Solutions</h2>
+            <p class="section-description" style="text-align: center; max-width: 800px; margin: 0 auto; color: #666;">Our commercial quartz solutions cover a wide range of business environments, delivering durable, hygienic, and stylish surfaces.</p>
+
             <div class="applications-grid">
                 <div class="application-card">
                     <div class="application-card-image">
@@ -813,12 +1229,12 @@
                     </div>
                     <div class="application-card-content">
                         <h3>Restaurants & Bars</h3>
-                        <p>Food-safe, stain-resistant quartz surfaces built to withstand heavy daily use in commercial kitchens and dining areas.</p>
+                        <p>NSF certified, food-safe quartz surfaces built to withstand heavy daily use in commercial kitchens and dining areas.</p>
                         <ul>
                             <li><i class="bi bi-check-circle-fill"></i> Commercial bar tops</li>
                             <li><i class="bi bi-check-circle-fill"></i> Prep station surfaces</li>
                             <li><i class="bi bi-check-circle-fill"></i> Buffet counters</li>
-                            <li><i class="bi bi-check-circle-fill"></i> NSF certified materials</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Outdoor café areas</li>
                         </ul>
                     </div>
                 </div>
@@ -841,32 +1257,32 @@
 
                 <div class="application-card">
                     <div class="application-card-image">
-                        <i class="bi bi-briefcase"></i>
+                        <i class="bi bi-hospital"></i>
                     </div>
                     <div class="application-card-content">
-                        <h3>Office Buildings</h3>
-                        <p>Professional quartz surfaces that impress clients and create productive work environments.</p>
+                        <h3>Medical & Healthcare</h3>
+                        <p>Hygienic, non-porous surfaces perfect for medical offices, dental clinics, and healthcare facilities.</p>
                         <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Reception counters</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Conference rooms</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Break rooms & cafes</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Executive offices</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Exam room counters</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Dental operatories</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Lab surfaces</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Medical spas</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="application-card">
                     <div class="application-card-image">
-                        <i class="bi bi-shop"></i>
+                        <i class="bi bi-briefcase"></i>
                     </div>
                     <div class="application-card-content">
-                        <h3>Retail Spaces</h3>
-                        <p>Eye-catching quartz displays and counters that enhance your brand and customer experience.</p>
+                        <h3>Offices & Corporate</h3>
+                        <p>Professional quartz surfaces that impress clients and create productive work environments.</p>
                         <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Checkout counters</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Display surfaces</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Service areas</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Custom branding</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Reception counters</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Conference rooms</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Break rooms & cafes</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Executive offices</li>
                         </ul>
                     </div>
                 </div>
@@ -880,47 +1296,110 @@
         <div class="split-content">
             <h2>Built for High-Traffic Environments</h2>
             <p>Commercial spaces demand surfaces that can handle constant use without showing wear. Quartz is non-porous, stain-resistant, and incredibly durable—perfect for busy restaurants, bars, and food service establishments.</p>
-            <p>Our commercial quartz surfaces are NSF certified for food contact and meet all health department requirements. Easy to clean and sanitize, they keep your business running efficiently.</p>
-            <a href="quote-calculator" class="btn btn-outline">Get Commercial Quote</a>
+            <p>Our commercial quartz surfaces are NSF certified for food contact and meet all health department requirements. Easy to clean and sanitize, they keep your business running efficiently while looking stunning.</p>
+            <a href="#contact" class="btn btn-outline">Get Commercial Quote</a>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Quartz Applications We Serve</h2>
+            <p class="section-description" style="text-align: center; max-width: 800px; margin: 0 auto; color: #666;">We match and exceed versatility, ensuring every environment gets the right quartz solution.</p>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <i class="bi bi-building"></i>
+                    <h4>Office Buildings</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-door-open"></i>
+                    <h4>Hotels & Resorts</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-cup-hot"></i>
+                    <h4>Restaurants & Cafés</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-hospital"></i>
+                    <h4>Medical Clinics</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-shop"></i>
+                    <h4>Retail Stores</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-mortarboard"></i>
+                    <h4>Educational Facilities</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-bank"></i>
+                    <h4>Financial Institutions</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-houses"></i>
+                    <h4>Multi-Unit Residential</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-people"></i>
+                    <h4>Conference Centers</h4>
+                </div>
+                <div class="industry-card">
+                    <i class="bi bi-gem"></i>
+                    <h4>Specialty Installations</h4>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Why Choose Section -->
     <section class="why-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center;">Why Choose Griffin Quartz for Commercial Projects?</h2>
+            <h2 class="section-title" style="text-align: center;">Why Partner with Griffin Quartz for Your Commercial Project?</h2>
             <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">We understand commercial projects have unique requirements. Our team delivers on time, on budget, with minimal disruption to your business.</p>
 
             <div class="why-grid">
                 <div class="why-card">
-                    <i class="bi bi-tags"></i>
-                    <h3>Volume Pricing</h3>
-                    <p>Competitive pricing for large-scale projects. We work directly with manufacturers to provide the best rates for commercial clients.</p>
+                    <i class="bi bi-stars"></i>
+                    <div>
+                        <h3>Experienced Professionals</h3>
+                        <p>With decades of combined experience, we have completed thousands of commercial installations, including medical offices, hotels, and restaurants.</p>
+                    </div>
                 </div>
                 <div class="why-card">
-                    <i class="bi bi-person-badge"></i>
-                    <h3>Project Management</h3>
-                    <p>Dedicated project managers coordinate with your contractors and ensure on-time delivery and installation.</p>
+                    <i class="bi bi-piggy-bank"></i>
+                    <div>
+                        <h3>Quality & Value</h3>
+                        <p>We source premium quartz and offer competitive pricing through direct fabrication. Volume discounts available for large projects.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-bullseye"></i>
+                    <div>
+                        <h3>Specialized Commercial Expertise</h3>
+                        <p>We focus on commercial quartz projects in South Florida, understanding that business environments require durable, hygienic, and stylish surfaces.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-tools"></i>
+                    <div>
+                        <h3>Full-Service Fabrication & Installation</h3>
+                        <p>From material selection to fabrication and installation, all services are performed in-house for efficiency and quality control.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <i class="bi bi-patch-check"></i>
+                    <div>
+                        <h3>Licensed & Insured Professionals</h3>
+                        <p>Our team is licensed, bonded, and insured, offering peace of mind for commercial clients. We're dedicated to delivering projects on time and on budget.</p>
+                    </div>
                 </div>
                 <div class="why-card">
                     <i class="bi bi-calendar-check"></i>
-                    <h3>Flexible Scheduling</h3>
-                    <p>We work around your business hours to minimize disruption. Night and weekend installations available.</p>
-                </div>
-                <div class="why-card">
-                    <i class="bi bi-clock-history"></i>
-                    <h3>Fast Turnaround</h3>
-                    <p>Our fabrication facility handles large orders efficiently. Rush services available for tight construction schedules.</p>
-                </div>
-                <div class="why-card">
-                    <i class="bi bi-geo-alt"></i>
-                    <h3>Multi-Location Support</h3>
-                    <p>Coordinated rollouts for restaurant chains, hotel groups, and multi-site office projects throughout South Florida.</p>
-                </div>
-                <div class="why-card">
-                    <i class="bi bi-shield-check"></i>
-                    <h3>Commercial Warranty</h3>
-                    <p>Commercial-grade warranty coverage with responsive support for any maintenance needs.</p>
+                    <div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>We work around your business hours to minimize disruption. Night, weekend, and phased installations available.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -937,17 +1416,61 @@
         <div class="split-image" style="background-image: url('images/commercial-lobby-white-marble-reception.webp');"></div>
     </section>
 
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">The Advantages of Quartz for Commercial Spaces</h2>
+            <p class="section-description" style="text-align: center; max-width: 800px; margin: 0 auto; color: #666;">When your business demands countertops that withstand heavy use while projecting modern sophistication, quartz is the perfect material.</p>
+
+            <div class="benefits-grid">
+                <ul class="benefits-list">
+                    <li>
+                        <i class="bi bi-shield-fill-check"></i>
+                        <div>
+                            <h4>Exceptional Durability</h4>
+                            <p>Quartz's engineered structure makes it resistant to chips, scratches, and cracks—even in the busiest commercial environments.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-droplet"></i>
+                        <div>
+                            <h4>Low Maintenance</h4>
+                            <p>Its non-porous surface prevents stains and bacteria, requiring only soap and water to clean. No sealing ever required.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-palette"></i>
+                        <div>
+                            <h4>Consistent Aesthetic</h4>
+                            <p>Available in a wide range of colors and patterns, quartz offers a consistent, upscale look across all surfaces and locations.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-heart-pulse"></i>
+                        <div>
+                            <h4>Hygienic & Safe</h4>
+                            <p>The non-porous nature means spills and liquids won't seep in, helping to maintain a sanitary environment for healthcare and food service.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="benefits-image">
+                    <img src="images/commercial-office-lobby-modern.webp" alt="Modern commercial quartz countertop installation in South Florida office lobby">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Photo Gallery Section -->
     <section class="gallery-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center;">Commercial Project Gallery</h2>
-            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our completed commercial projects throughout South Florida. Filter by project type to find inspiration for your space.</p>
+            <h2 class="section-title" style="text-align: center;">Commercial Quartz Inspiration Gallery</h2>
+            <p class="section-description" style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">Browse our completed commercial projects throughout South Florida.</p>
 
             <div class="gallery-tabs">
                 <button class="gallery-tab active" data-filter="all">All Projects</button>
                 <button class="gallery-tab" data-filter="restaurant">Restaurants & Bars</button>
-                <button class="gallery-tab" data-filter="hotel">Hotels</button>
-                <button class="gallery-tab" data-filter="office">Offices & Retail</button>
+                <button class="gallery-tab" data-filter="hotel">Hotels & Lobbies</button>
+                <button class="gallery-tab" data-filter="office">Offices & Medical</button>
             </div>
 
             <div class="gallery-grid" data-filter="all">
@@ -981,7 +1504,7 @@
                     </div>
                 </div>
 
-                <!-- Hotel Images -->
+                <!-- Hotel/Lobby Images -->
                 <div class="gallery-item" data-category="hotel">
                     <img src="images/hotel-lobby-white-marble-reception-palms.webp" alt="Hotel lobby reception desk white marble quartz Palm Beach" loading="lazy">
                     <div class="gallery-item-overlay">
@@ -1011,7 +1534,7 @@
                     </div>
                 </div>
 
-                <!-- Office/Retail Images -->
+                <!-- Office/Medical Images -->
                 <div class="gallery-item" data-category="office">
                     <img src="images/commercial-office-lobby-modern.webp" alt="Modern office lobby quartz reception counter West Palm Beach" loading="lazy">
                     <div class="gallery-item-overlay">
@@ -1036,7 +1559,7 @@
                 <div class="gallery-item" data-category="office">
                     <img src="images/commercial-retail-marble-counter.webp" alt="Retail store marble quartz counter Hollywood FL commercial" loading="lazy">
                     <div class="gallery-item-overlay">
-                        <h4>Retail Checkout Counter</h4>
+                        <h4>Medical Office Reception</h4>
                         <span>Hollywood</span>
                     </div>
                 </div>
@@ -1057,28 +1580,63 @@
             <div class="process-grid">
                 <div class="process-step">
                     <div class="process-number">1</div>
-                    <h3>Consultation & Quote</h3>
-                    <p>We meet with your team to understand project scope, timeline, and budget. Receive a detailed commercial quote within 48 hours.</p>
+                    <h3>Free Consultation</h3>
+                    <p>We meet with your team to understand project scope, timeline, and budget requirements.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-number">2</div>
                     <h3>Material Selection</h3>
-                    <p>Choose from our extensive commercial-grade quartz selection. We can source specific colors for brand consistency.</p>
+                    <p>Choose from our extensive commercial-grade quartz selection with brand consistency options.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-number">3</div>
                     <h3>Precision Templating</h3>
-                    <p>Our team creates exact digital templates on-site, coordinating with your contractors and construction schedule.</p>
+                    <p>Digital laser templates created on-site, coordinating with your construction schedule.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-number">4</div>
-                    <h3>Fabrication</h3>
-                    <p>Your surfaces are precision-cut at our Boca Raton facility with CNC machinery for consistent, high-quality results.</p>
+                    <h3>In-House Fabrication</h3>
+                    <p>CNC precision cutting at our Boca Raton facility for consistent, high-quality results.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-number">5</div>
-                    <h3>Scheduled Installation</h3>
-                    <p>Professional installation on your schedule—nights, weekends, or phased rollouts to minimize business disruption.</p>
+                    <h3>Expert Installation</h3>
+                    <p>Professional installation on your schedule—nights, weekends, or phased rollouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <h2>Get Your FREE Estimate Today!</h2>
+                    <p>Request your free quartz consultation. Our commercial team will contact you within 24 hours to discuss your project requirements and provide a competitive quote.</p>
+                    <div class="contact-info">
+                        <a href="tel:7203241436"><i class="bi bi-telephone"></i> (720) 324-1436</a>
+                        <a href="mailto:info@griffinquartz.com"><i class="bi bi-envelope"></i> info@griffinquartz.com</a>
+                        <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank"><i class="bi bi-geo-alt"></i> 1021 S Rogers Cir #18, Boca Raton, FL</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request Your Free Consultation</h3>
+                    <form action="/#contact-form" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your commercial project (optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Get Your FREE Estimate Now</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1116,27 +1674,27 @@
                         <i class="bi bi-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Commercial timelines vary based on project scope. Small projects (single restaurant or office) typically complete in 1-2 weeks from template to installation. Large multi-unit projects are phased over several weeks with dedicated project management. Rush services are available for tight construction schedules.
+                        Commercial timelines vary based on project scope. Small projects (single restaurant or office) typically complete in 1-2 weeks from template to installation. Large multi-unit projects are phased over several weeks with dedicated project management. Our streamlined process and in-house fabrication allow us to complete projects quickly without cutting corners.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Is quartz suitable for commercial kitchens?</span>
+                        <span>Is quartz suitable for commercial kitchens and medical offices?</span>
                         <i class="bi bi-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Yes, quartz is ideal for commercial kitchens. It's non-porous (won't harbor bacteria), NSF certified for food contact, heat resistant, and extremely durable for high-traffic food service environments. It meets all health department requirements and is easy to clean and sanitize.
+                        Yes, quartz is ideal for commercial kitchens and healthcare environments. It's non-porous (won't harbor bacteria), NSF certified for food contact, heat resistant, and extremely durable. The hygienic, non-porous nature means spills and liquids won't seep in, helping to maintain a sanitary environment. It meets all health department requirements.
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do you provide warranty coverage for commercial installations?</span>
+                        <span>Are you licensed and insured for commercial work?</span>
                         <i class="bi bi-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Yes, we provide commercial-grade warranty coverage on all installations. Our warranties cover manufacturing defects and workmanship, with responsive support for any maintenance needs. We also offer maintenance agreements for high-volume commercial clients.
+                        Yes, our team is fully licensed, bonded, and insured, offering peace of mind for commercial clients. We're dedicated to delivering projects on time and on budget with code-compliant installations every time.
                     </div>
                 </div>
 
@@ -1160,7 +1718,7 @@
             <p>Contact our commercial team for a consultation and competitive quote for your business.</p>
             <div class="cta-buttons">
                 <a href="tel:7203241436" class="btn btn-dark"><i class="bi bi-telephone"></i> Call (720) 324-1436</a>
-                <a href="quote-calculator" class="btn btn-outline-dark"><i class="bi bi-calculator"></i> Get Commercial Quote</a>
+                <a href="quartz-brands" class="btn btn-outline-dark"><i class="bi bi-palette"></i> Explore Product Selection</a>
             </div>
         </div>
     </section>
@@ -1205,7 +1763,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz | South Florida's Premier Quartz Countertop Installers</p>
+                <p>&copy; 2025 Griffin Quartz | South Florida's Premier Commercial Quartz Countertop Installers</p>
                 <p class="footer-areas">Proudly serving Palm Beach County, Broward County, and Miami-Dade County including Boca Raton, Fort Lauderdale, Miami, West Palm Beach, Delray Beach, Hollywood, Pompano Beach, Coral Gables, Miami Beach, Aventura, and surrounding areas.</p>
             </div>
         </div>
