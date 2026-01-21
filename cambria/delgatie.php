@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-delgatie-large.webp" alt="Cambria Delgatie sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/delgatie.jpg" alt="Cambria Delgatie sample"></div>
                 <div class="swatch-label"><h3>Delgatie</h3><p>Cambria Warm Neutrals</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Warm Neutral Designs</h2></div>
             <div class="related-grid">
-                <a href="weybourne" class="related-card"><div class="related-card-image"><img src="../images/swatch-weybourne.webp" alt="Weybourne"></div><div class="related-card-content"><h3>Weybourne</h3></div></a>
-                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/swatch-ella.webp" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
-                <a href="berwyn" class="related-card"><div class="related-card-image"><img src="../images/swatch-berwyn.webp" alt="Berwyn"></div><div class="related-card-content"><h3>Berwyn</h3></div></a>
-                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
+                <a href="weybourne" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-weybourne.jpg" alt="Weybourne"></div><div class="related-card-content"><h3>Weybourne</h3></div></a>
+                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ella.jpg" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
+                <a href="berwyn" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-berwyn.jpg" alt="Berwyn"></div><div class="related-card-content"><h3>Berwyn</h3></div></a>
+                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
             </div>
         </div>
     </section>

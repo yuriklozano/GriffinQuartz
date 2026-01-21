@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-inverness-frost-large.webp" alt="Cambria Inverness Frost sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/inverness-frost.jpg" alt="Cambria Inverness Frost sample"></div>
                 <div class="swatch-label"><h3>Inverness Frost</h3><p>Cambria Signature Series</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Popular Designs</h2></div>
             <div class="related-grid">
-                <a href="brittanicca" class="related-card"><div class="related-card-image"><img src="../images/swatch-brittanicca.webp" alt="Brittanicca"></div><div class="related-card-content"><h3>Brittanicca</h3></div></a>
-                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/swatch-ella.webp" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
-                <a href="swanbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-swanbridge.webp" alt="Swanbridge"></div><div class="related-card-content"><h3>Swanbridge</h3></div></a>
-                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
+                <a href="brittanicca" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-brittanicca.jpg" alt="Brittanicca"></div><div class="related-card-content"><h3>Brittanicca</h3></div></a>
+                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ella.jpg" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
+                <a href="swanbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-swanbridge.jpg" alt="Swanbridge"></div><div class="related-card-content"><h3>Swanbridge</h3></div></a>
+                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
             </div>
         </div>
     </section>

@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-inverness-gold-large.webp" alt="Cambria Inverness Gold sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/inverness-gold.jpg" alt="Cambria Inverness Gold sample"></div>
                 <div class="swatch-label"><h3>Inverness Gold</h3><p>Cambria Inverness Collection</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Related Inverness Designs</h2></div>
             <div class="related-grid">
-                <a href="inverness-frost" class="related-card"><div class="related-card-image"><img src="../images/swatch-inverness-frost.webp" alt="Inverness Frost"></div><div class="related-card-content"><h3>Inverness Frost</h3></div></a>
-                <a href="brittanicca-gold" class="related-card"><div class="related-card-image"><img src="../images/swatch-brittanicca-gold.webp" alt="Brittanicca Gold"></div><div class="related-card-content"><h3>Brittanicca Gold</h3></div></a>
-                <a href="clareanne" class="related-card"><div class="related-card-image"><img src="../images/swatch-clareanne.webp" alt="Clareanne"></div><div class="related-card-content"><h3>Clareanne</h3></div></a>
-                <a href="oakleigh" class="related-card"><div class="related-card-image"><img src="../images/swatch-oakleigh.webp" alt="Oakleigh"></div><div class="related-card-content"><h3>Oakleigh</h3></div></a>
+                <a href="inverness-frost" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-inverness-frost.jpg" alt="Inverness Frost"></div><div class="related-card-content"><h3>Inverness Frost</h3></div></a>
+                <a href="brittanicca-gold" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-brittanicca-gold.jpg" alt="Brittanicca Gold"></div><div class="related-card-content"><h3>Brittanicca Gold</h3></div></a>
+                <a href="clareanne" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-clareanne.jpg" alt="Clareanne"></div><div class="related-card-content"><h3>Clareanne</h3></div></a>
+                <a href="oakleigh" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-oakleigh.jpg" alt="Oakleigh"></div><div class="related-card-content"><h3>Oakleigh</h3></div></a>
             </div>
         </div>
     </section>

@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-ivybridge-large.webp" alt="Cambria Ivybridge sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/ivybridge.jpg" alt="Cambria Ivybridge sample"></div>
                 <div class="swatch-label"><h3>Ivybridge</h3><p>Cambria Nature Collection</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Nature-Inspired Designs</h2></div>
             <div class="related-grid">
-                <a href="sutherland" class="related-card"><div class="related-card-image"><img src="../images/swatch-sutherland.webp" alt="Sutherland"></div><div class="related-card-content"><h3>Sutherland</h3></div></a>
-                <a href="skara-brae" class="related-card"><div class="related-card-image"><img src="../images/swatch-skara-brae.webp" alt="Skara Brae"></div><div class="related-card-content"><h3>Skara Brae</h3></div></a>
-                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
-                <a href="berwyn" class="related-card"><div class="related-card-image"><img src="../images/swatch-berwyn.webp" alt="Berwyn"></div><div class="related-card-content"><h3>Berwyn</h3></div></a>
+                <a href="sutherland" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-sutherland.jpg" alt="Sutherland"></div><div class="related-card-content"><h3>Sutherland</h3></div></a>
+                <a href="skara-brae" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-skara-brae.jpg" alt="Skara Brae"></div><div class="related-card-content"><h3>Skara Brae</h3></div></a>
+                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
+                <a href="berwyn" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-berwyn.jpg" alt="Berwyn"></div><div class="related-card-content"><h3>Berwyn</h3></div></a>
             </div>
         </div>
     </section>

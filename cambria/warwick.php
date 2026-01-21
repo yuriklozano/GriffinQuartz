@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-warwick-large.webp" alt="Cambria Warwick sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/warwick.jpg" alt="Cambria Warwick sample"></div>
                 <div class="swatch-label"><h3>Warwick</h3><p>Cambria Classic Series</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Classic Designs</h2></div>
             <div class="related-grid">
-                <a href="torquay" class="related-card"><div class="related-card-image"><img src="../images/swatch-torquay.webp" alt="Torquay"></div><div class="related-card-content"><h3>Torquay</h3></div></a>
-                <a href="berwyn" class="related-card"><div class="related-card-image"><img src="../images/swatch-berwyn.webp" alt="Berwyn"></div><div class="related-card-content"><h3>Berwyn</h3></div></a>
-                <a href="montgomery" class="related-card"><div class="related-card-image"><img src="../images/swatch-montgomery.webp" alt="Montgomery"></div><div class="related-card-content"><h3>Montgomery</h3></div></a>
-                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/swatch-ella.webp" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
+                <a href="torquay" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-torquay.jpg" alt="Torquay"></div><div class="related-card-content"><h3>Torquay</h3></div></a>
+                <a href="berwyn" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-berwyn.jpg" alt="Berwyn"></div><div class="related-card-content"><h3>Berwyn</h3></div></a>
+                <a href="montgomery" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-montgomery.jpg" alt="Montgomery"></div><div class="related-card-content"><h3>Montgomery</h3></div></a>
+                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ella.jpg" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
             </div>
         </div>
     </section>

@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-berwyn-large.webp" alt="Cambria Berwyn sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/berwyn.jpg" alt="Cambria Berwyn sample"></div>
                 <div class="swatch-label"><h3>Berwyn</h3><p>Cambria Classic Collection</p></div>
             </div>
         </div>
@@ -114,10 +114,10 @@
         <div class="container">
             <div class="related-header"><h2>Similar Neutral Designs</h2></div>
             <div class="related-grid">
-                <a href="summerhill" class="related-card"><div class="related-card-image"><img src="../images/swatch-summerhill.webp" alt="Summerhill"></div><div class="related-card-content"><h3>Summerhill</h3></div></a>
-                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
-                <a href="montgomery" class="related-card"><div class="related-card-image"><img src="../images/swatch-montgomery.webp" alt="Montgomery"></div><div class="related-card-content"><h3>Montgomery</h3></div></a>
-                <a href="delgatie" class="related-card"><div class="related-card-image"><img src="../images/swatch-delgatie.webp" alt="Delgatie"></div><div class="related-card-content"><h3>Delgatie</h3></div></a>
+                <a href="summerhill" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-summerhill.jpg" alt="Summerhill"></div><div class="related-card-content"><h3>Summerhill</h3></div></a>
+                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
+                <a href="montgomery" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-montgomery.jpg" alt="Montgomery"></div><div class="related-card-content"><h3>Montgomery</h3></div></a>
+                <a href="delgatie" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-delgatie.jpg" alt="Delgatie"></div><div class="related-card-content"><h3>Delgatie</h3></div></a>
             </div>
         </div>
     </section>

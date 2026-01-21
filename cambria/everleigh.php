@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-everleigh-large.webp" alt="Cambria Everleigh sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/everleigh.jpg" alt="Cambria Everleigh sample"></div>
                 <div class="swatch-label"><h3>Everleigh</h3><p>Cambria Signature Collection</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Top Sellers</h2></div>
             <div class="related-grid">
-                <a href="inverness-frost" class="related-card"><div class="related-card-image"><img src="../images/swatch-inverness-frost.webp" alt="Inverness Frost"></div><div class="related-card-content"><h3>Inverness Frost (#1)</h3></div></a>
-                <a href="brittanicca-gold" class="related-card"><div class="related-card-image"><img src="../images/swatch-brittanicca-gold.webp" alt="Brittanicca Gold"></div><div class="related-card-content"><h3>Brittanicca Gold (#2)</h3></div></a>
-                <a href="lakedale" class="related-card"><div class="related-card-image"><img src="../images/swatch-lakedale.webp" alt="Lakedale"></div><div class="related-card-content"><h3>Lakedale (#3)</h3></div></a>
-                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
+                <a href="inverness-frost" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-inverness-frost.jpg" alt="Inverness Frost"></div><div class="related-card-content"><h3>Inverness Frost (#1)</h3></div></a>
+                <a href="brittanicca-gold" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-brittanicca-gold.jpg" alt="Brittanicca Gold"></div><div class="related-card-content"><h3>Brittanicca Gold (#2)</h3></div></a>
+                <a href="lakedale" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-lakedale.jpg" alt="Lakedale"></div><div class="related-card-content"><h3>Lakedale (#3)</h3></div></a>
+                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
             </div>
         </div>
     </section>

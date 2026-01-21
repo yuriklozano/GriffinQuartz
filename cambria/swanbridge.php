@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-swanbridge-large.webp" alt="Cambria Swanbridge sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/swanbridge.jpg" alt="Cambria Swanbridge sample"></div>
                 <div class="swatch-label"><h3>Swanbridge</h3><p>Cambria Marble Collection</p></div>
             </div>
         </div>
@@ -117,10 +117,10 @@
         <div class="container">
             <div class="related-header"><h2>You May Also Like</h2></div>
             <div class="related-grid">
-                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/swatch-ella.webp" alt="Ella" loading="lazy"></div><div class="related-card-content"><h3>Ella</h3></div></a>
-                <a href="brittanicca" class="related-card"><div class="related-card-image"><img src="../images/swatch-brittanicca.webp" alt="Brittanicca" loading="lazy"></div><div class="related-card-content"><h3>Brittanicca</h3></div></a>
-                <a href="weybourne" class="related-card"><div class="related-card-image"><img src="../images/swatch-weybourne.webp" alt="Weybourne" loading="lazy"></div><div class="related-card-content"><h3>Weybourne</h3></div></a>
-                <a href="torquay" class="related-card"><div class="related-card-image"><img src="../images/swatch-torquay.webp" alt="Torquay" loading="lazy"></div><div class="related-card-content"><h3>Torquay</h3></div></a>
+                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ella.jpg" alt="Ella" loading="lazy"></div><div class="related-card-content"><h3>Ella</h3></div></a>
+                <a href="brittanicca" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-brittanicca.jpg" alt="Brittanicca" loading="lazy"></div><div class="related-card-content"><h3>Brittanicca</h3></div></a>
+                <a href="weybourne" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-weybourne.jpg" alt="Weybourne" loading="lazy"></div><div class="related-card-content"><h3>Weybourne</h3></div></a>
+                <a href="torquay" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-torquay.jpg" alt="Torquay" loading="lazy"></div><div class="related-card-content"><h3>Torquay</h3></div></a>
             </div>
         </div>
     </section>

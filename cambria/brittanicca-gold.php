@@ -392,7 +392,7 @@
 
             <div class="product-swatch-showcase">
                 <div class="main-swatch">
-                    <img src="../images/swatch-brittanicca-gold-large.webp" alt="Cambria Brittanicca Gold quartz sample">
+                    <img src="../images/cambria-products/brittanicca-gold.jpg" alt="Cambria Brittanicca Gold quartz sample">
                 </div>
                 <div class="swatch-label">
                     <h3>Brittanicca Gold</h3>
@@ -473,7 +473,7 @@
             <div class="related-grid">
                 <a href="brittanicca" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-brittanicca.webp" alt="Brittanicca" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca.jpg" alt="Brittanicca" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Brittanicca</h3>
@@ -481,7 +481,7 @@
                 </a>
                 <a href="brittanicca-warm" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-brittanicca-warm.webp" alt="Brittanicca Warm" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca-warm.jpg" alt="Brittanicca Warm" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Brittanicca Warm</h3>
@@ -489,7 +489,7 @@
                 </a>
                 <a href="ironsbridge" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Ironsbridge</h3>
@@ -497,7 +497,7 @@
                 </a>
                 <a href="summerhill" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-summerhill.webp" alt="Summerhill" loading="lazy">
+                        <img src="../images/cambria-products/swatch-summerhill.jpg" alt="Summerhill" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Summerhill</h3>

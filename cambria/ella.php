@@ -311,7 +311,7 @@
 
             <div class="product-swatch-showcase">
                 <div class="main-swatch">
-                    <img src="../images/swatch-ella-large.webp" alt="Cambria Ella quartz sample">
+                    <img src="../images/cambria-products/ella.jpg" alt="Cambria Ella quartz sample">
                 </div>
                 <div class="swatch-label">
                     <h3>Ella</h3>
@@ -393,7 +393,7 @@
             <div class="related-grid">
                 <a href="swanbridge" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-swanbridge.webp" alt="Swanbridge" loading="lazy">
+                        <img src="../images/cambria-products/swatch-swanbridge.jpg" alt="Swanbridge" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Swanbridge</h3>
@@ -401,7 +401,7 @@
                 </a>
                 <a href="brittanicca" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-brittanicca.webp" alt="Brittanicca" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca.jpg" alt="Brittanicca" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Brittanicca</h3>
@@ -409,7 +409,7 @@
                 </a>
                 <a href="weybourne" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-weybourne.webp" alt="Weybourne" loading="lazy">
+                        <img src="../images/cambria-products/swatch-weybourne.jpg" alt="Weybourne" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Weybourne</h3>
@@ -417,7 +417,7 @@
                 </a>
                 <a href="torquay" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-torquay.webp" alt="Torquay" loading="lazy">
+                        <img src="../images/cambria-products/swatch-torquay.jpg" alt="Torquay" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Torquay</h3>

@@ -704,7 +704,7 @@
 
             <div class="product-swatch-showcase">
                 <div class="main-swatch">
-                    <img src="../images/swatch-brittanicca-large.webp" alt="Cambria Brittanicca quartz sample">
+                    <img src="../images/cambria-products/brittanicca.jpg" alt="Cambria Brittanicca quartz sample">
                 </div>
                 <div class="swatch-label">
                     <h3>Brittanicca</h3>
@@ -860,7 +860,7 @@
             <div class="related-grid">
                 <a href="brittanicca-gold" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-brittanicca-gold.webp" alt="Brittanicca Gold" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca-gold.jpg" alt="Brittanicca Gold" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Brittanicca Gold</h3>
@@ -868,7 +868,7 @@
                 </a>
                 <a href="brittanicca-warm" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-brittanicca-warm.webp" alt="Brittanicca Warm" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca-warm.jpg" alt="Brittanicca Warm" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Brittanicca Warm</h3>
@@ -876,7 +876,7 @@
                 </a>
                 <a href="ella" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-ella.webp" alt="Ella" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ella.jpg" alt="Ella" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Ella</h3>
@@ -884,7 +884,7 @@
                 </a>
                 <a href="swanbridge" class="related-card">
                     <div class="related-card-image">
-                        <img src="../images/swatch-swanbridge.webp" alt="Swanbridge" loading="lazy">
+                        <img src="../images/cambria-products/swatch-swanbridge.jpg" alt="Swanbridge" loading="lazy">
                     </div>
                     <div class="related-card-content">
                         <h3>Swanbridge</h3>

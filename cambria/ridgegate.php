@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-ridgegate-large.webp" alt="Cambria Ridgegate sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/ridgegate.jpg" alt="Cambria Ridgegate sample"></div>
                 <div class="swatch-label"><h3>Ridgegate</h3><p>Cambria Neutral Collection</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Versatile Neutrals</h2></div>
             <div class="related-grid">
-                <a href="lakedale" class="related-card"><div class="related-card-image"><img src="../images/swatch-lakedale.webp" alt="Lakedale"></div><div class="related-card-content"><h3>Lakedale</h3></div></a>
-                <a href="everleigh" class="related-card"><div class="related-card-image"><img src="../images/swatch-everleigh.webp" alt="Everleigh"></div><div class="related-card-content"><h3>Everleigh</h3></div></a>
-                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
-                <a href="sandgate" class="related-card"><div class="related-card-image"><img src="../images/swatch-sandgate.webp" alt="Sandgate"></div><div class="related-card-content"><h3>Sandgate</h3></div></a>
+                <a href="lakedale" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-lakedale.jpg" alt="Lakedale"></div><div class="related-card-content"><h3>Lakedale</h3></div></a>
+                <a href="everleigh" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-everleigh.jpg" alt="Everleigh"></div><div class="related-card-content"><h3>Everleigh</h3></div></a>
+                <a href="ironsbridge" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge"></div><div class="related-card-content"><h3>Ironsbridge</h3></div></a>
+                <a href="sandgate" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-sandgate.jpg" alt="Sandgate"></div><div class="related-card-content"><h3>Sandgate</h3></div></a>
             </div>
         </div>
     </section>

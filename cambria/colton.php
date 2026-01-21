@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="product-swatch-showcase" style="position:relative">
-                <div class="main-swatch"><img src="../images/swatch-colton-large.webp" alt="Cambria Colton sample"></div>
+                <div class="main-swatch"><img src="../images/cambria-products/colton.jpg" alt="Cambria Colton sample"></div>
                 <div class="swatch-label"><h3>Colton</h3><p>Cambria Clean Whites</p></div>
             </div>
         </div>
@@ -112,10 +112,10 @@
         <div class="container">
             <div class="related-header"><h2>Other Clean White Designs</h2></div>
             <div class="related-grid">
-                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/swatch-ella.webp" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
-                <a href="winterbourne" class="related-card"><div class="related-card-image"><img src="../images/swatch-winterbourne.webp" alt="Winterbourne"></div><div class="related-card-content"><h3>Winterbourne</h3></div></a>
-                <a href="ainsley" class="related-card"><div class="related-card-image"><img src="../images/swatch-ainsley.webp" alt="Ainsley"></div><div class="related-card-content"><h3>Ainsley</h3></div></a>
-                <a href="inverness-frost" class="related-card"><div class="related-card-image"><img src="../images/swatch-inverness-frost.webp" alt="Inverness Frost"></div><div class="related-card-content"><h3>Inverness Frost</h3></div></a>
+                <a href="ella" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ella.jpg" alt="Ella"></div><div class="related-card-content"><h3>Ella</h3></div></a>
+                <a href="winterbourne" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-winterbourne.jpg" alt="Winterbourne"></div><div class="related-card-content"><h3>Winterbourne</h3></div></a>
+                <a href="ainsley" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-ainsley.jpg" alt="Ainsley"></div><div class="related-card-content"><h3>Ainsley</h3></div></a>
+                <a href="inverness-frost" class="related-card"><div class="related-card-image"><img src="../images/cambria-products/swatch-inverness-frost.jpg" alt="Inverness Frost"></div><div class="related-card-content"><h3>Inverness Frost</h3></div></a>
             </div>
         </div>
     </section>
