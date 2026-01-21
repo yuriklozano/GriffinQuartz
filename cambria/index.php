@@ -1016,7 +1016,7 @@
 
             <div class="categories-grid">
                 <div class="category-card">
-                    <img src="../images/category-marble-look.webp" alt="Marble look quartz countertops" loading="lazy">
+                    <img src="../images/cambria-products/brittanicca.jpg" alt="Marble look quartz countertops" loading="lazy">
                     <div class="category-overlay">
                         <h3>Marble Look</h3>
                         <p>Elegant veining patterns that capture the beauty of natural marble</p>
@@ -1024,7 +1024,7 @@
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="../images/category-warm-neutrals.webp" alt="Warm neutral quartz countertops" loading="lazy">
+                    <img src="../images/cambria-products/ironsbridge.jpg" alt="Warm neutral quartz countertops" loading="lazy">
                     <div class="category-overlay">
                         <h3>Warm Neutrals</h3>
                         <p>Beige, taupe and cream tones for inviting, cozy spaces</p>
@@ -1032,7 +1032,7 @@
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="../images/category-bold-dark.webp" alt="Dark quartz countertops" loading="lazy">
+                    <img src="../images/cambria-products/blackbrook.jpg" alt="Dark quartz countertops" loading="lazy">
                     <div class="category-overlay">
                         <h3>Bold & Dark</h3>
                         <p>Dramatic blacks and deep tones for striking statements</p>
