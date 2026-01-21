@@ -1730,6 +1730,15 @@ h1, h2, h3, h4, h5, h6 {
     .nav-link {
         display: block;
         padding: 1rem 0;
+        color: var(--color-primary);
+    }
+
+    .nav-link:hover {
+        color: var(--color-accent);
+    }
+
+    .phone-link {
+        color: var(--color-accent);
     }
     
     .dropdown-menu {

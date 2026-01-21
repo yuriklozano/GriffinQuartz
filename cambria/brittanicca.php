@@ -627,24 +627,30 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Cambria Designs</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../cambria">All Cambria Designs</a></li>
-                            <li><a href="brittanicca">Brittanicca</a></li>
-                            <li><a href="ironsbridge">Ironsbridge</a></li>
-                            <li><a href="ella">Ella</a></li>
-                            <li><a href="swanbridge">Swanbridge</a></li>
-                            <li><a href="portrush">Portrush</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Installation Locations</a>
                         <ul class="dropdown-menu">
                             <li><a href="../locations">All Service Areas</a></li>
+                            <li><a href="../south-florida">South Florida</a></li>
                             <li><a href="../boca-raton">Boca Raton, FL</a></li>
+                            <li><a href="../boynton-beach">Boynton Beach, FL</a></li>
+                            <li><a href="../coconut-creek">Coconut Creek, FL</a></li>
+                            <li><a href="../coral-springs">Coral Springs, FL</a></li>
+                            <li><a href="../deerfield-beach">Deerfield Beach, FL</a></li>
+                            <li><a href="../delray-beach">Delray Beach, FL</a></li>
                             <li><a href="../fort-lauderdale">Fort Lauderdale, FL</a></li>
+                            <li><a href="../hollywood">Hollywood, FL</a></li>
                             <li><a href="../miami">Miami, FL</a></li>
+                            <li><a href="../parkland">Parkland, FL</a></li>
+                            <li><a href="../pompano-beach">Pompano Beach, FL</a></li>
                             <li><a href="../west-palm-beach">West Palm Beach, FL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../color-visualizer">Color Visualizer</a></li>
+                            <li><a href="../space-design-tool">Space Design Tool</a></li>
+                            <li><a href="../quote-calculator">Instant Quote Calculator</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="../gallery" class="nav-link">Inspiration Gallery</a></li>
