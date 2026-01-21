@@ -913,7 +913,7 @@
             <div class="designs-grid">
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-brittanicca.webp" alt="Cambria Brittanicca quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-brittanicca.jpg" alt="Cambria Brittanicca quartz countertop" loading="lazy">
                         <span class="design-card-badge">Best Seller</span>
                     </div>
                     <div class="design-card-content">
@@ -925,7 +925,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-ironsbridge.webp" alt="Cambria Ironsbridge quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-ironsbridge.jpg" alt="Cambria Ironsbridge quartz countertop" loading="lazy">
                         <span class="design-card-badge">Popular</span>
                     </div>
                     <div class="design-card-content">
@@ -937,7 +937,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-ella.webp" alt="Cambria Ella quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-ella.jpg" alt="Cambria Ella quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Ella</h3>
@@ -948,7 +948,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-portrush.webp" alt="Cambria Portrush quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-portrush.jpg" alt="Cambria Portrush quartz countertop" loading="lazy">
                         <span class="design-card-badge">New</span>
                     </div>
                     <div class="design-card-content">
@@ -960,7 +960,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-swanbridge.webp" alt="Cambria Swanbridge quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-swanbridge.jpg" alt="Cambria Swanbridge quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Swanbridge</h3>
@@ -971,7 +971,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-brittanicca-gold.webp" alt="Cambria Brittanicca Gold quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-brittanicca-gold.jpg" alt="Cambria Brittanicca Gold quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Brittanicca Gold</h3>
@@ -982,7 +982,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-inverness-frost.webp" alt="Cambria Inverness Frost quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-inverness-frost.jpg" alt="Cambria Inverness Frost quartz countertop" loading="lazy">
                         <span class="design-card-badge">#1 Seller</span>
                     </div>
                     <div class="design-card-content">
@@ -994,7 +994,7 @@
 
                 <div class="design-card">
                     <div class="design-card-image">
-                        <img src="../images/cambria-blackpool.webp" alt="Cambria Blackpool quartz countertop" loading="lazy">
+                        <img src="../images/cambria-products/cambria-blackpool.jpg" alt="Cambria Blackpool quartz countertop" loading="lazy">
                     </div>
                     <div class="design-card-content">
                         <h3>Blackpool</h3>
@@ -1054,7 +1054,7 @@
             <div class="all-designs-grid">
                 <a href="brittanicca" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-brittanicca.webp" alt="Brittanicca" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca.jpg" alt="Brittanicca" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Brittanicca</h4>
@@ -1062,7 +1062,7 @@
                 </a>
                 <a href="brittanicca-gold" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-brittanicca-gold.webp" alt="Brittanicca Gold" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca-gold.jpg" alt="Brittanicca Gold" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Brittanicca Gold</h4>
@@ -1070,7 +1070,7 @@
                 </a>
                 <a href="brittanicca-warm" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-brittanicca-warm.webp" alt="Brittanicca Warm" loading="lazy">
+                        <img src="../images/cambria-products/swatch-brittanicca-warm.jpg" alt="Brittanicca Warm" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Brittanicca Warm</h4>
@@ -1078,7 +1078,7 @@
                 </a>
                 <a href="ironsbridge" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-ironsbridge.webp" alt="Ironsbridge" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ironsbridge.jpg" alt="Ironsbridge" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ironsbridge</h4>
@@ -1086,7 +1086,7 @@
                 </a>
                 <a href="ella" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-ella.webp" alt="Ella" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ella.jpg" alt="Ella" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ella</h4>
@@ -1094,7 +1094,7 @@
                 </a>
                 <a href="swanbridge" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-swanbridge.webp" alt="Swanbridge" loading="lazy">
+                        <img src="../images/cambria-products/swatch-swanbridge.jpg" alt="Swanbridge" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Swanbridge</h4>
@@ -1102,7 +1102,7 @@
                 </a>
                 <a href="portrush" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-portrush.webp" alt="Portrush" loading="lazy">
+                        <img src="../images/cambria-products/swatch-portrush.jpg" alt="Portrush" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Portrush</h4>
@@ -1110,7 +1110,7 @@
                 </a>
                 <a href="inverness-frost" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-inverness-frost.webp" alt="Inverness Frost" loading="lazy">
+                        <img src="../images/cambria-products/swatch-inverness-frost.jpg" alt="Inverness Frost" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Inverness Frost</h4>
@@ -1118,7 +1118,7 @@
                 </a>
                 <a href="montgomery" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-montgomery.webp" alt="Montgomery" loading="lazy">
+                        <img src="../images/cambria-products/swatch-montgomery.jpg" alt="Montgomery" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Montgomery</h4>
@@ -1126,7 +1126,7 @@
                 </a>
                 <a href="summerhill" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-summerhill.webp" alt="Summerhill" loading="lazy">
+                        <img src="../images/cambria-products/swatch-summerhill.jpg" alt="Summerhill" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Summerhill</h4>
@@ -1134,7 +1134,7 @@
                 </a>
                 <a href="delgatie" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-delgatie.webp" alt="Delgatie" loading="lazy">
+                        <img src="../images/cambria-products/swatch-delgatie.jpg" alt="Delgatie" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Delgatie</h4>
@@ -1142,7 +1142,7 @@
                 </a>
                 <a href="weybourne" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-weybourne.webp" alt="Weybourne" loading="lazy">
+                        <img src="../images/cambria-products/swatch-weybourne.jpg" alt="Weybourne" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Weybourne</h4>
@@ -1150,7 +1150,7 @@
                 </a>
                 <a href="blackpool" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-blackpool.webp" alt="Blackpool" loading="lazy">
+                        <img src="../images/cambria-products/swatch-blackpool.jpg" alt="Blackpool" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Blackpool</h4>
@@ -1158,7 +1158,7 @@
                 </a>
                 <a href="torquay" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-torquay.webp" alt="Torquay" loading="lazy">
+                        <img src="../images/cambria-products/swatch-torquay.jpg" alt="Torquay" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Torquay</h4>
@@ -1166,7 +1166,7 @@
                 </a>
                 <a href="berwyn" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-berwyn.webp" alt="Berwyn" loading="lazy">
+                        <img src="../images/cambria-products/swatch-berwyn.jpg" alt="Berwyn" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Berwyn</h4>
@@ -1174,7 +1174,7 @@
                 </a>
                 <a href="skara-brae" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-skara-brae.webp" alt="Skara Brae" loading="lazy">
+                        <img src="../images/cambria-products/swatch-skara-brae.jpg" alt="Skara Brae" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Skara Brae</h4>
@@ -1182,7 +1182,7 @@
                 </a>
                 <a href="lakedale" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-lakedale.webp" alt="Lakedale" loading="lazy">
+                        <img src="../images/cambria-products/swatch-lakedale.jpg" alt="Lakedale" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Lakedale</h4>
@@ -1190,7 +1190,7 @@
                 </a>
                 <a href="carrick" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-carrick.webp" alt="Carrick" loading="lazy">
+                        <img src="../images/cambria-products/swatch-carrick.jpg" alt="Carrick" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Carrick</h4>
@@ -1198,7 +1198,7 @@
                 </a>
                 <a href="fairbourne" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-fairbourne.webp" alt="Fairbourne" loading="lazy">
+                        <img src="../images/cambria-products/swatch-fairbourne.jpg" alt="Fairbourne" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Fairbourne</h4>
@@ -1206,7 +1206,7 @@
                 </a>
                 <a href="everleigh" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-everleigh.webp" alt="Everleigh" loading="lazy">
+                        <img src="../images/cambria-products/swatch-everleigh.jpg" alt="Everleigh" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Everleigh</h4>
@@ -1214,7 +1214,7 @@
                 </a>
                 <a href="blackbrook" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-blackbrook.webp" alt="Blackbrook" loading="lazy">
+                        <img src="../images/cambria-products/swatch-blackbrook.jpg" alt="Blackbrook" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Blackbrook</h4>
@@ -1222,7 +1222,7 @@
                 </a>
                 <a href="ivybridge" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-ivybridge.webp" alt="Ivybridge" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ivybridge.jpg" alt="Ivybridge" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ivybridge</h4>
@@ -1230,7 +1230,7 @@
                 </a>
                 <a href="sutherland" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-sutherland.webp" alt="Sutherland" loading="lazy">
+                        <img src="../images/cambria-products/swatch-sutherland.jpg" alt="Sutherland" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Sutherland</h4>
@@ -1238,7 +1238,7 @@
                 </a>
                 <a href="clareanne" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-clareanne.webp" alt="Clareanne" loading="lazy">
+                        <img src="../images/cambria-products/swatch-clareanne.jpg" alt="Clareanne" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Clareanne</h4>
@@ -1246,7 +1246,7 @@
                 </a>
                 <a href="warwick" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-warwick.webp" alt="Warwick" loading="lazy">
+                        <img src="../images/cambria-products/swatch-warwick.jpg" alt="Warwick" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Warwick</h4>
@@ -1254,7 +1254,7 @@
                 </a>
                 <a href="ridgegate" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-ridgegate.webp" alt="Ridgegate" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ridgegate.jpg" alt="Ridgegate" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ridgegate</h4>
@@ -1262,7 +1262,7 @@
                 </a>
                 <a href="sandgate" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-sandgate.webp" alt="Sandgate" loading="lazy">
+                        <img src="../images/cambria-products/swatch-sandgate.jpg" alt="Sandgate" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Sandgate</h4>
@@ -1270,7 +1270,7 @@
                 </a>
                 <a href="inverness-gold" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-inverness-gold.webp" alt="Inverness Gold" loading="lazy">
+                        <img src="../images/cambria-products/swatch-inverness-gold.jpg" alt="Inverness Gold" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Inverness Gold</h4>
@@ -1278,7 +1278,7 @@
                 </a>
                 <a href="oakleigh" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-oakleigh.webp" alt="Oakleigh" loading="lazy">
+                        <img src="../images/cambria-products/swatch-oakleigh.jpg" alt="Oakleigh" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Oakleigh</h4>
@@ -1286,7 +1286,7 @@
                 </a>
                 <a href="winterbourne" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-winterbourne.webp" alt="Winterbourne" loading="lazy">
+                        <img src="../images/cambria-products/swatch-winterbourne.jpg" alt="Winterbourne" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Winterbourne</h4>
@@ -1294,7 +1294,7 @@
                 </a>
                 <a href="ainsley" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-ainsley.webp" alt="Ainsley" loading="lazy">
+                        <img src="../images/cambria-products/swatch-ainsley.jpg" alt="Ainsley" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Ainsley</h4>
@@ -1302,7 +1302,7 @@
                 </a>
                 <a href="hadley" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-hadley.webp" alt="Hadley" loading="lazy">
+                        <img src="../images/cambria-products/swatch-hadley.jpg" alt="Hadley" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Hadley</h4>
@@ -1310,7 +1310,7 @@
                 </a>
                 <a href="colton" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-colton.webp" alt="Colton" loading="lazy">
+                        <img src="../images/cambria-products/swatch-colton.jpg" alt="Colton" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Colton</h4>
@@ -1318,7 +1318,7 @@
                 </a>
                 <a href="rose-bay" class="mini-design-card">
                     <div class="mini-design-card-image">
-                        <img src="../images/swatch-rose-bay.webp" alt="Rose Bay" loading="lazy">
+                        <img src="../images/cambria-products/swatch-rose-bay.jpg" alt="Rose Bay" loading="lazy">
                     </div>
                     <div class="mini-design-card-content">
                         <h4>Rose Bay</h4>
