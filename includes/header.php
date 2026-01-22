@@ -20,37 +20,66 @@ $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
             <ul class="nav-list">
                 <li class="nav-item dropdown has-mega-menu">
                     <a href="#" class="nav-link">Our Services</a>
-                    <!-- Mega Menu -->
-                    <div class="mega-menu">
+                    <!-- Mega Menu - Icons + Text -->
+                    <div class="mega-menu mega-menu-icons">
                         <div class="mega-menu-grid">
-                            <!-- Kitchen Countertops -->
-                            <a href="<?php echo $prefix; ?>kitchen-bath" class="mega-menu-section" style="background-image: url('<?php echo $prefix; ?>images/kitchen-penthouse-calacatta-gold-ocean.webp');">
-                                <div class="mega-menu-section-content">
-                                    <h3>Kitchen Countertops</h3>
-                                    <p>Stunning quartz surfaces for your dream kitchen</p>
-                                </div>
+                            <a href="<?php echo $prefix; ?>kitchen-bath" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3"/><path d="M12 4v5"/><path d="M8 13v4"/><path d="M16 13v4"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>Kitchen Countertops</strong>
+                                    <span>Islands, perimeters & breakfast bars</span>
+                                </span>
                             </a>
-                            <!-- Bathroom Vanities -->
-                            <a href="<?php echo $prefix; ?>kitchen-bath#bathroom" class="mega-menu-section" style="background-image: url('<?php echo $prefix; ?>images/bathroom-spa-calacatta-vessel-tub.webp');">
-                                <div class="mega-menu-section-content">
-                                    <h3>Bathroom Vanities</h3>
-                                    <p>Elegant countertops for bathrooms of any size</p>
-                                </div>
+                            <a href="<?php echo $prefix; ?>kitchen-bath#bathroom" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><line x1="10" x2="8" y1="5" y2="7"/><line x1="2" x2="22" y1="12" y2="12"/><line x1="7" x2="7" y1="19" y2="21"/><line x1="17" x2="17" y1="19" y2="21"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>Bathroom Vanities</strong>
+                                    <span>Single, double & floating vanity tops</span>
+                                </span>
                             </a>
-                            <!-- Commercial -->
-                            <a href="<?php echo $prefix; ?>commercial" class="mega-menu-section" style="background-image: url('<?php echo $prefix; ?>images/commercial-lobby-white-marble-reception.webp');">
-                                <div class="mega-menu-section-content">
-                                    <h3>Commercial Projects</h3>
-                                    <p>Hotels, restaurants, offices & retail spaces</p>
-                                </div>
+                            <a href="<?php echo $prefix; ?>commercial" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>Commercial Projects</strong>
+                                    <span>Hotels, restaurants, offices & retail</span>
+                                </span>
+                            </a>
+                            <a href="<?php echo $prefix; ?>quartz-brands" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>Quartz Brands</strong>
+                                    <span>Cambria, Silestone, Caesarstone & more</span>
+                                </span>
+                            </a>
+                            <a href="<?php echo $prefix; ?>our-services" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>All Services</strong>
+                                    <span>Fabrication, installation & more</span>
+                                </span>
+                            </a>
+                            <a href="<?php echo $prefix; ?>gallery" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>Inspiration Gallery</strong>
+                                    <span>Browse our completed projects</span>
+                                </span>
                             </a>
                         </div>
-                        <div class="mega-menu-section-links">
-                            <a href="<?php echo $prefix; ?>our-services">All Services</a>
-                            <a href="<?php echo $prefix; ?>quartz-brands">Quartz Brands</a>
-                            <a href="<?php echo $prefix; ?>cambria/">Cambria Collection</a>
-                            <a href="<?php echo $prefix; ?>gallery">View Gallery</a>
-                            <a href="<?php echo $prefix; ?>#contact-form" class="mega-menu-cta">Get Free Quote</a>
+                        <div class="mega-menu-footer">
+                            <a href="<?php echo $prefix; ?>#contact-form" class="mega-menu-cta-btn">Get Your FREE Quote</a>
                         </div>
                     </div>
                     <!-- Mobile fallback dropdown -->
