@@ -18,9 +18,43 @@ $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
 
         <nav class="nav" id="mainNav">
             <ul class="nav-list">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown has-mega-menu">
                     <a href="#" class="nav-link">Our Services</a>
-                    <ul class="dropdown-menu">
+                    <!-- Mega Menu -->
+                    <div class="mega-menu">
+                        <div class="mega-menu-grid">
+                            <!-- Kitchen Countertops -->
+                            <a href="<?php echo $prefix; ?>kitchen-bath" class="mega-menu-section" style="background-image: url('<?php echo $prefix; ?>images/kitchen-penthouse-calacatta-gold-ocean.webp');">
+                                <div class="mega-menu-section-content">
+                                    <h3>Kitchen Countertops</h3>
+                                    <p>Stunning quartz surfaces for your dream kitchen</p>
+                                </div>
+                            </a>
+                            <!-- Bathroom Vanities -->
+                            <a href="<?php echo $prefix; ?>kitchen-bath#bathroom" class="mega-menu-section" style="background-image: url('<?php echo $prefix; ?>images/bathroom-spa-calacatta-vessel-tub.webp');">
+                                <div class="mega-menu-section-content">
+                                    <h3>Bathroom Vanities</h3>
+                                    <p>Elegant countertops for bathrooms of any size</p>
+                                </div>
+                            </a>
+                            <!-- Commercial -->
+                            <a href="<?php echo $prefix; ?>commercial" class="mega-menu-section" style="background-image: url('<?php echo $prefix; ?>images/commercial-lobby-white-marble-reception.webp');">
+                                <div class="mega-menu-section-content">
+                                    <h3>Commercial Projects</h3>
+                                    <p>Hotels, restaurants, offices & retail spaces</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mega-menu-section-links">
+                            <a href="<?php echo $prefix; ?>our-services">All Services</a>
+                            <a href="<?php echo $prefix; ?>quartz-brands">Quartz Brands</a>
+                            <a href="<?php echo $prefix; ?>cambria/">Cambria Collection</a>
+                            <a href="<?php echo $prefix; ?>gallery">View Gallery</a>
+                            <a href="<?php echo $prefix; ?>#contact-form" class="mega-menu-cta">Get Free Quote</a>
+                        </div>
+                    </div>
+                    <!-- Mobile fallback dropdown -->
+                    <ul class="dropdown-menu mobile-dropdown">
                         <li><a href="<?php echo $prefix; ?>our-services">Countertop Services</a></li>
                         <li><a href="<?php echo $prefix; ?>quartz-brands">Quartz Product Selection</a></li>
                         <li><a href="<?php echo $prefix; ?>kitchen-bath">Countertops for Kitchens & Baths</a></li>
