@@ -5,8 +5,8 @@ if (!isset($basePath)) {
 }
 // Create prefix - empty for root, '../' for subdirectories
 $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
-// Home link - use ./ for root, ../ for subdirectories
-$homeLink = ($basePath === '.' || $basePath === '') ? './' : $basePath . '/';
+// Home link - always use absolute root path
+$homeLink = '/';
 ?>
 <!-- Announcement Bar -->
 <div class="announcement-bar">
