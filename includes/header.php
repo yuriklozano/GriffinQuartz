@@ -5,6 +5,8 @@ if (!isset($basePath)) {
 }
 // Create prefix - empty for root, '../' for subdirectories
 $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
+// Home link - use ./ for root, ../ for subdirectories
+$homeLink = ($basePath === '.' || $basePath === '') ? './' : $basePath . '/';
 ?>
 <!-- Announcement Bar -->
 <div class="announcement-bar">
@@ -14,7 +16,7 @@ $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
 <!-- Header -->
 <header class="header">
     <div class="container">
-        <a href="<?php echo $prefix; ?>" class="logo"><img src="<?php echo $prefix; ?>images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
+        <a href="<?php echo $homeLink; ?>" class="logo"><img src="<?php echo $prefix; ?>images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
 
         <nav class="nav" id="mainNav">
             <ul class="nav-list">
