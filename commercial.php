@@ -1242,16 +1242,17 @@
                             <li><a href="west-palm-beach">West Palm Beach, FL</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a href="gallery" class="nav-link">Inspiration Gallery</a></li>
+                    <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Resources</a>
                         <ul class="dropdown-menu">
                             <li><a href="color-visualizer">Color Visualizer</a></li>
                             <li><a href="space-design-tool">Space Design Tool</a></li>
                             <li><a href="quote-calculator">Instant Quote Calculator</a></li>
+                            <li><a href="blog/">Blog</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="gallery" class="nav-link">Inspiration Gallery</a></li>
-                    <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
                     <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
                 </ul>
             </nav>
