@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>How Much Do Quartz Countertops Cost? Complete 2026 Pricing Guide</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/kitchen-penthouse-calacatta-gold-ocean.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>How Much Do Quartz Countertops Cost? Complete 2026 Pricing Guide</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/kitchen-penthouse-calacatta-gold-ocean.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p><strong>If you're planning a kitchen renovation in South Florida, understanding quartz countertops cost is essential for budgeting your project accurately.</strong> Whether you're comparing the price of quartz countertops to granite or marble, or simply wondering "how much is quartz countertops for my specific kitchen," this comprehensive guide breaks down everything you need to know about 2026 pricing.</p>
 

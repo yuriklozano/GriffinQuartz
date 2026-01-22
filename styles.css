@@ -5143,3 +5143,211 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
     }
 }
+
+/* ===== Blog Article Styles ===== */
+.blog-article {
+    background: var(--color-white);
+}
+
+/* Blog Hero - Full Width Image with Title Overlay */
+.blog-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.blog-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    mix-blend-mode: multiply;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--spacing-2xl);
+}
+
+.blog-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: var(--spacing-xl);
+}
+
+.blog-hero .blog-meta {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.blog-hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    color: var(--color-white);
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Blog Body - Centered Content */
+.blog-body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-3xl) var(--container-padding);
+}
+
+/* Blog Content Typography */
+.blog-content {
+    text-align: left;
+}
+
+.blog-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.blog-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.blog-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
+}
+
+.blog-content ul {
+    list-style: disc;
+}
+
+.blog-content ol {
+    list-style: decimal;
+}
+
+.blog-content li {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-content li strong {
+    color: var(--color-primary);
+}
+
+.blog-content a {
+    color: var(--color-accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition-fast);
+}
+
+.blog-content a:hover {
+    color: var(--color-accent);
+}
+
+/* Blog CTA Section */
+.blog-cta {
+    margin-top: var(--spacing-3xl);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1a1a2e 100%);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.blog-cta h3 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-cta p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.0625rem;
+    margin-bottom: var(--spacing-md);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Blog Article Responsive */
+@media (max-width: 768px) {
+    .blog-hero {
+        height: 50vh;
+        min-height: 400px;
+    }
+
+    .blog-hero-overlay {
+        padding: var(--spacing-md);
+    }
+
+    .blog-hero-content {
+        padding-bottom: var(--spacing-md);
+    }
+
+    .blog-hero h1 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+
+    .blog-body {
+        padding: var(--spacing-xl) var(--container-padding);
+    }
+
+    .blog-content p,
+    .blog-content li {
+        font-size: 1rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.625rem;
+        margin-top: var(--spacing-xl);
+    }
+
+    .blog-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .blog-cta {
+        padding: var(--spacing-lg);
+    }
+
+    .blog-cta h3 {
+        font-size: 1.5rem;
+    }
+}

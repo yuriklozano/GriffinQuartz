@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>Quartz vs Granite vs Marble: Which Countertop Material is Best?</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/kitchen-penthouse-veined-ocean-view.webp" alt="Quartz countertops in modern kitchen" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>Quartz vs Granite vs Marble: Which Countertop Material is Best?</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/kitchen-penthouse-veined-ocean-view.webp" alt="Quartz countertops in modern kitchen" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>Choosing between <strong>quartz vs granite</strong> for your kitchen or bathroom countertops is one of the most important decisions you'll make during a renovation. With South Florida homeowners investing $3,000 to $15,000 in new countertops, understanding the difference between quartz and granite can save you money and ensure your surfaces look stunning for decades.</p>
 

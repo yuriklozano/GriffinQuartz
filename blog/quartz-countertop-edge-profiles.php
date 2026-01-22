@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>Quartz Countertop Edge Profiles: The Complete Guide</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/fabrication-hands-polishing-quartz.webp" alt="Polishing quartz countertop edge" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>Quartz Countertop Edge Profiles: The Complete Guide</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/fabrication-hands-polishing-quartz.webp" alt="Polishing quartz countertop edge" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>When selecting quartz countertops for your South Florida home, the <strong>countertop edge profiles</strong> you choose dramatically impact both aesthetics and functionality. From the clean simplicity of an <strong>eased edge countertop</strong> to dramatic waterfall designs, understanding your <strong>quartz countertop edges</strong> options is essential.</p>
 
@@ -157,7 +162,7 @@
                 <p>Our team brings samples directly to your South Florida home, allowing you to see how different edges complement your cabinets and design vision.</p>
                 <a href="../#contact-form" class="btn btn-primary">Request Free Consultation</a>
             </div>
-        </div>
+        </div><!-- end blog-body -->
     </article>
 
     <!-- Footer -->

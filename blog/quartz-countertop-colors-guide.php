@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>Quartz Countertop Colors: Your Complete Selection Guide for 2026</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/kitchen-calacatta-walnut-leather-stools.webp" alt="Beautiful quartz countertop colors" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>Quartz Countertop Colors: Your Complete Selection Guide for 2026</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/kitchen-calacatta-walnut-leather-stools.webp" alt="Beautiful quartz countertop colors" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>Choosing the right color for your <strong>quartz countertops</strong> can feel overwhelming. With hundreds of shades, patterns, and finishes available, how do you find the perfect match? Whether you're dreaming of elegant <strong>white quartz countertops</strong> or dramatic <strong>black quartz countertops</strong>, this guide walks you through every color family.</p>
 

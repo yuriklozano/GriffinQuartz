@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>Best Quartz Countertop Brands in 2026: Complete Comparison Guide</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/fabrication-shop-polishing-slab.webp" alt="Quartz countertop fabrication" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>Best Quartz Countertop Brands in 2026: Complete Comparison Guide</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/fabrication-shop-polishing-slab.webp" alt="Quartz countertop fabrication" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>Choosing the <strong>best quartz countertops</strong> for your kitchen or bathroom is one of the most important renovation decisions. After installing thousands of <strong>solid surface countertops</strong> across South Florida, our team has developed strong opinions about which brands deliver lasting value.</p>
 

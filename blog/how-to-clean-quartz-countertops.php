@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>How to Clean Quartz Countertops: The Complete Care Guide</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/kitchen-calacatta-gold-globe-pendants.webp" alt="Beautiful quartz countertops in modern kitchen" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>How to Clean Quartz Countertops: The Complete Care Guide</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/kitchen-calacatta-gold-globe-pendants.webp" alt="Beautiful quartz countertops in modern kitchen" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p><strong>Wondering how to clean quartz countertops without damaging their stunning finish?</strong> You've made an excellent investment in engineered stone, and with proper care, your quartz surfaces will maintain their showroom shine for decades. Unlike natural stone, quartz countertops require surprisingly simple maintenance—no sealing, no special treatments, just smart daily habits.</p>
 

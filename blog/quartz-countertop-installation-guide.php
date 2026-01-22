@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>Quartz Countertop Installation: What to Expect from Start to Finish</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/installation-team-penthouse-slab.webp" alt="Professional quartz countertop installation" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>Quartz Countertop Installation: What to Expect from Start to Finish</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/installation-team-penthouse-slab.webp" alt="Professional quartz countertop installation" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>If you're considering a <strong>kitchen countertop replacement</strong>, you probably have questions. How long will it take? What happens during each phase? Will your kitchen be out of commission for weeks?</p>
 

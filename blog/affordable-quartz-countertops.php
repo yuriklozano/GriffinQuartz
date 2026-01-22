@@ -15,14 +15,19 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
-                <h1>Affordable Quartz Countertops: How to Get Premium Quality on a Budget</h1>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/kitchen-coastal-wicker-stools-skylight.webp" alt="Beautiful affordable quartz kitchen countertops" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
+                    <h1>Affordable Quartz Countertops: How to Get Premium Quality on a Budget</h1>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/kitchen-coastal-wicker-stools-skylight.webp" alt="Beautiful affordable quartz kitchen countertops" class="blog-featured-image" loading="eager">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p><strong>Think beautiful kitchen countertops are out of your price range?</strong> Many South Florida homeowners assume that upgrading to quartz means draining their savings. But here's the truth: premium quartz countertops can absolutely fit a modest budget when you know the right strategies.</p>
 
