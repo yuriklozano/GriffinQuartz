@@ -120,6 +120,104 @@
     <!-- Blog Grid -->
     <section class="blog-grid">
         <div class="blog-cards">
+            <!-- NEW BLOGS - 2026 -->
+            <a href="quartz-vs-granite-marble-comparison" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/kitchen-penthouse-veined-ocean-view.webp" alt="Quartz vs granite vs marble comparison" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>Quartz vs Granite vs Marble: Which Countertop is Best?</h2>
+                    <p>Complete comparison of quartz, granite, marble and quartzite. Learn about durability, cost, maintenance and which is best for South Florida homes.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="quartz-countertop-edge-profiles" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/fabrication-hands-polishing-quartz.webp" alt="Quartz countertop edge profiles" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>Quartz Countertop Edge Profiles: Complete Guide</h2>
+                    <p>Explore eased, beveled, bullnose, ogee, waterfall and mitered edges. Learn which countertop edge profile is perfect for your kitchen.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="quartz-countertop-colors-guide" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/kitchen-calacatta-walnut-leather-stools.webp" alt="Quartz countertop colors guide" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>Quartz Countertop Colors: Selection Guide 2026</h2>
+                    <p>From white to black, gray to blue - explore every quartz color family. Find the perfect countertop color for your South Florida home.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="best-quartz-countertop-brands" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/fabrication-shop-polishing-slab.webp" alt="Best quartz countertop brands" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>Best Quartz Countertop Brands 2026</h2>
+                    <p>Compare Cambria, Silestone, Caesarstone, MSI and Hanstone. Expert brand reviews with pricing, pros and cons for South Florida homeowners.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="quartz-countertops-cost-guide" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/kitchen-penthouse-calacatta-gold-ocean.webp" alt="Quartz countertops cost guide 2026" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>How Much Do Quartz Countertops Cost? 2026 Guide</h2>
+                    <p>Complete 2026 pricing breakdown by tier, brand and edge profile. Learn what affects cost and how to budget for your project.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="how-to-clean-quartz-countertops" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/kitchen-calacatta-gold-globe-pendants.webp" alt="How to clean quartz countertops" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>How to Clean Quartz Countertops: Care Guide</h2>
+                    <p>Daily cleaning tips, stain removal techniques, and products to avoid. Keep your quartz countertops looking pristine for decades.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="quartz-countertop-installation-guide" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/installation-team-penthouse-slab.webp" alt="Quartz countertop installation" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>Quartz Countertop Installation: What to Expect</h2>
+                    <p>From consultation to final reveal - understand every phase of professional countertop installation. Timeline, prep and installation day tips.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="affordable-quartz-countertops" class="blog-card">
+                <div class="blog-card-image">
+                    <img src="../images/kitchen-coastal-wicker-stools-skylight.webp" alt="Affordable quartz countertops" loading="lazy">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-meta">Jan 22, 2026</span>
+                    <h2>Affordable Quartz Countertops: Budget Tips</h2>
+                    <p>Get premium quartz on a budget. Learn about remnants, simpler edges, standard colors and other money-saving strategies.</p>
+                    <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- EXISTING BLOGS -->
             <a href="quartz-countertops-cost" class="blog-card">
                 <div class="blog-card-image">
                     <img src="../images/hotel-buffet-white-marble-counter-flowers.webp" alt="Quartz countertops cost guide" loading="lazy">
@@ -134,10 +232,10 @@
 
             <a href="quartz-pricing-guide" class="blog-card">
                 <div class="blog-card-image">
-                    <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz pricing guide" loading="lazy">
+                    <img src="../images/industrial-loft-kitchen-brick-quartz-island.webp" alt="Quartz pricing guide" loading="lazy">
                 </div>
                 <div class="blog-card-content">
-                    <span class="blog-card-meta">Aug 15, 2025</span>
+                    <span class="blog-card-meta">Aug 22, 2025</span>
                     <h2>Complete Quartz Countertop Pricing Guide</h2>
                     <p>Everything you need to know about quartz countertop pricing, from budget-friendly options to premium designer selections.</p>
                     <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
@@ -158,11 +256,11 @@
 
             <a href="top-10-countertop-installation" class="blog-card">
                 <div class="blog-card-image">
-                    <img src="../images/poolside-white-marble-island-palms-dusk.webp" alt="Countertop installation tips" loading="lazy">
+                    <img src="../images/resort-poolside-outdoor-kitchen-blue-tile.webp" alt="Countertop installation tips" loading="lazy">
                 </div>
                 <div class="blog-card-content">
-                    <span class="blog-card-meta">Jul 20, 2025</span>
-                    <h2>Top 10 Countertop Installation Tips</h2>
+                    <span class="blog-card-meta">Aug 09, 2025</span>
+                    <h2>Top 10 Countertop Installation Near Fort Lauderdale</h2>
                     <p>Expert tips to ensure your countertop installation goes smoothly. From preparation to final inspection, here's what you need to know.</p>
                     <span class="blog-card-link">Read More <i class="bi bi-arrow-right"></i></span>
                 </div>
