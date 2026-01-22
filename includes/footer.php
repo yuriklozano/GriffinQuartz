@@ -1,8 +1,10 @@
 <?php
 // Set default base path if not defined
 if (!isset($basePath)) {
-    $basePath = '';
+    $basePath = '.';
 }
+// Create prefix - empty for root, '../' for subdirectories
+$prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
 ?>
 <footer class="footer">
     <div class="container">
@@ -18,28 +20,28 @@ if (!isset($basePath)) {
             <div class="footer-col">
                 <h4>Quartz Countertop Services</h4>
                 <ul>
-                    <li><a href="<?php echo $basePath; ?>/quartz-brands">Quartz Product Selection</a></li>
-                    <li><a href="<?php echo $basePath; ?>/kitchen-bath">Kitchen & Bathroom Countertops</a></li>
-                    <li><a href="<?php echo $basePath; ?>/commercial">Commercial Countertop Installation</a></li>
-                    <li><a href="<?php echo $basePath; ?>/gallery">Inspiration Gallery</a></li>
+                    <li><a href="<?php echo $prefix; ?>quartz-brands">Quartz Product Selection</a></li>
+                    <li><a href="<?php echo $prefix; ?>kitchen-bath">Kitchen & Bathroom Countertops</a></li>
+                    <li><a href="<?php echo $prefix; ?>commercial">Commercial Countertop Installation</a></li>
+                    <li><a href="<?php echo $prefix; ?>gallery">Inspiration Gallery</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Service Areas</h4>
                 <ul class="service-areas">
-                    <li><a href="<?php echo $basePath; ?>/boca-raton">Boca Raton</a></li>
-                    <li><a href="<?php echo $basePath; ?>/fort-lauderdale">Fort Lauderdale</a></li>
-                    <li><a href="<?php echo $basePath; ?>/miami">Miami</a></li>
-                    <li><a href="<?php echo $basePath; ?>/west-palm-beach">West Palm Beach</a></li>
-                    <li><a href="<?php echo $basePath; ?>/delray-beach">Delray Beach</a></li>
-                    <li><a href="<?php echo $basePath; ?>/locations">All South Florida Locations</a></li>
+                    <li><a href="<?php echo $prefix; ?>boca-raton">Boca Raton</a></li>
+                    <li><a href="<?php echo $prefix; ?>fort-lauderdale">Fort Lauderdale</a></li>
+                    <li><a href="<?php echo $prefix; ?>miami">Miami</a></li>
+                    <li><a href="<?php echo $prefix; ?>west-palm-beach">West Palm Beach</a></li>
+                    <li><a href="<?php echo $prefix; ?>delray-beach">Delray Beach</a></li>
+                    <li><a href="<?php echo $prefix; ?>locations">All South Florida Locations</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contact Griffin Quartz</h4>
                 <p><strong>Phone:</strong> <a href="tel:7203241436">(720) 324-1436</a></p>
                 <p><strong>Email:</strong> <a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
-                <p style="margin-top: 1rem;"><a href="<?php echo $basePath; ?>/#contact-form" class="btn btn-primary btn-sm">Get FREE Quote</a></p>
+                <p style="margin-top: 1rem;"><a href="<?php echo $prefix; ?>#contact-form" class="btn btn-primary btn-sm">Get FREE Quote</a></p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -49,4 +51,4 @@ if (!isset($basePath)) {
     </div>
 </footer>
 
-<script src="<?php echo $basePath; ?>/script.js"></script>
+<script src="<?php echo $prefix; ?>script.js"></script>
