@@ -11,49 +11,7 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="/" class="logo"><img src="../images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
-
-            <nav class="nav" id="mainNav">
-                <ul class="nav-list">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Our Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../our-services">Countertop Services</a></li>
-                            <li><a href="../quartz-brands">Quartz Product Selection</a></li>
-                            <li><a href="../kitchen-bath">Countertops for Kitchens & Baths</a></li>
-                            <li><a href="../commercial">Commercial Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Installation Locations</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../locations">Explore All Locations</a></li>
-                            <li><a href="../fort-lauderdale">Fort Lauderdale, FL</a></li>
-                            <li><a href="../miami">Miami, FL</a></li>
-                            <li><a href="../boca-raton">Boca Raton, FL</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="../gallery" class="nav-link">Inspiration Gallery</a></li>
-                    <li class="nav-item"><a href="../contact" class="nav-link">Contact Us</a></li>
-                    <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
-                </ul>
-            </nav>
-
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+<?php $basePath = '..'; include '../includes/header.php'; ?>
 
     <!-- Blog Article -->
     <article class="blog-article">
@@ -125,36 +83,6 @@
     </article>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Visit Our Showroom at Englert Arts Inc.</h4>
-                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
-                        1021 S Rogers Cir #18, Boca Raton, FL 33487
-                    </a>
-                </div>
-                <div class="footer-col">
-                    <h4>Griffin Quartz</h4>
-                    <ul>
-                        <li><a href="../quartz-brands">Product Selection</a></li>
-                        <li><a href="../kitchen-bath">Kitchens and Baths</a></li>
-                        <li><a href="../gallery">Inspiration Gallery</a></li>
-                        <li><a href="../about">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p><a href="tel:7203241436">(720) 324-1436</a></p>
-                    <p><a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

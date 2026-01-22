@@ -153,19 +153,7 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="/"><img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" class="logo"></a>
-            <nav class="nav">
-                <a href="/">Home</a>
-                <a href="commercial">Commercial</a>
-                <a href="kitchen-bath">Kitchen & Bath</a>
-                <a href="gallery">Gallery</a>
-                <a href="contact">Contact</a>
-                <a href="quote-calculator" class="btn btn-primary">Get Quote</a>
-            </nav>
-        </div>
-    </header>
+<?php $basePath = ''; include 'includes/header.php'; ?>
 
     <section class="hero">
         <div class="hero-bg">
@@ -322,39 +310,6 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <img src="images/griffin-quartz-logo.webp" alt="Griffin Quartz" style="height: 50px; margin-bottom: 20px;">
-                    <p>South Florida's trusted commercial quartz countertop specialists. Serving retail stores, boutiques, and shopping centers throughout Palm Beach, Broward, and Miami-Dade counties.</p>
-                </div>
-                <div>
-                    <h4>Commercial Services</h4>
-                    <a href="commercial">All Commercial</a>
-                    <a href="office-building-countertops">Office Buildings</a>
-                    <a href="hotel-resort-countertops">Hotels & Resorts</a>
-                    <a href="restaurant-cafe-countertops">Restaurants</a>
-                    <a href="retail-store-countertops">Retail Stores</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <a href="/">Home</a>
-                    <a href="about">About Us</a>
-                    <a href="gallery">Gallery</a>
-                    <a href="contact">Contact</a>
-                </div>
-                <div>
-                    <h4>Contact Us</h4>
-                    <p><i class="bi bi-telephone"></i> (720) 324-1436</p>
-                    <p><i class="bi bi-envelope"></i> info@griffinquartz.com</p>
-                    <p><i class="bi bi-geo-alt"></i> 1021 S Rogers Cir #18<br>Boca Raton, FL 33487</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 </body>
 </html>

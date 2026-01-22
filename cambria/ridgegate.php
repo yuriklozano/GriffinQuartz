@@ -18,65 +18,7 @@
     </style>
 </head>
 <body>
-    <div class="announcement-bar">
-        <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
-    </div>
-    <header class="header">
-        <div class="container">
-            <a href="/" class="logo"><img src="../images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
-
-            <nav class="nav" id="mainNav">
-                <ul class="nav-list">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Our Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../our-services">Countertop Services</a></li>
-                            <li><a href="../quartz-brands">Quartz Product Selection</a></li>
-                            <li><a href="../kitchen-bath">Countertops for Kitchens & Baths</a></li>
-                            <li><a href="../commercial">Commercial Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Installation Locations</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../locations">All Service Areas</a></li>
-                            <li><a href="../south-florida">South Florida</a></li>
-                            <li><a href="../boca-raton">Boca Raton, FL</a></li>
-                            <li><a href="../boynton-beach">Boynton Beach, FL</a></li>
-                            <li><a href="../coconut-creek">Coconut Creek, FL</a></li>
-                            <li><a href="../coral-springs">Coral Springs, FL</a></li>
-                            <li><a href="../deerfield-beach">Deerfield Beach, FL</a></li>
-                            <li><a href="../delray-beach">Delray Beach, FL</a></li>
-                            <li><a href="../fort-lauderdale">Fort Lauderdale, FL</a></li>
-                            <li><a href="../hollywood">Hollywood, FL</a></li>
-                            <li><a href="../miami">Miami, FL</a></li>
-                            <li><a href="../parkland">Parkland, FL</a></li>
-                            <li><a href="../pompano-beach">Pompano Beach, FL</a></li>
-                            <li><a href="../west-palm-beach">West Palm Beach, FL</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="../gallery" class="nav-link">Inspiration Gallery</a></li>
-                    <li class="nav-item"><a href="../contact" class="nav-link">Contact Us</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Resources</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../color-visualizer">Color Visualizer</a></li>
-                            <li><a href="../space-design-tool">Space Design Tool</a></li>
-                            <li><a href="../quote-calculator">Instant Quote Calculator</a></li>
-                            <li><a href="../blog/">Blog</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
-                </ul>
-            </nav>
-
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+<?php $basePath = '..'; include '../includes/header.php'; ?>
 
     <section class="product-hero">
         <div class="hero-background">
@@ -174,15 +116,6 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col"><h4>Showroom</h4><p>1021 S Rogers Cir #18<br>Boca Raton, FL 33487</p></div>
-                <div class="footer-col"><h4>Contact</h4><p><a href="tel:7203241436">(720) 324-1436</a></p></div>
-            </div>
-            <div class="footer-bottom"><p>&copy; 2025 Griffin Quartz</p></div>
-        </div>
-    </footer>
-    <script src="../script.js"></script>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>
