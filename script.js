@@ -108,52 +108,89 @@ function initCountdown() {
 
 // ===== Form Handling =====
 function initForms() {
-    // Quote Form
+    // Quote Form (main contact form on homepage)
     const quoteForm = document.getElementById('quoteForm');
     if (quoteForm) {
         quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            handleFormSubmit(this, 'Quote request submitted successfully! We\'ll contact you shortly.');
+            submitLead(this, 'quote', 'Quote request submitted successfully! We\'ll contact you shortly.');
         });
     }
-    
+
+    // Contact Form (contact page)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitLead(this, 'contact', 'Message sent successfully! We\'ll be in touch soon.');
+        });
+    }
+
+    // Product Quote Form (Cambria pages, etc.)
+    const productQuoteForm = document.getElementById('productQuoteForm');
+    if (productQuoteForm) {
+        productQuoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitLead(this, 'product_quote', 'Quote request submitted! We\'ll contact you shortly.');
+        });
+    }
+
     // Newsletter Form
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {
         newsletterForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            handleFormSubmit(this, 'Thank you for subscribing! You\'ll receive our latest updates.');
+            const email = newsletterForm.querySelector('input[type="email"]').value;
+            submitLead(this, 'newsletter', 'Thank you for subscribing!', { email: email });
         });
     }
 }
 
-function handleFormSubmit(form, successMessage) {
+function submitLead(form, formType, successMessage, additionalData = {}) {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
-    
-    // Log form data (in production, send to your backend)
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    showNotification(successMessage, 'success');
-    
-    // Reset form
-    form.reset();
-    
-    // In production, you would send this to your backend:
-    // fetch('/api/contact', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(data)
-    // })
-    // .then(response => response.json())
-    // .then(result => {
-    //     showNotification(successMessage, 'success');
-    //     form.reset();
-    // })
-    // .catch(error => {
-    //     showNotification('Something went wrong. Please try again.', 'error');
-    // });
+
+    // Add metadata
+    data.form_type = formType;
+    data.page_url = window.location.href;
+    data.page_title = document.title;
+
+    // Merge additional data
+    Object.assign(data, additionalData);
+
+    // Show loading state
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn ? submitBtn.innerHTML : '';
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending...';
+    }
+
+    // Send to backend
+    fetch('/api/submit-lead.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            showNotification(successMessage, 'success');
+            form.reset();
+        } else {
+            showNotification(result.message || 'Something went wrong. Please try again.', 'error');
+        }
+    })
+    .catch(error => {
+        console.error('Form submission error:', error);
+        showNotification('Something went wrong. Please try again.', 'error');
+    })
+    .finally(() => {
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+        }
+    });
 }
 
 function showNotification(message, type = 'success') {
