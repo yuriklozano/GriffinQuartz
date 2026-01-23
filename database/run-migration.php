@@ -27,12 +27,12 @@ require_once dirname(__DIR__) . '/api/config.php';
 
 try {
     $pdo = new PDO(
-        "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4",
-        DB_USER,
-        DB_PASS,
+        "mysql:host=" . DB_BLOG_HOST . ";dbname=" . DB_BLOG_NAME . ";charset=utf8mb4",
+        DB_BLOG_USER,
+        DB_BLOG_PASS,
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
-    echo "[OK] Connected to database: " . DB_NAME . "\n\n";
+    echo "[OK] Connected to database: " . DB_BLOG_NAME . "\n\n";
 } catch (PDOException $e) {
     die("[ERROR] Database connection failed: " . $e->getMessage() . "\n");
 }
