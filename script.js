@@ -144,6 +144,24 @@ function initForms() {
             submitLead(this, 'newsletter', 'Thank you for subscribing!', { email: email });
         });
     }
+
+    // Hero Quote Form (service pages: kitchen, bathroom, outdoor, commercial)
+    const heroQuoteForm = document.getElementById('heroQuoteForm');
+    if (heroQuoteForm) {
+        heroQuoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitLead(this, 'service_quote', 'Quote request submitted! We\'ll contact you shortly.');
+        });
+    }
+
+    // Samples Request Form (color visualizer)
+    const samplesForm = document.getElementById('samplesForm');
+    if (samplesForm) {
+        samplesForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitLead(this, 'samples_request', 'Sample request submitted! We\'ll ship your samples soon.');
+        });
+    }
 }
 
 function submitLead(form, formType, successMessage, additionalData = {}) {
