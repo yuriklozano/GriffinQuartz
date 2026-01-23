@@ -191,14 +191,24 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
+        <!-- Hero Header -->
+        <div class="blog-header-hero">
+            <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury kitchen with white quartz countertops and gold accents in Fort Lauderdale" class="blog-featured-image" loading="eager">
+            <div class="blog-hero-overlay"></div>
+            <div class="blog-header-content">
                 <span class="blog-meta">By Griffin Quartz Team • Jan 8, 2025</span>
                 <h1>Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h1>
+                <div class="blog-share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025&text=Cost%20of%20Quartz%20Countertops%20in%20Fort%20Lauderdale%3A%202025%20Price%20Guide" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Cost%20of%20Quartz%20Countertops%20in%20Fort%20Lauderdale%3A%202025%20Price%20Guide%20https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025&media=https://soflocountertops.com/images/luxury-white-kitchen-arched-windows-gold.webp&description=Cost%20of%20Quartz%20Countertops%20in%20Fort%20Lauderdale%3A%202025%20Price%20Guide" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="sms:?body=Check%20this%20out%3A%20Cost%20of%20Quartz%20Countertops%20in%20Fort%20Lauderdale%3A%202025%20Price%20Guide%20https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Luxury kitchen with white quartz countertops and gold accents in Fort Lauderdale" class="blog-featured-image" loading="eager">
-
+        <div class="container">
             <div class="blog-content">
                 <p>Planning a kitchen or bathroom renovation in Fort Lauderdale? Understanding <strong>quartz countertops cost in Fort Lauderdale</strong> is essential for budgeting your project accurately. Whether you're upgrading a waterfront estate in Harbor Beach or renovating a condo on Las Olas Boulevard, this comprehensive 2025 price guide will help you understand exactly what to expect when investing in beautiful, durable quartz surfaces.</p>
 

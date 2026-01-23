@@ -249,12 +249,19 @@ function e($str) {
     <!-- Blog Article -->
     <article class="blog-article">
         <!-- Full-width Hero -->
-        <div class="blog-hero">
+        <div class="blog-hero" style="display: flex; align-items: center; justify-content: center;">
             <img src="<?= e($featured_image) ?>" alt="<?= e($post['featured_image_alt'] ?: $post['title']) ?>" class="blog-hero-image" loading="eager">
-            <div class="blog-hero-overlay">
-                <div class="blog-hero-content">
+            <div class="blog-hero-overlay" style="align-items: center; justify-content: center; text-align: center;">
+                <div class="blog-hero-content" style="text-align: center; padding-bottom: 0;">
                     <span class="blog-meta">By <?= e($post['author']) ?> | <?= date('M j, Y', strtotime($publish_date)) ?></span>
                     <h1><?= e($post['title']) ?></h1>
+                    <div class="blog-share-buttons" style="margin-top: 1.5rem;">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/<?= e($post['slug']) ?>" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/<?= e($post['slug']) ?>&text=<?= urlencode($post['title']) ?>" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=<?= urlencode($post['title'] . ' https://soflocountertops.com/blog/' . $post['slug']) ?>" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/<?= e($post['slug']) ?>&media=https://soflocountertops.com<?= e($featured_image) ?>&description=<?= urlencode($post['title']) ?>" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="sms:?body=<?= urlencode('Check this out: ' . $post['title'] . ' https://soflocountertops.com/blog/' . $post['slug']) ?>" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
