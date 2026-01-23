@@ -60,8 +60,8 @@
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "08:00",
-            "closes": "18:00"
+            "opens": "07:30",
+            "closes": "15:30"
         }
     }
     </script>

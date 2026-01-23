@@ -86,9 +86,9 @@
         ],
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "08:00",
-            "closes": "18:00"
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:30",
+            "closes": "15:30"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -387,7 +387,7 @@
                         <i class="bi bi-chevron-down accordion-icon"></i>
                     </button>
                     <div class="accordion-content">
-                        <p>Our showroom is located at <strong>1021 S Rogers Cir #18, Boca Raton, FL 33487</strong> (inside Englert Arts Inc.). We're centrally located to serve all of South Florida and open 7 days a week, 8AM-6PM. You can also schedule a free in-home consultation where we bring samples to you.</p>
+                        <p>Our showroom is located at <strong>1021 S Rogers Cir #18, Boca Raton, FL 33487</strong> (inside Englert Arts Inc.). We're centrally located to serve all of South Florida and open 7 days a week, 7:30AM-3:30PM. You can also schedule a free in-home consultation where we bring samples to you.</p>
                     </div>
                 </div>
                 <div class="accordion-item">

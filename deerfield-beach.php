@@ -367,7 +367,7 @@
                         <i class="bi bi-chevron-down accordion-icon"></i>
                     </button>
                     <div class="accordion-content">
-                        <p>Yes! Our Boca Raton showroom is just <strong>10 minutes south</strong> of Deerfield Beach. Visit us at 1021 S Rogers Cir #18 to see our complete collection of 200+ quartz colors. We're open 7 days a week, 8AM-6PM. Alternatively, we can bring samples directly to your Deerfield Beach home.</p>
+                        <p>Yes! Our Boca Raton showroom is just <strong>10 minutes south</strong> of Deerfield Beach. Visit us at 1021 S Rogers Cir #18 to see our complete collection of 200+ quartz colors. We're open 7 days a week, 7:30AM-3:30PM. Alternatively, we can bring samples directly to your Deerfield Beach home.</p>
                     </div>
                 </div>
             </div>

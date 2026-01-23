@@ -76,14 +76,8 @@
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:00",
-                "closes": "18:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "14:00"
+                "opens": "07:30",
+                "closes": "15:30"
             }
         ]
     }
@@ -342,7 +336,7 @@
                 <a href="tel:17203241436" class="btn btn-primary"><i class="bi bi-telephone"></i> (720) 324-1436</a>
                 <a href="mailto:info@soflocountertops.com" class="btn btn-secondary"><i class="bi bi-envelope"></i> Email Us</a>
             </div>
-            <p class="hero-trust"><i class="bi bi-clock"></i> Mon-Fri 8am-6pm &nbsp;|&nbsp; Sat 9am-2pm</p>
+            <p class="hero-trust"><i class="bi bi-clock"></i> Mon-Fri 7:30am-3:30pm &nbsp;|&nbsp; Sat-Sun Closed</p>
         </div>
     </section>
 

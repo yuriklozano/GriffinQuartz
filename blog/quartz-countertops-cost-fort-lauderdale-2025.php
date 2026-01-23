@@ -383,7 +383,7 @@
                     <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
                         1021 S Rogers Cir #18<br>Boca Raton, FL 33487
                     </a>
-                    <p style="margin-top: 1rem;"><strong>Hours:</strong> Mon-Sun 8AM-6PM</p>
+                    <p style="margin-top: 1rem;"><strong>Hours:</strong> Mon-Fri 7:30AM-3:30PM</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quartz Countertop Services</h4>

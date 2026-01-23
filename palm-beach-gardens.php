@@ -74,9 +74,9 @@
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "08:00",
-            "closes": "18:00"
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:30",
+            "closes": "15:30"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -420,7 +420,7 @@
                         <i class="bi bi-chevron-down accordion-icon"></i>
                     </button>
                     <div class="accordion-content">
-                        <p>Our showroom is located at <strong>1021 S Rogers Cir #18, Boca Raton, FL 33487</strong>, just a short drive south from Palm Beach Gardens via I-95. We're open <strong>7 days a week from 8AM-6PM</strong>. We also offer <strong>complimentary in-home consultations</strong> throughout Palm Beach Gardens.</p>
+                        <p>Our showroom is located at <strong>1021 S Rogers Cir #18, Boca Raton, FL 33487</strong>, just a short drive south from Palm Beach Gardens via I-95. We're open <strong>7 days a week from 7:30AM-3:30PM</strong>. We also offer <strong>complimentary in-home consultations</strong> throughout Palm Beach Gardens.</p>
                     </div>
                 </div>
             </div>

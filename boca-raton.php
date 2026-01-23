@@ -74,9 +74,9 @@
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "08:00",
-            "closes": "18:00"
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:30",
+            "closes": "15:30"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -128,7 +128,7 @@
                 "name": "Where is the Griffin Quartz showroom located in Boca Raton?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our showroom is located at 1021 S Rogers Cir #18, Boca Raton, FL 33487 (at Englert Arts Inc.). We're open 7 days a week from 8AM-6PM. Visit us to see over 200 quartz samples in person and speak with our design experts."
+                    "text": "Our showroom is located at 1021 S Rogers Cir #18, Boca Raton, FL 33487 (at Englert Arts Inc.). We're open 7 days a week from 7:30AM-3:30PM. Visit us to see over 200 quartz samples in person and speak with our design experts."
                 }
             },
             {
@@ -375,7 +375,7 @@
                         <i class="bi bi-chevron-down accordion-icon"></i>
                     </button>
                     <div class="accordion-content">
-                        <p>Our showroom is located at <strong>1021 S Rogers Cir #18, Boca Raton, FL 33487</strong> (at Englert Arts Inc.). We're conveniently situated near I-95 and open <strong>7 days a week from 8AM-6PM</strong>. Visit us to see over 200 quartz samples in person, explore full-size slabs, and speak with our design experts—no appointment necessary.</p>
+                        <p>Our showroom is located at <strong>1021 S Rogers Cir #18, Boca Raton, FL 33487</strong> (at Englert Arts Inc.). We're conveniently situated near I-95 and open <strong>7 days a week from 7:30AM-3:30PM</strong>. Visit us to see over 200 quartz samples in person, explore full-size slabs, and speak with our design experts—no appointment necessary.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
