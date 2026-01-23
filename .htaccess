@@ -25,6 +25,8 @@ RewriteRule ^ /%1 [R=301,L]
 
 # 301 Redirect .php URLs to clean URLs (SEO-friendly)
 # Example: /quartz-brands.php redirects to /quartz-brands
+# Skip API folder to allow POST requests
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
 RewriteCond %{THE_REQUEST} \s/(.+)\.php[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 
