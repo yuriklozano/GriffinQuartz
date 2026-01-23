@@ -51,7 +51,7 @@ $categories = $pdo->query("SELECT * FROM blog_categories ORDER BY name")->fetchA
 $all_tags = $pdo->query("SELECT name FROM blog_tags ORDER BY name")->fetchAll(PDO::FETCH_COLUMN);
 
 $extra_head = '
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/mqm6rw1cddziy72qn0wmzrr0guw1pj6ckp5fwg90q0kr8qfq/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <style>
     /* Featured Image Upload */
     .featured-image-upload {
