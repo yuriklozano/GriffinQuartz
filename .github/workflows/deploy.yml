@@ -25,7 +25,6 @@ jobs:
             --exclude .gitignore \
             --exclude node_modules/ \
             --exclude api/config.php \
-            --exclude admin/leads.php \
             ./ ./
           bye
           EOF
