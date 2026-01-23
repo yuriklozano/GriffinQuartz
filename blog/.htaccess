@@ -1,0 +1,21 @@
+# Griffin Quartz Blog - URL Routing
+# Clean URLs: /blog/post-slug -> /blog/post.php?slug=post-slug
+
+RewriteEngine On
+RewriteBase /blog/
+
+# Don't rewrite actual files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Don't rewrite if it's a query string request (pagination, filters)
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} !^/blog/index\.php
+RewriteCond %{REQUEST_URI} !^/blog/post\.php
+
+# Rewrite /blog/slug to /blog/post.php?slug=slug
+RewriteRule ^([a-z0-9-]+)/?$ post.php?slug=$1 [L,QSA]
+
+# Fallback for old static .php URLs - redirect to clean URL
+RewriteCond %{THE_REQUEST} /blog/([a-z0-9-]+)\.php
+RewriteRule ^(.+)\.php$ /blog/$1 [R=301,L]

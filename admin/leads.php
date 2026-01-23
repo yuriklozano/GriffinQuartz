@@ -156,7 +156,10 @@ $weekLeads = $pdo->query("SELECT COUNT(*) FROM leads WHERE created_at >= DATE_SU
 <body>
     <div class="header">
         <h1>Griffin Quartz Leads</h1>
-        <a href="?logout=1">Logout</a>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="/admin/blog/">Blog Admin</a>
+            <a href="?logout=1">Logout</a>
+        </div>
     </div>
 
     <div class="container">

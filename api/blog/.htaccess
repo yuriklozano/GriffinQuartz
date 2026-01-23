@@ -1,0 +1,10 @@
+# API Blog Directory
+# Allow PHP API endpoints
+
+Options -Indexes
+
+# Allow PHP execution
+<FilesMatch "\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

@@ -1,0 +1,10 @@
+# Admin Blog Directory
+# Allow PHP execution for blog management pages
+
+Options -Indexes
+
+# Allow all PHP files in this directory
+<FilesMatch "\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

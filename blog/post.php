@@ -1,0 +1,293 @@
+<?php
+/**
+ * Griffin Quartz - Dynamic Blog Post Renderer
+ * Renders individual blog posts from database
+ */
+
+$basePath = '..';
+require_once dirname(__DIR__) . '/api/config.php';
+
+// Get slug from URL
+$slug = $_GET['slug'] ?? '';
+
+if (empty($slug)) {
+    header('Location: /blog/');
+    exit();
+}
+
+// Database connection
+try {
+    $pdo = new PDO(
+        "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4",
+        DB_USER,
+        DB_PASS,
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
+    );
+} catch (PDOException $e) {
+    http_response_code(500);
+    die('Database error');
+}
+
+// Get post
+$stmt = $pdo->prepare("
+    SELECT p.*
+    FROM blog_posts p
+    WHERE p.slug = ?
+    AND p.status = 'published'
+    AND (p.publish_date IS NULL OR p.publish_date <= NOW())
+");
+$stmt->execute([$slug]);
+$post = $stmt->fetch();
+
+if (!$post) {
+    // Try static file fallback for old posts
+    $static_file = __DIR__ . '/' . $slug . '.php';
+    if (file_exists($static_file)) {
+        include $static_file;
+        exit();
+    }
+
+    http_response_code(404);
+    header('Location: /blog/');
+    exit();
+}
+
+// Increment view count
+$pdo->prepare("UPDATE blog_posts SET views = views + 1 WHERE id = ?")->execute([$post['id']]);
+
+// Get categories
+$stmt = $pdo->prepare("
+    SELECT c.name, c.slug
+    FROM blog_categories c
+    JOIN blog_post_categories pc ON c.id = pc.category_id
+    WHERE pc.post_id = ?
+");
+$stmt->execute([$post['id']]);
+$categories = $stmt->fetchAll();
+
+// Get tags
+$stmt = $pdo->prepare("
+    SELECT t.name, t.slug
+    FROM blog_tags t
+    JOIN blog_post_tags pt ON t.id = pt.tag_id
+    WHERE pt.post_id = ?
+");
+$stmt->execute([$post['id']]);
+$tags = $stmt->fetchAll();
+
+// Get FAQs
+$stmt = $pdo->prepare("SELECT question, answer FROM blog_faqs WHERE post_id = ? ORDER BY sort_order");
+$stmt->execute([$post['id']]);
+$faqs = $stmt->fetchAll();
+
+// Get related posts (same category)
+$related = [];
+if (!empty($categories)) {
+    $cat_ids = array_column($categories, 'slug');
+    $stmt = $pdo->prepare("
+        SELECT DISTINCT p.id, p.title, p.slug, p.featured_image, p.excerpt, p.publish_date
+        FROM blog_posts p
+        JOIN blog_post_categories pc ON p.id = pc.post_id
+        JOIN blog_categories c ON pc.category_id = c.id
+        WHERE c.slug IN ('" . implode("','", $cat_ids) . "')
+        AND p.id != ?
+        AND p.status = 'published'
+        ORDER BY p.publish_date DESC
+        LIMIT 3
+    ");
+    $stmt->execute([$post['id']]);
+    $related = $stmt->fetchAll();
+}
+
+// Prepare meta values
+$seo_title = $post['seo_title'] ?: $post['title'];
+$seo_desc = $post['seo_description'] ?: $post['excerpt'] ?: substr(strip_tags($post['content']), 0, 160);
+$og_title = $post['og_title'] ?: $seo_title;
+$og_desc = $post['og_description'] ?: $seo_desc;
+$featured_image = $post['featured_image'] ?: '../images/luxury-white-kitchen-arched-windows-gold.webp';
+$publish_date = $post['publish_date'] ?: $post['created_at'];
+
+// Helper function
+function e($str) {
+    return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8');
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title><?= e($seo_title) ?> | Griffin Quartz Blog</title>
+    <meta name="description" content="<?= e($seo_desc) ?>">
+    <?php if ($post['seo_keywords']): ?>
+    <meta name="keywords" content="<?= e($post['seo_keywords']) ?>">
+    <?php endif; ?>
+    <meta name="author" content="<?= e($post['author']) ?>">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://soflocountertops.com/blog/<?= e($post['slug']) ?>">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soflocountertops.com/blog/<?= e($post['slug']) ?>">
+    <meta property="og:title" content="<?= e($og_title) ?>">
+    <meta property="og:description" content="<?= e($og_desc) ?>">
+    <meta property="og:image" content="https://soflocountertops.com<?= e($featured_image) ?>">
+    <meta property="article:published_time" content="<?= date('c', strtotime($publish_date)) ?>">
+    <meta property="article:modified_time" content="<?= date('c', strtotime($post['updated_at'])) ?>">
+    <meta property="article:author" content="<?= e($post['author']) ?>">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= e($og_title) ?>">
+    <meta name="twitter:description" content="<?= e($og_desc) ?>">
+    <meta name="twitter:image" content="https://soflocountertops.com<?= e($featured_image) ?>">
+
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Schema.org BlogPosting -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": <?= json_encode($post['title']) ?>,
+        "description": <?= json_encode($seo_desc) ?>,
+        "image": "https://soflocountertops.com<?= e($featured_image) ?>",
+        "datePublished": "<?= date('c', strtotime($publish_date)) ?>",
+        "dateModified": "<?= date('c', strtotime($post['updated_at'])) ?>",
+        "author": {
+            "@type": "Person",
+            "name": <?= json_encode($post['author']) ?>
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Griffin Quartz",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://soflocountertops.com/images/griffin-quartz-logo.webp"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://soflocountertops.com/blog/<?= e($post['slug']) ?>"
+        }
+    }
+    </script>
+
+    <?php if (!empty($faqs)): ?>
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            <?php foreach ($faqs as $i => $faq): ?>
+            {
+                "@type": "Question",
+                "name": <?= json_encode($faq['question']) ?>,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": <?= json_encode($faq['answer']) ?>
+                }
+            }<?= $i < count($faqs) - 1 ? ',' : '' ?>
+            <?php endforeach; ?>
+        ]
+    }
+    </script>
+    <?php endif; ?>
+</head>
+<body>
+<?php include '../includes/header.php'; ?>
+
+    <!-- Breadcrumb -->
+    <div class="blog-breadcrumb">
+        <div class="container">
+            <nav>
+                <a href="../">Home</a>
+                <span>/</span>
+                <a href="/blog/">Blog</a>
+                <span>/</span>
+                <span class="current"><?= e($post['title']) ?></span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Blog Article -->
+    <article class="blog-article">
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="<?= e($featured_image) ?>" alt="<?= e($post['featured_image_alt'] ?: $post['title']) ?>" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By <?= e($post['author']) ?> | <?= date('M j, Y', strtotime($publish_date)) ?></span>
+                    <h1><?= e($post['title']) ?></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Body -->
+        <div class="blog-body">
+            <div class="blog-content">
+                <?= $post['content'] ?>
+
+                <?php if (!empty($faqs)): ?>
+                <section class="blog-faq" style="margin-top: 3rem;">
+                    <h2>Frequently Asked Questions</h2>
+                    <?php foreach ($faqs as $faq): ?>
+                    <div class="faq-item" style="margin-bottom: 1.5rem;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;"><?= e($faq['question']) ?></h3>
+                        <p><?= e($faq['answer']) ?></p>
+                    </div>
+                    <?php endforeach; ?>
+                </section>
+                <?php endif; ?>
+
+                <?php if (!empty($tags)): ?>
+                <div class="blog-tags" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                    <strong>Tags:</strong>
+                    <?php foreach ($tags as $tag): ?>
+                        <a href="/blog/?tag=<?= e($tag['slug']) ?>" style="display: inline-block; padding: 0.25rem 0.5rem; background: #f5f5f5; border-radius: 4px; margin: 0.25rem; font-size: 0.875rem; text-decoration: none; color: #333;">
+                            <?= e($tag['name']) ?>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+            </div>
+
+            <!-- CTA -->
+            <div class="blog-cta">
+                <h3>Ready to Transform Your Kitchen?</h3>
+                <p>Get expert advice and a free quote for your quartz countertop project.</p>
+                <a href="/#contact-form" class="btn btn-primary">Get Your FREE Estimate</a>
+            </div>
+
+            <?php if (!empty($related)): ?>
+            <section class="blog-related" style="margin-top: 3rem;">
+                <h2 style="margin-bottom: 1.5rem;">Related Articles</h2>
+                <div class="blog-index-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <?php foreach ($related as $rel):
+                        $rel_image = $rel['featured_image'] ?: '../images/luxury-white-kitchen-arched-windows-gold.webp';
+                        $rel_date = $rel['publish_date'] ? date('M j, Y', strtotime($rel['publish_date'])) : '';
+                    ?>
+                    <a href="/blog/<?= e($rel['slug']) ?>" class="blog-index-card">
+                        <img src="<?= e($rel_image) ?>" alt="<?= e($rel['title']) ?>" loading="lazy">
+                        <div class="blog-index-card-content">
+                            <h3 style="font-size: 1rem;"><?= e($rel['title']) ?></h3>
+                        </div>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+            <?php endif; ?>
+        </div>
+    </article>
+
+<?php include '../includes/footer.php'; ?>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Database directory - allow migration scripts
+# Scripts require admin login to run
+
+Options -Indexes
+
+# Block direct access to SQL files
+<FilesMatch "\.sql$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow PHP migration scripts
+<FilesMatch "\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
