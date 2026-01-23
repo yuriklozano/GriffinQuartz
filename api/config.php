@@ -5,7 +5,7 @@
  */
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'Griffin Quartz Leads');
+define('DB_NAME', 'f5wciqwnqbfz_Griffin Quartz Leads');
 define('DB_USER', 'f5wciqwnqbfz_Yurikllozano');
 define('DB_PASS', 'Golden@120198');
 
