@@ -8,6 +8,13 @@ $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
 // Home link - always use absolute root path
 $homeLink = '/';
 ?>
+<!-- Admin Utility Bar -->
+<div class="admin-utility-bar">
+    <div class="container">
+        <a href="<?php echo $prefix; ?>admin/leads" class="admin-login-link"><i class="bi bi-person-lock"></i> Admin</a>
+    </div>
+</div>
+
 <!-- Announcement Bar -->
 <div class="announcement-bar">
     <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="<?php echo $prefix; ?>#contact-form"><strong>EXPLORE SALE</strong></a></p>

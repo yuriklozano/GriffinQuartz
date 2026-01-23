@@ -80,6 +80,30 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 var(--container-padding);
 }
 
+/* ===== Admin Utility Bar ===== */
+.admin-utility-bar {
+    background: #1a1a1a;
+    padding: 0.35rem 0;
+    font-size: 0.75rem;
+}
+
+.admin-utility-bar .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin-login-link {
+    color: rgba(255, 255, 255, 0.7);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color var(--transition-fast);
+}
+
+.admin-login-link:hover {
+    color: var(--color-accent);
+}
+
 /* ===== Buttons ===== */
 .btn {
     display: inline-block;
