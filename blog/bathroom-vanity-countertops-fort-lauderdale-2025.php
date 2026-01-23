@@ -230,14 +230,25 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
+        <!-- Hero Header -->
+        <div class="blog-header-hero">
+            <img src="../images/bathroom-spa-calacatta-walnut-tub.webp" alt="Luxury spa bathroom with Calacatta quartz vanity countertop in Fort Lauderdale" class="blog-featured-image" loading="eager">
+            <div class="blog-hero-overlay"></div>
+            <div class="blog-header-content">
                 <span class="blog-meta">By Griffin Quartz Team | Jan 10, 2025</span>
                 <h1>Bathroom Vanity Countertops: Fort Lauderdale Design Trends 2025</h1>
+                <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/bathroom-vanity-countertops-fort-lauderdale-2025" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/bathroom-vanity-countertops-fort-lauderdale-2025&text=Bathroom%20Vanity%20Countertops%3A%20Fort%20Lauderdale%20Design%20Trends%202025" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Bathroom%20Vanity%20Countertops%3A%20Fort%20Lauderdale%20Design%20Trends%202025%20https://soflocountertops.com/blog/bathroom-vanity-countertops-fort-lauderdale-2025" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/bathroom-vanity-countertops-fort-lauderdale-2025&media=https://soflocountertops.com/images/bathroom-spa-calacatta-walnut-tub.webp&description=Bathroom%20Vanity%20Countertops%3A%20Fort%20Lauderdale%20Design%20Trends%202025" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="sms:?body=Check%20this%20out%3A%20Bathroom%20Vanity%20Countertops%3A%20Fort%20Lauderdale%20Design%20Trends%202025%20https://soflocountertops.com/blog/bathroom-vanity-countertops-fort-lauderdale-2025" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/bathroom-spa-calacatta-walnut-tub.webp" alt="Luxury spa bathroom with Calacatta quartz vanity countertop in Fort Lauderdale" class="blog-featured-image" loading="eager">
-
+        <div class="container">
             <div class="blog-content">
                 <p>Fort Lauderdale homeowners are embracing bold new directions in bathroom design for 2025. From the waterfront estates of Harbor Beach to the elegant residences along Las Olas Boulevard, bathroom vanity countertops are becoming statement pieces that blend luxury aesthetics with practical performance. Whether you are planning a complete master bath renovation or a simple powder room update, understanding the latest trends will help you create a space that feels both timeless and contemporary.</p>
 

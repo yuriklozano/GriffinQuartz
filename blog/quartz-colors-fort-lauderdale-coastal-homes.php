@@ -227,6 +227,7 @@
                 <span class="blog-meta">By Griffin Quartz Team | Jan 12, 2025</span>
                 <h1>How to Choose Quartz Colors for Fort Lauderdale Coastal Homes</h1>
                 <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
                     <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes&text=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://api.whatsapp.com/send?text=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes%20https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>

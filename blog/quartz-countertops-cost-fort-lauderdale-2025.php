@@ -199,6 +199,7 @@
                 <span class="blog-meta">By Griffin Quartz Team • Jan 8, 2025</span>
                 <h1>Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h1>
                 <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
                     <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025&text=Cost%20of%20Quartz%20Countertops%20in%20Fort%20Lauderdale%3A%202025%20Price%20Guide" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://api.whatsapp.com/send?text=Cost%20of%20Quartz%20Countertops%20in%20Fort%20Lauderdale%3A%202025%20Price%20Guide%20https://soflocountertops.com/blog/quartz-countertops-cost-fort-lauderdale-2025" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>

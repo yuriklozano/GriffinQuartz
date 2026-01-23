@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,14 +16,25 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
+        <!-- Hero Header -->
+        <div class="blog-header-hero">
+            <img src="../images/resort-poolside-outdoor-kitchen-blue-tile.webp" alt="Modern luxury kitchen with marble countertops" class="blog-featured-image" loading="eager">
+            <div class="blog-hero-overlay"></div>
+            <div class="blog-header-content">
                 <span class="blog-meta">By Yurik Lozano • Aug 09, 2025</span>
                 <h1>Top 10 Best Countertop Installation Near Fort Lauderdale 2025</h1>
+                <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/top-10-countertop-installation" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/top-10-countertop-installation&text=Top%2010%20Best%20Countertop%20Installation%20Near%20Fort%20Lauderdale%202025" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Top%2010%20Best%20Countertop%20Installation%20Near%20Fort%20Lauderdale%202025%20https://soflocountertops.com/blog/top-10-countertop-installation" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/top-10-countertop-installation&media=https://soflocountertops.com/images/resort-poolside-outdoor-kitchen-blue-tile.webp&description=Top%2010%20Best%20Countertop%20Installation%20Near%20Fort%20Lauderdale%202025" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="sms:?body=Check%20this%20out%3A%20Top%2010%20Best%20Countertop%20Installation%20Near%20Fort%20Lauderdale%202025%20https://soflocountertops.com/blog/top-10-countertop-installation" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/resort-poolside-outdoor-kitchen-blue-tile.webp" alt="Modern luxury kitchen with marble countertops" class="blog-featured-image" loading="eager">
-
+        <div class="container">
             <div class="blog-content">
                 <p>Looking for the best countertop installation services in Fort Lauderdale? Whether you're renovating your kitchen or updating a bathroom vanity, choosing the right installer is crucial for a successful project. Here's our comprehensive guide to the top countertop installation companies serving Fort Lauderdale in 2025.</p>
 

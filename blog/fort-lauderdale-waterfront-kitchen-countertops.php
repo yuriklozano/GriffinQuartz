@@ -176,14 +176,25 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
+        <!-- Hero Header -->
+        <div class="blog-header-hero">
+            <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Luxury waterfront kitchen with quartz countertops in Fort Lauderdale" class="blog-featured-image" loading="eager">
+            <div class="blog-hero-overlay"></div>
+            <div class="blog-header-content">
                 <span class="blog-meta">By Griffin Quartz Team • Jan 15, 2025</span>
                 <h1>Best Kitchen Countertops for Fort Lauderdale Waterfront Homes</h1>
+                <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/fort-lauderdale-waterfront-kitchen-countertops" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/fort-lauderdale-waterfront-kitchen-countertops&text=Best%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Waterfront%20Homes" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Best%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Waterfront%20Homes%20https://soflocountertops.com/blog/fort-lauderdale-waterfront-kitchen-countertops" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/fort-lauderdale-waterfront-kitchen-countertops&media=https://soflocountertops.com/images/kitchen-waterfront-palms-orchids.webp&description=Best%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Waterfront%20Homes" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="sms:?body=Check%20this%20out%3A%20Best%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Waterfront%20Homes%20https://soflocountertops.com/blog/fort-lauderdale-waterfront-kitchen-countertops" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Luxury waterfront kitchen with quartz countertops in Fort Lauderdale" class="blog-featured-image" loading="eager">
-
+        <div class="container">
             <div class="blog-content">
                 <p>Living in <a href="../fort-lauderdale">Fort Lauderdale</a> means embracing a lifestyle where indoor and outdoor spaces blend seamlessly together. Known as the "Venice of America" for its 165 miles of navigable waterways, this stunning South Florida city offers some of the most coveted waterfront real estate in the country. From the luxurious estates along the Intracoastal Waterway to the charming bungalows of Rio Vista and the upscale condominiums lining Galt Ocean Mile, kitchen countertops Fort Lauderdale homeowners choose must stand up to unique coastal challenges while complementing the breathtaking views outside their windows.</p>
 

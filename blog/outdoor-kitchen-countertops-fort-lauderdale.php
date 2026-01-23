@@ -191,14 +191,25 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
+        <!-- Hero Header -->
+        <div class="blog-header-hero">
+            <img src="../images/outdoor-kitchen-pool-firepit-dusk.webp" alt="Outdoor kitchen with quartz countertops next to Fort Lauderdale pool area at dusk" class="blog-featured-image" loading="eager">
+            <div class="blog-hero-overlay"></div>
+            <div class="blog-header-content">
                 <span class="blog-meta">By Griffin Quartz Team | Jan 11, 2025</span>
                 <h1>Outdoor Kitchen Countertops for Fort Lauderdale Pool Areas</h1>
+                <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/outdoor-kitchen-countertops-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/outdoor-kitchen-countertops-fort-lauderdale&text=Outdoor%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Pool%20Areas" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Outdoor%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Pool%20Areas%20https://soflocountertops.com/blog/outdoor-kitchen-countertops-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/outdoor-kitchen-countertops-fort-lauderdale&media=https://soflocountertops.com/images/outdoor-kitchen-pool-firepit-dusk.webp&description=Outdoor%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Pool%20Areas" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="sms:?body=Check%20this%20out%3A%20Outdoor%20Kitchen%20Countertops%20for%20Fort%20Lauderdale%20Pool%20Areas%20https://soflocountertops.com/blog/outdoor-kitchen-countertops-fort-lauderdale" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/outdoor-kitchen-pool-firepit-dusk.webp" alt="Outdoor kitchen with quartz countertops next to Fort Lauderdale pool area at dusk" class="blog-featured-image" loading="eager">
-
+        <div class="container">
             <div class="blog-content">
                 <p>Fort Lauderdale homeowners enjoy one of the most enviable outdoor lifestyles in the country. With year-round sunshine, stunning waterfront properties, and a culture built around entertaining, it is no surprise that outdoor kitchens have become essential features in local homes. Choosing the right outdoor kitchen countertops in Fort Lauderdale requires careful consideration of our unique climate challenges and the specific demands of poolside living.</p>
 

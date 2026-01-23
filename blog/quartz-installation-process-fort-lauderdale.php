@@ -176,14 +176,25 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <div class="container">
-            <div class="blog-header">
+        <!-- Hero Header -->
+        <div class="blog-header-hero">
+            <img src="../images/installation-team-penthouse-slab.webp" alt="Professional quartz countertop installation team working in Fort Lauderdale penthouse" class="blog-featured-image" loading="eager">
+            <div class="blog-hero-overlay"></div>
+            <div class="blog-header-content">
                 <span class="blog-meta">By Griffin Quartz Team • Jan 7, 2025</span>
                 <h1>Quartz Countertop Installation Process in Fort Lauderdale: Your Complete Step-by-Step Guide</h1>
+                <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-installation-process-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-installation-process-fort-lauderdale&text=Quartz%20Countertop%20Installation%20Process%20in%20Fort%20Lauderdale" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Quartz%20Countertop%20Installation%20Process%20in%20Fort%20Lauderdale%20https://soflocountertops.com/blog/quartz-installation-process-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-installation-process-fort-lauderdale&media=https://soflocountertops.com/images/installation-team-penthouse-slab.webp&description=Quartz%20Countertop%20Installation%20Process%20in%20Fort%20Lauderdale" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="sms:?body=Check%20this%20out%3A%20Quartz%20Countertop%20Installation%20Process%20in%20Fort%20Lauderdale%20https://soflocountertops.com/blog/quartz-installation-process-fort-lauderdale" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                </div>
             </div>
+        </div>
 
-            <img src="../images/installation-team-penthouse-slab.webp" alt="Professional quartz countertop installation team working in Fort Lauderdale penthouse" class="blog-featured-image" loading="eager">
-
+        <div class="container">
             <div class="blog-content">
                 <p>Installing new quartz countertops transforms your kitchen or bathroom, but understanding the installation process helps you prepare and know exactly what to expect. If you are planning a quartz countertop installation in Fort Lauderdale, this comprehensive guide walks you through every step from your initial consultation to the moment you admire your stunning new surfaces.</p>
 

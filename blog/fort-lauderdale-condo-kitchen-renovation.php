@@ -243,6 +243,7 @@
                 <span class="blog-meta">By Griffin Quartz Team | Jan 13, 2025</span>
                 <h1>Fort Lauderdale Condo Kitchen Renovations: Complete Guide</h1>
                 <div class="blog-share-buttons">
+                    <span class="blog-share-label">Share</span>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/fort-lauderdale-condo-kitchen-renovation" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
                     <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/fort-lauderdale-condo-kitchen-renovation&text=Fort%20Lauderdale%20Condo%20Kitchen%20Renovations%3A%20Complete%20Guide" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://api.whatsapp.com/send?text=Fort%20Lauderdale%20Condo%20Kitchen%20Renovations%3A%20Complete%20Guide%20https://soflocountertops.com/blog/fort-lauderdale-condo-kitchen-renovation" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>

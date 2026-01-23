@@ -5164,6 +5164,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
 }
 
 .blog-header-hero .blog-featured-image {
@@ -5216,36 +5217,43 @@ h1, h2, h3, h4, h5, h6 {
 .blog-share-buttons {
     display: flex;
     justify-content: center;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 1rem;
     margin-top: var(--spacing-lg);
+}
+
+.blog-share-label {
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .blog-share-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     color: #fff;
     text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .blog-share-btn:hover {
     transform: scale(1.1);
-    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #fff;
+    color: #fff;
 }
 
 .blog-share-btn i {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
-
-.blog-share-btn.facebook { background: #1877F2; }
-.blog-share-btn.twitter { background: #000000; }
-.blog-share-btn.whatsapp { background: #25D366; }
-.blog-share-btn.pinterest { background: #E60023; }
-.blog-share-btn.sms { background: #34C759; }
 
 /* Legacy blog header fallback */
 .blog-header {
@@ -5343,7 +5351,8 @@ h1, h2, h3, h4, h5, h6 {
 .blog-breadcrumb {
     padding: var(--spacing-md) 0;
     background-color: var(--color-light);
-    border-bottom: 1px solid var(--color-light-gray);
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .blog-breadcrumb nav {
