@@ -151,6 +151,34 @@ function e($str) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css">
 
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://soflocountertops.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": <?= json_encode($post['title']) ?>,
+                "item": "https://soflocountertops.com/blog/<?= e($post['slug']) ?>"
+            }
+        ]
+    }
+    </script>
+
     <!-- Schema.org BlogPosting -->
     <script type="application/ld+json">
     {
