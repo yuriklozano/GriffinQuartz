@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -22,6 +23,14 @@
                 <div class="blog-hero-content">
                     <span class="blog-meta">By Griffin Quartz Team | Jan 22, 2026</span>
                     <h1>Best Quartz Countertop Brands in 2026: Complete Comparison Guide</h1>
+                    <div class="blog-share-buttons">
+                        <span class="blog-share-label">Share</span>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/best-quartz-countertop-brands" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/best-quartz-countertop-brands&text=Best%20Quartz%20Countertop%20Brands%20in%202026" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=Best%20Quartz%20Countertop%20Brands%20in%202026%20https://soflocountertops.com/blog/best-quartz-countertop-brands" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/best-quartz-countertop-brands&media=https://soflocountertops.com/images/fabrication-shop-polishing-slab.webp&description=Best%20Quartz%20Countertop%20Brands%20in%202026" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="sms:?body=Check%20this%20out%3A%20Best%20Quartz%20Countertop%20Brands%20in%202026%20https://soflocountertops.com/blog/best-quartz-countertop-brands" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
