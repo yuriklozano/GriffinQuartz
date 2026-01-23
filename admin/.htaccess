@@ -1,0 +1,8 @@
+# Protect admin directory
+Options -Indexes
+
+# Block direct access to PHP files except leads.php
+<FilesMatch "^(?!leads\.php$).+\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
