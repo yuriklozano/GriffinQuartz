@@ -1,12 +1,8 @@
 <?php
 /**
  * Griffin Quartz - Admin Header
- * Shared header for all admin pages
+ * Shared header with sidebar for all admin pages
  */
-
-// Current page detection
-$current_page = basename($_SERVER['PHP_SELF'], '.php');
-$current_dir = basename(dirname($_SERVER['PHP_SELF']));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,25 +14,109 @@ $current_dir = basename(dirname($_SERVER['PHP_SELF']));
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
 
-        /* Admin Header */
-        .admin-header { background: #000; color: white; padding: 0; }
-        .admin-header-inner { max-width: 1400px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-        .admin-header h1 { font-size: 1.25rem; font-weight: 600; }
-        .admin-header h1 a { color: white; text-decoration: none; }
-        .admin-header-actions { display: flex; gap: 1.5rem; align-items: center; }
-        .admin-header-actions a { color: #999; text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
-        .admin-header-actions a:hover { color: #FDB913; }
-        .admin-header-actions a.active { color: #FDB913; }
+        /* Layout */
+        .admin-layout { display: flex; min-height: 100vh; }
 
-        /* Admin Navigation */
-        .admin-nav { background: #1a1a1a; border-bottom: 1px solid #333; }
-        .admin-nav-inner { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; gap: 0; }
-        .admin-nav a { color: #999; text-decoration: none; padding: 0.75rem 1rem; font-size: 0.875rem; border-bottom: 2px solid transparent; transition: all 0.2s; }
-        .admin-nav a:hover { color: white; background: rgba(255,255,255,0.05); }
-        .admin-nav a.active { color: #FDB913; border-bottom-color: #FDB913; }
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: #1a1a1a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 100;
+        }
+        .sidebar-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #333;
+        }
+        .sidebar-header h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #FDB913;
+        }
+        .sidebar-header span {
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-        /* Container */
-        .admin-container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        /* Sidebar Navigation */
+        .sidebar-nav { padding: 1rem 0; flex: 1; }
+        .sidebar-section { margin-bottom: 1.5rem; }
+        .sidebar-section-title {
+            font-size: 0.7rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        .sidebar-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+        .sidebar-nav a:hover {
+            background: rgba(255,255,255,0.05);
+            color: white;
+        }
+        .sidebar-nav a.active {
+            background: rgba(253, 185, 19, 0.1);
+            color: #FDB913;
+            border-left-color: #FDB913;
+        }
+        .sidebar-nav a svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+        .sidebar-nav a:hover svg,
+        .sidebar-nav a.active svg {
+            opacity: 1;
+        }
+
+        /* Sidebar Footer */
+        .sidebar-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #333;
+        }
+        .sidebar-footer a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .sidebar-footer a:hover { color: #999; }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: 260px;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        /* Page Header */
+        .page-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .page-title-row h1 { font-size: 1.5rem; color: #000; }
 
         /* Stats Cards */
         .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
@@ -111,10 +191,6 @@ $current_dir = basename(dirname($_SERVER['PHP_SELF']));
         /* Empty state */
         .empty { text-align: center; padding: 3rem; color: #666; }
 
-        /* Page title row */
-        .page-title-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
-        .page-title-row h1 { font-size: 1.5rem; color: #000; }
-
         /* Alerts */
         .alert { padding: 1rem; border-radius: 4px; margin-bottom: 1rem; }
         .alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
@@ -128,13 +204,22 @@ $current_dir = basename(dirname($_SERVER['PHP_SELF']));
 
         /* Responsive */
         @media (max-width: 1024px) {
+            .sidebar { width: 220px; }
+            .main-content { margin-left: 220px; }
             .two-col { grid-template-columns: 1fr; }
             .two-col-sidebar { order: -1; }
         }
         @media (max-width: 768px) {
-            .admin-container { padding: 1rem; }
-            .admin-header-inner { padding: 1rem; }
-            .admin-nav-inner { padding: 0 1rem; overflow-x: auto; }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+            .admin-layout { flex-direction: column; }
             table { font-size: 0.875rem; }
             th, td { padding: 0.75rem 0.5rem; }
             .page-title-row { flex-direction: column; gap: 1rem; align-items: flex-start; }
@@ -143,23 +228,7 @@ $current_dir = basename(dirname($_SERVER['PHP_SELF']));
     <?php if (isset($extra_head)) echo $extra_head; ?>
 </head>
 <body>
-    <header class="admin-header">
-        <div class="admin-header-inner">
-            <h1><a href="/admin/leads.php">Griffin Quartz Admin</a></h1>
-            <div class="admin-header-actions">
-                <a href="/" target="_blank">View Site</a>
-                <a href="/admin/leads.php?logout=1">Logout</a>
-            </div>
-        </div>
-    </header>
+    <div class="admin-layout">
+        <?php include __DIR__ . '/admin-sidebar.php'; ?>
 
-    <nav class="admin-nav">
-        <div class="admin-nav-inner">
-            <a href="/admin/leads.php" <?= $current_page === 'leads' ? 'class="active"' : '' ?>>Leads</a>
-            <a href="/admin/blog/" <?= $current_dir === 'blog' && $current_page === 'index' ? 'class="active"' : '' ?>>Blog Posts</a>
-            <a href="/admin/blog/edit.php" <?= $current_page === 'edit' ? 'class="active"' : '' ?>>New Post</a>
-            <a href="/admin/blog/categories.php" <?= $current_page === 'categories' ? 'class="active"' : '' ?>>Categories</a>
-        </div>
-    </nav>
-
-    <main class="admin-container">
+        <main class="main-content">
