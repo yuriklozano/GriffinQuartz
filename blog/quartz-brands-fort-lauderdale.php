@@ -193,24 +193,26 @@
     <!-- Blog Article -->
     <article class="blog-article">
         <!-- Hero Header -->
-        <div class="blog-header-hero">
-            <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern Fort Lauderdale kitchen featuring premium gray quartz countertops" class="blog-featured-image" loading="eager">
-            <div class="blog-hero-overlay"></div>
-            <div class="blog-header-content">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 6, 2025</span>
-                <h1>Top Quartz Brands Available in Fort Lauderdale</h1>
-                <div class="blog-share-buttons">
-                    <span class="blog-share-label">Share</span>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-brands-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-brands-fort-lauderdale&text=Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://api.whatsapp.com/send?text=Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale%20https://soflocountertops.com/blog/quartz-brands-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-brands-fort-lauderdale&media=https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp&description=Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
-                    <a href="sms:?body=Check%20this%20out%3A%20Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale%20https://soflocountertops.com/blog/quartz-brands-fort-lauderdale" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+        <div class="blog-hero">
+            <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern Fort Lauderdale kitchen featuring premium gray quartz countertops" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 6, 2025</span>
+                    <h1>Top Quartz Brands Available in Fort Lauderdale</h1>
+                    <div class="blog-share-buttons">
+                        <span class="blog-share-label">Share</span>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-brands-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-brands-fort-lauderdale&text=Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale%20https://soflocountertops.com/blog/quartz-brands-fort-lauderdale" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-brands-fort-lauderdale&media=https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp&description=Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="sms:?body=Check%20this%20out%3A%20Top%20Quartz%20Brands%20Available%20in%20Fort%20Lauderdale%20https://soflocountertops.com/blog/quartz-brands-fort-lauderdale" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>Choosing the right quartz brand is just as important as selecting the perfect color for your Fort Lauderdale home. With dozens of manufacturers flooding the market, understanding the differences between premium quartz brands helps you make an informed investment. At our <a href="../fort-lauderdale">Fort Lauderdale quartz showroom</a>, we partner with the industry's most trusted names to bring South Florida homeowners exceptional quality, stunning aesthetics, and reliable warranties.</p>
 

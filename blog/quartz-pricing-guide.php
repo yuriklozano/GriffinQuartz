@@ -16,25 +16,27 @@
 
     <!-- Blog Article -->
     <article class="blog-article">
-        <!-- Hero Header -->
-        <div class="blog-header-hero">
-            <img src="../images/industrial-loft-kitchen-brick-quartz-island.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-featured-image" loading="eager">
-            <div class="blog-hero-overlay"></div>
-            <div class="blog-header-content">
-                <span class="blog-meta">By Yurik Lozano • Aug 22, 2025</span>
-                <h1>How Much Is Quartz Countertops? 2025 Pricing Guide</h1>
-                <div class="blog-share-buttons">
-                    <span class="blog-share-label">Share</span>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-pricing-guide" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-pricing-guide&text=How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://api.whatsapp.com/send?text=How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide%20https://soflocountertops.com/blog/quartz-pricing-guide" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-pricing-guide&media=https://soflocountertops.com/images/industrial-loft-kitchen-brick-quartz-island.webp&description=How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
-                    <a href="sms:?body=Check%20this%20out%3A%20How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide%20https://soflocountertops.com/blog/quartz-pricing-guide" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/industrial-loft-kitchen-brick-quartz-island.webp" alt="Modern luxury kitchen with quartz countertops" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Yurik Lozano • Aug 22, 2025</span>
+                    <h1>How Much Is Quartz Countertops? 2025 Pricing Guide</h1>
+                    <div class="blog-share-buttons">
+                        <span class="blog-share-label">Share</span>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-pricing-guide" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-pricing-guide&text=How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide%20https://soflocountertops.com/blog/quartz-pricing-guide" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-pricing-guide&media=https://soflocountertops.com/images/industrial-loft-kitchen-brick-quartz-island.webp&description=How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="sms:?body=Check%20this%20out%3A%20How%20Much%20Is%20Quartz%20Countertops%3F%202025%20Pricing%20Guide%20https://soflocountertops.com/blog/quartz-pricing-guide" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>If you're considering quartz countertops for your home, understanding the pricing landscape is essential for planning your budget. This comprehensive 2025 pricing guide will help you understand what factors into the cost and how to get the best value for your investment.</p>
 

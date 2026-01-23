@@ -1,108 +1,114 @@
-<?php
-$pageTitle = "Fort Lauderdale Restaurant & Bar Countertops: Commercial Guide";
-$pageDescription = "Expert guide to commercial quartz countertops for Fort Lauderdale restaurants, bars, and cafes. NSF certified, durable, and stunning designs for high-traffic venues.";
-$canonicalURL = "https://www.griffinquartz.com/blog/fort-lauderdale-restaurant-bar-countertops";
-include '../includes/header.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert guide to commercial quartz countertops for Fort Lauderdale restaurants, bars, and cafes. NSF certified, durable, and stunning designs for high-traffic venues.">
+    <title>Fort Lauderdale Restaurant & Bar Countertops: Commercial Guide | Griffin Quartz Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles.css">
 
-<!-- Blog Post Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Fort Lauderdale Restaurant & Bar Countertops: Commercial Guide",
-    "image": "https://www.griffinquartz.com/images/commercial-bar-black-gold-quartz-restaurant.webp",
-    "author": {
-        "@type": "Organization",
-        "name": "Griffin Quartz"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Griffin Quartz",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.griffinquartz.com/images/griffin-quartz-logo.png"
+    <!-- Blog Post Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Fort Lauderdale Restaurant & Bar Countertops: Commercial Guide",
+        "image": "https://www.griffinquartz.com/images/commercial-bar-black-gold-quartz-restaurant.webp",
+        "author": {
+            "@type": "Organization",
+            "name": "Griffin Quartz"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Griffin Quartz",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.griffinquartz.com/images/griffin-quartz-logo.png"
+            }
+        },
+        "datePublished": "2025-01-09",
+        "dateModified": "2025-01-09",
+        "description": "Expert guide to commercial quartz countertops for Fort Lauderdale restaurants, bars, and cafes. NSF certified, durable, and stunning designs for high-traffic venues.",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.griffinquartz.com/blog/fort-lauderdale-restaurant-bar-countertops"
         }
-    },
-    "datePublished": "2025-01-09",
-    "dateModified": "2025-01-09",
-    "description": "Expert guide to commercial quartz countertops for Fort Lauderdale restaurants, bars, and cafes. NSF certified, durable, and stunning designs for high-traffic venues.",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.griffinquartz.com/blog/fort-lauderdale-restaurant-bar-countertops"
     }
-}
-</script>
+    </script>
 
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "What countertop material is best for commercial restaurants?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Quartz is the top choice for commercial restaurants due to its exceptional durability, non-porous surface, and low maintenance requirements. Unlike natural stone, quartz resists stains, bacteria, and heat without requiring sealing. It meets NSF certification standards and handles the demanding environment of busy commercial kitchens."
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What countertop material is best for commercial restaurants?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Quartz is the top choice for commercial restaurants due to its exceptional durability, non-porous surface, and low maintenance requirements. Unlike natural stone, quartz resists stains, bacteria, and heat without requiring sealing. It meets NSF certification standards and handles the demanding environment of busy commercial kitchens."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are quartz countertops food-safe for restaurants?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, quartz countertops are completely food-safe and ideal for restaurant use. The non-porous surface prevents bacteria, mold, and mildew growth. Many quartz products carry NSF International certification, meeting strict food safety standards required for commercial food service establishments."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does commercial countertop installation take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Commercial countertop installation typically takes 1-3 days depending on the project scope. Griffin Quartz offers flexible scheduling including overnight and weekend installations to minimize business disruption. We coordinate with your operations team to ensure seamless installation without impacting service hours."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the cost of commercial countertops in Fort Lauderdale?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Commercial countertop costs in Fort Lauderdale range from $50-$150 per square foot installed, depending on material selection, edge profiles, and project complexity. Volume discounts are available for larger installations. Contact Griffin Quartz for a free commercial estimate tailored to your restaurant's specific needs."
+                }
             }
-        },
-        {
-            "@type": "Question",
-            "name": "Are quartz countertops food-safe for restaurants?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, quartz countertops are completely food-safe and ideal for restaurant use. The non-porous surface prevents bacteria, mold, and mildew growth. Many quartz products carry NSF International certification, meeting strict food safety standards required for commercial food service establishments."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How long does commercial countertop installation take?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Commercial countertop installation typically takes 1-3 days depending on the project scope. Griffin Quartz offers flexible scheduling including overnight and weekend installations to minimize business disruption. We coordinate with your operations team to ensure seamless installation without impacting service hours."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "What is the cost of commercial countertops in Fort Lauderdale?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Commercial countertop costs in Fort Lauderdale range from $50-$150 per square foot installed, depending on material selection, edge profiles, and project complexity. Volume discounts are available for larger installations. Contact Griffin Quartz for a free commercial estimate tailored to your restaurant's specific needs."
-            }
-        }
-    ]
-}
-</script>
+        ]
+    }
+    </script>
+</head>
+<body>
+<?php $basePath = '..'; include '../includes/header.php'; ?>
 
-<main class="blog-post">
-    <article>
-        <!-- Blog Header -->
-        <header class="blog-header">
-            <div class="container">
-                <div class="blog-meta">
-                    <span class="blog-category">Commercial</span>
-                    <span class="blog-date">January 9, 2025</span>
+    <!-- Blog Article -->
+    <article class="blog-article">
+        <!-- Full-width Hero -->
+        <div class="blog-hero">
+            <img src="../images/commercial-bar-black-gold-quartz-restaurant.webp" alt="Commercial bar with black and gold quartz countertop in Fort Lauderdale restaurant" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team • Jan 09, 2025</span>
+                    <h1>Fort Lauderdale Restaurant & Bar Countertops: Commercial Guide</h1>
+                    <div class="blog-share-buttons">
+                        <span class="blog-share-label">Share</span>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/fort-lauderdale-restaurant-bar-countertops" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/fort-lauderdale-restaurant-bar-countertops&text=Fort%20Lauderdale%20Restaurant%20%26%20Bar%20Countertops%3A%20Commercial%20Guide" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=Fort%20Lauderdale%20Restaurant%20%26%20Bar%20Countertops%3A%20Commercial%20Guide%20https://soflocountertops.com/blog/fort-lauderdale-restaurant-bar-countertops" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/fort-lauderdale-restaurant-bar-countertops&media=https://soflocountertops.com/images/commercial-bar-black-gold-quartz-restaurant.webp&description=Fort%20Lauderdale%20Restaurant%20%26%20Bar%20Countertops%3A%20Commercial%20Guide" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="sms:?body=Check%20this%20out%3A%20Fort%20Lauderdale%20Restaurant%20%26%20Bar%20Countertops%3A%20Commercial%20Guide%20https://soflocountertops.com/blog/fort-lauderdale-restaurant-bar-countertops" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                    </div>
                 </div>
-                <h1>Fort Lauderdale Restaurant & Bar Countertops: Commercial Guide</h1>
-                <p class="blog-excerpt">Everything restaurant owners need to know about choosing durable, food-safe, and visually stunning countertops for commercial establishments.</p>
             </div>
-        </header>
-
-        <!-- Featured Image -->
-        <div class="blog-featured-image">
-            <img src="../images/commercial-bar-black-gold-quartz-restaurant.webp"
-                 alt="Commercial bar with black and gold quartz countertop in Fort Lauderdale restaurant"
-                 width="1200"
-                 height="630"
-                 loading="eager">
         </div>
 
-        <!-- Blog Content -->
-        <div class="blog-content">
-            <div class="container">
-
+        <!-- Blog Body -->
+        <div class="blog-body">
+            <div class="blog-content">
                 <p>When restaurant countertops Fort Lauderdale establishments need must balance stunning aesthetics with commercial-grade durability, quartz emerges as the clear winner. From the upscale eateries along Las Olas Boulevard to bustling beachfront bars and trendy rooftop venues, South Florida's hospitality industry demands countertop surfaces that can handle everything the culinary world throws at them.</p>
 
                 <p>Fort Lauderdale's restaurant scene has exploded in recent years, transforming the city into a genuine culinary destination. Whether you're opening a new establishment or renovating an existing space, your countertop choice directly impacts food safety, operational efficiency, and the overall guest experience. This comprehensive guide covers everything you need to know about selecting and installing commercial countertops for your Fort Lauderdale restaurant, bar, or cafe.</p>
@@ -218,53 +224,50 @@ include '../includes/header.php';
                 <p>Griffin Quartz has partnered with dozens of Fort Lauderdale restaurants, bars, and cafes to deliver countertop solutions that enhance operations and impress customers. Our commercial team understands the unique demands of the hospitality industry and provides the expertise, flexibility, and quality your establishment deserves.</p>
 
                 <p>From initial design consultation through installation and beyond, we work around your schedule to deliver stunning, durable countertops that serve your business for years to come.</p>
+            </div>
 
+            <div class="blog-cta">
+                <h3>Elevate Your Fort Lauderdale Restaurant</h3>
+                <p>Get commercial-grade countertops that impress customers and withstand daily use.</p>
+                <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
             </div>
         </div>
-
-        <!-- CTA Section -->
-        <section class="blog-cta">
-            <div class="container">
-                <h2>Elevate Your Fort Lauderdale Restaurant</h2>
-                <p>Get commercial-grade countertops that impress customers and withstand daily use.</p>
-                <a href="../contact" class="btn btn-primary">Get FREE Estimate</a>
-            </div>
-        </section>
-
-        <!-- Related Posts -->
-        <section class="related-posts">
-            <div class="container">
-                <h2>Related Articles</h2>
-                <div class="related-posts-grid">
-                    <a href="quartz-vs-granite-fort-lauderdale" class="related-post-card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp"
-                             alt="Quartz vs Granite Fort Lauderdale"
-                             width="400"
-                             height="250"
-                             loading="lazy">
-                        <h3>Quartz vs Granite</h3>
-                    </a>
-                    <a href="quartz-brands-fort-lauderdale" class="related-post-card">
-                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp"
-                             alt="Quartz Brands Fort Lauderdale"
-                             width="400"
-                             height="250"
-                             loading="lazy">
-                        <h3>Quartz Brands</h3>
-                    </a>
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="related-post-card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp"
-                             alt="Quartz Cost Guide Fort Lauderdale"
-                             width="400"
-                             height="250"
-                             loading="lazy">
-                        <h3>Quartz Cost Guide</h3>
-                    </a>
-                </div>
-            </div>
-        </section>
-
     </article>
-</main>
 
-<?php include '../includes/footer.php'; ?>
+    <!-- Related Posts -->
+    <section class="related-posts">
+        <div class="container">
+            <h2>Related Articles</h2>
+            <div class="related-posts-grid">
+                <a href="quartz-vs-granite-fort-lauderdale" class="related-post-card">
+                    <img src="../images/quartz-samples-gold-hardware-luxury.webp"
+                         alt="Quartz vs Granite Fort Lauderdale"
+                         width="400"
+                         height="250"
+                         loading="lazy">
+                    <h3>Quartz vs Granite</h3>
+                </a>
+                <a href="quartz-brands-fort-lauderdale" class="related-post-card">
+                    <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp"
+                         alt="Quartz Brands Fort Lauderdale"
+                         width="400"
+                         height="250"
+                         loading="lazy">
+                    <h3>Quartz Brands</h3>
+                </a>
+                <a href="quartz-countertops-cost-fort-lauderdale-2025" class="related-post-card">
+                    <img src="../images/luxury-white-kitchen-arched-windows-gold.webp"
+                         alt="Quartz Cost Guide Fort Lauderdale"
+                         width="400"
+                         height="250"
+                         loading="lazy">
+                    <h3>Quartz Cost Guide</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <?php include '../includes/footer.php'; ?>
+</body>
+</html>

@@ -220,24 +220,26 @@
     <!-- Blog Article -->
     <article class="blog-article">
         <!-- Hero Header -->
-        <div class="blog-header-hero">
-            <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Coastal Fort Lauderdale kitchen with white Calacatta quartz countertops" class="blog-featured-image" loading="eager">
-            <div class="blog-hero-overlay"></div>
-            <div class="blog-header-content">
-                <span class="blog-meta">By Griffin Quartz Team | Jan 12, 2025</span>
-                <h1>How to Choose Quartz Colors for Fort Lauderdale Coastal Homes</h1>
-                <div class="blog-share-buttons">
-                    <span class="blog-share-label">Share</span>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes&text=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://api.whatsapp.com/send?text=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes%20https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes&media=https://soflocountertops.com/images/kitchen-coastal-calacatta-palms-flowers.webp&description=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
-                    <a href="sms:?body=Check%20this%20out%3A%20How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes%20https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+        <div class="blog-hero">
+            <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Coastal Fort Lauderdale kitchen with white Calacatta quartz countertops" class="blog-hero-image" loading="eager">
+            <div class="blog-hero-overlay">
+                <div class="blog-hero-content">
+                    <span class="blog-meta">By Griffin Quartz Team | Jan 12, 2025</span>
+                    <h1>How to Choose Quartz Colors for Fort Lauderdale Coastal Homes</h1>
+                    <div class="blog-share-buttons">
+                        <span class="blog-share-label">Share</span>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" target="_blank" rel="noopener" class="blog-share-btn facebook" title="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes&text=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes" target="_blank" rel="noopener" class="blog-share-btn twitter" title="Share on X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes%20https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" target="_blank" rel="noopener" class="blog-share-btn whatsapp" title="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes&media=https://soflocountertops.com/images/kitchen-coastal-calacatta-palms-flowers.webp&description=How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes" target="_blank" rel="noopener" class="blog-share-btn pinterest" title="Share on Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="sms:?body=Check%20this%20out%3A%20How%20to%20Choose%20Quartz%20Colors%20for%20Fort%20Lauderdale%20Coastal%20Homes%20https://soflocountertops.com/blog/quartz-colors-fort-lauderdale-coastal-homes" class="blog-share-btn sms" title="Share via SMS"><i class="bi bi-chat-dots"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <!-- Blog Body -->
+        <div class="blog-body">
             <div class="blog-content">
                 <p>Selecting the perfect quartz countertop colors for your Fort Lauderdale coastal home is about more than aesthetics. It is about capturing the essence of waterfront living while creating a space that feels both luxurious and effortlessly relaxed. From the sun-drenched kitchens of Las Olas estates to the sleek condos overlooking the Intracoastal, the right quartz color can transform your space into a true coastal retreat.</p>
 
