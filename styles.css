@@ -5125,6 +5125,389 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* ===== Blog Article Page Styles ===== */
+.blog-article {
+    padding: var(--spacing-3xl) 0;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    margin-top: var(--spacing-sm);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-xl);
+}
+
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-content p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+}
+
+.blog-content h2 {
+    font-size: 1.75rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-content h3 {
+    font-size: 1.375rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
+.blog-content li {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    list-style: disc;
+}
+
+.blog-content ol li {
+    list-style: decimal;
+}
+
+.blog-content a {
+    color: var(--color-accent-dark);
+    text-decoration: underline;
+}
+
+.blog-content a:hover {
+    color: var(--color-accent);
+}
+
+.blog-cta {
+    background-color: var(--color-light);
+    padding: var(--spacing-xl);
+    border-radius: 12px;
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-cta p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gray);
+}
+
+/* ===== Blog Breadcrumb ===== */
+.blog-breadcrumb {
+    padding: var(--spacing-md) 0;
+    background-color: var(--color-light);
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.blog-breadcrumb nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 0.875rem;
+}
+
+.blog-breadcrumb a {
+    color: var(--color-gray);
+    transition: color var(--transition-fast);
+}
+
+.blog-breadcrumb a:hover {
+    color: var(--color-accent);
+}
+
+.blog-breadcrumb span {
+    color: var(--color-gray);
+}
+
+.blog-breadcrumb .current {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+/* ===== Blog FAQ Section ===== */
+.blog-faq-section {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-light-gray);
+}
+
+.blog-faq-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.blog-faq-section .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-faq-section .accordion-item {
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-faq-section .accordion-item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.blog-faq-section .accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.blog-faq-section .accordion-header:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.blog-faq-section .accordion-header span {
+    flex: 1;
+    padding-right: var(--spacing-md);
+}
+
+.blog-faq-section .accordion-icon {
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.blog-faq-section .accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.blog-faq-section .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.blog-faq-section .accordion-item.active .accordion-content {
+    max-height: 500px;
+}
+
+.blog-faq-section .accordion-content p {
+    padding: 0 1.5rem 1.25rem;
+    color: var(--color-gray);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ===== Related Blogs Section ===== */
+.related-blogs-section {
+    max-width: 1000px;
+    margin: var(--spacing-xl) auto 0;
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-light-gray);
+}
+
+.related-blogs-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.related-blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.related-blog-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--color-white);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.related-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.related-blog-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.related-blog-card-content {
+    padding: var(--spacing-md);
+}
+
+.related-blog-card h3 {
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--color-primary);
+}
+
+/* ===== Blog Index Page ===== */
+.blog-index-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.blog-index-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.blog-index-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-index-header p {
+    font-size: 1.125rem;
+    color: var(--color-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-index-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.blog-index-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--color-white);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.blog-index-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.blog-index-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-index-card-content {
+    padding: var(--spacing-md);
+}
+
+.blog-index-card .blog-meta {
+    font-size: 0.8125rem;
+    color: var(--color-gray);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.blog-index-card h2 {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.blog-index-card p {
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    line-height: 1.6;
+}
+
+/* ===== Blog Responsive Styles ===== */
+@media (max-width: 992px) {
+    .blog-index-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .related-blogs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-featured-image {
+        max-height: 350px;
+    }
+
+    .blog-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .blog-faq-section h2,
+    .related-blogs-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-index-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-blogs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-index-header h1 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 480px) {
     .section-number {
         font-size: 2.5rem;
@@ -5141,6 +5524,19 @@ h1, h2, h3, h4, h5, h6 {
 
     .picker-mini-grid {
         grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    }
+
+    .blog-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .blog-cta {
+        padding: var(--spacing-lg);
+    }
+
+    .blog-faq-section .accordion-header {
+        padding: 1rem 1.25rem;
+        font-size: 0.9375rem;
     }
 }
 

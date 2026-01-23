@@ -7,7 +7,7 @@
 session_start();
 
 // Admin password
-define('ADMIN_PASSWORD', 'Golden@120198');
+define('ADMIN_PASSWORD', 'CHANGE_THIS_PASSWORD');
 
 // Handle login
 if (isset($_POST['password'])) {
@@ -66,7 +66,7 @@ require_once dirname(__DIR__) . '/api/config.php';
 
 try {
     $pdo = new PDO(
-        "mysql:host=" . DB_HOST . ";dbname=`" . DB_NAME . "`;charset=utf8mb4",
+        "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4",
         DB_USER,
         DB_PASS,
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]

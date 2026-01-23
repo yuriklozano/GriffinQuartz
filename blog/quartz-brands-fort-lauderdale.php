@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Top Quartz Brands Available in Fort Lauderdale | Griffin Quartz</title>
+    <meta name="description" content="Compare top quartz brands in Fort Lauderdale: Cambria, Silestone, Caesarstone, and MSI Q Quartz. Learn about warranties, colors, and pricing at Griffin Quartz showroom.">
+    <meta name="keywords" content="quartz brands Fort Lauderdale, Cambria Fort Lauderdale, Silestone Fort Lauderdale, Caesarstone Florida, MSI Q Quartz, quartz countertops Fort Lauderdale, quartz showroom Broward County">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Griffin Quartz">
+    <link rel="canonical" href="https://soflocountertops.com/blog/quartz-brands-fort-lauderdale">
+
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Fort Lauderdale, Florida">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://soflocountertops.com/blog/quartz-brands-fort-lauderdale">
+    <meta property="og:title" content="Top Quartz Brands Available in Fort Lauderdale | Griffin Quartz">
+    <meta property="og:description" content="Compare top quartz brands in Fort Lauderdale: Cambria, Silestone, Caesarstone, and MSI Q Quartz. Find the perfect brand for your kitchen or bathroom.">
+    <meta property="og:image" content="https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Griffin Quartz">
+    <meta property="article:published_time" content="2025-01-06">
+    <meta property="article:author" content="Griffin Quartz Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://soflocountertops.com/blog/quartz-brands-fort-lauderdale">
+    <meta name="twitter:title" content="Top Quartz Brands Available in Fort Lauderdale">
+    <meta name="twitter:description" content="Compare Cambria, Silestone, Caesarstone, and MSI Q Quartz. Find your perfect quartz brand in Fort Lauderdale.">
+    <meta name="twitter:image" content="https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp">
+
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Schema.org Structured Data - Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Top Quartz Brands Available in Fort Lauderdale",
+        "description": "A comprehensive guide to the top quartz countertop brands available through Fort Lauderdale installers, including Cambria, Silestone, Caesarstone, and MSI Q Quartz.",
+        "image": "https://soflocountertops.com/images/modern-kitchen-gray-quartz-wood-slats.webp",
+        "datePublished": "2025-01-06",
+        "dateModified": "2025-01-06",
+        "author": {
+            "@type": "Organization",
+            "name": "Griffin Quartz",
+            "url": "https://soflocountertops.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Griffin Quartz",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://soflocountertops.com/images/griffin-quartz-logo.webp"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://soflocountertops.com/blog/quartz-brands-fort-lauderdale"
+        }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best quartz brand for kitchens?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For kitchens, Cambria and Silestone are top choices. Cambria offers American-made quality with a lifetime warranty, while Silestone's N-Boost technology provides superior stain resistance—ideal for busy kitchens. Both brands offer extensive color selections designed specifically for kitchen applications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which quartz brand offers the best warranty?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cambria offers the industry's most comprehensive warranty—a transferable lifetime warranty that covers manufacturing defects and staining. Silestone and Caesarstone both offer 25-year warranties, while MSI Q Quartz provides a limited lifetime warranty. Always register your warranty after installation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Cambria better than Silestone?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both are premium brands with distinct advantages. Cambria is American-made with a lifetime warranty and exceptional veining patterns. Silestone features exclusive N-Boost technology for enhanced stain resistance and offers unique texture options. The best choice depends on your design preferences, budget, and specific performance needs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I see quartz samples in Fort Lauderdale?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Griffin Quartz has a showroom near Fort Lauderdale featuring samples from Cambria, Silestone, Caesarstone, MSI Q Quartz, and other premium brands. You can see full slabs, compare colors in different lighting, and get expert guidance from our design consultants. Schedule a visit or request an in-home consultation with samples."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>New Year, New Quartz—<strong>Up to 50% OFF</strong> Select Slabs. Fast Installation in as Little as 1 Week! <a href="/#contact-form"><strong>EXPLORE SALE</strong></a></p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo"><img src="../images/griffin-quartz-logo.webp" alt="Griffin Quartz"></a>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Our Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../our-services">Countertop Services</a></li>
+                            <li><a href="../quartz-brands">Quartz Product Selection</a></li>
+                            <li><a href="../kitchen-bath">Countertops for Kitchens & Baths</a></li>
+                            <li><a href="../commercial">Commercial Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Installation Locations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../locations">All Service Areas</a></li>
+                            <li><a href="../south-florida">South Florida</a></li>
+                            <li><a href="../boca-raton">Boca Raton, FL</a></li>
+                            <li><a href="../boynton-beach">Boynton Beach, FL</a></li>
+                            <li><a href="../coconut-creek">Coconut Creek, FL</a></li>
+                            <li><a href="../coral-springs">Coral Springs, FL</a></li>
+                            <li><a href="../deerfield-beach">Deerfield Beach, FL</a></li>
+                            <li><a href="../delray-beach">Delray Beach, FL</a></li>
+                            <li><a href="../fort-lauderdale">Fort Lauderdale, FL</a></li>
+                            <li><a href="../hollywood">Hollywood, FL</a></li>
+                            <li><a href="../miami">Miami, FL</a></li>
+                            <li><a href="../parkland">Parkland, FL</a></li>
+                            <li><a href="../pompano-beach">Pompano Beach, FL</a></li>
+                            <li><a href="../west-palm-beach">West Palm Beach, FL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../color-visualizer">Color Visualizer</a></li>
+                            <li><a href="../space-design-tool">Space Design Tool</a></li>
+                            <li><a href="../quote-calculator">Instant Quote Calculator</a></li>
+                            <li><a href="./">Blogs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="../gallery" class="nav-link">Inspiration Gallery</a></li>
+                    <li class="nav-item"><a href="../contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="tel:7203241436" class="nav-link phone-link">720-324-1436</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="blog-breadcrumb">
+        <div class="container">
+            <nav>
+                <a href="../">Home</a>
+                <span>/</span>
+                <a href="./">Blog</a>
+                <span>/</span>
+                <span class="current">Top Quartz Brands in Fort Lauderdale</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Blog Article -->
+    <article class="blog-article">
+        <div class="container">
+            <div class="blog-header">
+                <span class="blog-meta">By Griffin Quartz Team | Jan 6, 2025</span>
+                <h1>Top Quartz Brands Available in Fort Lauderdale</h1>
+            </div>
+
+            <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Modern Fort Lauderdale kitchen featuring premium gray quartz countertops" class="blog-featured-image" loading="eager">
+
+            <div class="blog-content">
+                <p>Choosing the right quartz brand is just as important as selecting the perfect color for your Fort Lauderdale home. With dozens of manufacturers flooding the market, understanding the differences between premium quartz brands helps you make an informed investment. At our <a href="../fort-lauderdale">Fort Lauderdale quartz showroom</a>, we partner with the industry's most trusted names to bring South Florida homeowners exceptional quality, stunning aesthetics, and reliable warranties.</p>
+
+                <p>This guide breaks down the top quartz brands available through Fort Lauderdale installers, comparing everything from warranty coverage and color selections to price tiers and ideal applications.</p>
+
+                <h2>Cambria: American-Made Excellence</h2>
+                <p>Cambria stands alone as the only family-owned, American-made quartz manufacturer. Produced in Minnesota with domestic materials, Cambria has earned its reputation as the premium choice for discerning Fort Lauderdale homeowners who value quality and craftsmanship.</p>
+
+                <h3>What Sets Cambria Apart</h3>
+                <ul>
+                    <li><strong>Lifetime warranty</strong> that transfers to future homeowners—the best in the industry</li>
+                    <li>Maintains strict quality control at their Minnesota facility</li>
+                    <li>Patented designs you cannot find from other manufacturers</li>
+                    <li>Exceptional depth and movement in their marble-look patterns</li>
+                    <li>NSF-certified for food safety and superior hygiene</li>
+                </ul>
+
+                <p>Cambria's Brittanicca and Ella collections remain Fort Lauderdale favorites for their stunning Calacatta marble aesthetics. Their designs capture natural stone beauty while delivering the durability quartz provides. Expect to pay $85-$150 per square foot installed for Cambria, positioning it in the premium tier.</p>
+
+                <h3>Best Applications for Cambria</h3>
+                <p>Cambria excels in high-end residential kitchens and master bathrooms where the transferable lifetime warranty adds resale value. Fort Lauderdale waterfront homeowners particularly appreciate Cambria's consistent quality and resistance to the coastal climate.</p>
+
+                <h2>Silestone by Cosentino: Innovation Leader</h2>
+                <p>Spanish manufacturer Cosentino produces Silestone, one of the world's most recognized quartz brands. Their commitment to innovation has made Silestone a preferred choice for Fort Lauderdale projects requiring cutting-edge performance.</p>
+
+                <h3>N-Boost Technology Explained</h3>
+                <p>Silestone's proprietary N-Boost technology sets it apart from competitors. This innovative treatment creates a hydrophobic surface that repels liquids and resists stains more effectively than standard quartz. For busy Fort Lauderdale kitchens where wine, coffee, and oil spills happen regularly, N-Boost provides peace of mind.</p>
+
+                <h3>Silestone Highlights</h3>
+                <ul>
+                    <li><strong>25-year warranty</strong> covering manufacturing defects and staining</li>
+                    <li>N-Boost technology for superior stain resistance</li>
+                    <li>Unique textures including Suede and Volcano finishes</li>
+                    <li>HybriQ+ technology using recycled materials and renewable energy</li>
+                    <li>Extensive selection of over 90 colors</li>
+                </ul>
+
+                <p>Silestone pricing ranges from $65-$120 per square foot installed, placing it in the mid-to-premium category. Their sustainability initiatives through the HybriQ+ line appeal to eco-conscious Fort Lauderdale homeowners.</p>
+
+                <h3>Best Applications for Silestone</h3>
+                <p>Silestone performs exceptionally in high-traffic kitchens, outdoor living spaces, and commercial applications. The N-Boost technology makes it particularly suitable for Fort Lauderdale restaurants and bars where spill resistance matters.</p>
+
+                <h2>Caesarstone: The Original Quartz Pioneer</h2>
+                <p>Israeli-based Caesarstone pioneered engineered quartz surfaces in 1987 and continues innovating today. As the brand that started the quartz revolution, Caesarstone maintains a loyal following among Fort Lauderdale designers and architects.</p>
+
+                <h3>Caesarstone Features</h3>
+                <ul>
+                    <li><strong>25-year residential warranty</strong> with commercial options available</li>
+                    <li>Industry-leading consistency in color and pattern matching</li>
+                    <li>Award-winning Metropolitan Collection featuring urban-inspired designs</li>
+                    <li>Outdoor collection engineered for UV stability</li>
+                    <li>Commitment to sustainable manufacturing practices</li>
+                </ul>
+
+                <p>Caesarstone introduced many trends now standard across the industry, including concrete-look quartz and matte finishes. Their design-forward approach attracts Fort Lauderdale homeowners seeking contemporary aesthetics. Pricing typically falls between $70-$130 per square foot installed.</p>
+
+                <h3>Best Applications for Caesarstone</h3>
+                <p>Caesarstone shines in modern and contemporary spaces where design innovation matters. Their outdoor-rated surfaces work well for Fort Lauderdale pool areas and covered patios. Commercial projects benefit from their specialized warranties and consistent quality.</p>
+
+                <h2>MSI Q Quartz: Budget-Friendly Quality</h2>
+                <p>MSI (M S International) offers Q Quartz as a value-oriented option without sacrificing essential performance. For Fort Lauderdale homeowners working within a budget, MSI Q Quartz delivers attractive aesthetics at accessible price points.</p>
+
+                <h3>MSI Q Quartz Benefits</h3>
+                <ul>
+                    <li><strong>Limited lifetime warranty</strong> for residential installations</li>
+                    <li>Competitive pricing starting around $45 per square foot installed</li>
+                    <li>Wide color selection including popular marble looks</li>
+                    <li>Readily available through major distributors</li>
+                    <li>Consistent quality for the price point</li>
+                </ul>
+
+                <p>While MSI Q Quartz may not match the depth and character of premium brands, it offers excellent value for rental properties, investment homes, and budget-conscious renovations. Expect to pay $45-$80 per square foot installed.</p>
+
+                <h3>Best Applications for MSI Q Quartz</h3>
+                <p>MSI Q Quartz works well for guest bathrooms, laundry rooms, and properties where maximizing square footage coverage matters more than premium aesthetics. Fort Lauderdale real estate investors often choose MSI for multi-unit renovations.</p>
+
+                <h2>Comparing Brands: Quick Reference Guide</h2>
+                <p>When selecting a quartz brand for your Fort Lauderdale project, consider these key factors:</p>
+
+                <h3>By Warranty Coverage</h3>
+                <ul>
+                    <li><strong>Best warranty:</strong> Cambria (transferable lifetime)</li>
+                    <li><strong>Strong warranty:</strong> Silestone and Caesarstone (25 years)</li>
+                    <li><strong>Good warranty:</strong> MSI Q Quartz (limited lifetime)</li>
+                </ul>
+
+                <h3>By Price Tier</h3>
+                <ul>
+                    <li><strong>Premium ($85-$150/sf):</strong> Cambria</li>
+                    <li><strong>Mid-range ($65-$130/sf):</strong> Silestone, Caesarstone</li>
+                    <li><strong>Budget-friendly ($45-$80/sf):</strong> MSI Q Quartz</li>
+                </ul>
+
+                <p>For detailed <a href="quartz-countertops-cost-fort-lauderdale-2025">pricing by brand</a> and installation costs, our pricing guide provides comprehensive breakdowns specific to Fort Lauderdale projects.</p>
+
+                <h3>By Application</h3>
+                <ul>
+                    <li><strong>Residential kitchens:</strong> Cambria, Silestone</li>
+                    <li><strong>Bathrooms:</strong> All brands perform well</li>
+                    <li><strong>Commercial spaces:</strong> Silestone, Caesarstone</li>
+                    <li><strong>Outdoor applications:</strong> Caesarstone (outdoor collection)</li>
+                    <li><strong>Investment properties:</strong> MSI Q Quartz</li>
+                </ul>
+
+                <h2>Griffin Quartz Brand Partnerships</h2>
+                <p>As an authorized dealer for multiple premium quartz brands, Griffin Quartz brings Fort Lauderdale homeowners access to the full spectrum of options. Our showroom displays samples from Cambria, Silestone, Caesarstone, MSI Q Quartz, and several other respected manufacturers.</p>
+
+                <p>Seeing quartz samples in person makes a significant difference in your selection process. Colors appear differently under showroom lighting than in photographs, and feeling the surface texture helps you understand what will work in your space. To <a href="../quartz-brands">view our complete brand selection</a>, schedule a showroom visit or request an in-home consultation where our design consultants bring samples directly to your Fort Lauderdale home.</p>
+
+                <h2>Making Your Brand Decision</h2>
+                <p>The best quartz brand for your Fort Lauderdale project depends on your priorities. If warranty coverage and American manufacturing matter most, Cambria leads the pack. For cutting-edge stain resistance, Silestone's N-Boost technology delivers. Design-forward homeowners often gravitate toward Caesarstone's innovative patterns. Budget-conscious buyers find excellent value in MSI Q Quartz.</p>
+
+                <p>Regardless of which brand you choose, proper installation matters just as much as the material itself. Our certified fabricators work with all major quartz brands, ensuring precision cuts, seamless seams, and professional finishing that protects your investment.</p>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="blog-faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>What is the best quartz brand for kitchens?</span>
+                            <i class="bi bi-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>For kitchens, Cambria and Silestone are top choices. Cambria offers American-made quality with a lifetime warranty, while Silestone's N-Boost technology provides superior stain resistance—ideal for busy kitchens. Both brands offer extensive color selections designed specifically for kitchen applications.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Which quartz brand offers the best warranty?</span>
+                            <i class="bi bi-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Cambria offers the industry's most comprehensive warranty—a transferable lifetime warranty that covers manufacturing defects and staining. Silestone and Caesarstone both offer 25-year warranties, while MSI Q Quartz provides a limited lifetime warranty. Always register your warranty after installation.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Is Cambria better than Silestone?</span>
+                            <i class="bi bi-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Both are premium brands with distinct advantages. Cambria is American-made with a lifetime warranty and exceptional veining patterns. Silestone features exclusive N-Boost technology for enhanced stain resistance and offers unique texture options. The best choice depends on your design preferences, budget, and specific performance needs.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Where can I see quartz samples in Fort Lauderdale?</span>
+                            <i class="bi bi-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Griffin Quartz has a showroom near Fort Lauderdale featuring samples from Cambria, Silestone, Caesarstone, MSI Q Quartz, and other premium brands. You can see full slabs, compare colors in different lighting, and get expert guidance from our design consultants. Schedule a visit or request an in-home consultation with samples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Blogs Section -->
+            <div class="related-blogs-section">
+                <h2>Related Articles</h2>
+                <div class="related-blogs-grid">
+                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="related-blog-card">
+                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz countertops cost Fort Lauderdale 2025" loading="lazy">
+                        <div class="related-blog-card-content">
+                            <h3>Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h3>
+                        </div>
+                    </a>
+                    <a href="quartz-vs-granite-fort-lauderdale" class="related-blog-card">
+                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs granite comparison Fort Lauderdale" loading="lazy">
+                        <div class="related-blog-card-content">
+                            <h3>Quartz vs Granite: Which Is Better for Fort Lauderdale's Climate?</h3>
+                        </div>
+                    </a>
+                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="related-blog-card">
+                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz colors for Fort Lauderdale coastal homes" loading="lazy">
+                        <div class="related-blog-card-content">
+                            <h3>How to Choose Quartz Colors for Fort Lauderdale Coastal Homes</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="blog-cta">
+                <h3>Explore Premium Quartz Brands</h3>
+                <p>Visit our showroom to see samples from Cambria, Silestone, Caesarstone, and more.</p>
+                <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Visit Our Showroom</h4>
+                    <p>Located at Englert Arts Inc.</p>
+                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
+                        1021 S Rogers Cir #18<br>Boca Raton, FL 33487
+                    </a>
+                    <p style="margin-top: 1rem;"><strong>Hours:</strong> Mon-Sun 8AM-6PM</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quartz Countertop Services</h4>
+                    <ul>
+                        <li><a href="../quartz-brands">Quartz Product Selection</a></li>
+                        <li><a href="../kitchen-bath">Kitchen & Bathroom Countertops</a></li>
+                        <li><a href="../commercial">Commercial Countertop Installation</a></li>
+                        <li><a href="../gallery">Inspiration Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul class="service-areas">
+                        <li><a href="../fort-lauderdale">Fort Lauderdale</a></li>
+                        <li><a href="../hollywood">Hollywood</a></li>
+                        <li><a href="../pompano-beach">Pompano Beach</a></li>
+                        <li><a href="../boca-raton">Boca Raton</a></li>
+                        <li><a href="../miami">Miami</a></li>
+                        <li><a href="../locations">All Service Areas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Griffin Quartz</h4>
+                    <p><strong>Phone:</strong> <a href="tel:7203241436">(720) 324-1436</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
+                    <p style="margin-top: 1rem;"><a href="/#contact-form" class="btn btn-primary btn-sm">Get FREE Quote</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Griffin Quartz | South Florida's Premier Quartz Countertop Installers</p>
+                <p class="footer-areas">Proudly serving Fort Lauderdale and all of Broward County, Palm Beach County, and Miami-Dade County.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
