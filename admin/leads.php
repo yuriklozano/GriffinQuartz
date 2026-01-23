@@ -6,8 +6,8 @@
 
 session_start();
 
-// CHANGE THIS PASSWORD!
-define('ADMIN_PASSWORD', 'GriffinQuartz2026!');
+// Admin password
+define('ADMIN_PASSWORD', 'Golden@120198');
 
 // Handle login
 if (isset($_POST['password'])) {
