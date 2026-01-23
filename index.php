@@ -714,34 +714,37 @@
         <div class="container">
             <h2 class="section-title">Featured Articles</h2>
             <div class="blog-grid">
-                <a href="blog/top-10-countertop-installation" class="blog-card">
-                    <img src="images/resort-poolside-outdoor-kitchen-blue-tile.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                <a href="blog/quartz-countertops-cost-fort-lauderdale-2025" class="blog-card">
+                    <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Quartz countertop cost guide for Fort Lauderdale homeowners" loading="lazy">
                     <div class="blog-card-content">
-                        <span class="blog-meta">By Yurik Lozano • Aug 09, 2025</span>
-                        <h3>Top 10 Best Countertop Installation Near Fort Lauderdale 2025</h3>
+                        <span class="blog-meta">By Yurik Lozano • Jan 2025</span>
+                        <h3>Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h3>
                     </div>
                 </a>
-                <a href="blog/quartz-countertops-cost" class="blog-card">
-                    <img src="images/hotel-buffet-white-marble-counter-flowers.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                <a href="blog/quartz-colors-fort-lauderdale-coastal-homes" class="blog-card">
+                    <img src="images/kitchen-coastal-blue-tile-backsplash.webp" alt="Choosing quartz colors for Fort Lauderdale coastal homes" loading="lazy">
                     <div class="blog-card-content">
-                        <span class="blog-meta">By Yurik Lozano • Sep 01, 2025</span>
-                        <h3>How Much Are Quartz Countertops in South Florida</h3>
+                        <span class="blog-meta">By Yurik Lozano • Jan 2025</span>
+                        <h3>How to Choose Quartz Colors for Fort Lauderdale Coastal Homes</h3>
                     </div>
                 </a>
-                <a href="blog/quartz-pricing-guide" class="blog-card">
-                    <img src="images/industrial-loft-kitchen-brick-quartz-island.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                <a href="blog/fort-lauderdale-condo-kitchen-renovation" class="blog-card">
+                    <img src="images/kitchen-highrise-condo-intracoastal.webp" alt="Fort Lauderdale condo kitchen renovation guide" loading="lazy">
                     <div class="blog-card-content">
-                        <span class="blog-meta">By Yurik Lozano • Aug 22, 2025</span>
-                        <h3>How Much Is Quartz Countertops? 2025 Pricing Guide</h3>
+                        <span class="blog-meta">By Yurik Lozano • Jan 2025</span>
+                        <h3>Fort Lauderdale Condo Kitchen Renovations: Complete Guide</h3>
                     </div>
                 </a>
-                <a href="blog/white-quartz-countertops" class="blog-card">
-                    <img src="images/waterfront-patio-quartz-table-marina-sunset.webp" alt="Modern luxury kitchen with marble countertops" loading="lazy">
+                <a href="blog/quartz-brands-fort-lauderdale" class="blog-card">
+                    <img src="images/kitchen-penthouse-calacatta-gold-ocean.webp" alt="Top quartz countertop brands in Fort Lauderdale" loading="lazy">
                     <div class="blog-card-content">
-                        <span class="blog-meta">By Yurik Lozano • Aug 20, 2025</span>
-                        <h3>White Quartz Countertops in South Florida</h3>
+                        <span class="blog-meta">By Yurik Lozano • Jan 2025</span>
+                        <h3>Top Quartz Brands Available in Fort Lauderdale</h3>
                     </div>
                 </a>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="blog/" class="btn btn-secondary">View All Articles</a>
             </div>
         </div>
     </section>
