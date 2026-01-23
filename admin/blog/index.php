@@ -4,10 +4,6 @@
  * List, filter, and manage blog posts
  */
 
-// Temporary debugging - remove after fixing
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 require_once dirname(__DIR__) . '/includes/admin-auth.php';
 require_admin_login();
 
