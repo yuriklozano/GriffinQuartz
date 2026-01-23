@@ -173,21 +173,36 @@ try {
 function sendEmailNotification($formType, $name, $email, $phone, $project, $message, $leadId) {
     $to = ADMIN_EMAIL;
     $subject = "[" . SITE_NAME . "] New " . ucfirst($formType) . " Lead #$leadId";
+    $fromEmail = defined('FROM_EMAIL') ? FROM_EMAIL : 'noreply@soflocountertops.com';
+    $fromName = defined('FROM_NAME') ? FROM_NAME : SITE_NAME;
 
-    $body = "New lead submission received:\n\n";
-    $body .= "Form Type: " . ucfirst($formType) . "\n";
-    $body .= "Lead ID: $leadId\n";
-    $body .= "----------------------------\n";
-    $body .= "Name: $name\n";
-    $body .= "Email: $email\n";
-    $body .= "Phone: $phone\n";
-    if ($project) $body .= "Project Type: $project\n";
-    if ($message) $body .= "Message:\n$message\n";
-    $body .= "----------------------------\n";
-    $body .= "Submitted: " . date('Y-m-d H:i:s') . "\n";
+    // Build HTML email for better deliverability
+    $body = "<!DOCTYPE html><html><head><meta charset='UTF-8'></head><body>";
+    $body .= "<h2>New Lead Submission</h2>";
+    $body .= "<table style='border-collapse: collapse; width: 100%; max-width: 600px;'>";
+    $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Form Type</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>" . ucfirst($formType) . "</td></tr>";
+    $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Lead ID</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>$leadId</td></tr>";
+    $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Name</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>$name</td></tr>";
+    $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Email</strong></td><td style='padding: 8px; border: 1px solid #ddd;'><a href='mailto:$email'>$email</a></td></tr>";
+    $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Phone</strong></td><td style='padding: 8px; border: 1px solid #ddd;'><a href='tel:$phone'>$phone</a></td></tr>";
+    if ($project) {
+        $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Project</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>$project</td></tr>";
+    }
+    if ($message) {
+        $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Message</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>" . nl2br($message) . "</td></tr>";
+    }
+    $body .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Submitted</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>" . date('Y-m-d H:i:s') . "</td></tr>";
+    $body .= "</table>";
+    $body .= "</body></html>";
 
-    $headers = "From: noreply@soflocountertops.com\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    // Headers for better deliverability
+    $headers = "From: $fromName <$fromEmail>\r\n";
+    $headers .= "Reply-To: $name <$email>\r\n";
+    $headers .= "Return-Path: $fromEmail\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+    $headers .= "X-Priority: 1\r\n";
 
-    @mail($to, $subject, $body, $headers);
+    @mail($to, $subject, $body, $headers, "-f$fromEmail");
 }
