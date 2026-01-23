@@ -46,10 +46,14 @@ if (!file_exists($sql_file)) {
 $sql = file_get_contents($sql_file);
 echo "[OK] Loaded migration file\n\n";
 
-// Split into individual statements
+// Remove comments and split into individual statements
+$sql = preg_replace('/--.*$/m', '', $sql);  // Remove single-line comments
+$sql = preg_replace('/^\s*\n/m', '', $sql); // Remove empty lines
+
+// Split by semicolons but keep the statements
 $statements = array_filter(
-    array_map('trim', explode(';', $sql)),
-    function($s) { return !empty($s) && strpos($s, '--') !== 0; }
+    array_map('trim', preg_split('/;[\r\n]+/', $sql)),
+    function($s) { return !empty(trim($s)); }
 );
 
 echo "Running " . count($statements) . " SQL statements...\n";
