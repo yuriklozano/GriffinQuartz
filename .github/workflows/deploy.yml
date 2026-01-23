@@ -18,13 +18,13 @@ jobs:
           sudo apt-get install -y lftp
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" "${{ secrets.FTP_SERVER }}" <<EOF
           set ssl:verify-certificate no
-          mirror --reverse --delete --verbose \
-            --exclude .git/ \
-            --exclude .github/ \
-            --exclude README.md \
-            --exclude .gitignore \
-            --exclude node_modules/ \
-            --exclude api/config.php \                                                                                           
-            ./ ./
+          mirror --reverse --delete --verbose \                                                                                  
+              --exclude .git/ \                                                                                                    
+              --exclude .github/ \                                                                                                 
+              --exclude README.md \                                                                                                
+              --exclude .gitignore \                                                                                               
+              --exclude node_modules/ \                                                                                            
+              --exclude api/config.php \                                                                                           
+              ./ ./
           bye
           EOF
