@@ -5,9 +5,9 @@
  */
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'your_database_name');  // e.g., 'username_leads'
-define('DB_USER', 'your_database_user');  // e.g., 'username_leadsuser'
-define('DB_PASS', 'your_database_password');
+define('DB_NAME', 'Griffin Quartz Leads');
+define('DB_USER', 'f5wciqwnqbfz_Yurikllozano');
+define('DB_PASS', 'Golden@120198');
 
 /**
  * Site Configuration
