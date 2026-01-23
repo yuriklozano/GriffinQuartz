@@ -21,7 +21,7 @@
     },
     "image": "https://soflocountertops.com/images/luxury-white-kitchen-arched-windows-gold.webp",
     "description": "South Florida's premier quartz countertop installation company. Serving Fort Lauderdale, Miami, Boca Raton, and surrounding areas with premium Cambria, Silestone, and Caesarstone countertops.",
-    "telephone": "+1-954-945-7944",
+    "telephone": "+1-720-324-1436",
     "email": "info@soflocountertops.com",
     "address": {
         "@type": "PostalAddress",

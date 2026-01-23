@@ -158,7 +158,7 @@
             <p class="hero-description">Explore our stunning quartz countertop installations across South Florida. From luxury kitchens to spa-like bathrooms, see how we transform spaces with premium quartz surfaces.</p>
             <div class="hero-cta">
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
-                <a href="tel:19549457944" class="btn btn-secondary"><i class="bi bi-telephone"></i> (954) 945-7944</a>
+                <a href="tel:17203241436" class="btn btn-secondary"><i class="bi bi-telephone"></i> (720) 324-1436</a>
             </div>
             <p class="hero-trust"><i class="bi bi-star-fill"></i> 5-Star Rated &nbsp;|&nbsp; 200+ Projects Completed</p>
         </div>
@@ -213,7 +213,7 @@
                 <h3>Ready to Start Your Project?</h3>
                 <p>Contact us today for a free consultation and let us help bring your vision to life.</p>
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
-                <a href="tel:19549457944" class="btn btn-secondary">Call (954) 945-7944</a>
+                <a href="tel:17203241436" class="btn btn-secondary">Call (720) 324-1436</a>
             </div>
         </div>
     </section>
