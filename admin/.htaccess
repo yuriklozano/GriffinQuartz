@@ -1,14 +1,15 @@
 # Protect admin directory
 Options -Indexes
 
-# Enable mod_rewrite for clean URLs
+# Enable mod_rewrite
 RewriteEngine On
+RewriteBase /admin/
 
-# Serve .php file for extensionless URLs
+# Redirect /admin/leads to /admin/leads.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*)$ $1.php [L]
+RewriteCond %{DOCUMENT_ROOT}/admin/$1.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
 
 # Block direct access to PHP files except leads.php
 <FilesMatch "^(?!leads\.php$).+\.php$">
