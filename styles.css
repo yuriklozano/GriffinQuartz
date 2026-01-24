@@ -6019,3 +6019,157 @@ h1, h2, h3, h4, h5, h6 {
         height: 160px;
     }
 }
+
+/* ===== Related Articles (Classless HTML Structure) ===== */
+/*
+ * Targets the raw HTML structure used in blog posts:
+ * <h2>Related Articles</h2>
+ * <a href="..."><img><h4>Title</h4><p>Date</p></a>
+ * Uses :has() selector to identify anchor tags containing images
+ */
+
+/* Create a grid wrapper effect using CSS Grid on the parent */
+.blog-content:has(> a:has(img) + a:has(img)) {
+    display: block;
+}
+
+/* Style the Related Articles heading */
+.blog-content > h2:last-of-type {
+    font-size: 1.75rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-light-gray);
+    text-align: center;
+}
+
+/*
+ * Create a grid container for consecutive anchor tags with images
+ * This targets anchors that are direct children of .blog-content and contain images
+ */
+.blog-content > a:has(img) {
+    display: block;
+    text-decoration: none;
+    background: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-content > a:has(img):hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    color: inherit;
+}
+
+/* Remove the default blog-content link styling for these cards */
+.blog-content > a:has(img),
+.blog-content > a:has(img):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Style images inside the related article cards */
+.blog-content > a:has(img) > img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Style the h4 title inside related article cards */
+.blog-content > a:has(img) > h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-primary);
+    margin: 0;
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-xs) var(--spacing-md);
+}
+
+/* Style the date paragraph inside related article cards */
+.blog-content > a:has(img) > p {
+    font-size: 0.8125rem;
+    color: var(--color-gray);
+    margin: 0;
+    padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
+    line-height: 1.4;
+}
+
+/*
+ * Use CSS Grid to create 3-column layout on desktop
+ * We need to use a pseudo-grid approach since we can't wrap the anchors
+ */
+@supports (display: grid) {
+    /* Create the grid effect by floating and sizing the cards */
+    .blog-content > a:has(img) {
+        float: left;
+        width: calc(33.333% - var(--spacing-md));
+        margin-right: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Clear float after every 3rd card */
+    .blog-content > a:has(img):nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    /* Clear the float after the last card */
+    .blog-content > a:has(img):last-of-type {
+        margin-right: 0;
+    }
+
+    /* Add clearfix to the h2 before related articles */
+    .blog-content > h2:last-of-type::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Clearfix after all the floating cards */
+    .blog-content::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+    .blog-content > a:has(img) {
+        width: calc(50% - var(--spacing-sm));
+        margin-right: var(--spacing-md);
+    }
+
+    .blog-content > a:has(img):nth-of-type(3n) {
+        margin-right: var(--spacing-md);
+    }
+
+    .blog-content > a:has(img):nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 576px) {
+    .blog-content > a:has(img) {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .blog-content > a:has(img) > img {
+        height: 160px;
+    }
+
+    .blog-content > h2:last-of-type {
+        font-size: 1.5rem;
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+    }
+}
