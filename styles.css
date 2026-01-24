@@ -5390,7 +5390,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-faq-section h2 {
     font-size: 1.75rem;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
