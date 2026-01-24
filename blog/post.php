@@ -296,14 +296,17 @@ function e($str) {
                 <?php endif; ?>
             </div>
 
-            <!-- CTA -->
+            <!-- CTA - Only show if content doesn't already have one -->
+            <?php if (strpos($post['content'], 'blog-cta') === false): ?>
             <div class="blog-cta">
                 <h3>Ready to Transform Your Kitchen?</h3>
                 <p>Get expert advice and a free quote for your quartz countertop project.</p>
                 <a href="/#contact-form" class="btn btn-primary">Get Your FREE Estimate</a>
             </div>
+            <?php endif; ?>
 
-            <?php if (!empty($related)): ?>
+            <!-- Related Articles - Only show if content doesn't already have them -->
+            <?php if (!empty($related) && strpos($post['content'], 'Related Articles') === false && strpos($post['content'], 'related-') === false): ?>
             <section class="blog-related" style="margin-top: 3rem;">
                 <h2 style="margin-bottom: 1.5rem;">Related Articles</h2>
                 <div class="blog-index-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
