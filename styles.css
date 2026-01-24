@@ -5830,6 +5830,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
+.blog-cta .btn-primary {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.blog-cta .btn-primary:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 /* Blog Article Responsive */
 @media (max-width: 768px) {
     .blog-hero {
