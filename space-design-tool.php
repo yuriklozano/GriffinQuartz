@@ -2485,12 +2485,12 @@
 
         const sides = state.backsplash.sides;
 
-        // Handle L-shape specially
+        // Handle L-shape specially - only outer edges, no inner edges
         if (shape.type === 'lshape') {
             const armWidth = shape.armWidth || shape.width * 0.4;
             const armHeight = shape.armHeight || shape.height * 0.4;
 
-            // Top side - full width
+            // Top side - full width (outer edge)
             if (sides.top) {
                 ctx.beginPath();
                 ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
@@ -2498,7 +2498,7 @@
                 ctx.stroke();
             }
 
-            // Right side - only the top arm portion
+            // Right side - only the outer right edge (armHeight portion)
             if (sides.right) {
                 ctx.beginPath();
                 ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, armHeight);
@@ -2506,21 +2506,15 @@
                 ctx.stroke();
             }
 
-            // Bottom side - two parts: the vertical arm bottom and the horizontal arm bottom
+            // Bottom side - only the outer bottom edge (left arm bottom)
             if (sides.bottom) {
-                // Left part (vertical arm bottom)
                 ctx.beginPath();
                 ctx.rect(shape.x, shape.y + shape.height + gap, armWidth, bsHeight);
                 ctx.fill();
                 ctx.stroke();
-                // Inner corner horizontal (below the notch)
-                ctx.beginPath();
-                ctx.rect(shape.x + armWidth, shape.y + armHeight + gap, shape.width - armWidth, bsHeight);
-                ctx.fill();
-                ctx.stroke();
             }
 
-            // Left side - full height
+            // Left side - full height (outer edge)
             if (sides.left) {
                 ctx.beginPath();
                 ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
@@ -2528,12 +2522,11 @@
                 ctx.stroke();
             }
         }
-        // Handle U-shape specially
+        // Handle U-shape specially - only outer edges
         else if (shape.type === 'ushape') {
             const armWidth = shape.armWidth || shape.width * 0.3;
-            const centerDepth = shape.centerDepth || shape.height * 0.5;
 
-            // Top side - full width
+            // Top side - full width (outer edge)
             if (sides.top) {
                 ctx.beginPath();
                 ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
@@ -2541,7 +2534,7 @@
                 ctx.stroke();
             }
 
-            // Right side - full height
+            // Right side - full height (outer edge)
             if (sides.right) {
                 ctx.beginPath();
                 ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
@@ -2549,7 +2542,7 @@
                 ctx.stroke();
             }
 
-            // Bottom side - left arm and right arm only (not the center cutout)
+            // Bottom side - only outer bottom edges (left and right arms)
             if (sides.bottom) {
                 // Left arm bottom
                 ctx.beginPath();
@@ -2563,7 +2556,7 @@
                 ctx.stroke();
             }
 
-            // Left side - full height
+            // Left side - full height (outer edge)
             if (sides.left) {
                 ctx.beginPath();
                 ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
