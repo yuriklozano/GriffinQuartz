@@ -390,30 +390,6 @@
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
             </div>
 
-            <!-- Related Articles Section -->
-            <section class="blog-related">
-                <h2>Related Articles</h2>
-                <div class="blog-related__grid">
-                    <a href="fort-lauderdale-waterfront-kitchen-countertops" class="blog-related__card">
-                        <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Waterfront kitchen countertops Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Best Kitchen Countertops for Fort Lauderdale Waterfront Homes</h3>
-                        </div>
-                    </a>
-                    <a href="quartz-vs-granite-fort-lauderdale" class="blog-related__card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs granite comparison Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Quartz vs Granite: Which Is Better for Fort Lauderdale's Climate?</h3>
-                        </div>
-                    </a>
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="blog-related__card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz countertops cost Fort Lauderdale 2025" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h3>
-                        </div>
-                    </a>
-                </div>
-            </section>
         </div>
     </article>
 

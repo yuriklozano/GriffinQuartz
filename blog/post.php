@@ -111,6 +111,40 @@ $publish_date = $post['publish_date'] ?: $post['created_at'];
 function e($str) {
     return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8');
 }
+
+/**
+ * Strip Related Articles sections from blog content
+ * This removes hardcoded related articles so only the dynamic section renders
+ */
+function stripRelatedArticles($content) {
+    if (empty($content)) {
+        return $content;
+    }
+
+    // Pattern 1: Remove <section class="blog-related">...</section>
+    $content = preg_replace(
+        '/<section[^>]*class="[^"]*blog-related[^"]*"[^>]*>.*?<\/section>/is',
+        '',
+        $content
+    );
+
+    // Pattern 2: Remove <div class="...related...">...</div> (div with related in class)
+    $content = preg_replace(
+        '/<div[^>]*class="[^"]*related[^"]*"[^>]*>.*?<\/div>/is',
+        '',
+        $content
+    );
+
+    // Pattern 3: Remove h2 "Related Articles" or "Related Posts" followed by content until next h2, section, or end
+    // This handles inline related articles that aren't wrapped in a section/div
+    $content = preg_replace(
+        '/<h2[^>]*>\s*(Related\s+Articles|Related\s+Posts|Related\s+Reading)\s*<\/h2>.*?(?=<h2|<section|<footer|<\/article|$)/is',
+        '',
+        $content
+    );
+
+    return trim($content);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -270,7 +304,7 @@ function e($str) {
         <!-- Blog Body -->
         <div class="blog-body">
             <div class="blog-content">
-                <?= $post['content'] ?>
+                <?= stripRelatedArticles($post['content']) ?>
 
                 <?php if (!empty($faqs)): ?>
                 <section class="blog-faq" style="margin-top: 3rem;">
@@ -305,8 +339,8 @@ function e($str) {
             </div>
             <?php endif; ?>
 
-            <!-- Related Articles - Only show if content doesn't already have them -->
-            <?php if (!empty($related) && strpos($post['content'], 'Related Articles') === false && strpos($post['content'], 'related-') === false): ?>
+            <!-- Related Articles - Dynamic section from database -->
+            <?php if (!empty($related)): ?>
             <section class="blog-related">
                 <h2>Related Articles</h2>
                 <div class="blog-related__grid">
@@ -331,64 +365,5 @@ function e($str) {
     </article>
 
 <?php include '../includes/footer.php'; ?>
-
-<script>
-// Auto-style Related Articles sections embedded in blog content
-document.addEventListener('DOMContentLoaded', function() {
-    const blogContent = document.querySelector('.blog-content');
-    if (!blogContent) return;
-
-    // Find h2 headings that are specifically "Related Articles"
-    const headings = blogContent.querySelectorAll('h2');
-    headings.forEach(function(h2) {
-        const text = h2.textContent.trim().toLowerCase();
-        // Only match "related articles" exactly, not other headings
-        if (text === 'related articles' || text === 'related posts' || text === 'related reading') {
-            h2.classList.add('related-articles-heading');
-
-            // Collect all following anchor tags with images
-            const cards = [];
-            let sibling = h2.nextElementSibling;
-
-            while (sibling) {
-                // If it's an anchor with an image, add to cards
-                if (sibling.tagName === 'A' && sibling.querySelector('img')) {
-                    cards.push(sibling);
-                    sibling = sibling.nextElementSibling;
-                }
-                // If it's a div/section that already contains article cards, style it
-                else if ((sibling.tagName === 'DIV' || sibling.tagName === 'SECTION') && sibling.querySelector('a img')) {
-                    sibling.classList.add('related-articles-grid');
-                    sibling.querySelectorAll('a').forEach(function(link) {
-                        if (link.querySelector('img')) {
-                            link.classList.add('related-article-card');
-                        }
-                    });
-                    break;
-                }
-                // Stop if we hit another heading or non-related content
-                else if (sibling.tagName === 'H2' || sibling.tagName === 'H3' || sibling.tagName === 'SECTION' || sibling.tagName === 'FOOTER') {
-                    break;
-                }
-                // Skip text nodes and other elements, continue looking
-                else {
-                    sibling = sibling.nextElementSibling;
-                }
-            }
-
-            // Wrap unwrapped cards in a grid
-            if (cards.length > 0) {
-                const grid = document.createElement('div');
-                grid.className = 'related-articles-grid';
-                h2.parentNode.insertBefore(grid, cards[0]);
-                cards.forEach(function(card) {
-                    card.classList.add('related-article-card');
-                    grid.appendChild(card);
-                });
-            }
-        }
-    });
-});
-</script>
 </body>
 </html>

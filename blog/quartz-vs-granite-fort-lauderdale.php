@@ -370,33 +370,6 @@
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
             </div>
 
-            <!-- Related Articles Section -->
-            <section class="blog-related">
-                <h2>Related Articles</h2>
-                <div class="blog-related__grid">
-                    <a href="fort-lauderdale-waterfront-kitchen-countertops" class="blog-related__card">
-                        <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Fort Lauderdale waterfront kitchen countertops" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Best Kitchen Countertops for Fort Lauderdale Waterfront Homes</h3>
-                            <span class="blog-related__date">Jan 15, 2025</span>
-                        </div>
-                    </a>
-                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="blog-related__card">
-                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz colors for Fort Lauderdale coastal homes" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">How to Choose Quartz Colors for Fort Lauderdale Coastal Homes</h3>
-                            <span class="blog-related__date">Jan 12, 2025</span>
-                        </div>
-                    </a>
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="blog-related__card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Cost of quartz countertops Fort Lauderdale 2025" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h3>
-                            <span class="blog-related__date">Jan 8, 2025</span>
-                        </div>
-                    </a>
-                </div>
-            </section>
         </div>
     </article>
 

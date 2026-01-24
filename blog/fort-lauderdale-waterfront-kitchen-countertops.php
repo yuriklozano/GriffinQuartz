@@ -307,31 +307,6 @@
                 </div>
             </div>
 
-            <!-- Related Articles Section -->
-            <section class="blog-related">
-                <h2>Related Articles</h2>
-                <div class="blog-related__grid">
-                    <a href="quartz-vs-granite-fort-lauderdale" class="blog-related__card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs Granite Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Quartz vs Granite: Which Is Better for Fort Lauderdale?</h3>
-                        </div>
-                    </a>
-                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="blog-related__card">
-                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz Colors for Coastal Homes" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">How to Choose Quartz Colors for Coastal Homes</h3>
-                        </div>
-                    </a>
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="blog-related__card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz Cost Guide Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Cost of Quartz Countertops in Fort Lauderdale: 2025 Guide</h3>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
             <!-- CTA -->
             <div class="blog-cta">
                 <h3>Transform Your Fort Lauderdale Waterfront Kitchen</h3>

@@ -230,30 +230,6 @@
                 <h3>Elevate Your Fort Lauderdale Restaurant</h3>
                 <p>Get commercial-grade countertops that impress customers and withstand daily use.</p>
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
-            <!-- Related Articles Section -->
-            <section class="blog-related">
-                <h2>Related Articles</h2>
-                <div class="blog-related__grid">
-                    <a href="quartz-vs-granite-fort-lauderdale" class="blog-related__card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs Granite Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Quartz vs Granite: Which Is Better for Fort Lauderdale?</h3>
-                        </div>
-                    </a>
-                    <a href="quartz-brands-fort-lauderdale" class="blog-related__card">
-                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Quartz Brands Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Top Quartz Brands Available in Fort Lauderdale</h3>
-                        </div>
-                    </a>
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="blog-related__card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz Cost Guide Fort Lauderdale" class="blog-related__image" loading="lazy">
-                        <div class="blog-related__content">
-                            <h3 class="blog-related__title">Cost of Quartz Countertops in Fort Lauderdale: 2025 Guide</h3>
-                        </div>
-                    </a>
-                </div>
-            </section>
             </div>
         </div>
     </article>
