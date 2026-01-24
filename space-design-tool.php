@@ -2464,17 +2464,18 @@
     }
 
     function drawUShape(shape) {
-        const armWidth = shape.armWidth || shape.width * 0.3;
+        const leftArmWidth = shape.leftArmWidth || shape.width * 0.3;
+        const rightArmWidth = shape.rightArmWidth || shape.width * 0.3;
         const centerDepth = shape.centerDepth || shape.height * 0.5;
 
         ctx.beginPath();
         ctx.moveTo(shape.x, shape.y);
         ctx.lineTo(shape.x + shape.width, shape.y);
         ctx.lineTo(shape.x + shape.width, shape.y + shape.height);
-        ctx.lineTo(shape.x + shape.width - armWidth, shape.y + shape.height);
-        ctx.lineTo(shape.x + shape.width - armWidth, shape.y + centerDepth);
-        ctx.lineTo(shape.x + armWidth, shape.y + centerDepth);
-        ctx.lineTo(shape.x + armWidth, shape.y + shape.height);
+        ctx.lineTo(shape.x + shape.width - rightArmWidth, shape.y + shape.height);
+        ctx.lineTo(shape.x + shape.width - rightArmWidth, shape.y + centerDepth);
+        ctx.lineTo(shape.x + leftArmWidth, shape.y + centerDepth);
+        ctx.lineTo(shape.x + leftArmWidth, shape.y + shape.height);
         ctx.lineTo(shape.x, shape.y + shape.height);
         ctx.closePath();
         ctx.fill();
@@ -2670,21 +2671,22 @@
             };
         }
 
-        // Add inner edge handles for U-shape
+        // Add inner edge handles for U-shape (independent left and right arms)
         if (shape.type === 'ushape') {
-            const armWidth = shape.armWidth || shape.width * 0.3;
+            const leftArmWidth = shape.leftArmWidth || shape.width * 0.3;
+            const rightArmWidth = shape.rightArmWidth || shape.width * 0.3;
             const centerDepth = shape.centerDepth || shape.height * 0.5;
-            // Left inner vertical (controls left armWidth)
+            // Left inner vertical (controls left arm width independently)
             handles.innerLeftVertical = {
-                x: shape.x + armWidth,
+                x: shape.x + leftArmWidth,
                 y: shape.y + centerDepth + (shape.height - centerDepth) / 2,
                 cursor: 'ew-resize',
                 direction: 'horizontal',
                 isInner: true
             };
-            // Right inner vertical (controls right armWidth - same as left for symmetry)
+            // Right inner vertical (controls right arm width independently)
             handles.innerRightVertical = {
-                x: shape.x + shape.width - armWidth,
+                x: shape.x + shape.width - rightArmWidth,
                 y: shape.y + centerDepth + (shape.height - centerDepth) / 2,
                 cursor: 'ew-resize',
                 direction: 'horizontal',
@@ -2692,7 +2694,7 @@
             };
             // Inner horizontal (controls centerDepth)
             handles.innerHorizontal = {
-                x: shape.x + shape.width / 2,
+                x: shape.x + leftArmWidth + (shape.width - leftArmWidth - rightArmWidth) / 2,
                 y: shape.y + centerDepth,
                 cursor: 'ns-resize',
                 direction: 'vertical',
@@ -2842,9 +2844,12 @@
                     y: state.selectedShape.y,
                     width: state.selectedShape.width,
                     height: state.selectedShape.height,
-                    // Include inner dimensions for L-shape and U-shape
+                    // Include inner dimensions for L-shape
                     armWidth: state.selectedShape.armWidth,
                     armHeight: state.selectedShape.armHeight,
+                    // Include inner dimensions for U-shape (independent arms)
+                    leftArmWidth: state.selectedShape.leftArmWidth,
+                    rightArmWidth: state.selectedShape.rightArmWidth,
                     centerDepth: state.selectedShape.centerDepth
                 };
                 return;
@@ -2992,23 +2997,25 @@
                     }
                     break;
 
-                // U-shape inner edges
+                // U-shape inner edges (independent left and right arms)
                 case 'innerLeftVertical':
-                    // Controls armWidth (both arms move together for symmetry)
+                    // Controls left arm width independently
                     if (shape.type === 'ushape') {
                         const minArm = state.pixelsPerInch * 6;
-                        const maxArm = (shape.width / 2) - minArm; // Can't exceed half width
-                        const newArmWidth = (start.armWidth || shape.width * 0.3) + dx;
-                        shape.armWidth = Math.max(minArm, Math.min(maxArm, snapToGrid({ x: newArmWidth, y: 0 }).x));
+                        const rightArm = shape.rightArmWidth || shape.width * 0.3;
+                        const maxArm = shape.width - rightArm - minArm; // Can't overlap with right arm
+                        const newLeftArmWidth = (start.leftArmWidth || shape.width * 0.3) + dx;
+                        shape.leftArmWidth = Math.max(minArm, Math.min(maxArm, snapToGrid({ x: newLeftArmWidth, y: 0 }).x));
                     }
                     break;
                 case 'innerRightVertical':
-                    // Controls armWidth (both arms move together for symmetry)
+                    // Controls right arm width independently
                     if (shape.type === 'ushape') {
                         const minArm = state.pixelsPerInch * 6;
-                        const maxArm = (shape.width / 2) - minArm;
-                        const newArmWidth = (start.armWidth || shape.width * 0.3) - dx; // Negative because dragging right shrinks arm
-                        shape.armWidth = Math.max(minArm, Math.min(maxArm, snapToGrid({ x: newArmWidth, y: 0 }).x));
+                        const leftArm = shape.leftArmWidth || shape.width * 0.3;
+                        const maxArm = shape.width - leftArm - minArm; // Can't overlap with left arm
+                        const newRightArmWidth = (start.rightArmWidth || shape.width * 0.3) - dx; // Negative because dragging right shrinks arm
+                        shape.rightArmWidth = Math.max(minArm, Math.min(maxArm, snapToGrid({ x: newRightArmWidth, y: 0 }).x));
                     }
                     break;
             }
@@ -3109,8 +3116,12 @@
             height: height || 60,
             backsplash: canHaveBacksplash,
             backsplashEdges: backsplashEdges,
-            armWidth: type === 'lshape' ? 40 : type === 'ushape' ? 30 : undefined,
+            // L-shape properties
+            armWidth: type === 'lshape' ? 40 : undefined,
             armHeight: type === 'lshape' ? 40 : undefined,
+            // U-shape properties (independent left and right arms)
+            leftArmWidth: type === 'ushape' ? 30 : undefined,
+            rightArmWidth: type === 'ushape' ? 30 : undefined,
             centerDepth: type === 'ushape' ? 50 : undefined
         };
     }
@@ -3167,16 +3178,17 @@
             // left: full height
             edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
         } else if (shape.type === 'ushape') {
-            const armWidth = shape.armWidth || shape.width * 0.3;
+            const leftArmWidth = shape.leftArmWidth || shape.width * 0.3;
+            const rightArmWidth = shape.rightArmWidth || shape.width * 0.3;
             const centerDepth = shape.centerDepth || shape.height * 0.5;
             edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
             edges.right = { x: shape.x + shape.width + gap, y: shape.y, w: bsHeight, h: shape.height };
-            edges.innerTopRight = { x: shape.x + shape.width - armWidth, y: shape.y + centerDepth + gap, w: armWidth, h: bsHeight };
-            edges.innerRight = { x: shape.x + shape.width - armWidth - bsHeight - gap, y: shape.y + centerDepth, w: bsHeight, h: shape.height - centerDepth };
-            edges.innerLeft = { x: shape.x + armWidth + gap, y: shape.y + centerDepth, w: bsHeight, h: shape.height - centerDepth };
-            edges.innerTopLeft = { x: shape.x, y: shape.y + centerDepth + gap, w: armWidth, h: bsHeight };
-            edges.bottomLeft = { x: shape.x, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
-            edges.bottomRight = { x: shape.x + shape.width - armWidth, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
+            edges.innerTopRight = { x: shape.x + shape.width - rightArmWidth, y: shape.y + centerDepth + gap, w: rightArmWidth, h: bsHeight };
+            edges.innerRight = { x: shape.x + shape.width - rightArmWidth - bsHeight - gap, y: shape.y + centerDepth, w: bsHeight, h: shape.height - centerDepth };
+            edges.innerLeft = { x: shape.x + leftArmWidth + gap, y: shape.y + centerDepth, w: bsHeight, h: shape.height - centerDepth };
+            edges.innerTopLeft = { x: shape.x, y: shape.y + centerDepth + gap, w: leftArmWidth, h: bsHeight };
+            edges.bottomLeft = { x: shape.x, y: shape.y + shape.height + gap, w: leftArmWidth, h: bsHeight };
+            edges.bottomRight = { x: shape.x + shape.width - rightArmWidth, y: shape.y + shape.height + gap, w: rightArmWidth, h: bsHeight };
             edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
         } else {
             edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
@@ -3534,10 +3546,11 @@
                     totalSqInches += (w * ah) + (aw * (h - ah));
                     totalEdgeInches += w + h + (w - aw) + (h - ah) + aw + ah;
                 } else if (s.type === 'ushape') {
-                    const aw = (s.armWidth || s.width * 0.3) / state.pixelsPerInch;
+                    const law = (s.leftArmWidth || s.width * 0.3) / state.pixelsPerInch;
+                    const raw = (s.rightArmWidth || s.width * 0.3) / state.pixelsPerInch;
                     const cd = (s.centerDepth || s.height * 0.5) / state.pixelsPerInch;
-                    totalSqInches += (w * cd) + (aw * (h - cd)) * 2;
-                    totalEdgeInches += w * 2 + h * 2 + (w - aw * 2) * 2;
+                    totalSqInches += (w * cd) + (law * (h - cd)) + (raw * (h - cd));
+                    totalEdgeInches += w * 2 + h * 2 + (w - law - raw) * 2;
                 } else {
                     totalSqInches += w * h;
                     totalEdgeInches += (w + h) * 2;
@@ -3568,11 +3581,18 @@
                         if (s.backsplashEdges.bottom) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
                         if (s.backsplashEdges.left) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
                     } else if (s.type === 'ushape') {
-                        const armWidthIn = (s.armWidth || s.width * 0.3) / state.pixelsPerInch;
+                        const leftArmWidthIn = (s.leftArmWidth || s.width * 0.3) / state.pixelsPerInch;
+                        const rightArmWidthIn = (s.rightArmWidth || s.width * 0.3) / state.pixelsPerInch;
+                        const centerDepthIn = (s.centerDepth || s.height * 0.5) / state.pixelsPerInch;
+                        const innerHeightIn = shapeHeightIn - centerDepthIn;
                         if (s.backsplashEdges.top) backsplashSqFt += (shapeWidthIn * bsHeightIn) / 144;
                         if (s.backsplashEdges.right) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
-                        if (s.backsplashEdges.bottomLeft) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
-                        if (s.backsplashEdges.bottomRight) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.innerTopRight) backsplashSqFt += (rightArmWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.innerRight) backsplashSqFt += (innerHeightIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.innerLeft) backsplashSqFt += (innerHeightIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.innerTopLeft) backsplashSqFt += (leftArmWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottomLeft) backsplashSqFt += (leftArmWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottomRight) backsplashSqFt += (rightArmWidthIn * bsHeightIn) / 144;
                         if (s.backsplashEdges.left) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
                     } else {
                         // Rectangle/island
