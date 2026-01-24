@@ -403,36 +403,6 @@
     </article>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Visit Our Showroom at Englert Arts Inc.</h4>
-                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
-                        1021 S Rogers Cir #18, Boca Raton, FL 33487
-                    </a>
-                </div>
-                <div class="footer-col">
-                    <h4>Griffin Quartz</h4>
-                    <ul>
-                        <li><a href="../quartz-brands">Product Selection</a></li>
-                        <li><a href="../kitchen-bath">Kitchens and Baths</a></li>
-                        <li><a href="../gallery">Inspiration Gallery</a></li>
-                        <li><a href="../about">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p><a href="tel:7203241436">(720) 324-1436</a></p>
-                    <p><a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

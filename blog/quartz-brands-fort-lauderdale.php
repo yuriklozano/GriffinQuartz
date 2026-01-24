@@ -406,68 +406,6 @@
     </article>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Visit Our Showroom</h4>
-                    <p>Located at Englert Arts Inc.</p>
-                    <a href="https://www.google.com/maps?q=1021+S+Rogers+Cir+%2318,+Boca+Raton,+FL+33487" target="_blank" rel="noopener">
-                        1021 S Rogers Cir #18<br>Boca Raton, FL 33487
-                    </a>
-                    <p style="margin-top: 1rem;"><strong>Hours:</strong> Mon-Fri 7:30AM-3:30PM</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quartz Countertop Services</h4>
-                    <ul>
-                        <li><a href="../quartz-brands">Quartz Product Selection</a></li>
-                        <li><a href="../kitchen-bath">Kitchen & Bathroom Countertops</a></li>
-                        <li><a href="../commercial">Commercial Countertop Installation</a></li>
-                        <li><a href="../gallery">Inspiration Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Service Areas</h4>
-                    <ul class="service-areas">
-                        <li><a href="../fort-lauderdale">Fort Lauderdale</a></li>
-                        <li><a href="../hollywood">Hollywood</a></li>
-                        <li><a href="../pompano-beach">Pompano Beach</a></li>
-                        <li><a href="../boca-raton">Boca Raton</a></li>
-                        <li><a href="../miami">Miami</a></li>
-                        <li><a href="../locations">All Service Areas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Griffin Quartz</h4>
-                    <p><strong>Phone:</strong> <a href="tel:7203241436">(720) 324-1436</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@griffinquartz.com">info@griffinquartz.com</a></p>
-                    <p style="margin-top: 1rem;"><a href="/#contact-form" class="btn btn-primary btn-sm">Get FREE Quote</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Griffin Quartz | South Florida's Premier Quartz Countertop Installers</p>
-                <p class="footer-areas">Proudly serving Fort Lauderdale and all of Broward County, Palm Beach County, and Miami-Dade County.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
-    <script>
-        // FAQ Accordion
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const item = header.parentElement;
-                const isActive = item.classList.contains('active');
-
-                // Close all other items
-                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
-
-                // Toggle current item
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>
