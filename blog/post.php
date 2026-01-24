@@ -331,5 +331,58 @@ function e($str) {
     </article>
 
 <?php include '../includes/footer.php'; ?>
+
+<script>
+// Auto-style Related Articles sections embedded in blog content
+document.addEventListener('DOMContentLoaded', function() {
+    // Find all h2 headings containing "Related Articles" within blog content
+    const blogContent = document.querySelector('.blog-content');
+    if (!blogContent) return;
+
+    const headings = blogContent.querySelectorAll('h2');
+    headings.forEach(function(h2) {
+        if (h2.textContent.toLowerCase().includes('related')) {
+            // Style the heading
+            h2.classList.add('related-articles-heading');
+
+            // Find all following sibling anchor tags that contain images
+            const cards = [];
+            let sibling = h2.nextElementSibling;
+            while (sibling) {
+                if (sibling.tagName === 'A' && sibling.querySelector('img')) {
+                    cards.push(sibling);
+                    sibling = sibling.nextElementSibling;
+                } else if (sibling.tagName === 'DIV' || sibling.tagName === 'SECTION') {
+                    // Check if it's a wrapper containing article links
+                    const innerLinks = sibling.querySelectorAll('a');
+                    if (innerLinks.length > 0 && sibling.querySelector('img')) {
+                        // It's already wrapped, just add classes
+                        sibling.classList.add('related-articles-grid');
+                        innerLinks.forEach(function(link) {
+                            if (link.querySelector('img')) {
+                                link.classList.add('related-article-card');
+                            }
+                        });
+                    }
+                    break;
+                } else {
+                    break;
+                }
+            }
+
+            // If we found unwrapped cards, wrap them in a grid
+            if (cards.length > 0) {
+                const grid = document.createElement('div');
+                grid.className = 'related-articles-grid';
+                h2.parentNode.insertBefore(grid, cards[0]);
+                cards.forEach(function(card) {
+                    card.classList.add('related-article-card');
+                    grid.appendChild(card);
+                });
+            }
+        }
+    });
+});
+</script>
 </body>
 </html>
