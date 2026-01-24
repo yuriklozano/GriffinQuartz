@@ -2267,7 +2267,12 @@
         isDrawing: false,
         startPoint: null,
         currentShape: null,
-        pixelsPerInch: 4
+        pixelsPerInch: 4,
+        // Resize state
+        isResizing: false,
+        resizeEdge: null, // 'top', 'right', 'bottom', 'left', 'topLeft', 'topRight', 'bottomLeft', 'bottomRight'
+        resizeStartPoint: null,
+        resizeStartShape: null // Store original shape dimensions
     };
 
     // Canvas Setup
@@ -2600,22 +2605,128 @@
     }
 
     function drawSelectionHandles(shape) {
-        const handles = [
-            { x: shape.x, y: shape.y },
-            { x: shape.x + shape.width, y: shape.y },
-            { x: shape.x + shape.width, y: shape.y + shape.height },
-            { x: shape.x, y: shape.y + shape.height }
+        // Corner handles
+        const corners = [
+            { x: shape.x, y: shape.y, edge: 'topLeft' },
+            { x: shape.x + shape.width, y: shape.y, edge: 'topRight' },
+            { x: shape.x + shape.width, y: shape.y + shape.height, edge: 'bottomRight' },
+            { x: shape.x, y: shape.y + shape.height, edge: 'bottomLeft' }
         ];
 
         ctx.fillStyle = '#FDB913';
         ctx.strokeStyle = '#000';
         ctx.lineWidth = 1;
-        handles.forEach(h => {
+        corners.forEach(h => {
             ctx.beginPath();
             ctx.rect(h.x - 5, h.y - 5, 10, 10);
             ctx.fill();
             ctx.stroke();
         });
+
+        // Edge resize handles (midpoints) with arrows
+        drawResizeHandles(shape);
+    }
+
+    // Get resize handles for a shape (edge midpoints)
+    function getResizeHandles(shape) {
+        return {
+            top: { x: shape.x + shape.width / 2, y: shape.y, cursor: 'ns-resize', direction: 'vertical' },
+            right: { x: shape.x + shape.width, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' },
+            bottom: { x: shape.x + shape.width / 2, y: shape.y + shape.height, cursor: 'ns-resize', direction: 'vertical' },
+            left: { x: shape.x, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' },
+            topLeft: { x: shape.x, y: shape.y, cursor: 'nwse-resize', direction: 'diagonal' },
+            topRight: { x: shape.x + shape.width, y: shape.y, cursor: 'nesw-resize', direction: 'diagonal' },
+            bottomRight: { x: shape.x + shape.width, y: shape.y + shape.height, cursor: 'nwse-resize', direction: 'diagonal' },
+            bottomLeft: { x: shape.x, y: shape.y + shape.height, cursor: 'nesw-resize', direction: 'diagonal' }
+        };
+    }
+
+    // Draw resize handles with arrows
+    function drawResizeHandles(shape) {
+        const handles = getResizeHandles(shape);
+        const handleSize = 8;
+        const arrowSize = 12;
+
+        // Draw edge midpoint handles with arrows
+        ['top', 'right', 'bottom', 'left'].forEach(edge => {
+            const h = handles[edge];
+
+            // Draw handle circle
+            ctx.fillStyle = '#fff';
+            ctx.strokeStyle = '#FDB913';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(h.x, h.y, handleSize, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+
+            // Draw arrow inside
+            ctx.fillStyle = '#FDB913';
+            ctx.strokeStyle = '#FDB913';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+
+            if (edge === 'top' || edge === 'bottom') {
+                // Vertical double arrow
+                const dir = edge === 'top' ? -1 : 1;
+                // Arrow pointing outward
+                ctx.moveTo(h.x, h.y + dir * 3);
+                ctx.lineTo(h.x - 4, h.y - dir * 2);
+                ctx.moveTo(h.x, h.y + dir * 3);
+                ctx.lineTo(h.x + 4, h.y - dir * 2);
+                // Arrow pointing inward
+                ctx.moveTo(h.x, h.y - dir * 3);
+                ctx.lineTo(h.x - 4, h.y + dir * 2);
+                ctx.moveTo(h.x, h.y - dir * 3);
+                ctx.lineTo(h.x + 4, h.y + dir * 2);
+            } else {
+                // Horizontal double arrow
+                const dir = edge === 'left' ? -1 : 1;
+                // Arrow pointing outward
+                ctx.moveTo(h.x + dir * 3, h.y);
+                ctx.lineTo(h.x - dir * 2, h.y - 4);
+                ctx.moveTo(h.x + dir * 3, h.y);
+                ctx.lineTo(h.x - dir * 2, h.y + 4);
+                // Arrow pointing inward
+                ctx.moveTo(h.x - dir * 3, h.y);
+                ctx.lineTo(h.x + dir * 2, h.y - 4);
+                ctx.moveTo(h.x - dir * 3, h.y);
+                ctx.lineTo(h.x + dir * 2, h.y + 4);
+            }
+            ctx.stroke();
+        });
+    }
+
+    // Find if mouse is over a resize handle
+    function findResizeHandleAtPoint(x, y) {
+        if (!state.selectedShape) return null;
+
+        const handles = getResizeHandles(state.selectedShape);
+        const tolerance = 12; // Click tolerance in pixels
+
+        // Check corners first (they have priority)
+        const cornerOrder = ['topLeft', 'topRight', 'bottomRight', 'bottomLeft'];
+        for (const edge of cornerOrder) {
+            const h = handles[edge];
+            const dx = x - h.x;
+            const dy = y - h.y;
+            if (Math.sqrt(dx * dx + dy * dy) <= tolerance) {
+                return { edge, handle: h };
+            }
+        }
+
+        // Then check edge midpoints
+        const edgeOrder = ['top', 'right', 'bottom', 'left'];
+        for (const edge of edgeOrder) {
+            const h = handles[edge];
+            const dx = x - h.x;
+            const dy = y - h.y;
+            if (Math.sqrt(dx * dx + dy * dy) <= tolerance) {
+                return { edge, handle: h };
+            }
+        }
+
+        return null;
     }
 
     // Event Handlers
@@ -2625,7 +2736,22 @@
         const y = (e.clientY - rect.top) / state.zoom;
 
         if (state.tool === 'select') {
-            // First check if clicking on a backsplash edge to toggle it
+            // First check if clicking on a resize handle
+            const resizeHit = findResizeHandleAtPoint(x, y);
+            if (resizeHit && state.selectedShape) {
+                state.isResizing = true;
+                state.resizeEdge = resizeHit.edge;
+                state.resizeStartPoint = { x, y };
+                state.resizeStartShape = {
+                    x: state.selectedShape.x,
+                    y: state.selectedShape.y,
+                    width: state.selectedShape.width,
+                    height: state.selectedShape.height
+                };
+                return;
+            }
+
+            // Then check if clicking on a backsplash edge to toggle it
             const backsplashHit = findBacksplashEdgeAtPoint(x, y);
             if (backsplashHit) {
                 // Toggle this specific edge
@@ -2656,6 +2782,88 @@
         const x = (e.clientX - rect.left) / state.zoom;
         const y = (e.clientY - rect.top) / state.zoom;
 
+        // Handle cursor changes when hovering over resize handles
+        if (state.tool === 'select' && !state.isResizing && !state.isDragging && !state.isDrawing) {
+            const resizeHit = findResizeHandleAtPoint(x, y);
+            if (resizeHit) {
+                canvas.style.cursor = resizeHit.handle.cursor;
+            } else if (state.selectedShape && findShapeAtPoint(x, y) === state.selectedShape) {
+                canvas.style.cursor = 'move';
+            } else {
+                canvas.style.cursor = 'default';
+            }
+        }
+
+        // Handle resizing
+        if (state.isResizing && state.selectedShape && state.resizeStartShape) {
+            const shape = state.selectedShape;
+            const start = state.resizeStartShape;
+            const dx = x - state.resizeStartPoint.x;
+            const dy = y - state.resizeStartPoint.y;
+            const minSize = state.pixelsPerInch * 6; // Minimum 6 inches
+
+            switch (state.resizeEdge) {
+                case 'top':
+                    const newHeightTop = start.height - dy;
+                    if (newHeightTop >= minSize) {
+                        shape.y = snapToGrid({ x: 0, y: start.y + dy }).y;
+                        shape.height = start.height - (shape.y - start.y);
+                    }
+                    break;
+                case 'bottom':
+                    shape.height = Math.max(minSize, snapToGrid({ x: 0, y: start.height + dy }).y);
+                    break;
+                case 'left':
+                    const newWidthLeft = start.width - dx;
+                    if (newWidthLeft >= minSize) {
+                        shape.x = snapToGrid({ x: start.x + dx, y: 0 }).x;
+                        shape.width = start.width - (shape.x - start.x);
+                    }
+                    break;
+                case 'right':
+                    shape.width = Math.max(minSize, snapToGrid({ x: start.width + dx, y: 0 }).x);
+                    break;
+                case 'topLeft':
+                    const newWidthTL = start.width - dx;
+                    const newHeightTL = start.height - dy;
+                    if (newWidthTL >= minSize) {
+                        shape.x = snapToGrid({ x: start.x + dx, y: 0 }).x;
+                        shape.width = start.width - (shape.x - start.x);
+                    }
+                    if (newHeightTL >= minSize) {
+                        shape.y = snapToGrid({ x: 0, y: start.y + dy }).y;
+                        shape.height = start.height - (shape.y - start.y);
+                    }
+                    break;
+                case 'topRight':
+                    shape.width = Math.max(minSize, snapToGrid({ x: start.width + dx, y: 0 }).x);
+                    const newHeightTR = start.height - dy;
+                    if (newHeightTR >= minSize) {
+                        shape.y = snapToGrid({ x: 0, y: start.y + dy }).y;
+                        shape.height = start.height - (shape.y - start.y);
+                    }
+                    break;
+                case 'bottomLeft':
+                    shape.height = Math.max(minSize, snapToGrid({ x: 0, y: start.height + dy }).y);
+                    const newWidthBL = start.width - dx;
+                    if (newWidthBL >= minSize) {
+                        shape.x = snapToGrid({ x: start.x + dx, y: 0 }).x;
+                        shape.width = start.width - (shape.x - start.x);
+                    }
+                    break;
+                case 'bottomRight':
+                    shape.width = Math.max(minSize, snapToGrid({ x: start.width + dx, y: 0 }).x);
+                    shape.height = Math.max(minSize, snapToGrid({ x: 0, y: start.height + dy }).y);
+                    break;
+            }
+
+            drawCanvas();
+            updateShapesList();
+            selectShape(shape); // Update dimension fields
+            updateEstimate();
+            return;
+        }
+
         if (state.isDrawing && state.startPoint) {
             const snappedPoint = snapToGrid({ x, y });
             state.currentShape.width = snappedPoint.x - state.startPoint.x;
@@ -2680,6 +2888,16 @@
     }
 
     function handleMouseUp() {
+        // Handle end of resize
+        if (state.isResizing) {
+            state.isResizing = false;
+            state.resizeEdge = null;
+            state.resizeStartPoint = null;
+            state.resizeStartShape = null;
+            saveToHistory();
+            canvas.style.cursor = 'default';
+        }
+
         if (state.isDrawing && state.currentShape) {
             if (state.currentShape.width > 10 && state.currentShape.height > 10) {
                 state.shapes.push(state.currentShape);
