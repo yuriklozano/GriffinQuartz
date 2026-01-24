@@ -6072,6 +6072,41 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 160px;
     object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Card content area - title and date stacked vertically */
+.blog-content [class*="related"] > div > a > div,
+.blog-body [class*="related"] > div > a > div,
+.blog-content [class*="related"] > div > a > span,
+.blog-body [class*="related"] > div > a > span {
+    display: block;
+    padding: var(--spacing-md);
+}
+
+.blog-content [class*="related"] > div > a h3,
+.blog-body [class*="related"] > div > a h3,
+.blog-content [class*="related"] > div > a h4,
+.blog-body [class*="related"] > div > a h4,
+.blog-content [class*="related"] > div > a strong,
+.blog-body [class*="related"] > div > a strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.blog-content [class*="related"] > div > a span,
+.blog-body [class*="related"] > div > a span,
+.blog-content [class*="related"] > div > a small,
+.blog-body [class*="related"] > div > a small,
+.blog-content [class*="related"] > div > a time,
+.blog-body [class*="related"] > div > a time {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-gray);
 }
 
 /* ===== Related Articles Responsive ===== */
