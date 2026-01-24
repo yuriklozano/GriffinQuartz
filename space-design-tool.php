@@ -2712,17 +2712,18 @@
     function createShape(type, x, y, width, height) {
         const canHaveBacksplash = type !== 'sink' && type !== 'cooktop';
         // Per-shape backsplash edges - each edge can be toggled independently
+        // All edges start OFF - user selects which ones they want
         let backsplashEdges = null;
         if (canHaveBacksplash) {
             if (type === 'lshape') {
-                // L-shape has: top, right (short), bottomLeft (arm bottom), left
-                backsplashEdges = { top: true, right: true, bottomLeft: true, left: true };
+                // L-shape has 6 edges: top, right, innerTop, innerRight, bottom, left
+                backsplashEdges = { top: false, right: false, innerTop: false, innerRight: false, bottom: false, left: false };
             } else if (type === 'ushape') {
-                // U-shape has: top, right, bottomLeft, bottomRight, left
-                backsplashEdges = { top: true, right: true, bottomLeft: true, bottomRight: true, left: true };
+                // U-shape has 8 edges
+                backsplashEdges = { top: false, right: false, innerTopRight: false, innerRight: false, innerLeft: false, innerTopLeft: false, bottomLeft: false, bottomRight: false, left: false };
             } else {
                 // Rectangle/island: standard 4 sides
-                backsplashEdges = { top: true, right: true, bottom: true, left: true };
+                backsplashEdges = { top: false, right: false, bottom: false, left: false };
             }
         }
         return {
@@ -2778,14 +2779,28 @@
         if (shape.type === 'lshape') {
             const armWidth = shape.armWidth || shape.width * 0.4;
             const armHeight = shape.armHeight || shape.height * 0.4;
+            // 6 edges for L-shape:
+            // top: full width at top
             edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
+            // right: short vertical on right (armHeight tall)
             edges.right = { x: shape.x + shape.width + gap, y: shape.y, w: bsHeight, h: armHeight };
-            edges.bottomLeft = { x: shape.x, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
+            // innerTop: horizontal edge inside the notch (at armHeight level)
+            edges.innerTop = { x: shape.x + armWidth, y: shape.y + armHeight + gap, w: shape.width - armWidth, h: bsHeight };
+            // innerRight: vertical edge inside the notch (at armWidth position)
+            edges.innerRight = { x: shape.x + armWidth + gap, y: shape.y + armHeight, w: bsHeight, h: shape.height - armHeight };
+            // bottom: bottom of left arm
+            edges.bottom = { x: shape.x, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
+            // left: full height
             edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
         } else if (shape.type === 'ushape') {
             const armWidth = shape.armWidth || shape.width * 0.3;
+            const centerDepth = shape.centerDepth || shape.height * 0.5;
             edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
             edges.right = { x: shape.x + shape.width + gap, y: shape.y, w: bsHeight, h: shape.height };
+            edges.innerTopRight = { x: shape.x + shape.width - armWidth, y: shape.y + centerDepth + gap, w: armWidth, h: bsHeight };
+            edges.innerRight = { x: shape.x + shape.width - armWidth - bsHeight - gap, y: shape.y + centerDepth, w: bsHeight, h: shape.height - centerDepth };
+            edges.innerLeft = { x: shape.x + armWidth + gap, y: shape.y + centerDepth, w: bsHeight, h: shape.height - centerDepth };
+            edges.innerTopLeft = { x: shape.x, y: shape.y + centerDepth + gap, w: armWidth, h: bsHeight };
             edges.bottomLeft = { x: shape.x, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
             edges.bottomRight = { x: shape.x + shape.width - armWidth, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
             edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
@@ -2823,6 +2838,11 @@
                     right: 'Right',
                     bottom: 'Bottom',
                     left: 'Left',
+                    innerTop: 'Inner Top',
+                    innerRight: 'Inner Right',
+                    innerLeft: 'Inner Left',
+                    innerTopRight: 'Inner Top Right',
+                    innerTopLeft: 'Inner Top Left',
                     bottomLeft: 'Bottom Left',
                     bottomRight: 'Bottom Right'
                 };
@@ -2904,19 +2924,24 @@
         toggle.classList.toggle('active', state.backsplash.enabled);
         options.classList.toggle('hidden', !state.backsplash.enabled);
 
-        // When enabling, ensure all shapes have their edges initialized
+        // When enabling, ensure all shapes have their edges initialized (all OFF by default)
         if (state.backsplash.enabled) {
             state.shapes.forEach(s => {
                 if (s.backsplash && !s.backsplashEdges) {
                     if (s.type === 'lshape') {
-                        s.backsplashEdges = { top: true, right: true, bottomLeft: true, left: true };
+                        s.backsplashEdges = { top: false, right: false, innerTop: false, innerRight: false, bottom: false, left: false };
                     } else if (s.type === 'ushape') {
-                        s.backsplashEdges = { top: true, right: true, bottomLeft: true, bottomRight: true, left: true };
+                        s.backsplashEdges = { top: false, right: false, innerTopRight: false, innerRight: false, innerLeft: false, innerTopLeft: false, bottomLeft: false, bottomRight: false, left: false };
                     } else if (s.type !== 'sink' && s.type !== 'cooktop') {
-                        s.backsplashEdges = { top: true, right: true, bottom: true, left: true };
+                        s.backsplashEdges = { top: false, right: false, bottom: false, left: false };
                     }
                 }
             });
+        }
+
+        // Re-select shape to update UI
+        if (state.selectedShape) {
+            selectShape(state.selectedShape);
         }
 
         drawCanvas();
@@ -2930,7 +2955,7 @@
     }
 
     function updateBacksplashSides() {
-        // Bulk toggle: apply checkbox states to all shapes
+        // Bulk toggle: apply checkbox states to outer edges of all shapes
         const top = document.getElementById('bsTop').checked;
         const right = document.getElementById('bsRight').checked;
         const bottom = document.getElementById('bsBottom').checked;
@@ -2938,20 +2963,22 @@
 
         state.backsplash.sides = { top, right, bottom, left };
 
-        // Apply to all shapes
+        // Apply to outer edges of all shapes (inner edges are per-shape only)
         state.shapes.forEach(s => {
             if (s.backsplash && s.backsplashEdges) {
                 if (s.type === 'lshape') {
                     s.backsplashEdges.top = top;
                     s.backsplashEdges.right = right;
-                    s.backsplashEdges.bottomLeft = bottom;
+                    s.backsplashEdges.bottom = bottom;
                     s.backsplashEdges.left = left;
+                    // Inner edges not affected by bulk toggle
                 } else if (s.type === 'ushape') {
                     s.backsplashEdges.top = top;
                     s.backsplashEdges.right = right;
                     s.backsplashEdges.bottomLeft = bottom;
                     s.backsplashEdges.bottomRight = bottom;
                     s.backsplashEdges.left = left;
+                    // Inner edges not affected by bulk toggle
                 } else if (s.backsplashEdges) {
                     s.backsplashEdges.top = top;
                     s.backsplashEdges.right = right;
@@ -2960,6 +2987,11 @@
                 }
             }
         });
+
+        // Re-select shape to update UI
+        if (state.selectedShape) {
+            selectShape(state.selectedShape);
+        }
 
         drawCanvas();
         updateEstimate();
@@ -3153,9 +3185,13 @@
                     if (s.type === 'lshape') {
                         const armWidthIn = (s.armWidth || s.width * 0.4) / state.pixelsPerInch;
                         const armHeightIn = (s.armHeight || s.height * 0.4) / state.pixelsPerInch;
+                        const innerTopWidthIn = shapeWidthIn - armWidthIn;
+                        const innerRightHeightIn = shapeHeightIn - armHeightIn;
                         if (s.backsplashEdges.top) backsplashSqFt += (shapeWidthIn * bsHeightIn) / 144;
                         if (s.backsplashEdges.right) backsplashSqFt += (armHeightIn * bsHeightIn) / 144;
-                        if (s.backsplashEdges.bottomLeft) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.innerTop) backsplashSqFt += (innerTopWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.innerRight) backsplashSqFt += (innerRightHeightIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottom) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
                         if (s.backsplashEdges.left) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
                     } else if (s.type === 'ushape') {
                         const armWidthIn = (s.armWidth || s.width * 0.3) / state.pixelsPerInch;
