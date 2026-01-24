@@ -121,27 +121,66 @@ function stripRelatedArticles($content) {
         return $content;
     }
 
-    // Pattern 1: Remove <section class="blog-related">...</section>
+    // Pattern 1: Remove <section class="blog-related">...</section> with all nested content
     $content = preg_replace(
-        '/<section[^>]*class="[^"]*blog-related[^"]*"[^>]*>.*?<\/section>/is',
+        '/<section[^>]*class="[^"]*blog-related[^"]*"[^>]*>[\s\S]*?<\/section>/i',
         '',
         $content
     );
 
-    // Pattern 2: Remove <div class="...related...">...</div> (div with related in class)
+    // Pattern 2: Remove <section class="related-articles">...</section>
     $content = preg_replace(
-        '/<div[^>]*class="[^"]*related[^"]*"[^>]*>.*?<\/div>/is',
+        '/<section[^>]*class="[^"]*related-articles[^"]*"[^>]*>[\s\S]*?<\/section>/i',
         '',
         $content
     );
 
-    // Pattern 3: Remove h2 "Related Articles" or "Related Posts" followed by content until next h2, section, or end
-    // This handles inline related articles that aren't wrapped in a section/div
+    // Pattern 3: Remove <div class="...related...">...</div> with nested content
+    // Use recursive pattern for nested divs
     $content = preg_replace(
-        '/<h2[^>]*>\s*(Related\s+Articles|Related\s+Posts|Related\s+Reading)\s*<\/h2>.*?(?=<h2|<section|<footer|<\/article|$)/is',
+        '/<div[^>]*class="[^"]*(?:related-articles|blog-related|related-posts)[^"]*"[^>]*>(?:[^<]|<(?!div[^>]*>|\/div>)|<div[^>]*>(?:[^<]|<(?!div[^>]*>|\/div>)|<div[^>]*>.*?<\/div>)*<\/div>)*<\/div>/is',
         '',
         $content
     );
+
+    // Pattern 4: Remove any div with class containing "related" (simpler fallback)
+    $content = preg_replace(
+        '/<div[^>]*class="[^"]*related[^"]*"[^>]*>[\s\S]*?<\/div>/i',
+        '',
+        $content
+    );
+
+    // Pattern 5: Remove h2 "Related Articles/Posts/Reading" and everything after it until next major section
+    $content = preg_replace(
+        '/<h2[^>]*>\s*Related\s+(?:Articles|Posts|Reading)\s*<\/h2>[\s\S]*?(?=<h2[^>]*>(?!Related)|<section|<footer|<div\s+class="blog-cta"|<div\s+class="blog-faq"|$)/i',
+        '',
+        $content
+    );
+
+    // Pattern 6: Remove h3 "Related Articles/Posts" sections
+    $content = preg_replace(
+        '/<h3[^>]*>\s*Related\s+(?:Articles|Posts)\s*<\/h3>[\s\S]*?(?=<h2|<h3[^>]*>(?!Related)|<section|<footer|<div\s+class="blog-cta"|$)/i',
+        '',
+        $content
+    );
+
+    // Pattern 7: Remove orphaned article card grids (common structure for related articles)
+    $content = preg_replace(
+        '/<div[^>]*class="[^"]*(?:articles-grid|article-cards|related-grid|blog-index-grid)[^"]*"[^>]*>[\s\S]*?<\/div>/i',
+        '',
+        $content
+    );
+
+    // Pattern 8: Remove groups of bare anchor tags with images that look like related article cards
+    // This catches orphaned related article links without wrapper divs
+    $content = preg_replace(
+        '/(?:<a[^>]*href="[^"]*(?:\/blog\/|blog\/)[^"]*"[^>]*>\s*<img[^>]*>\s*(?:<[^>]+>[^<]*<\/[^>]+>\s*)*<\/a>\s*){2,}/i',
+        '',
+        $content
+    );
+
+    // Pattern 9: Clean up any multiple consecutive empty lines or spaces left behind
+    $content = preg_replace('/(\s*\n){3,}/', "\n\n", $content);
 
     return trim($content);
 }
