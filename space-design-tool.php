@@ -1927,6 +1927,13 @@
                                     <input type="number" class="input-field" id="shapePosY" onchange="updateShapePosition()">
                                 </div>
                             </div>
+                            <!-- Per-shape backsplash edges -->
+                            <div id="shapeBacksplashSection" style="display:none; margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <label class="input-label" style="margin-bottom: 10px; display: block;">Backsplash Edges</label>
+                                <div id="shapeBacksplashEdges" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                    <!-- Dynamically populated based on shape type -->
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -2795,6 +2802,9 @@
         state.selectedShape = shape;
         const editor = document.getElementById('shapeEditor');
         const info = document.getElementById('selectedShapeInfo');
+        const bsSection = document.getElementById('shapeBacksplashSection');
+        const bsEdgesContainer = document.getElementById('shapeBacksplashEdges');
+
         if (shape) {
             editor.style.display = 'block';
             info.style.display = 'none';
@@ -2802,9 +2812,48 @@
             document.getElementById('shapeDepth').value = Math.round(shape.height / state.pixelsPerInch);
             document.getElementById('shapePosX').value = Math.round(shape.x / state.pixelsPerInch);
             document.getElementById('shapePosY').value = Math.round(shape.y / state.pixelsPerInch);
+
+            // Show backsplash edges if shape can have backsplash
+            if (shape.backsplash && shape.backsplashEdges && state.backsplash.enabled) {
+                bsSection.style.display = 'block';
+                bsEdgesContainer.innerHTML = '';
+
+                const edgeLabels = {
+                    top: 'Top',
+                    right: 'Right',
+                    bottom: 'Bottom',
+                    left: 'Left',
+                    bottomLeft: 'Bottom Left',
+                    bottomRight: 'Bottom Right'
+                };
+
+                for (const [edge, enabled] of Object.entries(shape.backsplashEdges)) {
+                    const label = edgeLabels[edge] || edge;
+                    const div = document.createElement('div');
+                    div.style.cssText = 'display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: rgba(255,255,255,0.05); border-radius: 6px; cursor: pointer;';
+                    div.innerHTML = `
+                        <input type="checkbox" id="bsEdge_${edge}" ${enabled ? 'checked' : ''} style="width: 16px; height: 16px; cursor: pointer;">
+                        <label for="bsEdge_${edge}" style="cursor: pointer; font-size: 13px;">${label}</label>
+                    `;
+                    div.onclick = (e) => {
+                        if (e.target.tagName !== 'INPUT') {
+                            const checkbox = div.querySelector('input');
+                            checkbox.checked = !checkbox.checked;
+                        }
+                        shape.backsplashEdges[edge] = div.querySelector('input').checked;
+                        saveToHistory();
+                        drawCanvas();
+                        updateEstimate();
+                    };
+                    bsEdgesContainer.appendChild(div);
+                }
+            } else {
+                bsSection.style.display = 'none';
+            }
         } else {
             editor.style.display = 'none';
             info.style.display = 'block';
+            bsSection.style.display = 'none';
         }
         drawCanvas();
     }
