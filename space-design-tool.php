@@ -1590,6 +1590,10 @@
                         <i class="bi bi-square-fill"></i>
                         <span>Kitchen Island</span>
                     </button>
+                    <button class="tool-btn" data-tool="polygon" onclick="setTool('polygon')">
+                        <i class="bi bi-pentagon"></i>
+                        <span>Custom Shape</span>
+                    </button>
                 </div>
 
                 <div class="tool-section">
@@ -1925,6 +1929,40 @@
                                 <div class="input-group">
                                     <label class="input-label">Y Position</label>
                                     <input type="number" class="input-field" id="shapePosY" onchange="updateShapePosition()">
+                                </div>
+                            </div>
+                            <!-- L-shape inner dimensions -->
+                            <div id="lshapeInnerDims" style="display:none; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <label class="input-label" style="margin-bottom: 8px; display: block; color: #0088ff;">L-Shape Inner Dimensions</label>
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label class="input-label">Arm Width (in)</label>
+                                        <input type="number" class="input-field" id="lshapeArmWidth" onchange="updateInnerDimensions()">
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="input-label">Arm Height (in)</label>
+                                        <input type="number" class="input-field" id="lshapeArmHeight" onchange="updateInnerDimensions()">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- U-shape inner dimensions -->
+                            <div id="ushapeInnerDims" style="display:none; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1);">
+                                <label class="input-label" style="margin-bottom: 8px; display: block; color: #0088ff;">U-Shape Inner Dimensions</label>
+                                <div class="input-row">
+                                    <div class="input-group">
+                                        <label class="input-label">Left Arm (in)</label>
+                                        <input type="number" class="input-field" id="ushapeLeftArm" onchange="updateInnerDimensions()">
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="input-label">Right Arm (in)</label>
+                                        <input type="number" class="input-field" id="ushapeRightArm" onchange="updateInnerDimensions()">
+                                    </div>
+                                </div>
+                                <div class="input-row" style="margin-top: 8px;">
+                                    <div class="input-group">
+                                        <label class="input-label">Center Depth (in)</label>
+                                        <input type="number" class="input-field" id="ushapeCenterDepth" onchange="updateInnerDimensions()">
+                                    </div>
                                 </div>
                             </div>
                             <!-- Per-shape backsplash edges -->
@@ -2272,7 +2310,10 @@
         isResizing: false,
         resizeEdge: null, // 'top', 'right', 'bottom', 'left', 'topLeft', 'topRight', 'bottomLeft', 'bottomRight'
         resizeStartPoint: null,
-        resizeStartShape: null // Store original shape dimensions
+        resizeStartShape: null, // Store original shape dimensions
+        // Polygon drawing state
+        polygonPoints: [], // Points being drawn for custom polygon
+        isDrawingPolygon: false
     };
 
     // Canvas Setup
@@ -2331,10 +2372,69 @@
             drawShape(state.currentShape, false, true);
             drawDimensions(state.currentShape, true); // Show dimensions while drawing
         }
+        // Draw polygon being created
+        if (state.isDrawingPolygon && state.polygonPoints.length > 0) {
+            drawPolygonPreview();
+        }
         state.shapes.forEach(shape => drawDimensions(shape));
 
         const instructions = document.getElementById('canvasInstructions');
-        if (instructions) instructions.style.display = state.shapes.length === 0 && !state.isDrawing ? 'block' : 'none';
+        if (instructions) instructions.style.display = state.shapes.length === 0 && !state.isDrawing && !state.isDrawingPolygon ? 'block' : 'none';
+    }
+
+    function drawPolygonPreview() {
+        if (state.polygonPoints.length === 0) return;
+
+        ctx.strokeStyle = '#FDB913';
+        ctx.fillStyle = 'rgba(253, 185, 19, 0.1)';
+        ctx.lineWidth = 2;
+        ctx.setLineDash([5, 5]);
+
+        // Draw the polygon so far
+        ctx.beginPath();
+        ctx.moveTo(state.polygonPoints[0].x, state.polygonPoints[0].y);
+        for (let i = 1; i < state.polygonPoints.length; i++) {
+            ctx.lineTo(state.polygonPoints[i].x, state.polygonPoints[i].y);
+        }
+
+        // Draw line to current mouse position
+        if (state.polygonPreviewPoint) {
+            ctx.lineTo(state.polygonPreviewPoint.x, state.polygonPreviewPoint.y);
+        }
+
+        ctx.stroke();
+
+        // Fill if we have at least 3 points
+        if (state.polygonPoints.length >= 3) {
+            ctx.beginPath();
+            ctx.moveTo(state.polygonPoints[0].x, state.polygonPoints[0].y);
+            for (let i = 1; i < state.polygonPoints.length; i++) {
+                ctx.lineTo(state.polygonPoints[i].x, state.polygonPoints[i].y);
+            }
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        ctx.setLineDash([]);
+
+        // Draw points
+        state.polygonPoints.forEach((p, i) => {
+            ctx.fillStyle = i === 0 ? '#00ff00' : '#FDB913'; // First point is green (click to close)
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, i === 0 ? 8 : 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        });
+
+        // Show instruction text
+        ctx.fillStyle = '#000';
+        ctx.font = '12px Inter';
+        ctx.fillText('Click to add points. Click green dot to finish.', 10, 20);
+        if (state.polygonPoints.length >= 3) {
+            ctx.fillText('Press ESC to cancel.', 10, 35);
+        }
     }
 
     function drawBackground() {
@@ -2409,6 +2509,9 @@
                 break;
             case 'ushape':
                 drawUShape(shape);
+                break;
+            case 'polygon':
+                drawPolygonShape(shape);
                 break;
         }
 
@@ -2486,6 +2589,54 @@
         ctx.fillText('U-SHAPE', shape.x + 6, shape.y + 16);
     }
 
+    function drawPolygonShape(shape) {
+        if (!shape.points || shape.points.length < 3) return;
+
+        ctx.beginPath();
+        ctx.moveTo(shape.x + shape.points[0].x, shape.y + shape.points[0].y);
+        for (let i = 1; i < shape.points.length; i++) {
+            ctx.lineTo(shape.x + shape.points[i].x, shape.y + shape.points[i].y);
+        }
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+
+        // Draw hatch pattern
+        ctx.save();
+        ctx.clip();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.lineWidth = 1;
+        for (let i = -shape.height; i < shape.width; i += 8) {
+            ctx.beginPath();
+            ctx.moveTo(shape.x + i, shape.y);
+            ctx.lineTo(shape.x + i + shape.height, shape.y + shape.height);
+            ctx.stroke();
+        }
+        ctx.restore();
+
+        ctx.fillStyle = '#000';
+        ctx.font = 'bold 10px Inter';
+        ctx.fillText('CUSTOM', shape.x + 6, shape.y + 16);
+
+        // Draw dimension for each edge
+        ctx.font = '8px Inter';
+        ctx.fillStyle = '#666';
+        for (let i = 0; i < shape.points.length; i++) {
+            const p1 = shape.points[i];
+            const p2 = shape.points[(i + 1) % shape.points.length];
+            const dx = p2.x - p1.x;
+            const dy = p2.y - p1.y;
+            const length = Math.sqrt(dx * dx + dy * dy);
+            const inches = Math.round(length / state.pixelsPerInch);
+            const midX = shape.x + (p1.x + p2.x) / 2;
+            const midY = shape.y + (p1.y + p2.y) / 2;
+            // Offset label perpendicular to edge
+            const perpX = -dy / length * 10;
+            const perpY = dx / length * 10;
+            ctx.fillText(inches + '"', midX + perpX, midY + perpY);
+        }
+    }
+
     function drawBacksplash(shape) {
         if (shape.type === 'sink' || shape.type === 'cooktop') return;
         if (!shape.backsplashEdges) return;
@@ -2516,6 +2667,54 @@
         const widthInches = Math.round(shape.width / state.pixelsPerInch);
         const heightInches = Math.round(shape.height / state.pixelsPerInch);
 
+        // Helper to draw a dimension label
+        function drawDimLabel(text, x, y, isBlue = false) {
+            ctx.font = '9px Inter';
+            const metrics = ctx.measureText(text);
+            ctx.fillStyle = isBlue ? '#0088ff' : '#000';
+            ctx.fillText(text, x - metrics.width/2, y);
+        }
+
+        // Helper to draw a horizontal dimension line with label
+        function drawHorizDim(x1, x2, y, offset, isBlue = false) {
+            const inches = Math.round(Math.abs(x2 - x1) / state.pixelsPerInch);
+            const text = inches + '"';
+            const midX = (x1 + x2) / 2;
+            ctx.strokeStyle = isBlue ? '#0088ff' : '#000';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(x1, y + offset);
+            ctx.lineTo(x2, y + offset);
+            ctx.moveTo(x1, y + offset - 3);
+            ctx.lineTo(x1, y + offset + 3);
+            ctx.moveTo(x2, y + offset - 3);
+            ctx.lineTo(x2, y + offset + 3);
+            ctx.stroke();
+            drawDimLabel(text, midX, y + offset - 4, isBlue);
+        }
+
+        // Helper to draw a vertical dimension line with label
+        function drawVertDim(x, y1, y2, offset, isBlue = false) {
+            const inches = Math.round(Math.abs(y2 - y1) / state.pixelsPerInch);
+            const text = inches + '"';
+            const midY = (y1 + y2) / 2;
+            ctx.strokeStyle = isBlue ? '#0088ff' : '#000';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(x + offset, y1);
+            ctx.lineTo(x + offset, y2);
+            ctx.moveTo(x + offset - 3, y1);
+            ctx.lineTo(x + offset + 3, y1);
+            ctx.moveTo(x + offset - 3, y2);
+            ctx.lineTo(x + offset + 3, y2);
+            ctx.stroke();
+            ctx.save();
+            ctx.translate(x + offset + 4, midY);
+            ctx.rotate(-Math.PI/2);
+            drawDimLabel(text, 0, 0, isBlue);
+            ctx.restore();
+        }
+
         if (isDrawing) {
             // Large, prominent labels while drawing
             ctx.font = 'bold 14px Inter';
@@ -2523,7 +2722,6 @@
             const heightText = heightInches + '"';
             const sqFt = ((widthInches * heightInches) / 144).toFixed(1);
 
-            // Width label with background (top center)
             const widthLabelX = shape.x + shape.width/2;
             const widthLabelY = shape.y - 15;
             const widthMetrics = ctx.measureText(widthText);
@@ -2532,7 +2730,6 @@
             ctx.fillStyle = '#000';
             ctx.fillText(widthText, widthLabelX - widthMetrics.width/2, widthLabelY);
 
-            // Height label with background (right center)
             const heightLabelX = shape.x + shape.width + 20;
             const heightLabelY = shape.y + shape.height/2;
             const heightMetrics = ctx.measureText(heightText);
@@ -2541,7 +2738,6 @@
             ctx.fillStyle = '#000';
             ctx.fillText(heightText, heightLabelX, heightLabelY + 4);
 
-            // Square footage label (center of shape)
             ctx.font = 'bold 16px Inter';
             const sqFtText = sqFt + ' sq ft';
             const sqFtMetrics = ctx.measureText(sqFtText);
@@ -2552,56 +2748,58 @@
             ctx.fillStyle = '#FDB913';
             ctx.fillText(sqFtText, centerX - sqFtMetrics.width/2, centerY + 5);
 
-            // Dimension lines
             ctx.strokeStyle = '#FDB913';
             ctx.lineWidth = 2;
-            // Top line
             ctx.beginPath();
             ctx.moveTo(shape.x, shape.y - 5);
             ctx.lineTo(shape.x + shape.width, shape.y - 5);
             ctx.stroke();
-            // Right line
             ctx.beginPath();
             ctx.moveTo(shape.x + shape.width + 5, shape.y);
             ctx.lineTo(shape.x + shape.width + 5, shape.y + shape.height);
             ctx.stroke();
         } else {
-            // Standard dimension display for placed shapes
-            ctx.fillStyle = '#000';
-            ctx.font = '10px Inter';
-            const widthText = widthInches + '"';
-            ctx.fillText(widthText, shape.x + shape.width/2 - ctx.measureText(widthText).width/2, shape.y - 6);
+            // Standard dimensions for placed shapes
+            // Outer dimensions (black)
+            drawHorizDim(shape.x, shape.x + shape.width, shape.y, -8);
+            drawVertDim(shape.x + shape.width, shape.y, shape.y + shape.height, 8);
 
-            ctx.strokeStyle = '#000';
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(shape.x, shape.y - 3);
-            ctx.lineTo(shape.x + shape.width, shape.y - 3);
-            ctx.stroke();
+            // L-shape inner dimensions (blue)
+            if (shape.type === 'lshape') {
+                const armWidth = shape.armWidth || shape.width * 0.4;
+                const armHeight = shape.armHeight || shape.height * 0.4;
+                // Arm width (bottom section width)
+                drawHorizDim(shape.x, shape.x + armWidth, shape.y + shape.height, 8, true);
+                // Inner horizontal (top of notch)
+                drawHorizDim(shape.x + armWidth, shape.x + shape.width, shape.y + armHeight, 8, true);
+                // Arm height (right section height)
+                drawVertDim(shape.x + shape.width, shape.y, shape.y + armHeight, 20, true);
+                // Inner vertical (left side of notch)
+                drawVertDim(shape.x + armWidth, shape.y + armHeight, shape.y + shape.height, -8, true);
+                // Left side full height
+                drawVertDim(shape.x, shape.y, shape.y + shape.height, -8);
+            }
 
-            ctx.beginPath();
-            ctx.moveTo(shape.x, shape.y);
-            ctx.lineTo(shape.x, shape.y - 6);
-            ctx.moveTo(shape.x + shape.width, shape.y);
-            ctx.lineTo(shape.x + shape.width, shape.y - 6);
-            ctx.stroke();
-
-            ctx.save();
-            ctx.translate(shape.x + shape.width + 12, shape.y + shape.height/2);
-            ctx.rotate(-Math.PI/2);
-            ctx.fillText(heightInches + '"', -ctx.measureText(heightInches + '"').width/2, 4);
-            ctx.restore();
-
-            ctx.beginPath();
-            ctx.moveTo(shape.x + shape.width + 3, shape.y);
-            ctx.lineTo(shape.x + shape.width + 3, shape.y + shape.height);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.moveTo(shape.x + shape.width, shape.y);
-            ctx.lineTo(shape.x + shape.width + 6, shape.y);
-            ctx.moveTo(shape.x + shape.width, shape.y + shape.height);
-            ctx.lineTo(shape.x + shape.width + 6, shape.y + shape.height);
-            ctx.stroke();
+            // U-shape inner dimensions (blue)
+            if (shape.type === 'ushape') {
+                const leftArm = shape.leftArmWidth || shape.width * 0.3;
+                const rightArm = shape.rightArmWidth || shape.width * 0.3;
+                const centerDepth = shape.centerDepth || shape.height * 0.5;
+                // Left arm width
+                drawHorizDim(shape.x, shape.x + leftArm, shape.y + shape.height, 8, true);
+                // Center opening width
+                drawHorizDim(shape.x + leftArm, shape.x + shape.width - rightArm, shape.y + centerDepth, 8, true);
+                // Right arm width
+                drawHorizDim(shape.x + shape.width - rightArm, shape.x + shape.width, shape.y + shape.height, 8, true);
+                // Center depth
+                drawVertDim(shape.x + shape.width / 2, shape.y, shape.y + centerDepth, 0, true);
+                // Left inner height
+                drawVertDim(shape.x + leftArm, shape.y + centerDepth, shape.y + shape.height, 8, true);
+                // Right inner height
+                drawVertDim(shape.x + shape.width - rightArm, shape.y + centerDepth, shape.y + shape.height, -8, true);
+                // Left full height
+                drawVertDim(shape.x, shape.y, shape.y + shape.height, -8);
+            }
         }
     }
 
@@ -2874,11 +3072,74 @@
             } else {
                 selectShape(null);
             }
+        } else if (state.tool === 'polygon') {
+            // Polygon drawing mode - click to add points
+            const snapped = snapToGrid({ x, y });
+
+            // Check if clicking near the first point to close the polygon
+            if (state.polygonPoints.length >= 3) {
+                const first = state.polygonPoints[0];
+                const dist = Math.sqrt(Math.pow(snapped.x - first.x, 2) + Math.pow(snapped.y - first.y, 2));
+                if (dist < 15) {
+                    // Close and finish the polygon
+                    finishPolygon();
+                    return;
+                }
+            }
+
+            state.polygonPoints.push(snapped);
+            state.isDrawingPolygon = true;
+            drawCanvas();
         } else {
             state.isDrawing = true;
             state.startPoint = snapToGrid({ x, y });
             state.currentShape = createShape(state.tool, state.startPoint.x, state.startPoint.y, 0, 0);
         }
+    }
+
+    function finishPolygon() {
+        if (state.polygonPoints.length < 3) {
+            state.polygonPoints = [];
+            state.isDrawingPolygon = false;
+            drawCanvas();
+            return;
+        }
+
+        // Calculate bounding box
+        let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+        state.polygonPoints.forEach(p => {
+            minX = Math.min(minX, p.x);
+            minY = Math.min(minY, p.y);
+            maxX = Math.max(maxX, p.x);
+            maxY = Math.max(maxY, p.y);
+        });
+
+        // Create the polygon shape
+        const shape = {
+            id: Date.now(),
+            type: 'polygon',
+            x: minX,
+            y: minY,
+            width: maxX - minX,
+            height: maxY - minY,
+            points: state.polygonPoints.map(p => ({ x: p.x - minX, y: p.y - minY })), // Store relative to shape origin
+            backsplash: true,
+            backsplashEdges: {} // Initialize edges for each segment
+        };
+
+        // Create backsplash edge for each polygon segment
+        for (let i = 0; i < shape.points.length; i++) {
+            shape.backsplashEdges['edge' + i] = false;
+        }
+
+        state.shapes.push(shape);
+        state.polygonPoints = [];
+        state.isDrawingPolygon = false;
+        selectShape(shape);
+        saveToHistory();
+        updateShapesList();
+        updateEstimate();
+        drawCanvas();
     }
 
     function handleMouseMove(e) {
@@ -3047,6 +3308,10 @@
             drawCanvas();
             updateShapesList();
             updateEstimate();
+        } else if (state.isDrawingPolygon && state.polygonPoints.length > 0) {
+            // Track mouse for polygon preview line
+            state.polygonPreviewPoint = snapToGrid({ x, y });
+            drawCanvas();
         }
     }
 
@@ -3083,7 +3348,16 @@
 
     function handleKeyDown(e) {
         if (e.key === 'Delete' || e.key === 'Backspace') deleteSelected();
-        else if (e.key === 'Escape') { selectShape(null); state.isDrawing = false; state.currentShape = null; drawCanvas(); }
+        else if (e.key === 'Escape') {
+            selectShape(null);
+            state.isDrawing = false;
+            state.currentShape = null;
+            // Cancel polygon drawing
+            state.polygonPoints = [];
+            state.isDrawingPolygon = false;
+            state.polygonPreviewPoint = null;
+            drawCanvas();
+        }
         else if ((e.ctrlKey || e.metaKey) && e.key === 'z') { e.preventDefault(); undo(); }
         else if ((e.ctrlKey || e.metaKey) && e.key === 'y') { e.preventDefault(); redo(); }
         else if ((e.ctrlKey || e.metaKey) && e.key === 'd') { e.preventDefault(); duplicateSelected(); }
@@ -3205,6 +3479,8 @@
         const info = document.getElementById('selectedShapeInfo');
         const bsSection = document.getElementById('shapeBacksplashSection');
         const bsEdgesContainer = document.getElementById('shapeBacksplashEdges');
+        const lshapePanel = document.getElementById('lshapeInnerDims');
+        const ushapePanel = document.getElementById('ushapeInnerDims');
 
         if (shape) {
             editor.style.display = 'block';
@@ -3213,6 +3489,23 @@
             document.getElementById('shapeDepth').value = Math.round(shape.height / state.pixelsPerInch);
             document.getElementById('shapePosX').value = Math.round(shape.x / state.pixelsPerInch);
             document.getElementById('shapePosY').value = Math.round(shape.y / state.pixelsPerInch);
+
+            // Show/hide inner dimension panels based on shape type
+            lshapePanel.style.display = shape.type === 'lshape' ? 'block' : 'none';
+            ushapePanel.style.display = shape.type === 'ushape' ? 'block' : 'none';
+
+            // Populate L-shape inner dimensions
+            if (shape.type === 'lshape') {
+                document.getElementById('lshapeArmWidth').value = Math.round((shape.armWidth || shape.width * 0.4) / state.pixelsPerInch);
+                document.getElementById('lshapeArmHeight').value = Math.round((shape.armHeight || shape.height * 0.4) / state.pixelsPerInch);
+            }
+
+            // Populate U-shape inner dimensions
+            if (shape.type === 'ushape') {
+                document.getElementById('ushapeLeftArm').value = Math.round((shape.leftArmWidth || shape.width * 0.3) / state.pixelsPerInch);
+                document.getElementById('ushapeRightArm').value = Math.round((shape.rightArmWidth || shape.width * 0.3) / state.pixelsPerInch);
+                document.getElementById('ushapeCenterDepth').value = Math.round((shape.centerDepth || shape.height * 0.5) / state.pixelsPerInch);
+            }
 
             // Show backsplash edges if shape can have backsplash
             if (shape.backsplash && shape.backsplashEdges && state.backsplash.enabled) {
@@ -3260,8 +3553,37 @@
             editor.style.display = 'none';
             info.style.display = 'block';
             bsSection.style.display = 'none';
+            lshapePanel.style.display = 'none';
+            ushapePanel.style.display = 'none';
         }
         drawCanvas();
+    }
+
+    function updateInnerDimensions() {
+        if (!state.selectedShape) return;
+        const shape = state.selectedShape;
+
+        if (shape.type === 'lshape') {
+            const newArmWidth = parseInt(document.getElementById('lshapeArmWidth').value) * state.pixelsPerInch;
+            const newArmHeight = parseInt(document.getElementById('lshapeArmHeight').value) * state.pixelsPerInch;
+            const minArm = state.pixelsPerInch * 6;
+            shape.armWidth = Math.max(minArm, Math.min(shape.width - minArm, newArmWidth));
+            shape.armHeight = Math.max(minArm, Math.min(shape.height - minArm, newArmHeight));
+        }
+
+        if (shape.type === 'ushape') {
+            const newLeftArm = parseInt(document.getElementById('ushapeLeftArm').value) * state.pixelsPerInch;
+            const newRightArm = parseInt(document.getElementById('ushapeRightArm').value) * state.pixelsPerInch;
+            const newCenterDepth = parseInt(document.getElementById('ushapeCenterDepth').value) * state.pixelsPerInch;
+            const minArm = state.pixelsPerInch * 6;
+            shape.leftArmWidth = Math.max(minArm, Math.min(shape.width - shape.rightArmWidth - minArm, newLeftArm));
+            shape.rightArmWidth = Math.max(minArm, Math.min(shape.width - shape.leftArmWidth - minArm, newRightArm));
+            shape.centerDepth = Math.max(minArm, Math.min(shape.height - minArm, newCenterDepth));
+        }
+
+        saveToHistory();
+        drawCanvas();
+        updateEstimate();
     }
 
     function snapToGrid(point) {
@@ -3272,9 +3594,16 @@
 
     // Tool Functions
     function setTool(tool) {
+        // Cancel any in-progress polygon when switching tools
+        if (state.isDrawingPolygon && tool !== 'polygon') {
+            state.polygonPoints = [];
+            state.isDrawingPolygon = false;
+            state.polygonPreviewPoint = null;
+        }
         state.tool = tool;
         document.querySelectorAll('.tool-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tool === tool));
         canvas.style.cursor = tool === 'select' ? 'default' : 'crosshair';
+        drawCanvas();
     }
 
     function selectEdge(edge) {
@@ -3444,7 +3773,7 @@
             list.innerHTML = '<div class="empty-state"><i class="bi bi-vector-pen"></i><p>No shapes yet. Start drawing!</p></div>';
             return;
         }
-        const icons = { rectangle: 'square', lshape: 'box', ushape: 'bounding-box', island: 'square-fill', sink: 'droplet', cooktop: 'fire' };
+        const icons = { rectangle: 'square', lshape: 'box', ushape: 'bounding-box', island: 'square-fill', sink: 'droplet', cooktop: 'fire', polygon: 'pentagon' };
         list.innerHTML = state.shapes.map(s => {
             const w = Math.round(s.width / state.pixelsPerInch);
             const h = Math.round(s.height / state.pixelsPerInch);
@@ -3551,6 +3880,21 @@
                     const cd = (s.centerDepth || s.height * 0.5) / state.pixelsPerInch;
                     totalSqInches += (w * cd) + (law * (h - cd)) + (raw * (h - cd));
                     totalEdgeInches += w * 2 + h * 2 + (w - law - raw) * 2;
+                } else if (s.type === 'polygon' && s.points && s.points.length >= 3) {
+                    // Calculate polygon area using shoelace formula
+                    let area = 0;
+                    let perimeter = 0;
+                    for (let i = 0; i < s.points.length; i++) {
+                        const j = (i + 1) % s.points.length;
+                        area += s.points[i].x * s.points[j].y;
+                        area -= s.points[j].x * s.points[i].y;
+                        const dx = s.points[j].x - s.points[i].x;
+                        const dy = s.points[j].y - s.points[i].y;
+                        perimeter += Math.sqrt(dx * dx + dy * dy);
+                    }
+                    area = Math.abs(area) / 2;
+                    totalSqInches += area / (state.pixelsPerInch * state.pixelsPerInch);
+                    totalEdgeInches += perimeter / state.pixelsPerInch;
                 } else {
                     totalSqInches += w * h;
                     totalEdgeInches += (w + h) * 2;
