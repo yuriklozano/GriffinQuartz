@@ -2417,9 +2417,23 @@
 
         ctx.setLineDash([]);
 
+        // Draw dimension labels for each completed edge
+        ctx.font = 'bold 11px Inter';
+        for (let i = 0; i < state.polygonPoints.length - 1; i++) {
+            const p1 = state.polygonPoints[i];
+            const p2 = state.polygonPoints[i + 1];
+            drawEdgeDimension(p1, p2, '#FDB913');
+        }
+
+        // Draw dimension for the preview line (current edge being drawn)
+        if (state.polygonPreviewPoint && state.polygonPoints.length > 0) {
+            const lastPoint = state.polygonPoints[state.polygonPoints.length - 1];
+            drawEdgeDimension(lastPoint, state.polygonPreviewPoint, '#FDB913', true);
+        }
+
         // Draw points
         state.polygonPoints.forEach((p, i) => {
-            ctx.fillStyle = i === 0 ? '#00ff00' : '#FDB913'; // First point is green (click to close)
+            ctx.fillStyle = i === 0 ? '#00ff00' : '#FDB913';
             ctx.beginPath();
             ctx.arc(p.x, p.y, i === 0 ? 8 : 5, 0, Math.PI * 2);
             ctx.fill();
@@ -2435,6 +2449,32 @@
         if (state.polygonPoints.length >= 3) {
             ctx.fillText('Press ESC to cancel.', 10, 35);
         }
+    }
+
+    // Helper to draw dimension label on an edge
+    function drawEdgeDimension(p1, p2, color, isPreview = false) {
+        const dx = p2.x - p1.x;
+        const dy = p2.y - p1.y;
+        const length = Math.sqrt(dx * dx + dy * dy);
+        if (length < 10) return; // Too short to label
+
+        const inches = Math.round(length / state.pixelsPerInch);
+        const text = inches + '"';
+        const midX = (p1.x + p2.x) / 2;
+        const midY = (p1.y + p2.y) / 2;
+
+        // Offset label perpendicular to edge
+        const perpX = -dy / length * 15;
+        const perpY = dx / length * 15;
+
+        // Draw background for readability
+        ctx.font = isPreview ? 'bold 14px Inter' : 'bold 11px Inter';
+        const metrics = ctx.measureText(text);
+        ctx.fillStyle = isPreview ? '#FDB913' : 'rgba(255,255,255,0.9)';
+        ctx.fillRect(midX + perpX - metrics.width/2 - 3, midY + perpY - 10, metrics.width + 6, 16);
+
+        ctx.fillStyle = isPreview ? '#000' : color;
+        ctx.fillText(text, midX + perpX - metrics.width/2, midY + perpY + 2);
     }
 
     function drawBackground() {
@@ -2800,6 +2840,15 @@
                 // Left full height
                 drawVertDim(shape.x, shape.y, shape.y + shape.height, -8);
             }
+
+            // Polygon edge dimensions (green)
+            if (shape.type === 'polygon' && shape.points && shape.points.length >= 3) {
+                for (let i = 0; i < shape.points.length; i++) {
+                    const p1 = { x: shape.x + shape.points[i].x, y: shape.y + shape.points[i].y };
+                    const p2 = { x: shape.x + shape.points[(i + 1) % shape.points.length].x, y: shape.y + shape.points[(i + 1) % shape.points.length].y };
+                    drawEdgeDimension(p1, p2, '#228B22');
+                }
+            }
         }
     }
 
@@ -2828,30 +2877,20 @@
 
     // Get resize handles for a shape (edge midpoints)
     function getResizeHandles(shape) {
-        const handles = {
-            top: { x: shape.x + shape.width / 2, y: shape.y, cursor: 'ns-resize', direction: 'vertical' },
-            right: { x: shape.x + shape.width, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' },
-            bottom: { x: shape.x + shape.width / 2, y: shape.y + shape.height, cursor: 'ns-resize', direction: 'vertical' },
-            left: { x: shape.x, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' },
-            topLeft: { x: shape.x, y: shape.y, cursor: 'nwse-resize', direction: 'diagonal' },
-            topRight: { x: shape.x + shape.width, y: shape.y, cursor: 'nesw-resize', direction: 'diagonal' },
-            bottomRight: { x: shape.x + shape.width, y: shape.y + shape.height, cursor: 'nwse-resize', direction: 'diagonal' },
-            bottomLeft: { x: shape.x, y: shape.y + shape.height, cursor: 'nesw-resize', direction: 'diagonal' }
-        };
+        const handles = {};
 
-        // Add inner edge handles for L-shape
         if (shape.type === 'lshape') {
+            // L-shape has 6 edges - place handles on each actual edge
             const armWidth = shape.armWidth || shape.width * 0.4;
             const armHeight = shape.armHeight || shape.height * 0.4;
-            // Inner vertical edge (controls armWidth) - at x+armWidth, from y+armHeight to y+height
-            handles.innerVertical = {
-                x: shape.x + armWidth,
-                y: shape.y + armHeight + (shape.height - armHeight) / 2,
-                cursor: 'ew-resize',
-                direction: 'horizontal',
-                isInner: true
-            };
-            // Inner horizontal edge (controls armHeight) - at y+armHeight, from x+armWidth to x+width
+
+            // Edge 1: Top edge (full width) - controls y position / height from top
+            handles.top = { x: shape.x + shape.width / 2, y: shape.y, cursor: 'ns-resize', direction: 'vertical' };
+
+            // Edge 2: Right-top edge (short, only armHeight tall) - controls width
+            handles.rightTop = { x: shape.x + shape.width, y: shape.y + armHeight / 2, cursor: 'ew-resize', direction: 'horizontal' };
+
+            // Edge 3: Inner horizontal edge - controls armHeight
             handles.innerHorizontal = {
                 x: shape.x + armWidth + (shape.width - armWidth) / 2,
                 y: shape.y + armHeight,
@@ -2859,7 +2898,23 @@
                 direction: 'vertical',
                 isInner: true
             };
-            // Inner corner (controls both armWidth and armHeight)
+
+            // Edge 4: Inner vertical edge - controls armWidth
+            handles.innerVertical = {
+                x: shape.x + armWidth,
+                y: shape.y + armHeight + (shape.height - armHeight) / 2,
+                cursor: 'ew-resize',
+                direction: 'horizontal',
+                isInner: true
+            };
+
+            // Edge 5: Bottom edge (only armWidth wide) - controls height from bottom
+            handles.bottom = { x: shape.x + armWidth / 2, y: shape.y + shape.height, cursor: 'ns-resize', direction: 'vertical' };
+
+            // Edge 6: Left edge (full height) - controls x position / width from left
+            handles.left = { x: shape.x, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' };
+
+            // Inner corner
             handles.innerCorner = {
                 x: shape.x + armWidth,
                 y: shape.y + armHeight,
@@ -2867,14 +2922,38 @@
                 direction: 'diagonal',
                 isInner: true
             };
-        }
 
-        // Add inner edge handles for U-shape (independent left and right arms)
-        if (shape.type === 'ushape') {
+            // Outer corners
+            handles.topLeft = { x: shape.x, y: shape.y, cursor: 'nwse-resize', direction: 'diagonal' };
+            handles.topRight = { x: shape.x + shape.width, y: shape.y, cursor: 'nesw-resize', direction: 'diagonal' };
+            handles.bottomLeft = { x: shape.x, y: shape.y + shape.height, cursor: 'nesw-resize', direction: 'diagonal' };
+            // The "bottom right" of L-shape is actually at (armWidth, height)
+            handles.armCorner = { x: shape.x + armWidth, y: shape.y + shape.height, cursor: 'nwse-resize', direction: 'diagonal', isInner: true };
+            // And there's a corner at (width, armHeight)
+            handles.rightCorner = { x: shape.x + shape.width, y: shape.y + armHeight, cursor: 'nesw-resize', direction: 'diagonal' };
+
+        } else if (shape.type === 'ushape') {
+            // U-shape has many edges
             const leftArmWidth = shape.leftArmWidth || shape.width * 0.3;
             const rightArmWidth = shape.rightArmWidth || shape.width * 0.3;
             const centerDepth = shape.centerDepth || shape.height * 0.5;
-            // Left inner vertical (controls left arm width independently)
+
+            // Top edge (full width)
+            handles.top = { x: shape.x + shape.width / 2, y: shape.y, cursor: 'ns-resize', direction: 'vertical' };
+
+            // Right outer edge (full height)
+            handles.right = { x: shape.x + shape.width, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' };
+
+            // Left outer edge (full height)
+            handles.left = { x: shape.x, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' };
+
+            // Bottom left edge (leftArmWidth wide)
+            handles.bottomLeft = { x: shape.x + leftArmWidth / 2, y: shape.y + shape.height, cursor: 'ns-resize', direction: 'vertical' };
+
+            // Bottom right edge (rightArmWidth wide)
+            handles.bottomRight = { x: shape.x + shape.width - rightArmWidth / 2, y: shape.y + shape.height, cursor: 'ns-resize', direction: 'vertical' };
+
+            // Left inner vertical (controls leftArmWidth)
             handles.innerLeftVertical = {
                 x: shape.x + leftArmWidth,
                 y: shape.y + centerDepth + (shape.height - centerDepth) / 2,
@@ -2882,7 +2961,8 @@
                 direction: 'horizontal',
                 isInner: true
             };
-            // Right inner vertical (controls right arm width independently)
+
+            // Right inner vertical (controls rightArmWidth)
             handles.innerRightVertical = {
                 x: shape.x + shape.width - rightArmWidth,
                 y: shape.y + centerDepth + (shape.height - centerDepth) / 2,
@@ -2890,14 +2970,41 @@
                 direction: 'horizontal',
                 isInner: true
             };
+
             // Inner horizontal (controls centerDepth)
             handles.innerHorizontal = {
-                x: shape.x + leftArmWidth + (shape.width - leftArmWidth - rightArmWidth) / 2,
+                x: shape.x + shape.width / 2,
                 y: shape.y + centerDepth,
                 cursor: 'ns-resize',
                 direction: 'vertical',
                 isInner: true
             };
+
+            // Corners
+            handles.topLeft = { x: shape.x, y: shape.y, cursor: 'nwse-resize', direction: 'diagonal' };
+            handles.topRight = { x: shape.x + shape.width, y: shape.y, cursor: 'nesw-resize', direction: 'diagonal' };
+
+        } else if (shape.type === 'polygon' && shape.points) {
+            // Polygon - add handle for each vertex
+            shape.points.forEach((p, i) => {
+                handles['vertex' + i] = {
+                    x: shape.x + p.x,
+                    y: shape.y + p.y,
+                    cursor: 'move',
+                    direction: 'vertex',
+                    vertexIndex: i
+                };
+            });
+        } else {
+            // Rectangle, island, sink, cooktop - standard bounding box handles
+            handles.top = { x: shape.x + shape.width / 2, y: shape.y, cursor: 'ns-resize', direction: 'vertical' };
+            handles.right = { x: shape.x + shape.width, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' };
+            handles.bottom = { x: shape.x + shape.width / 2, y: shape.y + shape.height, cursor: 'ns-resize', direction: 'vertical' };
+            handles.left = { x: shape.x, y: shape.y + shape.height / 2, cursor: 'ew-resize', direction: 'horizontal' };
+            handles.topLeft = { x: shape.x, y: shape.y, cursor: 'nwse-resize', direction: 'diagonal' };
+            handles.topRight = { x: shape.x + shape.width, y: shape.y, cursor: 'nesw-resize', direction: 'diagonal' };
+            handles.bottomRight = { x: shape.x + shape.width, y: shape.y + shape.height, cursor: 'nwse-resize', direction: 'diagonal' };
+            handles.bottomLeft = { x: shape.x, y: shape.y + shape.height, cursor: 'nesw-resize', direction: 'diagonal' };
         }
 
         return handles;
@@ -2906,76 +3013,64 @@
     // Draw resize handles with arrows
     function drawResizeHandles(shape) {
         const handles = getResizeHandles(shape);
-        const handleSize = 8;
+        const handleSize = 7;
 
         // Helper to draw a single handle
-        function drawHandle(h, isVertical, isInner = false) {
-            // Draw handle circle
-            ctx.fillStyle = isInner ? '#e0f0ff' : '#fff';
-            ctx.strokeStyle = isInner ? '#0088ff' : '#FDB913';
+        function drawHandle(h, name) {
+            const isInner = h.isInner;
+            const isVertex = h.direction === 'vertex';
+            const isVertical = h.direction === 'vertical';
+            const isDiagonal = h.direction === 'diagonal';
+
+            ctx.fillStyle = isInner ? '#e0f0ff' : (isVertex ? '#90EE90' : '#fff');
+            ctx.strokeStyle = isInner ? '#0088ff' : (isVertex ? '#228B22' : '#FDB913');
             ctx.lineWidth = 2;
-            ctx.beginPath();
-            ctx.arc(h.x, h.y, handleSize, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.stroke();
 
-            // Draw arrow inside
-            ctx.strokeStyle = isInner ? '#0088ff' : '#FDB913';
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-
-            if (isVertical) {
-                // Vertical double arrow
-                ctx.moveTo(h.x, h.y - 4);
-                ctx.lineTo(h.x - 3, h.y - 1);
-                ctx.moveTo(h.x, h.y - 4);
-                ctx.lineTo(h.x + 3, h.y - 1);
-                ctx.moveTo(h.x, h.y + 4);
-                ctx.lineTo(h.x - 3, h.y + 1);
-                ctx.moveTo(h.x, h.y + 4);
-                ctx.lineTo(h.x + 3, h.y + 1);
-            } else {
-                // Horizontal double arrow
-                ctx.moveTo(h.x - 4, h.y);
-                ctx.lineTo(h.x - 1, h.y - 3);
-                ctx.moveTo(h.x - 4, h.y);
-                ctx.lineTo(h.x - 1, h.y + 3);
-                ctx.moveTo(h.x + 4, h.y);
-                ctx.lineTo(h.x + 1, h.y - 3);
-                ctx.moveTo(h.x + 4, h.y);
-                ctx.lineTo(h.x + 1, h.y + 3);
-            }
-            ctx.stroke();
-        }
-
-        // Draw outer edge handles
-        drawHandle(handles.top, true);
-        drawHandle(handles.bottom, true);
-        drawHandle(handles.left, false);
-        drawHandle(handles.right, false);
-
-        // Draw inner handles for L-shape (blue to distinguish)
-        if (shape.type === 'lshape') {
-            if (handles.innerVertical) drawHandle(handles.innerVertical, false, true);
-            if (handles.innerHorizontal) drawHandle(handles.innerHorizontal, true, true);
-            // Draw inner corner handle
-            if (handles.innerCorner) {
-                const h = handles.innerCorner;
-                ctx.fillStyle = '#e0f0ff';
-                ctx.strokeStyle = '#0088ff';
-                ctx.lineWidth = 2;
+            if (isDiagonal) {
+                // Square handle for corners
                 ctx.beginPath();
                 ctx.rect(h.x - 5, h.y - 5, 10, 10);
                 ctx.fill();
                 ctx.stroke();
+            } else {
+                // Circle handle for edges
+                ctx.beginPath();
+                ctx.arc(h.x, h.y, handleSize, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.stroke();
+
+                // Draw arrow inside (not for vertex handles)
+                if (!isVertex) {
+                    ctx.strokeStyle = isInner ? '#0088ff' : '#FDB913';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    if (isVertical) {
+                        ctx.moveTo(h.x, h.y - 4);
+                        ctx.lineTo(h.x - 3, h.y - 1);
+                        ctx.moveTo(h.x, h.y - 4);
+                        ctx.lineTo(h.x + 3, h.y - 1);
+                        ctx.moveTo(h.x, h.y + 4);
+                        ctx.lineTo(h.x - 3, h.y + 1);
+                        ctx.moveTo(h.x, h.y + 4);
+                        ctx.lineTo(h.x + 3, h.y + 1);
+                    } else {
+                        ctx.moveTo(h.x - 4, h.y);
+                        ctx.lineTo(h.x - 1, h.y - 3);
+                        ctx.moveTo(h.x - 4, h.y);
+                        ctx.lineTo(h.x - 1, h.y + 3);
+                        ctx.moveTo(h.x + 4, h.y);
+                        ctx.lineTo(h.x + 1, h.y - 3);
+                        ctx.moveTo(h.x + 4, h.y);
+                        ctx.lineTo(h.x + 1, h.y + 3);
+                    }
+                    ctx.stroke();
+                }
             }
         }
 
-        // Draw inner handles for U-shape (blue to distinguish)
-        if (shape.type === 'ushape') {
-            if (handles.innerLeftVertical) drawHandle(handles.innerLeftVertical, false, true);
-            if (handles.innerRightVertical) drawHandle(handles.innerRightVertical, false, true);
-            if (handles.innerHorizontal) drawHandle(handles.innerHorizontal, true, true);
+        // Draw all handles
+        for (const [name, handle] of Object.entries(handles)) {
+            drawHandle(handle, name);
         }
     }
 
@@ -2984,25 +3079,22 @@
         if (!state.selectedShape) return null;
 
         const handles = getResizeHandles(state.selectedShape);
-        const tolerance = 12; // Click tolerance in pixels
+        const tolerance = 12;
 
-        // Check inner handles first (they have priority for L-shape and U-shape)
-        const innerHandles = ['innerCorner', 'innerVertical', 'innerHorizontal', 'innerLeftVertical', 'innerRightVertical'];
-        for (const edge of innerHandles) {
-            if (handles[edge]) {
-                const h = handles[edge];
-                const dx = x - h.x;
-                const dy = y - h.y;
-                if (Math.sqrt(dx * dx + dy * dy) <= tolerance) {
-                    return { edge, handle: h };
-                }
+        // Check all handles - inner handles and vertices first (priority)
+        const priorityHandles = [];
+        const otherHandles = [];
+
+        for (const [edge, h] of Object.entries(handles)) {
+            if (h.isInner || h.direction === 'vertex') {
+                priorityHandles.push([edge, h]);
+            } else {
+                otherHandles.push([edge, h]);
             }
         }
 
-        // Check corners
-        const cornerOrder = ['topLeft', 'topRight', 'bottomRight', 'bottomLeft'];
-        for (const edge of cornerOrder) {
-            const h = handles[edge];
+        // Check priority handles first
+        for (const [edge, h] of priorityHandles) {
             const dx = x - h.x;
             const dy = y - h.y;
             if (Math.sqrt(dx * dx + dy * dy) <= tolerance) {
@@ -3010,10 +3102,8 @@
             }
         }
 
-        // Then check edge midpoints
-        const edgeOrder = ['top', 'right', 'bottom', 'left'];
-        for (const edge of edgeOrder) {
-            const h = handles[edge];
+        // Then check other handles
+        for (const [edge, h] of otherHandles) {
             const dx = x - h.x;
             const dy = y - h.y;
             if (Math.sqrt(dx * dx + dy * dy) <= tolerance) {
@@ -3048,7 +3138,9 @@
                     // Include inner dimensions for U-shape (independent arms)
                     leftArmWidth: state.selectedShape.leftArmWidth,
                     rightArmWidth: state.selectedShape.rightArmWidth,
-                    centerDepth: state.selectedShape.centerDepth
+                    centerDepth: state.selectedShape.centerDepth,
+                    // Include polygon points (deep copy)
+                    points: state.selectedShape.points ? state.selectedShape.points.map(p => ({...p})) : null
                 };
                 return;
             }
@@ -3277,6 +3369,74 @@
                         const maxArm = shape.width - leftArm - minArm; // Can't overlap with left arm
                         const newRightArmWidth = (start.rightArmWidth || shape.width * 0.3) - dx; // Negative because dragging right shrinks arm
                         shape.rightArmWidth = Math.max(minArm, Math.min(maxArm, snapToGrid({ x: newRightArmWidth, y: 0 }).x));
+                    }
+                    break;
+
+                // L-shape specific: rightTop edge (controls width but only affects the arm portion)
+                case 'rightTop':
+                    if (shape.type === 'lshape') {
+                        shape.width = Math.max(minSize, snapToGrid({ x: start.width + dx, y: 0 }).x);
+                        // Ensure armWidth stays within bounds
+                        const maxArmW = shape.width - (state.pixelsPerInch * 6);
+                        if (shape.armWidth > maxArmW) {
+                            shape.armWidth = maxArmW;
+                        }
+                    }
+                    break;
+
+                // L-shape specific corners
+                case 'armCorner':
+                    // Corner at (armWidth, height) - controls armWidth and total height
+                    if (shape.type === 'lshape') {
+                        const minArm = state.pixelsPerInch * 6;
+                        const newArmWidth = (start.armWidth || shape.width * 0.4) + dx;
+                        shape.armWidth = Math.max(minArm, Math.min(shape.width - minArm, snapToGrid({ x: newArmWidth, y: 0 }).x));
+                        shape.height = Math.max(minSize, snapToGrid({ x: 0, y: start.height + dy }).y);
+                    }
+                    break;
+                case 'rightCorner':
+                    // Corner at (width, armHeight) - controls width and armHeight
+                    if (shape.type === 'lshape') {
+                        shape.width = Math.max(minSize, snapToGrid({ x: start.width + dx, y: 0 }).x);
+                        // Ensure armWidth stays valid
+                        const maxArmW2 = shape.width - (state.pixelsPerInch * 6);
+                        if (shape.armWidth > maxArmW2) shape.armWidth = maxArmW2;
+                        // Adjust armHeight
+                        const minArm = state.pixelsPerInch * 6;
+                        const newArmHeight = (start.armHeight || shape.height * 0.4) + dy;
+                        shape.armHeight = Math.max(minArm, Math.min(shape.height - minArm, snapToGrid({ x: 0, y: newArmHeight }).y));
+                    }
+                    break;
+
+                // Handle polygon vertex movement
+                default:
+                    // Check if this is a vertex handle
+                    if (state.resizeEdge.startsWith('vertex') && shape.type === 'polygon' && shape.points && start.points) {
+                        const vertexIndex = parseInt(state.resizeEdge.replace('vertex', ''));
+                        if (!isNaN(vertexIndex) && vertexIndex < shape.points.length) {
+                            const startPoint = start.points[vertexIndex];
+                            const newX = startPoint.x + dx;
+                            const newY = startPoint.y + dy;
+                            shape.points[vertexIndex] = snapToGrid({ x: newX, y: newY });
+
+                            // Recalculate bounding box
+                            let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+                            shape.points.forEach(p => {
+                                minX = Math.min(minX, p.x);
+                                minY = Math.min(minY, p.y);
+                                maxX = Math.max(maxX, p.x);
+                                maxY = Math.max(maxY, p.y);
+                            });
+
+                            // Update shape position and dimensions
+                            const offsetX = minX;
+                            const offsetY = minY;
+                            shape.points = shape.points.map(p => ({ x: p.x - offsetX, y: p.y - offsetY }));
+                            shape.x = shape.x + offsetX;
+                            shape.y = shape.y + offsetY;
+                            shape.width = maxX - minX;
+                            shape.height = maxY - minY;
+                        }
                     }
                     break;
             }
