@@ -307,30 +307,30 @@
                 </div>
             </div>
 
-            <!-- Related Blogs -->
-            <div class="related-blogs-section">
+            <!-- Related Articles Section -->
+            <section class="blog-related">
                 <h2>Related Articles</h2>
-                <div class="related-blogs-grid">
-                    <a href="quartz-vs-granite-fort-lauderdale" class="related-blog-card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs Granite Fort Lauderdale" loading="lazy">
-                        <div class="related-blog-card-content">
-                            <h3>Quartz vs Granite: Which Is Better for Fort Lauderdale?</h3>
+                <div class="blog-related__grid">
+                    <a href="quartz-vs-granite-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs Granite Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Quartz vs Granite: Which Is Better for Fort Lauderdale?</h3>
                         </div>
                     </a>
-                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="related-blog-card">
-                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz Colors for Coastal Homes" loading="lazy">
-                        <div class="related-blog-card-content">
-                            <h3>How to Choose Quartz Colors for Coastal Homes</h3>
+                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="blog-related__card">
+                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz Colors for Coastal Homes" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">How to Choose Quartz Colors for Coastal Homes</h3>
                         </div>
                     </a>
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="related-blog-card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz Cost Guide Fort Lauderdale" loading="lazy">
-                        <div class="related-blog-card-content">
-                            <h3>Cost of Quartz Countertops in Fort Lauderdale: 2025 Guide</h3>
+                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="blog-related__card">
+                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz Cost Guide Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Cost of Quartz Countertops in Fort Lauderdale: 2025 Guide</h3>
                         </div>
                     </a>
                 </div>
-            </div>
+            </section>
 
             <!-- CTA -->
             <div class="blog-cta">

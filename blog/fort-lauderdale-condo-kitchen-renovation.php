@@ -388,33 +388,30 @@
                 </div>
             </div>
 
-            <!-- Related Blogs Section -->
-            <div class="related-blogs-section">
+            <!-- Related Articles Section -->
+            <section class="blog-related">
                 <h2>Related Articles</h2>
-                <div class="related-blogs-grid">
-                    <a href="fort-lauderdale-waterfront-kitchen-countertops" class="related-blog-card">
-                        <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Kitchen countertops for Fort Lauderdale waterfront homes" loading="lazy">
-                        <div class="related-blog-content">
-                            <h3>Waterfront Kitchen Countertops</h3>
-                            <p>Discover the ideal countertop materials for Fort Lauderdale's coastal waterfront properties.</p>
+                <div class="blog-related__grid">
+                    <a href="fort-lauderdale-waterfront-kitchen-countertops" class="blog-related__card">
+                        <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Kitchen countertops for Fort Lauderdale waterfront homes" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Waterfront Kitchen Countertops</h3>
                         </div>
                     </a>
-                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="related-blog-card">
-                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz colors for Fort Lauderdale coastal homes" loading="lazy">
-                        <div class="related-blog-content">
-                            <h3>Quartz Colors for Coastal Homes</h3>
-                            <p>Select the perfect quartz colors to complement your coastal Florida aesthetic.</p>
+                    <a href="quartz-colors-fort-lauderdale-coastal-homes" class="blog-related__card">
+                        <img src="../images/kitchen-coastal-calacatta-palms-flowers.webp" alt="Quartz colors for Fort Lauderdale coastal homes" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Quartz Colors for Coastal Homes</h3>
                         </div>
                     </a>
-                    <a href="quartz-installation-process-fort-lauderdale" class="related-blog-card">
-                        <img src="../images/installation-team-penthouse-slab.webp" alt="Quartz countertop installation process Fort Lauderdale" loading="lazy">
-                        <div class="related-blog-content">
-                            <h3>Quartz Installation Process</h3>
-                            <p>Step-by-step guide to professional quartz installation in Fort Lauderdale homes.</p>
+                    <a href="quartz-installation-process-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/installation-team-penthouse-slab.webp" alt="Quartz countertop installation process Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Quartz Installation Process</h3>
                         </div>
                     </a>
                 </div>
-            </div>
+            </section>
 
             <!-- CTA Section -->
             <div class="blog-cta">

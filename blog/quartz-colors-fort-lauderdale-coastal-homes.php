@@ -389,24 +389,30 @@
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
             </div>
 
-            <!-- Related Posts -->
-            <div class="related-posts">
+            <!-- Related Articles Section -->
+            <section class="blog-related">
                 <h2>Related Articles</h2>
-                <div class="related-posts-grid">
-                    <a href="fort-lauderdale-waterfront-kitchen-countertops" class="related-post-card">
-                        <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Waterfront kitchen countertops Fort Lauderdale" loading="lazy">
-                        <h3>Best Kitchen Countertops for Fort Lauderdale Waterfront Homes</h3>
+                <div class="blog-related__grid">
+                    <a href="fort-lauderdale-waterfront-kitchen-countertops" class="blog-related__card">
+                        <img src="../images/kitchen-waterfront-palms-orchids.webp" alt="Waterfront kitchen countertops Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Best Kitchen Countertops for Fort Lauderdale Waterfront Homes</h3>
+                        </div>
                     </a>
-                    <a href="quartz-vs-granite-fort-lauderdale" class="related-post-card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs granite comparison" loading="lazy">
-                        <h3>Quartz vs Granite: Which Is Better for Fort Lauderdale's Climate?</h3>
+                    <a href="quartz-vs-granite-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs granite comparison" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Quartz vs Granite: Which Is Better for Fort Lauderdale's Climate?</h3>
+                        </div>
                     </a>
-                    <a href="quartz-brands-fort-lauderdale" class="related-post-card">
-                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Quartz brands Fort Lauderdale" loading="lazy">
-                        <h3>Top Quartz Brands Available in Fort Lauderdale</h3>
+                    <a href="quartz-brands-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Quartz brands Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Top Quartz Brands Available in Fort Lauderdale</h3>
+                        </div>
                     </a>
                 </div>
-            </div>
+            </section>
         </div>
     </article>
 

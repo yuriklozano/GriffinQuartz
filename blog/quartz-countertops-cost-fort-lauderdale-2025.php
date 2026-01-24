@@ -356,33 +356,30 @@
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
             </div>
 
-            <!-- Related Articles -->
-            <div class="related-articles">
+            <!-- Related Articles Section -->
+            <section class="blog-related">
                 <h2>Related Articles</h2>
-                <div class="related-articles-grid">
-                    <a href="quartz-vs-granite-fort-lauderdale" class="related-article-card">
-                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs granite comparison Fort Lauderdale" loading="lazy">
-                        <div class="related-article-content">
-                            <h3>Quartz vs Granite: Which Is Better for Fort Lauderdale?</h3>
-                            <span class="blog-meta">Compare materials for coastal living</span>
+                <div class="blog-related__grid">
+                    <a href="quartz-vs-granite-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/quartz-samples-gold-hardware-luxury.webp" alt="Quartz vs granite comparison Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Quartz vs Granite: Which Is Better for Fort Lauderdale?</h3>
                         </div>
                     </a>
-                    <a href="quartz-brands-fort-lauderdale" class="related-article-card">
-                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Top quartz brands Fort Lauderdale" loading="lazy">
-                        <div class="related-article-content">
-                            <h3>Top Quartz Brands Available in Fort Lauderdale</h3>
-                            <span class="blog-meta">Compare Cambria, Silestone, and more</span>
+                    <a href="quartz-brands-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Top quartz brands Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Top Quartz Brands Available in Fort Lauderdale</h3>
                         </div>
                     </a>
-                    <a href="quartz-installation-process-fort-lauderdale" class="related-article-card">
-                        <img src="../images/installation-team-penthouse-slab.webp" alt="Quartz countertop installation process Fort Lauderdale" loading="lazy">
-                        <div class="related-article-content">
-                            <h3>Quartz Countertop Installation Process</h3>
-                            <span class="blog-meta">Step-by-step installation guide</span>
+                    <a href="quartz-installation-process-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/installation-team-penthouse-slab.webp" alt="Quartz countertop installation process Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Quartz Countertop Installation Process</h3>
                         </div>
                     </a>
                 </div>
-            </div>
+            </section>
         </div>
     </article>
 

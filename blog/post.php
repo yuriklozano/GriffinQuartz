@@ -307,17 +307,20 @@ function e($str) {
 
             <!-- Related Articles - Only show if content doesn't already have them -->
             <?php if (!empty($related) && strpos($post['content'], 'Related Articles') === false && strpos($post['content'], 'related-') === false): ?>
-            <section class="blog-related" style="margin-top: 3rem;">
-                <h2 style="margin-bottom: 1.5rem;">Related Articles</h2>
-                <div class="blog-index-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <section class="blog-related">
+                <h2>Related Articles</h2>
+                <div class="blog-related__grid">
                     <?php foreach ($related as $rel):
                         $rel_image = $rel['featured_image'] ?: '../images/luxury-white-kitchen-arched-windows-gold.webp';
                         $rel_date = $rel['publish_date'] ? date('M j, Y', strtotime($rel['publish_date'])) : '';
                     ?>
-                    <a href="/blog/<?= e($rel['slug']) ?>" class="blog-index-card">
-                        <img src="<?= e($rel_image) ?>" alt="<?= e($rel['title']) ?>" loading="lazy">
-                        <div class="blog-index-card-content">
-                            <h3 style="font-size: 1rem;"><?= e($rel['title']) ?></h3>
+                    <a href="/blog/<?= e($rel['slug']) ?>" class="blog-related__card">
+                        <img src="<?= e($rel_image) ?>" alt="<?= e($rel['title']) ?>" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title"><?= e($rel['title']) ?></h3>
+                            <?php if ($rel_date): ?>
+                            <span class="blog-related__date"><?= $rel_date ?></span>
+                            <?php endif; ?>
                         </div>
                     </a>
                     <?php endforeach; ?>

@@ -359,35 +359,33 @@
                 <a href="/#contact-form" class="btn btn-primary">Get FREE Estimate</a>
             </div>
 
-            <!-- Related Blogs Section -->
-            <div class="related-blogs">
-                <h3>Related Articles</h3>
-                <div class="related-blogs-grid">
-                    <a href="fort-lauderdale-condo-kitchen-renovation" class="related-blog-card">
-                        <img src="../images/kitchen-highrise-condo-intracoastal.webp" alt="Fort Lauderdale condo kitchen renovation" loading="lazy">
-                        <div class="related-blog-content">
-                            <h4>Fort Lauderdale Condo Kitchen Renovations: Complete Guide</h4>
-                            <span class="blog-meta">Jan 13, 2025</span>
+            <!-- Related Articles Section -->
+            <section class="blog-related">
+                <h2>Related Articles</h2>
+                <div class="blog-related__grid">
+                    <a href="fort-lauderdale-condo-kitchen-renovation" class="blog-related__card">
+                        <img src="../images/kitchen-highrise-condo-intracoastal.webp" alt="Fort Lauderdale condo kitchen renovation" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Fort Lauderdale Condo Kitchen Renovations: Complete Guide</h3>
+                            <span class="blog-related__date">Jan 13, 2025</span>
                         </div>
                     </a>
-
-                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="related-blog-card">
-                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz countertops cost Fort Lauderdale 2025" loading="lazy">
-                        <div class="related-blog-content">
-                            <h4>Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h4>
-                            <span class="blog-meta">Jan 8, 2025</span>
+                    <a href="quartz-countertops-cost-fort-lauderdale-2025" class="blog-related__card">
+                        <img src="../images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz countertops cost Fort Lauderdale 2025" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Cost of Quartz Countertops in Fort Lauderdale: 2025 Price Guide</h3>
+                            <span class="blog-related__date">Jan 8, 2025</span>
                         </div>
                     </a>
-
-                    <a href="quartz-brands-fort-lauderdale" class="related-blog-card">
-                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Top quartz brands Fort Lauderdale" loading="lazy">
-                        <div class="related-blog-content">
-                            <h4>Top Quartz Brands Available in Fort Lauderdale</h4>
-                            <span class="blog-meta">Jan 6, 2025</span>
+                    <a href="quartz-brands-fort-lauderdale" class="blog-related__card">
+                        <img src="../images/modern-kitchen-gray-quartz-wood-slats.webp" alt="Top quartz brands Fort Lauderdale" class="blog-related__image" loading="lazy">
+                        <div class="blog-related__content">
+                            <h3 class="blog-related__title">Top Quartz Brands Available in Fort Lauderdale</h3>
+                            <span class="blog-related__date">Jan 6, 2025</span>
                         </div>
                     </a>
                 </div>
-            </div>
+            </section>
         </div>
     </article>
 
