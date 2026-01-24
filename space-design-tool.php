@@ -2483,39 +2483,123 @@
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 4]);
 
-        // Draw backsplash on each selected side
         const sides = state.backsplash.sides;
 
-        // Top side (above the shape)
-        if (sides.top) {
-            ctx.beginPath();
-            ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
-            ctx.fill();
-            ctx.stroke();
-        }
+        // Handle L-shape specially
+        if (shape.type === 'lshape') {
+            const armWidth = shape.armWidth || shape.width * 0.4;
+            const armHeight = shape.armHeight || shape.height * 0.4;
 
-        // Bottom side (below the shape)
-        if (sides.bottom) {
-            ctx.beginPath();
-            ctx.rect(shape.x, shape.y + shape.height + gap, shape.width, bsHeight);
-            ctx.fill();
-            ctx.stroke();
-        }
+            // Top side - full width
+            if (sides.top) {
+                ctx.beginPath();
+                ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
 
-        // Left side (left of the shape)
-        if (sides.left) {
-            ctx.beginPath();
-            ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
-            ctx.fill();
-            ctx.stroke();
-        }
+            // Right side - only the top arm portion
+            if (sides.right) {
+                ctx.beginPath();
+                ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, armHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
 
-        // Right side (right of the shape)
-        if (sides.right) {
-            ctx.beginPath();
-            ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
-            ctx.fill();
-            ctx.stroke();
+            // Bottom side - two parts: the vertical arm bottom and the horizontal arm bottom
+            if (sides.bottom) {
+                // Left part (vertical arm bottom)
+                ctx.beginPath();
+                ctx.rect(shape.x, shape.y + shape.height + gap, armWidth, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+                // Inner corner horizontal (below the notch)
+                ctx.beginPath();
+                ctx.rect(shape.x + armWidth, shape.y + armHeight + gap, shape.width - armWidth, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            // Left side - full height
+            if (sides.left) {
+                ctx.beginPath();
+                ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+        // Handle U-shape specially
+        else if (shape.type === 'ushape') {
+            const armWidth = shape.armWidth || shape.width * 0.3;
+            const centerDepth = shape.centerDepth || shape.height * 0.5;
+
+            // Top side - full width
+            if (sides.top) {
+                ctx.beginPath();
+                ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            // Right side - full height
+            if (sides.right) {
+                ctx.beginPath();
+                ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            // Bottom side - left arm and right arm only (not the center cutout)
+            if (sides.bottom) {
+                // Left arm bottom
+                ctx.beginPath();
+                ctx.rect(shape.x, shape.y + shape.height + gap, armWidth, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+                // Right arm bottom
+                ctx.beginPath();
+                ctx.rect(shape.x + shape.width - armWidth, shape.y + shape.height + gap, armWidth, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            // Left side - full height
+            if (sides.left) {
+                ctx.beginPath();
+                ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+        // Default rectangle handling
+        else {
+            if (sides.top) {
+                ctx.beginPath();
+                ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            if (sides.bottom) {
+                ctx.beginPath();
+                ctx.rect(shape.x, shape.y + shape.height + gap, shape.width, bsHeight);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            if (sides.left) {
+                ctx.beginPath();
+                ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
+                ctx.fill();
+                ctx.stroke();
+            }
+
+            if (sides.right) {
+                ctx.beginPath();
+                ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
+                ctx.fill();
+                ctx.stroke();
+            }
         }
 
         ctx.setLineDash([]);
