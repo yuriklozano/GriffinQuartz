@@ -2475,121 +2475,22 @@
 
     function drawBacksplash(shape) {
         if (shape.type === 'sink' || shape.type === 'cooktop') return;
+        if (!shape.backsplashEdges) return;
+
         const bsHeight = state.backsplash.height * state.pixelsPerInch;
-        const gap = 4; // Gap between shape and backsplash
+        const gap = 4;
+        const edges = getBacksplashEdgeRects(shape, bsHeight, gap);
 
         ctx.fillStyle = 'rgba(253, 185, 19, 0.2)';
         ctx.strokeStyle = '#FDB913';
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 4]);
 
-        const sides = state.backsplash.sides;
-
-        // Handle L-shape specially - only outer edges, no inner edges
-        if (shape.type === 'lshape') {
-            const armWidth = shape.armWidth || shape.width * 0.4;
-            const armHeight = shape.armHeight || shape.height * 0.4;
-
-            // Top side - full width (outer edge)
-            if (sides.top) {
+        // Draw each enabled edge using per-shape settings
+        for (const [edgeName, rect] of Object.entries(edges)) {
+            if (shape.backsplashEdges[edgeName]) {
                 ctx.beginPath();
-                ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            // Right side - only the outer right edge (armHeight portion)
-            if (sides.right) {
-                ctx.beginPath();
-                ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, armHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            // Bottom side - only the outer bottom edge (left arm bottom)
-            if (sides.bottom) {
-                ctx.beginPath();
-                ctx.rect(shape.x, shape.y + shape.height + gap, armWidth, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            // Left side - full height (outer edge)
-            if (sides.left) {
-                ctx.beginPath();
-                ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
-                ctx.fill();
-                ctx.stroke();
-            }
-        }
-        // Handle U-shape specially - only outer edges
-        else if (shape.type === 'ushape') {
-            const armWidth = shape.armWidth || shape.width * 0.3;
-
-            // Top side - full width (outer edge)
-            if (sides.top) {
-                ctx.beginPath();
-                ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            // Right side - full height (outer edge)
-            if (sides.right) {
-                ctx.beginPath();
-                ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            // Bottom side - only outer bottom edges (left and right arms)
-            if (sides.bottom) {
-                // Left arm bottom
-                ctx.beginPath();
-                ctx.rect(shape.x, shape.y + shape.height + gap, armWidth, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-                // Right arm bottom
-                ctx.beginPath();
-                ctx.rect(shape.x + shape.width - armWidth, shape.y + shape.height + gap, armWidth, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            // Left side - full height (outer edge)
-            if (sides.left) {
-                ctx.beginPath();
-                ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
-                ctx.fill();
-                ctx.stroke();
-            }
-        }
-        // Default rectangle handling
-        else {
-            if (sides.top) {
-                ctx.beginPath();
-                ctx.rect(shape.x, shape.y - bsHeight - gap, shape.width, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            if (sides.bottom) {
-                ctx.beginPath();
-                ctx.rect(shape.x, shape.y + shape.height + gap, shape.width, bsHeight);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            if (sides.left) {
-                ctx.beginPath();
-                ctx.rect(shape.x - bsHeight - gap, shape.y, bsHeight, shape.height);
-                ctx.fill();
-                ctx.stroke();
-            }
-
-            if (sides.right) {
-                ctx.beginPath();
-                ctx.rect(shape.x + shape.width + gap, shape.y, bsHeight, shape.height);
+                ctx.rect(rect.x, rect.y, rect.w, rect.h);
                 ctx.fill();
                 ctx.stroke();
             }
@@ -2717,6 +2618,17 @@
         const y = (e.clientY - rect.top) / state.zoom;
 
         if (state.tool === 'select') {
+            // First check if clicking on a backsplash edge to toggle it
+            const backsplashHit = findBacksplashEdgeAtPoint(x, y);
+            if (backsplashHit) {
+                // Toggle this specific edge
+                backsplashHit.shape.backsplashEdges[backsplashHit.edge] = !backsplashHit.shape.backsplashEdges[backsplashHit.edge];
+                saveToHistory();
+                drawCanvas();
+                updateEstimate();
+                return;
+            }
+
             const clickedShape = findShapeAtPoint(x, y);
             if (clickedShape) {
                 selectShape(clickedShape);
@@ -2791,6 +2703,21 @@
 
     // Shape Functions
     function createShape(type, x, y, width, height) {
+        const canHaveBacksplash = type !== 'sink' && type !== 'cooktop';
+        // Per-shape backsplash edges - each edge can be toggled independently
+        let backsplashEdges = null;
+        if (canHaveBacksplash) {
+            if (type === 'lshape') {
+                // L-shape has: top, right (short), bottomLeft (arm bottom), left
+                backsplashEdges = { top: true, right: true, bottomLeft: true, left: true };
+            } else if (type === 'ushape') {
+                // U-shape has: top, right, bottomLeft, bottomRight, left
+                backsplashEdges = { top: true, right: true, bottomLeft: true, bottomRight: true, left: true };
+            } else {
+                // Rectangle/island: standard 4 sides
+                backsplashEdges = { top: true, right: true, bottom: true, left: true };
+            }
+        }
         return {
             id: Date.now(),
             type: type,
@@ -2798,7 +2725,8 @@
             y: y,
             width: width || 100,
             height: height || 60,
-            backsplash: type !== 'sink' && type !== 'cooktop',
+            backsplash: canHaveBacksplash,
+            backsplashEdges: backsplashEdges,
             armWidth: type === 'lshape' ? 40 : type === 'ushape' ? 30 : undefined,
             armHeight: type === 'lshape' ? 40 : undefined,
             centerDepth: type === 'ushape' ? 50 : undefined
@@ -2811,6 +2739,56 @@
             if (x >= s.x && x <= s.x + s.width && y >= s.y && y <= s.y + s.height) return s;
         }
         return null;
+    }
+
+    // Find if click is on a backsplash edge and return { shape, edge } or null
+    function findBacksplashEdgeAtPoint(x, y) {
+        if (!state.backsplash.enabled) return null;
+        const bsHeight = state.backsplash.height * state.pixelsPerInch;
+        const gap = 4;
+        const tolerance = 8; // Click tolerance
+
+        for (let i = state.shapes.length - 1; i >= 0; i--) {
+            const s = state.shapes[i];
+            if (!s.backsplash || !s.backsplashEdges) continue;
+
+            const edges = getBacksplashEdgeRects(s, bsHeight, gap);
+            for (const [edgeName, rect] of Object.entries(edges)) {
+                if (s.backsplashEdges[edgeName] &&
+                    x >= rect.x - tolerance && x <= rect.x + rect.w + tolerance &&
+                    y >= rect.y - tolerance && y <= rect.y + rect.h + tolerance) {
+                    return { shape: s, edge: edgeName };
+                }
+            }
+        }
+        return null;
+    }
+
+    // Get rectangle bounds for each backsplash edge of a shape
+    function getBacksplashEdgeRects(shape, bsHeight, gap) {
+        const edges = {};
+
+        if (shape.type === 'lshape') {
+            const armWidth = shape.armWidth || shape.width * 0.4;
+            const armHeight = shape.armHeight || shape.height * 0.4;
+            edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
+            edges.right = { x: shape.x + shape.width + gap, y: shape.y, w: bsHeight, h: armHeight };
+            edges.bottomLeft = { x: shape.x, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
+            edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
+        } else if (shape.type === 'ushape') {
+            const armWidth = shape.armWidth || shape.width * 0.3;
+            edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
+            edges.right = { x: shape.x + shape.width + gap, y: shape.y, w: bsHeight, h: shape.height };
+            edges.bottomLeft = { x: shape.x, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
+            edges.bottomRight = { x: shape.x + shape.width - armWidth, y: shape.y + shape.height + gap, w: armWidth, h: bsHeight };
+            edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
+        } else {
+            edges.top = { x: shape.x, y: shape.y - bsHeight - gap, w: shape.width, h: bsHeight };
+            edges.right = { x: shape.x + shape.width + gap, y: shape.y, w: bsHeight, h: shape.height };
+            edges.bottom = { x: shape.x, y: shape.y + shape.height + gap, w: shape.width, h: bsHeight };
+            edges.left = { x: shape.x - bsHeight - gap, y: shape.y, w: bsHeight, h: shape.height };
+        }
+        return edges;
     }
 
     function selectShape(shape) {
@@ -2876,6 +2854,22 @@
         state.backsplash.enabled = !state.backsplash.enabled;
         toggle.classList.toggle('active', state.backsplash.enabled);
         options.classList.toggle('hidden', !state.backsplash.enabled);
+
+        // When enabling, ensure all shapes have their edges initialized
+        if (state.backsplash.enabled) {
+            state.shapes.forEach(s => {
+                if (s.backsplash && !s.backsplashEdges) {
+                    if (s.type === 'lshape') {
+                        s.backsplashEdges = { top: true, right: true, bottomLeft: true, left: true };
+                    } else if (s.type === 'ushape') {
+                        s.backsplashEdges = { top: true, right: true, bottomLeft: true, bottomRight: true, left: true };
+                    } else if (s.type !== 'sink' && s.type !== 'cooktop') {
+                        s.backsplashEdges = { top: true, right: true, bottom: true, left: true };
+                    }
+                }
+            });
+        }
+
         drawCanvas();
         updateEstimate();
     }
@@ -2887,12 +2881,37 @@
     }
 
     function updateBacksplashSides() {
-        state.backsplash.sides = {
-            top: document.getElementById('bsTop').checked,
-            right: document.getElementById('bsRight').checked,
-            bottom: document.getElementById('bsBottom').checked,
-            left: document.getElementById('bsLeft').checked
-        };
+        // Bulk toggle: apply checkbox states to all shapes
+        const top = document.getElementById('bsTop').checked;
+        const right = document.getElementById('bsRight').checked;
+        const bottom = document.getElementById('bsBottom').checked;
+        const left = document.getElementById('bsLeft').checked;
+
+        state.backsplash.sides = { top, right, bottom, left };
+
+        // Apply to all shapes
+        state.shapes.forEach(s => {
+            if (s.backsplash && s.backsplashEdges) {
+                if (s.type === 'lshape') {
+                    s.backsplashEdges.top = top;
+                    s.backsplashEdges.right = right;
+                    s.backsplashEdges.bottomLeft = bottom;
+                    s.backsplashEdges.left = left;
+                } else if (s.type === 'ushape') {
+                    s.backsplashEdges.top = top;
+                    s.backsplashEdges.right = right;
+                    s.backsplashEdges.bottomLeft = bottom;
+                    s.backsplashEdges.bottomRight = bottom;
+                    s.backsplashEdges.left = left;
+                } else if (s.backsplashEdges) {
+                    s.backsplashEdges.top = top;
+                    s.backsplashEdges.right = right;
+                    s.backsplashEdges.bottom = bottom;
+                    s.backsplashEdges.left = left;
+                }
+            }
+        });
+
         drawCanvas();
         updateEstimate();
     }
@@ -3076,16 +3095,33 @@
         let backsplashSqFt = 0;
 
         if (state.backsplash.enabled) {
-            const sides = state.backsplash.sides;
+            const bsHeightIn = state.backsplash.height;
             state.shapes.forEach(s => {
-                if (s.backsplash && s.type !== 'sink' && s.type !== 'cooktop') {
+                if (s.backsplash && s.backsplashEdges && s.type !== 'sink' && s.type !== 'cooktop') {
                     const shapeWidthIn = s.width / state.pixelsPerInch;
                     const shapeHeightIn = s.height / state.pixelsPerInch;
-                    const bsHeight = state.backsplash.height;
-                    if (sides.top) backsplashSqFt += (shapeWidthIn * bsHeight) / 144;
-                    if (sides.bottom) backsplashSqFt += (shapeWidthIn * bsHeight) / 144;
-                    if (sides.left) backsplashSqFt += (shapeHeightIn * bsHeight) / 144;
-                    if (sides.right) backsplashSqFt += (shapeHeightIn * bsHeight) / 144;
+
+                    if (s.type === 'lshape') {
+                        const armWidthIn = (s.armWidth || s.width * 0.4) / state.pixelsPerInch;
+                        const armHeightIn = (s.armHeight || s.height * 0.4) / state.pixelsPerInch;
+                        if (s.backsplashEdges.top) backsplashSqFt += (shapeWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.right) backsplashSqFt += (armHeightIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottomLeft) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.left) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
+                    } else if (s.type === 'ushape') {
+                        const armWidthIn = (s.armWidth || s.width * 0.3) / state.pixelsPerInch;
+                        if (s.backsplashEdges.top) backsplashSqFt += (shapeWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.right) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottomLeft) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottomRight) backsplashSqFt += (armWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.left) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
+                    } else {
+                        // Rectangle/island
+                        if (s.backsplashEdges.top) backsplashSqFt += (shapeWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.bottom) backsplashSqFt += (shapeWidthIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.left) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
+                        if (s.backsplashEdges.right) backsplashSqFt += (shapeHeightIn * bsHeightIn) / 144;
+                    }
                 }
             });
         }
