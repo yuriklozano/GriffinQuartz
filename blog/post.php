@@ -335,42 +335,48 @@ function e($str) {
 <script>
 // Auto-style Related Articles sections embedded in blog content
 document.addEventListener('DOMContentLoaded', function() {
-    // Find all h2 headings containing "Related Articles" within blog content
     const blogContent = document.querySelector('.blog-content');
     if (!blogContent) return;
 
+    // Find h2 headings that are specifically "Related Articles"
     const headings = blogContent.querySelectorAll('h2');
     headings.forEach(function(h2) {
-        if (h2.textContent.toLowerCase().includes('related')) {
-            // Style the heading
+        const text = h2.textContent.trim().toLowerCase();
+        // Only match "related articles" exactly, not other headings
+        if (text === 'related articles' || text === 'related posts' || text === 'related reading') {
             h2.classList.add('related-articles-heading');
 
-            // Find all following sibling anchor tags that contain images
+            // Collect all following anchor tags with images
             const cards = [];
             let sibling = h2.nextElementSibling;
+
             while (sibling) {
+                // If it's an anchor with an image, add to cards
                 if (sibling.tagName === 'A' && sibling.querySelector('img')) {
                     cards.push(sibling);
                     sibling = sibling.nextElementSibling;
-                } else if (sibling.tagName === 'DIV' || sibling.tagName === 'SECTION') {
-                    // Check if it's a wrapper containing article links
-                    const innerLinks = sibling.querySelectorAll('a');
-                    if (innerLinks.length > 0 && sibling.querySelector('img')) {
-                        // It's already wrapped, just add classes
-                        sibling.classList.add('related-articles-grid');
-                        innerLinks.forEach(function(link) {
-                            if (link.querySelector('img')) {
-                                link.classList.add('related-article-card');
-                            }
-                        });
-                    }
+                }
+                // If it's a div/section that already contains article cards, style it
+                else if ((sibling.tagName === 'DIV' || sibling.tagName === 'SECTION') && sibling.querySelector('a img')) {
+                    sibling.classList.add('related-articles-grid');
+                    sibling.querySelectorAll('a').forEach(function(link) {
+                        if (link.querySelector('img')) {
+                            link.classList.add('related-article-card');
+                        }
+                    });
                     break;
-                } else {
+                }
+                // Stop if we hit another heading or non-related content
+                else if (sibling.tagName === 'H2' || sibling.tagName === 'H3' || sibling.tagName === 'SECTION' || sibling.tagName === 'FOOTER') {
                     break;
+                }
+                // Skip text nodes and other elements, continue looking
+                else {
+                    sibling = sibling.nextElementSibling;
                 }
             }
 
-            // If we found unwrapped cards, wrap them in a grid
+            // Wrap unwrapped cards in a grid
             if (cards.length > 0) {
                 const grid = document.createElement('div');
                 grid.className = 'related-articles-grid';
