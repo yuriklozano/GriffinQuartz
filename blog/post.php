@@ -15,7 +15,14 @@ if (empty($slug)) {
     exit();
 }
 
-// Database connection
+// PRIORITY: Check for static file first - these are hand-crafted and clean
+$static_file = __DIR__ . '/' . $slug . '.php';
+if (file_exists($static_file)) {
+    include $static_file;
+    exit();
+}
+
+// Database connection for dynamic posts
 try {
     $pdo = new PDO(
         "mysql:host=" . DB_BLOG_HOST . ";dbname=" . DB_BLOG_NAME . ";charset=utf8mb4",
@@ -28,7 +35,7 @@ try {
     die('Database error');
 }
 
-// Get post
+// Get post from database
 $stmt = $pdo->prepare("
     SELECT p.*
     FROM blog_posts p
@@ -40,13 +47,6 @@ $stmt->execute([$slug]);
 $post = $stmt->fetch();
 
 if (!$post) {
-    // Try static file fallback for old posts
-    $static_file = __DIR__ . '/' . $slug . '.php';
-    if (file_exists($static_file)) {
-        include $static_file;
-        exit();
-    }
-
     http_response_code(404);
     header('Location: /blog/');
     exit();
