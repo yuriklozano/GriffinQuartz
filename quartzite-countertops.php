@@ -442,33 +442,91 @@
             padding: 5rem 0;
             background: var(--color-light);
         }
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            max-width: 1000px;
+        .faq-accordion {
+            max-width: 900px;
             margin: 0 auto;
         }
-        @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .faq-card {
+        .faq-item {
             background: #fff;
             border-radius: 12px;
-            padding: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
-        .faq-card h3 {
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        .faq-question:hover {
+            background: #fafafa;
+        }
+        .faq-question h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.125rem;
+            font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: 0.75rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
-        .faq-card p {
+        .faq-question h3 .faq-icon {
+            color: var(--color-accent);
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+        .faq-question .faq-toggle {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--color-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .faq-question .faq-toggle i {
+            font-size: 1rem;
+            color: var(--color-primary);
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+        .faq-item.active .faq-question .faq-toggle {
+            background: var(--color-accent);
+        }
+        .faq-item.active .faq-question .faq-toggle i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem 3.75rem;
+        }
+        .faq-answer p {
             font-size: 0.9375rem;
             color: var(--color-gray);
             line-height: 1.7;
+            margin: 0;
+        }
+        .faq-answer a {
+            color: var(--color-accent);
+            text-decoration: underline;
         }
 
         .cta-section {
@@ -709,24 +767,72 @@
                 <p>Get answers to common questions about quartzite countertops</p>
             </div>
 
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h3>What's the difference between quartz and quartzite?</h3>
-                    <p>Quartzite is a natural stone formed from sandstone, while <a href="quartz-countertops">quartz</a> is an engineered product. Quartzite offers unique natural patterns and superior heat resistance; quartz provides consistency and requires no sealing.</p>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>What's the difference between quartz and quartzite?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quartzite is a natural stone formed from sandstone, while <a href="quartz-countertops">quartz</a> is an engineered product. Quartzite offers unique natural patterns and superior heat resistance; quartz provides consistency and requires no sealing.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Is quartzite more expensive than quartz?</h3>
-                    <p>Generally yes. Quartzite typically costs $70-$200+ per square foot installed, while <a href="quartz-countertops">quartz</a> ranges from $50-$150. The higher cost reflects quartzite's rarity and exceptional durability.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Is quartzite more expensive than quartz?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Generally yes. Quartzite typically costs $70-$200+ per square foot installed, while <a href="quartz-countertops">quartz</a> ranges from $50-$150. The higher cost reflects quartzite's rarity and exceptional durability.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Does quartzite need to be sealed?</h3>
-                    <p>Yes, quartzite should be sealed upon installation and resealed annually. While extremely hard, it's a natural stone with some porosity that requires protection against staining.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Does quartzite need to be sealed?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes, quartzite should be sealed upon installation and resealed annually. While extremely hard, it's a natural stone with some porosity that requires protection against staining.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Can you put hot pans on quartzite?</h3>
-                    <p>Yes, quartzite is highly heat-resistant and handles hot pans better than most countertop materials. However, using trivets is recommended to protect the sealant.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Can you put hot pans on quartzite?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes, quartzite is highly heat-resistant and handles hot pans better than most countertop materials. However, using trivets is recommended to protect the sealant.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const isActive = faqItem.classList.contains('active');
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+            </script>
         </div>
     </section>
 
@@ -739,7 +845,7 @@
             </div>
             <div class="benefits-grid" style="grid-template-columns: repeat(4, 1fr);">
                 <a href="quartz-countertops" class="benefit-card" style="text-decoration: none;">
-                    <div class="icon"><i class="bi bi-droplet-slash"></i></div>
+                    <div class="icon"><i class="bi bi-grid-3x3"></i></div>
                     <h3>Quartz</h3>
                     <p>Engineered stone that never needs sealing. Consistent colors, non-porous surface, and virtually maintenance-free living.</p>
                 </a>

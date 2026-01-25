@@ -52,8 +52,8 @@ function initDropdowns() {
         const link = dropdown.querySelector('.nav-link');
         
         link.addEventListener('click', function(e) {
-            // Only prevent default on mobile
-            if (window.innerWidth <= 768) {
+            // Only prevent default on mobile (match CSS breakpoint)
+            if (window.innerWidth <= 1024) {
                 e.preventDefault();
                 dropdown.classList.toggle('active');
                 

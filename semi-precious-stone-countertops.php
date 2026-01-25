@@ -459,33 +459,91 @@
             padding: 5rem 0;
             background: var(--color-light);
         }
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            max-width: 1000px;
+        .faq-accordion {
+            max-width: 900px;
             margin: 0 auto;
         }
-        @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .faq-card {
+        .faq-item {
             background: #fff;
             border-radius: 12px;
-            padding: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
-        .faq-card h3 {
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        .faq-question:hover {
+            background: #fafafa;
+        }
+        .faq-question h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.125rem;
+            font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: 0.75rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
-        .faq-card p {
+        .faq-question h3 .faq-icon {
+            color: var(--color-accent);
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+        .faq-question .faq-toggle {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--color-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .faq-question .faq-toggle i {
+            font-size: 1rem;
+            color: var(--color-primary);
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+        .faq-item.active .faq-question .faq-toggle {
+            background: var(--color-accent);
+        }
+        .faq-item.active .faq-question .faq-toggle i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem 3.75rem;
+        }
+        .faq-answer p {
             font-size: 0.9375rem;
             color: var(--color-gray);
             line-height: 1.7;
+            margin: 0;
+        }
+        .faq-answer a {
+            color: var(--color-accent);
+            text-decoration: underline;
         }
 
         .cta-section {
@@ -750,24 +808,72 @@
                 <p>Get answers to common questions about semi-precious stone countertops</p>
             </div>
 
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h3>What are semi-precious stone countertops?</h3>
-                    <p>They're luxury surfaces made from natural gemstones like agate, amethyst, tiger eye, and onyx. These exotic materials can be backlit to showcase their natural translucency and create dramatic visual effects.</p>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>What are semi-precious stone countertops?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>They're luxury surfaces made from natural gemstones like agate, amethyst, tiger eye, and onyx. These exotic materials can be backlit to showcase their natural translucency and create dramatic visual effects.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>How much do they cost?</h3>
-                    <p>Semi-precious stone countertops range from $200-$1,500+ per square foot installed. Prices vary based on stone type, rarity, and whether backlighting is included. They represent the ultimate in luxury surface materials.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>How much do they cost?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Semi-precious stone countertops range from $200-$1,500+ per square foot installed. Prices vary based on stone type, rarity, and whether backlighting is included. They represent the ultimate in luxury surface materials.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Can they be backlit?</h3>
-                    <p>Yes, many semi-precious stones have natural translucency ideal for backlighting. LED lighting behind the stone creates a stunning glow that highlights natural patterns. Popular options include agate, onyx, and certain crystals.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Can they be backlit?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes, many semi-precious stones have natural translucency ideal for backlighting. LED lighting behind the stone creates a stunning glow that highlights natural patterns. Popular options include agate, onyx, and certain crystals.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Are they durable enough for kitchens?</h3>
-                    <p>While some varieties like agate are relatively durable, semi-precious stones are generally best for low-traffic areas like bar tops, bathroom vanities, or accent pieces rather than primary kitchen work surfaces.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Are they durable enough for kitchens?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>While some varieties like agate are relatively durable, semi-precious stones are generally best for low-traffic areas like bar tops, bathroom vanities, or accent pieces rather than primary kitchen work surfaces.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const isActive = faqItem.classList.contains('active');
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+            </script>
         </div>
     </section>
 
@@ -780,7 +886,7 @@
             </div>
             <div class="benefits-grid" style="grid-template-columns: repeat(4, 1fr);">
                 <a href="quartz-countertops" class="benefit-card" style="text-decoration: none;">
-                    <div class="icon"><i class="bi bi-droplet-slash"></i></div>
+                    <div class="icon"><i class="bi bi-grid-3x3"></i></div>
                     <h3>Quartz</h3>
                     <p>Engineered stone that never needs sealing. Consistent colors, non-porous surface, and virtually maintenance-free living.</p>
                 </a>

@@ -461,6 +461,7 @@
         .comparison-table .material-icon i {
             font-size: 1.125rem;
             color: var(--color-primary);
+            line-height: 1;
         }
         .comparison-table .rating {
             display: flex;
@@ -544,6 +545,7 @@
         .benefit-card .icon i {
             font-size: 1.625rem;
             color: var(--color-primary);
+            line-height: 1;
         }
         .benefit-card h3 {
             font-family: 'Playfair Display', serif;
@@ -558,48 +560,92 @@
             line-height: 1.6;
         }
 
-        /* FAQ Section */
+        /* FAQ Section - Accordion */
         .faq-section {
             padding: 5rem 0;
             background: var(--color-light);
         }
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            max-width: 1100px;
+        .faq-accordion {
+            max-width: 900px;
             margin: 0 auto;
         }
-        @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .faq-card {
+        .faq-item {
             background: #fff;
             border-radius: 12px;
-            padding: 2rem;
+            margin-bottom: 1rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
-        .faq-card h3 {
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        .faq-question:hover {
+            background: #fafafa;
+        }
+        .faq-question h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.125rem;
+            font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: 0.875rem;
+            margin: 0;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             gap: 0.75rem;
         }
-        .faq-card h3 i {
+        .faq-question h3 .faq-icon {
             color: var(--color-accent);
-            flex-shrink: 0;
-            margin-top: 0.125rem;
+            font-size: 1.25rem;
+            line-height: 1;
         }
-        .faq-card p {
+        .faq-question .faq-toggle {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--color-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .faq-question .faq-toggle i {
+            font-size: 1rem;
+            color: var(--color-primary);
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+        .faq-item.active .faq-question .faq-toggle {
+            background: var(--color-accent);
+        }
+        .faq-item.active .faq-question .faq-toggle i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem 3.75rem;
+        }
+        .faq-answer p {
             font-size: 0.9375rem;
             color: var(--color-gray);
             line-height: 1.7;
-            padding-left: 1.75rem;
+            margin: 0;
         }
 
         /* CTA Section */
@@ -698,6 +744,7 @@
             font-size: 1.5rem;
             font-weight: 600;
             color: var(--color-primary);
+            line-height: 1;
         }
         .process-step h3 {
             font-family: 'Playfair Display', serif;
@@ -744,7 +791,7 @@
             <div class="materials-grid">
                 <!-- Quartz -->
                 <div class="material-card">
-                    <img src="images/kitchen-white-quartz-gold-pendants-bright.webp" alt="Quartz countertops in modern South Florida kitchen">
+                    <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Quartz countertops in modern South Florida kitchen">
                     <div class="card-overlay">
                         <span class="card-badge">Most Popular</span>
                         <h3>Quartz Countertops</h3>
@@ -849,7 +896,7 @@
                         <tr>
                             <td>
                                 <div class="material-name">
-                                    <div class="material-icon"><i class="bi bi-droplet-slash"></i></div>
+                                    <div class="material-icon"><i class="bi bi-grid-3x3"></i></div>
                                     <span>Quartz</span>
                                 </div>
                             </td>
@@ -1150,32 +1197,98 @@
                 <p>Get answers to common questions about choosing the right countertop material.</p>
             </div>
 
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h3><i class="bi bi-question-circle"></i>What is the most durable countertop material?</h3>
-                    <p>Quartzite and quartz are the most durable options. Quartzite is a natural stone that rates 7 on the Mohs hardness scale with superior heat resistance. Engineered quartz also rates 7 and provides excellent scratch and stain resistance. Both are ideal for high-traffic South Florida kitchens.</p>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>What is the most durable countertop material?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quartzite and quartz are the most durable options. Quartzite is a natural stone that rates 7 on the Mohs hardness scale with superior heat resistance. Engineered quartz also rates 7 and provides excellent scratch and stain resistance. Both are ideal for high-traffic South Florida kitchens.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3><i class="bi bi-question-circle"></i>Which countertop requires the least maintenance?</h3>
-                    <p>Engineered quartz requires the least maintenance. It never needs sealing, is non-porous (resisting stains and bacteria), and only requires cleaning with mild soap and water. Natural stones like granite, marble, and quartzite require periodic sealing.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Which countertop requires the least maintenance?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Engineered quartz requires the least maintenance. It never needs sealing, is non-porous (resisting stains and bacteria), and only requires cleaning with mild soap and water. Natural stones like granite, marble, and quartzite require periodic sealing.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3><i class="bi bi-question-circle"></i>What is the difference between quartz and quartzite?</h3>
-                    <p>Quartz is engineered from ground quartz crystals mixed with resins, offering non-porous surfaces and consistent patterns. Quartzite is natural metamorphic stone with unique veining similar to marble. Quartzite offers better heat resistance, while quartz requires less maintenance.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>What is the difference between quartz and quartzite?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quartz is engineered from ground quartz crystals mixed with resins, offering non-porous surfaces and consistent patterns. Quartzite is natural metamorphic stone with unique veining similar to marble. Quartzite offers better heat resistance, while quartz requires less maintenance.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3><i class="bi bi-question-circle"></i>How much do stone countertops cost in South Florida?</h3>
-                    <p>Costs vary by material: Granite $40-$100/sq ft, Quartz $50-$150/sq ft, Quartzite $70-$200/sq ft, Marble $75-$250/sq ft, and Semi-Precious Stone $150-$500+/sq ft installed. Final pricing depends on slab selection, edge profiles, and project complexity.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>How much do stone countertops cost in South Florida?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Costs vary by material: Granite $40-$100/sq ft, Quartz $50-$150/sq ft, Quartzite $70-$200/sq ft, Marble $75-$250/sq ft, and Semi-Precious Stone $150-$500+/sq ft installed. Final pricing depends on slab selection, edge profiles, and project complexity.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3><i class="bi bi-question-circle"></i>Which material is best for outdoor kitchens?</h3>
-                    <p>Granite is the best choice for outdoor kitchens due to its excellent UV resistance, heat tolerance, and durability in humid conditions. Quartzite also works well in covered outdoor spaces. Standard quartz should be avoided outdoors as UV exposure can cause discoloration.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Which material is best for outdoor kitchens?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Granite is the best choice for outdoor kitchens due to its excellent UV resistance, heat tolerance, and durability in humid conditions. Quartzite also works well in covered outdoor spaces. Standard quartz should be avoided outdoors as UV exposure can cause discoloration.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3><i class="bi bi-question-circle"></i>Can I put hot pans directly on stone countertops?</h3>
-                    <p>Granite and quartzite have excellent heat resistance and can typically handle hot pans, though trivets are recommended. Quartz can be damaged by extreme heat and always requires trivets. Marble is sensitive to heat. For all materials, trivets protect your investment.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Can I put hot pans directly on stone countertops?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Granite and quartzite have excellent heat resistance and can typically handle hot pans, though trivets are recommended. Quartz can be damaged by extreme heat and always requires trivets. Marble is sensitive to heat. For all materials, trivets protect your investment.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const isActive = faqItem.classList.contains('active');
+
+                    // Close all other items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+            </script>
         </div>
     </section>
 

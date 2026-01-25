@@ -22,14 +22,14 @@
     <meta property="og:url" content="https://soflocountertops.com/quartz-countertops">
     <meta property="og:title" content="Quartz Countertops South Florida | Engineered Stone | Griffin Quartz">
     <meta property="og:description" content="Premium engineered quartz countertops for South Florida homes. Non-porous, stain-resistant surfaces from top brands. FREE estimates.">
-    <meta property="og:image" content="https://soflocountertops.com/images/kitchen-white-quartz-gold-pendants-bright.webp">
+    <meta property="og:image" content="https://soflocountertops.com/images/luxury-white-kitchen-arched-windows-gold.webp">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Quartz Countertops South Florida | Griffin Quartz">
     <meta name="twitter:description" content="Premium engineered quartz countertops. Non-porous, stain-resistant, low maintenance. Serving all of South Florida.">
-    <meta name="twitter:image" content="https://soflocountertops.com/images/kitchen-white-quartz-gold-pendants-bright.webp">
+    <meta name="twitter:image" content="https://soflocountertops.com/images/luxury-white-kitchen-arched-windows-gold.webp">
 
     <!-- Geographic Meta Tags -->
     <meta name="geo.region" content="US-FL">
@@ -427,33 +427,91 @@
             padding: 5rem 0;
             background: var(--color-light);
         }
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            max-width: 1000px;
+        .faq-accordion {
+            max-width: 900px;
             margin: 0 auto;
         }
-        @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .faq-card {
+        .faq-item {
             background: #fff;
             border-radius: 12px;
-            padding: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
-        .faq-card h3 {
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        .faq-question:hover {
+            background: #fafafa;
+        }
+        .faq-question h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.125rem;
+            font-weight: 500;
             color: var(--color-primary);
-            margin-bottom: 0.75rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
-        .faq-card p {
+        .faq-question h3 .faq-icon {
+            color: var(--color-accent);
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+        .faq-question .faq-toggle {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--color-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .faq-question .faq-toggle i {
+            font-size: 1rem;
+            color: var(--color-primary);
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+        .faq-item.active .faq-question .faq-toggle {
+            background: var(--color-accent);
+        }
+        .faq-item.active .faq-question .faq-toggle i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem 3.75rem;
+        }
+        .faq-answer p {
             font-size: 0.9375rem;
             color: var(--color-gray);
             line-height: 1.7;
+            margin: 0;
+        }
+        .faq-answer a {
+            color: var(--color-accent);
+            text-decoration: underline;
         }
 
         .cta-section {
@@ -506,7 +564,7 @@
     <!-- Hero Section -->
     <section class="material-hero">
         <div class="hero-background">
-            <img src="images/kitchen-white-quartz-gold-pendants-bright.webp" alt="Beautiful quartz countertops in modern South Florida kitchen" loading="eager">
+            <img src="images/luxury-white-kitchen-arched-windows-gold.webp" alt="Beautiful quartz countertops in modern South Florida kitchen" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -665,24 +723,72 @@
                 <p>Get answers to common questions about quartz countertops</p>
             </div>
 
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h3>What is quartz countertop made of?</h3>
-                    <p>Quartz countertops are engineered stone surfaces made from approximately 90-95% ground natural quartz crystals mixed with 5-10% polymer resins and pigments. This creates a non-porous, extremely durable surface.</p>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>What is quartz countertop made of?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quartz countertops are engineered stone surfaces made from approximately 90-95% ground natural quartz crystals mixed with 5-10% polymer resins and pigments. This creates a non-porous, extremely durable surface.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Is quartz better than granite?</h3>
-                    <p>Quartz offers advantages like being non-porous (no sealing needed), more consistent in color, and highly stain-resistant. <a href="granite-countertops">Granite</a> has unique natural beauty and slightly better heat resistance. The best choice depends on your priorities.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Is quartz better than granite?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quartz offers advantages like being non-porous (no sealing needed), more consistent in color, and highly stain-resistant. <a href="granite-countertops">Granite</a> has unique natural beauty and slightly better heat resistance. The best choice depends on your priorities.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>How much do quartz countertops cost?</h3>
-                    <p>Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on brand, color, edge profile, and project complexity. We offer free estimates for accurate pricing.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>How much do quartz countertops cost?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quartz countertops in South Florida typically range from $50-$150 per square foot installed, depending on brand, color, edge profile, and project complexity. We offer free estimates for accurate pricing.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-card">
-                    <h3>Do quartz countertops need to be sealed?</h3>
-                    <p>No, quartz never needs sealing. Unlike <a href="granite-countertops">granite</a> or <a href="marble-countertops">marble</a>, quartz is non-porous, so liquids and bacteria cannot penetrate the surface. This makes quartz one of the most hygienic and low-maintenance options.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3><i class="bi bi-question-circle faq-icon"></i>Do quartz countertops need to be sealed?</h3>
+                        <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>No, quartz never needs sealing. Unlike <a href="granite-countertops">granite</a> or <a href="marble-countertops">marble</a>, quartz is non-porous, so liquids and bacteria cannot penetrate the surface. This makes quartz one of the most hygienic and low-maintenance options.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const isActive = faqItem.classList.contains('active');
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+            </script>
         </div>
     </section>
 
