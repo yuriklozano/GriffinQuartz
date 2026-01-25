@@ -48,6 +48,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Countertop Materials",
+                "item": "https://soflocountertops.com/our-services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Semi-Precious Stone Countertops",
+                "item": "https://soflocountertops.com/semi-precious-stone-countertops"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "Product",
         "name": "Semi-Precious Stone Countertops",
         "description": "Extraordinary semi-precious stone countertops featuring agate, amethyst, tiger eye, and onyx. Backlit options available for ultimate luxury in South Florida homes.",
@@ -491,6 +518,18 @@
                 margin: 0.5rem 0;
             }
         }
+
+        /* Compare Materials Grid Responsive */
+        @media (max-width: 968px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 640px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -728,6 +767,38 @@
                     <h3>Are they durable enough for kitchens?</h3>
                     <p>While some varieties like agate are relatively durable, semi-precious stones are generally best for low-traffic areas like bar tops, bathroom vanities, or accent pieces rather than primary kitchen work surfaces.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Materials Section -->
+    <section class="material-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare Countertop Materials</h2>
+                <p>Looking for everyday durability? Explore our other premium countertop materials that may better suit high-traffic areas.</p>
+            </div>
+            <div class="benefits-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <a href="quartz-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-droplet-slash"></i></div>
+                    <h3>Quartz</h3>
+                    <p>Engineered stone that never needs sealing. Consistent colors, non-porous surface, and virtually maintenance-free living.</p>
+                </a>
+                <a href="quartzite-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-gem"></i></div>
+                    <h3>Quartzite</h3>
+                    <p>Natural stone with superior heat resistance and stunning marble-like veining. Extremely hard and durable.</p>
+                </a>
+                <a href="granite-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-layers"></i></div>
+                    <h3>Granite</h3>
+                    <p>Classic natural stone with unique patterns. Excellent heat resistance and value. A timeless choice for any kitchen.</p>
+                </a>
+                <a href="marble-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-stars"></i></div>
+                    <h3>Marble</h3>
+                    <p>The epitome of luxury with timeless elegance. Ideal for those who appreciate the beauty of natural patina over time.</p>
+                </a>
             </div>
         </div>
     </section>

@@ -48,6 +48,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Countertop Materials",
+                "item": "https://soflocountertops.com/our-services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Quartzite Countertops",
+                "item": "https://soflocountertops.com/quartzite-countertops"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "Product",
         "name": "Quartzite Countertops",
         "description": "Premium natural quartzite countertops for kitchens and bathrooms in South Florida. Extremely hard, heat-resistant, and featuring stunning natural patterns.",
@@ -474,6 +501,18 @@
                 margin: 0.5rem 0;
             }
         }
+
+        /* Compare Materials Grid Responsive */
+        @media (max-width: 968px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 640px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -673,11 +712,11 @@
             <div class="faq-grid">
                 <div class="faq-card">
                     <h3>What's the difference between quartz and quartzite?</h3>
-                    <p>Quartzite is a natural stone formed from sandstone, while quartz is an engineered product. Quartzite offers unique natural patterns and superior heat resistance; quartz provides consistency and requires no sealing.</p>
+                    <p>Quartzite is a natural stone formed from sandstone, while <a href="quartz-countertops">quartz</a> is an engineered product. Quartzite offers unique natural patterns and superior heat resistance; quartz provides consistency and requires no sealing.</p>
                 </div>
                 <div class="faq-card">
                     <h3>Is quartzite more expensive than quartz?</h3>
-                    <p>Generally yes. Quartzite typically costs $70-$200+ per square foot installed, while quartz ranges from $50-$150. The higher cost reflects quartzite's rarity and exceptional durability.</p>
+                    <p>Generally yes. Quartzite typically costs $70-$200+ per square foot installed, while <a href="quartz-countertops">quartz</a> ranges from $50-$150. The higher cost reflects quartzite's rarity and exceptional durability.</p>
                 </div>
                 <div class="faq-card">
                     <h3>Does quartzite need to be sealed?</h3>
@@ -687,6 +726,38 @@
                     <h3>Can you put hot pans on quartzite?</h3>
                     <p>Yes, quartzite is highly heat-resistant and handles hot pans better than most countertop materials. However, using trivets is recommended to protect the sealant.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Materials Section -->
+    <section class="material-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare Countertop Materials</h2>
+                <p>Considering your options? Explore our other premium countertop materials to find the perfect match for your South Florida home.</p>
+            </div>
+            <div class="benefits-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <a href="quartz-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-droplet-slash"></i></div>
+                    <h3>Quartz</h3>
+                    <p>Engineered stone that never needs sealing. Consistent colors, non-porous surface, and virtually maintenance-free living.</p>
+                </a>
+                <a href="granite-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-layers"></i></div>
+                    <h3>Granite</h3>
+                    <p>Classic natural stone with unique patterns. Excellent heat resistance and value. A timeless choice for any kitchen.</p>
+                </a>
+                <a href="marble-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-stars"></i></div>
+                    <h3>Marble</h3>
+                    <p>The epitome of luxury with timeless elegance. Ideal for those who appreciate the beauty of natural patina over time.</p>
+                </a>
+                <a href="semi-precious-stone-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-diamond"></i></div>
+                    <h3>Semi-Precious Stone</h3>
+                    <p>Extraordinary luxury with agate, amethyst, and onyx. Backlit options create stunning focal points.</p>
+                </a>
             </div>
         </div>
     </section>

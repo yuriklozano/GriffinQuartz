@@ -64,8 +64,8 @@ $homeLink = '/';
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
                                 </span>
                                 <span class="mega-menu-text">
-                                    <strong>Quartz</strong>
-                                    <span>Engineered stone, low maintenance</span>
+                                    <strong>Quartz Countertops</strong>
+                                    <span>Engineered stone, non-porous, low maintenance</span>
                                 </span>
                             </a>
                             <a href="<?php echo $prefix; ?>quartzite-countertops" class="mega-menu-item">
@@ -73,8 +73,8 @@ $homeLink = '/';
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg>
                                 </span>
                                 <span class="mega-menu-text">
-                                    <strong>Quartzite</strong>
-                                    <span>Natural stone, heat resistant</span>
+                                    <strong>Quartzite Countertops</strong>
+                                    <span>Natural stone, superior heat resistance</span>
                                 </span>
                             </a>
                             <a href="<?php echo $prefix; ?>marble-countertops" class="mega-menu-item">
@@ -82,8 +82,8 @@ $homeLink = '/';
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
                                 </span>
                                 <span class="mega-menu-text">
-                                    <strong>Marble</strong>
-                                    <span>Timeless elegance, luxury finish</span>
+                                    <strong>Marble Countertops</strong>
+                                    <span>Carrara, Calacatta & Statuario marble</span>
                                 </span>
                             </a>
                             <a href="<?php echo $prefix; ?>granite-countertops" class="mega-menu-item">
@@ -91,8 +91,8 @@ $homeLink = '/';
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                                 </span>
                                 <span class="mega-menu-text">
-                                    <strong>Granite</strong>
-                                    <span>Durable natural stone</span>
+                                    <strong>Granite Countertops</strong>
+                                    <span>Durable natural stone, unique patterns</span>
                                 </span>
                             </a>
                             <a href="<?php echo $prefix; ?>semi-precious-stone-countertops" class="mega-menu-item">
@@ -100,8 +100,8 @@ $homeLink = '/';
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
                                 </span>
                                 <span class="mega-menu-text">
-                                    <strong>Semi-Precious Stone</strong>
-                                    <span>Exotic agate, amethyst & onyx</span>
+                                    <strong>Semi-Precious Stone Countertops</strong>
+                                    <span>Backlit agate, amethyst & onyx</span>
                                 </span>
                             </a>
                             <a href="<?php echo $prefix; ?>quartz-brands" class="mega-menu-item">

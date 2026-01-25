@@ -48,6 +48,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Countertop Materials",
+                "item": "https://soflocountertops.com/our-services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Marble Countertops",
+                "item": "https://soflocountertops.com/marble-countertops"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "Product",
         "name": "Marble Countertops",
         "description": "Luxury marble countertops for kitchens and bathrooms in South Florida. Featuring Carrara, Calacatta, and Statuario marble with timeless elegance.",
@@ -474,6 +501,18 @@
                 margin: 0.5rem 0;
             }
         }
+
+        /* Compare Materials Grid Responsive */
+        @media (max-width: 968px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 640px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -655,7 +694,7 @@
             <div class="faq-grid">
                 <div class="faq-card">
                     <h3>Is marble good for kitchen countertops?</h3>
-                    <p>Marble is beautiful for kitchens but requires more maintenance. It's softer and more porous than granite or quartz. Many homeowners love the patina it develops. It's perfect for baking and adds unmatched elegance.</p>
+                    <p>Marble is beautiful for kitchens but requires more maintenance. It's softer and more porous than <a href="granite-countertops">granite</a> or <a href="quartz-countertops">quartz</a>. Many homeowners love the patina it develops. It's perfect for baking and adds unmatched elegance.</p>
                 </div>
                 <div class="faq-card">
                     <h3>How much do marble countertops cost?</h3>
@@ -669,6 +708,38 @@
                     <h3>How do you maintain marble countertops?</h3>
                     <p>Seal every 6-12 months, clean with pH-neutral cleaners, wipe spills immediately (especially acidic substances), and use cutting boards and trivets. Many embrace the natural patina that develops.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Materials Section -->
+    <section class="material-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare Countertop Materials</h2>
+                <p>Want to explore other options? Discover our full range of premium countertop materials for your South Florida home.</p>
+            </div>
+            <div class="benefits-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <a href="quartz-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-droplet-slash"></i></div>
+                    <h3>Quartz</h3>
+                    <p>Engineered stone that never needs sealing. Consistent colors, non-porous surface, and virtually maintenance-free living.</p>
+                </a>
+                <a href="quartzite-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-gem"></i></div>
+                    <h3>Quartzite</h3>
+                    <p>Natural stone with superior heat resistance and stunning marble-like veining. Harder than marble with similar aesthetics.</p>
+                </a>
+                <a href="granite-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-layers"></i></div>
+                    <h3>Granite</h3>
+                    <p>Classic natural stone with unique patterns. Excellent heat resistance and value. A timeless choice for any kitchen.</p>
+                </a>
+                <a href="semi-precious-stone-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-diamond"></i></div>
+                    <h3>Semi-Precious Stone</h3>
+                    <p>Extraordinary luxury with agate, amethyst, and onyx. Backlit options create stunning focal points.</p>
+                </a>
             </div>
         </div>
     </section>

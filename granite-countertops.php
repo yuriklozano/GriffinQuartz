@@ -48,6 +48,33 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://soflocountertops.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Countertop Materials",
+                "item": "https://soflocountertops.com/our-services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Granite Countertops",
+                "item": "https://soflocountertops.com/granite-countertops"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "Product",
         "name": "Granite Countertops",
         "description": "Premium natural granite countertops for kitchens and bathrooms in South Florida. Durable, heat-resistant, and featuring unique natural patterns.",
@@ -474,6 +501,18 @@
                 margin: 0.5rem 0;
             }
         }
+
+        /* Compare Materials Grid Responsive */
+        @media (max-width: 968px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 640px) {
+            .benefits-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -673,7 +712,7 @@
             <div class="faq-grid">
                 <div class="faq-card">
                     <h3>Is granite better than quartz?</h3>
-                    <p>Both have advantages. Granite offers superior heat resistance, unique natural beauty, and often lower cost. Quartz is non-porous and more consistent. Choose based on your priorities for heat tolerance, maintenance, and aesthetics.</p>
+                    <p>Both have advantages. Granite offers superior heat resistance, unique natural beauty, and often lower cost. <a href="quartz-countertops">Quartz</a> is non-porous and more consistent. Choose based on your priorities for heat tolerance, maintenance, and aesthetics.</p>
                 </div>
                 <div class="faq-card">
                     <h3>How much do granite countertops cost?</h3>
@@ -687,6 +726,38 @@
                     <h3>Can you put hot pans on granite?</h3>
                     <p>Yes, granite is highly heat-resistant and handles hot pots and pans well. However, using trivets is recommended to protect the sealant and avoid potential thermal shock from extreme temperature changes.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Materials Section -->
+    <section class="material-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare Countertop Materials</h2>
+                <p>Exploring your options? Discover our full range of premium countertop materials for your South Florida home.</p>
+            </div>
+            <div class="benefits-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <a href="quartz-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-droplet-slash"></i></div>
+                    <h3>Quartz</h3>
+                    <p>Engineered stone that never needs sealing. Consistent colors, non-porous surface, and virtually maintenance-free living.</p>
+                </a>
+                <a href="quartzite-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-gem"></i></div>
+                    <h3>Quartzite</h3>
+                    <p>Natural stone with superior heat resistance and stunning marble-like veining. Even harder than granite.</p>
+                </a>
+                <a href="marble-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-stars"></i></div>
+                    <h3>Marble</h3>
+                    <p>The epitome of luxury with timeless elegance. Ideal for those who appreciate the beauty of natural patina over time.</p>
+                </a>
+                <a href="semi-precious-stone-countertops" class="benefit-card" style="text-decoration: none;">
+                    <div class="icon"><i class="bi bi-diamond"></i></div>
+                    <h3>Semi-Precious Stone</h3>
+                    <p>Extraordinary luxury with agate, amethyst, and onyx. Backlit options create stunning focal points.</p>
+                </a>
             </div>
         </div>
     </section>
