@@ -113,6 +113,15 @@ $homeLink = '/';
                                     <span>Cambria, Silestone, Caesarstone & more</span>
                                 </span>
                             </a>
+                            <a href="<?php echo $prefix; ?>countertop-materials" class="mega-menu-item">
+                                <span class="mega-menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/><path d="M9 21v-6h6v6"/></svg>
+                                </span>
+                                <span class="mega-menu-text">
+                                    <strong>All Countertop Materials</strong>
+                                    <span>Compare quartz, marble, granite & more</span>
+                                </span>
+                            </a>
                             <a href="<?php echo $prefix; ?>our-services" class="mega-menu-item">
                                 <span class="mega-menu-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
@@ -139,6 +148,7 @@ $homeLink = '/';
                     <!-- Mobile fallback dropdown -->
                     <ul class="dropdown-menu mobile-dropdown">
                         <li><a href="<?php echo $prefix; ?>our-services">Countertop Services</a></li>
+                        <li><a href="<?php echo $prefix; ?>countertop-materials">All Countertop Materials</a></li>
                         <li><a href="<?php echo $prefix; ?>quartz-countertops">Quartz Countertops</a></li>
                         <li><a href="<?php echo $prefix; ?>quartzite-countertops">Quartzite Countertops</a></li>
                         <li><a href="<?php echo $prefix; ?>marble-countertops">Marble Countertops</a></li>
