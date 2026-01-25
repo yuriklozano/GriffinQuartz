@@ -11,6 +11,11 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="Griffin Quartz">
     <link rel="canonical" href="https://soflocountertops.com/quartz-brands">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="Boca Raton">
     <meta name="geo.position" content="26.3683;-80.1289">

@@ -12,6 +12,11 @@
     <meta name="author" content="Griffin Quartz">
     <link rel="canonical" href="https://soflocountertops.com/west-palm-beach">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
     <!-- Geographic Meta Tags -->
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="West Palm Beach, Florida">

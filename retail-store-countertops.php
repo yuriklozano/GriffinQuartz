@@ -11,6 +11,11 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/retail-store-countertops">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Retail Store Quartz Countertops | Retail Specialists | Griffin Quartz">
     <meta property="og:description" content="Premium quartz surfaces for retail stores throughout South Florida. Checkout counters, displays, and customer service areas.">

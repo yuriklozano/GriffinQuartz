@@ -11,6 +11,11 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/restaurant-cafe-countertops">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Restaurant & Café Quartz Countertops | Food Service Specialists | Griffin Quartz">
     <meta property="og:description" content="NSF certified quartz surfaces for restaurants and cafés throughout South Florida. Bar tops, kitchens, and food prep areas.">

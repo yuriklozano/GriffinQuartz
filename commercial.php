@@ -11,6 +11,11 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/commercial">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Commercial Quartz Countertops | Trusted by 10,000+ Florida Businesses | Griffin Quartz">
     <meta property="og:description" content="Precision fabrication & expert installation for restaurants, hotels, medical offices, and corporate spaces throughout South Florida. Fast turnaround without sacrificing quality.">

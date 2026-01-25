@@ -11,6 +11,11 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/quote-calculator">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Instant Quartz Countertop Quote Calculator | Griffin Quartz">
     <meta property="og:description" content="Get instant pricing for your quartz countertop project. Enter dimensions and see your estimate in seconds.">

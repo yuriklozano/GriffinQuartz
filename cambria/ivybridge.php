@@ -8,6 +8,11 @@
     <meta name="keywords" content="Cambria Ivybridge, Ivybridge quartz, green quartz countertops, earthy quartz, Cambria countertops South Florida">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://soflocountertops.com/cambria/ivybridge">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
