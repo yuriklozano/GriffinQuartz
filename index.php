@@ -320,7 +320,7 @@
             <div class="materials-grid">
                 <a href="quartz-countertops" class="material-card">
                     <div class="material-image">
-                        <img src="images/portfolio-white-quartz-waterfall-new.webp" alt="White quartz countertop with waterfall edge" loading="lazy">
+                        <img src="images/kitchen-beachfront-pool-palms.webp" alt="Luxury beachfront kitchen with quartz countertops and pool view" loading="lazy">
                         <div class="material-overlay"></div>
                     </div>
                     <div class="material-content">
