@@ -596,7 +596,7 @@
     <!-- Hero Section -->
     <section class="material-hero">
         <div class="hero-background">
-            <img src="images/bathroom-calacatta-vessel-backlit.webp" alt="Stunning backlit semi-precious stone countertops in South Florida" loading="eager">
+            <img src="images/Semi-Precious Stones Countertop.jpg" alt="Stunning backlit semi-precious stone countertops in South Florida" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
