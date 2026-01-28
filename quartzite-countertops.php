@@ -579,7 +579,7 @@
     <!-- Hero Section -->
     <section class="material-hero">
         <div class="hero-background">
-            <img src="images/kitchen-modern-waterfall-island-gold.webp" alt="Beautiful quartzite countertops in modern South Florida kitchen" loading="eager">
+            <img src="images/kitchen-penthouse-veined-ocean-view.webp" alt="Beautiful quartzite countertops in modern South Florida kitchen" loading="eager">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
