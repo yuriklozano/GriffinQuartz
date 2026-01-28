@@ -8,6 +8,45 @@ $prefix = ($basePath === '.' || $basePath === '') ? '' : $basePath . '/';
 // Home link - always use absolute root path
 $homeLink = '/';
 ?>
+
+<!-- Lead Capture Popup -->
+<div class="lead-popup-overlay" id="leadPopup">
+    <div class="lead-popup">
+        <button class="lead-popup-close" id="leadPopupClose" aria-label="Close popup">&times;</button>
+        <div class="lead-popup-content">
+            <h3>Instant FREE Estimate</h3>
+            <p>Your perfect quartz countertop is just a click away. Get a free in-home consultation and see why our craftsmanship and warranty set us apart</p>
+            <div class="lead-popup-benefits">
+                <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6 12L2.5 8.5" stroke="#FDB913" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Free Consultation</span>
+                <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6 12L2.5 8.5" stroke="#FDB913" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> In-House Fabrication</span>
+                <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6 12L2.5 8.5" stroke="#FDB913" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Warranty-Backed Service</span>
+            </div>
+        </div>
+        <div class="lead-popup-image">
+            <img src="<?php echo $prefix; ?>images/kitchen-calacatta-gold-globe-pendants.webp" alt="Luxury calacatta gold kitchen countertop">
+        </div>
+        <div class="lead-popup-form-wrapper">
+            <form id="leadPopupForm" class="lead-popup-form">
+                <div class="form-group form-group-icon">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6L12 13L2 6"/></svg>
+                    <input type="email" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group form-group-icon">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                    <input type="text" name="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group form-group-icon form-group-phone">
+                    <div class="phone-prefix">
+                        <span class="flag-icon">🇺🇸</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+                    </div>
+                    <input type="tel" name="phone" placeholder="Enter a phone number" required>
+                </div>
+                <button type="submit" class="btn btn-dark btn-full">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 <!-- Admin Utility Bar -->
 <div class="admin-utility-bar">
     <div class="container">

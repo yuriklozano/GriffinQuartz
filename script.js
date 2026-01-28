@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Accordion
     initAccordion();
+
+    // Lead Capture Popup
+    initLeadPopup();
 });
 
 // ===== Mobile Menu =====
@@ -549,6 +552,133 @@ function initAccordion() {
                     header.setAttribute('aria-expanded', 'true');
                 }
             });
+        });
+    });
+}
+
+// ===== Lead Capture Popup =====
+function initLeadPopup() {
+    const popup = document.getElementById('leadPopup');
+    const closeBtn = document.getElementById('leadPopupClose');
+    const form = document.getElementById('leadPopupForm');
+
+    if (!popup || !closeBtn || !form) return;
+
+    // Check if popup was already dismissed or submitted
+    const popupDismissed = localStorage.getItem('leadPopupDismissed');
+    const popupSubmitted = localStorage.getItem('leadPopupSubmitted');
+
+    // Don't show if already dismissed within 7 days or submitted within 30 days
+    if (popupDismissed) {
+        const dismissedDate = new Date(popupDismissed);
+        const daysSinceDismissed = (Date.now() - dismissedDate) / (1000 * 60 * 60 * 24);
+        if (daysSinceDismissed < 7) return;
+    }
+
+    if (popupSubmitted) {
+        const submittedDate = new Date(popupSubmitted);
+        const daysSinceSubmitted = (Date.now() - submittedDate) / (1000 * 60 * 60 * 24);
+        if (daysSinceSubmitted < 30) return;
+    }
+
+    // Show popup after 5 seconds or 30% scroll, whichever comes first
+    let popupShown = false;
+
+    function showPopup() {
+        if (popupShown) return;
+        popupShown = true;
+        popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Trigger animation
+        requestAnimationFrame(() => {
+            popup.classList.add('fade-in');
+        });
+    }
+
+    function hidePopup() {
+        popup.classList.remove('fade-in');
+        popup.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Timer trigger - show after 5 seconds
+    const timerTrigger = setTimeout(showPopup, 5000);
+
+    // Scroll trigger - show after 30% scroll
+    function handleScroll() {
+        const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        if (scrollPercent > 30) {
+            showPopup();
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }
+    window.addEventListener('scroll', handleScroll);
+
+    // Close button
+    closeBtn.addEventListener('click', () => {
+        hidePopup();
+        localStorage.setItem('leadPopupDismissed', new Date().toISOString());
+        clearTimeout(timerTrigger);
+        window.removeEventListener('scroll', handleScroll);
+    });
+
+    // Click outside to close
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            hidePopup();
+            localStorage.setItem('leadPopupDismissed', new Date().toISOString());
+        }
+    });
+
+    // Escape key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popup.classList.contains('active')) {
+            hidePopup();
+            localStorage.setItem('leadPopupDismissed', new Date().toISOString());
+        }
+    });
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+
+        // Add metadata
+        data.form_type = 'popup_lead';
+        data.page_url = window.location.href;
+        data.page_title = document.title;
+
+        // Show loading state
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending...';
+
+        // Send to backend
+        fetch('/api/submit-lead.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            if (result.success) {
+                showNotification('Thank you! We\'ll contact you within 24 hours.', 'success');
+                localStorage.setItem('leadPopupSubmitted', new Date().toISOString());
+                hidePopup();
+            } else {
+                showNotification(result.message || 'Something went wrong. Please try again.', 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Form submission error:', error);
+            showNotification('Something went wrong. Please try again.', 'error');
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
         });
     });
 }
