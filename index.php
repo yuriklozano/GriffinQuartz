@@ -312,6 +312,74 @@
         </div>
     </section>
 
+    <!-- Countertop Materials Section -->
+    <section class="materials-section">
+        <div class="container">
+            <h2 class="section-title">Premium Countertop Materials</h2>
+            <p class="section-subtitle">Explore Our Selection of Luxury Stone Surfaces</p>
+            <div class="materials-grid">
+                <a href="quartz-countertops" class="material-card">
+                    <div class="material-image">
+                        <img src="images/quartz-samples-gold-hardware-luxury.webp" alt="Premium quartz countertop samples" loading="lazy">
+                        <div class="material-overlay"></div>
+                    </div>
+                    <div class="material-content">
+                        <h3>Quartz Countertops</h3>
+                        <p>Engineered perfection with 200+ colors. Non-porous, low maintenance, and backed by lifetime warranties.</p>
+                        <span class="material-link">Explore Quartz <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="quartzite-countertops" class="material-card">
+                    <div class="material-image">
+                        <img src="images/bathroom-spa-quartzite-floating-ocean.webp" alt="Natural quartzite countertop bathroom" loading="lazy">
+                        <div class="material-overlay"></div>
+                    </div>
+                    <div class="material-content">
+                        <h3>Quartzite Countertops</h3>
+                        <p>Natural stone with superior heat resistance. Stunning veining patterns with unmatched durability.</p>
+                        <span class="material-link">Explore Quartzite <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="granite-countertops" class="material-card">
+                    <div class="material-image">
+                        <img src="images/kitchen-black-gold-veined-dramatic.webp" alt="Dramatic granite countertop with gold veining" loading="lazy">
+                        <div class="material-overlay"></div>
+                    </div>
+                    <div class="material-content">
+                        <h3>Granite Countertops</h3>
+                        <p>Timeless natural beauty with unique patterns. Each slab is one-of-a-kind, crafted by nature.</p>
+                        <span class="material-link">Explore Granite <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="marble-countertops" class="material-card">
+                    <div class="material-image">
+                        <img src="images/kitchen-calacatta-gold-globe-pendants.webp" alt="Luxury Calacatta marble kitchen countertop" loading="lazy">
+                        <div class="material-overlay"></div>
+                    </div>
+                    <div class="material-content">
+                        <h3>Marble Countertops</h3>
+                        <p>The pinnacle of luxury. Carrara, Calacatta, and Statuario marble for those who demand the finest.</p>
+                        <span class="material-link">Explore Marble <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="semi-precious-stone-countertops" class="material-card">
+                    <div class="material-image">
+                        <img src="images/commercial-beachfront-lobby-backlit.webp" alt="Backlit semi-precious stone countertop" loading="lazy">
+                        <div class="material-overlay"></div>
+                    </div>
+                    <div class="material-content">
+                        <h3>Semi-Precious Stone</h3>
+                        <p>Breathtaking backlit agate, amethyst, and onyx. Transform your space into a work of art.</p>
+                        <span class="material-link">Explore Semi-Precious <i class="bi bi-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="materials-cta">
+                <a href="countertop-materials" class="btn btn-primary">Compare All Materials</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Sale Countdown Section -->
     <section class="sale-section">
         <div class="container">
