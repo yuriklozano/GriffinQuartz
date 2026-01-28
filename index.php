@@ -364,7 +364,7 @@
                 </a>
                 <a href="semi-precious-stone-countertops" class="material-card">
                     <div class="material-image">
-                        <img src="images/commercial-beachfront-lobby-backlit.webp" alt="Backlit semi-precious stone countertop" loading="lazy">
+                        <img src="images/Semi-Precious Stones Countertop.jpg" alt="Backlit semi-precious stone countertop" loading="lazy">
                         <div class="material-overlay"></div>
                     </div>
                     <div class="material-content">
