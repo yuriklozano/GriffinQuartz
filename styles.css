@@ -692,16 +692,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .materials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
-}
-
-/* Center the last row with 2 items */
-.materials-grid .material-card:nth-last-child(2):nth-child(3n+1),
-.materials-grid .material-card:last-child:nth-child(3n+2) {
-    grid-column: span 1;
 }
 
 .material-card {
@@ -714,6 +709,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    flex: 0 1 calc(33.333% - var(--spacing-lg));
+    max-width: 380px;
+    min-width: 280px;
 }
 
 .material-card:hover {
@@ -788,8 +786,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Materials Section Responsive */
 @media (max-width: 992px) {
+    .material-card {
+        flex: 0 1 calc(50% - var(--spacing-md));
+    }
+
     .materials-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-md);
     }
 
@@ -803,8 +804,12 @@ h1, h2, h3, h4, h5, h6 {
         padding: var(--spacing-xl) 0;
     }
 
+    .material-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
     .materials-grid {
-        grid-template-columns: 1fr;
         gap: var(--spacing-md);
     }
 
